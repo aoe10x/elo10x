@@ -1,6 +1,7 @@
 import { promises as fs } from 'node:fs';
 import * as path from 'node:path';
 import type { DatabaseSchema, Match, PlayerProfile } from './types.ts';
+import { buildMatchFingerprint } from './match_fingerprint.ts';
 
 export class JsonDatabase {
   private filePath: string;
@@ -26,13 +27,16 @@ export class JsonDatabase {
       this.data = JSON.parse(fileContent);
       // Ensure all fields are initialized in case of legacy formats
       this.data.matches = this.data.matches || {};
+      this.data.match_fingerprints = this.data.match_fingerprints || {};
       this.data.profiles = this.data.profiles || {};
       this.data.crawled_profiles = this.data.crawled_profiles || {};
       this.data.crawl_queue = this.data.crawl_queue || [];
+      this.backfillMatchFingerprints();
     } catch (error: any) {
       if (error.code === 'ENOENT') {
         this.data = {
           matches: {},
+          match_fingerprints: {},
           profiles: {},
           crawled_profiles: {},
           crawl_queue: []
@@ -99,8 +103,20 @@ export class JsonDatabase {
     return !!this.data.matches[id];
   }
 
+  hasMatchFingerprint(fingerprint: string): boolean {
+    return this.data.match_fingerprints[fingerprint] !== undefined;
+  }
+
+  findMatchIdByFingerprint(fingerprint: string): number | undefined {
+    return this.data.match_fingerprints[fingerprint];
+  }
+
   addMatch(match: Match): void {
     this.data.matches[match.id] = match;
+    const fingerprint = buildMatchFingerprint(match);
+    if (!this.hasMatchFingerprint(fingerprint)) {
+      this.data.match_fingerprints[fingerprint] = match.id;
+    }
   }
 
   getMatches(): Match[] {
@@ -109,6 +125,15 @@ export class JsonDatabase {
 
   getMatchesCount(): number {
     return Object.keys(this.data.matches).length;
+  }
+
+  private backfillMatchFingerprints(): void {
+    for (const match of Object.values(this.data.matches)) {
+      const fingerprint = buildMatchFingerprint(match);
+      if (this.data.match_fingerprints[fingerprint] === undefined) {
+        this.data.match_fingerprints[fingerprint] = match.id;
+      }
+    }
   }
 
   // Profiles

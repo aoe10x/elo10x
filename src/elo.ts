@@ -12,6 +12,14 @@ const DEFAULT_CONFIG: EloConfig = {
   minGamesForLeaderboard: 5
 };
 
+function isWin(resulttype: number): boolean {
+  return resulttype === 1;
+}
+
+function isLoss(resulttype: number): boolean {
+  return resulttype === 0 || resulttype === 2;
+}
+
 export class EloCalculator {
   private config: EloConfig;
 
@@ -30,6 +38,18 @@ export class EloCalculator {
     const sortedMatches = [...matches].sort((a, b) => a.startgametime - b.startgametime);
 
     for (const match of sortedMatches) {
+      // Strict 4v4 policy: only process matches with exactly 8 tracked players.
+      if (!Array.isArray(match.players) || match.players.length !== 8) {
+        continue;
+      }
+
+      const winners = match.players.filter(p => isWin(p.resulttype));
+      const losers = match.players.filter(p => isLoss(p.resulttype));
+      // Require exactly 4 winners and 4 losers; skip unknown/ambiguous outcomes.
+      if (winners.length !== 4 || losers.length !== 4) {
+        continue;
+      }
+
       // Group players by team ID
       let teamPlayers = new Map<number, typeof match.players>();
       for (const p of match.players) {
@@ -37,19 +57,6 @@ export class EloCalculator {
           teamPlayers.set(p.teamid, []);
         }
         teamPlayers.get(p.teamid)!.push(p);
-      }
-
-      // If team grouping doesn't result in exactly 2 teams, try to reconstruct teams based on resulttype
-      if (teamPlayers.size !== 2) {
-        const winners = match.players.filter(p => p.resulttype === 1);
-        const losers = match.players.filter(p => p.resulttype === 0);
-        
-        if (winners.length > 0 && losers.length > 0) {
-          teamPlayers = new Map<number, typeof match.players>();
-          // Assign team ID 1 to winners, 0 to losers
-          teamPlayers.set(1, winners.map(p => ({ ...p, teamid: 1 })));
-          teamPlayers.set(0, losers.map(p => ({ ...p, teamid: 0 })));
-        }
       }
 
       // We only compute ELO for games with exactly 2 teams
@@ -64,17 +71,17 @@ export class EloCalculator {
       const team1 = teamPlayers.get(team1Id)!;
       const team2 = teamPlayers.get(team2Id)!;
 
-      // Ensure both teams have players
-      if (team1.length === 0 || team2.length === 0) {
+      // Strict 4v4 team integrity: exactly 4 players per team
+      if (team1.length !== 4 || team2.length !== 4) {
         continue;
       }
 
       // Determine outcome: verify that team results are consistent
-      // resulttype: 1 = Win, 0 = Loss
-      const team1WinCount = team1.filter(p => p.resulttype === 1).length;
-      const team1LossCount = team1.filter(p => p.resulttype === 0).length;
-      const team2WinCount = team2.filter(p => p.resulttype === 1).length;
-      const team2LossCount = team2.filter(p => p.resulttype === 0).length;
+      // resulttype: 1 = Win, 0/2 = Loss
+      const team1WinCount = team1.filter(p => isWin(p.resulttype)).length;
+      const team1LossCount = team1.filter(p => isLoss(p.resulttype)).length;
+      const team2WinCount = team2.filter(p => isWin(p.resulttype)).length;
+      const team2LossCount = team2.filter(p => isLoss(p.resulttype)).length;
 
       let team1Score = 0.5; // Draw default, though draws are rare in AoE2
       let team2Score = 0.5;

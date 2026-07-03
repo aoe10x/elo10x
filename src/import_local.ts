@@ -7,6 +7,7 @@ import { promisify } from 'node:util';
 import { JsonDatabase } from './db.ts';
 import { EloCalculator } from './elo.ts';
 import type { Match, MatchPlayer } from './types.ts';
+import { buildMatchFingerprint } from './match_fingerprint.ts';
 
 const execFilePromise = promisify(execFile);
 
@@ -222,6 +223,14 @@ let replaysDirs: string[];
           completiontime: (parsedJson.start_time || Math.floor(Date.now() / 1000)) + (parsedJson.duration || 0),
           players: participants
         };
+
+        const fingerprint = buildMatchFingerprint(matchObj);
+        const existingMatchId = db.findMatchIdByFingerprint(fingerprint);
+        if (existingMatchId !== undefined) {
+          console.log(`Skipping duplicate-equivalent replay ${filename}; equivalent to existing match ${existingMatchId}.`);
+          importedFilenames.add(filename);
+          continue;
+        }
 
         db.addMatch(matchObj);
         console.log(`Successfully parsed, and logged 10x match [${numericId} / ${lobbyTitle}]`);

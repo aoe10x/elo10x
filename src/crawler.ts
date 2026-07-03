@@ -1,5 +1,6 @@
 import type { JsonDatabase } from './db.ts';
 import type { Lobby, Match, MatchPlayer, PlayerProfile } from './types.ts';
+import { buildMatchFingerprint } from './match_fingerprint.ts';
 
 // Relic Link API endpoint config
 const BASE_URL = 'https://aoe-api.worldsedgelink.com';
@@ -199,6 +200,13 @@ export class MatchCrawler {
             players: participants,
             gamemod_id: m.gamemod_id
           };
+
+          const fingerprint = buildMatchFingerprint(matchObj);
+          const existingMatchId = this.db.findMatchIdByFingerprint(fingerprint);
+          if (existingMatchId !== undefined) {
+            console.log(`Skipping duplicate-equivalent match ${m.id}; equivalent to existing match ${existingMatchId}.`);
+            continue;
+          }
 
           this.db.addMatch(matchObj);
           new10xMatchCount++;
