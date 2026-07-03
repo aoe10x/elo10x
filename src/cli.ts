@@ -1,0 +1,145 @@
+import { promises as fs } from 'node:fs';
+import * as path from 'node:path';
+import { parseArgs } from 'node:util';
+import { MatchCrawler } from './crawler.ts';
+import { JsonDatabase } from './db.ts';
+import { EloCalculator } from './elo.ts';
+
+function showHelp(): void {
+  console.log(`
+AoE2 10x Elo Ranking System CLI
+
+Usage:
+  node --experimental-strip-types src/cli.ts [options]
+
+Options:
+  --crawl                   Run a snowball crawler session to fetch 10x games.
+  --limit <number>          Max number of player profiles to crawl in this session (default: 50).
+  --seed                    Force a fetch of online lobbies on aoe10x.com to seed crawler queue.
+  --months <number>         Cutoff months for games (default: 3).
+  
+  --elo                     Calculate ELO ratings based on crawled matches.
+  --min-games <number>      Minimum games required to display on the leaderboard (default: 5).
+  --k-factor <number>       K-Factor to use for ELO calculations (default: 32).
+  --provisional             Include provisional players (fewer games than min-games).
+
+  --help, -h                Show this help message.
+
+Examples:
+  # Seed queue and crawl 10 players, then calculate Elo
+  node --experimental-strip-types src/cli.ts --crawl --seed --limit 10
+  node --experimental-strip-types src/cli.ts --elo
+`);
+}
+
+async function main(): Promise<void> {
+  const options = {
+    crawl: { type: 'boolean' as const },
+    limit: { type: 'string' as const },
+    seed: { type: 'boolean' as const },
+    months: { type: 'string' as const },
+    elo: { type: 'boolean' as const },
+    'min-games': { type: 'string' as const },
+    'k-factor': { type: 'string' as const },
+    provisional: { type: 'boolean' as const },
+    help: { type: 'boolean' as const, short: 'h' as const }
+  };
+
+  let parsed: any;
+  try {
+    parsed = parseArgs({ args: process.argv.slice(2), options, allowPositionals: true });
+  } catch (err: any) {
+    console.error(`Error parsing arguments: ${err.message}`);
+    showHelp();
+    process.exit(1);
+  }
+
+  const { values } = parsed;
+
+  if (values.help || Object.keys(values).length === 0) {
+    showHelp();
+    return;
+  }
+
+  const db = new JsonDatabase();
+  await db.load();
+
+  if (values.crawl) {
+    const limit = values.limit ? parseInt(values.limit, 10) : 50;
+    const months = values.months ? parseInt(values.months, 10) : 3;
+    const crawler = new MatchCrawler(db);
+
+    console.log(`Starting crawl session... (limit: ${limit} players, cutoff: ${months} months)`);
+    
+    if (values.seed) {
+      await crawler.seedFromLobbies();
+    }
+
+    await crawler.runCrawl(limit, months);
+    console.log('Crawl session complete.');
+    console.log(`Database state: ${db.getMatchesCount()} matches, ${db.getProfilesCount()} cached profiles, ${db.getCrawlQueueLength()} in crawl queue.`);
+  }
+
+  if (values.elo) {
+    const minGames = values['min-games'] ? parseInt(values['min-games'], 10) : 5;
+    const kFactor = values['k-factor'] ? parseInt(values['k-factor'], 10) : 32;
+    const provisional = !!values.provisional;
+
+    const matches = db.getMatches();
+    console.log(`Calculating ELO ratings for ${matches.length} matches...`);
+    
+    const calculator = new EloCalculator({
+      kFactor,
+      minGamesForLeaderboard: minGames
+    });
+
+    const ratingsMap = calculator.calculate(matches);
+    const leaderboard = calculator.getLeaderboard(ratingsMap, provisional);
+
+    // Write leaderboard data to data/leaderboard.json for the web dashboard to consume
+    const leaderboardPath = path.join(process.cwd(), 'data', 'leaderboard.json');
+    await fs.mkdir(path.dirname(leaderboardPath), { recursive: true });
+    
+    // Also save metadata about the ELO runs
+    const payload = {
+      updatedAt: Date.now(),
+      totalMatches: matches.length,
+      totalPlayers: ratingsMap.size,
+      leaderboardCount: leaderboard.length,
+      config: { minGames, kFactor, provisional },
+      players: leaderboard
+    };
+    
+    await fs.writeFile(leaderboardPath, JSON.stringify(payload, null, 2), 'utf-8');
+    console.log(`Leaderboard saved to ${leaderboardPath}`);
+
+    // Print top 15 players in console
+    console.log('\n--- TOP 15 ELO RANKINGS ---');
+    console.log(
+      String('Rank').padEnd(6) + 
+      String('Alias').padEnd(25) + 
+      String('Elo').padEnd(8) + 
+      String('Record (W-L)').padEnd(15) + 
+      String('Win %').padEnd(8) + 
+      String('Profile ID')
+    );
+    console.log('-'.repeat(70));
+    
+    leaderboard.slice(0, 15).forEach((p, index) => {
+      console.log(
+        String(index + 1).padEnd(6) + 
+        String(p.alias.slice(0, 24)).padEnd(25) + 
+        String(p.rating).padEnd(8) + 
+        String(`${p.wins}-${p.losses}`).padEnd(15) + 
+        String(`${p.winRate}%`).padEnd(8) + 
+        String(p.profile_id)
+      );
+    });
+    console.log('---------------------------\n');
+  }
+}
+
+main().catch(err => {
+  console.error('Fatal CLI Error:', err);
+  process.exit(1);
+});
