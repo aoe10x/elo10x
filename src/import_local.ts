@@ -255,7 +255,7 @@ async function main(): Promise<void> {
     
     const calculator = new EloCalculator({
       kFactor: 32,
-      minGamesForLeaderboard: 5
+      minGamesForLeaderboard: 10
     });
 
     const ratingsMap = calculator.calculate(matches);
@@ -269,7 +269,7 @@ async function main(): Promise<void> {
       totalMatches: matches.length,
       totalPlayers: ratingsMap.size,
       leaderboardCount: leaderboard.length,
-      config: { minGames: 5, kFactor: 32, provisional: false },
+      config: { minGames: 10, kFactor: 32, provisional: false },
       players: leaderboard.map(p => ({
         ...p,
         country: db.getProfile(p.profile_id)?.country
