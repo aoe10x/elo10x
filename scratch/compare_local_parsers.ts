@@ -63,6 +63,46 @@ type ReplayComparison = {
   };
 };
 
+type Summary = {
+  total: number;
+  aocSuccess: number;
+  aoeSuccess: number;
+  bothSuccess: number;
+  aoeOnly: number;
+  aocOnly: number;
+  bothFail: number;
+  deltas: {
+    derivedIdChanged: number;
+    mapChanged: number;
+    startTimeChanged: number;
+    durationChanged: number;
+    playerSetChanged: number;
+    teamAssignmentsChanged: number;
+    winnerFlagsChanged: number;
+  };
+};
+
+type Recommendation = {
+  decision: 'migrate' | 'dual-parser' | 'stay-aoc-mgz';
+  confidence: 'low' | 'medium' | 'high';
+  rationale: string[];
+  metrics: {
+    primary: {
+      bothSuccess: number;
+      total: number;
+      criticalDeltaRate: number;
+      aoeOnly: number;
+      aocOnly: number;
+    };
+    failurePass: {
+      total: number;
+      aoeOnly: number;
+      aocOnly: number;
+      bothFail: number;
+    };
+  };
+};
+
 const execFilePromise = promisify(execFile);
 
 function stringToHash(str: string): number {
@@ -284,7 +324,20 @@ async function parseWithAoc(filePath: string): Promise<AocResult> {
 async function parseWithAoe(filePath: string): Promise<any> {
   const buffer = await fs.readFile(filePath);
   const arrayBuffer = buffer.buffer.slice(buffer.byteOffset, buffer.byteOffset + buffer.byteLength);
-  return parse_rec_summary(arrayBuffer);
+  return runWithSilencedConsoleError(() => parse_rec_summary(arrayBuffer));
+}
+
+function runWithSilencedConsoleError<T>(fn: () => T): T {
+  const originalConsoleError = console.error;
+  console.error = () => {
+    // aoe2rec-js uses panic hooks that emit huge stack traces on invalid data.
+    // We still capture parser failures via try/catch at the callsite.
+  };
+  try {
+    return fn();
+  } finally {
+    console.error = originalConsoleError;
+  }
 }
 
 function buildSummary(comparisons: ReplayComparison[]) {
@@ -294,6 +347,7 @@ function buildSummary(comparisons: ReplayComparison[]) {
   const bothSuccess = comparisons.filter(c => c.bothParsed).length;
   const aoeOnly = comparisons.filter(c => !c.aoc.parseOk && c.aoe.parseOk).length;
   const aocOnly = comparisons.filter(c => c.aoc.parseOk && !c.aoe.parseOk).length;
+  const bothFail = comparisons.filter(c => !c.aoc.parseOk && !c.aoe.parseOk).length;
 
   const deltaBase = comparisons.filter(c => c.bothParsed);
 
@@ -304,6 +358,7 @@ function buildSummary(comparisons: ReplayComparison[]) {
     bothSuccess,
     aoeOnly,
     aocOnly,
+    bothFail,
     deltas: {
       derivedIdChanged: deltaBase.filter(c => c.delta.derivedIdChanged).length,
       mapChanged: deltaBase.filter(c => c.delta.mapChanged).length,
@@ -313,10 +368,178 @@ function buildSummary(comparisons: ReplayComparison[]) {
       teamAssignmentsChanged: deltaBase.filter(c => c.delta.teamAssignmentsChanged).length,
       winnerFlagsChanged: deltaBase.filter(c => c.delta.winnerFlagsChanged).length
     }
+  } satisfies Summary;
+}
+
+function getCriticalDeltaRate(summary: Summary): number {
+  const criticalDeltas =
+    summary.deltas.derivedIdChanged +
+    summary.deltas.playerSetChanged +
+    summary.deltas.teamAssignmentsChanged +
+    summary.deltas.winnerFlagsChanged;
+
+  if (summary.bothSuccess === 0) return 1;
+  return criticalDeltas / summary.bothSuccess;
+}
+
+function buildRecommendation(primary: Summary, failurePass: Summary): Recommendation {
+  const criticalDeltaRate = getCriticalDeltaRate(primary);
+  const coverageGain = primary.aoeOnly + failurePass.aoeOnly;
+  const parityStrong = primary.bothSuccess >= Math.max(5, Math.floor(primary.total * 0.5)) && criticalDeltaRate <= 0.1;
+
+  const rationale: string[] = [];
+  rationale.push(
+    `Primary both-success coverage: ${primary.bothSuccess}/${primary.total}; critical delta rate: ${(criticalDeltaRate * 100).toFixed(1)}%.`
+  );
+  rationale.push(
+    `Incremental aoe2rec-js coverage wins (primary + failure pass): ${coverageGain}.`
+  );
+
+  if (parityStrong && coverageGain >= 3) {
+    rationale.push('Parity is strong and additional parse coverage is material.');
+    return {
+      decision: 'migrate',
+      confidence: coverageGain >= 6 ? 'high' : 'medium',
+      rationale,
+      metrics: {
+        primary: {
+          bothSuccess: primary.bothSuccess,
+          total: primary.total,
+          criticalDeltaRate,
+          aoeOnly: primary.aoeOnly,
+          aocOnly: primary.aocOnly
+        },
+        failurePass: {
+          total: failurePass.total,
+          aoeOnly: failurePass.aoeOnly,
+          aocOnly: failurePass.aocOnly,
+          bothFail: failurePass.bothFail
+        }
+      }
+    };
+  }
+
+  if (coverageGain > 0) {
+    rationale.push('aoe2rec-js adds coverage but parity is not yet strong enough for full cutover.');
+    return {
+      decision: 'dual-parser',
+      confidence: parityStrong ? 'medium' : 'high',
+      rationale,
+      metrics: {
+        primary: {
+          bothSuccess: primary.bothSuccess,
+          total: primary.total,
+          criticalDeltaRate,
+          aoeOnly: primary.aoeOnly,
+          aocOnly: primary.aocOnly
+        },
+        failurePass: {
+          total: failurePass.total,
+          aoeOnly: failurePass.aoeOnly,
+          aocOnly: failurePass.aocOnly,
+          bothFail: failurePass.bothFail
+        }
+      }
+    };
+  }
+
+  rationale.push('No meaningful incremental parse coverage found for aoe2rec-js in this run.');
+  return {
+    decision: 'stay-aoc-mgz',
+    confidence: 'high',
+    rationale,
+    metrics: {
+      primary: {
+        bothSuccess: primary.bothSuccess,
+        total: primary.total,
+        criticalDeltaRate,
+        aoeOnly: primary.aoeOnly,
+        aocOnly: primary.aocOnly
+      },
+      failurePass: {
+        total: failurePass.total,
+        aoeOnly: failurePass.aoeOnly,
+        aocOnly: failurePass.aocOnly,
+        bothFail: failurePass.bothFail
+      }
+    }
   };
 }
 
-function createMarkdownReport(summary: ReturnType<typeof buildSummary>, comparisons: ReplayComparison[], selectedFiles: string[]): string {
+async function parsePair(fileName: string, filePath: string): Promise<ReplayComparison> {
+  let aoc: NormalizedReplay;
+  let aoe: NormalizedReplay;
+
+  try {
+    const aocRaw = await parseWithAoc(filePath);
+    aoc = normalizeAoc(fileName, aocRaw, true);
+  } catch (err: any) {
+    aoc = normalizeAoc(fileName, {}, false, String(err?.message ?? err));
+  }
+
+  try {
+    const aoeRaw = await parseWithAoe(filePath);
+    aoe = normalizeAoe(fileName, aoeRaw, true);
+  } catch (err: any) {
+    aoe = normalizeAoe(fileName, {}, false, String(err?.message ?? err));
+  }
+
+  return compareReplays(fileName, filePath, aoc, aoe);
+}
+
+async function buildComparisonsForSelection(selectedFiles: string[], replayDirs: string[]): Promise<ReplayComparison[]> {
+  const comparisons: ReplayComparison[] = [];
+
+  for (const fileName of selectedFiles) {
+    const filePath = await resolveReplayPath(fileName, replayDirs);
+    if (!filePath) continue;
+    comparisons.push(await parsePair(fileName, filePath));
+  }
+
+  return comparisons;
+}
+
+async function buildFailureFocusedComparisons(
+  allFiles: string[],
+  replayDirs: string[],
+  existingByName: Map<string, ReplayComparison>,
+  targetFailures: number
+): Promise<ReplayComparison[]> {
+  const failureFocused: ReplayComparison[] = [];
+
+  for (const fileName of allFiles) {
+    if (failureFocused.length >= targetFailures) break;
+
+    const existing = existingByName.get(fileName);
+    if (existing) {
+      if (!existing.aoc.parseOk) {
+        failureFocused.push(existing);
+      }
+      continue;
+    }
+
+    const filePath = await resolveReplayPath(fileName, replayDirs);
+    if (!filePath) continue;
+
+    const comparison = await parsePair(fileName, filePath);
+    existingByName.set(fileName, comparison);
+
+    if (!comparison.aoc.parseOk) {
+      failureFocused.push(comparison);
+    }
+  }
+
+  return failureFocused;
+}
+
+function createMarkdownReport(
+  primarySummary: Summary,
+  primaryComparisons: ReplayComparison[],
+  selectedFiles: string[],
+  failureSummary: Summary,
+  failureComparisons: ReplayComparison[],
+  recommendation: Recommendation
+): string {
   const lines: string[] = [];
   lines.push('# Local Parser Comparison Report');
   lines.push('');
@@ -325,32 +548,49 @@ function createMarkdownReport(summary: ReturnType<typeof buildSummary>, comparis
   lines.push('## Scope');
   lines.push('');
   lines.push(`- Sample size requested: ${selectedFiles.length}`);
-  lines.push(`- Replays resolved and compared: ${comparisons.length}`);
+  lines.push(`- Replays resolved and compared: ${primaryComparisons.length}`);
+  lines.push(`- Failure-focused target: ${failureComparisons.length}`);
   lines.push('');
   lines.push('## Parse Coverage');
   lines.push('');
-  lines.push(`- aoc-mgz successes: ${summary.aocSuccess}/${summary.total}`);
-  lines.push(`- aoe2rec-js successes: ${summary.aoeSuccess}/${summary.total}`);
-  lines.push(`- both successful: ${summary.bothSuccess}/${summary.total}`);
-  lines.push(`- aoe2rec-js only successful: ${summary.aoeOnly}`);
-  lines.push(`- aoc-mgz only successful: ${summary.aocOnly}`);
+  lines.push(`- aoc-mgz successes: ${primarySummary.aocSuccess}/${primarySummary.total}`);
+  lines.push(`- aoe2rec-js successes: ${primarySummary.aoeSuccess}/${primarySummary.total}`);
+  lines.push(`- both successful: ${primarySummary.bothSuccess}/${primarySummary.total}`);
+  lines.push(`- aoe2rec-js only successful: ${primarySummary.aoeOnly}`);
+  lines.push(`- aoc-mgz only successful: ${primarySummary.aocOnly}`);
+  lines.push(`- both failed: ${primarySummary.bothFail}`);
   lines.push('');
   lines.push('## Delta Counts On Dual-Success Replays');
   lines.push('');
-  lines.push(`- derived numeric id changed: ${summary.deltas.derivedIdChanged}`);
-  lines.push(`- map changed: ${summary.deltas.mapChanged}`);
-  lines.push(`- start time changed: ${summary.deltas.startTimeChanged}`);
-  lines.push(`- duration changed: ${summary.deltas.durationChanged}`);
-  lines.push(`- player set changed: ${summary.deltas.playerSetChanged}`);
-  lines.push(`- team assignments changed: ${summary.deltas.teamAssignmentsChanged}`);
-  lines.push(`- winner flags changed: ${summary.deltas.winnerFlagsChanged}`);
+  lines.push(`- derived numeric id changed: ${primarySummary.deltas.derivedIdChanged}`);
+  lines.push(`- map changed: ${primarySummary.deltas.mapChanged}`);
+  lines.push(`- start time changed: ${primarySummary.deltas.startTimeChanged}`);
+  lines.push(`- duration changed: ${primarySummary.deltas.durationChanged}`);
+  lines.push(`- player set changed: ${primarySummary.deltas.playerSetChanged}`);
+  lines.push(`- team assignments changed: ${primarySummary.deltas.teamAssignmentsChanged}`);
+  lines.push(`- winner flags changed: ${primarySummary.deltas.winnerFlagsChanged}`);
+  lines.push('');
+  lines.push('## Failure-Focused Coverage');
+  lines.push('');
+  lines.push(`- records analyzed: ${failureSummary.total}`);
+  lines.push(`- aoe2rec-js only successful: ${failureSummary.aoeOnly}`);
+  lines.push(`- aoc-mgz only successful: ${failureSummary.aocOnly}`);
+  lines.push(`- both failed: ${failureSummary.bothFail}`);
+  lines.push('');
+  lines.push('## Recommendation');
+  lines.push('');
+  lines.push(`- decision: ${recommendation.decision}`);
+  lines.push(`- confidence: ${recommendation.confidence}`);
+  for (const reason of recommendation.rationale) {
+    lines.push(`- ${reason}`);
+  }
   lines.push('');
   lines.push('## Per Replay Results');
   lines.push('');
   lines.push('| File | aoc-mgz | aoe2rec-js | Both | Key Delta Flags |');
   lines.push('|---|---|---|---|---|');
 
-  for (const c of comparisons) {
+  for (const c of primaryComparisons) {
     const flags: string[] = [];
     if (c.delta.derivedIdChanged) flags.push('id');
     if (c.delta.mapChanged) flags.push('map');
@@ -371,15 +611,21 @@ async function main(): Promise<void> {
     args: process.argv.slice(2),
     options: {
       sample: { type: 'string' },
+      'failure-sample': { type: 'string' },
       outdir: { type: 'string' }
     }
   });
 
   const sampleSize = args.values.sample ? Number(args.values.sample) : 20;
+  const failureSampleSize = args.values['failure-sample'] ? Number(args.values['failure-sample']) : 20;
   const outDir = args.values.outdir ? String(args.values.outdir) : path.join('scratch', 'results', 'parser-compare');
 
   if (!Number.isFinite(sampleSize) || sampleSize <= 0) {
     throw new Error('sample must be a positive integer');
+  }
+
+  if (!Number.isFinite(failureSampleSize) || failureSampleSize <= 0) {
+    throw new Error('failure-sample must be a positive integer');
   }
 
   const repoRoot = process.cwd();
@@ -389,47 +635,56 @@ async function main(): Promise<void> {
 
   await fs.mkdir(outDir, { recursive: true });
 
-  const comparisons: ReplayComparison[] = [];
+  const primaryComparisons = await buildComparisonsForSelection(selectedFiles, replayDirs);
+  const comparisonByName = new Map(primaryComparisons.map(c => [c.fileName, c]));
+  const failureComparisons = await buildFailureFocusedComparisons(
+    importedFiles,
+    replayDirs,
+    comparisonByName,
+    failureSampleSize
+  );
 
-  for (const fileName of selectedFiles) {
-    const filePath = await resolveReplayPath(fileName, replayDirs);
-    if (!filePath) continue;
-
-    let aoc: NormalizedReplay;
-    let aoe: NormalizedReplay;
-
-    try {
-      const aocRaw = await parseWithAoc(filePath);
-      aoc = normalizeAoc(fileName, aocRaw, true);
-    } catch (err: any) {
-      aoc = normalizeAoc(fileName, {}, false, String(err?.message ?? err));
-    }
-
-    try {
-      const aoeRaw = await parseWithAoe(filePath);
-      aoe = normalizeAoe(fileName, aoeRaw, true);
-    } catch (err: any) {
-      aoe = normalizeAoe(fileName, {}, false, String(err?.message ?? err));
-    }
-
-    comparisons.push(compareReplays(fileName, filePath, aoc, aoe));
-  }
-
-  const summary = buildSummary(comparisons);
+  const primarySummary = buildSummary(primaryComparisons);
+  const failureSummary = buildSummary(failureComparisons);
+  const recommendation = buildRecommendation(primarySummary, failureSummary);
   const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
 
   const jsonPath = path.join(outDir, `comparison-${timestamp}.json`);
   const mdPath = path.join(outDir, `comparison-${timestamp}.md`);
 
-  await fs.writeFile(jsonPath, JSON.stringify({ summary, comparisons }, null, 2), 'utf-8');
-  await fs.writeFile(mdPath, createMarkdownReport(summary, comparisons, selectedFiles), 'utf-8');
+  await fs.writeFile(
+    jsonPath,
+    JSON.stringify({
+      primarySummary,
+      failureSummary,
+      recommendation,
+      primaryComparisons,
+      failureComparisons
+    }, null, 2),
+    'utf-8'
+  );
+  await fs.writeFile(
+    mdPath,
+    createMarkdownReport(
+      primarySummary,
+      primaryComparisons,
+      selectedFiles,
+      failureSummary,
+      failureComparisons,
+      recommendation
+    ),
+    'utf-8'
+  );
 
   console.log('Local parser comparison finished.');
-  console.log(`Sample requested: ${selectedFiles.length}`);
-  console.log(`Replays resolved: ${comparisons.length}`);
-  console.log(`aoc-mgz success: ${summary.aocSuccess}/${summary.total}`);
-  console.log(`aoe2rec-js success: ${summary.aoeSuccess}/${summary.total}`);
-  console.log(`Both success: ${summary.bothSuccess}/${summary.total}`);
+  console.log(`Sample requested: ${selectedFiles.length} (primary), ${failureSampleSize} (failure-focused target)`);
+  console.log(`Primary resolved: ${primaryComparisons.length}`);
+  console.log(`Failure-focused resolved: ${failureComparisons.length}`);
+  console.log(`Primary aoc-mgz success: ${primarySummary.aocSuccess}/${primarySummary.total}`);
+  console.log(`Primary aoe2rec-js success: ${primarySummary.aoeSuccess}/${primarySummary.total}`);
+  console.log(`Primary both success: ${primarySummary.bothSuccess}/${primarySummary.total}`);
+  console.log(`Failure aoe2rec-js-only wins: ${failureSummary.aoeOnly}`);
+  console.log(`Decision: ${recommendation.decision} (${recommendation.confidence})`);
   console.log(`JSON report: ${jsonPath}`);
   console.log(`Markdown report: ${mdPath}`);
 }
