@@ -107,7 +107,10 @@ async function main(): Promise<void> {
       totalPlayers: ratingsMap.size,
       leaderboardCount: leaderboard.length,
       config: { minGames, kFactor, provisional },
-      players: leaderboard
+      players: leaderboard.map(p => ({
+        ...p,
+        country: db.getProfile(p.profile_id)?.country
+      }))
     };
     
     await fs.writeFile(leaderboardPath, JSON.stringify(payload, null, 2), 'utf-8');
