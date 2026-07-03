@@ -1,0 +1,21 @@
+{
+  "name": "elo10x",
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.20.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "pnpm run typecheck && pnpm run test:node",
+    "test:node": "node --experimental-strip-types --test test/**/*.test.ts",
+    "crawl": "node --experimental-strip-types src/cli.ts --crawl",
+    "elo": "node --experimental-strip-types src/cli.ts --elo",
+    "dev": "node --experimental-strip-types src/server.ts",
+    "preflight": "pnpm run typecheck && pnpm run test"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "typescript": "^5.7.3"
+  }
+}

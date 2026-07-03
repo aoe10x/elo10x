@@ -1,0 +1,82 @@
+export interface MatchPlayer {
+  profile_id: number;
+  teamid: number;
+  resulttype: number; // 1 = Win, 2 = Loss
+  race_id: number;
+  alias: string;
+}
+
+export interface Match {
+  id: number;
+  creator_profile_id?: number;
+  mapname: string;
+  maxplayers: number;
+  matchtype_id: number;
+  description: string; // Lobby title
+  startgametime: number; // Unix timestamp (seconds)
+  completiontime: number; // Unix timestamp (seconds)
+  players: MatchPlayer[];
+}
+
+export interface PlayerProfile {
+  profile_id: number;
+  alias: string;
+  xp?: number;
+  level?: number;
+  country?: string;
+}
+
+export interface EloRanking {
+  profile_id: number;
+  alias: string;
+  rating: number;
+  wins: number;
+  losses: number;
+  gamesCount: number;
+  winRate: number;
+  lastPlayedAt: number;
+}
+
+export interface DatabaseSchema {
+  matches: Record<number, Match>;
+  profiles: Record<number, PlayerProfile>;
+  crawled_profiles: Record<number, number>; // profile_id -> timestamp (ms) when crawled
+  crawl_queue: number[];
+}
+
+export interface Lobby {
+  matchId: number;
+  steamLobbyId: string;
+  region: string;
+  name: string;
+  map: string;
+  speed: string;
+  popCap: number;
+  turbo: boolean;
+  passwordProtected: boolean;
+  slotsTaken: number;
+  slotsTotal: number;
+  status: string;
+  host: {
+    profileId: number;
+    name: string;
+    elo: number | null;
+    country: string;
+    team: number;
+    ready: boolean;
+  };
+  players: Array<{
+    profileId: number;
+    name: string;
+    elo: number | null;
+    country: string;
+    team: number;
+    ready: boolean;
+  }>;
+  observers: {
+    count: number;
+    max: number;
+  };
+  avgElo: number | null;
+  joinUrl: string;
+}

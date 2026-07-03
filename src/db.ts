@@ -1,0 +1,129 @@
+import { promises as fs } from 'node:fs';
+import * as path from 'node:path';
+import type { DatabaseSchema, Match, PlayerProfile } from './types.ts';
+
+export class JsonDatabase {
+  private filePath: string;
+  private data!: DatabaseSchema;
+  private isLoaded: boolean = false;
+
+  constructor(filePath: string = path.join(process.cwd(), 'data', 'db.json')) {
+    this.filePath = filePath;
+  }
+
+  async load(): Promise<void> {
+    if (this.isLoaded) return;
+
+    const dir = path.dirname(this.filePath);
+    try {
+      await fs.mkdir(dir, { recursive: true });
+    } catch {
+      // Directory exists or couldn't be created
+    }
+
+    try {
+      const fileContent = await fs.readFile(this.filePath, 'utf-8');
+      this.data = JSON.parse(fileContent);
+      // Ensure all fields are initialized in case of legacy formats
+      this.data.matches = this.data.matches || {};
+      this.data.profiles = this.data.profiles || {};
+      this.data.crawled_profiles = this.data.crawled_profiles || {};
+      this.data.crawl_queue = this.data.crawl_queue || [];
+    } catch (error: any) {
+      if (error.code === 'ENOENT') {
+        this.data = {
+          matches: {},
+          profiles: {},
+          crawled_profiles: {},
+          crawl_queue: []
+        };
+        await this.save();
+      } else {
+        throw new Error(`Failed to read database: ${error.message}`);
+      }
+    }
+
+    this.isLoaded = true;
+  }
+
+  async save(): Promise<void> {
+    const tempPath = `${this.filePath}.tmp`;
+    try {
+      await fs.writeFile(tempPath, JSON.stringify(this.data, null, 2), 'utf-8');
+      await fs.rename(tempPath, this.filePath);
+    } catch (error: any) {
+      throw new Error(`Failed to save database atomically: ${error.message}`);
+    }
+  }
+
+  // Matches
+  hasMatch(id: number): boolean {
+    return !!this.data.matches[id];
+  }
+
+  addMatch(match: Match): void {
+    this.data.matches[match.id] = match;
+  }
+
+  getMatches(): Match[] {
+    return Object.values(this.data.matches);
+  }
+
+  getMatchesCount(): number {
+    return Object.keys(this.data.matches).length;
+  }
+
+  // Profiles
+  addProfile(profile: PlayerProfile): void {
+    // Merge updates or create new profile
+    const existing = this.data.profiles[profile.profile_id];
+    if (existing) {
+      this.data.profiles[profile.profile_id] = {
+        ...existing,
+        ...profile
+      };
+    } else {
+      this.data.profiles[profile.profile_id] = profile;
+    }
+  }
+
+  getProfile(profile_id: number): PlayerProfile | undefined {
+    return this.data.profiles[profile_id];
+  }
+
+  getProfilesCount(): number {
+    return Object.keys(this.data.profiles).length;
+  }
+
+  // Crawl Queue
+  addToCrawlQueue(profile_ids: number[]): void {
+    for (const id of profile_ids) {
+      if (!this.isCrawled(id) && !this.data.crawl_queue.includes(id)) {
+        this.data.crawl_queue.push(id);
+      }
+    }
+  }
+
+  popFromCrawlQueue(): number | undefined {
+    return this.data.crawl_queue.shift();
+  }
+
+  getCrawlQueueLength(): number {
+    return this.data.crawl_queue.length;
+  }
+
+  // Crawled Profiles
+  markAsCrawled(profile_id: number): void {
+    this.data.crawled_profiles[profile_id] = Date.now();
+    // Remove from queue if present
+    this.data.crawl_queue = this.data.crawl_queue.filter(id => id !== profile_id);
+  }
+
+  isCrawled(profile_id: number): boolean {
+    return !!this.data.crawled_profiles[profile_id];
+  }
+
+  getCrawledCount(): number {
+    return Object.keys(this.data.crawled_profiles).length;
+  }
+}
