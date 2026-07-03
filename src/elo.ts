@@ -31,12 +31,25 @@ export class EloCalculator {
 
     for (const match of sortedMatches) {
       // Group players by team ID
-      const teamPlayers = new Map<number, typeof match.players>();
+      let teamPlayers = new Map<number, typeof match.players>();
       for (const p of match.players) {
         if (!teamPlayers.has(p.teamid)) {
           teamPlayers.set(p.teamid, []);
         }
         teamPlayers.get(p.teamid)!.push(p);
+      }
+
+      // If team grouping doesn't result in exactly 2 teams, try to reconstruct teams based on resulttype
+      if (teamPlayers.size !== 2) {
+        const winners = match.players.filter(p => p.resulttype === 1);
+        const losers = match.players.filter(p => p.resulttype === 0);
+        
+        if (winners.length > 0 && losers.length > 0) {
+          teamPlayers = new Map<number, typeof match.players>();
+          // Assign team ID 1 to winners, 0 to losers
+          teamPlayers.set(1, winners.map(p => ({ ...p, teamid: 1 })));
+          teamPlayers.set(0, losers.map(p => ({ ...p, teamid: 0 })));
+        }
       }
 
       // We only compute ELO for games with exactly 2 teams
