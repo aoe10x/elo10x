@@ -196,7 +196,8 @@ export class MatchCrawler {
             description: lobbyTitle,
             startgametime: m.startgametime,
             completiontime: m.completiontime,
-            players: participants
+            players: participants,
+            gamemod_id: m.gamemod_id
           };
 
           this.db.addMatch(matchObj);

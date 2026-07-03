@@ -16,6 +16,7 @@ export interface Match {
   startgametime: number; // Unix timestamp (seconds)
   completiontime: number; // Unix timestamp (seconds)
   players: MatchPlayer[];
+  gamemod_id?: number;
 }
 
 export interface PlayerProfile {
@@ -35,6 +36,7 @@ export interface EloRanking {
   gamesCount: number;
   winRate: number;
   lastPlayedAt: number;
+  country?: string;
 }
 
 export interface DatabaseSchema {

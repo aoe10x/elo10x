@@ -878,9 +878,13 @@
         if (player.winRate >= 60) winrateClass = 'winrate-high';
         else if (player.winRate <= 40) winrateClass = 'winrate-low';
 
+        const flagHtml = player.country 
+          ? `<img src="https://flagcdn.com/16x12/${player.country.toLowerCase()}.png" width="16" height="12" alt="${player.country.toUpperCase()}" style="margin-right: 8px; vertical-align: middle; border-radius: 2px; border: 1px solid rgba(255,255,255,0.15);" title="${player.country.toUpperCase()}">` 
+          : '';
+
         row.innerHTML = `
           <td class="col-rank">${rankContent}</td>
-          <td class="col-alias">${escapeHtml(player.alias)}</td>
+          <td class="col-alias">${flagHtml}${escapeHtml(player.alias)}</td>
           <td class="col-elo">${player.rating}</td>
           <td class="col-record">${player.wins}W - ${player.losses}L</td>
           <td class="col-winrate">
@@ -899,7 +903,10 @@
     }
 
     function showPlayerModal(player, rank) {
-      elements.modalAlias.textContent = player.alias;
+      const flagHtml = player.country 
+        ? `<img src="https://flagcdn.com/20x15/${player.country.toLowerCase()}.png" width="20" height="15" alt="${player.country.toUpperCase()}" style="margin-right: 10px; vertical-align: middle; border-radius: 2px; border: 1px solid rgba(255,255,255,0.2);" title="${player.country.toUpperCase()}">` 
+        : '';
+      elements.modalAlias.innerHTML = flagHtml + escapeHtml(player.alias);
       elements.modalRank.textContent = '#' + rank;
       elements.modalRating.textContent = player.rating;
       elements.modalGames.textContent = player.gamesCount;
