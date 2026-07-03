@@ -31,6 +31,7 @@ export class JsonDatabase {
       this.data.profiles = this.data.profiles || {};
       this.data.crawled_profiles = this.data.crawled_profiles || {};
       this.data.crawl_queue = this.data.crawl_queue || [];
+      this.backfillMatchSources();
       this.backfillMatchFingerprints();
     } catch (error: any) {
       if (error.code === 'ENOENT') {
@@ -132,6 +133,21 @@ export class JsonDatabase {
       const fingerprint = buildMatchFingerprint(match);
       if (this.data.match_fingerprints[fingerprint] === undefined) {
         this.data.match_fingerprints[fingerprint] = match.id;
+      }
+    }
+  }
+
+  private backfillMatchSources(): void {
+    for (const match of Object.values(this.data.matches)) {
+      if (match.source) {
+        continue;
+      }
+
+      // Relic API records usually include creator/gamemod metadata; local imports usually do not.
+      if (match.creator_profile_id !== undefined || match.gamemod_id !== undefined) {
+        match.source = 'relic_api';
+      } else {
+        match.source = 'local_replay_mgz';
       }
     }
   }

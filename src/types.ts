@@ -6,8 +6,15 @@ export interface MatchPlayer {
   alias: string;
 }
 
+export type MatchSource =
+  | 'relic_api'
+  | 'local_replay_mgz'
+  | 'local_replay_aoe2rec'
+  | 'unknown';
+
 export interface Match {
   id: number;
+  source?: MatchSource;
   creator_profile_id?: number;
   mapname: string;
   maxplayers: number;
