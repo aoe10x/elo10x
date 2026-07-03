@@ -4,12 +4,36 @@ import * as path from 'node:path';
 import * as os from 'node:os';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
+import { parse_rec_summary } from 'aoe2rec-js';
 import { JsonDatabase } from './db.ts';
 import { EloCalculator } from './elo.ts';
-import type { Match, MatchPlayer } from './types.ts';
+import { MAP_NAMES } from './civ-data.ts';
+import type { Match, MatchPlayer, MatchSource } from './types.ts';
 import { buildMatchFingerprint } from './match_fingerprint.ts';
 
 const execFilePromise = promisify(execFile);
+
+type ParserMode = 'mgz' | 'aoe2rec' | 'auto';
+
+type ParsedReplay = {
+  match_id?: string;
+  lobby_name?: string;
+  map_name?: string;
+  start_time?: number;
+  duration?: number;
+  players?: Array<{
+    profile_id?: number;
+    alias?: string;
+    civ_id?: number;
+    team_id?: number | null;
+    winner?: boolean;
+  }>;
+};
+
+type ParserResult = {
+  parsed: ParsedReplay;
+  parserUsed: 'mgz' | 'aoe2rec';
+};
 
 // Helper to hash strings to a stable positive integer
 function stringToHash(str: string): number {
@@ -21,6 +45,94 @@ function stringToHash(str: string): number {
     hash |= 0; // Convert to 32bit integer
   }
   return Math.abs(hash);
+}
+
+function getParserMode(): ParserMode {
+  const raw = (process.env.IMPORT_LOCAL_PARSER ?? 'auto').toLowerCase();
+  if (raw === 'mgz' || raw === 'aoe2rec' || raw === 'auto') {
+    return raw;
+  }
+
+  console.warn(`Invalid IMPORT_LOCAL_PARSER value "${raw}". Falling back to auto.`);
+  return 'auto';
+}
+
+function shouldAssume10xWhenLobbyMissing(): boolean {
+  const raw = (process.env.IMPORT_LOCAL_ASSUME_10X_WHEN_LOBBY_MISSING ?? '0').toLowerCase();
+  return raw === '1' || raw === 'true' || raw === 'yes';
+}
+
+function runWithSilencedConsoleError<T>(fn: () => T): T {
+  const originalConsoleError = console.error;
+  console.error = () => {
+    // aoe2rec-js panic hooks emit very large stack traces on invalid data.
+    // We intentionally silence these and handle errors via try/catch at callsite.
+  };
+  try {
+    return fn();
+  } finally {
+    console.error = originalConsoleError;
+  }
+}
+
+async function parseWithMgz(filePath: string): Promise<ParsedReplay> {
+  const { stdout } = await execFilePromise('python', ['src/parse_replay.py', filePath]);
+  return JSON.parse(stdout) as ParsedReplay;
+}
+
+async function parseWithAoe2rec(filePath: string): Promise<ParsedReplay> {
+  const buffer = await fs.readFile(filePath);
+  const arrayBuffer = buffer.buffer.slice(buffer.byteOffset, buffer.byteOffset + buffer.byteLength);
+  const summary = runWithSilencedConsoleError(() => parse_rec_summary(arrayBuffer));
+
+  const teams = Array.isArray(summary?.teams) ? summary.teams : [];
+  const players: ParsedReplay['players'] = [];
+
+  for (let teamIndex = 0; teamIndex < teams.length; teamIndex++) {
+    const team = teams[teamIndex];
+    const teamWinner = team?.winner === true;
+    const teamPlayers = Array.isArray(team?.players) ? team.players : [];
+
+    for (const p of teamPlayers) {
+      players.push({
+        profile_id: Number(p?.profile_id ?? 0),
+        alias: String(p?.name ?? ''),
+        civ_id: Number(p?.civ_id ?? 0),
+        team_id: teamIndex,
+        winner: teamWinner,
+      });
+    }
+  }
+
+  const mapId = Number(summary?.header?.game_settings?.resolved_map_id ?? -1);
+  const mapName = MAP_NAMES[mapId] ?? `Map #${mapId}`;
+  const startTime = Number(summary?.header?.timestamp ?? 0);
+  const durationSec = Math.floor(Number(summary?.duration ?? 0) / 1000);
+
+  return {
+    match_id: undefined,
+    lobby_name: '',
+    map_name: mapName,
+    start_time: startTime,
+    duration: durationSec,
+    players,
+  };
+}
+
+async function parseReplayByMode(filePath: string, parserMode: ParserMode): Promise<ParserResult> {
+  if (parserMode === 'mgz') {
+    return { parsed: await parseWithMgz(filePath), parserUsed: 'mgz' };
+  }
+
+  if (parserMode === 'aoe2rec') {
+    return { parsed: await parseWithAoe2rec(filePath), parserUsed: 'aoe2rec' };
+  }
+
+  try {
+    return { parsed: await parseWithMgz(filePath), parserUsed: 'mgz' };
+  } catch {
+    return { parsed: await parseWithAoe2rec(filePath), parserUsed: 'aoe2rec' };
+  }
 }
 
 async function locateReplaysDirs(): Promise<string[]> {
@@ -81,6 +193,8 @@ async function locateReplaysDirs(): Promise<string[]> {
 
 async function main(): Promise<void> {
 let replaysDirs: string[];
+  const parserMode = getParserMode();
+  const assume10xWhenLobbyMissing = shouldAssume10xWhenLobbyMissing();
   try {
     replaysDirs = await locateReplaysDirs();
   } catch (err: any) {
@@ -89,6 +203,10 @@ let replaysDirs: string[];
   }
 
   console.log(`Replays folders located: ${replaysDirs}`);
+  console.log(`Parser mode: ${parserMode}`);
+  if (assume10xWhenLobbyMissing) {
+    console.log('10x fallback enabled for missing lobby names.');
+  }
 
   // Load database
   const db = new JsonDatabase();
@@ -145,15 +263,20 @@ let replaysDirs: string[];
       console.log(`[${count}/${filesToProcess.length}] (${pct}%) Processing ${filename}...`);
 
       try {
-        // Spawn Python parser
-        const { stdout } = await execFilePromise('python', ['src/parse_replay.py', filePath]);
-        const parsedJson = JSON.parse(stdout);
+        const { parsed: parsedJson, parserUsed } = await parseReplayByMode(filePath, parserMode);
+        const matchSource: MatchSource = parserUsed === 'mgz' ? 'local_replay_mgz' : 'local_replay_aoe2rec';
 
         // Verify if the match is a "10x" game (lobby name contains "10x" case-insensitively)
         const lobbyTitle = parsedJson.lobby_name || '';
-        const is10x = /10x/i.test(lobbyTitle);
+        let is10x = /10x/i.test(lobbyTitle);
+        if (!is10x && parserUsed === 'aoe2rec' && !lobbyTitle && assume10xWhenLobbyMissing) {
+          is10x = true;
+        }
 
         if (!is10x) {
+          if (parserUsed === 'aoe2rec' && !lobbyTitle) {
+            console.log(`Skipping ${filename}: aoe2rec parser has no lobby name and 10x fallback is disabled.`);
+          }
           // Not a 10x game, skip it but mark as processed to avoid re-parsing next time
           importedFilenames.add(filename);
           continue;
@@ -215,7 +338,7 @@ let replaysDirs: string[];
 
         const matchObj: Match = {
           id: numericId,
-          source: 'local_replay_mgz',
+          source: matchSource,
           mapname: parsedJson.map_name || 'Unknown Map',
           maxplayers: participants.length,
           matchtype_id: 0,
