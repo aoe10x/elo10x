@@ -9,7 +9,7 @@ export interface EloConfig {
 const DEFAULT_CONFIG: EloConfig = {
   defaultRating: 1000,
   kFactor: 32,
-  minGamesForLeaderboard: 10
+  minGamesForLeaderboard: 5
 };
 
 export class EloCalculator {
