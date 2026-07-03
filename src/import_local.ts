@@ -111,109 +111,131 @@ async function main(): Promise<void> {
 
   console.log(`Found ${allFiles.length} replay file(s).`);
 
+  const filesToProcess = allFiles.filter(f => !importedFiles.has(f));
+  console.log(`Need to process ${filesToProcess.length} new replay file(s).`);
+
+  if (filesToProcess.length === 0) {
+    console.log("No new replays to import.");
+    return;
+  }
+
   let dbUpdated = false;
   let newImportCount = 0;
 
-  for (const filename of allFiles) {
-    if (importedFiles.has(filename)) {
-      continue; // Skip already processed files
-    }
+  const CONCURRENCY = 8;
+  let activeIndex = 0;
+  let processedCount = 0;
 
-    const filePath = path.join(replaysDir, filename);
-    console.log(`Processing ${filename}...`);
+  async function worker() {
+    while (activeIndex < filesToProcess.length) {
+      const index = activeIndex++;
+      const filename = filesToProcess[index];
+      const filePath = path.join(replaysDir, filename);
 
-    try {
-      // Spawn Python parser
-      const { stdout } = await execFilePromise('python', ['src/parse_replay.py', filePath]);
-      const parsedJson = JSON.parse(stdout);
+      const count = ++processedCount;
+      const pct = ((count / filesToProcess.length) * 100).toFixed(1);
+      console.log(`[${count}/${filesToProcess.length}] (${pct}%) Processing ${filename}...`);
 
-      // Verify if the match is a "10x" game (lobby name contains "10x" case-insensitively)
-      const lobbyTitle = parsedJson.lobby_name || '';
-      const is10x = /10x/i.test(lobbyTitle);
+      try {
+        // Spawn Python parser
+        const { stdout } = await execFilePromise('python', ['src/parse_replay.py', filePath]);
+        const parsedJson = JSON.parse(stdout);
 
-      if (!is10x) {
-        // Not a 10x game, skip it but mark as processed to avoid re-parsing next time
-        importedFiles.add(filename);
-        continue;
-      }
+        // Verify if the match is a "10x" game (lobby name contains "10x" case-insensitively)
+        const lobbyTitle = parsedJson.lobby_name || '';
+        const is10x = /10x/i.test(lobbyTitle);
 
-      // Generate stable numeric ID
-      let numericId: number;
-      if (parsedJson.match_id) {
-        numericId = stringToHash(parsedJson.match_id);
-      } else {
-        const playerKeys = (parsedJson.players || [])
-          .map((p: any) => p.profile_id)
-          .sort()
-          .join(',');
-        const uniqueString = `${parsedJson.start_time}_${playerKeys}_${parsedJson.map_name}`;
-        numericId = stringToHash(uniqueString);
-      }
-
-      // Check if match is already in db.json
-      if (db.hasMatch(numericId)) {
-        console.log(`Match ${numericId} (${lobbyTitle}) already exists in database.`);
-        importedFiles.add(filename);
-        continue;
-      }
-
-      // Map players
-      const participants: MatchPlayer[] = [];
-      const playersList = parsedJson.players || [];
-
-      for (const p of playersList) {
-        const pId = Number(p.profile_id);
-        if (!pId || pId <= 0 || pId === 4294967295) {
-          continue; // Skip invalid players/AIs/empty slots
+        if (!is10x) {
+          // Not a 10x game, skip it but mark as processed to avoid re-parsing next time
+          importedFiles.add(filename);
+          continue;
         }
 
-        const resulttype = p.winner === true ? 1 : 0;
-        const teamid = p.team_id !== null && p.team_id !== undefined ? Number(p.team_id) : 0;
+        // Generate stable numeric ID
+        let numericId: number;
+        if (parsedJson.match_id) {
+          numericId = stringToHash(parsedJson.match_id);
+        } else {
+          const playerKeys = (parsedJson.players || [])
+            .map((p: any) => p.profile_id)
+            .sort()
+            .join(',');
+          const uniqueString = `${parsedJson.start_time}_${playerKeys}_${parsedJson.map_name}`;
+          numericId = stringToHash(uniqueString);
+        }
 
-        participants.push({
-          profile_id: pId,
-          teamid: teamid,
-          resulttype: resulttype,
-          race_id: p.civ_id !== null && p.civ_id !== undefined ? Number(p.civ_id) : 0,
-          alias: p.alias || `Player_${pId}`
-        });
+        // Check if match is already in db.json
+        if (db.hasMatch(numericId)) {
+          console.log(`Match ${numericId} (${lobbyTitle}) already exists in database.`);
+          importedFiles.add(filename);
+          continue;
+        }
 
-        // Add profile to DB profile list
-        db.addProfile({
-          profile_id: pId,
-          alias: p.alias || `Player_${pId}`
-        });
-      }
+        // Map players
+        const participants: MatchPlayer[] = [];
+        const playersList = parsedJson.players || [];
 
-      if (participants.length === 0) {
-        console.log(`Skipping match ${numericId} because it has no valid human players.`);
+        for (const p of playersList) {
+          const pId = Number(p.profile_id);
+          if (!pId || pId <= 0 || pId === 4294967295) {
+            continue; // Skip invalid players/AIs/empty slots
+          }
+
+          const resulttype = p.winner === true ? 1 : 0;
+          const teamid = p.team_id !== null && p.team_id !== undefined ? Number(p.team_id) : 0;
+
+          participants.push({
+            profile_id: pId,
+            teamid: teamid,
+            resulttype: resulttype,
+            race_id: p.civ_id !== null && p.civ_id !== undefined ? Number(p.civ_id) : 0,
+            alias: p.alias || `Player_${pId}`
+          });
+
+          // Add profile to DB profile list
+          db.addProfile({
+            profile_id: pId,
+            alias: p.alias || `Player_${pId}`
+          });
+        }
+
+        if (participants.length === 0) {
+          console.log(`Skipping match ${numericId} because it has no valid human players.`);
+          importedFiles.add(filename);
+          continue;
+        }
+
+        const matchObj: Match = {
+          id: numericId,
+          mapname: parsedJson.map_name || 'Unknown Map',
+          maxplayers: participants.length,
+          matchtype_id: 0,
+          description: lobbyTitle,
+          startgametime: parsedJson.start_time || Math.floor(Date.now() / 1000),
+          completiontime: (parsedJson.start_time || Math.floor(Date.now() / 1000)) + (parsedJson.duration || 0),
+          players: participants
+        };
+
+        db.addMatch(matchObj);
+        console.log(`Successfully parsed, and logged 10x match [${numericId} / ${lobbyTitle}]`);
+        dbUpdated = true;
+        newImportCount++;
+
         importedFiles.add(filename);
-        continue;
+      } catch (err: any) {
+        console.warn(`[Skip] Failed to process replay ${filename}: ${err.message.trim()}`);
+        // Mark as imported to avoid constant retrying
+        importedFiles.add(filename);
       }
-
-      const matchObj: Match = {
-        id: numericId,
-        mapname: parsedJson.map_name || 'Unknown Map',
-        maxplayers: participants.length,
-        matchtype_id: 0,
-        description: lobbyTitle,
-        startgametime: parsedJson.start_time || Math.floor(Date.now() / 1000),
-        completiontime: (parsedJson.start_time || Math.floor(Date.now() / 1000)) + (parsedJson.duration || 0),
-        players: participants
-      };
-
-      db.addMatch(matchObj);
-      console.log(`Successfully parsed, and logged 10x match [${numericId} / ${lobbyTitle}]`);
-      dbUpdated = true;
-      newImportCount++;
-
-      importedFiles.add(filename);
-    } catch (err: any) {
-      console.warn(`[Skip] Failed to process replay ${filename}: ${err.message}`);
-      // Mark as imported to avoid constant retrying
-      importedFiles.add(filename);
     }
   }
+
+  // Start workers in parallel
+  const workers = Array.from(
+    { length: Math.min(CONCURRENCY, filesToProcess.length) }, 
+    () => worker()
+  );
+  await Promise.all(workers);
 
   // Save imported files cache
   try {
