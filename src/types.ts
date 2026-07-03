@@ -1,0 +1,122 @@
+export interface MatchPlayer {
+  profile_id: number;
+  teamid: number;
+  resulttype: number; // 1 = Win, 2 = Loss
+  race_id: number;
+  alias: string;
+}
+
+export type MatchSource =
+  | 'relic_api'
+  | 'local_replay_mgz'
+  | 'local_replay_aoe2rec'
+  | 'unknown';
+
+export interface Match {
+  id: number;
+  source?: MatchSource;
+  creator_profile_id?: number;
+  mapname: string;
+  maxplayers: number;
+  matchtype_id: number;
+  description: string; // Lobby title
+  startgametime: number; // Unix timestamp (seconds)
+  completiontime: number; // Unix timestamp (seconds)
+  players: MatchPlayer[];
+  gamemod_id?: number;
+}
+
+export interface PlayerProfile {
+  profile_id: number;
+  alias: string;
+  xp?: number;
+  level?: number;
+  country?: string;
+}
+
+export interface EloRanking {
+  profile_id: number;
+  alias: string;
+  rating: number;
+  wins: number;
+  losses: number;
+  gamesCount: number;
+  winRate: number;
+  lastPlayedAt: number;
+  country?: string;
+}
+
+export interface DatabaseSchema {
+  matches: Record<number, Match>;
+  match_fingerprints: Record<string, number>; // fingerprint -> match_id
+  profiles: Record<number, PlayerProfile>;
+  crawled_profiles: Record<number, number>; // profile_id -> timestamp (ms) when crawled
+  crawl_queue: number[];
+}
+
+export interface Lobby {
+  matchId: number;
+  steamLobbyId: string;
+  region: string;
+  name: string;
+  map: string;
+  speed: string;
+  popCap: number;
+  turbo: boolean;
+  passwordProtected: boolean;
+  slotsTaken: number;
+  slotsTotal: number;
+  status: string;
+  host: {
+    profileId: number;
+    name: string;
+    elo: number | null;
+    country: string;
+    team: number;
+    ready: boolean;
+  };
+  players: Array<{
+    profileId: number;
+    name: string;
+    elo: number | null;
+    country: string;
+    team: number;
+    ready: boolean;
+  }>;
+  observers: {
+    count: number;
+    max: number;
+  };
+  avgElo: number | null;
+  joinUrl: string;
+}
+
+
+// types for aoe2rec instead of mgz thing.
+
+/** Data parsed from a single .aoe2record file. */
+export interface ParsedRecording {
+  fileName: string;
+  player1: string;
+  player2: string;
+  profileId1: number;
+  profileId2: number;
+  civ1: string;
+  civ2: string;
+  civId1: number;
+  civId2: number;
+  map: string;
+  mapId: number;
+  length: string;
+  date: string;
+  winner: 1 | 2 | null;
+  guid: string;
+  restored: boolean;
+}
+
+export interface UploadRecsPayload {
+  gamesUrls: string[];
+  restoredDataUrls: (string | null)[];
+  matchId: string;
+  uploader: string;
+}
