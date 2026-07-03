@@ -708,6 +708,10 @@
             <span class="modal-stat-value" id="modal-winrate">-</span>
           </div>
           <div class="modal-stat-row">
+            <span class="modal-stat-label">Country</span>
+            <span class="modal-stat-value" id="modal-country">-</span>
+          </div>
+          <div class="modal-stat-row">
             <span class="modal-stat-label">Profile ID</span>
             <span class="modal-stat-value" id="modal-profile-id">-</span>
           </div>
@@ -760,6 +764,7 @@
       modalWinrate: document.getElementById('modal-winrate'),
       modalProfileId: document.getElementById('modal-profile-id'),
       modalLastPlayed: document.getElementById('modal-last-played'),
+      modalCountry: document.getElementById('modal-country'),
       linkInsights: document.getElementById('link-insights'),
       linkSteam: document.getElementById('link-steam'),
       modalClose: document.getElementById('modal-close')
@@ -878,8 +883,18 @@
         if (player.winRate >= 60) winrateClass = 'winrate-high';
         else if (player.winRate <= 40) winrateClass = 'winrate-low';
 
+        let countryName = '';
+        if (player.country) {
+          try {
+            const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
+            countryName = regionNames.of(player.country.toUpperCase()) || player.country.toUpperCase();
+          } catch (e) {
+            countryName = player.country.toUpperCase();
+          }
+        }
+
         const flagHtml = player.country 
-          ? `<img src="https://flagcdn.com/16x12/${player.country.toLowerCase()}.png" width="16" height="12" alt="${player.country.toUpperCase()}" style="margin-right: 8px; vertical-align: middle; border-radius: 2px; border: 1px solid rgba(255,255,255,0.15);" title="${player.country.toUpperCase()}">` 
+          ? `<img src="https://flagcdn.com/24x18/${player.country.toLowerCase()}.png" width="22" height="16" alt="${player.country.toUpperCase()}" style="margin-right: 8px; vertical-align: middle; border-radius: 2px; border: 1px solid rgba(255,255,255,0.15);" title="${escapeHtml(countryName)}">` 
           : '';
 
         row.innerHTML = `
@@ -903,8 +918,18 @@
     }
 
     function showPlayerModal(player, rank) {
+      let countryName = 'Unknown';
+      if (player.country) {
+        try {
+          const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
+          countryName = regionNames.of(player.country.toUpperCase()) || player.country.toUpperCase();
+        } catch (e) {
+          countryName = player.country.toUpperCase();
+        }
+      }
+
       const flagHtml = player.country 
-        ? `<img src="https://flagcdn.com/20x15/${player.country.toLowerCase()}.png" width="20" height="15" alt="${player.country.toUpperCase()}" style="margin-right: 10px; vertical-align: middle; border-radius: 2px; border: 1px solid rgba(255,255,255,0.2);" title="${player.country.toUpperCase()}">` 
+        ? `<img src="https://flagcdn.com/28x21/${player.country.toLowerCase()}.png" width="27" height="20" alt="${player.country.toUpperCase()}" style="margin-right: 10px; vertical-align: middle; border-radius: 2px; border: 1px solid rgba(255,255,255,0.2);" title="${escapeHtml(countryName)}">` 
         : '';
       elements.modalAlias.innerHTML = flagHtml + escapeHtml(player.alias);
       elements.modalRank.textContent = '#' + rank;
@@ -914,6 +939,7 @@
       elements.modalLosses.textContent = player.losses;
       elements.modalWinrate.textContent = player.winRate + '%';
       elements.modalProfileId.textContent = player.profile_id;
+      elements.modalCountry.textContent = countryName;
       
       const dateStr = player.lastPlayedAt 
         ? new Date(player.lastPlayedAt * 1000).toLocaleString() 
