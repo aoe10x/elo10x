@@ -1,4 +1,5 @@
 import { promises as fs } from 'node:fs';
+import {readdirSync} from 'node:fs';
 import * as path from 'node:path';
 import * as os from 'node:os';
 import { execFile } from 'node:child_process';
@@ -21,9 +22,10 @@ function stringToHash(str: string): number {
   return Math.abs(hash);
 }
 
-async function locateReplaysDir(): Promise<string> {
+async function locateReplaysDirs(): Promise<string[]> {
   const homeDir = os.homedir();
   const baseDir = path.join(homeDir, 'Games', 'Age of Empires 2 DE');
+  const potentialDirs = new Set<string>();
   
   try {
     const entries = await fs.readdir(baseDir, { withFileTypes: true });
@@ -34,16 +36,17 @@ async function locateReplaysDir(): Promise<string> {
       
     for (const steamId of steamIds) {
       // Check for both 'savegame' and 'replays' directories
-      for (const subDirName of ['savegame', 'replays']) {
+      for (const subDirName of ['savegame', 'replays','SAVEGAMEBACKUPofstufff']) {
         const potentialDir = path.join(baseDir, steamId, subDirName);
         try {
+          console.log(potentialDir);
           const stat = await fs.stat(potentialDir);
           if (stat.isDirectory()) {
             // Check if there are any .aoe2record files inside it
             const files = await fs.readdir(potentialDir);
             const hasRecords = files.some(f => f.endsWith('.aoe2record'));
             if (hasRecords) {
-              return potentialDir;
+              potentialDirs.add(potentialDir);
             }
           }
         } catch {
@@ -59,7 +62,7 @@ async function locateReplaysDir(): Promise<string> {
         try {
           const stat = await fs.stat(potentialDir);
           if (stat.isDirectory()) {
-            return potentialDir;
+            potentialDirs.add(potentialDir);
           }
         } catch {}
       }
@@ -68,19 +71,23 @@ async function locateReplaysDir(): Promise<string> {
     console.warn(`Could not read games directory: ${err.message}`);
   }
   
+  if (potentialDirs.size > 0) {
+    return Array.from(potentialDirs);
+  }
+
   throw new Error("Could not locate Age of Empires II DE savegame or replays directory.");
 }
 
 async function main(): Promise<void> {
-  let replaysDir: string;
+let replaysDirs: string[];
   try {
-    replaysDir = await locateReplaysDir();
+    replaysDirs = await locateReplaysDirs();
   } catch (err: any) {
     console.error(`Fatal: ${err.message}`);
     process.exit(1);
   }
 
-  console.log(`Replays folder located: ${replaysDir}`);
+  console.log(`Replays folders located: ${replaysDirs}`);
 
   // Load database
   const db = new JsonDatabase();
@@ -88,12 +95,12 @@ async function main(): Promise<void> {
 
   // Load list of already imported replays (cache) to avoid re-parsing
   const importCachePath = path.join(process.cwd(), 'data', 'imported_replays.json');
-  let importedFiles = new Set<string>();
+  let importedFilenames = new Set<string>();
   try {
     const cacheContent = await fs.readFile(importCachePath, 'utf-8');
     const parsedCache = JSON.parse(cacheContent);
     if (Array.isArray(parsedCache)) {
-      importedFiles = new Set(parsedCache);
+      importedFilenames = new Set(parsedCache);
     }
   } catch (err: any) {
     // If file doesn't exist, we start with an empty set
@@ -102,8 +109,8 @@ async function main(): Promise<void> {
   // Scan replays folder for .aoe2record files
   let allFiles: string[] = [];
   try {
-    const files = await fs.readdir(replaysDir);
-    allFiles = files.filter(f => f.endsWith('.aoe2record'));
+    const files = await Promise.all(replaysDirs.map(dir => readdirSync(dir).map(f => path.join(dir, f))));
+    allFiles = files.flat().filter(f => f.endsWith('.aoe2record'));
   } catch (err: any) {
     console.error(`Error listing replays folder: ${err.message}`);
     process.exit(1);
@@ -111,7 +118,7 @@ async function main(): Promise<void> {
 
   console.log(`Found ${allFiles.length} replay file(s).`);
 
-  const filesToProcess = allFiles.filter(f => !importedFiles.has(f));
+  const filesToProcess = allFiles.filter(f => !importedFilenames.has(path.basename(f)));
   console.log(`Need to process ${filesToProcess.length} new replay file(s).`);
 
   if (filesToProcess.length === 0) {
@@ -129,8 +136,8 @@ async function main(): Promise<void> {
   async function worker() {
     while (activeIndex < filesToProcess.length) {
       const index = activeIndex++;
-      const filename = filesToProcess[index];
-      const filePath = path.join(replaysDir, filename);
+      const filePath = filesToProcess[index];
+      const filename = path.basename(filePath);
 
       const count = ++processedCount;
       const pct = ((count / filesToProcess.length) * 100).toFixed(1);
@@ -147,7 +154,7 @@ async function main(): Promise<void> {
 
         if (!is10x) {
           // Not a 10x game, skip it but mark as processed to avoid re-parsing next time
-          importedFiles.add(filename);
+          importedFilenames.add(filename);
           continue;
         }
 
@@ -167,7 +174,7 @@ async function main(): Promise<void> {
         // Check if match is already in db.json
         if (db.hasMatch(numericId)) {
           console.log(`Match ${numericId} (${lobbyTitle}) already exists in database.`);
-          importedFiles.add(filename);
+          importedFilenames.add(filename);
           continue;
         }
 
@@ -201,7 +208,7 @@ async function main(): Promise<void> {
 
         if (participants.length === 0) {
           console.log(`Skipping match ${numericId} because it has no valid human players.`);
-          importedFiles.add(filename);
+          importedFilenames.add(filename);
           continue;
         }
 
@@ -221,11 +228,11 @@ async function main(): Promise<void> {
         dbUpdated = true;
         newImportCount++;
 
-        importedFiles.add(filename);
+        importedFilenames.add(filename);
       } catch (err: any) {
         console.warn(`[Skip] Failed to process replay ${filename}: ${err.message.trim()}`);
         // Mark as imported to avoid constant retrying
-        importedFiles.add(filename);
+        importedFilenames.add(filename);
       }
     }
   }
@@ -239,7 +246,7 @@ async function main(): Promise<void> {
 
   // Save imported files cache
   try {
-    await fs.writeFile(importCachePath, JSON.stringify(Array.from(importedFiles), null, 2), 'utf-8');
+    await fs.writeFile(importCachePath, JSON.stringify(Array.from(importedFilenames), null, 2), 'utf-8');
   } catch (err: any) {
     console.error(`Error saving import cache: ${err.message}`);
   }
