@@ -46,7 +46,45 @@ export class JsonDatabase {
     this.isLoaded = true;
   }
 
+  pruneUnusedProfiles(): void {
+    const referencedIds = new Set<number>();
+
+    // 1. Collect profile IDs from matches
+    for (const match of Object.values(this.data.matches)) {
+      if (match.players) {
+        for (const p of match.players) {
+          referencedIds.add(p.profile_id);
+        }
+      }
+      if (match.creator_profile_id) {
+        referencedIds.add(match.creator_profile_id);
+      }
+    }
+
+    // 2. Collect profile IDs from crawl queue
+    for (const id of this.data.crawl_queue) {
+      referencedIds.add(id);
+    }
+
+    // 3. Collect profile IDs from crawled profiles
+    for (const id of Object.keys(this.data.crawled_profiles)) {
+      referencedIds.add(Number(id));
+    }
+
+    // Purge unreferenced profiles
+    const prunedProfiles: Record<number, PlayerProfile> = {};
+    for (const [idStr, profile] of Object.entries(this.data.profiles)) {
+      const id = Number(idStr);
+      if (referencedIds.has(id)) {
+        prunedProfiles[id] = profile;
+      }
+    }
+
+    this.data.profiles = prunedProfiles;
+  }
+
   async save(): Promise<void> {
+    this.pruneUnusedProfiles();
     const tempPath = `${this.filePath}.tmp`;
     try {
       await fs.writeFile(tempPath, JSON.stringify(this.data, null, 2), 'utf-8');
