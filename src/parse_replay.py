@@ -57,15 +57,27 @@ def main():
             except Exception:
                 pass
                 
+            # Teams mapping
+            teams_mapping = {}
+            try:
+                teams = summary.get_teams()
+                for team_index, player_numbers in enumerate(teams):
+                    for num in player_numbers:
+                        teams_mapping[num] = team_index
+            except Exception:
+                pass
+
             # Players
             players = []
             try:
                 for p in summary.get_players():
+                    p_num = p.get('number')
+                    team_id = teams_mapping.get(p_num)
                     players.append({
                         "profile_id": p.get('user_id'),
                         "alias": p.get('name'),
                         "civ_id": p.get('civilization'),
-                        "team_id": p.get('team_id'),
+                        "team_id": team_id,
                         "winner": p.get('winner')
                     })
             except Exception:
