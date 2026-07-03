@@ -215,6 +215,7 @@ let replaysDirs: string[];
 
         const matchObj: Match = {
           id: numericId,
+          source: 'local_replay_mgz',
           mapname: parsedJson.map_name || 'Unknown Map',
           maxplayers: participants.length,
           matchtype_id: 0,

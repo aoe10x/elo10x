@@ -190,6 +190,7 @@ export class MatchCrawler {
 
           const matchObj: Match = {
             id: m.id,
+            source: 'relic_api',
             creator_profile_id: m.creator_profile_id,
             mapname: m.mapname || '',
             maxplayers: m.maxplayers || 8,
