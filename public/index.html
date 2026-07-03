@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AoE2 10x Community ELO Leaderboard</title>
+  <meta name="description" content="ELO rating rankings and detailed statistics for the Age of Empires II 10x Shared Civ Bonus community.">
+  
+  <!-- SEO & Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏆</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="header-logo" id="main-title">AoE2 10x Leaderboard</h1>
+      <p class="header-subtitle">Elo rankings for the 10x Shared Civ Bonus community</p>
+    </header>
+
+    <!-- Dashboard Cards -->
+    <div class="summary-grid" id="summary-grid">
+      <div class="stat-card">
+        <h3>Matches Calculated</h3>
+        <div class="value" id="stat-matches">-</div>
+      </div>
+      <div class="stat-card">
+        <h3>Active Players</h3>
+        <div class="value" id="stat-players">-</div>
+      </div>
+      <div class="stat-card">
+        <h3>Leaderboard ELO range</h3>
+        <div class="value" id="stat-range">-</div>
+      </div>
+      <div class="stat-card">
+        <h3>Last Updated</h3>
+        <div class="value" id="stat-updated" style="font-size: 1.1rem; line-height: 2.2rem;">-</div>
+      </div>
+    </div>
+
+    <!-- Filter panel -->
+    <div class="controls-panel">
+      <div class="search-wrapper">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="search-input" class="search-input" placeholder="Search players by name...">
+      </div>
+      
+      <div class="filters-wrapper">
+        <div class="filter-item">
+          <label for="min-games-input">Min Games:</label>
+          <input type="number" id="min-games-input" min="0" max="100" value="5" style="width: 60px;">
+        </div>
+        <div class="filter-item">
+          <label class="checkbox-label" id="provisional-label">
+            <input type="checkbox" id="provisional-checkbox">
+            Include Provisional (&lt; min games)
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Leaderboard Panel -->
+    <div class="leaderboard-panel" id="leaderboard-panel">
+      <!-- Loading State -->
+      <div class="loading-state" id="loading-state">
+        <div class="spinner"></div>
+        <p>Crunching the logs, calculating ELO ratings...</p>
+      </div>
+
+      <!-- Error State -->
+      <div class="error-state" id="error-state" style="display: none;">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+        </svg>
+        <h2 class="error-title">No Leaderboard Data Yet</h2>
+        <p id="error-message">Run the crawler and ELO calculation script first to build the ELO list.</p>
+      </div>
+
+      <!-- Leaderboard Table -->
+      <div class="table-responsive" id="table-container" style="display: none;">
+        <table>
+          <thead>
+            <tr>
+              <th class="col-rank">Rank</th>
+              <th>Player Alias</th>
+              <th>Elo Rating</th>
+              <th>Record (W - L)</th>
+              <th class="col-winrate">Win Rate</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboard-body">
+            <!-- Dynamic rows will be inserted here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Detailed Profile Modal -->
+    <div class="modal-backdrop" id="profile-modal">
+      <div class="modal-card">
+        <div class="modal-header">
+          <div class="modal-title" id="modal-alias">Player Profile</div>
+          <button class="close-btn" id="modal-close">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-stat-row">
+            <span class="modal-stat-label">ELO Rank</span>
+            <span class="modal-stat-value gold" id="modal-rank">-</span>
+          </div>
+          <div class="modal-stat-row">
+            <span class="modal-stat-label">ELO Rating</span>
+            <span class="modal-stat-value gold" id="modal-rating">-</span>
+          </div>
+          <div class="modal-stat-row">
+            <span class="modal-stat-label">Games Played</span>
+            <span class="modal-stat-value" id="modal-games">-</span>
+          </div>
+          <div class="modal-stat-row">
+            <span class="modal-stat-label">Wins</span>
+            <span class="modal-stat-value" style="color: var(--accent-win);" id="modal-wins">-</span>
+          </div>
+          <div class="modal-stat-row">
+            <span class="modal-stat-label">Losses</span>
+            <span class="modal-stat-value" style="color: var(--accent-loss);" id="modal-losses">-</span>
+          </div>
+          <div class="modal-stat-row">
+            <span class="modal-stat-label">Win Rate</span>
+            <span class="modal-stat-value" id="modal-winrate">-</span>
+          </div>
+          <div class="modal-stat-row">
+            <span class="modal-stat-label">Country</span>
+            <span class="modal-stat-value" id="modal-country">-</span>
+          </div>
+          <div class="modal-stat-row">
+            <span class="modal-stat-label">Profile ID</span>
+            <span class="modal-stat-value" id="modal-profile-id">-</span>
+          </div>
+          <div class="modal-stat-row">
+            <span class="modal-stat-label">Last Match Played</span>
+            <span class="modal-stat-value" id="modal-last-played">-</span>
+          </div>
+        </div>
+        <div class="external-links">
+          <a href="#" target="_blank" class="btn-link" id="link-insights">AoE2 Insights</a>
+          <a href="#" target="_blank" class="btn-link" id="link-steam" style="display: none;">Steam Profile</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Data scraped from Relic Link multiplayer servers. Site built for the AoE2 10x community.</p>
+    </footer>
+  </div>
+
+  <script>
+    let allPlayers = [];
+    let summaryStats = {};
+    let config = {};
+
+    const elements = {
+      search: document.getElementById('search-input'),
+      minGames: document.getElementById('min-games-input'),
+      provisional: document.getElementById('provisional-checkbox'),
+      tbody: document.getElementById('leaderboard-body'),
+      tableContainer: document.getElementById('table-container'),
+      loadingState: document.getElementById('loading-state'),
+      errorState: document.getElementById('error-state'),
+      errorMessage: document.getElementById('error-message'),
+      
+      // Stats
+      statMatches: document.getElementById('stat-matches'),
+      statPlayers: document.getElementById('stat-players'),
+      statRange: document.getElementById('stat-range'),
+      statUpdated: document.getElementById('stat-updated'),
+      
+      // Modal
+      modal: document.getElementById('profile-modal'),
+      modalAlias: document.getElementById('modal-alias'),
+      modalRank: document.getElementById('modal-rank'),
+      modalRating: document.getElementById('modal-rating'),
+      modalGames: document.getElementById('modal-games'),
+      modalWins: document.getElementById('modal-wins'),
+      modalLosses: document.getElementById('modal-losses'),
+      modalWinrate: document.getElementById('modal-winrate'),
+      modalProfileId: document.getElementById('modal-profile-id'),
+      modalLastPlayed: document.getElementById('modal-last-played'),
+      modalCountry: document.getElementById('modal-country'),
+      linkInsights: document.getElementById('link-insights'),
+      linkSteam: document.getElementById('link-steam'),
+      modalClose: document.getElementById('modal-close')
+    };
+
+    // Fetch Leaderboard JSON
+    async function loadLeaderboard() {
+      showLoading(true);
+      try {
+        const response = await fetch('/api/leaderboard');
+        if (!response.ok) {
+          throw new Error('Leaderboard API returned status: ' + response.status);
+        }
+        const data = await response.json();
+        
+        allPlayers = data.players || [];
+        summaryStats = {
+          totalMatches: data.totalMatches,
+          totalPlayers: data.totalPlayers,
+          updatedAt: data.updatedAt
+        };
+        config = data.config || { minGames: 5, kFactor: 32, provisional: false };
+
+        // Apply config options to inputs
+        elements.minGames.value = config.minGames;
+        elements.provisional.checked = config.provisional;
+
+        updateSummaryCards();
+        renderLeaderboard();
+        showLoading(false);
+      } catch (error) {
+        console.error('Error loading leaderboard:', error);
+        showError(error.message);
+      }
+    }
+
+    function showLoading(isLoading) {
+      elements.loadingState.style.display = isLoading ? 'block' : 'none';
+      elements.tableContainer.style.display = isLoading ? 'none' : 'block';
+      elements.errorState.style.display = 'none';
+    }
+
+    function showError(message) {
+      elements.loadingState.style.display = 'none';
+      elements.tableContainer.style.display = 'none';
+      elements.errorState.style.display = 'flex';
+      // If it's a 404, we have a friendly instruction
+      if (message.includes('404')) {
+        elements.errorMessage.textContent = 'Calculated leaderboard data was not found. Please run ELO calculations in the terminal: "pnpm run elo"';
+      } else {
+        elements.errorMessage.textContent = message;
+      }
+    }
+
+    function updateSummaryCards() {
+      elements.statMatches.textContent = summaryStats.totalMatches.toLocaleString();
+      elements.statPlayers.textContent = summaryStats.totalPlayers.toLocaleString();
+      
+      if (allPlayers.length > 0) {
+        const ratings = allPlayers.map(p => p.rating);
+        const maxRating = Math.max(...ratings);
+        const minRating = Math.min(...ratings);
+        elements.statRange.textContent = `${minRating} - ${maxRating}`;
+      } else {
+        elements.statRange.textContent = '-';
+      }
+
+      const date = new Date(summaryStats.updatedAt);
+      elements.statUpdated.textContent = date.toLocaleDateString() + '\n' + date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    }
+
+    function renderLeaderboard() {
+      const searchTerm = elements.search.value.toLowerCase().trim();
+      const minGames = parseInt(elements.minGames.value, 10) || 0;
+      const includeProvisional = elements.provisional.checked;
+
+      // Filter players
+      let filteredPlayers = allPlayers.filter(p => {
+        // Search filter
+        if (searchTerm && !p.alias.toLowerCase().includes(searchTerm)) {
+          return false;
+        }
+        
+        // Games count filter
+        if (!includeProvisional && p.gamesCount < minGames) {
+          return false;
+        }
+
+        return true;
+      });
+
+      // Sort by rating descending (re-sort in case filters changed original sort logic)
+      filteredPlayers.sort((a, b) => b.rating - a.rating);
+
+      elements.tbody.innerHTML = '';
+
+      if (filteredPlayers.length === 0) {
+        const row = document.createElement('tr');
+        row.innerHTML = `<td colspan="5" style="text-align: center; color: var(--text-muted); padding: 3rem;">No players found matching current filters.</td>`;
+        elements.tbody.appendChild(row);
+        return;
+      }
+
+      filteredPlayers.forEach((player, index) => {
+        const row = document.createElement('tr');
+        
+        // 1. Rank Badge
+        let rankContent = '';
+        if (index === 0) rankContent = '<span class="rank-badge rank-1">1</span>';
+        else if (index === 1) rankContent = '<span class="rank-badge rank-2">2</span>';
+        else if (index === 2) rankContent = '<span class="rank-badge rank-3">3</span>';
+        else rankContent = `<span class="rank-other">${index + 1}</span>`;
+
+        // 2. Win Rate Bar Color Class
+        let winrateClass = 'winrate-mid';
+        if (player.winRate >= 60) winrateClass = 'winrate-high';
+        else if (player.winRate <= 40) winrateClass = 'winrate-low';
+
+        let countryName = '';
+        if (player.country) {
+          try {
+            const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
+            countryName = regionNames.of(player.country.toUpperCase()) || player.country.toUpperCase();
+          } catch (e) {
+            countryName = player.country.toUpperCase();
+          }
+        }
+
+        const flagHtml = player.country 
+          ? `<img src="https://flagcdn.com/24x18/${player.country.toLowerCase()}.png" width="22" height="16" alt="${player.country.toUpperCase()}" style="margin-right: 8px; vertical-align: middle; border-radius: 2px; border: 1px solid rgba(255,255,255,0.15);" title="${escapeHtml(countryName)}">` 
+          : '';
+
+        row.innerHTML = `
+          <td class="col-rank">${rankContent}</td>
+          <td class="col-alias">${flagHtml}${escapeHtml(player.alias)}</td>
+          <td class="col-elo">${player.rating}</td>
+          <td class="col-record">${player.wins}W - ${player.losses}L</td>
+          <td class="col-winrate">
+            <div class="winrate-bar-container">
+              <div class="winrate-bar">
+                <div class="winrate-progress" style="width: ${player.winRate}%"></div>
+              </div>
+              <span class="winrate-text ${winrateClass}">${player.winRate}%</span>
+            </div>
+          </td>
+        `;
+
+        row.addEventListener('click', () => showPlayerModal(player, index + 1));
+        elements.tbody.appendChild(row);
+      });
+    }
+
+    function showPlayerModal(player, rank) {
+      let countryName = 'Unknown';
+      if (player.country) {
+        try {
+          const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
+          countryName = regionNames.of(player.country.toUpperCase()) || player.country.toUpperCase();
+        } catch (e) {
+          countryName = player.country.toUpperCase();
+        }
+      }
+
+      const flagHtml = player.country 
+        ? `<img src="https://flagcdn.com/28x21/${player.country.toLowerCase()}.png" width="27" height="20" alt="${player.country.toUpperCase()}" style="margin-right: 10px; vertical-align: middle; border-radius: 2px; border: 1px solid rgba(255,255,255,0.2);" title="${escapeHtml(countryName)}">` 
+        : '';
+      elements.modalAlias.innerHTML = flagHtml + escapeHtml(player.alias);
+      elements.modalRank.textContent = '#' + rank;
+      elements.modalRating.textContent = player.rating;
+      elements.modalGames.textContent = player.gamesCount;
+      elements.modalWins.textContent = player.wins;
+      elements.modalLosses.textContent = player.losses;
+      elements.modalWinrate.textContent = player.winRate + '%';
+      elements.modalProfileId.textContent = player.profile_id;
+      elements.modalCountry.textContent = countryName;
+      
+      const dateStr = player.lastPlayedAt 
+        ? new Date(player.lastPlayedAt * 1000).toLocaleString() 
+        : 'Unknown';
+      elements.modalLastPlayed.textContent = dateStr;
+
+      // Update link to Insights
+      elements.linkInsights.href = `https://www.aoe2insights.com/user/${player.profile_id}/`;
+      
+      // Update link to Steam if possible
+      elements.linkSteam.style.display = 'none'; // Default hidden
+
+      elements.modal.classList.add('active');
+    }
+
+    function closePlayerModal() {
+      elements.modal.classList.remove('active');
+    }
+
+    function escapeHtml(str) {
+      return str
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    // Event Listeners
+    elements.search.addEventListener('input', renderLeaderboard);
+    elements.minGames.addEventListener('input', renderLeaderboard);
+    elements.provisional.addEventListener('change', renderLeaderboard);
+    elements.modalClose.addEventListener('click', closePlayerModal);
+    elements.modal.addEventListener('click', (e) => {
+      if (e.target === elements.modal) closePlayerModal();
+    });
+    
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && elements.modal.classList.contains('active')) {
+        closePlayerModal();
+      }
+    });
+
+    // Initial Load
+    loadLeaderboard();
+  </script>
+</body>
+</html>
