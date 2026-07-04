@@ -93,23 +93,89 @@ async function main(): Promise<void> {
   }
 
   if (values['scrape-insights']) {
-    const profileId = parseInt(values['scrape-insights'], 10);
-    if (isNaN(profileId)) {
-      console.error(`Invalid profile ID: ${values['scrape-insights']}`);
-      process.exit(1);
+    let targetProfileIds: number[] = [];
+    
+    if (values['scrape-insights'] === 'active') {
+      console.log('Detecting top active players in database...');
+      const matches = db.getMatches();
+      const playerCounts: Record<number, number> = {};
+      for (const m of matches) {
+        if (m.players) {
+          for (const p of m.players) {
+            playerCounts[p.profile_id] = (playerCounts[p.profile_id] || 0) + 1;
+          }
+        }
+      }
+      
+      // Sort by frequency descending
+      const sortedPlayers = Object.entries(playerCounts)
+        .map(([pid, count]) => ({ profileId: parseInt(pid, 10), count }))
+        .sort((a, b) => b.count - a.count);
+         
+      // Exclude players we have already crawled thoroughly
+      const excludedIds = new Set<number>([
+        404483,    // Paulichromatic
+        3046506,   // NoAgendaPODCAST
+        249997,    // Kumad
+        295872,    // Myriad
+        3309404,   // Parts
+        17046544   // 田瘾犯了
+      ]);
+      
+      const limit = values.limit ? parseInt(values.limit, 10) : 20;
+      
+      for (const p of sortedPlayers) {
+        if (!excludedIds.has(p.profileId)) {
+          targetProfileIds.push(p.profileId);
+          if (targetProfileIds.length >= limit) {
+            break;
+          }
+        }
+      }
+      
+      console.log(`Selected next top ${targetProfileIds.length} active players for crawling:`);
+      for (const pid of targetProfileIds) {
+        const alias = db.getProfile(pid)?.alias || `Player_${pid}`;
+        console.log(`- ${alias} (ID ${pid}): ${playerCounts[pid]} matches currently in DB`);
+      }
+    } else {
+      const profileId = parseInt(values['scrape-insights'], 10);
+      if (isNaN(profileId)) {
+        console.error(`Invalid profile ID: ${values['scrape-insights']}`);
+        process.exit(1);
+      }
+      targetProfileIds.push(profileId);
     }
+    
     const startPage = values['start-page'] ? parseInt(values['start-page'], 10) : 1;
-    const endPage = values['end-page'] ? parseInt(values['end-page'], 10) : 20;
-
-    console.log(`Starting AoE2Insights scraper for player ${profileId} (pages ${startPage} to ${endPage})...`);
+    const endPage = values['end-page'] ? parseInt(values['end-page'], 10) : 10; // default 10 pages for batch runs
+    
     const scraper = new InsightsCrawler(db);
-    try {
-      const stats = await scraper.scrapePlayerHistory(profileId, startPage, endPage);
-      console.log(`Insights Scrape Complete: processed ${stats.scraped} matches, added ${stats.added} new matches.`);
-    } catch (e: any) {
-      console.error(`Scraper Failed:`, e.message);
-      process.exit(1);
+    
+    let totalScraped = 0;
+    let totalAdded = 0;
+    
+    for (const pid of targetProfileIds) {
+      const alias = db.getProfile(pid)?.alias || `Player_${pid}`;
+      console.log(`\n========================================`);
+      console.log(`Scraping history for player: ${alias} (ID ${pid})`);
+      console.log(`========================================`);
+      
+      try {
+        const stats = await scraper.scrapePlayerHistory(pid, startPage, endPage);
+        console.log(`Success: processed ${stats.scraped} matches, added ${stats.added} new matches.`);
+        totalScraped += stats.scraped;
+        totalAdded += stats.added;
+        
+        // Save progress after each player to protect against crashes
+        await db.save();
+      } catch (e: any) {
+        console.error(`Scraper failed for player ${alias}:`, e.message);
+        // Continue to next player in batch instead of hard crash
+      }
     }
+    
+    console.log(`\nBatch Scrape Complete! Total processed 10x games: ${totalScraped}, Total new games added: ${totalAdded}`);
   }
 
   if (values.elo) {
