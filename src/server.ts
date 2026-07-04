@@ -18,12 +18,15 @@ const MIME_TYPES: Record<string, string> = {
   '.svg': 'image/svg+xml'
 };
 
-async function serveFile(res: http.ServerResponse, filePath: string, defaultMime: string = 'text/plain'): Promise<void> {
+async function serveFile(res: http.ServerResponse, filePath: string, defaultMime: string = 'text/plain', extraHeaders: Record<string, string> = {}): Promise<void> {
   try {
     const ext = path.extname(filePath).toLowerCase();
     const contentType = MIME_TYPES[ext] || defaultMime;
     const content = await fs.readFile(filePath);
-    res.writeHead(200, { 'Content-Type': contentType });
+    res.writeHead(200, {
+      'Content-Type': contentType,
+      ...extraHeaders
+    });
     res.end(content);
   } catch (error: any) {
     if (error.code === 'ENOENT') {
@@ -50,27 +53,39 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
+  // Parse pathname to support query parameters (cache busting)
+  const parsedUrl = new URL(url, `http://${req.headers.host || 'localhost'}`);
+  const pathname = parsedUrl.pathname;
+
   // Route API requests to data files
-  if (url === '/api/leaderboard') {
+  if (pathname === '/api/leaderboard') {
     const leaderboardPath = path.join(DATA_DIR, 'leaderboard.json');
-    await serveFile(res, leaderboardPath, 'application/json');
+    await serveFile(res, leaderboardPath, 'application/json', {
+      'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+      'Pragma': 'no-cache',
+      'Expires': '0'
+    });
     return;
   }
 
-  if (url === '/api/db') {
+  if (pathname === '/api/db') {
     const dbPath = path.join(DATA_DIR, 'db.json');
-    await serveFile(res, dbPath, 'application/json');
+    await serveFile(res, dbPath, 'application/json', {
+      'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+      'Pragma': 'no-cache',
+      'Expires': '0'
+    });
     return;
   }
 
   // Serve static files from public directory
-  let targetPath = path.join(PUBLIC_DIR, url === '/' ? 'index.html' : url);
+  let targetPath = path.join(PUBLIC_DIR, pathname === '/' ? 'index.html' : pathname);
 
   // Prevent Directory Traversal
   const relative = path.relative(PUBLIC_DIR, targetPath);
   const isSafe = relative && !relative.startsWith('..') && !path.isAbsolute(relative);
   
-  if (url !== '/' && !isSafe) {
+  if (pathname !== '/' && !isSafe) {
     res.writeHead(403, { 'Content-Type': 'text/plain; charset=utf-8' });
     res.end('403 Forbidden');
     return;
