@@ -135,18 +135,13 @@ export class EloCalculator {
       // Compute average rating of team 2
       const team2Avg = team2.reduce((sum, p) => sum + ratingsMap.get(p.profile_id)!.rating, 0) / team2.length;
 
-      // Compute expected scores
-      const expected1 = 1 / (1 + Math.pow(10, (team2Avg - team1Avg) / 400));
-      const expected2 = 1 - expected1;
-
-      // Calculate ELO updates
-      const delta1 = this.config.kFactor * (team1Score - expected1);
-      const delta2 = this.config.kFactor * (team2Score - expected2);
-
       // Apply updates to Team 1 players
       for (const p of team1) {
         const ratingObj = ratingsMap.get(p.profile_id)!;
-        ratingObj.rating = Math.round(ratingObj.rating + delta1);
+        // Individual Elo vs Opposing Team Average (DE Algorithm 3)
+        const expected = 1 / (1 + Math.pow(10, (team2Avg - ratingObj.rating) / 400));
+        const delta = this.config.kFactor * (team1Score - expected);
+        ratingObj.rating = Math.round(ratingObj.rating + delta);
         if (team1Score === 1) {
           ratingObj.wins++;
         } else {
@@ -164,7 +159,10 @@ export class EloCalculator {
       // Apply updates to Team 2 players
       for (const p of team2) {
         const ratingObj = ratingsMap.get(p.profile_id)!;
-        ratingObj.rating = Math.round(ratingObj.rating + delta2);
+        // Individual Elo vs Opposing Team Average (DE Algorithm 3)
+        const expected = 1 / (1 + Math.pow(10, (team1Avg - ratingObj.rating) / 400));
+        const delta = this.config.kFactor * (team2Score - expected);
+        ratingObj.rating = Math.round(ratingObj.rating + delta);
         if (team2Score === 1) {
           ratingObj.wins++;
         } else {
