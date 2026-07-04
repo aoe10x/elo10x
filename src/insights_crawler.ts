@@ -87,7 +87,10 @@ export class InsightsCrawler {
               "portuguese": 24, "ethiopians": 25, "malians": 26, "berbers": 27, "khmer": 28, "malay": 29, 
               "burmese": 30, "vietnamese": 31, "bulgarians": 32, "tatars": 33, "cumans": 34, "lithuanians": 35, 
               "burgundians": 36, "sicilians": 37, "poles": 38, "bohemians": 39, "dravidians": 40, 
-              "bengalis": 41, "gurjaras": 42, "romans": 43, "armenians": 44, "georgians": 45
+              "bengalis": 41, "gurjaras": 42, "romans": 43, "armenians": 44, "georgians": 45,
+              "achaemenids": 46, "athenians": 47, "spartans": 48, "shu": 49, "wu": 50, "wei": 51,
+              "jurchens": 52, "khitans": 53, "macedonians": 54, "thracians": 55, "puru": 56,
+              "muisca": 57, "mapuche": 58, "tupi": 59
             };
 
             const results = [];
