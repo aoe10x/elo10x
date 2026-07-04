@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-07-04T22:45:04.437Z",
+  "logs": {
+    "aoe2rec": "data/full_local_reimport_aoe2rec.log",
+    "mgz": "data/full_local_reimport_mgz.log"
+  },
+  "metrics": {
+    "mgz": {
+      "parser": "mgz",
+      "attemptedByImporter": 2572,
+      "successfulLogged": 73,
+      "alreadyExistsSkips": 1445,
+      "fingerprintDuplicateSkips": 0,
+      "parseFailures": 290,
+      "newImportsSummary": 73
+    },
+    "aoe2rec": {
+      "parser": "aoe2rec",
+      "attemptedByImporter": 2572,
+      "successfulLogged": 0,
+      "alreadyExistsSkips": 217,
+      "fingerprintDuplicateSkips": 2,
+      "parseFailures": 2353,
+      "newImportsSummary": 0
+    }
+  }
+}
