@@ -4,6 +4,7 @@ import { parseArgs } from 'node:util';
 import { MatchCrawler } from './crawler.ts';
 import { JsonDatabase } from './db.ts';
 import { EloCalculator } from './elo.ts';
+import { InsightsCrawler } from './insights_crawler.ts';
 
 function showHelp(): void {
   console.log(`
@@ -18,6 +19,10 @@ Options:
   --seed                    Force a fetch of online lobbies on aoe10x.com to seed crawler queue.
   --months <number>         Cutoff months for games (default: 3).
   
+  --scrape-insights <id>    Scrape match history for player <id> from AoE2Insights via Chrome DevTools.
+  --start-page <number>     Start page for AoE2Insights scraper (default: 1).
+  --end-page <number>       End page for AoE2Insights scraper (default: 20).
+
   --elo                     Calculate ELO ratings based on crawled matches.
   --min-games <number>      Minimum games required to display on the leaderboard (default: 5).
   --k-factor <number>       K-Factor to use for ELO calculations (default: 32).
@@ -28,6 +33,10 @@ Options:
 Examples:
   # Seed queue and crawl 10 players, then calculate Elo
   node --experimental-strip-types src/cli.ts --crawl --seed --limit 10
+  
+  # Scrape Paulichromatic's match history (pages 1-20) from AoE2Insights
+  node --experimental-strip-types src/cli.ts --scrape-insights 404483 --start-page 1 --end-page 20
+
   node --experimental-strip-types src/cli.ts --elo
 `);
 }
@@ -38,6 +47,9 @@ async function main(): Promise<void> {
     limit: { type: 'string' as const },
     seed: { type: 'boolean' as const },
     months: { type: 'string' as const },
+    'scrape-insights': { type: 'string' as const },
+    'start-page': { type: 'string' as const },
+    'end-page': { type: 'string' as const },
     elo: { type: 'boolean' as const },
     'min-games': { type: 'string' as const },
     'k-factor': { type: 'string' as const },
@@ -78,6 +90,26 @@ async function main(): Promise<void> {
     await crawler.runCrawl(limit, months);
     console.log('Crawl session complete.');
     console.log(`Database state: ${db.getMatchesCount()} matches, ${db.getProfilesCount()} cached profiles, ${db.getCrawlQueueLength()} in crawl queue.`);
+  }
+
+  if (values['scrape-insights']) {
+    const profileId = parseInt(values['scrape-insights'], 10);
+    if (isNaN(profileId)) {
+      console.error(`Invalid profile ID: ${values['scrape-insights']}`);
+      process.exit(1);
+    }
+    const startPage = values['start-page'] ? parseInt(values['start-page'], 10) : 1;
+    const endPage = values['end-page'] ? parseInt(values['end-page'], 10) : 20;
+
+    console.log(`Starting AoE2Insights scraper for player ${profileId} (pages ${startPage} to ${endPage})...`);
+    const scraper = new InsightsCrawler(db);
+    try {
+      const stats = await scraper.scrapePlayerHistory(profileId, startPage, endPage);
+      console.log(`Insights Scrape Complete: processed ${stats.scraped} matches, added ${stats.added} new matches.`);
+    } catch (e: any) {
+      console.error(`Scraper Failed:`, e.message);
+      process.exit(1);
+    }
   }
 
   if (values.elo) {
