@@ -368,6 +368,25 @@ tbody tr:hover {
     color: #f87171;
 }
 
+/* Sparkline Trend Column styling */
+.sparkline-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 2px 6px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.modal-trend-container {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
 /* Detailed Modal / Panel */
 .modal-backdrop {
     position: fixed;
