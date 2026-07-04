@@ -44,6 +44,7 @@ export interface EloRanking {
   winRate: number;
   lastPlayedAt: number;
   country?: string;
+  ratingHistory?: number[];
 }
 
 export interface DatabaseSchema {

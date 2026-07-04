@@ -92,6 +92,7 @@
               <th class="col-rank">Rank</th>
               <th>Player Alias</th>
               <th>Elo Rating</th>
+              <th style="text-align: center; width: 120px;">Trend</th>
               <th>Record (W - L)</th>
               <th class="col-winrate">Win Rate</th>
             </tr>
@@ -146,6 +147,10 @@
           <div class="modal-stat-row">
             <span class="modal-stat-label">Last Match Played</span>
             <span class="modal-stat-value" id="modal-last-played">-</span>
+          </div>
+          <div class="modal-trend-container">
+            <div style="font-size: 0.9rem; color: var(--text-gold); font-family: 'Cinzel', serif; font-weight: 700; margin-bottom: 0.8rem; letter-spacing: 0.5px;">Rating History Trend</div>
+            <div id="modal-trend-chart"></div>
           </div>
         </div>
         <div class="external-links">
@@ -325,10 +330,61 @@
           ? `<img src="https://flagcdn.com/24x18/${player.country.toLowerCase()}.png" width="22" height="16" alt="${player.country.toUpperCase()}" style="margin-right: 8px; vertical-align: middle; border-radius: 2px; border: 1px solid rgba(255,255,255,0.15);" title="${escapeHtml(countryName)}">` 
           : '';
 
+        // Sparkline Generation
+        const history = player.ratingHistory || [1000, player.rating];
+        const lastGames = history.slice(-30);
+        
+        let sparklineHtml = '';
+        if (lastGames.length > 1) {
+          const width = 100;
+          const height = 30;
+          const padding = 2;
+          
+          const minVal = Math.min(...lastGames);
+          const maxVal = Math.max(...lastGames);
+          const valRange = maxVal - minVal || 1;
+          
+          const points = lastGames.map((val, idx) => {
+            const x = padding + (idx / (lastGames.length - 1)) * (width - padding * 2);
+            const y = padding + (1 - (val - minVal) / valRange) * (height - padding * 2);
+            return `${x.toFixed(1)},${y.toFixed(1)}`;
+          }).join(' ');
+          
+          const firstRating = lastGames[0];
+          const lastRating = lastGames[lastGames.length - 1];
+          const strokeColor = lastRating >= firstRating ? '#22c55e' : '#ef4444';
+          const fillGradient = lastRating >= firstRating ? `url(#grad-green-${player.profile_id})` : `url(#grad-red-${player.profile_id})`;
+          
+          const closedPoints = `${padding},${height} ${points} ${width - padding},${height}`;
+          
+          sparklineHtml = `
+            <div class="sparkline-wrapper" title="ELO trend over last ${lastGames.length} matches">
+              <svg width="${width}" height="${height}" style="display: block; overflow: visible;">
+                <defs>
+                  <linearGradient id="grad-green-${player.profile_id}" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#22c55e" stop-opacity="0.25"/>
+                    <stop offset="100%" stop-color="#22c55e" stop-opacity="0"/>
+                  </linearGradient>
+                  <linearGradient id="grad-red-${player.profile_id}" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#ef4444" stop-opacity="0.25"/>
+                    <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <polygon points="${closedPoints}" fill="${fillGradient}" />
+                <polyline points="${points}" fill="none" stroke="${strokeColor}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+                <circle cx="${width - padding}" cy="${padding + (1 - (lastRating - minVal) / valRange) * (height - padding * 2)}" r="2.5" fill="${strokeColor}" />
+              </svg>
+            </div>
+          `;
+        } else {
+          sparklineHtml = `<span style="color: var(--text-muted); font-size: 0.85rem;">Flat</span>`;
+        }
+
         row.innerHTML = `
           <td class="col-rank">${rankContent}</td>
           <td class="col-alias">${flagHtml}${escapeHtml(player.alias)}</td>
           <td class="col-elo">${player.rating}</td>
+          <td style="text-align: center; vertical-align: middle;">${sparklineHtml}</td>
           <td class="col-record">${player.wins}W - ${player.losses}L</td>
           <td class="col-winrate">
             <div class="winrate-bar-container">
@@ -373,6 +429,78 @@
         ? new Date(player.lastPlayedAt * 1000).toLocaleString() 
         : 'Unknown';
       elements.modalLastPlayed.textContent = dateStr;
+
+      // Render detailed ELO trend chart
+      const history = player.ratingHistory || [1000, player.rating];
+      const chartContainer = document.getElementById('modal-trend-chart');
+      
+      if (history.length > 1) {
+        const width = 430;
+        const height = 120;
+        const padding = 15;
+        
+        const minVal = Math.min(...history);
+        const maxVal = Math.max(...history);
+        const valRange = maxVal - minVal || 1;
+        
+        const points = history.map((val, idx) => {
+          const x = padding + (idx / (history.length - 1)) * (width - padding * 2);
+          const y = padding + (1 - (val - minVal) / valRange) * (height - padding * 2);
+          return `${x.toFixed(1)},${y.toFixed(1)}`;
+        }).join(' ');
+        
+        const firstRating = history[0];
+        const lastRating = history[history.length - 1];
+        const strokeColor = lastRating >= firstRating ? '#22c55e' : '#ef4444';
+        
+        // Add vertical lines for grid, min/max values
+        const minValIdx = history.indexOf(minVal);
+        const maxValIdx = history.indexOf(maxVal);
+        
+        const minX = padding + (minValIdx / (history.length - 1)) * (width - padding * 2);
+        const minY = padding + (1 - (minVal - minVal) / valRange) * (height - padding * 2);
+        const maxX = padding + (maxValIdx / (history.length - 1)) * (width - padding * 2);
+        const maxY = padding + (1 - (maxVal - minVal) / valRange) * (height - padding * 2);
+
+        chartContainer.innerHTML = `
+          <svg width="100%" height="${height}" viewBox="0 0 ${width} ${height}" style="display: block; overflow: visible;">
+            <defs>
+              <linearGradient id="modal-grad-${player.profile_id}" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="${strokeColor}" stop-opacity="0.2"/>
+                <stop offset="100%" stop-color="${strokeColor}" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <!-- Grid Lines -->
+            <line x1="${padding}" y1="${padding}" x2="${width - padding}" y2="${padding}" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+            <line x1="${padding}" y1="${height / 2}" x2="${width - padding}" y2="${height / 2}" stroke="rgba(255,255,255,0.05)" stroke-width="1" stroke-dasharray="2,2" />
+            <line x1="${padding}" y1="${height - padding}" x2="${width - padding}" y2="${height - padding}" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+            
+            <!-- Filled Path -->
+            <polygon points="${padding},${height - padding} ${points} ${width - padding},${height - padding}" fill="url(#modal-grad-${player.profile_id})" />
+            
+            <!-- Line Path -->
+            <polyline points="${points}" fill="none" stroke="${strokeColor}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+            
+            <!-- Min/Max Annotations -->
+            <circle cx="${minX}" cy="${minY}" r="3" fill="#ef4444" />
+            <text x="${minX}" y="${minY + 12}" font-size="8" fill="#ef4444" text-anchor="middle" font-weight="600">${minVal}</text>
+            
+            <circle cx="${maxX}" cy="${maxY}" r="3" fill="#22c55e" />
+            <text x="${maxX}" y="${maxY - 6}" font-size="8" fill="#22c55e" text-anchor="middle" font-weight="600">${maxVal}</text>
+
+            <!-- Start/End Ratings -->
+            <circle cx="${padding}" cy="${padding + (1 - (firstRating - minVal) / valRange) * (height - padding * 2)}" r="3.5" fill="var(--text-muted)" />
+            <circle cx="${width - padding}" cy="${padding + (1 - (lastRating - minVal) / valRange) * (height - padding * 2)}" r="4.5" fill="${strokeColor}" />
+          </svg>
+          <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-muted); margin-top: 0.4rem;">
+            <span>Start: ${firstRating}</span>
+            <span>Peak: ${maxVal}</span>
+            <span>Current: ${lastRating}</span>
+          </div>
+        `;
+      } else {
+        chartContainer.innerHTML = `<div style="text-align: center; padding: 2rem; color: var(--text-muted);">No history data available.</div>`;
+      }
 
       // Update link to Insights
       elements.linkInsights.href = `https://www.aoe2insights.com/user/${player.profile_id}/`;
