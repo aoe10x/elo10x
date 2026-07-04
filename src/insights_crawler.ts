@@ -262,7 +262,7 @@ export class InsightsCrawler {
       // Insert match
       const newMatch: Match = {
         id: m.id,
-        source: 'relic_api', // Treated as standard API source
+        source: 'aoe2insights_scrape',
         mapname: m.mapname,
         maxplayers: 8,
         matchtype_id: 0,
