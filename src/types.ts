@@ -10,6 +10,7 @@ export type MatchSource =
   | 'relic_api'
   | 'local_replay_mgz'
   | 'local_replay_aoe2rec'
+  | 'aoe2insights_scrape'
   | 'unknown';
 
 export interface Match {
