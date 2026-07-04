@@ -1,0 +1,278 @@
+{
+  "summary": {
+    "total": 5,
+    "aocSuccess": 4,
+    "aoeSuccess": 1,
+    "bothSuccess": 1,
+    "aoeOnly": 0,
+    "aocOnly": 3,
+    "deltas": {
+      "derivedIdChanged": 1,
+      "mapChanged": 1,
+      "startTimeChanged": 0,
+      "durationChanged": 0,
+      "playerSetChanged": 0,
+      "teamAssignmentsChanged": 0,
+      "winnerFlagsChanged": 1
+    }
+  },
+  "comparisons": [
+    {
+      "fileName": "MP Replay v101.103.26969.0 @2025.10.15 172807 (1).aoe2record",
+      "filePath": "C:\\Users\\pauli\\Games\\Age of Empires 2 DE\\76561198024935383\\savegame\\MP Replay v101.103.26969.0 @2025.10.15 172807 (1).aoe2record",
+      "aoc": {
+        "fileName": "MP Replay v101.103.26969.0 @2025.10.15 172807 (1).aoe2record",
+        "parser": "aoc-mgz",
+        "parseOk": true,
+        "matchIdRaw": "516369ff-b284-e742-b0e9-95006c12b33a",
+        "mapName": "ZN@HyperRandomWalled",
+        "lobbyName": "doss-ee-ayy",
+        "startTime": 1760574487,
+        "durationSec": 3817,
+        "players": [
+          {
+            "profileId": 404483,
+            "alias": "Paulichromatic",
+            "civId": 37,
+            "teamId": 0,
+            "winner": false
+          },
+          {
+            "profileId": 1024429,
+            "alias": "blarp7070",
+            "civId": 21,
+            "teamId": 0,
+            "winner": false
+          }
+        ],
+        "derivedNumericId": 636332473
+      },
+      "aoe": {
+        "fileName": "MP Replay v101.103.26969.0 @2025.10.15 172807 (1).aoe2record",
+        "parser": "aoe2rec-js",
+        "parseOk": false,
+        "error": "unreachable",
+        "matchIdRaw": "",
+        "mapName": "",
+        "lobbyName": "",
+        "startTime": 0,
+        "durationSec": 0,
+        "players": [],
+        "derivedNumericId": 0
+      },
+      "bothParsed": false,
+      "delta": {
+        "derivedIdChanged": true,
+        "mapChanged": true,
+        "startTimeChanged": true,
+        "durationChanged": true,
+        "playerSetChanged": true,
+        "teamAssignmentsChanged": false,
+        "winnerFlagsChanged": false
+      }
+    },
+    {
+      "fileName": "MP Replay v101.103.26969.0 @2025.10.15 180153 (1).aoe2record",
+      "filePath": "C:\\Users\\pauli\\Games\\Age of Empires 2 DE\\76561198024935383\\savegame\\MP Replay v101.103.26969.0 @2025.10.15 180153 (1).aoe2record",
+      "aoc": {
+        "fileName": "MP Replay v101.103.26969.0 @2025.10.15 180153 (1).aoe2record",
+        "parser": "aoc-mgz",
+        "parseOk": false,
+        "error": "Command failed: python src/parse_replay.py C:\\Users\\pauli\\Games\\Age of Empires 2 DE\\76561198024935383\\savegame\\MP Replay v101.103.26969.0 @2025.10.15 180153 (1).aoe2record\ncould not fast parse; falling back: could not parse: unpack requires a buffer of 2 bytes\r\n{\"error\": \"Failed to parse replay: invalid mgz file: expected 3 to 3, found 0\\n    (parsing) -> initial\"}\r\n",
+        "matchIdRaw": "",
+        "mapName": "",
+        "lobbyName": "",
+        "startTime": 0,
+        "durationSec": 0,
+        "players": [],
+        "derivedNumericId": 49168
+      },
+      "aoe": {
+        "fileName": "MP Replay v101.103.26969.0 @2025.10.15 180153 (1).aoe2record",
+        "parser": "aoe2rec-js",
+        "parseOk": false,
+        "error": "unreachable",
+        "matchIdRaw": "",
+        "mapName": "",
+        "lobbyName": "",
+        "startTime": 0,
+        "durationSec": 0,
+        "players": [],
+        "derivedNumericId": 0
+      },
+      "bothParsed": false,
+      "delta": {
+        "derivedIdChanged": true,
+        "mapChanged": false,
+        "startTimeChanged": false,
+        "durationChanged": false,
+        "playerSetChanged": false,
+        "teamAssignmentsChanged": false,
+        "winnerFlagsChanged": false
+      }
+    },
+    {
+      "fileName": "MP Replay v101.103.26969.0 @2025.10.18 180253 (1).aoe2record",
+      "filePath": "C:\\Users\\pauli\\Games\\Age of Empires 2 DE\\76561198024935383\\savegame\\MP Replay v101.103.26969.0 @2025.10.18 180253 (1).aoe2record",
+      "aoc": {
+        "fileName": "MP Replay v101.103.26969.0 @2025.10.18 180253 (1).aoe2record",
+        "parser": "aoc-mgz",
+        "parseOk": true,
+        "matchIdRaw": "516369ff-b284-e742-b0e9-95006c12b33a",
+        "mapName": "ZN@HyperRandomWalled",
+        "lobbyName": "doss-ee-ayy",
+        "startTime": 1760835773,
+        "durationSec": 3823,
+        "players": [
+          {
+            "profileId": 404483,
+            "alias": "Paulichromatic",
+            "civId": 37,
+            "teamId": 0,
+            "winner": false
+          }
+        ],
+        "derivedNumericId": 636332473
+      },
+      "aoe": {
+        "fileName": "MP Replay v101.103.26969.0 @2025.10.18 180253 (1).aoe2record",
+        "parser": "aoe2rec-js",
+        "parseOk": true,
+        "matchIdRaw": "",
+        "mapName": "Map #59",
+        "mapId": 59,
+        "lobbyName": "",
+        "startTime": 1760835773,
+        "durationSec": 3823,
+        "players": [
+          {
+            "profileId": 404483,
+            "alias": "Paulichromatic",
+            "civId": 37,
+            "teamId": 0,
+            "winner": true
+          }
+        ],
+        "derivedNumericId": 668150273
+      },
+      "bothParsed": true,
+      "delta": {
+        "derivedIdChanged": true,
+        "mapChanged": true,
+        "startTimeChanged": false,
+        "durationChanged": false,
+        "playerSetChanged": false,
+        "teamAssignmentsChanged": false,
+        "winnerFlagsChanged": true
+      }
+    },
+    {
+      "fileName": "MP Replay v101.103.26969.0 @2025.10.18 180729 (1).aoe2record",
+      "filePath": "C:\\Users\\pauli\\Games\\Age of Empires 2 DE\\76561198024935383\\savegame\\MP Replay v101.103.26969.0 @2025.10.18 180729 (1).aoe2record",
+      "aoc": {
+        "fileName": "MP Replay v101.103.26969.0 @2025.10.18 180729 (1).aoe2record",
+        "parser": "aoc-mgz",
+        "parseOk": true,
+        "matchIdRaw": "3a8c4a52-98b4-5b47-b7d7-b2ab9654d4de",
+        "mapName": "ZN@HyperRandomWalled",
+        "lobbyName": "doss-ee-ayy",
+        "startTime": 1760836049,
+        "durationSec": 4200,
+        "players": [
+          {
+            "profileId": 404483,
+            "alias": "Paulichromatic",
+            "civId": 3,
+            "teamId": 0,
+            "winner": true
+          },
+          {
+            "profileId": 1024429,
+            "alias": "blarp7070",
+            "civId": 27,
+            "teamId": 0,
+            "winner": true
+          }
+        ],
+        "derivedNumericId": 1521441960
+      },
+      "aoe": {
+        "fileName": "MP Replay v101.103.26969.0 @2025.10.18 180729 (1).aoe2record",
+        "parser": "aoe2rec-js",
+        "parseOk": false,
+        "error": "unreachable",
+        "matchIdRaw": "",
+        "mapName": "",
+        "lobbyName": "",
+        "startTime": 0,
+        "durationSec": 0,
+        "players": [],
+        "derivedNumericId": 0
+      },
+      "bothParsed": false,
+      "delta": {
+        "derivedIdChanged": true,
+        "mapChanged": true,
+        "startTimeChanged": true,
+        "durationChanged": true,
+        "playerSetChanged": true,
+        "teamAssignmentsChanged": false,
+        "winnerFlagsChanged": false
+      }
+    },
+    {
+      "fileName": "MP Replay v101.103.26969.0 @2025.10.18 184833 (1).aoe2record",
+      "filePath": "C:\\Users\\pauli\\Games\\Age of Empires 2 DE\\76561198024935383\\savegame\\MP Replay v101.103.26969.0 @2025.10.18 184833 (1).aoe2record",
+      "aoc": {
+        "fileName": "MP Replay v101.103.26969.0 @2025.10.18 184833 (1).aoe2record",
+        "parser": "aoc-mgz",
+        "parseOk": true,
+        "matchIdRaw": "91cbf33c-ad21-fa47-bfd9-a50e9c5c7467",
+        "mapName": "ZN@HyperRandomWater",
+        "lobbyName": "doss-ee-ayy",
+        "startTime": 1760838513,
+        "durationSec": 3416,
+        "players": [
+          {
+            "profileId": 404483,
+            "alias": "Paulichromatic",
+            "civId": 30,
+            "teamId": 0,
+            "winner": true
+          },
+          {
+            "profileId": 1024429,
+            "alias": "blarp7070",
+            "civId": 45,
+            "teamId": 0,
+            "winner": true
+          }
+        ],
+        "derivedNumericId": 89804886
+      },
+      "aoe": {
+        "fileName": "MP Replay v101.103.26969.0 @2025.10.18 184833 (1).aoe2record",
+        "parser": "aoe2rec-js",
+        "parseOk": false,
+        "error": "unreachable",
+        "matchIdRaw": "",
+        "mapName": "",
+        "lobbyName": "",
+        "startTime": 0,
+        "durationSec": 0,
+        "players": [],
+        "derivedNumericId": 0
+      },
+      "bothParsed": false,
+      "delta": {
+        "derivedIdChanged": true,
+        "mapChanged": true,
+        "startTimeChanged": true,
+        "durationChanged": true,
+        "playerSetChanged": true,
+        "teamAssignmentsChanged": false,
+        "winnerFlagsChanged": false
+      }
+    }
+  ]
+}
