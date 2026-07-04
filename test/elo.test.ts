@@ -188,3 +188,61 @@ test('EloCalculator - Filtering and Sorting', () => {
   assert.strictEqual(provisionalLeaderboard[0].rating, 1016);
   assert.strictEqual(provisionalLeaderboard[7].rating, 984);
 });
+
+test('EloCalculator - Records ratingHistory chronologically', () => {
+  const calculator = new EloCalculator({
+    defaultRating: 1000,
+    kFactor: 32,
+    minGamesForLeaderboard: 1
+  });
+
+  const matches: Match[] = [
+    {
+      id: 1,
+      mapname: 'arabia',
+      maxplayers: 8,
+      matchtype_id: 8,
+      description: '10x Match 1',
+      startgametime: 1700000000,
+      completiontime: 1700001000,
+      players: [
+        { profile_id: 1, teamid: 1, resulttype: 1, race_id: 1, alias: 'A1' },
+        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 2, alias: 'A2' },
+        { profile_id: 3, teamid: 1, resulttype: 1, race_id: 3, alias: 'A3' },
+        { profile_id: 4, teamid: 1, resulttype: 1, race_id: 4, alias: 'A4' },
+        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+      ]
+    },
+    {
+      id: 2,
+      mapname: 'arabia',
+      maxplayers: 8,
+      matchtype_id: 8,
+      description: '10x Match 2',
+      startgametime: 1700002000,
+      completiontime: 1700003000,
+      players: [
+        { profile_id: 1, teamid: 1, resulttype: 1, race_id: 1, alias: 'A1' },
+        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 2, alias: 'A2' },
+        { profile_id: 3, teamid: 1, resulttype: 1, race_id: 3, alias: 'A3' },
+        { profile_id: 4, teamid: 1, resulttype: 1, race_id: 4, alias: 'A4' },
+        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+      ]
+    }
+  ];
+
+  const ratingsMap = calculator.calculate(matches);
+  const p1 = ratingsMap.get(1);
+  assert.ok(p1);
+  assert.deepStrictEqual(p1.ratingHistory, [1000, 1016, 1031]);
+
+  const p5 = ratingsMap.get(5);
+  assert.ok(p5);
+  assert.deepStrictEqual(p5.ratingHistory, [1000, 984, 969]);
+});

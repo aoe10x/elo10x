@@ -113,7 +113,8 @@ export class EloCalculator {
             losses: 0,
             gamesCount: 0,
             winRate: 0,
-            lastPlayedAt: 0
+            lastPlayedAt: 0,
+            ratingHistory: [this.config.defaultRating]
           });
         } else {
           // Update alias if we see a new/different one
@@ -154,6 +155,10 @@ export class EloCalculator {
         ratingObj.gamesCount++;
         ratingObj.winRate = Math.round((ratingObj.wins / ratingObj.gamesCount) * 100);
         ratingObj.lastPlayedAt = match.startgametime;
+        if (!ratingObj.ratingHistory) {
+          ratingObj.ratingHistory = [this.config.defaultRating];
+        }
+        ratingObj.ratingHistory.push(ratingObj.rating);
       }
 
       // Apply updates to Team 2 players
@@ -168,6 +173,10 @@ export class EloCalculator {
         ratingObj.gamesCount++;
         ratingObj.winRate = Math.round((ratingObj.wins / ratingObj.gamesCount) * 100);
         ratingObj.lastPlayedAt = match.startgametime;
+        if (!ratingObj.ratingHistory) {
+          ratingObj.ratingHistory = [this.config.defaultRating];
+        }
+        ratingObj.ratingHistory.push(ratingObj.rating);
       }
     }
 
