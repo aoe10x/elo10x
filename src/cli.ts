@@ -27,7 +27,6 @@ Options:
   --min-games <number>      Minimum games required to display on the leaderboard (default: 5).
   --k-factor <number>       K-Factor to use for ELO calculations (default: 32).
   --provisional             Include provisional players (fewer games than min-games).
-  --exclude-local           Exclude locally imported replays from ELO calculations.
 
   --help, -h                Show this help message.
 
@@ -38,7 +37,7 @@ Examples:
   # Scrape Paulichromatic's match history (pages 1-20) from AoE2Insights
   node --experimental-strip-types src/cli.ts --scrape-insights 404483 --start-page 1 --end-page 20
 
-  node --experimental-strip-types src/cli.ts --elo --exclude-local
+  node --experimental-strip-types src/cli.ts --elo
 `);
 }
 
@@ -55,7 +54,6 @@ async function main(): Promise<void> {
     'min-games': { type: 'string' as const },
     'k-factor': { type: 'string' as const },
     provisional: { type: 'boolean' as const },
-    'exclude-local': { type: 'boolean' as const },
     help: { type: 'boolean' as const, short: 'h' as const }
   };
 
@@ -184,66 +182,80 @@ async function main(): Promise<void> {
     const minGames = values['min-games'] ? parseInt(values['min-games'], 10) : 5;
     const kFactor = values['k-factor'] ? parseInt(values['k-factor'], 10) : 32;
     const provisional = !!values.provisional;
-    const excludeLocal = !!values['exclude-local'];
 
-    let matches = db.getMatches();
-    if (excludeLocal) {
-      matches = matches.filter(m => m.source === 'relic_api' || m.source === 'aoe2insights_scrape');
-      console.log(`Excluding local games. Focusing only on Relic API and AoE2Insights matches.`);
-    }
-    console.log(`Calculating ELO ratings for ${matches.length} matches...`);
-    
     const calculator = new EloCalculator({
       kFactor,
       minGamesForLeaderboard: minGames
     });
 
-    const ratingsMap = calculator.calculate(matches);
-    const leaderboard = calculator.getLeaderboard(ratingsMap, provisional);
+    const allMatches = db.getMatches();
 
-    // Write leaderboard data to data/leaderboard.json for the web dashboard to consume
-    const leaderboardPath = path.join(process.cwd(), 'data', 'leaderboard.json');
-    await fs.mkdir(path.dirname(leaderboardPath), { recursive: true });
-    
-    // Also save metadata about the ELO runs
-    const payload = {
-      updatedAt: Date.now(),
-      totalMatches: matches.length,
-      totalPlayers: ratingsMap.size,
-      leaderboardCount: leaderboard.length,
-      config: { minGames, kFactor, provisional, excludeLocal },
-      players: leaderboard.map(p => ({
-        ...p,
-        country: db.getProfile(p.profile_id)?.country
-      }))
-    };
-    
-    await fs.writeFile(leaderboardPath, JSON.stringify(payload, null, 2), 'utf-8');
-    console.log(`Leaderboard saved to ${leaderboardPath}`);
+    const modes = [
+      {
+        name: '10x3x',
+        filter: (m: any) => /10x/i.test(m.description) && /3x/i.test(m.description),
+        file: 'leaderboard_3x.json'
+      },
+      {
+        name: 'Pure 10x',
+        filter: (m: any) => /10x/i.test(m.description) && !/3x/i.test(m.description),
+        file: 'leaderboard_pure.json'
+      },
+      {
+        name: 'Combined',
+        filter: (m: any) => /10x/i.test(m.description),
+        file: 'leaderboard_combined.json'
+      }
+    ];
 
-    // Print top 15 players in console
-    console.log('\n--- TOP 15 ELO RANKINGS ---');
-    console.log(
-      String('Rank').padEnd(6) + 
-      String('Alias').padEnd(25) + 
-      String('Elo').padEnd(8) + 
-      String('Record (W-L)').padEnd(15) + 
-      String('Win %').padEnd(8) + 
-      String('Profile ID')
-    );
-    console.log('-'.repeat(70));
-    
-    leaderboard.slice(0, 15).forEach((p, index) => {
-      console.log(
-        String(index + 1).padEnd(6) + 
-        String(p.alias.slice(0, 24)).padEnd(25) + 
-        String(p.rating).padEnd(8) + 
-        String(`${p.wins}-${p.losses}`).padEnd(15) + 
-        String(`${p.winRate}%`).padEnd(8) + 
-        String(p.profile_id)
-      );
-    });
-    console.log('---------------------------\n');
+    for (const mode of modes) {
+      const filteredMatches = allMatches.filter(mode.filter);
+      const ratingsMap = calculator.calculate(filteredMatches);
+      const leaderboard = calculator.getLeaderboard(ratingsMap, provisional);
+
+      const leaderboardPath = path.join(process.cwd(), 'public', 'data', mode.file);
+      await fs.mkdir(path.dirname(leaderboardPath), { recursive: true });
+      
+      const payload = {
+        updatedAt: Date.now(),
+        totalMatches: filteredMatches.length,
+        totalPlayers: ratingsMap.size,
+        leaderboardCount: leaderboard.length,
+        config: { minGames, kFactor, provisional, mode: mode.name },
+        players: leaderboard.map(p => ({
+          ...p,
+          country: db.getProfile(p.profile_id)?.country
+        }))
+      };
+      
+      await fs.writeFile(leaderboardPath, JSON.stringify(payload, null, 2), 'utf-8');
+      console.log(`Saved ${mode.name} leaderboard (${filteredMatches.length} matches) to ${leaderboardPath}`);
+
+      if (mode.name === '10x3x') {
+        console.log('\n--- TOP 15 ELO RANKINGS (10x3x - DEFAULT) ---');
+        console.log(
+          String('Rank').padEnd(6) + 
+          String('Alias').padEnd(25) + 
+          String('Elo').padEnd(8) + 
+          String('Record (W-L)').padEnd(15) + 
+          String('Win %').padEnd(8) + 
+          String('Profile ID')
+        );
+        console.log('-'.repeat(70));
+        leaderboard.slice(0, 15).forEach((p, idx) => {
+          const record = `${p.wins}-${p.losses}`;
+          console.log(
+            String(idx + 1).padEnd(6) + 
+            String(p.alias).padEnd(25) + 
+            String(p.rating).padEnd(8) + 
+            String(record).padEnd(15) + 
+            String(p.winRate + '%').padEnd(8) + 
+            p.profile_id
+          );
+        });
+        console.log('-'.repeat(70) + '\n');
+      }
+    }
   }
 }
 

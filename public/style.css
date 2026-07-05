@@ -326,46 +326,88 @@ tbody tr:hover {
     color: var(--text-muted);
 }
 
-/* Win Rate Progress Bar */
-.winrate-bar-container {
+/* True Diverging Record Bar Chart */
+.true-diverging-container {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
+    justify-content: center;
+    width: 100%;
+    min-width: 250px;
+    padding: 0.2rem 0;
 }
 
-.winrate-bar {
-    flex: 1;
-    height: 6px;
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 3px;
-    overflow: hidden;
+.losses-side {
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 44%;
+    gap: 0.4rem;
 }
 
-.winrate-progress {
+.wins-side {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 56%;
+    gap: 0.4rem;
+}
+
+.center-divider-line {
+    width: 2px;
+    height: 14px;
+    background: rgba(196, 169, 106, 0.45);
+    border-radius: 1px;
+    box-shadow: 0 0 4px rgba(196, 169, 106, 0.5);
+}
+
+.bar-grow-left {
+    width: 80px;
+    display: flex;
+    justify-content: flex-end;
+    height: 6px;
+}
+
+.bar-grow-right {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    height: 6px;
+}
+
+.table-losses-bar {
+    height: 100%;
+    background: linear-gradient(270deg, #ef4444, #f87171);
+    border-radius: 3px 0 0 3px;
+    transition: width 0.3s ease;
+}
+
+.table-wins-bar {
     height: 100%;
     background: linear-gradient(90deg, #10b981, #34d399);
-    box-shadow: 0 0 8px rgba(52, 211, 153, 0.4);
-    border-radius: 3px;
+    border-radius: 0 3px 3px 0;
+    transition: width 0.3s ease;
 }
 
-.winrate-text {
-    font-size: 0.9rem;
+.record-label-losses {
+    font-size: 0.78rem;
+    color: #f87171;
     font-weight: 600;
-    min-width: 45px;
+    min-width: 26px;
     text-align: right;
 }
 
-.winrate-high {
+.record-label-wins {
+    font-size: 0.78rem;
     color: #34d399;
+    font-weight: 600;
+    min-width: 26px;
+    text-align: left;
 }
 
-.winrate-mid {
-    color: var(--text-light);
-}
-
-.winrate-low {
-    color: #f87171;
+.record-winrate-percentage {
+    font-size: 0.78rem;
+    color: var(--text-gold);
+    font-weight: 700;
 }
 
 /* Sparkline Trend Column styling */
@@ -373,140 +415,111 @@ tbody tr:hover {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    padding: 2px 6px;
-    border: 1px solid rgba(255, 255, 255, 0.03);
-}
-
-.modal-trend-container {
-    background: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    padding: 1rem;
-    margin-top: 1.5rem;
-}
-
-/* Detailed Modal / Panel */
-.modal-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(5, 6, 8, 0.85);
-    backdrop-filter: blur(8px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 100;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-}
-
-.modal-backdrop.active {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.modal-card {
-    background: #11141e;
-    border: 1px solid var(--border-glow);
-    border-radius: 20px;
-    width: 90%;
-    max-width: 500px;
-    padding: 2rem;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
-    transform: translateY(20px);
-    transition: transform 0.3s ease;
-}
-
-.modal-backdrop.active .modal-card {
-    transform: translateY(0);
-}
-
-.modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 1.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    padding-bottom: 1rem;
-}
-
-.modal-title {
-    font-family: 'Cinzel', serif;
-    font-size: 1.6rem;
-    color: var(--text-gold-light);
-    font-weight: 700;
-}
-
-.close-btn {
     background: none;
     border: none;
-    color: var(--text-muted);
-    font-size: 1.5rem;
-    cursor: pointer;
-    line-height: 1;
+    padding: 0;
 }
 
-.close-btn:hover {
-    color: #fff;
+/* Inline Expandable Details Row */
+.details-row {
+    background: rgba(10, 12, 18, 0.95) !important;
+    cursor: default !important;
+    border-top: 1px solid rgba(196, 169, 106, 0.15);
+    border-bottom: 1px solid rgba(196, 169, 106, 0.15);
+    transition: all 0.3s ease;
 }
 
-.modal-body {
+.details-row:hover {
+    background: rgba(10, 12, 18, 0.95) !important;
+}
+
+.details-row td {
+    padding: 0.75rem 1.25rem !important;
+    border-bottom: none;
+}
+
+.details-expanded-container {
     display: grid;
-    gap: 1.2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    align-items: start;
+    width: 100%;
 }
 
-.modal-stat-row {
+.details-col-left {
     display: flex;
-    justify-content: space-between;
-    font-size: 1rem;
-    padding-bottom: 0.8rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    flex-direction: column;
+    gap: 0.8rem;
 }
 
-.modal-stat-label {
+.details-col-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.details-stats-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 0.55rem 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    font-size: 0.84rem;
     color: var(--text-muted);
+    justify-content: space-between;
+    align-items: center;
 }
 
-.modal-stat-value {
-    font-weight: 600;
-    color: #fff;
+.details-stats-inline span strong {
+    color: var(--text-gold-light);
+    font-weight: 500;
 }
 
-.modal-stat-value.gold {
-    color: var(--text-gold);
-    font-weight: 700;
+.details-trend-container {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-top: 0.25rem;
 }
 
-.external-links {
+.details-actions {
     display: flex;
     gap: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
 }
 
-.btn-link {
+.btn-action {
     flex: 1;
     text-align: center;
-    background: rgba(196, 169, 106, 0.1);
+    background: rgba(196, 169, 106, 0.08);
     border: 1px solid var(--border-color);
     color: var(--text-gold-light);
-    padding: 0.75rem;
+    padding: 0.6rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
-    transition: all 0.2s ease;
-    font-size: 0.95rem;
+    transition: all 0.25s ease;
+    font-size: 0.9rem;
 }
 
-.btn-link:hover {
+.btn-action:hover {
     background: var(--text-gold);
     color: #0b0d13;
     border-color: var(--text-gold);
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
+}
+
+/* Timeline header inside expanded details */
+.details-timeline-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    color: var(--text-gold);
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 0.4rem;
+    text-align: left;
 }
 
 /* Loading state design */
@@ -587,5 +600,239 @@ footer a:hover {
     }
     .search-wrapper {
     min-width: 100%;
+    }
+    .details-expanded-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .details-row td {
+        padding: 1rem !important;
+    }
+}
+
+/* Tab Buttons */
+.tabs-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.tab-btn {
+    background: rgba(196, 169, 106, 0.04);
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+}
+
+.tab-btn:hover {
+    color: var(--text-light);
+    border-color: rgba(196, 169, 106, 0.4);
+    background: rgba(196, 169, 106, 0.08);
+}
+
+.tab-btn.active {
+    background: var(--text-gold);
+    color: #0b0d13;
+    border-color: var(--text-gold);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.25);
+    font-weight: 600;
+}
+
+/* Match history in modal */
+.modal-matches-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    color: var(--text-gold);
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 0.4rem;
+}
+
+.modal-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    max-height: 480px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.timeline-card {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: border-color 0.2s ease;
+}
+
+.timeline-card:hover {
+    border-color: rgba(196, 169, 106, 0.15);
+}
+
+.timeline-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: left;
+}
+
+.timeline-map {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.timeline-meta {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.timeline-right {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.2rem;
+}
+
+/* Points badges */
+.points-badge {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.points-win {
+    background: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.points-loss {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.timeline-rating-range {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.ux-legend {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 0.5rem;
+    text-align: center;
+    line-height: 1.3;
+}
+
+/* Methodology Section styling */
+.methodology-section {
+    margin-top: 3.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(196, 169, 106, 0.15);
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.methodology-section h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.35rem;
+    color: var(--text-gold);
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    border-left: 3px solid var(--accent-color);
+    padding-left: 0.8rem;
+    text-transform: uppercase;
+}
+
+.methodology-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.methodology-card {
+    background: rgba(10, 12, 18, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.methodology-card h4 {
+    font-family: 'Cinzel', serif;
+    color: var(--text-gold-light);
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.methodology-card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+}
+
+.methodology-card ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.methodology-card li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.methodology-card code {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 0.1rem 0.3rem;
+    border-radius: 4px;
+    font-family: monospace;
+    color: var(--text-light);
+}
+
+.formula-box {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 0.8rem;
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: var(--text-gold-light);
+    line-height: 1.6;
+    text-align: center;
+    margin: 0.8rem 0;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 992px) {
+    .methodology-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 }

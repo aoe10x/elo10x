@@ -138,6 +138,7 @@ export class EloCalculator {
       // Apply updates to Team 1 players
       for (const p of team1) {
         const ratingObj = ratingsMap.get(p.profile_id)!;
+        const preRating = ratingObj.rating;
         // Individual Elo vs Opposing Team Average (DE Algorithm 3)
         const expected = 1 / (1 + Math.pow(10, (team2Avg - ratingObj.rating) / 400));
         const delta = this.config.kFactor * (team1Score - expected);
@@ -154,11 +155,29 @@ export class EloCalculator {
           ratingObj.ratingHistory = [this.config.defaultRating];
         }
         ratingObj.ratingHistory.push(ratingObj.rating);
+
+        // Record recent match details
+        ratingObj.recentMatches = ratingObj.recentMatches || [];
+        ratingObj.recentMatches.push({
+          matchId: match.id,
+          description: match.description,
+          mapname: match.mapname,
+          timestamp: match.startgametime,
+          outcome: team1Score === 1 ? 'win' : 'loss',
+          preRating,
+          postRating: ratingObj.rating,
+          eloChange: ratingObj.rating - preRating,
+          opponentAvgElo: Math.round(team2Avg)
+        });
+        if (ratingObj.recentMatches.length > 15) {
+          ratingObj.recentMatches.shift();
+        }
       }
 
       // Apply updates to Team 2 players
       for (const p of team2) {
         const ratingObj = ratingsMap.get(p.profile_id)!;
+        const preRating = ratingObj.rating;
         // Individual Elo vs Opposing Team Average (DE Algorithm 3)
         const expected = 1 / (1 + Math.pow(10, (team1Avg - ratingObj.rating) / 400));
         const delta = this.config.kFactor * (team2Score - expected);
@@ -175,6 +194,23 @@ export class EloCalculator {
           ratingObj.ratingHistory = [this.config.defaultRating];
         }
         ratingObj.ratingHistory.push(ratingObj.rating);
+
+        // Record recent match details
+        ratingObj.recentMatches = ratingObj.recentMatches || [];
+        ratingObj.recentMatches.push({
+          matchId: match.id,
+          description: match.description,
+          mapname: match.mapname,
+          timestamp: match.startgametime,
+          outcome: team2Score === 1 ? 'win' : 'loss',
+          preRating,
+          postRating: ratingObj.rating,
+          eloChange: ratingObj.rating - preRating,
+          opponentAvgElo: Math.round(team1Avg)
+        });
+        if (ratingObj.recentMatches.length > 15) {
+          ratingObj.recentMatches.shift();
+        }
       }
     }
 

@@ -8,7 +8,7 @@ export class JsonDatabase {
   private data!: DatabaseSchema;
   private isLoaded: boolean = false;
 
-  constructor(filePath: string = path.join(process.cwd(), 'data', 'db.json')) {
+  constructor(filePath: string = path.join(process.cwd(), 'public', 'data', 'db.json')) {
     this.filePath = filePath;
   }
 
@@ -143,11 +143,11 @@ export class JsonDatabase {
         continue;
       }
 
-      // Relic API records usually include creator/gamemod metadata; local imports usually do not.
+      // Relic API records usually include creator/gamemod metadata; scraped files do not.
       if (match.creator_profile_id !== undefined || match.gamemod_id !== undefined) {
         match.source = 'relic_api';
       } else {
-        match.source = 'local_replay_mgz';
+        match.source = 'aoe2insights_scrape';
       }
     }
   }
