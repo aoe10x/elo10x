@@ -108,13 +108,44 @@
           </tbody>
         </table>
       </div>
-    </div>
 
+      <!-- Methodology Section -->
+      <div class="methodology-section">
+        <h3>ELO Calculation Methodology</h3>
+        <div class="methodology-grid">
+          <div class="methodology-card">
+            <h4>Algorithm & Parameters</h4>
+            <p>We use the standard Definitive Edition multiplayer rating formula (Algorithm 3) to compute player adjustments sequentially:</p>
+            <ul>
+              <li><strong>Baseline Rating:</strong> New players start at <code>1000 ELO</code>.</li>
+              <li><strong>K-Factor:</strong> Set to <code>K = 32</code> to ensure stable but responsive rating updates.</li>
+              <li><strong>Sequential Updates:</strong> Matches are sorted chronologically, and ratings are updated step-by-step.</li>
+            </ul>
+          </div>
+          <div class="methodology-card">
+            <h4>Team Expected ELO</h4>
+            <p>A player's rating adjustment compares their individual rating against the opposing team's average rating:</p>
+            <div class="formula-box">
+              E = 1 / (1 + 10<sup>(Opponent Avg ELO - Player ELO) / 400</sup>)<br>
+              &Delta; = K &times; (Outcome - E)
+            </div>
+            <p>Wins increase ratings (Outcome = 1); losses decrease ratings (Outcome = 0). Rating delta is rounded to the nearest integer.</p>
+          </div>
+          <div class="methodology-card">
+            <h4>Match Eligibility</h4>
+            <p>To ensure competitive integrity, matches must meet the following strict validation checks:</p>
+            <ul>
+              <li><strong>Strict 4v4 format:</strong> The match must contain exactly 8 tracked players.</li>
+              <li><strong>Two distinct teams:</strong> Exactly 4 players per team.</li>
+              <li><strong>Outcome verification:</strong> Exactly 4 winners and 4 losers must be reported. Ambiguous or draw outcomes are skipped.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-
-    <footer>
-      <p>Data scraped from Relic Link multiplayer servers. Site built for the AoE2 10x community.</p>
-    </footer>
+      <footer>
+        <p>Data scraped from Relic Link multiplayer servers. Site built for the AoE2 10x community.</p>
+      </footer>
   </div>
 
   <script>
