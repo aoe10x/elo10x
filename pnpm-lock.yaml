@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      aoe2rec-js:
-        specifier: ^0.1.22
-        version: 0.1.22
     devDependencies:
       '@types/node':
         specifier: ^22.13.0
@@ -23,9 +19,6 @@ packages:
 
   '@types/node@22.20.0':
     resolution: {integrity: sha512-QWlFW2wf3nTjC13/DqRnBpR4ZO36VJH/JVBkA/vcnmbTBNQIlnObqyqZE1tUR7+Ni23Lda8R1BxMfbXRpCUx5g==}
-
-  aoe2rec-js@0.1.22:
-    resolution: {integrity: sha512-sLu4n5YpDq5UgSjl31VdH+iQ/wn1LTERNJBYkVbLC5ntQzr9AQRBCFjEMi/WKOBWwkOQLWlV7O6yRYMyKSvmxQ==}
 
   typescript@5.9.3:
     resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
@@ -40,8 +33,6 @@ snapshots:
   '@types/node@22.20.0':
     dependencies:
       undici-types: 6.21.0
-
-  aoe2rec-js@0.1.22: {}
 
   typescript@5.9.3: {}
 
