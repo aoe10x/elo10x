@@ -194,8 +194,8 @@ async function main(): Promise<void> {
     const ratingsMap = calculator.calculate(matches);
     const leaderboard = calculator.getLeaderboard(ratingsMap, provisional);
 
-    // Write leaderboard data to data/leaderboard.json for the web dashboard to consume
-    const leaderboardPath = path.join(process.cwd(), 'data', 'leaderboard.json');
+    // Write leaderboard data to public/data/leaderboard.json for the web dashboard to consume
+    const leaderboardPath = path.join(process.cwd(), 'public', 'data', 'leaderboard.json');
     await fs.mkdir(path.dirname(leaderboardPath), { recursive: true });
     
     // Also save metadata about the ELO runs
