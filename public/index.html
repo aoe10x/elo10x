@@ -100,8 +100,7 @@
               <th>Player Alias</th>
               <th>Elo Rating</th>
               <th style="text-align: center; width: 120px;">Trend</th>
-              <th>Record (W - L)</th>
-              <th class="col-winrate">Win Rate</th>
+              <th style="width: 250px;">Record / Win Rate</th>
             </tr>
           </thead>
           <tbody id="leaderboard-body">
@@ -243,6 +242,9 @@
         return;
       }
 
+      // Compute max games to scale the diverging record bars
+      const maxGames = Math.max(...filteredPlayers.map(p => p.gamesCount)) || 1;
+
       filteredPlayers.forEach((player, index) => {
         const row = document.createElement('tr');
         
@@ -252,11 +254,6 @@
         else if (index === 1) rankContent = '<span class="rank-badge rank-2">2</span>';
         else if (index === 2) rankContent = '<span class="rank-badge rank-3">3</span>';
         else rankContent = `<span class="rank-other">${index + 1}</span>`;
-
-        // 2. Win Rate Bar Color Class
-        let winrateClass = 'winrate-mid';
-        if (player.winRate >= 60) winrateClass = 'winrate-high';
-        else if (player.winRate <= 40) winrateClass = 'winrate-low';
 
         let countryName = '';
         if (player.country) {
@@ -322,18 +319,30 @@
           sparklineHtml = `<span style="color: var(--text-muted); font-size: 0.85rem;">Flat</span>`;
         }
 
+        // Diverging record bar sizing
+        const widthPct = Math.max(25, Math.round((player.gamesCount / maxGames) * 100));
+        const winPct = player.winRate;
+        const lossPct = 100 - winPct;
+
         row.innerHTML = `
           <td class="col-rank">${rankContent}</td>
           <td class="col-alias">${flagHtml}${escapeHtml(player.alias)}</td>
           <td class="col-elo">${player.rating}</td>
           <td style="text-align: center; vertical-align: middle;">${sparklineHtml}</td>
-          <td class="col-record">${player.wins}W - ${player.losses}L</td>
-          <td class="col-winrate">
-            <div class="winrate-bar-container">
-              <div class="winrate-bar">
-                <div class="winrate-progress" style="width: ${player.winRate}%"></div>
+          <td>
+            <div class="table-record-cell">
+              <div class="table-record-labels">
+                <span class="record-wins-label">${player.wins}W</span>
+                <span class="record-winrate-label">${player.winRate}% WR</span>
+                <span class="record-losses-label">${player.losses}L</span>
               </div>
-              <span class="winrate-text ${winrateClass}">${player.winRate}%</span>
+              <div class="table-diverging-bar-wrapper" style="width: ${widthPct}%;" title="${player.gamesCount} total games (scaled relative to top active player: ${maxGames})">
+                <div class="table-diverging-bar">
+                  <div class="table-bar-segment table-losses-bar" style="width: ${lossPct}%;"></div>
+                  <div class="table-bar-divider"></div>
+                  <div class="table-bar-segment table-wins-bar" style="width: ${winPct}%;"></div>
+                </div>
+              </div>
             </div>
           </td>
         `;
@@ -342,7 +351,7 @@
         detailsRow.className = 'details-row';
         detailsRow.id = `details-row-${player.profile_id}`;
         detailsRow.style.display = 'none';
-        detailsRow.innerHTML = `<td colspan="6" id="details-cell-${player.profile_id}"></td>`;
+        detailsRow.innerHTML = `<td colspan="5" id="details-cell-${player.profile_id}"></td>`;
 
         row.addEventListener('click', () => togglePlayerDetails(player, index + 1, detailsRow));
         elements.tbody.appendChild(row);
