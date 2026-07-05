@@ -111,67 +111,7 @@
       </div>
     </div>
 
-    <!-- Detailed Profile Modal -->
-    <div class="modal-backdrop" id="profile-modal">
-      <div class="modal-card">
-        <div class="modal-header">
-          <div class="modal-title" id="modal-alias">Player Profile</div>
-          <button class="close-btn" id="modal-close">&times;</button>
-        </div>
-        <div class="modal-body">
-          <div class="modal-stat-row">
-            <span class="modal-stat-label">ELO Rank</span>
-            <span class="modal-stat-value gold" id="modal-rank">-</span>
-          </div>
-          <div class="modal-stat-row">
-            <span class="modal-stat-label">ELO Rating</span>
-            <span class="modal-stat-value gold" id="modal-rating">-</span>
-          </div>
-          <div class="modal-stat-row">
-            <span class="modal-stat-label">Games Played</span>
-            <span class="modal-stat-value" id="modal-games">-</span>
-          </div>
-          <div class="modal-stat-row">
-            <span class="modal-stat-label">Wins</span>
-            <span class="modal-stat-value" style="color: var(--accent-win);" id="modal-wins">-</span>
-          </div>
-          <div class="modal-stat-row">
-            <span class="modal-stat-label">Losses</span>
-            <span class="modal-stat-value" style="color: var(--accent-loss);" id="modal-losses">-</span>
-          </div>
-          <div class="modal-stat-row">
-            <span class="modal-stat-label">Win Rate</span>
-            <span class="modal-stat-value" id="modal-winrate">-</span>
-          </div>
-          <div class="modal-stat-row">
-            <span class="modal-stat-label">Country</span>
-            <span class="modal-stat-value" id="modal-country">-</span>
-          </div>
-          <div class="modal-stat-row">
-            <span class="modal-stat-label">Profile ID</span>
-            <span class="modal-stat-value" id="modal-profile-id">-</span>
-          </div>
-          <div class="modal-stat-row">
-            <span class="modal-stat-label">Last Match Played</span>
-            <span class="modal-stat-value" id="modal-last-played">-</span>
-          </div>
-          <div class="modal-trend-container">
-            <div style="font-size: 0.9rem; color: var(--text-gold); font-family: 'Cinzel', serif; font-weight: 700; margin-bottom: 0.8rem; letter-spacing: 0.5px;">Rating History Trend</div>
-            <div id="modal-trend-chart"></div>
-          </div>
-          
-          <div class="modal-matches-title">Recent Games ELO History</div>
-          <div class="modal-timeline" id="modal-timeline">
-            <!-- Timeline cards will go here dynamically -->
-          </div>
-          <div class="ux-legend">Rating change is based on your ELO vs. the opposing team's average ELO.</div>
-        </div>
-        <div class="external-links">
-          <a href="#" target="_blank" class="btn-link" id="link-insights">AoE2 Insights</a>
-          <a href="#" target="_blank" class="btn-link" id="link-steam" style="display: none;">Steam Profile</a>
-        </div>
-      </div>
-    </div>
+
 
     <footer>
       <p>Data scraped from Relic Link multiplayer servers. Site built for the AoE2 10x community.</p>
@@ -198,23 +138,7 @@
       statMatches: document.getElementById('stat-matches'),
       statPlayers: document.getElementById('stat-players'),
       statRange: document.getElementById('stat-range'),
-      statUpdated: document.getElementById('stat-updated'),
-      
-      // Modal
-      modal: document.getElementById('profile-modal'),
-      modalAlias: document.getElementById('modal-alias'),
-      modalRank: document.getElementById('modal-rank'),
-      modalRating: document.getElementById('modal-rating'),
-      modalGames: document.getElementById('modal-games'),
-      modalWins: document.getElementById('modal-wins'),
-      modalLosses: document.getElementById('modal-losses'),
-      modalWinrate: document.getElementById('modal-winrate'),
-      modalProfileId: document.getElementById('modal-profile-id'),
-      modalLastPlayed: document.getElementById('modal-last-played'),
-      modalCountry: document.getElementById('modal-country'),
-      linkInsights: document.getElementById('link-insights'),
-      linkSteam: document.getElementById('link-steam'),
-      modalClose: document.getElementById('modal-close')
+      statUpdated: document.getElementById('stat-updated')
     };
 
     // Fetch Leaderboard JSON
@@ -414,12 +338,43 @@
           </td>
         `;
 
-        row.addEventListener('click', () => showPlayerModal(player, index + 1));
+        const detailsRow = document.createElement('tr');
+        detailsRow.className = 'details-row';
+        detailsRow.id = `details-row-${player.profile_id}`;
+        detailsRow.style.display = 'none';
+        detailsRow.innerHTML = `<td colspan="6" id="details-cell-${player.profile_id}"></td>`;
+
+        row.addEventListener('click', () => togglePlayerDetails(player, index + 1, detailsRow));
         elements.tbody.appendChild(row);
+        elements.tbody.appendChild(detailsRow);
       });
     }
 
-    function showPlayerModal(player, rank) {
+    let activeExpandedRow = null;
+
+    function togglePlayerDetails(player, rank, detailsRow) {
+      const isCurrentlyVisible = detailsRow.style.display !== 'none';
+      
+      // Close any open expanded row
+      document.querySelectorAll('.details-row').forEach(row => {
+        row.style.display = 'none';
+      });
+      document.querySelectorAll('tbody tr').forEach(row => {
+        row.classList.remove('active-row');
+      });
+
+      if (isCurrentlyVisible) {
+        activeExpandedRow = null;
+        return; // Just toggle closed
+      }
+
+      // Open this row
+      detailsRow.style.display = 'table-row';
+      activeExpandedRow = detailsRow;
+      
+      // Populate the cell
+      const cell = document.getElementById(`details-cell-${player.profile_id}`);
+      
       let countryName = 'Unknown';
       if (player.country) {
         try {
@@ -430,30 +385,95 @@
         }
       }
 
-      const flagHtml = player.country 
-        ? `<img src="https://flagcdn.com/28x21/${player.country.toLowerCase()}.png" width="27" height="20" alt="${player.country.toUpperCase()}" style="margin-right: 10px; vertical-align: middle; border-radius: 2px; border: 1px solid rgba(255,255,255,0.2);" title="${escapeHtml(countryName)}">` 
-        : '';
-      elements.modalAlias.innerHTML = flagHtml + escapeHtml(player.alias);
-      elements.modalRank.textContent = '#' + rank;
-      elements.modalRating.textContent = player.rating;
-      elements.modalGames.textContent = player.gamesCount;
-      elements.modalWins.textContent = player.wins;
-      elements.modalLosses.textContent = player.losses;
-      elements.modalWinrate.textContent = player.winRate + '%';
-      elements.modalProfileId.textContent = player.profile_id;
-      elements.modalCountry.textContent = countryName;
-      
       const dateStr = player.lastPlayedAt 
         ? new Date(player.lastPlayedAt * 1000).toLocaleString() 
         : 'Unknown';
-      elements.modalLastPlayed.textContent = dateStr;
 
-      // Render detailed ELO trend chart
+      // 2-Column HTML template
+      cell.innerHTML = `
+        <div class="details-expanded-container">
+          <!-- Column Left: Stats & ELO Trend Chart -->
+          <div class="details-col-left">
+            <div style="font-family: 'Cinzel', serif; font-size: 1.2rem; color: var(--text-gold-light); font-weight: 700; margin-bottom: 0.2rem; text-align: left;">
+              Player Stats & Profile Info
+            </div>
+            
+            <div class="details-stat-grid">
+              <div class="details-stat-box">
+                <span class="details-stat-label">ELO Rank</span>
+                <span class="details-stat-value gold">#${rank}</span>
+              </div>
+              <div class="details-stat-box">
+                <span class="details-stat-label">ELO Rating</span>
+                <span class="details-stat-value gold">${player.rating}</span>
+              </div>
+              <div class="details-stat-box">
+                <span class="details-stat-label">Games Played</span>
+                <span class="details-stat-value">${player.gamesCount}</span>
+              </div>
+              <div class="details-stat-box">
+                <span class="details-stat-label">Record</span>
+                <span class="details-stat-value">
+                  <span style="color: var(--accent-win);">${player.wins}W</span> - 
+                  <span style="color: var(--accent-loss);">${player.losses}L</span>
+                </span>
+              </div>
+              <div class="details-stat-box">
+                <span class="details-stat-label">Win Rate</span>
+                <span class="details-stat-value">${player.winRate}%</span>
+              </div>
+              <div class="details-stat-box">
+                <span class="details-stat-label">Country</span>
+                <span class="details-stat-value">${countryName}</span>
+              </div>
+              <div class="details-stat-box" style="grid-column: span 2;">
+                <span class="details-stat-label">Profile ID</span>
+                <span class="details-stat-value" style="font-family: monospace; font-size: 0.95rem;">${player.profile_id}</span>
+              </div>
+              <div class="details-stat-box" style="grid-column: span 2;">
+                <span class="details-stat-label">Last Match Played</span>
+                <span class="details-stat-value" style="font-size: 0.9rem;">${dateStr}</span>
+              </div>
+            </div>
+
+            <!-- ELO Trend Chart -->
+            <div class="details-trend-container">
+              <div style="font-size: 0.85rem; color: var(--text-gold); font-family: 'Cinzel', serif; font-weight: 700; margin-bottom: 0.8rem; letter-spacing: 0.5px; text-align: left;">Rating History Trend</div>
+              <div id="trend-chart-${player.profile_id}"></div>
+            </div>
+
+            <!-- Links -->
+            <div class="details-actions">
+              <a href="https://www.aoe2insights.com/user/${player.profile_id}/" target="_blank" class="btn-action">AoE2 Insights Profile</a>
+              <a href="https://steamcommunity.com/profiles/${player.profile_id}" target="_blank" class="btn-action" style="display: none;" id="steam-${player.profile_id}">Steam Profile</a>
+            </div>
+          </div>
+
+          <!-- Column Right: Recent Matches ELO History -->
+          <div class="details-col-right">
+            <div class="details-timeline-title">Recent Games ELO History</div>
+            <div class="modal-timeline" id="timeline-${player.profile_id}">
+              <!-- Rendered matches -->
+            </div>
+            <div class="ux-legend">Rating change is based on your ELO vs. the opposing team's average ELO.</div>
+          </div>
+        </div>
+      `;
+
+      // Render the SVG trend chart inside the left column
+      renderTrendChart(player);
+
+      // Render recent matches timeline inside the right column
+      renderRecentTimeline(player);
+    }
+
+    function renderTrendChart(player) {
       const history = player.ratingHistory || [1000, player.rating];
-      const chartContainer = document.getElementById('modal-trend-chart');
-      
+      const chartContainer = document.getElementById(`trend-chart-${player.profile_id}`);
+      if (!chartContainer) return;
+
       if (history.length > 1) {
-        const width = 430;
+        const width = 450;
         const height = 120;
         const padding = 15;
         
@@ -471,7 +491,6 @@
         const lastRating = history[history.length - 1];
         const strokeColor = lastRating >= firstRating ? '#22c55e' : '#ef4444';
         
-        // Add vertical lines for grid, min/max values
         const minValIdx = history.indexOf(minVal);
         const maxValIdx = history.indexOf(maxVal);
         
@@ -483,30 +502,24 @@
         chartContainer.innerHTML = `
           <svg width="100%" height="${height}" viewBox="0 0 ${width} ${height}" style="display: block; overflow: visible;">
             <defs>
-              <linearGradient id="modal-grad-${player.profile_id}" x1="0" y1="0" x2="0" y2="1">
+              <linearGradient id="detail-grad-${player.profile_id}" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stop-color="${strokeColor}" stop-opacity="0.2"/>
                 <stop offset="100%" stop-color="${strokeColor}" stop-opacity="0"/>
               </linearGradient>
             </defs>
-            <!-- Grid Lines -->
             <line x1="${padding}" y1="${padding}" x2="${width - padding}" y2="${padding}" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
             <line x1="${padding}" y1="${height / 2}" x2="${width - padding}" y2="${height / 2}" stroke="rgba(255,255,255,0.05)" stroke-width="1" stroke-dasharray="2,2" />
             <line x1="${padding}" y1="${height - padding}" x2="${width - padding}" y2="${height - padding}" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
             
-            <!-- Filled Path -->
-            <polygon points="${padding},${height - padding} ${points} ${width - padding},${height - padding}" fill="url(#modal-grad-${player.profile_id})" />
-            
-            <!-- Line Path -->
+            <polygon points="${padding},${height - padding} ${points} ${width - padding},${height - padding}" fill="url(#detail-grad-${player.profile_id})" />
             <polyline points="${points}" fill="none" stroke="${strokeColor}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
             
-            <!-- Min/Max Annotations -->
             <circle cx="${minX}" cy="${minY}" r="3" fill="#ef4444" />
             <text x="${minX}" y="${minY + 12}" font-size="8" fill="#ef4444" text-anchor="middle" font-weight="600">${minVal}</text>
             
             <circle cx="${maxX}" cy="${maxY}" r="3" fill="#22c55e" />
             <text x="${maxX}" y="${maxY - 6}" font-size="8" fill="#22c55e" text-anchor="middle" font-weight="600">${maxVal}</text>
 
-            <!-- Start/End Ratings -->
             <circle cx="${padding}" cy="${padding + (1 - (firstRating - minVal) / valRange) * (height - padding * 2)}" r="3.5" fill="var(--text-muted)" />
             <circle cx="${width - padding}" cy="${padding + (1 - (lastRating - minVal) / valRange) * (height - padding * 2)}" r="4.5" fill="${strokeColor}" />
           </svg>
@@ -517,13 +530,15 @@
           </div>
         `;
       } else {
-        chartContainer.innerHTML = `<div style="text-align: center; padding: 2rem; color: var(--text-muted);">No history data available.</div>`;
+        chartContainer.innerHTML = `<div style="text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.9rem;">No history data available.</div>`;
       }
+    }
 
-      // Render recent matches timeline
-      const timelineContainer = document.getElementById('modal-timeline');
+    function renderRecentTimeline(player) {
+      const timelineContainer = document.getElementById(`timeline-${player.profile_id}`);
+      if (!timelineContainer) return;
+
       if (player.recentMatches && player.recentMatches.length > 0) {
-        // Sort matches newest first
         const sortedRecent = [...player.recentMatches].sort((a, b) => b.timestamp - a.timestamp);
         
         timelineContainer.innerHTML = sortedRecent.map(m => {
@@ -550,20 +565,8 @@
           `;
         }).join('');
       } else {
-        timelineContainer.innerHTML = `<div style="text-align: center; padding: 1.5rem; color: var(--text-muted); font-size: 0.9rem;">No recent games logged.</div>`;
+        timelineContainer.innerHTML = `<div style="text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.9rem;">No recent games logged.</div>`;
       }
-
-      // Update link to Insights
-      elements.linkInsights.href = `https://www.aoe2insights.com/user/${player.profile_id}/`;
-      
-      // Update link to Steam if possible
-      elements.linkSteam.style.display = 'none'; // Default hidden
-
-      elements.modal.classList.add('active');
-    }
-
-    function closePlayerModal() {
-      elements.modal.classList.remove('active');
     }
 
     function escapeHtml(str) {
@@ -579,14 +582,11 @@
     elements.search.addEventListener('input', renderLeaderboard);
     elements.minGames.addEventListener('input', renderLeaderboard);
     elements.provisional.addEventListener('change', renderLeaderboard);
-    elements.modalClose.addEventListener('click', closePlayerModal);
-    elements.modal.addEventListener('click', (e) => {
-      if (e.target === elements.modal) closePlayerModal();
-    });
     
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && elements.modal.classList.contains('active')) {
-        closePlayerModal();
+      if (e.key === 'Escape' && activeExpandedRow) {
+        activeExpandedRow.style.display = 'none';
+        activeExpandedRow = null;
       }
     });
 
