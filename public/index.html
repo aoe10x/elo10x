@@ -43,6 +43,13 @@
       </div>
     </div>
 
+    <!-- Mode Selector Tabs -->
+    <div class="tabs-container">
+      <button class="tab-btn active" data-mode="3x">10x3x (Speed & Multiplier)</button>
+      <button class="tab-btn" data-mode="pure">Pure 10x (Standard Speed)</button>
+      <button class="tab-btn" data-mode="combined">Combined (All 10x)</button>
+    </div>
+
     <!-- Filter panel -->
     <div class="controls-panel">
       <div class="search-wrapper">
@@ -93,8 +100,7 @@
               <th>Player Alias</th>
               <th>Elo Rating</th>
               <th style="text-align: center; width: 120px;">Trend</th>
-              <th>Record (W - L)</th>
-              <th class="col-winrate">Win Rate</th>
+              <th style="width: 250px;">Record / Win Rate</th>
             </tr>
           </thead>
           <tbody id="leaderboard-body">
@@ -102,73 +108,51 @@
           </tbody>
         </table>
       </div>
-    </div>
 
-    <!-- Detailed Profile Modal -->
-    <div class="modal-backdrop" id="profile-modal">
-      <div class="modal-card">
-        <div class="modal-header">
-          <div class="modal-title" id="modal-alias">Player Profile</div>
-          <button class="close-btn" id="modal-close">&times;</button>
-        </div>
-        <div class="modal-body">
-          <div class="modal-stat-row">
-            <span class="modal-stat-label">ELO Rank</span>
-            <span class="modal-stat-value gold" id="modal-rank">-</span>
+      <!-- Methodology Section -->
+      <div class="methodology-section">
+        <h3>ELO Calculation Methodology</h3>
+        <div class="methodology-grid">
+          <div class="methodology-card">
+            <h4>Algorithm & Parameters</h4>
+            <p>We use the standard Definitive Edition multiplayer rating formula (Algorithm 3) to compute player adjustments sequentially:</p>
+            <ul>
+              <li><strong>Baseline Rating:</strong> New players start at <code>1000 ELO</code>.</li>
+              <li><strong>K-Factor:</strong> Set to <code>K = 32</code> to ensure stable but responsive rating updates.</li>
+              <li><strong>Sequential Updates:</strong> Matches are sorted chronologically, and ratings are updated step-by-step.</li>
+            </ul>
           </div>
-          <div class="modal-stat-row">
-            <span class="modal-stat-label">ELO Rating</span>
-            <span class="modal-stat-value gold" id="modal-rating">-</span>
+          <div class="methodology-card">
+            <h4>Team Expected ELO</h4>
+            <p>A player's rating adjustment compares their individual rating against the opposing team's average rating:</p>
+            <div class="formula-box">
+              E = 1 / (1 + 10<sup>(Opponent Avg ELO - Player ELO) / 400</sup>)<br>
+              &Delta; = K &times; (Outcome - E)
+            </div>
+            <p>Wins increase ratings (Outcome = 1); losses decrease ratings (Outcome = 0). Rating delta is rounded to the nearest integer.</p>
           </div>
-          <div class="modal-stat-row">
-            <span class="modal-stat-label">Games Played</span>
-            <span class="modal-stat-value" id="modal-games">-</span>
+          <div class="methodology-card">
+            <h4>Match Eligibility</h4>
+            <p>To ensure competitive integrity, matches must meet the following strict validation checks:</p>
+            <ul>
+              <li><strong>Strict 4v4 format:</strong> The match must contain exactly 8 tracked players.</li>
+              <li><strong>Two distinct teams:</strong> Exactly 4 players per team.</li>
+              <li><strong>Outcome verification:</strong> Exactly 4 winners and 4 losers must be reported. Ambiguous or draw outcomes are skipped.</li>
+            </ul>
           </div>
-          <div class="modal-stat-row">
-            <span class="modal-stat-label">Wins</span>
-            <span class="modal-stat-value" style="color: var(--accent-win);" id="modal-wins">-</span>
-          </div>
-          <div class="modal-stat-row">
-            <span class="modal-stat-label">Losses</span>
-            <span class="modal-stat-value" style="color: var(--accent-loss);" id="modal-losses">-</span>
-          </div>
-          <div class="modal-stat-row">
-            <span class="modal-stat-label">Win Rate</span>
-            <span class="modal-stat-value" id="modal-winrate">-</span>
-          </div>
-          <div class="modal-stat-row">
-            <span class="modal-stat-label">Country</span>
-            <span class="modal-stat-value" id="modal-country">-</span>
-          </div>
-          <div class="modal-stat-row">
-            <span class="modal-stat-label">Profile ID</span>
-            <span class="modal-stat-value" id="modal-profile-id">-</span>
-          </div>
-          <div class="modal-stat-row">
-            <span class="modal-stat-label">Last Match Played</span>
-            <span class="modal-stat-value" id="modal-last-played">-</span>
-          </div>
-          <div class="modal-trend-container">
-            <div style="font-size: 0.9rem; color: var(--text-gold); font-family: 'Cinzel', serif; font-weight: 700; margin-bottom: 0.8rem; letter-spacing: 0.5px;">Rating History Trend</div>
-            <div id="modal-trend-chart"></div>
-          </div>
-        </div>
-        <div class="external-links">
-          <a href="#" target="_blank" class="btn-link" id="link-insights">AoE2 Insights</a>
-          <a href="#" target="_blank" class="btn-link" id="link-steam" style="display: none;">Steam Profile</a>
         </div>
       </div>
-    </div>
 
-    <footer>
-      <p>Data scraped from Relic Link multiplayer servers. Site built for the AoE2 10x community.</p>
-    </footer>
+      <footer>
+        <p>Data scraped from Relic Link multiplayer servers. Site built for the AoE2 10x community.</p>
+      </footer>
   </div>
 
   <script>
     let allPlayers = [];
     let summaryStats = {};
     let config = {};
+    let currentMode = '3x'; // '3x', 'pure', 'combined'
 
     const elements = {
       search: document.getElementById('search-input'),
@@ -184,32 +168,20 @@
       statMatches: document.getElementById('stat-matches'),
       statPlayers: document.getElementById('stat-players'),
       statRange: document.getElementById('stat-range'),
-      statUpdated: document.getElementById('stat-updated'),
-      
-      // Modal
-      modal: document.getElementById('profile-modal'),
-      modalAlias: document.getElementById('modal-alias'),
-      modalRank: document.getElementById('modal-rank'),
-      modalRating: document.getElementById('modal-rating'),
-      modalGames: document.getElementById('modal-games'),
-      modalWins: document.getElementById('modal-wins'),
-      modalLosses: document.getElementById('modal-losses'),
-      modalWinrate: document.getElementById('modal-winrate'),
-      modalProfileId: document.getElementById('modal-profile-id'),
-      modalLastPlayed: document.getElementById('modal-last-played'),
-      modalCountry: document.getElementById('modal-country'),
-      linkInsights: document.getElementById('link-insights'),
-      linkSteam: document.getElementById('link-steam'),
-      modalClose: document.getElementById('modal-close')
+      statUpdated: document.getElementById('stat-updated')
     };
 
     // Fetch Leaderboard JSON
     async function loadLeaderboard() {
       showLoading(true);
       try {
-        const response = await fetch('/api/leaderboard?t=' + Date.now());
+        let filename = 'leaderboard_3x.json';
+        if (currentMode === 'pure') filename = 'leaderboard_pure.json';
+        if (currentMode === 'combined') filename = 'leaderboard_combined.json';
+        
+        const response = await fetch(`./data/${filename}?t=` + Date.now());
         if (!response.ok) {
-          throw new Error('Leaderboard API returned status: ' + response.status);
+          throw new Error(`Leaderboard API (${filename}) returned status: ` + response.status);
         }
         const data = await response.json();
         
@@ -301,6 +273,10 @@
         return;
       }
 
+      // Compute max games and max single wins/losses to scale the record bars
+      const maxGames = Math.max(...filteredPlayers.map(p => p.gamesCount)) || 1;
+      const maxSingleRecord = Math.max(...filteredPlayers.map(p => Math.max(p.wins, p.losses))) || 1;
+
       filteredPlayers.forEach((player, index) => {
         const row = document.createElement('tr');
         
@@ -310,11 +286,6 @@
         else if (index === 1) rankContent = '<span class="rank-badge rank-2">2</span>';
         else if (index === 2) rankContent = '<span class="rank-badge rank-3">3</span>';
         else rankContent = `<span class="rank-other">${index + 1}</span>`;
-
-        // 2. Win Rate Bar Color Class
-        let winrateClass = 'winrate-mid';
-        if (player.winRate >= 60) winrateClass = 'winrate-high';
-        else if (player.winRate <= 40) winrateClass = 'winrate-low';
 
         let countryName = '';
         if (player.country) {
@@ -337,11 +308,11 @@
         let sparklineHtml = '';
         if (lastGames.length > 1) {
           const width = 100;
-          const height = 30;
+          const height = 20;
           const padding = 2;
           
-          const minVal = Math.min(...lastGames);
-          const maxVal = Math.max(...lastGames);
+          const minVal = Math.min(1000, ...lastGames);
+          const maxVal = Math.max(1000, ...lastGames);
           const valRange = maxVal - minVal || 1;
           
           const points = lastGames.map((val, idx) => {
@@ -350,29 +321,16 @@
             return `${x.toFixed(1)},${y.toFixed(1)}`;
           }).join(' ');
           
-          const firstRating = lastGames[0];
           const lastRating = lastGames[lastGames.length - 1];
-          const strokeColor = lastRating >= firstRating ? '#22c55e' : '#ef4444';
-          const fillGradient = lastRating >= firstRating ? `url(#grad-green-${player.profile_id})` : `url(#grad-red-${player.profile_id})`;
-          
-          const closedPoints = `${padding},${height} ${points} ${width - padding},${height}`;
+          const lastRatingY = padding + (1 - (lastRating - minVal) / valRange) * (height - padding * 2);
+          const y1000 = padding + (1 - (1000 - minVal) / valRange) * (height - padding * 2);
           
           sparklineHtml = `
-            <div class="sparkline-wrapper" title="ELO trend over last ${lastGames.length} matches">
+            <div class="sparkline-wrapper" title="ELO trend over last ${lastGames.length} matches (min: ${minVal}, max: ${maxVal}, current: ${lastRating})">
               <svg width="${width}" height="${height}" style="display: block; overflow: visible;">
-                <defs>
-                  <linearGradient id="grad-green-${player.profile_id}" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#22c55e" stop-opacity="0.25"/>
-                    <stop offset="100%" stop-color="#22c55e" stop-opacity="0"/>
-                  </linearGradient>
-                  <linearGradient id="grad-red-${player.profile_id}" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#ef4444" stop-opacity="0.25"/>
-                    <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
-                  </linearGradient>
-                </defs>
-                <polygon points="${closedPoints}" fill="${fillGradient}" />
-                <polyline points="${points}" fill="none" stroke="${strokeColor}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
-                <circle cx="${width - padding}" cy="${padding + (1 - (lastRating - minVal) / valRange) * (height - padding * 2)}" r="2.5" fill="${strokeColor}" />
+                <line x1="${padding}" y1="${y1000.toFixed(1)}" x2="${width - padding}" y2="${y1000.toFixed(1)}" stroke="rgba(255, 255, 255, 0.15)" stroke-width="0.75" stroke-dasharray="1,1" />
+                <polyline points="${points}" fill="none" stroke="rgba(255, 255, 255, 0.4)" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round" />
+                <circle cx="${width - padding}" cy="${lastRatingY.toFixed(1)}" r="1.75" fill="#f87171" />
               </svg>
             </div>
           `;
@@ -380,28 +338,72 @@
           sparklineHtml = `<span style="color: var(--text-muted); font-size: 0.85rem;">Flat</span>`;
         }
 
+        // True diverging record bar sizing (max side is 80px)
+        const winWidth = Math.round((player.wins / maxSingleRecord) * 80);
+        const lossWidth = Math.round((player.losses / maxSingleRecord) * 80);
+
         row.innerHTML = `
           <td class="col-rank">${rankContent}</td>
           <td class="col-alias">${flagHtml}${escapeHtml(player.alias)}</td>
           <td class="col-elo">${player.rating}</td>
           <td style="text-align: center; vertical-align: middle;">${sparklineHtml}</td>
-          <td class="col-record">${player.wins}W - ${player.losses}L</td>
-          <td class="col-winrate">
-            <div class="winrate-bar-container">
-              <div class="winrate-bar">
-                <div class="winrate-progress" style="width: ${player.winRate}%"></div>
+          <td>
+            <div class="true-diverging-container" title="${player.wins} wins, ${player.losses} losses (${player.winRate}% win rate over ${player.gamesCount} total games)">
+              <div class="losses-side">
+                <span class="record-label-losses">${player.losses}L</span>
+                <div class="bar-grow-left">
+                  <div class="table-losses-bar" style="width: ${lossWidth}px;"></div>
+                </div>
               </div>
-              <span class="winrate-text ${winrateClass}">${player.winRate}%</span>
+              <div class="center-divider-line"></div>
+              <div class="wins-side">
+                <div class="bar-grow-right">
+                  <div class="table-wins-bar" style="width: ${winWidth}px;"></div>
+                </div>
+                <span class="record-label-wins">${player.wins}W</span>
+                <span class="record-winrate-percentage">(${player.winRate}%)</span>
+              </div>
             </div>
           </td>
         `;
 
-        row.addEventListener('click', () => showPlayerModal(player, index + 1));
+        const detailsRow = document.createElement('tr');
+        detailsRow.className = 'details-row';
+        detailsRow.id = `details-row-${player.profile_id}`;
+        detailsRow.style.display = 'none';
+        detailsRow.innerHTML = `<td colspan="5" id="details-cell-${player.profile_id}"></td>`;
+
+        row.addEventListener('click', () => togglePlayerDetails(player, index + 1, detailsRow));
         elements.tbody.appendChild(row);
+        elements.tbody.appendChild(detailsRow);
       });
     }
 
-    function showPlayerModal(player, rank) {
+    let activeExpandedRow = null;
+
+    function togglePlayerDetails(player, rank, detailsRow) {
+      const isCurrentlyVisible = detailsRow.style.display !== 'none';
+      
+      // Close any open expanded row
+      document.querySelectorAll('.details-row').forEach(row => {
+        row.style.display = 'none';
+      });
+      document.querySelectorAll('tbody tr').forEach(row => {
+        row.classList.remove('active-row');
+      });
+
+      if (isCurrentlyVisible) {
+        activeExpandedRow = null;
+        return; // Just toggle closed
+      }
+
+      // Open this row
+      detailsRow.style.display = 'table-row';
+      activeExpandedRow = detailsRow;
+      
+      // Populate the cell
+      const cell = document.getElementById(`details-cell-${player.profile_id}`);
+      
       let countryName = 'Unknown';
       if (player.country) {
         try {
@@ -412,35 +414,67 @@
         }
       }
 
-      const flagHtml = player.country 
-        ? `<img src="https://flagcdn.com/28x21/${player.country.toLowerCase()}.png" width="27" height="20" alt="${player.country.toUpperCase()}" style="margin-right: 10px; vertical-align: middle; border-radius: 2px; border: 1px solid rgba(255,255,255,0.2);" title="${escapeHtml(countryName)}">` 
-        : '';
-      elements.modalAlias.innerHTML = flagHtml + escapeHtml(player.alias);
-      elements.modalRank.textContent = '#' + rank;
-      elements.modalRating.textContent = player.rating;
-      elements.modalGames.textContent = player.gamesCount;
-      elements.modalWins.textContent = player.wins;
-      elements.modalLosses.textContent = player.losses;
-      elements.modalWinrate.textContent = player.winRate + '%';
-      elements.modalProfileId.textContent = player.profile_id;
-      elements.modalCountry.textContent = countryName;
-      
       const dateStr = player.lastPlayedAt 
         ? new Date(player.lastPlayedAt * 1000).toLocaleString() 
         : 'Unknown';
-      elements.modalLastPlayed.textContent = dateStr;
 
-      // Render detailed ELO trend chart
+      // Compressed HTML template
+      cell.innerHTML = `
+        <div class="details-expanded-container">
+          <!-- Column Left: Stats & ELO Trend Chart -->
+          <div class="details-col-left">
+            <div class="details-stats-inline">
+              <span><strong>Rank:</strong> #${rank}</span>
+              <span><strong>ELO:</strong> ${player.rating}</span>
+              <span><strong>Games:</strong> ${player.gamesCount}</span>
+              <span><strong>Record:</strong> <span style="color: var(--accent-win);">${player.wins}W</span>-<span style="color: var(--accent-loss);">${player.losses}L</span></span>
+              <span><strong>Win Rate:</strong> ${player.winRate}%</span>
+              <span><strong>Country:</strong> ${countryName}</span>
+              <span style="font-family: monospace; font-size: 0.8rem;"><strong>ID:</strong> ${player.profile_id}</span>
+            </div>
+            
+            <!-- ELO Trend Chart -->
+            <div class="details-trend-container">
+              <div id="trend-chart-${player.profile_id}"></div>
+            </div>
+
+            <!-- Links -->
+            <div class="details-actions">
+              <a href="https://www.aoe2insights.com/user/${player.profile_id}/" target="_blank" class="btn-action">AoE2 Insights Profile</a>
+              <a href="https://steamcommunity.com/profiles/${player.profile_id}" target="_blank" class="btn-action" style="display: none;" id="steam-${player.profile_id}">Steam Profile</a>
+            </div>
+          </div>
+
+          <!-- Column Right: Recent Matches ELO History -->
+          <div class="details-col-right">
+            <div class="details-timeline-title">Recent Games ELO History</div>
+            <div class="modal-timeline" id="timeline-${player.profile_id}">
+              <!-- Rendered matches -->
+            </div>
+            <div class="ux-legend">Rating change is based on your ELO vs. the opposing team's average ELO.</div>
+          </div>
+        </div>
+      `;
+
+      // Render the SVG trend chart inside the left column
+      renderTrendChart(player);
+
+      // Render recent matches timeline inside the right column
+      renderRecentTimeline(player);
+    }
+
+    function renderTrendChart(player) {
       const history = player.ratingHistory || [1000, player.rating];
-      const chartContainer = document.getElementById('modal-trend-chart');
-      
+      const chartContainer = document.getElementById(`trend-chart-${player.profile_id}`);
+      if (!chartContainer) return;
+
       if (history.length > 1) {
-        const width = 430;
+        const width = 450;
         const height = 120;
         const padding = 15;
         
-        const minVal = Math.min(...history);
-        const maxVal = Math.max(...history);
+        const minVal = Math.min(1000, ...history);
+        const maxVal = Math.max(1000, ...history);
         const valRange = maxVal - minVal || 1;
         
         const points = history.map((val, idx) => {
@@ -453,7 +487,6 @@
         const lastRating = history[history.length - 1];
         const strokeColor = lastRating >= firstRating ? '#22c55e' : '#ef4444';
         
-        // Add vertical lines for grid, min/max values
         const minValIdx = history.indexOf(minVal);
         const maxValIdx = history.indexOf(maxVal);
         
@@ -462,33 +495,30 @@
         const maxX = padding + (maxValIdx / (history.length - 1)) * (width - padding * 2);
         const maxY = padding + (1 - (maxVal - minVal) / valRange) * (height - padding * 2);
 
+        const y1000 = padding + (1 - (1000 - minVal) / valRange) * (height - padding * 2);
+
         chartContainer.innerHTML = `
           <svg width="100%" height="${height}" viewBox="0 0 ${width} ${height}" style="display: block; overflow: visible;">
             <defs>
-              <linearGradient id="modal-grad-${player.profile_id}" x1="0" y1="0" x2="0" y2="1">
+              <linearGradient id="detail-grad-${player.profile_id}" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stop-color="${strokeColor}" stop-opacity="0.2"/>
                 <stop offset="100%" stop-color="${strokeColor}" stop-opacity="0"/>
               </linearGradient>
             </defs>
-            <!-- Grid Lines -->
             <line x1="${padding}" y1="${padding}" x2="${width - padding}" y2="${padding}" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
-            <line x1="${padding}" y1="${height / 2}" x2="${width - padding}" y2="${height / 2}" stroke="rgba(255,255,255,0.05)" stroke-width="1" stroke-dasharray="2,2" />
+            <line x1="${padding}" y1="${y1000}" x2="${width - padding}" y2="${y1000}" stroke="rgba(196, 169, 106, 0.22)" stroke-width="1.25" stroke-dasharray="3,3" />
+            <text x="${padding + 4}" y="${y1000 - 4}" font-size="8" fill="rgba(196, 169, 106, 0.45)" font-weight="600">Starting ELO (1000)</text>
             <line x1="${padding}" y1="${height - padding}" x2="${width - padding}" y2="${height - padding}" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
             
-            <!-- Filled Path -->
-            <polygon points="${padding},${height - padding} ${points} ${width - padding},${height - padding}" fill="url(#modal-grad-${player.profile_id})" />
-            
-            <!-- Line Path -->
+            <polygon points="${padding},${height - padding} ${points} ${width - padding},${height - padding}" fill="url(#detail-grad-${player.profile_id})" />
             <polyline points="${points}" fill="none" stroke="${strokeColor}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
             
-            <!-- Min/Max Annotations -->
             <circle cx="${minX}" cy="${minY}" r="3" fill="#ef4444" />
             <text x="${minX}" y="${minY + 12}" font-size="8" fill="#ef4444" text-anchor="middle" font-weight="600">${minVal}</text>
             
             <circle cx="${maxX}" cy="${maxY}" r="3" fill="#22c55e" />
             <text x="${maxX}" y="${maxY - 6}" font-size="8" fill="#22c55e" text-anchor="middle" font-weight="600">${maxVal}</text>
 
-            <!-- Start/End Ratings -->
             <circle cx="${padding}" cy="${padding + (1 - (firstRating - minVal) / valRange) * (height - padding * 2)}" r="3.5" fill="var(--text-muted)" />
             <circle cx="${width - padding}" cy="${padding + (1 - (lastRating - minVal) / valRange) * (height - padding * 2)}" r="4.5" fill="${strokeColor}" />
           </svg>
@@ -499,20 +529,43 @@
           </div>
         `;
       } else {
-        chartContainer.innerHTML = `<div style="text-align: center; padding: 2rem; color: var(--text-muted);">No history data available.</div>`;
+        chartContainer.innerHTML = `<div style="text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.9rem;">No history data available.</div>`;
       }
-
-      // Update link to Insights
-      elements.linkInsights.href = `https://www.aoe2insights.com/user/${player.profile_id}/`;
-      
-      // Update link to Steam if possible
-      elements.linkSteam.style.display = 'none'; // Default hidden
-
-      elements.modal.classList.add('active');
     }
 
-    function closePlayerModal() {
-      elements.modal.classList.remove('active');
+    function renderRecentTimeline(player) {
+      const timelineContainer = document.getElementById(`timeline-${player.profile_id}`);
+      if (!timelineContainer) return;
+
+      if (player.recentMatches && player.recentMatches.length > 0) {
+        const sortedRecent = [...player.recentMatches].sort((a, b) => b.timestamp - a.timestamp);
+        
+        timelineContainer.innerHTML = sortedRecent.map(m => {
+          const sign = m.eloChange >= 0 ? '+' : '';
+          const badgeClass = m.outcome === 'win' ? 'points-win' : 'points-loss';
+          const matchDate = new Date(m.timestamp * 1000).toLocaleDateString([], { 
+            month: 'short', 
+            day: 'numeric', 
+            hour: '2-digit', 
+            minute: '2-digit' 
+          });
+          
+          return `
+            <div class="timeline-card" title="ELO change: ${sign}${m.eloChange} (Opponent Avg ELO: ${m.opponentAvgElo})">
+              <div class="timeline-left">
+                <div class="timeline-map">${escapeHtml(m.mapname || 'Custom Map')}</div>
+                <div class="timeline-meta">${matchDate} • ${escapeHtml(m.description || 'Lobby Match')}</div>
+              </div>
+              <div class="timeline-right">
+                <div class="points-badge ${badgeClass}">${sign}${m.eloChange} ELO</div>
+                <div class="timeline-rating-range">${m.preRating} ➔ ${m.postRating} (vs ${m.opponentAvgElo})</div>
+              </div>
+            </div>
+          `;
+        }).join('');
+      } else {
+        timelineContainer.innerHTML = `<div style="text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.9rem;">No recent games logged.</div>`;
+      }
     }
 
     function escapeHtml(str) {
@@ -528,15 +581,26 @@
     elements.search.addEventListener('input', renderLeaderboard);
     elements.minGames.addEventListener('input', renderLeaderboard);
     elements.provisional.addEventListener('change', renderLeaderboard);
-    elements.modalClose.addEventListener('click', closePlayerModal);
-    elements.modal.addEventListener('click', (e) => {
-      if (e.target === elements.modal) closePlayerModal();
-    });
     
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && elements.modal.classList.contains('active')) {
-        closePlayerModal();
+      if (e.key === 'Escape' && activeExpandedRow) {
+        activeExpandedRow.style.display = 'none';
+        activeExpandedRow = null;
       }
+    });
+
+    // Tab Mode Selectors
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const mode = btn.getAttribute('data-mode');
+        if (mode === currentMode) return;
+
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        currentMode = mode;
+        loadLeaderboard();
+      });
     });
 
     // Initial Load

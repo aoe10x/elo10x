@@ -173,7 +173,7 @@ export class InsightsCrawler {
                     // Ignore
                   }
                 });
-                await delay(150);
+                await delay(250);
               } catch (e) {
                 // Ignore page fetch errors
               }
