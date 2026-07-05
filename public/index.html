@@ -43,6 +43,13 @@
       </div>
     </div>
 
+    <!-- Mode Selector Tabs -->
+    <div class="tabs-container">
+      <button class="tab-btn active" data-mode="3x">10x3x (Speed & Multiplier)</button>
+      <button class="tab-btn" data-mode="pure">Pure 10x (Standard Speed)</button>
+      <button class="tab-btn" data-mode="combined">Combined (All 10x)</button>
+    </div>
+
     <!-- Filter panel -->
     <div class="controls-panel">
       <div class="search-wrapper">
@@ -152,6 +159,12 @@
             <div style="font-size: 0.9rem; color: var(--text-gold); font-family: 'Cinzel', serif; font-weight: 700; margin-bottom: 0.8rem; letter-spacing: 0.5px;">Rating History Trend</div>
             <div id="modal-trend-chart"></div>
           </div>
+          
+          <div class="modal-matches-title">Recent Games ELO History</div>
+          <div class="modal-timeline" id="modal-timeline">
+            <!-- Timeline cards will go here dynamically -->
+          </div>
+          <div class="ux-legend">Rating change is based on your ELO vs. the opposing team's average ELO.</div>
         </div>
         <div class="external-links">
           <a href="#" target="_blank" class="btn-link" id="link-insights">AoE2 Insights</a>
@@ -169,6 +182,7 @@
     let allPlayers = [];
     let summaryStats = {};
     let config = {};
+    let currentMode = '3x'; // '3x', 'pure', 'combined'
 
     const elements = {
       search: document.getElementById('search-input'),
@@ -207,9 +221,13 @@
     async function loadLeaderboard() {
       showLoading(true);
       try {
-        const response = await fetch('./data/leaderboard.json?t=' + Date.now());
+        let filename = 'leaderboard_3x.json';
+        if (currentMode === 'pure') filename = 'leaderboard_pure.json';
+        if (currentMode === 'combined') filename = 'leaderboard_combined.json';
+        
+        const response = await fetch(`./data/${filename}?t=` + Date.now());
         if (!response.ok) {
-          throw new Error('Leaderboard API returned status: ' + response.status);
+          throw new Error(`Leaderboard API (${filename}) returned status: ` + response.status);
         }
         const data = await response.json();
         
@@ -502,6 +520,39 @@
         chartContainer.innerHTML = `<div style="text-align: center; padding: 2rem; color: var(--text-muted);">No history data available.</div>`;
       }
 
+      // Render recent matches timeline
+      const timelineContainer = document.getElementById('modal-timeline');
+      if (player.recentMatches && player.recentMatches.length > 0) {
+        // Sort matches newest first
+        const sortedRecent = [...player.recentMatches].sort((a, b) => b.timestamp - a.timestamp);
+        
+        timelineContainer.innerHTML = sortedRecent.map(m => {
+          const sign = m.eloChange >= 0 ? '+' : '';
+          const badgeClass = m.outcome === 'win' ? 'points-win' : 'points-loss';
+          const matchDate = new Date(m.timestamp * 1000).toLocaleDateString([], { 
+            month: 'short', 
+            day: 'numeric', 
+            hour: '2-digit', 
+            minute: '2-digit' 
+          });
+          
+          return `
+            <div class="timeline-card" title="ELO change: ${sign}${m.eloChange} (Opponent Avg ELO: ${m.opponentAvgElo})">
+              <div class="timeline-left">
+                <div class="timeline-map">${escapeHtml(m.mapname || 'Custom Map')}</div>
+                <div class="timeline-meta">${matchDate} • ${escapeHtml(m.description || 'Lobby Match')}</div>
+              </div>
+              <div class="timeline-right">
+                <div class="points-badge ${badgeClass}">${sign}${m.eloChange} ELO</div>
+                <div class="timeline-rating-range">${m.preRating} ➔ ${m.postRating} (vs ${m.opponentAvgElo})</div>
+              </div>
+            </div>
+          `;
+        }).join('');
+      } else {
+        timelineContainer.innerHTML = `<div style="text-align: center; padding: 1.5rem; color: var(--text-muted); font-size: 0.9rem;">No recent games logged.</div>`;
+      }
+
       // Update link to Insights
       elements.linkInsights.href = `https://www.aoe2insights.com/user/${player.profile_id}/`;
       
@@ -537,6 +588,20 @@
       if (e.key === 'Escape' && elements.modal.classList.contains('active')) {
         closePlayerModal();
       }
+    });
+
+    // Tab Mode Selectors
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const mode = btn.getAttribute('data-mode');
+        if (mode === currentMode) return;
+
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        currentMode = mode;
+        loadLeaderboard();
+      });
     });
 
     // Initial Load

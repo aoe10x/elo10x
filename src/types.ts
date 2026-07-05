@@ -33,6 +33,18 @@ export interface PlayerProfile {
   country?: string;
 }
 
+export interface RecentMatch {
+  matchId: number;
+  description: string;
+  mapname: string;
+  timestamp: number;
+  outcome: 'win' | 'loss';
+  preRating: number;
+  postRating: number;
+  eloChange: number;
+  opponentAvgElo: number;
+}
+
 export interface EloRanking {
   profile_id: number;
   alias: string;
@@ -44,6 +56,7 @@ export interface EloRanking {
   lastPlayedAt: number;
   country?: string;
   ratingHistory?: number[];
+  recentMatches?: RecentMatch[];
 }
 
 export interface DatabaseSchema {

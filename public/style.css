@@ -589,3 +589,138 @@ footer a:hover {
     min-width: 100%;
     }
 }
+
+/* Tab Buttons */
+.tabs-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.tab-btn {
+    background: rgba(196, 169, 106, 0.04);
+    border: 1px solid var(--border-color);
+    color: var(--text-muted);
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+}
+
+.tab-btn:hover {
+    color: var(--text-light);
+    border-color: rgba(196, 169, 106, 0.4);
+    background: rgba(196, 169, 106, 0.08);
+}
+
+.tab-btn.active {
+    background: var(--text-gold);
+    color: #0b0d13;
+    border-color: var(--text-gold);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.25);
+    font-weight: 600;
+}
+
+/* Match history in modal */
+.modal-matches-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    color: var(--text-gold);
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 0.4rem;
+}
+
+.modal-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    max-height: 280px;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.timeline-card {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: border-color 0.2s ease;
+}
+
+.timeline-card:hover {
+    border-color: rgba(196, 169, 106, 0.15);
+}
+
+.timeline-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: left;
+}
+
+.timeline-map {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.timeline-meta {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.timeline-right {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.2rem;
+}
+
+/* Points badges */
+.points-badge {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.points-win {
+    background: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.points-loss {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.timeline-rating-range {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.ux-legend {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: 0.5rem;
+    text-align: center;
+    line-height: 1.3;
+}
