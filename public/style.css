@@ -326,73 +326,88 @@ tbody tr:hover {
     color: var(--text-muted);
 }
 
-/* Main Table Diverging Record Bar */
-.table-record-cell {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    padding: 0.4rem 0;
-    justify-content: center;
-    min-width: 220px;
-}
-
-.table-record-labels {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.78rem;
-    font-weight: 600;
-    line-height: 1;
-    padding: 0 2px;
-}
-
-.record-wins-label {
-    color: #34d399;
-}
-
-.record-losses-label {
-    color: #f87171;
-}
-
-.record-winrate-label {
-    color: var(--text-gold);
-    font-weight: 700;
-}
-
-.table-diverging-bar-wrapper {
-    height: 8px;
-    background: rgba(255, 255, 255, 0.04);
-    border-radius: 4px;
-    padding: 1px;
-    border: 1px solid rgba(255, 255, 255, 0.06);
+/* True Diverging Record Bar Chart */
+.true-diverging-container {
     display: flex;
     align-items: center;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.table-diverging-bar {
+    justify-content: center;
     width: 100%;
-    height: 100%;
-    display: flex;
-    border-radius: 3px;
-    overflow: hidden;
+    min-width: 250px;
+    padding: 0.2rem 0;
 }
 
-.table-bar-segment {
-    height: 100%;
+.losses-side {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 44%;
+    gap: 0.4rem;
+}
+
+.wins-side {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 56%;
+    gap: 0.4rem;
+}
+
+.center-divider-line {
+    width: 2px;
+    height: 14px;
+    background: rgba(196, 169, 106, 0.45);
+    border-radius: 1px;
+    box-shadow: 0 0 4px rgba(196, 169, 106, 0.5);
+}
+
+.bar-grow-left {
+    width: 80px;
+    display: flex;
+    justify-content: flex-end;
+    height: 6px;
+}
+
+.bar-grow-right {
+    width: 80px;
+    display: flex;
+    justify-content: flex-start;
+    height: 6px;
 }
 
 .table-losses-bar {
-    background: linear-gradient(90deg, #ef4444, #f87171);
+    height: 100%;
+    background: linear-gradient(270deg, #ef4444, #f87171);
+    border-radius: 3px 0 0 3px;
+    transition: width 0.3s ease;
 }
 
 .table-wins-bar {
-    background: linear-gradient(90deg, #34d399, #10b981);
+    height: 100%;
+    background: linear-gradient(90deg, #10b981, #34d399);
+    border-radius: 0 3px 3px 0;
+    transition: width 0.3s ease;
 }
 
-.table-bar-divider {
-    width: 1px;
-    height: 100%;
-    background: #0b0d13;
+.record-label-losses {
+    font-size: 0.78rem;
+    color: #f87171;
+    font-weight: 600;
+    min-width: 26px;
+    text-align: right;
+}
+
+.record-label-wins {
+    font-size: 0.78rem;
+    color: #34d399;
+    font-weight: 600;
+    min-width: 26px;
+    text-align: left;
+}
+
+.record-winrate-percentage {
+    font-size: 0.78rem;
+    color: var(--text-gold);
+    font-weight: 700;
 }
 
 /* Sparkline Trend Column styling */
@@ -444,47 +459,30 @@ tbody tr:hover {
     gap: 0.8rem;
 }
 
-.details-stat-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5rem;
-    background: rgba(0, 0, 0, 0.2);
-    padding: 0.75rem;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.04);
-}
-
-.details-stat-box {
+.details-stats-inline {
     display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    padding: 0.5rem;
-    text-align: left;
-}
-
-.details-stat-label {
-    font-size: 0.8rem;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 0.55rem 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    font-size: 0.84rem;
     color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.details-stat-value {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--text-light);
-}
-
-.details-stat-value.gold {
+.details-stats-inline span strong {
     color: var(--text-gold-light);
+    font-weight: 500;
 }
 
 .details-trend-container {
-    background: rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.04);
-    border-radius: 12px;
-    padding: 1rem;
-    margin-top: 0.5rem;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-top: 0.25rem;
 }
 
 .details-actions {
