@@ -744,3 +744,95 @@ footer a:hover {
     text-align: center;
     line-height: 1.3;
 }
+
+/* Methodology Section styling */
+.methodology-section {
+    margin-top: 3.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(196, 169, 106, 0.15);
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.methodology-section h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.35rem;
+    color: var(--text-gold);
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    border-left: 3px solid var(--accent-color);
+    padding-left: 0.8rem;
+    text-transform: uppercase;
+}
+
+.methodology-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.methodology-card {
+    background: rgba(10, 12, 18, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    padding: 1.25rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.methodology-card h4 {
+    font-family: 'Cinzel', serif;
+    color: var(--text-gold-light);
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.methodology-card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+}
+
+.methodology-card ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.methodology-card li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.methodology-card code {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 0.1rem 0.3rem;
+    border-radius: 4px;
+    font-family: monospace;
+    color: var(--text-light);
+}
+
+.formula-box {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 0.8rem;
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: var(--text-gold-light);
+    line-height: 1.6;
+    text-align: center;
+    margin: 0.8rem 0;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 992px) {
+    .methodology-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
