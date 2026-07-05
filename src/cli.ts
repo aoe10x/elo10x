@@ -27,7 +27,6 @@ Options:
   --min-games <number>      Minimum games required to display on the leaderboard (default: 5).
   --k-factor <number>       K-Factor to use for ELO calculations (default: 32).
   --provisional             Include provisional players (fewer games than min-games).
-  --exclude-local           Exclude locally imported replays from ELO calculations.
 
   --help, -h                Show this help message.
 
@@ -38,7 +37,7 @@ Examples:
   # Scrape Paulichromatic's match history (pages 1-20) from AoE2Insights
   node --experimental-strip-types src/cli.ts --scrape-insights 404483 --start-page 1 --end-page 20
 
-  node --experimental-strip-types src/cli.ts --elo --exclude-local
+  node --experimental-strip-types src/cli.ts --elo
 `);
 }
 
@@ -55,7 +54,6 @@ async function main(): Promise<void> {
     'min-games': { type: 'string' as const },
     'k-factor': { type: 'string' as const },
     provisional: { type: 'boolean' as const },
-    'exclude-local': { type: 'boolean' as const },
     help: { type: 'boolean' as const, short: 'h' as const }
   };
 
@@ -184,13 +182,8 @@ async function main(): Promise<void> {
     const minGames = values['min-games'] ? parseInt(values['min-games'], 10) : 5;
     const kFactor = values['k-factor'] ? parseInt(values['k-factor'], 10) : 32;
     const provisional = !!values.provisional;
-    const excludeLocal = !!values['exclude-local'];
 
-    let matches = db.getMatches();
-    if (excludeLocal) {
-      matches = matches.filter(m => m.source === 'relic_api' || m.source === 'aoe2insights_scrape');
-      console.log(`Excluding local games. Focusing only on Relic API and AoE2Insights matches.`);
-    }
+    const matches = db.getMatches();
     console.log(`Calculating ELO ratings for ${matches.length} matches...`);
     
     const calculator = new EloCalculator({
@@ -211,7 +204,7 @@ async function main(): Promise<void> {
       totalMatches: matches.length,
       totalPlayers: ratingsMap.size,
       leaderboardCount: leaderboard.length,
-      config: { minGames, kFactor, provisional, excludeLocal },
+      config: { minGames, kFactor, provisional },
       players: leaderboard.map(p => ({
         ...p,
         country: db.getProfile(p.profile_id)?.country
