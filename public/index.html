@@ -242,8 +242,9 @@
         return;
       }
 
-      // Compute max games to scale the diverging record bars
+      // Compute max games and max single wins/losses to scale the record bars
       const maxGames = Math.max(...filteredPlayers.map(p => p.gamesCount)) || 1;
+      const maxSingleRecord = Math.max(...filteredPlayers.map(p => Math.max(p.wins, p.losses))) || 1;
 
       filteredPlayers.forEach((player, index) => {
         const row = document.createElement('tr');
@@ -319,10 +320,9 @@
           sparklineHtml = `<span style="color: var(--text-muted); font-size: 0.85rem;">Flat</span>`;
         }
 
-        // Diverging record bar sizing
-        const widthPct = Math.max(25, Math.round((player.gamesCount / maxGames) * 100));
-        const winPct = player.winRate;
-        const lossPct = 100 - winPct;
+        // True diverging record bar sizing (max side is 80px)
+        const winWidth = Math.round((player.wins / maxSingleRecord) * 80);
+        const lossWidth = Math.round((player.losses / maxSingleRecord) * 80);
 
         row.innerHTML = `
           <td class="col-rank">${rankContent}</td>
@@ -330,18 +330,20 @@
           <td class="col-elo">${player.rating}</td>
           <td style="text-align: center; vertical-align: middle;">${sparklineHtml}</td>
           <td>
-            <div class="table-record-cell">
-              <div class="table-record-labels">
-                <span class="record-wins-label">${player.wins}W</span>
-                <span class="record-winrate-label">${player.winRate}% WR</span>
-                <span class="record-losses-label">${player.losses}L</span>
-              </div>
-              <div class="table-diverging-bar-wrapper" style="width: ${widthPct}%;" title="${player.gamesCount} total games (scaled relative to top active player: ${maxGames})">
-                <div class="table-diverging-bar">
-                  <div class="table-bar-segment table-losses-bar" style="width: ${lossPct}%;"></div>
-                  <div class="table-bar-divider"></div>
-                  <div class="table-bar-segment table-wins-bar" style="width: ${winPct}%;"></div>
+            <div class="true-diverging-container" title="${player.wins} wins, ${player.losses} losses (${player.winRate}% win rate over ${player.gamesCount} total games)">
+              <div class="losses-side">
+                <span class="record-label-losses">${player.losses}L</span>
+                <div class="bar-grow-left">
+                  <div class="table-losses-bar" style="width: ${lossWidth}px;"></div>
                 </div>
+              </div>
+              <div class="center-divider-line"></div>
+              <div class="wins-side">
+                <div class="bar-grow-right">
+                  <div class="table-wins-bar" style="width: ${winWidth}px;"></div>
+                </div>
+                <span class="record-label-wins">${player.wins}W</span>
+                <span class="record-winrate-percentage">(${player.winRate}%)</span>
               </div>
             </div>
           </td>
@@ -398,56 +400,23 @@
         ? new Date(player.lastPlayedAt * 1000).toLocaleString() 
         : 'Unknown';
 
-      // 2-Column HTML template
+      // Compressed HTML template
       cell.innerHTML = `
         <div class="details-expanded-container">
           <!-- Column Left: Stats & ELO Trend Chart -->
           <div class="details-col-left">
-            <div style="font-family: 'Cinzel', serif; font-size: 1.2rem; color: var(--text-gold-light); font-weight: 700; margin-bottom: 0.2rem; text-align: left;">
-              Player Stats & Profile Info
+            <div class="details-stats-inline">
+              <span><strong>Rank:</strong> #${rank}</span>
+              <span><strong>ELO:</strong> ${player.rating}</span>
+              <span><strong>Games:</strong> ${player.gamesCount}</span>
+              <span><strong>Record:</strong> <span style="color: var(--accent-win);">${player.wins}W</span>-<span style="color: var(--accent-loss);">${player.losses}L</span></span>
+              <span><strong>Win Rate:</strong> ${player.winRate}%</span>
+              <span><strong>Country:</strong> ${countryName}</span>
+              <span style="font-family: monospace; font-size: 0.8rem;"><strong>ID:</strong> ${player.profile_id}</span>
             </div>
             
-            <div class="details-stat-grid">
-              <div class="details-stat-box">
-                <span class="details-stat-label">ELO Rank</span>
-                <span class="details-stat-value gold">#${rank}</span>
-              </div>
-              <div class="details-stat-box">
-                <span class="details-stat-label">ELO Rating</span>
-                <span class="details-stat-value gold">${player.rating}</span>
-              </div>
-              <div class="details-stat-box">
-                <span class="details-stat-label">Games Played</span>
-                <span class="details-stat-value">${player.gamesCount}</span>
-              </div>
-              <div class="details-stat-box">
-                <span class="details-stat-label">Record</span>
-                <span class="details-stat-value">
-                  <span style="color: var(--accent-win);">${player.wins}W</span> - 
-                  <span style="color: var(--accent-loss);">${player.losses}L</span>
-                </span>
-              </div>
-              <div class="details-stat-box">
-                <span class="details-stat-label">Win Rate</span>
-                <span class="details-stat-value">${player.winRate}%</span>
-              </div>
-              <div class="details-stat-box">
-                <span class="details-stat-label">Country</span>
-                <span class="details-stat-value">${countryName}</span>
-              </div>
-              <div class="details-stat-box" style="grid-column: span 2;">
-                <span class="details-stat-label">Profile ID</span>
-                <span class="details-stat-value" style="font-family: monospace; font-size: 0.95rem;">${player.profile_id}</span>
-              </div>
-              <div class="details-stat-box" style="grid-column: span 2;">
-                <span class="details-stat-label">Last Match Played</span>
-                <span class="details-stat-value" style="font-size: 0.9rem;">${dateStr}</span>
-              </div>
-            </div>
-
             <!-- ELO Trend Chart -->
             <div class="details-trend-container">
-              <div style="font-size: 0.85rem; color: var(--text-gold); font-family: 'Cinzel', serif; font-weight: 700; margin-bottom: 0.8rem; letter-spacing: 0.5px; text-align: left;">Rating History Trend</div>
               <div id="trend-chart-${player.profile_id}"></div>
             </div>
 
