@@ -287,8 +287,10 @@
         else if (index === 2) rankContent = '<span class="rank-badge rank-3">3</span>';
         else rankContent = `<span class="rank-other">${index + 1}</span>`;
 
+        const hasValidCountry = player.country && player.country.trim().length === 2 && player.country.toLowerCase() !== 'un';
+
         let countryName = '';
-        if (player.country) {
+        if (hasValidCountry) {
           try {
             const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
             countryName = regionNames.of(player.country.toUpperCase()) || player.country.toUpperCase();
@@ -297,9 +299,9 @@
           }
         }
 
-        const flagHtml = player.country 
+        const flagHtml = hasValidCountry 
           ? `<img src="https://flagcdn.com/24x18/${player.country.toLowerCase()}.png" width="22" height="16" alt="${player.country.toUpperCase()}" style="margin-right: 8px; vertical-align: middle; border-radius: 2px; border: 1px solid rgba(255,255,255,0.15);" title="${escapeHtml(countryName)}">` 
-          : '';
+          : `<span class="flag-placeholder" style="margin-right: 8px; display: inline-block; width: 22px; text-align: center; font-size: 0.85rem; opacity: 0.35;">🏳️</span>`;
 
         // Sparkline Generation
         const history = player.ratingHistory || [1000, player.rating];
@@ -405,7 +407,8 @@
       const cell = document.getElementById(`details-cell-${player.profile_id}`);
       
       let countryName = 'Unknown';
-      if (player.country) {
+      const hasValidCountry = player.country && player.country.trim().length === 2 && player.country.toLowerCase() !== 'un';
+      if (hasValidCountry) {
         try {
           const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
           countryName = regionNames.of(player.country.toUpperCase()) || player.country.toUpperCase();
