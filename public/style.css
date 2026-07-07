@@ -271,7 +271,7 @@ tbody tr:hover {
 /* Table columns */
 .col-rank {
     font-weight: 700;
-    width: 80px;
+    width: 70px;
     text-align: center;
 }
 
@@ -334,7 +334,7 @@ tbody tr:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-width: 250px;
+    min-width: 270px;
     padding: 0.2rem 0;
 }
 
