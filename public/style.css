@@ -239,6 +239,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
+    table-layout: fixed;
 }
 
 th, td {
@@ -255,6 +256,7 @@ th {
     letter-spacing: 1px;
     text-transform: uppercase;
     border-bottom: 2px solid var(--border-color);
+    white-space: nowrap;
 }
 
 tbody tr {
