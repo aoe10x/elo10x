@@ -100,7 +100,8 @@
               <th>Player Alias</th>
               <th>Elo Rating</th>
               <th style="text-align: center; width: 120px;">Trend</th>
-              <th style="width: 250px;">Record / Win Rate</th>
+              <th style="width: 230px;">Record / Win Rate</th>
+              <th style="width: 130px; text-align: left;">Last Played</th>
             </tr>
           </thead>
           <tbody id="leaderboard-body">
@@ -153,6 +154,28 @@
     let summaryStats = {};
     let config = {};
     let currentMode = '3x'; // '3x', 'pure', 'combined'
+
+    function timeAgo(unixTimestamp) {
+      if (!unixTimestamp) return 'Never';
+      const seconds = Math.floor(Date.now() / 1000 - unixTimestamp);
+      if (seconds < 0) return 'Just now';
+      
+      const intervals = [
+        { label: 'year', seconds: 31536000 },
+        { label: 'month', seconds: 2592000 },
+        { label: 'day', seconds: 86400 },
+        { label: 'hour', seconds: 3600 },
+        { label: 'minute', seconds: 60 }
+      ];
+      
+      for (const interval of intervals) {
+        const count = Math.floor(seconds / interval.seconds);
+        if (count >= 1) {
+          return `${count} ${interval.label}${count > 1 ? 's' : ''} ago`;
+        }
+      }
+      return 'Just now';
+    }
 
     const elements = {
       search: document.getElementById('search-input'),
@@ -367,6 +390,7 @@
               </div>
             </div>
           </td>
+          <td style="vertical-align: middle; font-size: 0.9rem; color: var(--text-muted);">${timeAgo(player.lastPlayedAt)}</td>
         `;
 
         const detailsRow = document.createElement('tr');
@@ -552,16 +576,38 @@
             hour: '2-digit', 
             minute: '2-digit' 
           });
+
+          const civHtml = m.civ 
+            ? `<span class="civ-badge" style="background: rgba(196, 169, 106, 0.12); color: var(--text-gold); border: 1px solid rgba(196, 169, 106, 0.25); border-radius: 4px; padding: 1px 5px; font-size: 0.72rem; font-weight: 500; margin-left: 6px;">⚔️ ${escapeHtml(m.civ)}</span>`
+            : '';
+
+          const teammatesList = Array.isArray(m.teammates) && m.teammates.length > 0 
+            ? `<div class="timeline-roster"><span style="color: var(--accent-win); opacity: 0.75; font-weight: 600;">With:</span> <span style="color: rgba(255,255,255,0.7);">${m.teammates.map(escapeHtml).join(', ')}</span></div>`
+            : '';
+
+          const opponentsList = Array.isArray(m.opponents) && m.opponents.length > 0 
+            ? `<div class="timeline-roster"><span style="color: var(--accent-loss); opacity: 0.75; font-weight: 600;">Against:</span> <span style="color: rgba(255,255,255,0.7);">${m.opponents.map(escapeHtml).join(', ')}</span></div>`
+            : '';
+
+          const teamAvgDisplay = m.teamAvgElo && m.opponentAvgElo 
+            ? `<div class="timeline-rating-range">Team: <strong>${m.teamAvgElo}</strong> vs Opp: <strong>${m.opponentAvgElo}</strong></div>`
+            : `<div class="timeline-rating-range">vs Opp: <strong>${m.opponentAvgElo}</strong></div>`;
           
           return `
-            <div class="timeline-card" title="ELO change: ${sign}${m.eloChange} (Opponent Avg ELO: ${m.opponentAvgElo})">
+            <div class="timeline-card" style="align-items: flex-start;" title="ELO change: ${sign}${m.eloChange} (Opponent Avg ELO: ${m.opponentAvgElo})">
               <div class="timeline-left">
-                <div class="timeline-map">${escapeHtml(m.mapname || 'Custom Map')}</div>
+                <div class="timeline-map">
+                  ${escapeHtml(m.mapname || 'Custom Map')}
+                  ${civHtml}
+                </div>
                 <div class="timeline-meta">${matchDate} • ${escapeHtml(m.description || 'Lobby Match')}</div>
+                ${teammatesList}
+                ${opponentsList}
               </div>
-              <div class="timeline-right">
+              <div class="timeline-right" style="margin-top: 2px;">
                 <div class="points-badge ${badgeClass}">${sign}${m.eloChange} ELO</div>
-                <div class="timeline-rating-range">${m.preRating} ➔ ${m.postRating} (vs ${m.opponentAvgElo})</div>
+                <div class="timeline-rating-range" style="font-weight: 500; color: var(--text-light); margin-top: 4px;">${m.preRating} ➔ ${m.postRating}</div>
+                ${teamAvgDisplay}
               </div>
             </div>
           `;

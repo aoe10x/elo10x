@@ -43,6 +43,10 @@ export interface RecentMatch {
   postRating: number;
   eloChange: number;
   opponentAvgElo: number;
+  civ?: string;
+  teamAvgElo?: number;
+  teammates?: string[];
+  opponents?: string[];
 }
 
 export interface EloRanking {
