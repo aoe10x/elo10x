@@ -24,7 +24,7 @@ Options:
   --end-page <number>       End page for AoE2Insights scraper (default: 20).
 
   --elo                     Calculate ELO ratings based on crawled matches.
-  --min-games <number>      Minimum games required to display on the leaderboard (default: 5).
+  --min-games <number>      Minimum games required to display on the leaderboard (default: 15).
   --k-factor <number>       K-Factor to use for ELO calculations (default: 32).
   --provisional             Include provisional players (fewer games than min-games).
 
@@ -179,7 +179,7 @@ async function main(): Promise<void> {
   }
 
   if (values.elo) {
-    const minGames = values['min-games'] ? parseInt(values['min-games'], 10) : 5;
+    const minGames = values['min-games'] ? parseInt(values['min-games'], 10) : 15;
     const kFactor = values['k-factor'] ? parseInt(values['k-factor'], 10) : 32;
     const provisional = !!values.provisional;
 
