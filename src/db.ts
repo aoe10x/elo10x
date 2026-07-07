@@ -154,15 +154,36 @@ export class JsonDatabase {
 
   // Profiles
   addProfile(profile: PlayerProfile): void {
-    // Merge updates or create new profile
     const existing = this.data.profiles[profile.profile_id];
+    
+    // Normalize country: preserve only valid 2-letter codes, discard 'Unknown', 'un', or undefined
+    let normalizedCountry = profile.country;
+    if (normalizedCountry) {
+      const trimmed = normalizedCountry.trim();
+      if (trimmed.length !== 2 || trimmed.toLowerCase() === 'un' || trimmed.toLowerCase() === 'unknown') {
+        normalizedCountry = undefined;
+      }
+    }
+
     if (existing) {
-      this.data.profiles[profile.profile_id] = {
-        ...existing,
-        ...profile
-      };
+      const merged = { ...existing };
+      if (profile.alias && !profile.alias.startsWith('Player_')) {
+        merged.alias = profile.alias;
+      }
+      if (profile.xp !== undefined) merged.xp = profile.xp;
+      if (profile.level !== undefined) merged.level = profile.level;
+      if (normalizedCountry !== undefined) {
+        merged.country = normalizedCountry;
+      }
+      this.data.profiles[profile.profile_id] = merged;
     } else {
-      this.data.profiles[profile.profile_id] = profile;
+      const newProfile = { ...profile };
+      if (normalizedCountry !== undefined) {
+        newProfile.country = normalizedCountry;
+      } else {
+        delete newProfile.country;
+      }
+      this.data.profiles[profile.profile_id] = newProfile;
     }
   }
 

@@ -686,17 +686,28 @@ footer a:hover {
     flex-direction: column;
     gap: 0.25rem;
     text-align: left;
+    max-width: 72%;
 }
 
 .timeline-map {
     font-size: 0.95rem;
     font-weight: 600;
     color: var(--text-light);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
 }
 
 .timeline-meta {
     font-size: 0.8rem;
     color: var(--text-muted);
+}
+
+.timeline-roster {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    line-height: 1.3;
+    margin-top: 0.15rem;
 }
 
 .timeline-right {
