@@ -19,7 +19,7 @@ Options:
   --seed                    Force a fetch of online lobbies on aoe10x.com to seed crawler queue.
   --months <number>         Cutoff months for games (default: 3).
   
-  --scrape-insights <id>    Scrape match history for player <id> from AoE2Insights via Chrome DevTools.
+  --scrape-insights <id|active|unscraped> Scrape history for player <id>, active players, or active unscraped players from AoE2Insights.
   --start-page <number>     Start page for AoE2Insights scraper (default: 1).
   --end-page <number>       End page for AoE2Insights scraper (default: 20).
 
@@ -95,24 +95,37 @@ async function main(): Promise<void> {
   if (values['scrape-insights']) {
     let targetProfileIds: number[] = [];
     
-    if (values['scrape-insights'] === 'active') {
-      console.log('Detecting top active players in database...');
+    if (values['scrape-insights'] === 'active' || values['scrape-insights'] === 'unscraped') {
+      const isUnscrapedOnly = values['scrape-insights'] === 'unscraped';
+      console.log(isUnscrapedOnly ? 'Detecting active unscraped players in database...' : 'Detecting top active players in database...');
+      
       const matches = db.getMatches();
       const playerCounts: Record<number, number> = {};
+      const scrapedIds = new Set<number>();
+      
       for (const m of matches) {
         if (m.players) {
           for (const p of m.players) {
             playerCounts[p.profile_id] = (playerCounts[p.profile_id] || 0) + 1;
+            if (m.source === 'aoe2insights_scrape') {
+              scrapedIds.add(p.profile_id);
+            }
           }
         }
       }
       
-      // Sort by frequency descending
-      const sortedPlayers = Object.entries(playerCounts)
-        .map(([pid, count]) => ({ profileId: parseInt(pid, 10), count }))
-        .sort((a, b) => b.count - a.count);
-         
-      // Exclude players we have already crawled thoroughly
+      // Sort matches descending by startgametime to prioritize players from most recent games
+      const sortedMatches = [...matches].sort((a, b) => b.startgametime - a.startgametime);
+      const activeIds = new Set<number>();
+      for (const m of sortedMatches) {
+        if (m.players) {
+          for (const p of m.players) {
+            activeIds.add(p.profile_id);
+          }
+        }
+      }
+
+      // Exclude players we have already crawled thoroughly (only for the 'active' mode)
       const excludedIds = new Set<number>([
         404483,    // Paulichromatic
         3046506,   // NoAgendaPODCAST
@@ -121,27 +134,28 @@ async function main(): Promise<void> {
         3309404,   // Parts
         17046544   // 田瘾犯了
       ]);
-      
+
       const limit = values.limit ? parseInt(values.limit, 10) : 20;
-      
-      for (const p of sortedPlayers) {
-        if (!excludedIds.has(p.profileId)) {
-          targetProfileIds.push(p.profileId);
+
+      for (const pid of activeIds) {
+        const isExcluded = isUnscrapedOnly ? scrapedIds.has(pid) : excludedIds.has(pid);
+        if (!isExcluded) {
+          targetProfileIds.push(pid);
           if (targetProfileIds.length >= limit) {
             break;
           }
         }
       }
       
-      console.log(`Selected next top ${targetProfileIds.length} active players for crawling:`);
+      console.log(`Selected top ${targetProfileIds.length} players for crawling:`);
       for (const pid of targetProfileIds) {
         const alias = db.getProfile(pid)?.alias || `Player_${pid}`;
-        console.log(`- ${alias} (ID ${pid}): ${playerCounts[pid]} matches currently in DB`);
+        console.log(`- ${alias} (ID ${pid}): ${playerCounts[pid] || 0} matches currently in DB`);
       }
     } else {
       const profileId = parseInt(values['scrape-insights'], 10);
       if (isNaN(profileId)) {
-        console.error(`Invalid profile ID: ${values['scrape-insights']}`);
+        console.error(`Invalid profile ID or option: ${values['scrape-insights']}`);
         process.exit(1);
       }
       targetProfileIds.push(profileId);
