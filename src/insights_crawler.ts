@@ -15,58 +15,113 @@ export class InsightsCrawler {
   async scrapePlayerHistory(profileId: number, startPage: number = 1, endPage: number = 20): Promise<{ scraped: number; added: number }> {
     console.log(`Connecting to local Chrome instance on port 9222...`);
     
-    let targets: any[] = [];
-    let success = false;
-    let lastErrorMsg = "";
-    
-    const endpoints = [
-      'http://127.0.0.1:9222/json',
-      'http://127.0.0.1:9222/json/list',
-      'http://localhost:9222/json',
-      'http://localhost:9222/json/list'
-    ];
+    let wsUrl: string | null = null;
+    let targetTitle = "";
 
-    for (const url of endpoints) {
-      try {
-        const res = await fetch(url);
-        if (res.ok) {
-          targets = await res.json() as any[];
-          success = true;
-          break;
-        } else {
-          lastErrorMsg = `HTTP error ${res.status} from ${url}`;
+    // Method A: Direct WebSocket target discovery (works even if /json HTTP endpoints return 404)
+    try {
+      console.log("Attempting direct WebSocket target discovery via CDP...");
+      const browserWsUrl = 'ws://127.0.0.1:9222/devtools/browser';
+      const ws = new WebSocket(browserWsUrl);
+
+      const targetList = await new Promise<any[]>((resolve, reject) => {
+        const timeout = setTimeout(() => {
+          cleanup();
+          reject(new Error("Timeout waiting for Target.getTargets response"));
+        }, 3000);
+
+        const cleanup = () => {
+          clearTimeout(timeout);
+          ws.onopen = null;
+          ws.onmessage = null;
+          ws.onerror = null;
+          try {
+            if (ws.readyState === WebSocket.OPEN || ws.readyState === WebSocket.CONNECTING) {
+              ws.close();
+            }
+          } catch (e) {
+            // Ignore close errors
+          }
+        };
+
+        ws.onopen = () => {
+          ws.send(JSON.stringify({ id: 1, method: 'Target.getTargets' }));
+        };
+
+        ws.onmessage = (event) => {
+          try {
+            const data = JSON.parse(event.data.toString());
+            if (data.id === 1 && data.result && data.result.targetInfos) {
+              cleanup();
+              resolve(data.result.targetInfos);
+            }
+          } catch (e) {
+            // Ignore parse errors
+          }
+        };
+
+        ws.onerror = (e) => {
+          cleanup();
+          reject(e);
+        };
+      });
+
+      const aoe2insightsTab = targetList.find(t => t.type === 'page' && t.url && t.url.includes('aoe2insights.com'));
+      if (aoe2insightsTab) {
+        wsUrl = `ws://127.0.0.1:9222/devtools/page/${aoe2insightsTab.targetId}`;
+        targetTitle = aoe2insightsTab.title || "";
+        console.log(`Discovered active AoE2Insights tab via CDP: "${targetTitle}"`);
+      }
+    } catch (err: any) {
+      console.warn(`WebSocket target discovery failed: ${err.message}. Falling back to HTTP discovery...`);
+    }
+
+    // Method B: Fallback to traditional HTTP json/list endpoints
+    if (!wsUrl) {
+      let targets: any[] = [];
+      let success = false;
+      let lastErrorMsg = "";
+      
+      const endpoints = [
+        'http://127.0.0.1:9222/json',
+        'http://127.0.0.1:9222/json/list',
+        'http://localhost:9222/json',
+        'http://localhost:9222/json/list'
+      ];
+
+      for (const url of endpoints) {
+        try {
+          const res = await fetch(url);
+          if (res.ok) {
+            targets = await res.json() as any[];
+            success = true;
+            break;
+          } else {
+            lastErrorMsg = `HTTP error ${res.status} from ${url}`;
+          }
+        } catch (e: any) {
+          lastErrorMsg = `${e.message} from ${url}`;
         }
-      } catch (e: any) {
-        lastErrorMsg = `${e.message} from ${url}`;
+      }
+
+      if (success) {
+        const targetTab = targets.find(t => t.url && t.url.includes('aoe2insights.com'));
+        if (targetTab) {
+          wsUrl = targetTab.webSocketDebuggerUrl;
+          targetTitle = targetTab.title || "";
+          console.log(`Discovered active AoE2Insights tab via HTTP: "${targetTitle}"`);
+        }
       }
     }
 
-    if (!success) {
-      throw new Error(
-        `Failed to connect to Chrome at http://127.0.0.1:9222/json. \n` +
-        `Please ensure Chrome is running with remote debugging enabled. To start it, run:\n` +
-        `Start-Process chrome.exe -ArgumentList "--remote-debugging-port=9222"\n` +
-        `Original error: ${lastErrorMsg}`
-      );
-    }
-
-    // Find tab running AoE2Insights
-    const targetTab = targets.find(t => t.url && t.url.includes('aoe2insights.com'));
-    if (!targetTab) {
+    if (!wsUrl) {
       throw new Error(
         `Could not find any open Chrome tabs pointing to aoe2insights.com.\n` +
         `Please open Chrome and navigate to any page on https://www.aoe2insights.com/ first.`
       );
     }
 
-    const wsUrl = targetTab.webSocketDebuggerUrl;
-    if (!wsUrl) {
-      throw new Error(`Target tab has no webSocketDebuggerUrl. Make sure you don't have multiple DevTools instances debugging it.`);
-    }
-
-    console.log(`Found active AoE2Insights tab: "${targetTab.title}"`);
-    console.log(`Opening WebSocket connection to Chrome tab debugger...`);
-
+    console.log(`Opening WebSocket connection to Chrome tab debugger: ${wsUrl}`);
     const ws = new WebSocket(wsUrl);
 
     const scrapedMatches = await new Promise<any[]>((resolve, reject) => {
