@@ -22,33 +22,33 @@ export class MatchCrawler {
   }
 
   /**
-   * Seed the crawl queue using the most active players currently in the database
-   * who haven't been crawled within the cooldown period.
+   * Seed the crawl queue using players who participated in the most recent
+   * matches in the database, excluding those crawled within the cooldown period.
    */
   async seedFromActivePlayers(limit: number = 50): Promise<number[]> {
     console.log('Crawl queue is empty and lobbies are offline. Seeding from active database profiles...');
     const matches = this.db.getMatches();
-    const playerCounts: Record<number, number> = {};
-    for (const m of matches) {
-      if (m.players) {
-        for (const p of m.players) {
-          playerCounts[p.profile_id] = (playerCounts[p.profile_id] || 0) + 1;
-        }
-      }
-    }
 
-    // Sort by match count descending
-    const sortedActiveIds = Object.entries(playerCounts)
-      .map(([pidStr, count]) => ({ profileId: Number(pidStr), count }))
-      .sort((a, b) => b.count - a.count);
+    // Sort matches by startgametime descending (most recent first)
+    const sortedMatches = [...matches].sort((a, b) => b.startgametime - a.startgametime);
 
     const seeds: number[] = [];
-    for (const item of sortedActiveIds) {
-      if (!this.db.isCrawled(item.profileId, CRAWL_COOLDOWN_MS)) {
-        seeds.push(item.profileId);
-        if (seeds.length >= limit) {
-          break;
+    const seedSet = new Set<number>();
+
+    for (const m of sortedMatches) {
+      if (m.players) {
+        for (const p of m.players) {
+          if (!seedSet.has(p.profile_id) && !this.db.isCrawled(p.profile_id, CRAWL_COOLDOWN_MS)) {
+            seedSet.add(p.profile_id);
+            seeds.push(p.profile_id);
+            if (seeds.length >= limit) {
+              break;
+            }
+          }
         }
+      }
+      if (seeds.length >= limit) {
+        break;
       }
     }
 
