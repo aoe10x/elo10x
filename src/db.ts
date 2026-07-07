@@ -8,7 +8,7 @@ export class JsonDatabase {
   private data!: DatabaseSchema;
   private isLoaded: boolean = false;
 
-  constructor(filePath: string = path.join(process.cwd(), 'public', 'data', 'db.json')) {
+  constructor(filePath: string = path.join(process.cwd(), 'docs', 'data', 'db.json')) {
     this.filePath = filePath;
   }
 

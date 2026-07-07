@@ -227,7 +227,7 @@ async function main(): Promise<void> {
       const ratingsMap = calculator.calculate(filteredMatches);
       const leaderboard = calculator.getLeaderboard(ratingsMap, provisional);
 
-      const leaderboardPath = path.join(process.cwd(), 'public', 'data', mode.file);
+      const leaderboardPath = path.join(process.cwd(), 'docs', 'data', mode.file);
       await fs.mkdir(path.dirname(leaderboardPath), { recursive: true });
       
       const payload = {
