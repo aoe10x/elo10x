@@ -60,18 +60,6 @@
         <input type="text" id="search-input" class="search-input" placeholder="Search players by name...">
       </div>
       
-      <div class="filters-wrapper">
-        <div class="filter-item">
-          <label for="min-games-input">Min Games:</label>
-          <input type="number" id="min-games-input" min="0" max="100" value="15" style="width: 60px;">
-        </div>
-        <div class="filter-item">
-          <label class="checkbox-label" id="provisional-label">
-            <input type="checkbox" id="provisional-checkbox">
-            Include Provisional (&lt; min games)
-          </label>
-        </div>
-      </div>
     </div>
 
     <!-- Leaderboard Panel -->
@@ -101,7 +89,7 @@
               <th>Elo Rating</th>
               <th style="text-align: center; width: 120px;">Trend</th>
               <th style="width: 230px;">Record / Win Rate</th>
-              <th style="width: 130px; text-align: left;">Last Played</th>
+              <th style="width: 160px; text-align: left;">Last Played</th>
             </tr>
           </thead>
           <tbody id="leaderboard-body">
@@ -179,8 +167,6 @@
 
     const elements = {
       search: document.getElementById('search-input'),
-      minGames: document.getElementById('min-games-input'),
-      provisional: document.getElementById('provisional-checkbox'),
       tbody: document.getElementById('leaderboard-body'),
       tableContainer: document.getElementById('table-container'),
       loadingState: document.getElementById('loading-state'),
@@ -217,8 +203,7 @@
         config = data.config || { minGames: 15, kFactor: 32, provisional: false };
 
         // Apply config options to inputs
-        elements.minGames.value = config.minGames;
-        elements.provisional.checked = config.provisional;
+
 
         updateSummaryCards();
         renderLeaderboard();
@@ -266,8 +251,8 @@
 
     function renderLeaderboard() {
       const searchTerm = elements.search.value.toLowerCase().trim();
-      const minGames = parseInt(elements.minGames.value, 10) || 0;
-      const includeProvisional = elements.provisional.checked;
+      const minGames = config.minGames || 15;
+      const includeProvisional = config.provisional || false;
 
       // Filter players
       let filteredPlayers = allPlayers.filter(p => {
@@ -390,14 +375,14 @@
               </div>
             </div>
           </td>
-          <td style="vertical-align: middle; font-size: 0.9rem; color: var(--text-muted);">${timeAgo(player.lastPlayedAt)}</td>
+          <td style="vertical-align: middle; font-size: 0.9rem; color: var(--text-muted); white-space: nowrap;">${timeAgo(player.lastPlayedAt)}</td>
         `;
 
         const detailsRow = document.createElement('tr');
         detailsRow.className = 'details-row';
         detailsRow.id = `details-row-${player.profile_id}`;
         detailsRow.style.display = 'none';
-        detailsRow.innerHTML = `<td colspan="5" id="details-cell-${player.profile_id}"></td>`;
+        detailsRow.innerHTML = `<td colspan="6" id="details-cell-${player.profile_id}"></td>`;
 
         row.addEventListener('click', () => togglePlayerDetails(player, index + 1, detailsRow));
         elements.tbody.appendChild(row);
@@ -628,8 +613,7 @@
 
     // Event Listeners
     elements.search.addEventListener('input', renderLeaderboard);
-    elements.minGames.addEventListener('input', renderLeaderboard);
-    elements.provisional.addEventListener('change', renderLeaderboard);
+
     
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && activeExpandedRow) {
