@@ -63,7 +63,7 @@
       <div class="filters-wrapper">
         <div class="filter-item">
           <label for="min-games-input">Min Games:</label>
-          <input type="number" id="min-games-input" min="0" max="100" value="5" style="width: 60px;">
+          <input type="number" id="min-games-input" min="0" max="100" value="15" style="width: 60px;">
         </div>
         <div class="filter-item">
           <label class="checkbox-label" id="provisional-label">
@@ -214,7 +214,7 @@
           totalPlayers: data.totalPlayers,
           updatedAt: data.updatedAt
         };
-        config = data.config || { minGames: 5, kFactor: 32, provisional: false };
+        config = data.config || { minGames: 15, kFactor: 32, provisional: false };
 
         // Apply config options to inputs
         elements.minGames.value = config.minGames;
