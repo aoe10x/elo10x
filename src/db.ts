@@ -196,9 +196,9 @@ export class JsonDatabase {
   }
 
   // Crawl Queue
-  addToCrawlQueue(profile_ids: number[]): void {
+  addToCrawlQueue(profile_ids: number[], maxAgeMs: number = 24 * 60 * 60 * 1000): void {
     for (const id of profile_ids) {
-      if (!this.isCrawled(id) && !this.data.crawl_queue.includes(id)) {
+      if (!this.isCrawled(id, maxAgeMs) && !this.data.crawl_queue.includes(id)) {
         this.data.crawl_queue.push(id);
       }
     }
@@ -219,8 +219,13 @@ export class JsonDatabase {
     this.data.crawl_queue = this.data.crawl_queue.filter(id => id !== profile_id);
   }
 
-  isCrawled(profile_id: number): boolean {
-    return !!this.data.crawled_profiles[profile_id];
+  isCrawled(profile_id: number, maxAgeMs?: number): boolean {
+    const lastCrawled = this.data.crawled_profiles[profile_id];
+    if (!lastCrawled) return false;
+    if (maxAgeMs !== undefined) {
+      return (Date.now() - lastCrawled) < maxAgeMs;
+    }
+    return true;
   }
 
   getCrawledCount(): number {
