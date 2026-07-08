@@ -156,6 +156,25 @@
     let config = {};
     let currentMode = '3x'; // '3x', 'pure', 'combined'
 
+    // Reusable DateTime formatters
+    const shortDateFormatter = new Intl.DateTimeFormat(undefined, {
+      month: 'short', 
+      day: 'numeric', 
+      hour: '2-digit', 
+      minute: '2-digit'
+    });
+
+    const longDateFormatter = new Intl.DateTimeFormat(undefined, {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      timeZoneName: 'short'
+    });
+
     function timeAgo(unixTimestamp) {
       if (!unixTimestamp) return 'Never';
       const seconds = Math.floor(Date.now() / 1000 - unixTimestamp);
@@ -388,7 +407,7 @@
               </div>
             </div>
           </td>
-          <td style="vertical-align: middle; font-size: 0.9rem; color: var(--text-muted); white-space: nowrap;">${timeAgo(player.lastPlayedAt)}</td>
+          <td style="vertical-align: middle; font-size: 0.9rem; color: var(--text-muted); white-space: nowrap;" title="${player.lastPlayedAt ? escapeHtml(longDateFormatter.format(new Date(player.lastPlayedAt * 1000))) : ''}">${timeAgo(player.lastPlayedAt)}</td>
         `;
 
         const detailsRow = document.createElement('tr');
@@ -568,12 +587,9 @@
         timelineContainer.innerHTML = sortedRecent.map(m => {
           const sign = m.eloChange >= 0 ? '+' : '';
           const badgeClass = m.outcome === 'win' ? 'points-win' : 'points-loss';
-          const matchDate = new Date(m.timestamp * 1000).toLocaleDateString([], { 
-            month: 'short', 
-            day: 'numeric', 
-            hour: '2-digit', 
-            minute: '2-digit' 
-          });
+          const dateObj = new Date(m.timestamp * 1000);
+          const matchDate = shortDateFormatter.format(dateObj);
+          const longMatchDate = longDateFormatter.format(dateObj);
 
           const civHtml = (m.civ && m.civ !== 'Unknown') 
             ? `<span class="civ-badge" style="background: rgba(196, 169, 106, 0.12); color: var(--text-gold); border: 1px solid rgba(196, 169, 106, 0.25); border-radius: 4px; padding: 1px 5px; font-size: 0.72rem; font-weight: 500; margin-left: 6px;">⚔️ ${escapeHtml(m.civ)}</span>`
@@ -602,7 +618,7 @@
                   ${escapeHtml(m.description || 'Lobby Match')}
                   ${civHtml}
                 </div>
-                <div class="timeline-meta">${matchDate} • Map: ${escapeHtml(mapDisplay)}</div>
+                <div class="timeline-meta"><span title="${escapeHtml(longMatchDate)}" style="border-bottom: 1px dashed rgba(255,255,255,0.25); cursor: help;">${matchDate}</span> • Map: ${escapeHtml(mapDisplay)}</div>
                 ${teammatesList}
                 ${opponentsList}
               </div>
