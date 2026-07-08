@@ -1,12 +1,12 @@
 {
   "profile_id": 390547,
   "alias": "Chirijiraden",
-  "rating": 911,
+  "rating": 899,
   "wins": 22,
-  "losses": 31,
-  "gamesCount": 53,
-  "winRate": 42,
-  "lastPlayedAt": 1783294140,
+  "losses": 32,
+  "gamesCount": 54,
+  "winRate": 41,
+  "lastPlayedAt": 1783539272,
   "merged_ids": [],
   "ratingHistory": [
     1000,
@@ -62,33 +62,10 @@
     916,
     936,
     923,
-    911
+    911,
+    899
   ],
   "recentMatches": [
-    {
-      "matchId": 484225240,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1781078520,
-      "outcome": "loss",
-      "preRating": 1051,
-      "postRating": 1036,
-      "eloChange": -15,
-      "civ": "Lithuanians",
-      "teamAvgElo": 1004,
-      "opponentAvgElo": 1063,
-      "teammates": [
-        "Ravenlost",
-        "Vulkan",
-        "SitzKrieg"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "Parenquima",
-        "Battlegoose",
-        "Emotions are prohibited"
-      ]
-    },
     {
       "matchId": 485418325,
       "description": "10x 3x BN ",
@@ -543,6 +520,30 @@
         "Xinzzo",
         "Gasnápido",
         "Ellie91"
+      ]
+    },
+    {
+      "matchId": 490966976,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "my map",
+      "timestamp": 1783539272,
+      "outcome": "loss",
+      "preRating": 911,
+      "postRating": 899,
+      "eloChange": -12,
+      "civ": "Chinese",
+      "teamAvgElo": 993,
+      "opponentAvgElo": 1011,
+      "teammates": [
+        "Emusan",
+        "Ruuder",
+        "Eat MY Sprouts"
+      ],
+      "opponents": [
+        "Borkan",
+        "[CSGS]Runescape",
+        "[Liiit] Zbyszek",
+        "NothingAtAll11"
       ]
     }
   ]

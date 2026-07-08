@@ -185,8 +185,17 @@ export class JsonDatabase {
       return (a.startgametime || 0) - (b.startgametime || 0);
     });
 
-    // Sort profiles by ID for diff cleanliness
-    const sortedProfiles = Array.from(this.profiles.values()).sort((a, b) => {
+    // Sort profiles by ID for diff cleanliness and strip out any legacy properties (xp/level)
+    const sortedProfiles = Array.from(this.profiles.values()).map(p => {
+      const clean: PlayerProfile = {
+        profile_id: p.profile_id,
+        alias: p.alias
+      };
+      if (p.country) {
+        clean.country = p.country;
+      }
+      return clean;
+    }).sort((a, b) => {
       return a.profile_id - b.profile_id;
     });
 
@@ -291,8 +300,6 @@ export class JsonDatabase {
       if (profile.alias && !profile.alias.startsWith('Player_')) {
         merged.alias = profile.alias;
       }
-      if (profile.xp !== undefined) merged.xp = profile.xp;
-      if (profile.level !== undefined) merged.level = profile.level;
       if (normalizedCountry !== undefined) {
         merged.country = normalizedCountry;
       }

@@ -28,8 +28,6 @@ export interface Match {
 export interface PlayerProfile {
   profile_id: number;
   alias: string;
-  xp?: number;
-  level?: number;
   country?: string;
 }
 

@@ -1,13 +1,16 @@
 {
   "profile_id": 12526952,
   "alias": "Brotherman Bill",
-  "rating": 1089,
+  "rating": 1072,
   "wins": 53,
-  "losses": 39,
-  "gamesCount": 92,
-  "winRate": 58,
-  "lastPlayedAt": 1779852300,
-  "merged_ids": [],
+  "losses": 40,
+  "gamesCount": 93,
+  "winRate": 57,
+  "lastPlayedAt": 1783538514,
+  "merged_ids": [
+    12526952,
+    17547058
+  ],
   "ratingHistory": [
     1000,
     947,
@@ -101,33 +104,10 @@
     1108,
     1089,
     1106,
-    1089
+    1089,
+    1072
   ],
   "recentMatches": [
-    {
-      "matchId": 390711977,
-      "description": "10x shared civ boni 4v4 amazon tunnel",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1746589200,
-      "outcome": "loss",
-      "preRating": 1143,
-      "postRating": 1123,
-      "eloChange": -20,
-      "civ": "Unknown",
-      "teamAvgElo": 1062,
-      "opponentAvgElo": 1059,
-      "teammates": [
-        "gemmascho",
-        "mariajosearsan",
-        "Bene"
-      ],
-      "opponents": [
-        "RaptorX",
-        "t0t0l1ck3r",
-        "Doctorbonus",
-        "OhSheeep"
-      ]
-    },
     {
       "matchId": 390713256,
       "description": "10x shared civ boni 4v4 amazon tunnel",
@@ -582,6 +562,30 @@
         "liehuo22",
         "veeeeker",
         "bommietommie"
+      ]
+    },
+    {
+      "matchId": 490965213,
+      "description": "10x 3x bamboo",
+      "mapname": "my map",
+      "timestamp": 1783538514,
+      "outcome": "loss",
+      "preRating": 1089,
+      "postRating": 1072,
+      "eloChange": -17,
+      "civ": "Goths",
+      "teamAvgElo": 1059,
+      "opponentAvgElo": 1073,
+      "teammates": [
+        "pandasadnap",
+        "gemmascho",
+        "Keishi"
+      ],
+      "opponents": [
+        "Lykerya",
+        "Not a Wizard",
+        "wintre",
+        "Maic"
       ]
     }
   ]

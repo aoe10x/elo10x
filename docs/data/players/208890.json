@@ -1,12 +1,12 @@
 {
   "profile_id": 208890,
   "alias": "[Liiit] Zbyszek",
-  "rating": 1038,
-  "wins": 23,
-  "losses": 23,
-  "gamesCount": 46,
+  "rating": 1036,
+  "wins": 24,
+  "losses": 24,
+  "gamesCount": 48,
   "winRate": 50,
-  "lastPlayedAt": 1783363234,
+  "lastPlayedAt": 1783539272,
   "merged_ids": [],
   "ratingHistory": [
     1000,
@@ -55,57 +55,11 @@
     1053,
     1070,
     1053,
-    1038
+    1038,
+    1021,
+    1036
   ],
   "recentMatches": [
-    {
-      "matchId": 401959823,
-      "description": "10x shared civ bonus 3x tech",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1750811940,
-      "outcome": "win",
-      "preRating": 1013,
-      "postRating": 1030,
-      "eloChange": 17,
-      "civ": "Unknown",
-      "teamAvgElo": 1005,
-      "opponentAvgElo": 1043,
-      "teammates": [
-        "tacotoy",
-        "[TW] hushin0917",
-        "Lozzer"
-      ],
-      "opponents": [
-        "Rododino",
-        "Nörtomator",
-        "__VK__",
-        "rios"
-      ]
-    },
-    {
-      "matchId": 408320115,
-      "description": "4 vs 4 // 10x Shared Random Civ// 2.3",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1753404480,
-      "outcome": "win",
-      "preRating": 1030,
-      "postRating": 1046,
-      "eloChange": 16,
-      "civ": "Unknown",
-      "teamAvgElo": 1079,
-      "opponentAvgElo": 1029,
-      "teammates": [
-        "Juk3",
-        "25chai",
-        "Kenaidian"
-      ],
-      "opponents": [
-        "Bechti420",
-        "TheCobra",
-        "[WS2] SandysPlay YT",
-        "FREESTYLE SCiENTiST"
-      ]
-    },
     {
       "matchId": 408326796,
       "description": "bamboo nothing 10x3x turbo",
@@ -536,6 +490,54 @@
         "LeosMind",
         "YUJIN",
         "-Pepe Groda-"
+      ]
+    },
+    {
+      "matchId": 490964318,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "my map",
+      "timestamp": 1783538295,
+      "outcome": "loss",
+      "preRating": 1038,
+      "postRating": 1021,
+      "eloChange": -17,
+      "civ": "Malians",
+      "teamAvgElo": 1013,
+      "opponentAvgElo": 1019,
+      "teammates": [
+        "Emusan",
+        "Consume Product",
+        "Ruuder"
+      ],
+      "opponents": [
+        "Eat MY Sprouts",
+        "Gladiator",
+        "[CSGS]Runescape",
+        "Preacher!"
+      ]
+    },
+    {
+      "matchId": 490966976,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "my map",
+      "timestamp": 1783539272,
+      "outcome": "win",
+      "preRating": 1021,
+      "postRating": 1036,
+      "eloChange": 15,
+      "civ": "Tatars",
+      "teamAvgElo": 1011,
+      "opponentAvgElo": 993,
+      "teammates": [
+        "Borkan",
+        "[CSGS]Runescape",
+        "NothingAtAll11"
+      ],
+      "opponents": [
+        "Emusan",
+        "Ruuder",
+        "Eat MY Sprouts",
+        "Chirijiraden"
       ]
     }
   ]
