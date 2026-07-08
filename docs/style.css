@@ -349,6 +349,7 @@ tbody tr:hover {
 
 th.col-elo, td.col-elo {
     width: 110px;
+    text-align: center;
 }
 
 td.col-elo {
@@ -414,6 +415,7 @@ td.col-elo {
 
 .col-winrate {
     width: 290px;
+    text-align: center;
 }
 
 /* Rank badges for top 3 */
