@@ -54,7 +54,7 @@ function generateSparkline(history: number[] | undefined, rating: number): strin
   
   return `
     <div class="sparkline-wrapper" title="Elo trend over last ${lastGames.length} matches (min: ${minVal}, max: ${maxVal}, current: ${lastRating})">
-      <svg width="${width}" height="${height}" style="display: block; overflow: visible;">
+      <svg width="${width}" height="${height}">
         <line x1="${padding}" y1="${y1000.toFixed(1)}" x2="${width - padding}" y2="${y1000.toFixed(1)}" stroke="rgba(255, 255, 255, 0.15)" stroke-width="0.75" stroke-dasharray="1,1" />
         <polyline points="${points}" fill="none" stroke="rgba(255, 255, 255, 0.4)" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round" />
         <circle cx="${width - padding}" cy="${lastRatingY.toFixed(1)}" r="1.75" fill="#d4af37" />
@@ -81,8 +81,8 @@ function generateRowHtml(player: EloRanking, rank: number, maxSingleRecord: numb
     }
   }
   const flagHtml = hasValidCountry 
-    ? `<img src="https://flagcdn.com/24x18/${player.country!.toLowerCase()}.png" width="22" height="16" alt="${player.country!.toUpperCase()}" style="margin-right: 8px; vertical-align: middle; border-radius: 2px; border: 1px solid rgba(255,255,255,0.15);" title="${escapeHtml(countryName)}">` 
-    : `<span class="flag-placeholder" style="margin-right: 8px; display: inline-block; width: 22px; text-align: center; font-size: 0.85rem; opacity: 0.35;">🏳️</span>`;
+    ? `<img src="https://flagcdn.com/24x18/${player.country!.toLowerCase()}.png" width="22" height="16" alt="${player.country!.toUpperCase()}" class="flag-icon" title="${escapeHtml(countryName)}">` 
+    : `<span class="flag-placeholder">🏳️</span>`;
 
   const eloDiff = player.rating - 1000;
   const eloBarWidth = Math.min(40, Math.round(Math.abs(eloDiff) * 0.1));
@@ -111,7 +111,7 @@ function generateRowHtml(player: EloRanking, rank: number, maxSingleRecord: numb
     <tr class="player-row" data-profile-id="${player.profile_id}" data-alias="${escapeHtml(player.alias)}">
       <td class="col-rank">${rankContent}</td>
       <td class="col-alias"><div class="alias-container">${flagHtml}<span class="alias-name" title="${escapeHtml(player.alias)}">${escapeHtml(player.alias)}</span></div></td>
-      <td class="col-elo" style="vertical-align: middle;">
+      <td class="col-elo">
         <div class="elo-container">
           <span class="elo-value">${player.rating}</span>
           <div class="elo-bar-wrapper">
@@ -121,7 +121,7 @@ function generateRowHtml(player: EloRanking, rank: number, maxSingleRecord: numb
           </div>
         </div>
       </td>
-      <td class="col-trend" style="vertical-align: middle;">${sparklineHtml}</td>
+      <td class="col-trend">${sparklineHtml}</td>
       <td class="col-winrate">
         <div class="true-diverging-container" title="${player.wins} wins, ${player.losses} losses (${player.winRate}% win rate over ${player.gamesCount} total games)">
           <div class="losses-side">

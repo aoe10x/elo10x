@@ -20,7 +20,7 @@
   <div class="container">
     <header>
       <h1 class="header-logo" id="main-title">AoE2 10x Leaderboard</h1>
-      <p class="header-subtitle">Elo rankings for the <a href="https://10xshared.com/" target="_blank" style="color: inherit; text-decoration: underline;">10x Shared Civ Bonus community</a></p>
+      <p class="header-subtitle">Elo rankings for the <a href="https://10xshared.com/" target="_blank">10x Shared Civ Bonus community</a></p>
       <div class="last-updated-badge">
         <span class="status-dot"></span>
         Updated <span id="stat-updated" data-timestamp="{{updatedAt}}">-</span>
@@ -65,13 +65,13 @@
     <!-- Leaderboard Panel -->
     <div class="leaderboard-panel" id="leaderboard-panel">
       <!-- Loading State -->
-      <div class="loading-state" id="loading-state" style="display: none;">
+      <div class="loading-state" id="loading-state">
         <div class="spinner"></div>
         <p>Crunching the logs, calculating Elo ratings...</p>
       </div>
 
       <!-- Error State -->
-      <div class="error-state" id="error-state" style="display: none;">
+      <div class="error-state" id="error-state">
         <svg viewBox="0 0 24 24">
           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
         </svg>
@@ -108,8 +108,8 @@
             <ul>
               <li><strong>Starting Rating:</strong> New players begin at <code>1000 Elo</code>.</li>
               <li><strong>Dynamic K-Factor:</strong> Established players use a stable <code>K = 32</code>. For the first 21 matches (placement phase), the K-factor decays linearly from 100 to 32:
-                <div style="font-size: 0.85rem; color: var(--text-gold); margin-top: 4px; font-family: monospace;">K = 100 - n &times; (100 - 32) / 21</div>
-                This lets ratings converge quickly to a player's true skill level, modeled after the <a href="https://www.reddit.com/r/aoe2/comments/1q7v0bs/comment/nyjcksf/" target="_blank" style="color: var(--text-gold); text-decoration: underline;">AoE2 Ranked placement formula</a>.
+                <div class="methodology-formula-text">K = 100 - n &times; (100 - 32) / 21</div>
+                This lets ratings converge quickly to a player's true skill level, modeled after the <a href="https://www.reddit.com/r/aoe2/comments/1q7v0bs/comment/nyjcksf/" target="_blank">AoE2 Ranked placement formula</a>.
               </li>
               <li><strong>Leaderboard Threshold:</strong> Players are hidden from the leaderboard until they have completed <code>15 matches</code> (this choice was arbitrary).</li>
             </ul>
@@ -117,28 +117,28 @@
           <div class="methodology-card">
             <h4>Elo Update Formula</h4>
             <p>We compute individual rating adjustments by comparing a player's rating against the average rating of the opposing team:</p>
-            <div class="formula-box" style="white-space: nowrap; overflow-x: auto;">
+            <div class="formula-box">
               E<sub>p</sub> = 1 / (1 + 10<sup>(R<sub>opp</sub> - R<sub>p</sub>) / 400</sup>)<br>
               &Delta;R<sub>p</sub> = K &times; (S - E<sub>p</sub>)
             </div>
-            <ul style="padding-left: 1.2rem; margin-bottom: 0.8rem;">
+            <ul>
               <li><strong>R<sub>p</sub></strong>: Player's Elo before the match.</li>
               <li><strong>R<sub>opp</sub></strong>: Average Elo of the opposing team.</li>
               <li><strong>E<sub>p</sub></strong>: Expected win probability (0 to 1).</li>
               <li><strong>S</strong>: Outcome (1 for Win, 0 for Loss).</li>
               <li><strong>&Delta;R<sub>p</sub></strong>: Rating change (rounded to nearest integer).</li>
             </ul>
-            <p style="margin-bottom: 0; font-size: 0.9rem; color: var(--text-muted);">For an interactive tool to simulate these Elo changes, see <a href="https://www.twestaoe.net/tools/elocalculator" target="_blank" style="color: var(--text-gold); text-decoration: underline;">T-West's AoE2 Elo Calculator</a>.</p>
+            <p class="methodology-note">For an interactive tool to simulate these Elo changes, see <a href="https://www.twestaoe.net/tools/elocalculator" target="_blank">T-West's AoE2 Elo Calculator</a>.</p>
           </div>
           <div class="methodology-card">
             <h4>Match Eligibility & Gaps</h4>
             <p>To ensure competitive integrity, we only process matches that meet the following strict validation checks:</p>
-            <ul style="padding-left: 1.2rem; margin-bottom: 0.8rem;">
+            <ul>
               <li><strong>Strict 4v4 format:</strong> The match must contain exactly 8 tracked players.</li>
               <li><strong>Two distinct teams:</strong> Exactly 4 players per team.</li>
               <li><strong>Outcome verification:</strong> Exactly 4 winners and 4 losers must be reported. Ambiguous, draw, or bugged lobby reports are discarded.</li>
             </ul>
-            <p style="margin-bottom: 0; font-size: 0.9rem; color: var(--text-muted); line-height: 1.45;">
+            <p class="methodology-note">
               <strong>Data Collection Note:</strong> Collection is manual and gaps exist. Matches are not recorded if "Record Game" was left unchecked in the lobby settings. Furthermore, public APIs do not support querying all custom lobbies globally; we must crawl by tracing individual player histories. That said, we strive to include as many games as possible.
             </p>
           </div>
@@ -256,8 +256,8 @@
       const cell = document.getElementById(`details-cell-${profileId}`);
       if (cell.getAttribute('data-loaded') !== 'true') {
         cell.innerHTML = `
-          <div style="text-align: center; padding: 2rem; color: var(--text-muted);">
-            <div class="spinner" style="margin: 0 auto 10px auto;"></div>
+          <div class="details-loading">
+            <div class="spinner"></div>
             Loading stats...
           </div>
         `;
@@ -271,15 +271,15 @@
           renderDetailsCard(cell, player);
           cell.setAttribute('data-loaded', 'true');
         } catch (error) {
-          cell.innerHTML = `<div style="text-align: center; padding: 2rem; color: var(--accent-loss);">Error: ${error.message}</div>`;
+          cell.innerHTML = `<div class="details-error">Error: ${error.message}</div>`;
         }
       }
     }
 
     function renderDetailsCard(cell, player) {
       const idsHtml = (player.merged_ids && player.merged_ids.length > 0)
-        ? `<span><strong>Merged IDs:</strong> <span style="font-family: monospace; font-size: 0.8rem;" title="These duplicate profile IDs were automagically merged because they share the same final alias">${player.merged_ids.join(', ')}</span></span>`
-        : `<span><strong>ID:</strong> <span style="font-family: monospace; font-size: 0.8rem;">${player.profile_id}</span></span>`;
+        ? `<span><strong>Merged IDs:</strong> <span class="details-profile-id" title="These duplicate profile IDs were automagically merged because they share the same final alias">${player.merged_ids.join(', ')}</span></span>`
+        : `<span><strong>ID:</strong> <span class="details-profile-id">${player.profile_id}</span></span>`;
 
       let countryName = 'Unknown';
       const hasValidCountry = player.country && player.country.trim().length === 2 && player.country.toLowerCase() !== 'un';
@@ -297,7 +297,7 @@
             <div class="details-stats-inline">
               <span><strong>Elo:</strong> ${player.rating}</span>
               <span><strong>Games:</strong> ${player.gamesCount}</span>
-              <span><strong>Record:</strong> <span style="color: var(--accent-win);">${player.wins}W</span>-<span style="color: var(--accent-loss);">${player.losses}L</span></span>
+              <span><strong>Record:</strong> <span class="text-win">${player.wins}W</span>-<span class="text-loss">${player.losses}L</span></span>
               <span><strong>Win Rate:</strong> ${player.winRate}%</span>
               <span><strong>Country:</strong> ${escapeHtml(countryName)}</span>
               ${idsHtml}
@@ -311,7 +311,7 @@
             <!-- Links -->
             <div class="details-actions">
               <a href="https://www.aoe2insights.com/user/${player.profile_id}/" target="_blank" class="btn-action">AoE2 Insights Profile</a>
-              <a href="https://steamcommunity.com/profiles/${player.profile_id}" target="_blank" class="btn-action" style="display: none;" id="steam-${player.profile_id}">Steam Profile</a>
+              <a href="https://steamcommunity.com/profiles/${player.profile_id}" target="_blank" class="btn-action hidden" id="steam-${player.profile_id}">Steam Profile</a>
             </div>
           </div>
 
@@ -363,7 +363,7 @@
         const y1000 = padding + (1 - (1000 - minVal) / valRange) * (height - padding * 2);
 
         chartContainer.innerHTML = `
-          <svg width="100%" height="${height}" viewBox="0 0 ${width} ${height}" style="display: block; overflow: visible;">
+          <svg width="100%" height="${height}" viewBox="0 0 ${width} ${height}" class="details-chart-svg">
             <defs>
               <linearGradient id="detail-grad-${player.profile_id}" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stop-color="${strokeColor}" stop-opacity="0.2"/>
@@ -387,14 +387,14 @@
             <circle cx="${padding}" cy="${padding + (1 - (firstRating - minVal) / valRange) * (height - padding * 2)}" r="3.5" fill="var(--text-muted)" />
             <circle cx="${width - padding}" cy="${padding + (1 - (lastRating - minVal) / valRange) * (height - padding * 2)}" r="4.5" fill="${strokeColor}" />
           </svg>
-          <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-muted); margin-top: 0.4rem;">
+          <div class="chart-timeline-footer">
             <span>Start: ${firstRating}</span>
             <span>Peak: ${maxVal}</span>
             <span>Current: ${lastRating}</span>
           </div>
         `;
       } else {
-        chartContainer.innerHTML = `<div style="text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.9rem;">No history data available.</div>`;
+        chartContainer.innerHTML = `<div class="timeline-empty">No history data available.</div>`;
       }
     }
 
@@ -413,15 +413,15 @@
           const longMatchDate = longDateFormatter.format(dateObj);
 
           const civHtml = (m.civ && m.civ !== 'Unknown') 
-            ? `<span class="civ-badge" style="background: rgba(196, 169, 106, 0.12); color: var(--text-gold); border: 1px solid rgba(196, 169, 106, 0.25); border-radius: 4px; padding: 1px 5px; font-size: 0.72rem; font-weight: 500; margin-left: 6px; display: inline-block; vertical-align: middle; line-height: 1;">⚔️&nbsp;${escapeHtml(m.civ)}</span>`
+            ? `<span class="civ-badge">⚔️&nbsp;${escapeHtml(m.civ)}</span>`
             : '';
 
           const teammatesList = Array.isArray(m.teammates) && m.teammates.length > 0 
-            ? `<div class="timeline-roster"><span style="color: var(--accent-win); opacity: 0.75; font-weight: 600;">With:</span> <span style="color: rgba(255,255,255,0.7);">${m.teammates.map(escapeHtml).join(', ')}</span></div>`
+            ? `<div class="timeline-roster"><span class="roster-label-win">With:</span> <span class="roster-names">${m.teammates.map(escapeHtml).join(', ')}</span></div>`
             : '';
 
           const opponentsList = Array.isArray(m.opponents) && m.opponents.length > 0 
-            ? `<div class="timeline-roster"><span style="color: var(--accent-loss); opacity: 0.75; font-weight: 600;">Against:</span> <span style="color: rgba(255,255,255,0.7);">${m.opponents.map(escapeHtml).join(', ')}</span></div>`
+            ? `<div class="timeline-roster"><span class="roster-label-loss">Against:</span> <span class="roster-names">${m.opponents.map(escapeHtml).join(', ')}</span></div>`
             : '';
 
           const teamAvgDisplay = m.teamAvgElo && m.opponentAvgElo 
@@ -432,25 +432,25 @@
           const mapHtml = hasRealMap ? ` • Map: ${escapeHtml(m.mapname)}` : '';
 
           return `
-            <div class="timeline-card" style="align-items: flex-start;" title="Elo change: ${sign}${m.eloChange} (Opponent Avg Elo: ${m.opponentAvgElo})">
+            <div class="timeline-card" title="Elo change: ${sign}${m.eloChange} (Opponent Avg Elo: ${m.opponentAvgElo})">
               <div class="timeline-left">
                 <div class="timeline-map">
                   ${escapeHtml(m.description || 'Lobby Match')}
                 </div>
-                <div class="timeline-meta"><span title="${escapeHtml(longMatchDate)}" style="border-bottom: 1px dashed rgba(255,255,255,0.25); cursor: help;">${matchDate}</span>${mapHtml}${civHtml}</div>
+                <div class="timeline-meta"><span title="${escapeHtml(longMatchDate)}" class="help-tooltip">${matchDate}</span>${mapHtml}${civHtml}</div>
                 ${teammatesList}
                 ${opponentsList}
               </div>
-              <div class="timeline-right" style="margin-top: 2px;">
+              <div class="timeline-right">
                 <div class="points-badge ${badgeClass}">${sign}${m.eloChange} Elo</div>
-                <div class="timeline-rating-range" style="font-weight: 500; color: var(--text-light); margin-top: 4px;">${m.preRating} ➔ ${m.postRating}</div>
+                <div class="timeline-rating-range">${m.preRating} ➔ ${m.postRating}</div>
                 ${teamAvgDisplay}
               </div>
             </div>
           `;
         }).join('');
       } else {
-        timelineContainer.innerHTML = `<div style="text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.9rem;">No recent games logged.</div>`;
+        timelineContainer.innerHTML = `<div class="timeline-empty">No recent games logged.</div>`;
       }
     }
 
@@ -492,7 +492,7 @@
         if (!noResultsRow) {
           noResultsRow = document.createElement('tr');
           noResultsRow.id = 'no-results-row';
-          noResultsRow.innerHTML = `<td colspan="6" style="text-align: center; color: var(--text-muted); padding: 3rem;">No players found matching current filters.</td>`;
+          noResultsRow.innerHTML = `<td colspan="6" class="table-empty-message">No players found matching current filters.</td>`;
           elements.tbody.appendChild(noResultsRow);
         }
         noResultsRow.style.display = 'table-row';
