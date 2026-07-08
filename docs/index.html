@@ -473,7 +473,7 @@
               <span><strong>Games:</strong> ${player.gamesCount}</span>
               <span><strong>Record:</strong> <span style="color: var(--accent-win);">${player.wins}W</span>-<span style="color: var(--accent-loss);">${player.losses}L</span></span>
               <span><strong>Win Rate:</strong> ${player.winRate}%</span>
-              <span><strong>Country:</strong> ${countryName}</span>
+              <span><strong>Country:</strong> ${escapeHtml(countryName)}</span>
               <span style="font-family: monospace; font-size: 0.8rem;"><strong>ID:</strong> ${player.profile_id}</span>
             </div>
             
@@ -636,7 +636,8 @@
     }
 
     function escapeHtml(str) {
-      return str
+      if (str === null || str === undefined) return '';
+      return String(str)
         .replace(/&/g, "&amp;")
         .replace(/</g, "&lt;")
         .replace(/>/g, "&gt;")
