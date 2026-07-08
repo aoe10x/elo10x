@@ -165,31 +165,17 @@ async function main(): Promise<void> {
     const endPage = values['end-page'] ? parseInt(values['end-page'], 10) : 10; // default 10 pages for batch runs
     
     const scraper = new InsightsCrawler(db);
-    
-    let totalScraped = 0;
-    let totalAdded = 0;
-    
-    for (const pid of targetProfileIds) {
-      const alias = db.getProfile(pid)?.alias || `Player_${pid}`;
+    console.log(`\n========================================`);
+    console.log(`Starting Batch Crawl for ${targetProfileIds.length} players`);
+    console.log(`========================================`);
+    try {
+      const stats = await scraper.scrapePlayersBatch(targetProfileIds, startPage, endPage);
       console.log(`\n========================================`);
-      console.log(`Scraping history for player: ${alias} (ID ${pid})`);
+      console.log(`Batch Scrape Complete! Crawled players: ${stats.crawled}, New 10x matches added/merged: ${stats.added}`);
       console.log(`========================================`);
-      
-      try {
-        const stats = await scraper.scrapePlayerHistory(pid, startPage, endPage);
-        console.log(`Success: processed ${stats.scraped} matches, added ${stats.added} new matches.`);
-        totalScraped += stats.scraped;
-        totalAdded += stats.added;
-        
-        // Save progress after each player to protect against crashes
-        await db.save();
-      } catch (e: any) {
-        console.error(`Scraper failed for player ${alias}:`, e.message);
-        // Continue to next player in batch instead of hard crash
-      }
+    } catch (err: any) {
+      console.error(`Batch scraper execution failed:`, err.message);
     }
-    
-    console.log(`\nBatch Scrape Complete! Total processed 10x games: ${totalScraped}, Total new games added: ${totalAdded}`);
   }
 
   if (values.elo) {

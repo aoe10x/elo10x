@@ -28,8 +28,6 @@ export interface Match {
 export interface PlayerProfile {
   profile_id: number;
   alias: string;
-  xp?: number;
-  level?: number;
   country?: string;
 }
 
@@ -137,4 +135,21 @@ export interface UploadRecsPayload {
   restoredDataUrls: (string | null)[];
   matchId: string;
   uploader: string;
+}
+
+export interface InsightsCrawlManifest {
+  last_crawled_at: number;
+  newest_match_id: number;
+  oldest_match_id: number;
+  has_reached_start: boolean;
+}
+
+export interface RelicCrawlManifest {
+  last_crawled_at: number;
+  newest_match_id: number;
+}
+
+export interface PlayerCrawlManifest {
+  insights?: InsightsCrawlManifest;
+  relic?: RelicCrawlManifest;
 }

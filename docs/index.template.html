@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AoE2 10x Community Elo Leaderboard</title>
+  <meta name="description" content="Elo rating rankings and detailed statistics for the Age of Empires II 10x Shared Civ Bonus community.">
+  
+  <!-- SEO & Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏆</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="header-logo" id="main-title">AoE2 10x Leaderboard</h1>
+      <p class="header-subtitle">Elo rankings for the <a href="https://10xshared.com/" target="_blank">10x Shared Civ Bonus community</a></p>
+      <div class="last-updated-badge">
+        <span class="status-dot"></span>
+        Updated <span id="stat-updated" data-timestamp="{{updatedAt}}">{{updatedAtFormatted}}</span>
+      </div>
+    </header>
+
+    <!-- Dashboard Cards -->
+    <div class="summary-grid" id="summary-grid">
+      <div class="stat-card">
+        <h3>Matches Calculated</h3>
+        <div class="value" id="stat-matches">{{matchesCount}}</div>
+      </div>
+      <div class="stat-card">
+        <h3>Active Players</h3>
+        <div class="value" id="stat-players">{{playersCount}}</div>
+      </div>
+      <div class="stat-card">
+        <h3>Leaderboard Elo range</h3>
+        <div class="value" id="stat-range">{{eloRange}}</div>
+      </div>
+    </div>
+
+    <!-- Mode Selector Tabs -->
+    <div class="tabs-container">
+      <a href="index.html" class="tab-btn {{tabActive3x}}" id="tab-3x">10x 3x</a>
+      <a href="pure.html" class="tab-btn {{tabActivePure}}" id="tab-pure">10x</a>
+      <a href="combined.html" class="tab-btn {{tabActiveCombined}}" id="tab-combined">Combined</a>
+    </div>
+
+    <!-- Filter panel -->
+    <div class="controls-panel">
+      <search class="search-wrapper">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="search" id="search-input" class="search-input" placeholder="Search players by name...">
+      </search>
+      
+      <div class="filters-wrapper">
+        <label class="filter-item checkbox-filter">
+          <input type="checkbox" id="show-inactive-checkbox">
+          <span>Show inactive players</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Leaderboard Panel -->
+    <div class="leaderboard-panel" id="leaderboard-panel">
+      <!-- Loading State -->
+      <div class="loading-state" id="loading-state">
+        <div class="spinner"></div>
+        <p>Crunching the logs, calculating Elo ratings...</p>
+      </div>
+
+      <!-- Error State -->
+      <div class="error-state" id="error-state">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+        </svg>
+        <h2 class="error-title">No Leaderboard Data Yet</h2>
+        <p id="error-message">Run the crawler and Elo calculation script first to build the Elo list.</p>
+      </div>
+
+      <!-- Leaderboard Table -->
+      <div class="table-responsive" id="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th class="col-rank">Rank</th>
+              <th>Player</th>
+              <th class="col-elo">Elo</th>
+              <th class="col-trend">Trend</th>
+              <th class="col-winrate">Record / Win Rate</th>
+              <th class="col-last-played">Last Played</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboard-body">
+            <!-- LEADERBOARD_ROWS -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Methodology Section -->
+      <div class="methodology-section">
+        <h3>Elo Calculation Methodology</h3>
+        <div class="methodology-grid">
+          <div class="methodology-card">
+            <h4>Parameters & Calibration</h4>
+            <p>Ratings are calculated sequentially in chronological order, using the following calibration rules:</p>
+            <ul>
+              <li><strong>Starting Rating:</strong> New players begin at <code>1000 Elo</code>.</li>
+              <li><strong>Dynamic K-Factor:</strong> Established players use a stable <code>K = 32</code>. For the first 21 matches (placement phase), the K-factor decays linearly from 100 to 32:
+                <div class="methodology-formula-text">K = 100 - n &times; (100 - 32) / 21</div>
+                This lets ratings converge quickly to a player's true skill level, modeled after the <a href="https://www.reddit.com/r/aoe2/comments/1q7v0bs/comment/nyjcksf/" target="_blank">AoE2 Ranked placement formula</a>.
+              </li>
+              <li><strong>Leaderboard Threshold:</strong> Players are hidden from the leaderboard until they have completed <code>15 matches</code> (this choice was arbitrary).</li>
+              <li><strong>Inactivity Filter:</strong> To keep rankings current, players who have not played a match within the past <code>6 months (180 days)</code> are hidden by default. They can be revealed using the filter checkbox in the controls panel.</li>
+            </ul>
+          </div>
+          <div class="methodology-card">
+            <h4>Elo Update Formula</h4>
+            <p>We compute individual rating adjustments by comparing a player's rating against the average rating of the opposing team:</p>
+            <div class="formula-box">
+              E<sub>p</sub> = 1 / (1 + 10<sup>(R<sub>opp</sub> - R<sub>p</sub>) / 400</sup>)<br>
+              &Delta;R<sub>p</sub> = K &times; (S - E<sub>p</sub>)
+            </div>
+            <ul>
+              <li><strong>R<sub>p</sub></strong>: Player's Elo before the match.</li>
+              <li><strong>R<sub>opp</sub></strong>: Average Elo of the opposing team.</li>
+              <li><strong>E<sub>p</sub></strong>: Expected win probability (0 to 1).</li>
+              <li><strong>S</strong>: Outcome (1 for Win, 0 for Loss).</li>
+              <li><strong>&Delta;R<sub>p</sub></strong>: Rating change (rounded to nearest integer).</li>
+            </ul>
+            <p class="methodology-note">For an interactive tool to simulate these Elo changes, see <a href="https://www.twestaoe.net/tools/elocalculator" target="_blank">T-West's AoE2 Elo Calculator</a>.</p>
+          </div>
+          <div class="methodology-card">
+            <h4>Match Eligibility & Gaps</h4>
+            <p>To ensure competitive integrity, we only process matches that meet the following strict validation checks:</p>
+            <ul>
+              <li><strong>Strict 4v4 format:</strong> The match must contain exactly 8 tracked players.</li>
+              <li><strong>Two distinct teams:</strong> Exactly 4 players per team.</li>
+              <li><strong>Outcome verification:</strong> Exactly 4 winners and 4 losers must be reported. Ambiguous, draw, or bugged lobby reports are discarded.</li>
+            </ul>
+            <p class="methodology-note">
+              <strong>Data Collection Note:</strong> Collection is manual and gaps exist. Matches are not recorded if "Record Game" was left unchecked in the lobby settings. Furthermore, public APIs do not support querying all custom lobbies globally; we must crawl by tracing individual player histories. That said, we strive to include as many games as possible.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>Data scraped from Relic Link multiplayer servers. Site built for the <a href="https://10xshared.com/" target="_blank">AoE2 10x community</a>.</p>
+      </footer>
+  </div>
+  <script>
+    // Reusable DateTime formatters
+    const shortDateFormatter = new Intl.DateTimeFormat(undefined, {
+      month: 'short', 
+      day: 'numeric', 
+      hour: '2-digit', 
+      minute: '2-digit'
+    });
+
+    const longDateFormatter = new Intl.DateTimeFormat(undefined, {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      timeZoneName: 'short'
+    });
+
+    function timeAgo(unixTimestamp) {
+      if (!unixTimestamp) return 'Never';
+      const seconds = Math.floor(Date.now() / 1000 - unixTimestamp);
+      if (seconds < 0) return 'Just now';
+      
+      const intervals = [
+        { label: 'year', seconds: 31536000 },
+        { label: 'month', seconds: 2592000 },
+        { label: 'day', seconds: 86400 },
+        { label: 'hour', seconds: 3600 },
+        { label: 'minute', seconds: 60 }
+      ];
+      
+      for (const interval of intervals) {
+        const count = Math.floor(seconds / interval.seconds);
+        if (count >= 1) {
+          return `${count} ${interval.label}${count > 1 ? 's' : ''} ago`;
+        }
+      }
+      return 'Just now';
+    }
+
+    const elements = {
+      search: document.getElementById('search-input'),
+      showInactive: document.getElementById('show-inactive-checkbox'),
+      tbody: document.getElementById('leaderboard-body')
+    };
+
+    let activeExpandedRow = null;
+
+    // Initialize and run the dynamic timeAgo clock
+    const updateEl = document.getElementById('stat-updated');
+    if (updateEl) {
+      const timestampStr = updateEl.getAttribute('data-timestamp');
+      const timestamp = parseInt(timestampStr, 10);
+      if (timestamp) {
+        const date = new Date(timestamp);
+        updateEl.setAttribute('title', longDateFormatter.format(date));
+        updateEl.style.cursor = 'help';
+        updateEl.style.borderBottom = '1px dashed rgba(255, 255, 255, 0.2)';
+        updateEl.style.display = 'inline-block';
+        
+        const refreshTime = () => {
+          updateEl.textContent = timeAgo(Math.floor(timestamp / 1000));
+        };
+        refreshTime();
+        setInterval(refreshTime, 60000);
+      }
+    }
+
+    // Row expand toggle
+    document.querySelectorAll('tbody tr.player-row').forEach(row => {
+      row.addEventListener('click', () => {
+        const profileId = row.getAttribute('data-profile-id');
+        const detailsRow = document.getElementById(`details-row-${profileId}`);
+        togglePlayerDetails(profileId, detailsRow);
+      });
+    });
+
+    async function togglePlayerDetails(profileId, detailsRow) {
+      const isCurrentlyVisible = detailsRow.style.display !== 'none';
+      
+      // Close any other open expanded details row
+      document.querySelectorAll('.details-row').forEach(row => {
+        row.style.display = 'none';
+      });
+      document.querySelectorAll('tbody tr').forEach(row => {
+        row.classList.remove('active-row');
+      });
+
+      if (isCurrentlyVisible) {
+        activeExpandedRow = null;
+        return;
+      }
+
+      // Open this details row
+      detailsRow.style.display = 'table-row';
+      activeExpandedRow = detailsRow;
+      
+      const mainRow = detailsRow.previousElementSibling;
+      if (mainRow) {
+        mainRow.classList.add('active-row');
+      }
+      
+      // Populate details card if not loaded
+      const cell = document.getElementById(`details-cell-${profileId}`);
+      if (cell.getAttribute('data-loaded') !== 'true') {
+        cell.innerHTML = `
+          <div class="details-loading">
+            <div class="spinner"></div>
+            Loading stats...
+          </div>
+        `;
+
+        try {
+          const response = await fetch(`data/players/${profileId}.json`);
+          if (!response.ok) {
+            throw new Error('Stats profile file not found.');
+          }
+          const player = await response.json();
+          renderDetailsCard(cell, player);
+          cell.setAttribute('data-loaded', 'true');
+        } catch (error) {
+          cell.innerHTML = `<div class="details-error">Error: ${error.message}</div>`;
+        }
+      }
+    }
+
+    function renderDetailsCard(cell, player) {
+      const idsHtml = (player.merged_ids && player.merged_ids.length > 0)
+        ? `<span><strong>Merged IDs:</strong> <span class="details-profile-id" title="These duplicate profile IDs were automagically merged because they share the same final alias">${player.merged_ids.join(', ')}</span></span>`
+        : `<span><strong>ID:</strong> <span class="details-profile-id">${player.profile_id}</span></span>`;
+
+      let countryName = 'Unknown';
+      const hasValidCountry = player.country && player.country.trim().length === 2 && player.country.toLowerCase() !== 'un';
+      if (hasValidCountry) {
+        try {
+          const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
+          countryName = regionNames.of(player.country.toUpperCase()) || player.country.toUpperCase();
+        } catch (e) {}
+      }
+
+      cell.innerHTML = `
+        <div class="details-expanded-container">
+          <!-- Column Left: Stats & Elo Trend Chart -->
+          <div class="details-col-left">
+            <div class="details-stats-inline">
+              <span><strong>Elo:</strong> ${player.rating}</span>
+              <span><strong>Games:</strong> ${player.gamesCount}</span>
+              <span><strong>Record:</strong> <span class="text-win">${player.wins}W</span>-<span class="text-loss">${player.losses}L</span></span>
+              <span><strong>Win Rate:</strong> ${player.winRate}%</span>
+              <span><strong>Country:</strong> ${escapeHtml(countryName)}</span>
+              ${idsHtml}
+            </div>
+            
+            <!-- Elo Trend Chart -->
+            <div class="details-trend-container">
+              <div id="trend-chart-${player.profile_id}"></div>
+            </div>
+
+            <!-- Links -->
+            <div class="details-actions">
+              <a href="https://www.aoe2insights.com/user/${player.profile_id}/" target="_blank" class="btn-action">AoE2 Insights Profile</a>
+              <a href="https://steamcommunity.com/profiles/${player.profile_id}" target="_blank" class="btn-action hidden" id="steam-${player.profile_id}">Steam Profile</a>
+            </div>
+          </div>
+
+          <!-- Column Right: Recent Matches Elo History -->
+          <div class="details-col-right">
+            <div class="details-timeline-title">Recent Games Elo History</div>
+            <div class="modal-timeline" id="timeline-${player.profile_id}"></div>
+            <div class="ux-legend">Rating change is based on your Elo vs. the opposing team's average Elo.</div>
+          </div>
+        </div>
+      `;
+
+      renderTrendChart(player);
+      renderRecentTimeline(player);
+    }
+
+    function renderTrendChart(player) {
+      const history = player.ratingHistory || [1000, player.rating];
+      const chartContainer = document.getElementById(`trend-chart-${player.profile_id}`);
+      if (!chartContainer) return;
+
+      if (history.length > 1) {
+        const width = 450;
+        const height = 120;
+        const padding = 15;
+        
+        const minVal = Math.min(1000, ...history);
+        const maxVal = Math.max(1000, ...history);
+        const valRange = maxVal - minVal || 1;
+        
+        const points = history.map((val, idx) => {
+          const x = padding + (idx / (history.length - 1)) * (width - padding * 2);
+          const y = padding + (1 - (val - minVal) / valRange) * (height - padding * 2);
+          return `${x.toFixed(1)},${y.toFixed(1)}`;
+        }).join(' ');
+        
+        const firstRating = history[0];
+        const lastRating = history[history.length - 1];
+        const strokeColor = lastRating >= firstRating ? '#22c55e' : '#ef4444';
+        
+        const minValIdx = history.indexOf(minVal);
+        const maxValIdx = history.indexOf(maxVal);
+        
+        const minX = padding + (minValIdx / (history.length - 1)) * (width - padding * 2);
+        const minY = padding + (1 - (minVal - minVal) / valRange) * (height - padding * 2);
+        const maxX = padding + (maxValIdx / (history.length - 1)) * (width - padding * 2);
+        const maxY = padding + (1 - (maxVal - minVal) / valRange) * (height - padding * 2);
+
+        const y1000 = padding + (1 - (1000 - minVal) / valRange) * (height - padding * 2);
+
+        chartContainer.innerHTML = `
+          <svg width="100%" height="${height}" viewBox="0 0 ${width} ${height}" class="details-chart-svg">
+            <defs>
+              <linearGradient id="detail-grad-${player.profile_id}" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="${strokeColor}" stop-opacity="0.2"/>
+                <stop offset="100%" stop-color="${strokeColor}" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <line x1="${padding}" y1="${padding}" x2="${width - padding}" y2="${padding}" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+            <line x1="${padding}" y1="${y1000}" x2="${width - padding}" y2="${y1000}" stroke="rgba(196, 169, 106, 0.22)" stroke-width="1.25" stroke-dasharray="3,3" />
+            <text x="${padding + 4}" y="${y1000 - 4}" font-size="8" fill="rgba(196, 169, 106, 0.45)" font-weight="600">Starting Elo (1000)</text>
+            <line x1="${padding}" y1="${height - padding}" x2="${width - padding}" y2="${height - padding}" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+            
+            <polygon points="${padding},${height - padding} ${points} ${width - padding},${height - padding}" fill="url(#detail-grad-${player.profile_id})" />
+            <polyline points="${points}" fill="none" stroke="${strokeColor}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+            
+            <circle cx="${minX}" cy="${minY}" r="3" fill="#ef4444" />
+            <text x="${minX}" y="${minY + 12}" font-size="8" fill="#ef4444" text-anchor="middle" font-weight="600">${minVal}</text>
+            
+            <circle cx="${maxX}" cy="${maxY}" r="3" fill="#22c55e" />
+            <text x="${maxX}" y="${maxY - 6}" font-size="8" fill="#22c55e" text-anchor="middle" font-weight="600">${maxVal}</text>
+
+            <circle cx="${padding}" cy="${padding + (1 - (firstRating - minVal) / valRange) * (height - padding * 2)}" r="3.5" fill="var(--text-muted)" />
+            <circle cx="${width - padding}" cy="${padding + (1 - (lastRating - minVal) / valRange) * (height - padding * 2)}" r="4.5" fill="${strokeColor}" />
+          </svg>
+          <div class="chart-timeline-footer">
+            <span>Start: ${firstRating}</span>
+            <span>Peak: ${maxVal}</span>
+            <span>Current: ${lastRating}</span>
+          </div>
+        `;
+      } else {
+        chartContainer.innerHTML = `<div class="timeline-empty">No history data available.</div>`;
+      }
+    }
+
+    function renderRecentTimeline(player) {
+      const timelineContainer = document.getElementById(`timeline-${player.profile_id}`);
+      if (!timelineContainer) return;
+
+      if (player.recentMatches && player.recentMatches.length > 0) {
+        const sortedRecent = [...player.recentMatches].sort((a, b) => b.timestamp - a.timestamp);
+        
+        timelineContainer.innerHTML = sortedRecent.map(m => {
+          const sign = m.eloChange >= 0 ? '+' : '';
+          const badgeClass = m.outcome === 'win' ? 'points-win' : 'points-loss';
+          const dateObj = new Date(m.timestamp * 1000);
+          const matchDate = shortDateFormatter.format(dateObj);
+          const longMatchDate = longDateFormatter.format(dateObj);
+
+          const civHtml = (m.civ && m.civ !== 'Unknown') 
+            ? `<span class="civ-badge">⚔️&nbsp;${escapeHtml(m.civ)}</span>`
+            : '';
+
+          const teammatesList = Array.isArray(m.teammates) && m.teammates.length > 0 
+            ? `<div class="timeline-roster"><span class="roster-label-win">With:</span> <span class="roster-names">${m.teammates.map(escapeHtml).join(', ')}</span></div>`
+            : '';
+
+          const opponentsList = Array.isArray(m.opponents) && m.opponents.length > 0 
+            ? `<div class="timeline-roster"><span class="roster-label-loss">Against:</span> <span class="roster-names">${m.opponents.map(escapeHtml).join(', ')}</span></div>`
+            : '';
+
+          const teamAvgDisplay = m.teamAvgElo && m.opponentAvgElo 
+            ? `<div class="timeline-rating-range">Team: <strong>${m.teamAvgElo}</strong> vs Opp: <strong>${m.opponentAvgElo}</strong></div>`
+            : `<div class="timeline-rating-range">vs Opp: <strong>${m.opponentAvgElo}</strong></div>`;
+          
+          const hasRealMap = m.mapname && m.mapname.toLowerCase() !== 'my map' && m.mapname.toLowerCase() !== 'custom map';
+          const mapHtml = hasRealMap ? ` • Map: ${escapeHtml(m.mapname)}` : '';
+
+          return `
+            <div class="timeline-card" title="Elo change: ${sign}${m.eloChange} (Opponent Avg Elo: ${m.opponentAvgElo})">
+              <div class="timeline-left">
+                <div class="timeline-map">
+                  ${escapeHtml(m.description || 'Lobby Match')}
+                </div>
+                <div class="timeline-meta"><span title="${escapeHtml(longMatchDate)}" class="help-tooltip">${matchDate}</span>${mapHtml}${civHtml}</div>
+                ${teammatesList}
+                ${opponentsList}
+              </div>
+              <div class="timeline-right">
+                <div class="points-badge ${badgeClass}">${sign}${m.eloChange} Elo</div>
+                <div class="timeline-rating-range">${m.preRating} ➔ ${m.postRating}</div>
+                ${teamAvgDisplay}
+              </div>
+            </div>
+          `;
+        }).join('');
+      } else {
+        timelineContainer.innerHTML = `<div class="timeline-empty">No recent games logged.</div>`;
+      }
+    }
+
+    function escapeHtml(str) {
+      if (str === null || str === undefined) return '';
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    // Real-time client-side search and inactivity filtering
+    function applyFilters() {
+      const query = elements.search.value.toLowerCase().trim();
+      const showInactive = elements.showInactive.checked;
+      let matchCount = 0;
+      
+      document.querySelectorAll('tbody tr.player-row').forEach(row => {
+        const alias = row.getAttribute('data-alias').toLowerCase();
+        const profileId = row.getAttribute('data-profile-id');
+        const detailsRow = document.getElementById(`details-row-${profileId}`);
+        const isInactive = row.getAttribute('data-inactive') === 'true';
+        
+        const matchesSearch = alias.includes(query);
+        const matchesInactive = !isInactive || showInactive;
+        
+        if (matchesSearch && matchesInactive) {
+          row.style.display = 'table-row';
+          matchCount++;
+        } else {
+          row.style.display = 'none';
+          if (detailsRow) {
+            detailsRow.style.display = 'none';
+          }
+        }
+      });
+
+      // Toggle no-results row
+      let noResultsRow = document.getElementById('no-results-row');
+      if (matchCount === 0) {
+        if (!noResultsRow) {
+          noResultsRow = document.createElement('tr');
+          noResultsRow.id = 'no-results-row';
+          noResultsRow.innerHTML = `<td colspan="6" class="table-empty-message">No players found matching current filters.</td>`;
+          elements.tbody.appendChild(noResultsRow);
+        }
+        noResultsRow.style.display = 'table-row';
+      } else if (noResultsRow) {
+        noResultsRow.style.display = 'none';
+      }
+    }
+
+    elements.search.addEventListener('input', applyFilters);
+    elements.showInactive.addEventListener('change', applyFilters);
+
+    // Populate last played relative time on load
+    document.querySelectorAll('td.col-last-played').forEach(td => {
+      const ts = parseInt(td.getAttribute('data-timestamp'), 10);
+      if (ts) {
+        td.textContent = timeAgo(ts);
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && activeExpandedRow) {
+        activeExpandedRow.style.display = 'none';
+        activeExpandedRow = null;
+      }
+    });
+  </script>
+</body>
+</html>
