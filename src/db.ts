@@ -175,10 +175,21 @@ export class JsonDatabase {
     await saveJsonArrayLines(this.matchesPath, sortedMatches);
     await saveJsonArrayLines(this.profilesPath, sortedProfiles);
 
+    // Sort fingerprints, crawled profiles, and the queue to keep files deterministic
+    const sortedFingerprints = Object.fromEntries(
+      Array.from(this.matchFingerprints.entries()).sort((a, b) => a[0].localeCompare(b[0]))
+    );
+
+    const sortedCrawled = Object.fromEntries(
+      Array.from(this.crawledProfiles.entries()).sort((a, b) => a[0] - b[0])
+    );
+
+    const sortedQueue = [...this.crawlQueue].sort((a, b) => a - b);
+
     const crawlState = {
-      match_fingerprints: Object.fromEntries(this.matchFingerprints.entries()),
-      crawled_profiles: Object.fromEntries(this.crawledProfiles.entries()),
-      crawl_queue: this.crawlQueue
+      match_fingerprints: sortedFingerprints,
+      crawled_profiles: sortedCrawled,
+      crawl_queue: sortedQueue
     };
 
     const tempStatePath = `${this.crawlStatePath}.tmp`;
