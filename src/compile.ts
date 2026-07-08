@@ -66,11 +66,7 @@ function generateSparkline(history: number[] | undefined, rating: number): strin
 }
 
 function generateRowHtml(player: EloRanking, rank: number, maxSingleRecord: number, inactiveCutoff: number): string {
-  let rankContent = '';
-  if (rank === 1) rankContent = '<span class="rank-badge rank-1">1</span>';
-  else if (rank === 2) rankContent = '<span class="rank-badge rank-2">2</span>';
-  else if (rank === 3) rankContent = '<span class="rank-badge rank-3">3</span>';
-  else rankContent = `<span class="rank-other">${rank}</span>`;
+  const rankContent = `<span class="rank-other">${rank}</span>`;
 
   const hasValidCountry = player.country && player.country.trim().length === 2 && player.country.toLowerCase() !== 'un';
   let countryName = '';
