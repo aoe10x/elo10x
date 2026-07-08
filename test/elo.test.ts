@@ -1,7 +1,8 @@
 import * as assert from 'node:assert';
 import { test } from 'node:test';
 import { EloCalculator } from '../src/elo.ts';
-import type { Match } from '../src/types.ts';
+import type { Match, EloRanking, PlayerProfile } from '../src/types.ts';
+import { resolveMergedCountry } from '../src/profile_utils.ts';
 
 test('EloCalculator - Strict 4v4 Match Calculation', () => {
   const calculator = new EloCalculator({
@@ -637,4 +638,43 @@ test('EloCalculator - selects the most recently played profile ID as canonical',
   assert.ok(canonicalPlayer);
   assert.strictEqual(canonicalPlayer.gamesCount, 3);
   assert.strictEqual(canonicalPlayer.wins, 3);
+});
+
+test('resolveMergedCountry - selects canonical country if valid', () => {
+  const p: Partial<EloRanking> = {
+    profile_id: 1,
+    merged_ids: [1, 2]
+  };
+  const profiles: Record<number, Partial<PlayerProfile>> = {
+    1: { country: 'hk' },
+    2: { country: 'cn' }
+  };
+  const country = resolveMergedCountry(p as EloRanking, id => profiles[id]);
+  assert.strictEqual(country, 'hk');
+});
+
+test('resolveMergedCountry - falls back to other merged profile country if canonical is Unknown or empty', () => {
+  const p: Partial<EloRanking> = {
+    profile_id: 1,
+    merged_ids: [1, 2]
+  };
+  const profiles: Record<number, Partial<PlayerProfile>> = {
+    1: { country: 'Unknown' },
+    2: { country: 'hk' }
+  };
+  const country = resolveMergedCountry(p as EloRanking, id => profiles[id]);
+  assert.strictEqual(country, 'hk');
+});
+
+test('resolveMergedCountry - returns Unknown if no profiles have a country code', () => {
+  const p: Partial<EloRanking> = {
+    profile_id: 1,
+    merged_ids: [1, 2]
+  };
+  const profiles: Record<number, Partial<PlayerProfile>> = {
+    1: { country: 'Unknown' },
+    2: {}
+  };
+  const country = resolveMergedCountry(p as EloRanking, id => profiles[id]);
+  assert.strictEqual(country, 'Unknown');
 });
