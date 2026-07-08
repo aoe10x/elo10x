@@ -1,12 +1,12 @@
 {
   "profile_id": 1889959,
   "alias": "Ruuder",
-  "rating": 962,
+  "rating": 936,
   "wins": 44,
-  "losses": 45,
-  "gamesCount": 89,
-  "winRate": 49,
-  "lastPlayedAt": 1783459090,
+  "losses": 47,
+  "gamesCount": 91,
+  "winRate": 48,
+  "lastPlayedAt": 1783539272,
   "merged_ids": [],
   "ratingHistory": [
     1000,
@@ -98,57 +98,11 @@
     970,
     954,
     974,
-    962
+    962,
+    949,
+    936
   ],
   "recentMatches": [
-    {
-      "matchId": 483247228,
-      "description": "bamboo nothing 10x",
-      "mapname": "Bamboo Nothing V3 (Bali)",
-      "timestamp": 1780761000,
-      "outcome": "win",
-      "preRating": 1023,
-      "postRating": 1040,
-      "eloChange": 17,
-      "civ": "Berbers",
-      "teamAvgElo": 972,
-      "opponentAvgElo": 1043,
-      "teammates": [
-        "TheOne",
-        "[CSGS]Runescape",
-        "TheRizzler"
-      ],
-      "opponents": [
-        "[B] Zennith",
-        "attiliodibisceglie",
-        "fRy0ne",
-        "babeleo"
-      ]
-    },
-    {
-      "matchId": 483251103,
-      "description": "10x3x Bamboo Nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1780762380,
-      "outcome": "loss",
-      "preRating": 1040,
-      "postRating": 1023,
-      "eloChange": -17,
-      "civ": "Mayans",
-      "teamAvgElo": 1044,
-      "opponentAvgElo": 1020,
-      "teammates": [
-        "476055690",
-        "fRy0ne",
-        "Pilot in training"
-      ],
-      "opponents": [
-        "東亞窪地",
-        "SmilesBetray",
-        "PIEROGI",
-        "Russie"
-      ]
-    },
     {
       "matchId": 484599934,
       "description": "10x 3x bamboo random civ",
@@ -579,6 +533,54 @@
         "Parenquima",
         "Prinz Kay1",
         "Abelardo4tojr"
+      ]
+    },
+    {
+      "matchId": 490964318,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "my map",
+      "timestamp": 1783538295,
+      "outcome": "loss",
+      "preRating": 962,
+      "postRating": 949,
+      "eloChange": -13,
+      "civ": "Gurjaras",
+      "teamAvgElo": 1013,
+      "opponentAvgElo": 1019,
+      "teammates": [
+        "Emusan",
+        "Consume Product",
+        "[Liiit] Zbyszek"
+      ],
+      "opponents": [
+        "Eat MY Sprouts",
+        "Gladiator",
+        "[CSGS]Runescape",
+        "Preacher!"
+      ]
+    },
+    {
+      "matchId": 490966976,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "my map",
+      "timestamp": 1783539272,
+      "outcome": "loss",
+      "preRating": 949,
+      "postRating": 936,
+      "eloChange": -13,
+      "civ": "Unknown",
+      "teamAvgElo": 993,
+      "opponentAvgElo": 1011,
+      "teammates": [
+        "Emusan",
+        "Eat MY Sprouts",
+        "Chirijiraden"
+      ],
+      "opponents": [
+        "Borkan",
+        "[CSGS]Runescape",
+        "[Liiit] Zbyszek",
+        "NothingAtAll11"
       ]
     }
   ]

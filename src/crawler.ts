@@ -189,8 +189,6 @@ export class MatchCrawler {
           const profile: PlayerProfile = {
             profile_id: p.profile_id,
             alias: p.alias || `Player_${p.profile_id}`,
-            xp: p.xp,
-            level: p.level,
             country: p.country
           };
           this.db.addProfile(profile);
