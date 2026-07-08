@@ -230,8 +230,12 @@ async function main(): Promise<void> {
       const leaderboardPath = path.join(process.cwd(), 'docs', 'data', mode.file);
       await fs.mkdir(path.dirname(leaderboardPath), { recursive: true });
       
+      const lastMatchTime = filteredMatches.length > 0 
+        ? Math.max(...filteredMatches.map(m => m.startgametime)) 
+        : 0;
+
       const payload = {
-        updatedAt: Date.now(),
+        updatedAt: lastMatchTime * 1000,
         totalMatches: filteredMatches.length,
         totalPlayers: ratingsMap.size,
         leaderboardCount: leaderboard.length,
