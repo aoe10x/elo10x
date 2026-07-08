@@ -230,37 +230,32 @@
     document.querySelectorAll('tbody tr.player-row').forEach(row => {
       row.addEventListener('click', () => {
         const profileId = row.getAttribute('data-profile-id');
-        const detailsRow = document.getElementById(`details-row-${profileId}`);
+        let detailsRow = document.getElementById(`details-row-${profileId}`);
+        const isCurrentlyVisible = detailsRow !== null;
+        
+        // Close any other open expanded details row
+        document.querySelectorAll('.details-row').forEach(r => r.remove());
+        document.querySelectorAll('tbody tr').forEach(r => r.classList.remove('active-row'));
+        activeExpandedRow = null;
+
+        if (isCurrentlyVisible) {
+          return;
+        }
+
+        // Create and open new details row on the fly
+        detailsRow = document.createElement('tr');
+        detailsRow.className = 'details-row';
+        detailsRow.id = `details-row-${profileId}`;
+        detailsRow.innerHTML = `<td colspan="6" id="details-cell-${profileId}"></td>`;
+        row.after(detailsRow);
+        activeExpandedRow = detailsRow;
+        row.classList.add('active-row');
+
         togglePlayerDetails(profileId, detailsRow);
       });
     });
 
     async function togglePlayerDetails(profileId, detailsRow) {
-      const isCurrentlyVisible = detailsRow.style.display !== 'none';
-      
-      // Close any other open expanded details row
-      document.querySelectorAll('.details-row').forEach(row => {
-        row.style.display = 'none';
-      });
-      document.querySelectorAll('tbody tr').forEach(row => {
-        row.classList.remove('active-row');
-      });
-
-      if (isCurrentlyVisible) {
-        activeExpandedRow = null;
-        return;
-      }
-
-      // Open this details row
-      detailsRow.style.display = 'table-row';
-      activeExpandedRow = detailsRow;
-      
-      const mainRow = detailsRow.previousElementSibling;
-      if (mainRow) {
-        mainRow.classList.add('active-row');
-      }
-      
-      // Populate details card if not loaded
       const cell = document.getElementById(`details-cell-${profileId}`);
       if (cell.getAttribute('data-loaded') !== 'true') {
         cell.innerHTML = `
@@ -474,14 +469,17 @@
 
     // Real-time client-side search and inactivity filtering
     function applyFilters() {
+      // Close any open details row
+      document.querySelectorAll('.details-row').forEach(r => r.remove());
+      document.querySelectorAll('tbody tr').forEach(r => r.classList.remove('active-row'));
+      activeExpandedRow = null;
+
       const query = elements.search.value.toLowerCase().trim();
       const showInactive = elements.showInactive.checked;
       let matchCount = 0;
       
       document.querySelectorAll('tbody tr.player-row').forEach(row => {
         const alias = row.getAttribute('data-alias').toLowerCase();
-        const profileId = row.getAttribute('data-profile-id');
-        const detailsRow = document.getElementById(`details-row-${profileId}`);
         const isInactive = row.getAttribute('data-inactive') === 'true';
         
         const matchesSearch = alias.includes(query);
@@ -492,9 +490,6 @@
           matchCount++;
         } else {
           row.style.display = 'none';
-          if (detailsRow) {
-            detailsRow.style.display = 'none';
-          }
         }
       });
 
@@ -526,7 +521,8 @@
 
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && activeExpandedRow) {
-        activeExpandedRow.style.display = 'none';
+        activeExpandedRow.remove();
+        document.querySelectorAll('tbody tr').forEach(r => r.classList.remove('active-row'));
         activeExpandedRow = null;
       }
     });

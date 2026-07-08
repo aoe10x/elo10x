@@ -509,31 +509,19 @@ td.col-elo {
     margin-right: 2px;
 }
 
-.bar-grow-left {
-    width: 80px;
-    display: flex;
-    justify-content: flex-end;
-    height: 6px;
-}
-
-.bar-grow-right {
-    width: 80px;
-    display: flex;
-    justify-content: flex-start;
-    height: 6px;
-}
-
 .table-losses-bar {
-    height: 100%;
+    height: 6px;
+    max-width: 80px;
     background: linear-gradient(270deg, #ef4444, #f87171);
-    border-radius: 3px 0 0 3px;
+    border-radius: 3px;
     transition: width 0.3s ease;
 }
 
 .table-wins-bar {
-    height: 100%;
+    height: 6px;
+    max-width: 80px;
     background: linear-gradient(90deg, #10b981, #34d399);
-    border-radius: 0 3px 3px 0;
+    border-radius: 3px;
     transition: width 0.3s ease;
 }
 
