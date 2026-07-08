@@ -726,7 +726,11 @@ footer a:hover {
     font-size: 2.2rem;
     }
     th, td {
-    padding: 0.8rem 1rem;
+    padding: 0.6rem 0.3rem !important;
+    }
+    .alias-container img,
+    .alias-container .flag-placeholder {
+    display: none !important;
     }
     .col-trend,
     .col-last-played {
