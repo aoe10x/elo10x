@@ -23,7 +23,7 @@
       <p class="header-subtitle">Elo rankings for the <a href="https://10xshared.com/" target="_blank" style="color: inherit; text-decoration: underline;">10x Shared Civ Bonus community</a></p>
       <div class="last-updated-badge">
         <span class="status-dot"></span>
-        Updated <span id="stat-updated" data-timestamp="1783540212313">-</span>
+        Updated <span id="stat-updated" data-timestamp="1783540279359">-</span>
       </div>
     </header>
 
@@ -65,7 +65,7 @@
     <!-- Leaderboard Panel -->
     <div class="leaderboard-panel" id="leaderboard-panel">
       <!-- Loading State -->
-      <div class="loading-state" id="loading-state">
+      <div class="loading-state" id="loading-state" style="display: none;">
         <div class="spinner"></div>
         <p>Crunching the logs, calculating Elo ratings...</p>
       </div>
@@ -80,7 +80,7 @@
       </div>
 
       <!-- Leaderboard Table -->
-      <div class="table-responsive" id="table-container" style="display: none;">
+      <div class="table-responsive" id="table-container">
         <table>
           <thead>
             <tr>
@@ -42091,7 +42091,8 @@
       <footer>
         <p>Data scraped from Relic Link multiplayer servers. Site built for the <a href="https://10xshared.com/" target="_blank">AoE2 10x community</a>.</p>
       </footer>
-  </div  <script>
+  </div>
+  <script>
     // Reusable DateTime formatters
     const shortDateFormatter = new Intl.DateTimeFormat(undefined, {
       month: 'short', 
