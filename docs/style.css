@@ -355,11 +355,32 @@ tbody tr:hover {
 }
 
 .center-divider-line {
+    position: relative;
     width: 2px;
     height: 14px;
     background: rgba(196, 169, 106, 0.45);
     border-radius: 1px;
     box-shadow: 0 0 4px rgba(196, 169, 106, 0.5);
+}
+
+.winrate-indicator-bar {
+    position: absolute;
+    height: 2px;
+    background: rgba(212, 175, 55, 0.45); /* Ghosted gold */
+    bottom: -1px; /* Aligned to the bottom of the divider */
+    box-shadow: 0 0 3px rgba(212, 175, 55, 0.3);
+    border-radius: 1px;
+    pointer-events: none;
+}
+
+.winrate-indicator-bar.direction-right {
+    left: 100%;
+    margin-left: 2px;
+}
+
+.winrate-indicator-bar.direction-left {
+    right: 100%;
+    margin-right: 2px;
 }
 
 .bar-grow-left {

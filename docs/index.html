@@ -384,6 +384,17 @@
         const winWidth = Math.round((player.wins / maxSingleRecord) * 80);
         const lossWidth = Math.round((player.losses / maxSingleRecord) * 80);
 
+        const winRateVal = player.winRate || 50;
+        const wrDiff = winRateVal - 50;
+        const wrWidth = Math.min(80, Math.round(Math.abs(wrDiff) * 1.6));
+        
+        let winrateIndicatorHtml = '';
+        if (wrDiff > 0 && wrWidth > 0) {
+          winrateIndicatorHtml = `<div class="winrate-indicator-bar direction-right" style="width: ${wrWidth}px;"></div>`;
+        } else if (wrDiff < 0 && wrWidth > 0) {
+          winrateIndicatorHtml = `<div class="winrate-indicator-bar direction-left" style="width: ${wrWidth}px;"></div>`;
+        }
+
         row.innerHTML = `
           <td class="col-rank">${rankContent}</td>
           <td class="col-alias">${flagHtml}${escapeHtml(player.alias)}</td>
@@ -397,7 +408,9 @@
                   <div class="table-losses-bar" style="width: ${lossWidth}px;"></div>
                 </div>
               </div>
-              <div class="center-divider-line"></div>
+              <div class="center-divider-line">
+                ${winrateIndicatorHtml}
+              </div>
               <div class="wins-side">
                 <div class="bar-grow-right">
                   <div class="table-wins-bar" style="width: ${winWidth}px;"></div>
