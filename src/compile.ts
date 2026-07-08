@@ -187,6 +187,19 @@ async function main() {
   const ratingsCombined = calculator.calculate(matches);
   const leaderboardCombined = calculator.getLeaderboard(ratingsCombined, false);
 
+  // Decorate leaderboard entries with country metadata from database profiles
+  const populateCountries = (list: EloRanking[]) => {
+    for (const p of list) {
+      const profile = db.getProfile(p.profile_id);
+      if (profile?.country) {
+        p.country = profile.country;
+      }
+    }
+  };
+  populateCountries(leaderboard3x);
+  populateCountries(leaderboardPure);
+  populateCountries(leaderboardCombined);
+
   // Read Template
   const templatePath = path.join(process.cwd(), 'docs', 'index.template.html');
   const templateHtml = await fs.readFile(templatePath, 'utf-8');
