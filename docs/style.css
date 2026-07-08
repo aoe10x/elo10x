@@ -317,6 +317,10 @@ th {
     padding-bottom: 0.95rem;
 }
 
+.player-row[data-inactive="true"] {
+    display: none;
+}
+
 tbody tr {
     transition: background-color 0.2s ease, transform 0.2s ease;
     cursor: pointer;
@@ -396,7 +400,7 @@ td.col-elo {
     height: 2px;
     border-radius: 1px;
     pointer-events: none;
-    width: var(--elo-width);
+    width: var(--e);
 }
 
 .elo-bar.direction-right {
@@ -465,7 +469,7 @@ td.col-elo {
 .winrate-indicator-bar {
     position: absolute;
     height: 2px;
-    width: var(--winrate-width);
+    width: var(--wr);
     background: rgba(212, 175, 55, 0.45); /* Ghosted gold */
     bottom: -1px; /* Aligned to the bottom of the divider */
     box-shadow: 0 0 3px rgba(212, 175, 55, 0.3);
@@ -486,7 +490,7 @@ td.col-elo {
 .losses-side del {
     display: inline-block;
     height: 6px;
-    width: var(--loss-width);
+    width: var(--l);
     max-width: 80px;
     background: linear-gradient(270deg, #ef4444, #f87171);
     border-radius: 3px;
@@ -497,7 +501,7 @@ td.col-elo {
 .wins-side ins {
     display: inline-block;
     height: 6px;
-    width: var(--win-width);
+    width: var(--w);
     max-width: 80px;
     background: linear-gradient(90deg, #10b981, #34d399);
     border-radius: 3px;
