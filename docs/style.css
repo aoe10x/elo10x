@@ -1,5 +1,6 @@
 
 :root {
+    color-scheme: dark;
     --bg-dark: #0b0d13;
     --bg-card: rgba(18, 22, 33, 0.7);
     --border-color: rgba(196, 169, 106, 0.18);
@@ -243,8 +244,31 @@ table {
 }
 
 th, td {
-    padding: 0.2rem 1.5rem;
+    padding: 0.75rem 1.5rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.col-rank {
+    width: 60px;
+    text-align: center;
+}
+
+.col-trend {
+    width: 120px;
+    text-align: center;
+}
+
+.col-last-played {
+    width: 160px;
+    text-align: left;
+}
+
+tbody tr.active-row {
+    background-color: rgba(196, 169, 106, 0.06) !important;
+}
+
+tbody tr.active-row td:first-child {
+    box-shadow: inset 3px 0 0 var(--text-gold);
 }
 
 th {
@@ -278,6 +302,19 @@ tbody tr:hover {
 .col-alias {
     font-weight: 600;
     color: #fff;
+}
+
+.alias-container {
+    display: inline-flex;
+    align-items: center;
+    max-width: 100%;
+    gap: 2px;
+}
+
+.alias-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .col-elo {
@@ -342,7 +379,7 @@ tbody tr:hover {
 }
 
 .col-winrate {
-    width: 200px;
+    width: 290px;
 }
 
 /* Rank badges for top 3 */
@@ -516,6 +553,16 @@ tbody tr:hover {
     gap: 1.25rem;
     align-items: start;
     width: 100%;
+    opacity: 0;
+    transform: translateY(-8px);
+    animation: fadeInDetail 0.25s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes fadeInDetail {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .details-col-left {
@@ -655,8 +702,26 @@ footer a:hover {
     th, td {
     padding: 0.8rem 1rem;
     }
+    .col-trend,
+    .col-last-played {
+    display: none !important;
+    }
     .col-winrate {
-    width: 140px;
+    width: 100px !important;
+    }
+    .losses-side .bar-grow-left,
+    .wins-side .bar-grow-right,
+    .center-divider-line {
+    display: none !important;
+    }
+    .true-diverging-container {
+    justify-content: center !important;
+    gap: 6px !important;
+    }
+    .record-label-losses,
+    .record-label-wins,
+    .record-winrate-percentage {
+    font-size: 0.85rem !important;
     }
     .controls-panel {
     padding: 1rem;
@@ -677,6 +742,14 @@ footer a:hover {
     }
     .details-row td {
         padding: 1rem !important;
+    }
+    .tab-btn {
+    width: auto !important;
+    flex: 1 1 0;
+    max-width: 150px;
+    min-width: 80px;
+    padding: 0.6rem 0.5rem;
+    font-size: 0.8rem;
     }
 }
 
@@ -736,6 +809,23 @@ footer a:hover {
     max-height: 480px;
     overflow-y: auto;
     padding-right: 4px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(196, 169, 106, 0.25) rgba(255, 255, 255, 0.02);
+}
+
+.modal-timeline::-webkit-scrollbar {
+    width: 6px;
+}
+.modal-timeline::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 3px;
+}
+.modal-timeline::-webkit-scrollbar-thumb {
+    background: rgba(196, 169, 106, 0.25);
+    border-radius: 3px;
+}
+.modal-timeline::-webkit-scrollbar-thumb:hover {
+    background: rgba(196, 169, 106, 0.45);
 }
 
 .timeline-card {
@@ -837,13 +927,19 @@ footer a:hover {
     text-align: left;
 }
 
+.header-logo,
+.methodology-section h3,
+.methodology-card h4 {
+    text-wrap: balance;
+}
+
 .methodology-section h3 {
     font-family: 'Cinzel', serif;
     font-size: 1.35rem;
     color: var(--text-gold);
     margin-bottom: 1.5rem;
     letter-spacing: 1px;
-    border-left: 3px solid var(--accent-color);
+    border-left: 3px solid var(--text-gold);
     padding-left: 0.8rem;
     text-transform: uppercase;
 }
