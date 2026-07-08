@@ -722,6 +722,13 @@ footer a:hover {
     text-decoration: underline;
 }
 
+@media (max-width: 900px) {
+    .col-trend,
+    .col-last-played {
+        display: none !important;
+    }
+}
+
 @media (max-width: 768px) {
     body {
     padding: 1rem 0.5rem;
@@ -736,8 +743,6 @@ footer a:hover {
     .alias-container .flag-placeholder {
     display: none !important;
     }
-    .col-trend,
-    .col-last-played,
     .col-winrate {
     display: none !important;
     }
