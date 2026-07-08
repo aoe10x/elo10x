@@ -68,6 +68,43 @@ export class EloCalculator {
     // 1. Sort matches chronologically to ensure ELO is updated in the correct order
     const sortedMatches = [...matches].sort((a, b) => a.startgametime - b.startgametime);
 
+    // 2. Pre-pass: Resolve final aliases and build profile redirection mapping
+    const profileToFinalAlias = new Map<number, string>();
+    const profileGameCounts = new Map<number, number>();
+
+    for (const match of sortedMatches) {
+      if (Array.isArray(match.players)) {
+        for (const p of match.players) {
+          profileToFinalAlias.set(p.profile_id, p.alias);
+          profileGameCounts.set(p.profile_id, (profileGameCounts.get(p.profile_id) || 0) + 1);
+        }
+      }
+    }
+
+    const aliasToProfiles = new Map<string, number[]>();
+    for (const [profileId, alias] of profileToFinalAlias.entries()) {
+      if (!aliasToProfiles.has(alias)) {
+        aliasToProfiles.set(alias, []);
+      }
+      aliasToProfiles.get(alias)!.push(profileId);
+    }
+
+    const profileRedirects = new Map<number, number>();
+    for (const [alias, ids] of aliasToProfiles.entries()) {
+      if (ids.length > 1) {
+        // Sort ids by game count descending to choose the profile with the most games as canonical
+        ids.sort((a, b) => (profileGameCounts.get(b) || 0) - (profileGameCounts.get(a) || 0));
+        const canonicalId = ids[0];
+        for (const id of ids) {
+          profileRedirects.set(id, canonicalId);
+        }
+      }
+    }
+
+    const getCanonicalProfileId = (id: number): number => {
+      return profileRedirects.get(id) || id;
+    };
+
     for (const match of sortedMatches) {
       // Strict 4v4 policy: only process matches with exactly 8 tracked players.
       if (!Array.isArray(match.players) || match.players.length !== 8) {
@@ -133,6 +170,29 @@ export class EloCalculator {
         continue;
       }
 
+      // Map team1 and team2 players to their canonical profile IDs and deduplicate
+      const canonicalTeam1Map = new Map<number, typeof team1[0]>();
+      for (const p of team1) {
+        const canonicalId = getCanonicalProfileId(p.profile_id);
+        if (!canonicalTeam1Map.has(canonicalId)) {
+          canonicalTeam1Map.set(canonicalId, { ...p, profile_id: canonicalId });
+        }
+      }
+      const resolvedTeam1 = Array.from(canonicalTeam1Map.values());
+
+      const canonicalTeam2Map = new Map<number, typeof team2[0]>();
+      for (const p of team2) {
+        const canonicalId = getCanonicalProfileId(p.profile_id);
+        if (!canonicalTeam2Map.has(canonicalId)) {
+          canonicalTeam2Map.set(canonicalId, { ...p, profile_id: canonicalId });
+        }
+      }
+      const resolvedTeam2 = Array.from(canonicalTeam2Map.values());
+
+      if (resolvedTeam1.length === 0 || resolvedTeam2.length === 0) {
+        continue;
+      }
+
       // Initialize ELO profiles for new players
       const initPlayer = (profileId: number, alias: string): EloRanking => {
         if (!ratingsMap.has(profileId)) {
@@ -158,16 +218,16 @@ export class EloCalculator {
       };
 
       // Ensure all players are initialized in the map
-      for (const p of team1) initPlayer(p.profile_id, p.alias);
-      for (const p of team2) initPlayer(p.profile_id, p.alias);
+      for (const p of resolvedTeam1) initPlayer(p.profile_id, p.alias);
+      for (const p of resolvedTeam2) initPlayer(p.profile_id, p.alias);
 
       // Compute average rating of team 1
-      const team1Avg = team1.reduce((sum, p) => sum + ratingsMap.get(p.profile_id)!.rating, 0) / team1.length;
+      const team1Avg = resolvedTeam1.reduce((sum, p) => sum + ratingsMap.get(p.profile_id)!.rating, 0) / resolvedTeam1.length;
       // Compute average rating of team 2
-      const team2Avg = team2.reduce((sum, p) => sum + ratingsMap.get(p.profile_id)!.rating, 0) / team2.length;
+      const team2Avg = resolvedTeam2.reduce((sum, p) => sum + ratingsMap.get(p.profile_id)!.rating, 0) / resolvedTeam2.length;
 
       // Apply updates to Team 1 players
-      for (const p of team1) {
+      for (const p of resolvedTeam1) {
         const ratingObj = ratingsMap.get(p.profile_id)!;
         const preRating = ratingObj.rating;
         // Individual Elo vs Opposing Team Average (DE Algorithm 3)
@@ -202,8 +262,8 @@ export class EloCalculator {
           civ: CIV_NAME_MAP[p.race_id] || 'Unknown',
           teamAvgElo: Math.round(team1Avg),
           opponentAvgElo: Math.round(team2Avg),
-          teammates: team1.filter(o => o.profile_id !== p.profile_id).map(o => o.alias),
-          opponents: team2.map(o => o.alias)
+          teammates: resolvedTeam1.filter(o => o.profile_id !== p.profile_id).map(o => o.alias),
+          opponents: resolvedTeam2.map(o => o.alias)
         });
         if (ratingObj.recentMatches.length > 20) {
           ratingObj.recentMatches.shift();
@@ -211,7 +271,7 @@ export class EloCalculator {
       }
 
       // Apply updates to Team 2 players
-      for (const p of team2) {
+      for (const p of resolvedTeam2) {
         const ratingObj = ratingsMap.get(p.profile_id)!;
         const preRating = ratingObj.rating;
         // Individual Elo vs Opposing Team Average (DE Algorithm 3)
@@ -246,8 +306,8 @@ export class EloCalculator {
           civ: CIV_NAME_MAP[p.race_id] || 'Unknown',
           teamAvgElo: Math.round(team2Avg),
           opponentAvgElo: Math.round(team1Avg),
-          teammates: team2.filter(o => o.profile_id !== p.profile_id).map(o => o.alias),
-          opponents: team1.map(o => o.alias)
+          teammates: resolvedTeam2.filter(o => o.profile_id !== p.profile_id).map(o => o.alias),
+          opponents: resolvedTeam1.map(o => o.alias)
         });
         if (ratingObj.recentMatches.length > 20) {
           ratingObj.recentMatches.shift();

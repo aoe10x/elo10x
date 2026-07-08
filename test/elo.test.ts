@@ -468,3 +468,93 @@ test('EloCalculator - Step-by-step K-factor decay over 22 games', () => {
   }
 });
 
+test('EloCalculator - Automagically merges players sharing identical final alias', () => {
+  const calculator = new EloCalculator({
+    defaultRating: 1000,
+    kFactor: 32,
+    enablePlacementKDecay: false, // Turn off decay to keep calculations simple (16 ELO change per game)
+    minGamesForLeaderboard: 1
+  });
+
+  const matches: Match[] = [
+    {
+      id: 1,
+      mapname: 'arabia',
+      maxplayers: 8,
+      matchtype_id: 8,
+      description: 'Match 1',
+      startgametime: 1700000000,
+      completiontime: 1700001000,
+      players: [
+        { profile_id: 1, teamid: 1, resulttype: 1, race_id: 1, alias: 'SameName' },
+        { profile_id: 11, teamid: 1, resulttype: 1, race_id: 2, alias: 'A2' },
+        { profile_id: 12, teamid: 1, resulttype: 1, race_id: 3, alias: 'A3' },
+        { profile_id: 13, teamid: 1, resulttype: 1, race_id: 4, alias: 'A4' },
+        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+      ]
+    },
+    {
+      id: 2,
+      mapname: 'arabia',
+      maxplayers: 8,
+      matchtype_id: 8,
+      description: 'Match 2',
+      startgametime: 1700002000,
+      completiontime: 1700003000,
+      players: [
+        // Different profile ID (2), but identical alias ('SameName').
+        // This player plays 2 matches, so this profile ID has more games and should be selected as the canonical ID.
+        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 1, alias: 'SameName' },
+        { profile_id: 14, teamid: 1, resulttype: 1, race_id: 2, alias: 'A5' },
+        { profile_id: 15, teamid: 1, resulttype: 1, race_id: 3, alias: 'A6' },
+        { profile_id: 16, teamid: 1, resulttype: 1, race_id: 4, alias: 'A7' },
+        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+      ]
+    },
+    {
+      id: 3,
+      mapname: 'arabia',
+      maxplayers: 8,
+      matchtype_id: 8,
+      description: 'Match 3',
+      startgametime: 1700004000,
+      completiontime: 1700005000,
+      players: [
+        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 1, alias: 'SameName' },
+        { profile_id: 17, teamid: 1, resulttype: 1, race_id: 2, alias: 'A8' },
+        { profile_id: 18, teamid: 1, resulttype: 1, race_id: 3, alias: 'A9' },
+        { profile_id: 19, teamid: 1, resulttype: 1, race_id: 4, alias: 'A10' },
+        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+      ]
+    }
+  ];
+
+  const ratingsMap = calculator.calculate(matches);
+
+  // Since profile ID 2 played 2 matches and profile ID 1 played 1 match,
+  // profile ID 2 should be the canonical ID, and profile ID 1 should be redirected to it.
+  
+  // Profile ID 1 should NOT exist in the final map because it was merged into ID 2
+  assert.strictEqual(ratingsMap.has(1), false);
+  
+  // Profile ID 2 should exist and have exactly 3 wins, 3 games count
+  const mergedPlayer = ratingsMap.get(2);
+  assert.ok(mergedPlayer);
+  assert.strictEqual(mergedPlayer.gamesCount, 3);
+  assert.strictEqual(mergedPlayer.wins, 3);
+  // Verified ratings progression with cascading opponent rating decay:
+  // Match 1: 1000 -> 1016 (Opponent Avg 1000, expected 0.5, delta +16)
+  // Match 2: 1016 -> 1031 (Opponent Avg 984, expected 0.546, delta +15)
+  // Match 3: 1031 -> 1044 (Opponent Avg 969, expected 0.588, delta +13)
+  assert.strictEqual(mergedPlayer.rating, 1044);
+  assert.deepStrictEqual(mergedPlayer.ratingHistory, [1000, 1016, 1031, 1044]);
+});
