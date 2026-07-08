@@ -605,7 +605,7 @@
           const longMatchDate = longDateFormatter.format(dateObj);
 
           const civHtml = (m.civ && m.civ !== 'Unknown') 
-            ? `<span class="civ-badge" style="background: rgba(196, 169, 106, 0.12); color: var(--text-gold); border: 1px solid rgba(196, 169, 106, 0.25); border-radius: 4px; padding: 1px 5px; font-size: 0.72rem; font-weight: 500; margin-left: 6px;">⚔️ ${escapeHtml(m.civ)}</span>`
+            ? `<span class="civ-badge" style="background: rgba(196, 169, 106, 0.12); color: var(--text-gold); border: 1px solid rgba(196, 169, 106, 0.25); border-radius: 4px; padding: 1px 5px; font-size: 0.72rem; font-weight: 500; margin-left: 6px;">⚔️&nbsp;${escapeHtml(m.civ)}</span>`
             : '';
 
           const teammatesList = Array.isArray(m.teammates) && m.teammates.length > 0 
