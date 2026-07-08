@@ -21,31 +21,47 @@ export class MatchCrawler {
   }
 
   /**
-   * Seed the crawl queue with the most active players by total match count.
-   * These are the core regulars most likely to have new games to discover.
+   * Seed the crawl queue from two time windows, deduped:
+   *   - Most active players in the past 3 days  (hot/current players)
+   *   - Most active players in the past 30 days (regular community members)
+   * Both ranked by match count within their window. Combined list is deduped.
    */
   async seedFromActivePlayers(limit: number = 50): Promise<number[]> {
-    console.log('Seeding from top players by total match count in db...');
+    const nowSecs = Math.floor(Date.now() / 1000);
+    const day3ago  = nowSecs - 3  * 24 * 3600;
+    const day30ago = nowSecs - 30 * 24 * 3600;
+
     const matches = this.db.getMatches();
 
-    // Count appearances per player across all matches
-    const counts = new Map<number, number>();
+    const counts3d  = new Map<number, number>();
+    const counts30d = new Map<number, number>();
+
     for (const m of matches) {
       for (const p of (m.players ?? [])) {
-        counts.set(p.profile_id, (counts.get(p.profile_id) ?? 0) + 1);
+        const id = p.profile_id;
+        if (m.startgametime >= day3ago)  counts3d.set(id,  (counts3d.get(id)  ?? 0) + 1);
+        if (m.startgametime >= day30ago) counts30d.set(id, (counts30d.get(id) ?? 0) + 1);
       }
     }
 
-    // Sort descending by count, take top N
-    const seeds = [...counts.entries()]
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, limit)
-      .map(([id]) => id);
+    const topN = (map: Map<number, number>, n: number) =>
+      [...map.entries()].sort((a, b) => b[1] - a[1]).slice(0, n).map(([id]) => id);
 
-    if (seeds.length > 0) {
-      console.log(`Adding ${seeds.length} most-active players to queue.`);
-      this.db.addToCrawlQueue(seeds);
+    // Take up to half the limit from each window, then dedupe
+    const half    = Math.ceil(limit / 2);
+    const from3d  = topN(counts3d,  half);
+    const from30d = topN(counts30d, half);
+
+    // Merge: 3d first (higher priority), then 30d to fill remaining slots
+    const seen  = new Set<number>(from3d);
+    const seeds = [...from3d];
+    for (const id of from30d) {
+      if (!seen.has(id)) { seen.add(id); seeds.push(id); }
+      if (seeds.length >= limit) break;
     }
+
+    console.log(`Seeding ${seeds.length} players (${from3d.length} from last 3d, ${seeds.length - from3d.length} from last 30d, deduped).`);
+    if (seeds.length > 0) this.db.addToCrawlQueue(seeds);
     return seeds;
   }
 
