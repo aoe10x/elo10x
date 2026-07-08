@@ -103,30 +103,40 @@
         <h3>ELO Calculation Methodology</h3>
         <div class="methodology-grid">
           <div class="methodology-card">
-            <h4>Algorithm & Parameters</h4>
-            <p>We use the standard Definitive Edition multiplayer rating formula (Algorithm 3) to compute player adjustments sequentially:</p>
+            <h4>Parameters & Calibration</h4>
+            <p>Ratings are calculated sequentially in chronological order, using the following calibration rules:</p>
             <ul>
-              <li><strong>Baseline Rating:</strong> New players start at <code>1000 ELO</code>.</li>
-              <li><strong>Dynamic K-Factor:</strong> Matches default to <code>K = 32</code>. For a player's first 21 matches (placement phase), the K-factor starts near 100 and linearly decays down to 32 to allow rapid rating convergence, modeled after <a href="https://www.reddit.com/r/aoe2/comments/1q7v0bs/comment/nyjcksf/" target="_blank" style="color: var(--text-gold); text-decoration: underline;">AoE2 Ranked placement match scaling</a>.</li>
-              <li><strong>Sequential Updates:</strong> Matches are sorted chronologically, and ratings are updated step-by-step.</li>
+              <li><strong>Starting Rating:</strong> New players begin at <code>1000 ELO</code>.</li>
+              <li><strong>Dynamic K-Factor:</strong> Established players use a stable <code>K = 32</code>. For the first 21 matches (placement phase), the K-factor decays linearly from 100 to 32:
+                <div style="font-size: 0.85rem; color: var(--text-gold); margin-top: 4px; font-family: monospace;">K = 100 - n &times; (100 - 32) / 21</div>
+                This lets ratings converge quickly to a player's true skill level, modeled after the <a href="https://www.reddit.com/r/aoe2/comments/1q7v0bs/comment/nyjcksf/" target="_blank" style="color: var(--text-gold); text-decoration: underline;">AoE2 Ranked placement formula</a>.
+              </li>
+              <li><strong>Leaderboard Threshold:</strong> Players are hidden from the leaderboard until they have completed <code>15 matches</code>.</li>
             </ul>
           </div>
           <div class="methodology-card">
-            <h4>Team Expected ELO</h4>
-            <p>A player's rating adjustment compares their individual rating against the opposing team's average rating:</p>
-            <div class="formula-box">
-              E = 1 / (1 + 10<sup>(Opponent Avg ELO - Player ELO) / 400</sup>)<br>
-              &Delta; = K &times; (Outcome - E)
+            <h4>ELO Update Formula</h4>
+            <p>We compute individual rating adjustments by comparing a player's rating against the average rating of the opposing team:</p>
+            <div class="formula-box" style="font-family: 'Outfit', sans-serif; font-size: 1.05rem; line-height: 1.6; white-space: nowrap; padding: 0.75rem 1rem; overflow-x: auto; background: rgba(0,0,0,0.25); border-radius: 4px; border: 1px solid rgba(255,255,255,0.05); margin-bottom: 0.8rem;">
+              E<sub>p</sub> = 1 / (1 + 10<sup>(R<sub>opp</sub> - R<sub>p</sub>) / 400</sup>)<br>
+              &Delta;R<sub>p</sub> = K &times; (S - E<sub>p</sub>)
             </div>
-            <p>Wins increase ratings (Outcome = 1); losses decrease ratings (Outcome = 0). Rating delta is rounded to the nearest integer. For an interactive tool to calculate and simulate these ELO changes, see <a href="https://www.twestaoe.net/tools/elocalculator" target="_blank" style="color: var(--text-gold); text-decoration: underline;">T-West's AoE2 ELO Calculator</a>.</p>
+            <ul style="padding-left: 1.2rem; margin-bottom: 0.8rem;">
+              <li><strong>R<sub>p</sub></strong>: Player's ELO before the match.</li>
+              <li><strong>R<sub>opp</sub></strong>: Average ELO of the opposing team.</li>
+              <li><strong>E<sub>p</sub></strong>: Expected win probability (0 to 1).</li>
+              <li><strong>S</strong>: Outcome (1 for Win, 0 for Loss).</li>
+              <li><strong>&Delta;R<sub>p</sub></strong>: Rating change (rounded to nearest integer).</li>
+            </ul>
+            <p style="margin-bottom: 0; font-size: 0.9rem; color: var(--text-muted);">For an interactive tool to simulate these ELO changes, see <a href="https://www.twestaoe.net/tools/elocalculator" target="_blank" style="color: var(--text-gold); text-decoration: underline;">T-West's AoE2 ELO Calculator</a>.</p>
           </div>
           <div class="methodology-card">
             <h4>Match Eligibility</h4>
-            <p>To ensure competitive integrity, matches must meet the following strict validation checks:</p>
+            <p>To ensure competitive integrity, we only process matches that meet the following strict validation checks:</p>
             <ul>
               <li><strong>Strict 4v4 format:</strong> The match must contain exactly 8 tracked players.</li>
               <li><strong>Two distinct teams:</strong> Exactly 4 players per team.</li>
-              <li><strong>Outcome verification:</strong> Exactly 4 winners and 4 losers must be reported. Ambiguous or draw outcomes are skipped.</li>
+              <li><strong>Outcome verification:</strong> Exactly 4 winners and 4 losers must be reported. Ambiguous, draw, or bugged lobby reports are discarded.</li>
             </ul>
           </div>
         </div>
