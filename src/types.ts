@@ -138,3 +138,20 @@ export interface UploadRecsPayload {
   matchId: string;
   uploader: string;
 }
+
+export interface InsightsCrawlManifest {
+  last_crawled_at: number;
+  newest_match_id: number;
+  oldest_match_id: number;
+  has_reached_start: boolean;
+}
+
+export interface RelicCrawlManifest {
+  last_crawled_at: number;
+  newest_match_id: number;
+}
+
+export interface PlayerCrawlManifest {
+  insights?: InsightsCrawlManifest;
+  relic?: RelicCrawlManifest;
+}

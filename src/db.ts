@@ -2,7 +2,7 @@ import { promises as fs } from 'node:fs';
 import * as path from 'node:path';
 import * as readline from 'node:readline';
 import * as fsSync from 'node:fs';
-import type { Match, PlayerProfile } from './types.ts';
+import type { Match, PlayerProfile, PlayerCrawlManifest } from './types.ts';
 import { buildMatchFingerprint } from './match_fingerprint.ts';
 
 /**
@@ -65,12 +65,14 @@ export class JsonDatabase {
   private matchesPath: string;
   private profilesPath: string;
   private crawlStatePath: string;
+  private crawlManifestPath: string;
 
   private matches!: Map<number, Match>;
   private profiles!: Map<number, PlayerProfile>;
   private matchFingerprints!: Map<string, number>;
   private crawledProfiles!: Map<number, number>;
   private crawlQueue!: number[];
+  private crawlManifest!: Map<number, PlayerCrawlManifest>;
 
   private isLoaded: boolean = false;
 
@@ -79,6 +81,7 @@ export class JsonDatabase {
     this.matchesPath = path.join(dataDir, 'matches.json');
     this.profilesPath = path.join(dataDir, 'profiles.json');
     this.crawlStatePath = path.join(dataDir, 'crawl_state.json');
+    this.crawlManifestPath = path.join(dataDir, 'crawl_manifest.json');
   }
 
   async load(): Promise<void> {
@@ -125,8 +128,23 @@ export class JsonDatabase {
       }
     }
 
+    // Load crawl manifest
+    this.crawlManifest = new Map<number, PlayerCrawlManifest>();
+    try {
+      const manifestContent = await fs.readFile(this.crawlManifestPath, 'utf-8');
+      const manifest = JSON.parse(manifestContent);
+      for (const [idStr, data] of Object.entries(manifest)) {
+        this.crawlManifest.set(Number(idStr), data as PlayerCrawlManifest);
+      }
+    } catch (error: any) {
+      if (error.code !== 'ENOENT') {
+        throw new Error(`Failed to read crawl manifest: ${error.message}`);
+      }
+    }
+
     this.backfillMatchSources();
     this.backfillMatchFingerprints();
+    this.migrateCrawlManifest();
     this.isLoaded = true;
   }
 
@@ -195,6 +213,14 @@ export class JsonDatabase {
     const tempStatePath = `${this.crawlStatePath}.tmp`;
     await fs.writeFile(tempStatePath, JSON.stringify(crawlState, null, 2), 'utf-8');
     await fs.rename(tempStatePath, this.crawlStatePath);
+
+    // Sort manifest entries by profile ID ascending
+    const sortedManifest = Object.fromEntries(
+      Array.from(this.crawlManifest.entries()).sort((a, b) => a[0] - b[0])
+    );
+    const tempManifestPath = `${this.crawlManifestPath}.tmp`;
+    await fs.writeFile(tempManifestPath, JSON.stringify(sortedManifest, null, 2), 'utf-8');
+    await fs.rename(tempManifestPath, this.crawlManifestPath);
   }
 
   // Matches
@@ -324,5 +350,44 @@ export class JsonDatabase {
 
   getCrawledCount(): number {
     return this.crawledProfiles.size;
+  }
+
+  // Crawl Manifest Helpers
+  getPlayerManifest(profileId: number): PlayerCrawlManifest | undefined {
+    return this.crawlManifest.get(profileId);
+  }
+
+  updatePlayerManifest(profileId: number, source: 'insights' | 'relic', data: any): void {
+    const existing = this.crawlManifest.get(profileId) || {};
+    existing[source] = {
+      ...existing[source],
+      ...data
+    };
+    this.crawlManifest.set(profileId, existing);
+  }
+
+  migrateCrawlManifest(): void {
+    for (const [profileId, data] of this.crawlManifest.entries()) {
+      if (data.insights && ('hit_depth_limit' in (data.insights as any) || !('newest_match_id' in data.insights))) {
+        const oldInsights = data.insights as any;
+        const playerMatches = Array.from(this.matches.values())
+          .filter(m => m.players.some(p => p.profile_id === profileId));
+        
+        let newestId = 0;
+        let oldestId = 0;
+        if (playerMatches.length > 0) {
+          const ids = playerMatches.map(m => m.id);
+          newestId = Math.max(...ids);
+          oldestId = Math.min(...ids);
+        }
+
+        data.insights = {
+          last_crawled_at: oldInsights.last_crawled_at,
+          newest_match_id: newestId,
+          oldest_match_id: oldestId,
+          has_reached_start: oldInsights.hit_depth_limit === false
+        };
+      }
+    }
   }
 }
