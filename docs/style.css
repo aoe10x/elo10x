@@ -325,15 +325,15 @@ tbody tr:hover {
 .elo-bar.direction-right {
     left: 100%;
     margin-left: 2px;
-    background: rgba(34, 197, 94, 0.65); /* Emerald green for positive Elo deviation */
-    box-shadow: 0 0 3px rgba(34, 197, 94, 0.4);
+    background: rgba(212, 175, 55, 0.6); /* Gold for positive Elo deviation */
+    box-shadow: 0 0 3px rgba(212, 175, 55, 0.35);
 }
 
 .elo-bar.direction-left {
     right: 100%;
     margin-right: 2px;
-    background: rgba(239, 68, 68, 0.65); /* Coral red for negative Elo deviation */
-    box-shadow: 0 0 3px rgba(239, 68, 68, 0.4);
+    background: rgba(212, 175, 55, 0.25); /* Faded gold for negative Elo deviation */
+    box-shadow: 0 0 3px rgba(212, 175, 55, 0.15);
 }
 
 .col-record {
