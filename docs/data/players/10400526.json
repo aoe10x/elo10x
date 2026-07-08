@@ -1,0 +1,491 @@
+{
+  "profile_id": 10400526,
+  "alias": "Za'roc",
+  "rating": 1039,
+  "wins": 10,
+  "losses": 9,
+  "gamesCount": 19,
+  "winRate": 53,
+  "lastPlayedAt": 1780657680,
+  "merged_ids": [],
+  "ratingHistory": [
+    1000,
+    950,
+    1004,
+    1055,
+    1006,
+    965,
+    1014,
+    1057,
+    1091,
+    1117,
+    1075,
+    1039,
+    1061,
+    1031,
+    1005,
+    1033,
+    1057,
+    1078,
+    1058,
+    1039
+  ],
+  "recentMatches": [
+    {
+      "matchId": 343864072,
+      "description": "10x shared civ bonus. random pick",
+      "mapname": "Michi",
+      "timestamp": 1728304620,
+      "outcome": "loss",
+      "preRating": 1000,
+      "postRating": 950,
+      "eloChange": -50,
+      "civ": "Unknown",
+      "teamAvgElo": 963,
+      "opponentAvgElo": 990,
+      "teammates": [
+        "Baby",
+        "Makkr",
+        "edalmavuz"
+      ],
+      "opponents": [
+        "Terry",
+        "peterzjx",
+        "novascotia",
+        "Patata"
+      ]
+    },
+    {
+      "matchId": 344443376,
+      "description": "10x Shared Turbo Tunnel",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1728562620,
+      "outcome": "win",
+      "preRating": 950,
+      "postRating": 1004,
+      "eloChange": 54,
+      "civ": "Unknown",
+      "teamAvgElo": 992,
+      "opponentAvgElo": 1006,
+      "teammates": [
+        "MetallicChef630",
+        "TheRiceMan",
+        "bpafree"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "Emotions are prohibited",
+        "adrian",
+        "strife88"
+      ]
+    },
+    {
+      "matchId": 346322576,
+      "description": "10x shared bamboo nothing 3x tech",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1729341660,
+      "outcome": "win",
+      "preRating": 1004,
+      "postRating": 1055,
+      "eloChange": 51,
+      "civ": "Unknown",
+      "teamAvgElo": 1006,
+      "opponentAvgElo": 1051,
+      "teammates": [
+        "duckbuildperson",
+        "SmilesBetray",
+        "realDonaldTrump"
+      ],
+      "opponents": [
+        "Mr.Awesome",
+        "doraemon",
+        "TheRiceMan",
+        "Ferdinand I of Naples"
+      ]
+    },
+    {
+      "matchId": 347597151,
+      "description": "10x 3x Bamboo Nothing 4 Random / 4 Mirror",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1729859940,
+      "outcome": "loss",
+      "preRating": 1055,
+      "postRating": 1006,
+      "eloChange": -49,
+      "civ": "Unknown",
+      "teamAvgElo": 979,
+      "opponentAvgElo": 1009,
+      "teammates": [
+        "Stigel",
+        "raw milk",
+        "[B] Cannino"
+      ],
+      "opponents": [
+        "typ53b90",
+        "[B] pro.PHET",
+        "ActualWizard",
+        "herb"
+      ]
+    },
+    {
+      "matchId": 357806438,
+      "description": "BAMBOO 10x 3x Shared Turbo",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1734009600,
+      "outcome": "loss",
+      "preRating": 1006,
+      "postRating": 965,
+      "eloChange": -41,
+      "civ": "Unknown",
+      "teamAvgElo": 1058,
+      "opponentAvgElo": 1015,
+      "teammates": [
+        "typ53b90",
+        "紫蝶黄蜂俱有情",
+        "SeeYouTomorrow"
+      ],
+      "opponents": [
+        "MancoNoMicro",
+        "侯傻傻ᔦఠఠᔨ shasha",
+        "aLEXt",
+        "Caudillo Porongon"
+      ]
+    },
+    {
+      "matchId": 358856836,
+      "description": "BAMBOO 10x 3x Shared Turbo",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1734440340,
+      "outcome": "win",
+      "preRating": 965,
+      "postRating": 1014,
+      "eloChange": 49,
+      "civ": "Unknown",
+      "teamAvgElo": 986,
+      "opponentAvgElo": 1041,
+      "teammates": [
+        "typ53b90",
+        "avo",
+        "[B] Richard"
+      ],
+      "opponents": [
+        "wegonnagetyou321",
+        "Yottabyte",
+        "SeeYouTomorrow",
+        "Hazrabbit"
+      ]
+    },
+    {
+      "matchId": 358857912,
+      "description": "BAMBOO 10x 3x Shared Turbo",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1734440700,
+      "outcome": "win",
+      "preRating": 1014,
+      "postRating": 1057,
+      "eloChange": 43,
+      "civ": "Unknown",
+      "teamAvgElo": 981,
+      "opponentAvgElo": 1052,
+      "teammates": [
+        "avo",
+        "Hazrabbit",
+        "Battlegoose"
+      ],
+      "opponents": [
+        "t5choco",
+        "typ53b90",
+        "青松",
+        "Yottabyte"
+      ]
+    },
+    {
+      "matchId": 359228292,
+      "description": "10x Shared",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1734614880,
+      "outcome": "win",
+      "preRating": 1057,
+      "postRating": 1091,
+      "eloChange": 34,
+      "civ": "Unknown",
+      "teamAvgElo": 1070,
+      "opponentAvgElo": 1031,
+      "teammates": [
+        "bpafree",
+        "foreverbk87",
+        "mannutipu"
+      ],
+      "opponents": [
+        "Hexicero",
+        "Patata",
+        "TUF | DUKE_NUKEM",
+        "Mubeen"
+      ]
+    },
+    {
+      "matchId": 424538224,
+      "description": "10x Shared Civ",
+      "mapname": "Hex Bamboo Nothing",
+      "timestamp": 1760096580,
+      "outcome": "win",
+      "preRating": 1091,
+      "postRating": 1117,
+      "eloChange": 26,
+      "civ": "Unknown",
+      "teamAvgElo": 1019,
+      "opponentAvgElo": 994,
+      "teammates": [
+        "Hexicero",
+        "DnD",
+        "yoda"
+      ],
+      "opponents": [
+        "WDWKid3",
+        "ζ |  SaintPΞpsi94",
+        "Emotions are prohibited",
+        "POOZO"
+      ]
+    },
+    {
+      "matchId": 434108923,
+      "description": "10x 3x bamboo nothing  turbo host here",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1763553780,
+      "outcome": "loss",
+      "preRating": 1117,
+      "postRating": 1075,
+      "eloChange": -42,
+      "civ": "Unknown",
+      "teamAvgElo": 1036,
+      "opponentAvgElo": 1031,
+      "teammates": [
+        "Ichigoblack",
+        "Eic",
+        "km_wp"
+      ],
+      "opponents": [
+        "gmc inspector",
+        "FAOse7en",
+        "babeleo",
+        "JhonZ"
+      ]
+    },
+    {
+      "matchId": 434118183,
+      "description": "10x 3x BAMBOO best lobby",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1763558640,
+      "outcome": "loss",
+      "preRating": 1075,
+      "postRating": 1039,
+      "eloChange": -36,
+      "civ": "Unknown",
+      "teamAvgElo": 1019,
+      "opponentAvgElo": 1031,
+      "teammates": [
+        "typ53b90",
+        "Phantom_",
+        "SR.gabo.MJ.Cusco"
+      ],
+      "opponents": [
+        "[B] Cannino",
+        "Abused but whole",
+        "Semisky",
+        "realDonaldTrump"
+      ]
+    },
+    {
+      "matchId": 438025064,
+      "description": "BAMBOO NOTHING 10x",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1765036500,
+      "outcome": "win",
+      "preRating": 1039,
+      "postRating": 1061,
+      "eloChange": 22,
+      "civ": "Unknown",
+      "teamAvgElo": 1047,
+      "opponentAvgElo": 944,
+      "teammates": [
+        "VanCabRogue",
+        "Vince",
+        "Wander"
+      ],
+      "opponents": [
+        "Koalakapitaen",
+        "Haqnoony",
+        "Dr_Pinure",
+        "Pikachu"
+      ]
+    },
+    {
+      "matchId": 456309103,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "Bamboo Nothing_Paren_V4",
+      "timestamp": 1771166040,
+      "outcome": "loss",
+      "preRating": 1061,
+      "postRating": 1031,
+      "eloChange": -30,
+      "civ": "Unknown",
+      "teamAvgElo": 1047,
+      "opponentAvgElo": 1051,
+      "teammates": [
+        "Sundev",
+        "Clean",
+        "鱼浆"
+      ],
+      "opponents": [
+        "UbaneMess",
+        "{R} Parry",
+        "TopazSkate37557",
+        "SchneckeLuchs25"
+      ]
+    },
+    {
+      "matchId": 456804279,
+      "description": "256x 10x Forest Nothing",
+      "mapname": "256Xforestnothing",
+      "timestamp": 1771324260,
+      "outcome": "loss",
+      "preRating": 1031,
+      "postRating": 1005,
+      "eloChange": -26,
+      "civ": "Unknown",
+      "teamAvgElo": 1052,
+      "opponentAvgElo": 1043,
+      "teammates": [
+        "gerardoprado93",
+        "The Wet Bandit",
+        "Dutchigander"
+      ],
+      "opponents": [
+        "Pepo",
+        "[LWS] Mandatum",
+        "nooblet3300",
+        "Nianque"
+      ]
+    },
+    {
+      "matchId": 463601814,
+      "description": "10x 3x BN",
+      "mapname": "Bamboo Nothing_Paren_V4",
+      "timestamp": 1773757320,
+      "outcome": "win",
+      "preRating": 1005,
+      "postRating": 1033,
+      "eloChange": 28,
+      "civ": "Unknown",
+      "teamAvgElo": 1012,
+      "opponentAvgElo": 1041,
+      "teammates": [
+        "NothingAtAll11",
+        "jonathan",
+        "DreamLegion"
+      ],
+      "opponents": [
+        "76561199637829837",
+        "QTJ钱塘江客",
+        "babeleo",
+        "Baby"
+      ]
+    },
+    {
+      "matchId": 465435114,
+      "description": "10x 3x Bamboo Nothing",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1774435740,
+      "outcome": "win",
+      "preRating": 1033,
+      "postRating": 1057,
+      "eloChange": 24,
+      "civ": "Unknown",
+      "teamAvgElo": 1026,
+      "opponentAvgElo": 1026,
+      "teammates": [
+        "EzraSkywalker96",
+        "Wololo",
+        "Llucky Llama"
+      ],
+      "opponents": [
+        "Chuckyllo4417",
+        "Tanaxha",
+        "hhh",
+        "SeeYouTomorrow"
+      ]
+    },
+    {
+      "matchId": 467816475,
+      "description": "Bamboo nothing 10X3X",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1775308260,
+      "outcome": "win",
+      "preRating": 1057,
+      "postRating": 1078,
+      "eloChange": 21,
+      "civ": "Unknown",
+      "teamAvgElo": 1062,
+      "opponentAvgElo": 1036,
+      "teammates": [
+        "kekekeya",
+        "Keishi",
+        "jonathahyoga"
+      ],
+      "opponents": [
+        "yxsko93",
+        "afspace2",
+        "ch33tah",
+        "Lietuva_"
+      ]
+    },
+    {
+      "matchId": 467822083,
+      "description": "10x 3x Bamboo Nothing",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1775310720,
+      "outcome": "loss",
+      "preRating": 1078,
+      "postRating": 1058,
+      "eloChange": -20,
+      "civ": "Unknown",
+      "teamAvgElo": 1071,
+      "opponentAvgElo": 1090,
+      "teammates": [
+        "Captain Stripes",
+        "Keishi",
+        "1"
+      ],
+      "opponents": [
+        "EzraSkywalker96",
+        "GHGGG",
+        "Lietuva_",
+        "Lumedge"
+      ]
+    },
+    {
+      "matchId": 482954414,
+      "description": "10x 3x Bamboo best lobby",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1780657680,
+      "outcome": "loss",
+      "preRating": 1058,
+      "postRating": 1039,
+      "eloChange": -19,
+      "civ": "Unknown",
+      "teamAvgElo": 1018,
+      "opponentAvgElo": 1067,
+      "teammates": [
+        "typ53b90",
+        "UbaneMess",
+        "alan_cts"
+      ],
+      "opponents": [
+        "Sundev",
+        "Meursault005",
+        "The Wet Bandit",
+        "Chuckyllo4417"
+      ]
+    }
+  ]
+}
