@@ -666,9 +666,6 @@ td.col-elo {
     font-family: 'Cinzel', serif;
     font-size: 1.1rem;
     color: var(--text-gold);
-    margin-bottom: 0.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    padding-bottom: 0.4rem;
     text-align: left;
 }
 
@@ -826,7 +823,7 @@ footer a:hover {
 .modal-timeline {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    /* gap: 0.8rem; */
     max-height: 480px;
     overflow-y: auto;
     padding-right: 4px;
@@ -851,13 +848,14 @@ footer a:hover {
 
 .timeline-card {
     background: rgba(0, 0, 0, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: border-color 0.2s ease;
+    border-width: 0 0 1px 0;
 }
 
 .timeline-card:hover {
