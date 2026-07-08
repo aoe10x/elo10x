@@ -266,7 +266,7 @@ table {
 }
 
 th, td {
-    padding: 0.2rem 1.5rem;
+    padding: 0.2rem 12px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 
@@ -462,7 +462,7 @@ td.col-elo {
     align-items: center;
     justify-content: flex-end;
     width: 44%;
-    gap: 0.4rem;
+    gap: 0;
 }
 
 .wins-side {
