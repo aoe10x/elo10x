@@ -3,6 +3,7 @@ import * as path from 'node:path';
 import { JsonDatabase } from './db.ts';
 import { EloCalculator } from './elo.ts';
 import type { EloRanking } from './types.ts';
+import { InsightsCrawler } from './insights_crawler.ts';
 
 function escapeHtml(str: string | null | undefined): string {
   if (str === null || str === undefined) return '';
@@ -153,6 +154,10 @@ function generateRowHtml(player: EloRanking, rank: number, maxSingleRecord: numb
 async function main() {
   const db = new JsonDatabase();
   await db.load();
+
+  // Automatically merge any temporary scraped matches before calculations
+  const crawler = new InsightsCrawler(db);
+  await crawler.mergeScrapedData();
 
   console.log(`Loaded matches count: ${db.getMatchesCount()}`);
   const matches = db.getMatches();
