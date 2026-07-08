@@ -1,22 +1,23 @@
+// @ts-nocheck
 /**
  * merge_deep_chunks.js
  *
- * Merges all scratch/deep_chunk_*.json files into docs/data/db.json.
+ * Merges all scraped_data/deep_chunk_*.json files into docs/data/db.json.
  * - Filters for 10x games by lobby description
  * - Deduplicates by match ID and fingerprint
  * - Safe to run multiple times (idempotent)
  * - Works with any number of chunks (1-20)
  *
- * Usage: node --experimental-strip-types scratch/merge_deep_chunks.js
+ * Usage: node --experimental-strip-types src/tools/merge_deep_chunks.js
  */
 
 import fs from 'fs/promises';
 import { existsSync, readdirSync } from 'fs';
 import path from 'path';
-import { JsonDatabase } from '../src/db.ts';
-import { buildMatchFingerprint } from '../src/match_fingerprint.ts';
+import { JsonDatabase } from '../db.ts';
+import { buildMatchFingerprint } from '../match_fingerprint.ts';
 
-const SCRATCH_DIR = path.resolve('scratch');
+const SCRATCH_DIR = path.resolve('scraped_data');
 
 // 10x lobby name filter — same logic used elsewhere in the codebase
 function is10xMatch(match) {
@@ -35,7 +36,7 @@ async function run() {
     });
 
   if (allFiles.length === 0) {
-    console.log('No deep_chunk_*.json files found in scratch/. Nothing to merge.');
+    console.log('No deep_chunk_*.json files found in scraped_data/. Nothing to merge.');
     process.exit(0);
   }
 
