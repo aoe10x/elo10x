@@ -268,6 +268,7 @@ table {
 th, td {
     padding: 0.2rem 12px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    vertical-align: middle;
 }
 
 .col-rank {
@@ -1038,4 +1039,169 @@ footer a:hover {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+}
+
+/* Cleaned Inline Styles classes */
+.header-subtitle a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+#loading-state,
+#error-state {
+    display: none;
+}
+
+.methodology-formula-text {
+    font-size: 0.85rem;
+    color: var(--text-gold);
+    margin-top: 4px;
+    font-family: monospace;
+}
+
+.methodology-card a {
+    color: var(--text-gold);
+    text-decoration: underline;
+}
+
+.formula-box {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.methodology-card ul {
+    padding-left: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.methodology-note {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.45;
+}
+
+.details-loading {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-muted);
+}
+
+.details-loading .spinner {
+    margin: 0 auto 10px auto;
+}
+
+.details-error {
+    text-align: center;
+    padding: 2rem;
+    color: var(--accent-loss);
+}
+
+.details-profile-id {
+    font-family: monospace;
+    font-size: 0.8rem;
+}
+
+.text-win {
+    color: var(--accent-win);
+}
+
+.text-loss {
+    color: var(--accent-loss);
+}
+
+#steam-link {
+    display: none;
+}
+
+.details-chart-svg {
+    display: block;
+    overflow: visible;
+}
+
+.chart-timeline-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.4rem;
+}
+
+.timeline-empty {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.civ-badge {
+    background: rgba(196, 169, 106, 0.12);
+    color: var(--text-gold);
+    border: 1px solid rgba(196, 169, 106, 0.25);
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-size: 0.72rem;
+    font-weight: 500;
+    margin-left: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.roster-label-win {
+    color: var(--accent-win);
+    opacity: 0.75;
+    font-weight: 600;
+}
+
+.roster-label-loss {
+    color: var(--accent-loss);
+    opacity: 0.75;
+    font-weight: 600;
+}
+
+.roster-names {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.timeline-card {
+    align-items: flex-start;
+}
+
+.help-tooltip {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
+    cursor: help;
+}
+
+.timeline-rating-range {
+    font-weight: 500;
+    color: var(--text-light);
+    margin-top: 4px;
+}
+
+.table-empty-message {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 3rem;
+}
+
+.sparkline-wrapper svg {
+    display: block;
+    overflow: visible;
+}
+
+.flag-icon {
+    margin-right: 8px;
+    vertical-align: middle;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.flag-placeholder {
+    margin-right: 8px;
+    display: inline-block;
+    width: 22px;
+    text-align: center;
+    font-size: 0.85rem;
+    opacity: 0.35;
 }
