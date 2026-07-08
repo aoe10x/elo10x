@@ -239,6 +239,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
+    table-layout: fixed;
 }
 
 th, td {
@@ -255,6 +256,7 @@ th {
     letter-spacing: 1px;
     text-transform: uppercase;
     border-bottom: 2px solid var(--border-color);
+    white-space: nowrap;
 }
 
 tbody tr {
@@ -269,7 +271,7 @@ tbody tr:hover {
 /* Table columns */
 .col-rank {
     font-weight: 700;
-    width: 80px;
+    width: 70px;
     text-align: center;
 }
 
@@ -332,7 +334,7 @@ tbody tr:hover {
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-width: 250px;
+    min-width: 270px;
     padding: 0.2rem 0;
 }
 
@@ -630,6 +632,8 @@ footer a:hover {
     cursor: pointer;
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
+    width: 140px;
+    text-align: center;
 }
 
 .tab-btn:hover {
