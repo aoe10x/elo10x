@@ -4,12 +4,18 @@ export interface EloConfig {
   defaultRating: number;
   kFactor: number;
   minGamesForLeaderboard: number;
+  enablePlacementKDecay: boolean;
+  placementStartingK: number;
+  placementGames: number;
 }
 
 const DEFAULT_CONFIG: EloConfig = {
   defaultRating: 1000,
   kFactor: 32,
-  minGamesForLeaderboard: 15
+  minGamesForLeaderboard: 15,
+  enablePlacementKDecay: true,
+  placementStartingK: 100,
+  placementGames: 21
 };
 
 const CIV_NAME_MAP: Record<number, string> = {
@@ -39,6 +45,17 @@ export class EloCalculator {
 
   constructor(config: Partial<EloConfig> = {}) {
     this.config = { ...DEFAULT_CONFIG, ...config };
+  }
+
+  private getPlayerKFactor(gamesCount: number): number {
+    if (!this.config.enablePlacementKDecay) {
+      return this.config.kFactor;
+    }
+    const n = gamesCount + 1;
+    if (n <= this.config.placementGames) {
+      return this.config.placementStartingK - n * (this.config.placementStartingK - this.config.kFactor) / this.config.placementGames;
+    }
+    return this.config.kFactor;
   }
 
   /**
@@ -155,7 +172,8 @@ export class EloCalculator {
         const preRating = ratingObj.rating;
         // Individual Elo vs Opposing Team Average (DE Algorithm 3)
         const expected = 1 / (1 + Math.pow(10, (team2Avg - ratingObj.rating) / 400));
-        const delta = this.config.kFactor * (team1Score - expected);
+        const playerK = this.getPlayerKFactor(ratingObj.gamesCount);
+        const delta = playerK * (team1Score - expected);
         ratingObj.rating = Math.round(ratingObj.rating + delta);
         if (team1Score === 1) {
           ratingObj.wins++;
@@ -198,7 +216,8 @@ export class EloCalculator {
         const preRating = ratingObj.rating;
         // Individual Elo vs Opposing Team Average (DE Algorithm 3)
         const expected = 1 / (1 + Math.pow(10, (team1Avg - ratingObj.rating) / 400));
-        const delta = this.config.kFactor * (team2Score - expected);
+        const playerK = this.getPlayerKFactor(ratingObj.gamesCount);
+        const delta = playerK * (team2Score - expected);
         ratingObj.rating = Math.round(ratingObj.rating + delta);
         if (team2Score === 1) {
           ratingObj.wins++;
