@@ -21,34 +21,29 @@ export class MatchCrawler {
   }
 
   /**
-   * Seed the crawl queue using players who participated in the most recent
-   * matches in the database.
+   * Seed the crawl queue with the most active players by total match count.
+   * These are the core regulars most likely to have new games to discover.
    */
   async seedFromActivePlayers(limit: number = 50): Promise<number[]> {
-    console.log('Seeding from most-recently-active database profiles...');
+    console.log('Seeding from top players by total match count in db...');
     const matches = this.db.getMatches();
 
-    // Sort matches by startgametime descending (most recent first)
-    const sortedMatches = [...matches].sort((a, b) => b.startgametime - a.startgametime);
-
-    const seeds: number[] = [];
-    const seedSet = new Set<number>();
-
-    for (const m of sortedMatches) {
-      if (m.players) {
-        for (const p of m.players) {
-          if (!seedSet.has(p.profile_id)) {
-            seedSet.add(p.profile_id);
-            seeds.push(p.profile_id);
-            if (seeds.length >= limit) break;
-          }
-        }
+    // Count appearances per player across all matches
+    const counts = new Map<number, number>();
+    for (const m of matches) {
+      for (const p of (m.players ?? [])) {
+        counts.set(p.profile_id, (counts.get(p.profile_id) ?? 0) + 1);
       }
-      if (seeds.length >= limit) break;
     }
 
+    // Sort descending by count, take top N
+    const seeds = [...counts.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, limit)
+      .map(([id]) => id);
+
     if (seeds.length > 0) {
-      console.log(`Adding ${seeds.length} active players to queue.`);
+      console.log(`Adding ${seeds.length} most-active players to queue.`);
       this.db.addToCrawlQueue(seeds);
     }
     return seeds;
