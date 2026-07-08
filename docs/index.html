@@ -111,7 +111,7 @@
                 <div style="font-size: 0.85rem; color: var(--text-gold); margin-top: 4px; font-family: monospace;">K = 100 - n &times; (100 - 32) / 21</div>
                 This lets ratings converge quickly to a player's true skill level, modeled after the <a href="https://www.reddit.com/r/aoe2/comments/1q7v0bs/comment/nyjcksf/" target="_blank" style="color: var(--text-gold); text-decoration: underline;">AoE2 Ranked placement formula</a>.
               </li>
-              <li><strong>Leaderboard Threshold:</strong> Players are hidden from the leaderboard until they have completed <code>15 matches</code>.</li>
+              <li><strong>Leaderboard Threshold:</strong> Players are hidden from the leaderboard until they have completed <code>15 matches</code> (this choice was arbitrary).</li>
             </ul>
           </div>
           <div class="methodology-card">
@@ -131,13 +131,16 @@
             <p style="margin-bottom: 0; font-size: 0.9rem; color: var(--text-muted);">For an interactive tool to simulate these ELO changes, see <a href="https://www.twestaoe.net/tools/elocalculator" target="_blank" style="color: var(--text-gold); text-decoration: underline;">T-West's AoE2 ELO Calculator</a>.</p>
           </div>
           <div class="methodology-card">
-            <h4>Match Eligibility</h4>
+            <h4>Match Eligibility & Gaps</h4>
             <p>To ensure competitive integrity, we only process matches that meet the following strict validation checks:</p>
-            <ul>
+            <ul style="padding-left: 1.2rem; margin-bottom: 0.8rem;">
               <li><strong>Strict 4v4 format:</strong> The match must contain exactly 8 tracked players.</li>
               <li><strong>Two distinct teams:</strong> Exactly 4 players per team.</li>
               <li><strong>Outcome verification:</strong> Exactly 4 winners and 4 losers must be reported. Ambiguous, draw, or bugged lobby reports are discarded.</li>
             </ul>
+            <p style="margin-bottom: 0; font-size: 0.9rem; color: var(--text-muted); line-height: 1.45;">
+              <strong>Data Collection Note:</strong> Collection is manual and gaps exist. Matches are not recorded if "Record Game" was left unchecked in the lobby settings. Furthermore, public APIs do not support querying all custom lobbies globally; we must crawl by tracing individual player histories. That said, we strive to include as many games as possible.
+            </p>
           </div>
         </div>
       </div>
