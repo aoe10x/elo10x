@@ -9,6 +9,9 @@ function delay(ms: number): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+// Cooldown after which a player can be re-crawled (24 hours)
+const CRAWL_COOLDOWN_MS = 24 * 60 * 60 * 1000;
+
 export class MatchCrawler {
   private db: JsonDatabase;
   private delayMs: number;
@@ -16,6 +19,45 @@ export class MatchCrawler {
   constructor(db: JsonDatabase, delayMs: number = 250) {
     this.db = db;
     this.delayMs = delayMs;
+  }
+
+  /**
+   * Seed the crawl queue using players who participated in the most recent
+   * matches in the database, excluding those crawled within the cooldown period.
+   */
+  async seedFromActivePlayers(limit: number = 50): Promise<number[]> {
+    console.log('Crawl queue is empty and lobbies are offline. Seeding from active database profiles...');
+    const matches = this.db.getMatches();
+
+    // Sort matches by startgametime descending (most recent first)
+    const sortedMatches = [...matches].sort((a, b) => b.startgametime - a.startgametime);
+
+    const seeds: number[] = [];
+    const seedSet = new Set<number>();
+
+    for (const m of sortedMatches) {
+      if (m.players) {
+        for (const p of m.players) {
+          if (!seedSet.has(p.profile_id) && !this.db.isCrawled(p.profile_id, CRAWL_COOLDOWN_MS)) {
+            seedSet.add(p.profile_id);
+            seeds.push(p.profile_id);
+            if (seeds.length >= limit) {
+              break;
+            }
+          }
+        }
+      }
+      if (seeds.length >= limit) {
+        break;
+      }
+    }
+
+    if (seeds.length > 0) {
+      console.log(`Adding ${seeds.length} active players to queue (cooldown elapsed).`);
+      this.db.addToCrawlQueue(seeds, CRAWL_COOLDOWN_MS);
+      await this.db.save();
+    }
+    return seeds;
   }
 
   /**
@@ -93,7 +135,7 @@ export class MatchCrawler {
     const uniqueSeeds = [...new Set(seedIds)];
     if (uniqueSeeds.length > 0) {
       console.log(`Adding ${uniqueSeeds.length} seed profile IDs to queue.`);
-      this.db.addToCrawlQueue(uniqueSeeds);
+      this.db.addToCrawlQueue(uniqueSeeds, CRAWL_COOLDOWN_MS);
       await this.db.save();
     } else {
       console.warn('No active lobbies found to seed. The queue will rely on existing database profiles.');
@@ -213,7 +255,7 @@ export class MatchCrawler {
           new10xMatchCount++;
 
           // Add participants of this 10x game to crawl queue
-          this.db.addToCrawlQueue(candidatePlayerIds);
+          this.db.addToCrawlQueue(candidatePlayerIds, CRAWL_COOLDOWN_MS);
         }
       }
 
@@ -236,11 +278,15 @@ export class MatchCrawler {
 
     // Ensure queue has at least some seeds, otherwise run seedFromLobbies
     if (this.db.getCrawlQueueLength() === 0) {
-      console.log('Crawl queue is empty. Fetching initial seeds...');
+      console.log('Crawl queue is empty. Fetching initial seeds from lobbies...');
       const seedIds = await this.seedFromLobbies();
       if (seedIds.length === 0) {
-        console.warn('Queue remains empty after seeding. Cannot crawl. Add manual seeds or run when lobbies are online.');
-        return;
+        // Fallback to active players in DB
+        const dbSeeds = await this.seedFromActivePlayers(limitCount);
+        if (dbSeeds.length === 0) {
+          console.warn('Queue remains empty after fallback seeding. Cannot crawl.');
+          return;
+        }
       }
     }
 
@@ -249,7 +295,7 @@ export class MatchCrawler {
       const profileId = this.db.popFromCrawlQueue();
       if (!profileId) break;
 
-      if (this.db.isCrawled(profileId)) {
+      if (this.db.isCrawled(profileId, CRAWL_COOLDOWN_MS)) {
         continue;
       }
 

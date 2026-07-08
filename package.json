@@ -11,7 +11,7 @@
     "test:node": "node --experimental-strip-types --test test/**/*.test.ts",
     "crawl": "node --experimental-strip-types src/cli.ts --crawl",
     "elo": "node --experimental-strip-types src/cli.ts --elo",
-    "dev": "statikk public --port 3000",
+    "dev": "statikk docs --port 3000",
     "preflight": "pnpm run typecheck && pnpm run test"
   },
   "devDependencies": {
