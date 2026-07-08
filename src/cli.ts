@@ -236,10 +236,29 @@ async function main(): Promise<void> {
         totalPlayers: ratingsMap.size,
         leaderboardCount: leaderboard.length,
         config: { minGames, kFactor, provisional, mode: mode.name },
-        players: leaderboard.map(p => ({
-          ...p,
-          country: db.getProfile(p.profile_id)?.country
-        }))
+        players: leaderboard.map(p => {
+          let country: string | undefined = undefined;
+          const isValidCountry = (c: string | undefined) => 
+            c && c.trim().length === 2 && c.toLowerCase() !== 'un';
+
+          const canonicalCountry = db.getProfile(p.profile_id)?.country;
+          if (isValidCountry(canonicalCountry)) {
+            country = canonicalCountry;
+          } else if (p.merged_ids && p.merged_ids.length > 0) {
+            for (const id of p.merged_ids) {
+              const mergedCountry = db.getProfile(id)?.country;
+              if (isValidCountry(mergedCountry)) {
+                country = mergedCountry;
+                break;
+              }
+            }
+          }
+
+          return {
+            ...p,
+            country
+          };
+        })
       };
       
       await fs.writeFile(leaderboardPath, JSON.stringify(payload, null, 2), 'utf-8');
