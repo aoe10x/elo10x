@@ -96,7 +96,7 @@ header {
     border-radius: 12px;
     font-size: 0.8rem;
     color: var(--text-muted);
-    margin-bottom: 1.25rem;
+    margin-bottom: 2.25rem;
 }
 
 .status-dot {
@@ -113,7 +113,7 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .stat-card {
@@ -156,7 +156,7 @@ header {
     border: 1px solid var(--border-color);
     border-radius: 16px;
     padding: 1rem 1.5rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -311,6 +311,8 @@ th {
     text-transform: uppercase;
     border-bottom: 2px solid var(--border-color);
     white-space: nowrap;
+    padding-top: 0.95rem;
+    padding-bottom: 0.95rem;
 }
 
 tbody tr {
@@ -783,7 +785,7 @@ footer a:hover {
 .tabs-container {
     display: flex;
     gap: 0.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     justify-content: center;
 }
 
