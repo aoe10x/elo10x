@@ -377,3 +377,94 @@ test('EloCalculator - Placement matches K-factor linear decay', () => {
   assert.strictEqual(p1.rating, 1048);
   assert.strictEqual(p1.ratingHistory?.[1], 1048);
 });
+
+test('EloCalculator - Step-by-step K-factor decay over 22 games', () => {
+  const calculator = new EloCalculator({
+    defaultRating: 1000,
+    kFactor: 32,
+    enablePlacementKDecay: true,
+    minGamesForLeaderboard: 1
+  });
+
+  // 1. Direct unit verification of getPlayerKFactor formula
+  const getKFactor = (gamesCount: number): number => {
+    return (calculator as any).getPlayerKFactor(gamesCount);
+  };
+
+  let previousK = getKFactor(0); // game 1: gamesCount = 0
+  // Verify starting K-factor for game 1 matches expectations
+  assert.strictEqual(previousK, 100 - 1 * (100 - 32) / 21); // ~96.7619
+
+  // Verify K-factor scales down step-by-step from game 1 to game 21
+  for (let game = 2; game <= 21; game++) {
+    const gamesCount = game - 1;
+    const currentK = getKFactor(gamesCount);
+    assert.ok(currentK < previousK, `K-factor for game ${game} (${currentK}) should be less than game ${game - 1} (${previousK})`);
+    previousK = currentK;
+  }
+
+  // Verify that game 21 (gamesCount = 20) is exactly the base K-factor (32)
+  const kGame21 = getKFactor(20);
+  assert.strictEqual(kGame21, 32);
+
+  // Verify that game 22 (gamesCount = 21) remains exactly at 32
+  const kGame22 = getKFactor(21);
+  assert.strictEqual(kGame22, 32);
+
+  // 2. Integration verification with simulated matches
+  const player1ProfileId = 1;
+  const matches: Match[] = [];
+  
+  // Helper to construct a match where Player 1 wins against opponent team of 1000 avg Elo
+  const createMatch = (id: number, player1Won: boolean): Match => {
+    const t1Players = [
+      { profile_id: player1ProfileId, teamid: 1, resulttype: player1Won ? 1 : 0, race_id: 1, alias: 'A1' },
+      { profile_id: 100 + id * 10 + 1, teamid: 1, resulttype: player1Won ? 1 : 0, race_id: 2, alias: `Teammate1_${id}` },
+      { profile_id: 100 + id * 10 + 2, teamid: 1, resulttype: player1Won ? 1 : 0, race_id: 3, alias: `Teammate2_${id}` },
+      { profile_id: 100 + id * 10 + 3, teamid: 1, resulttype: player1Won ? 1 : 0, race_id: 4, alias: `Teammate3_${id}` }
+    ];
+    const t2Players = [
+      { profile_id: 100 + id * 10 + 4, teamid: 2, resulttype: player1Won ? 0 : 1, race_id: 5, alias: `Opponent1_${id}` },
+      { profile_id: 100 + id * 10 + 5, teamid: 2, resulttype: player1Won ? 0 : 1, race_id: 6, alias: `Opponent2_${id}` },
+      { profile_id: 100 + id * 10 + 7, teamid: 2, resulttype: player1Won ? 0 : 1, race_id: 8, alias: `Opponent4_${id}` },
+      { profile_id: 100 + id * 10 + 6, teamid: 2, resulttype: player1Won ? 0 : 1, race_id: 7, alias: `Opponent3_${id}` }
+    ];
+    return {
+      id,
+      mapname: 'arabia',
+      maxplayers: 8,
+      matchtype_id: 8,
+      description: `Match ${id}`,
+      startgametime: 1700000000 + id * 1000,
+      completiontime: 1700000000 + id * 1000 + 500,
+      players: [...t1Players, ...t2Players]
+    };
+  };
+
+  for (let id = 1; id <= 22; id++) {
+    matches.push(createMatch(id, true));
+  }
+
+  const ratingsMap = calculator.calculate(matches);
+  const player1 = ratingsMap.get(player1ProfileId);
+  assert.ok(player1);
+  assert.strictEqual(player1.gamesCount, 22);
+  assert.ok(player1.ratingHistory);
+  assert.strictEqual(player1.ratingHistory.length, 23); // 1 (default) + 22 matches
+
+  // Verify step-by-step ELO progression
+  // Let's re-calculate rating step-by-step using the same logic to verify the history matches
+  let currentRating = 1000;
+  for (let game = 1; game <= 22; game++) {
+    const gamesCount = game - 1;
+    const playerK = getKFactor(gamesCount);
+    // Opponent average is always 1000 since all opponents have only played 1 match and start at 1000 ELO.
+    const opponentAvg = 1000;
+    const expected = 1 / (1 + Math.pow(10, (opponentAvg - currentRating) / 400));
+    const delta = playerK * (1 - expected);
+    currentRating = Math.round(currentRating + delta);
+
+    assert.strictEqual(player1.ratingHistory[game], currentRating, `Rating after game ${game} should match the expected decay calculation`);
+  }
+});
+
