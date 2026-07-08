@@ -960,8 +960,6 @@ footer a:hover {
     color: var(--text-gold);
     margin-bottom: 1.5rem;
     letter-spacing: 1px;
-    border-left: 3px solid var(--text-gold);
-    padding-left: 0.8rem;
     text-transform: uppercase;
 }
 
