@@ -280,9 +280,16 @@ th, td {
     text-align: center;
 }
 
-.col-last-played {
+th.col-last-played, td.col-last-played {
     width: 160px;
     text-align: left;
+}
+
+td.col-last-played {
+    vertical-align: middle;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    white-space: nowrap;
 }
 
 tbody tr.active-row {
