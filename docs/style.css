@@ -287,6 +287,55 @@ tbody tr:hover {
     font-size: 1.1rem;
 }
 
+.elo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.elo-value {
+    line-height: 1.25;
+}
+
+.elo-bar-wrapper {
+    width: 80px;
+    height: 3px;
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.elo-bar-center {
+    width: 2px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.12);
+    position: relative;
+}
+
+.elo-bar {
+    position: absolute;
+    height: 2px;
+    border-radius: 1px;
+    pointer-events: none;
+}
+
+.elo-bar.direction-right {
+    left: 100%;
+    margin-left: 2px;
+    background: rgba(34, 197, 94, 0.65); /* Emerald green for positive Elo deviation */
+    box-shadow: 0 0 3px rgba(34, 197, 94, 0.4);
+}
+
+.elo-bar.direction-left {
+    right: 100%;
+    margin-right: 2px;
+    background: rgba(239, 68, 68, 0.65); /* Coral red for negative Elo deviation */
+    box-shadow: 0 0 3px rgba(239, 68, 68, 0.4);
+}
+
 .col-record {
     color: var(--text-light);
     font-size: 0.95rem;
