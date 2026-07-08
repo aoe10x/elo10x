@@ -316,6 +316,14 @@ export class JsonDatabase {
     return this.profiles.get(profile_id);
   }
 
+  getAllProfiles(): PlayerProfile[] {
+    return Array.from(this.profiles.values());
+  }
+
+  getPlayerManifest(profile_id: number): PlayerCrawlManifest | undefined {
+    return this.crawlManifest.get(profile_id);
+  }
+
   getProfilesCount(): number {
     return this.profiles.size;
   }
@@ -356,10 +364,7 @@ export class JsonDatabase {
     return this.crawledProfiles.size;
   }
 
-  // Crawl Manifest Helpers
-  getPlayerManifest(profileId: number): PlayerCrawlManifest | undefined {
-    return this.crawlManifest.get(profileId);
-  }
+
 
   updatePlayerManifest(profileId: number, source: 'insights' | 'relic', data: any): void {
     const existing = this.crawlManifest.get(profileId) || {};
