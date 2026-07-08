@@ -523,6 +523,7 @@ td.col-elo {
     background: linear-gradient(90deg, #10b981, #34d399);
     border-radius: 3px;
     transition: width 0.3s ease;
+    margin-right: auto;
 }
 
 .record-label-losses {
@@ -531,6 +532,7 @@ td.col-elo {
     font-weight: 600;
     min-width: 26px;
     text-align: right;
+    margin-right: auto;
 }
 
 .record-label-wins {
