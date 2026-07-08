@@ -733,25 +733,9 @@ footer a:hover {
     display: none !important;
     }
     .col-trend,
-    .col-last-played {
-    display: none !important;
-    }
+    .col-last-played,
     .col-winrate {
-    width: 100px !important;
-    }
-    .losses-side .bar-grow-left,
-    .wins-side .bar-grow-right,
-    .center-divider-line {
     display: none !important;
-    }
-    .true-diverging-container {
-    justify-content: center !important;
-    gap: 6px !important;
-    }
-    .record-label-losses,
-    .record-label-wins,
-    .record-winrate-percentage {
-    font-size: 0.85rem !important;
     }
     .controls-panel {
     padding: 1rem;
