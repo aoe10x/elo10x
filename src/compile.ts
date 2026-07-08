@@ -118,10 +118,8 @@ function generateRowHtml(player: EloRanking, rank: number, maxSingleRecord: numb
       <td class="col-elo">
         <div class="elo-container">
           <span class="elo-value">${player.rating}</span>
-          <div class="elo-bar-wrapper">
-            <div class="elo-bar-center">
-              ${eloIndicatorHtml}
-            </div>
+          <div class="elo-bar-center">
+            ${eloIndicatorHtml}
           </div>
         </div>
       </td>
@@ -130,13 +128,13 @@ function generateRowHtml(player: EloRanking, rank: number, maxSingleRecord: numb
         <div class="true-diverging-container" title="${player.wins} wins, ${player.losses} losses (${player.winRate}% win rate over ${player.gamesCount} total games)">
           <div class="losses-side">
             <span class="record-label-losses">${player.losses}L</span>
-            <div class="table-losses-bar" style="width: ${lossWidth}px;"></div>
+            <del class="table-losses-bar" style="width: ${lossWidth}px;"></del>
           </div>
           <div class="center-divider-line">
             ${winrateIndicatorHtml}
           </div>
           <div class="wins-side">
-            <div class="table-wins-bar" style="width: ${winWidth}px;"></div>
+            <ins class="table-wins-bar" style="width: ${winWidth}px;"></ins>
             <span class="record-label-wins">${player.wins}W</span>
             <span class="record-winrate-percentage">(${player.winRate}%)</span>
           </div>
