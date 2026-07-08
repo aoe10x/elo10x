@@ -111,10 +111,10 @@ function generateRowHtml(player: EloRanking, rank: number, maxSingleRecord: numb
 
   const isInactive = (player.lastPlayedAt || 0) < inactiveCutoff;
 
-  let rowStyles = `${flagStyle} --win-width: ${winWidth}px; --loss-width: ${lossWidth}px; --winrate-width: ${wrWidth}px; --elo-width: ${eloBarWidth}px;`;
-  if (isInactive) {
-    rowStyles += ' display: none;';
-  }
+  const styleParts: string[] = [];
+  if (flagStyle) styleParts.push(flagStyle);
+  styleParts.push(`--w: ${winWidth}px; --l: ${lossWidth}px; --wr: ${wrWidth}px; --e: ${eloBarWidth}px;`);
+  const rowStyles = styleParts.join(' ');
 
   return `
     <tr class="player-row" data-profile-id="${player.profile_id}" data-alias="${escapeHtml(player.alias)}" data-inactive="${isInactive}" style="${rowStyles}">
