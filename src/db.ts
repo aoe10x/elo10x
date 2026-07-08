@@ -1,61 +1,154 @@
 import { promises as fs } from 'node:fs';
 import * as path from 'node:path';
-import type { DatabaseSchema, Match, PlayerProfile } from './types.ts';
+import * as readline from 'node:readline';
+import * as fsSync from 'node:fs';
+import type { Match, PlayerProfile, PlayerCrawlManifest } from './types.ts';
 import { buildMatchFingerprint } from './match_fingerprint.ts';
 
+/**
+ * Generator that yields parsed JSON objects from a line-by-line JSON array file.
+ * The file is assumed to start with '[' and end with ']', with each item on its own line ending with an optional comma.
+ */
+export async function* readJsonArrayLines<T>(filePath: string): AsyncGenerator<T> {
+  if (!fsSync.existsSync(filePath)) return;
+
+  const fileStream = fsSync.createReadStream(filePath);
+  const rl = readline.createInterface({
+    input: fileStream,
+    crlfDelay: Infinity
+  });
+
+  for await (const line of rl) {
+    const trimmed = line.trim();
+    // Skip array opening/closing brackets
+    if (trimmed === '[' || trimmed === ']') {
+      continue;
+    }
+    if (!trimmed) continue;
+
+    // Strip trailing comma if present
+    const cleanLine = trimmed.endsWith(',') ? trimmed.slice(0, -1) : trimmed;
+    if (cleanLine === 'null') continue;
+    
+    try {
+      yield JSON.parse(cleanLine) as T;
+    } catch (e) {
+      console.error(`Failed to parse JSON line in ${filePath}: "${cleanLine}"`, e);
+    }
+  }
+}
+
+export async function saveJsonArrayLines<T>(filePath: string, items: T[]): Promise<void> {
+  const dir = path.dirname(filePath);
+  await fs.mkdir(dir, { recursive: true });
+
+  const tempPath = `${filePath}.tmp`;
+  const fd = await fs.open(tempPath, 'w');
+  
+  await fd.write('[\n');
+  const len = items.length;
+  for (let i = 0; i < len; i++) {
+    await fd.write(`  ${JSON.stringify(items[i])},\n`);
+  }
+  await fd.write('  null\n');
+  await fd.write(']\n');
+  await fd.close();
+
+  await fs.rename(tempPath, filePath);
+}
+
 export class JsonDatabase {
-  private filePath: string;
-  private data!: DatabaseSchema;
+  private dataDir: string;
+  private matchesPath: string;
+  private profilesPath: string;
+  private crawlStatePath: string;
+  private crawlManifestPath: string;
+
+  private matches!: Map<number, Match>;
+  private profiles!: Map<number, PlayerProfile>;
+  private matchFingerprints!: Map<string, number>;
+  private crawledProfiles!: Map<number, number>;
+  private crawlQueue!: number[];
+  private crawlManifest!: Map<number, PlayerCrawlManifest>;
+
   private isLoaded: boolean = false;
 
-  constructor(filePath: string = path.join(process.cwd(), 'docs', 'data', 'db.json')) {
-    this.filePath = filePath;
+  constructor(dataDir: string = path.join(process.cwd(), 'docs', 'data')) {
+    this.dataDir = dataDir;
+    this.matchesPath = path.join(dataDir, 'matches.json');
+    this.profilesPath = path.join(dataDir, 'profiles.json');
+    this.crawlStatePath = path.join(dataDir, 'crawl_state.json');
+    this.crawlManifestPath = path.join(dataDir, 'crawl_manifest.json');
   }
 
   async load(): Promise<void> {
     if (this.isLoaded) return;
 
-    const dir = path.dirname(this.filePath);
     try {
-      await fs.mkdir(dir, { recursive: true });
+      await fs.mkdir(this.dataDir, { recursive: true });
     } catch {
       // Directory exists or couldn't be created
     }
 
+    // Load matches
+    this.matches = new Map<number, Match>();
+    for await (const match of readJsonArrayLines<Match>(this.matchesPath)) {
+      this.matches.set(match.id, match);
+    }
+
+    // Load profiles
+    this.profiles = new Map<number, PlayerProfile>();
+    for await (const profile of readJsonArrayLines<PlayerProfile>(this.profilesPath)) {
+      this.profiles.set(profile.profile_id, profile);
+    }
+
+    // Load crawl state
     try {
-      const fileContent = await fs.readFile(this.filePath, 'utf-8');
-      this.data = JSON.parse(fileContent);
-      // Ensure all fields are initialized in case of legacy formats
-      this.data.matches = this.data.matches || {};
-      this.data.match_fingerprints = this.data.match_fingerprints || {};
-      this.data.profiles = this.data.profiles || {};
-      this.data.crawled_profiles = this.data.crawled_profiles || {};
-      this.data.crawl_queue = this.data.crawl_queue || [];
-      this.backfillMatchSources();
-      this.backfillMatchFingerprints();
+      const stateContent = await fs.readFile(this.crawlStatePath, 'utf-8');
+      const state = JSON.parse(stateContent);
+      this.matchFingerprints = new Map<string, number>(Object.entries(state.match_fingerprints || {}));
+      
+      this.crawledProfiles = new Map<number, number>();
+      if (state.crawled_profiles) {
+        for (const [idStr, time] of Object.entries(state.crawled_profiles)) {
+          this.crawledProfiles.set(Number(idStr), Number(time));
+        }
+      }
+      this.crawlQueue = state.crawl_queue || [];
     } catch (error: any) {
       if (error.code === 'ENOENT') {
-        this.data = {
-          matches: {},
-          match_fingerprints: {},
-          profiles: {},
-          crawled_profiles: {},
-          crawl_queue: []
-        };
-        await this.save();
+        this.matchFingerprints = new Map<string, number>();
+        this.crawledProfiles = new Map<number, number>();
+        this.crawlQueue = [];
       } else {
-        throw new Error(`Failed to read database: ${error.message}`);
+        throw new Error(`Failed to read crawler state: ${error.message}`);
       }
     }
 
+    // Load crawl manifest
+    this.crawlManifest = new Map<number, PlayerCrawlManifest>();
+    try {
+      const manifestContent = await fs.readFile(this.crawlManifestPath, 'utf-8');
+      const manifest = JSON.parse(manifestContent);
+      for (const [idStr, data] of Object.entries(manifest)) {
+        this.crawlManifest.set(Number(idStr), data as PlayerCrawlManifest);
+      }
+    } catch (error: any) {
+      if (error.code !== 'ENOENT') {
+        throw new Error(`Failed to read crawl manifest: ${error.message}`);
+      }
+    }
+
+    this.backfillMatchSources();
+    this.backfillMatchFingerprints();
+    this.migrateCrawlManifest();
     this.isLoaded = true;
   }
 
   pruneUnusedProfiles(): void {
     const referencedIds = new Set<number>();
 
-    // 1. Collect profile IDs from matches
-    for (const match of Object.values(this.data.matches)) {
+    for (const match of this.matches.values()) {
       if (match.players) {
         for (const p of match.players) {
           referencedIds.add(p.profile_id);
@@ -66,84 +159,119 @@ export class JsonDatabase {
       }
     }
 
-    // 2. Collect profile IDs from crawl queue
-    for (const id of this.data.crawl_queue) {
+    for (const id of this.crawlQueue) {
       referencedIds.add(id);
     }
 
-    // 3. Collect profile IDs from crawled profiles
-    for (const id of Object.keys(this.data.crawled_profiles)) {
-      referencedIds.add(Number(id));
+    for (const id of this.crawledProfiles.keys()) {
+      referencedIds.add(id);
     }
 
-    // Purge unreferenced profiles
-    const prunedProfiles: Record<number, PlayerProfile> = {};
-    for (const [idStr, profile] of Object.entries(this.data.profiles)) {
-      const id = Number(idStr);
-      if (referencedIds.has(id)) {
-        prunedProfiles[id] = profile;
+    for (const id of this.profiles.keys()) {
+      if (!referencedIds.has(id)) {
+        this.profiles.delete(id);
       }
     }
-
-    this.data.profiles = prunedProfiles;
   }
 
   async save(): Promise<void> {
     this.pruneUnusedProfiles();
-    const tempPath = `${this.filePath}.tmp`;
-    try {
-      await fs.writeFile(tempPath, JSON.stringify(this.data, null, 2), 'utf-8');
-      await fs.rename(tempPath, this.filePath);
-    } catch (error: any) {
-      throw new Error(`Failed to save database atomically: ${error.message}`);
-    }
+
+    // Sort matches chronologically
+    const sortedMatches = Array.from(this.matches.values()).sort((a, b) => {
+      return (a.startgametime || 0) - (b.startgametime || 0);
+    });
+
+    // Sort profiles by ID for diff cleanliness and strip out any legacy properties (xp/level)
+    const sortedProfiles = Array.from(this.profiles.values()).map(p => {
+      const clean: PlayerProfile = {
+        profile_id: p.profile_id,
+        alias: p.alias
+      };
+      if (p.country) {
+        clean.country = p.country;
+      }
+      return clean;
+    }).sort((a, b) => {
+      return a.profile_id - b.profile_id;
+    });
+
+    await saveJsonArrayLines(this.matchesPath, sortedMatches);
+    await saveJsonArrayLines(this.profilesPath, sortedProfiles);
+
+    // Sort fingerprints, crawled profiles, and the queue to keep files deterministic
+    const sortedFingerprints = Object.fromEntries(
+      Array.from(this.matchFingerprints.entries()).sort((a, b) => a[0].localeCompare(b[0]))
+    );
+
+    const sortedCrawled = Object.fromEntries(
+      Array.from(this.crawledProfiles.entries()).sort((a, b) => a[0] - b[0])
+    );
+
+    const sortedQueue = [...this.crawlQueue].sort((a, b) => a - b);
+
+    const crawlState = {
+      match_fingerprints: sortedFingerprints,
+      crawled_profiles: sortedCrawled,
+      crawl_queue: sortedQueue
+    };
+
+    const tempStatePath = `${this.crawlStatePath}.tmp`;
+    await fs.writeFile(tempStatePath, JSON.stringify(crawlState, null, 2), 'utf-8');
+    await fs.rename(tempStatePath, this.crawlStatePath);
+
+    // Sort manifest entries by profile ID ascending
+    const sortedManifest = Object.fromEntries(
+      Array.from(this.crawlManifest.entries()).sort((a, b) => a[0] - b[0])
+    );
+    const tempManifestPath = `${this.crawlManifestPath}.tmp`;
+    await fs.writeFile(tempManifestPath, JSON.stringify(sortedManifest, null, 2), 'utf-8');
+    await fs.rename(tempManifestPath, this.crawlManifestPath);
   }
 
   // Matches
   hasMatch(id: number): boolean {
-    return !!this.data.matches[id];
+    return this.matches.has(id);
   }
 
   hasMatchFingerprint(fingerprint: string): boolean {
-    return this.data.match_fingerprints[fingerprint] !== undefined;
+    return this.matchFingerprints.has(fingerprint);
   }
 
   findMatchIdByFingerprint(fingerprint: string): number | undefined {
-    return this.data.match_fingerprints[fingerprint];
+    return this.matchFingerprints.get(fingerprint);
   }
 
   addMatch(match: Match): void {
-    this.data.matches[match.id] = match;
+    this.matches.set(match.id, match);
     const fingerprint = buildMatchFingerprint(match);
     if (!this.hasMatchFingerprint(fingerprint)) {
-      this.data.match_fingerprints[fingerprint] = match.id;
+      this.matchFingerprints.set(fingerprint, match.id);
     }
   }
 
   getMatches(): Match[] {
-    return Object.values(this.data.matches);
+    return Array.from(this.matches.values());
   }
 
   getMatchesCount(): number {
-    return Object.keys(this.data.matches).length;
+    return this.matches.size;
   }
 
   private backfillMatchFingerprints(): void {
-    for (const match of Object.values(this.data.matches)) {
+    for (const match of this.matches.values()) {
       const fingerprint = buildMatchFingerprint(match);
-      if (this.data.match_fingerprints[fingerprint] === undefined) {
-        this.data.match_fingerprints[fingerprint] = match.id;
+      if (!this.matchFingerprints.has(fingerprint)) {
+        this.matchFingerprints.set(fingerprint, match.id);
       }
     }
   }
 
   private backfillMatchSources(): void {
-    for (const match of Object.values(this.data.matches)) {
+    for (const match of this.matches.values()) {
       if (match.source) {
         continue;
       }
-
-      // Relic API records usually include creator/gamemod metadata; scraped files do not.
       if (match.creator_profile_id !== undefined || match.gamemod_id !== undefined) {
         match.source = 'relic_api';
       } else {
@@ -154,9 +282,8 @@ export class JsonDatabase {
 
   // Profiles
   addProfile(profile: PlayerProfile): void {
-    const existing = this.data.profiles[profile.profile_id];
+    const existing = this.profiles.get(profile.profile_id);
     
-    // Normalize country: preserve only valid 2-letter codes, discard 'Unknown', 'un', or undefined
     let normalizedCountry = profile.country;
     if (normalizedCountry) {
       const trimmed = normalizedCountry.trim();
@@ -170,12 +297,10 @@ export class JsonDatabase {
       if (profile.alias && !profile.alias.startsWith('Player_')) {
         merged.alias = profile.alias;
       }
-      if (profile.xp !== undefined) merged.xp = profile.xp;
-      if (profile.level !== undefined) merged.level = profile.level;
       if (normalizedCountry !== undefined) {
         merged.country = normalizedCountry;
       }
-      this.data.profiles[profile.profile_id] = merged;
+      this.profiles.set(profile.profile_id, merged);
     } else {
       const newProfile = { ...profile };
       if (normalizedCountry !== undefined) {
@@ -183,44 +308,43 @@ export class JsonDatabase {
       } else {
         delete newProfile.country;
       }
-      this.data.profiles[profile.profile_id] = newProfile;
+      this.profiles.set(profile.profile_id, newProfile);
     }
   }
 
   getProfile(profile_id: number): PlayerProfile | undefined {
-    return this.data.profiles[profile_id];
+    return this.profiles.get(profile_id);
   }
 
   getProfilesCount(): number {
-    return Object.keys(this.data.profiles).length;
+    return this.profiles.size;
   }
 
   // Crawl Queue
   addToCrawlQueue(profile_ids: number[]): void {
     for (const id of profile_ids) {
-      if (!this.data.crawl_queue.includes(id)) {
-        this.data.crawl_queue.push(id);
+      if (!this.crawlQueue.includes(id)) {
+        this.crawlQueue.push(id);
       }
     }
   }
 
   popFromCrawlQueue(): number | undefined {
-    return this.data.crawl_queue.shift();
+    return this.crawlQueue.shift();
   }
 
   getCrawlQueueLength(): number {
-    return this.data.crawl_queue.length;
+    return this.crawlQueue.length;
   }
 
   // Crawled Profiles
   markAsCrawled(profile_id: number): void {
-    this.data.crawled_profiles[profile_id] = Date.now();
-    // Remove from queue if present
-    this.data.crawl_queue = this.data.crawl_queue.filter(id => id !== profile_id);
+    this.crawledProfiles.set(profile_id, Date.now());
+    this.crawlQueue = this.crawlQueue.filter(id => id !== profile_id);
   }
 
   isCrawled(profile_id: number, maxAgeMs?: number): boolean {
-    const lastCrawled = this.data.crawled_profiles[profile_id];
+    const lastCrawled = this.crawledProfiles.get(profile_id);
     if (!lastCrawled) return false;
     if (maxAgeMs !== undefined) {
       return (Date.now() - lastCrawled) < maxAgeMs;
@@ -229,6 +353,45 @@ export class JsonDatabase {
   }
 
   getCrawledCount(): number {
-    return Object.keys(this.data.crawled_profiles).length;
+    return this.crawledProfiles.size;
+  }
+
+  // Crawl Manifest Helpers
+  getPlayerManifest(profileId: number): PlayerCrawlManifest | undefined {
+    return this.crawlManifest.get(profileId);
+  }
+
+  updatePlayerManifest(profileId: number, source: 'insights' | 'relic', data: any): void {
+    const existing = this.crawlManifest.get(profileId) || {};
+    existing[source] = {
+      ...existing[source],
+      ...data
+    };
+    this.crawlManifest.set(profileId, existing);
+  }
+
+  migrateCrawlManifest(): void {
+    for (const [profileId, data] of this.crawlManifest.entries()) {
+      if (data.insights && ('hit_depth_limit' in (data.insights as any) || !('newest_match_id' in data.insights))) {
+        const oldInsights = data.insights as any;
+        const playerMatches = Array.from(this.matches.values())
+          .filter(m => m.players.some(p => p.profile_id === profileId));
+        
+        let newestId = 0;
+        let oldestId = 0;
+        if (playerMatches.length > 0) {
+          const ids = playerMatches.map(m => m.id);
+          newestId = Math.max(...ids);
+          oldestId = Math.min(...ids);
+        }
+
+        data.insights = {
+          last_crawled_at: oldInsights.last_crawled_at,
+          newest_match_id: newestId,
+          oldest_match_id: oldestId,
+          has_reached_start: oldInsights.hit_depth_limit === false
+        };
+      }
+    }
   }
 }

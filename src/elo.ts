@@ -71,12 +71,18 @@ export class EloCalculator {
     // 2. Pre-pass: Resolve final aliases and build profile redirection mapping
     const profileToFinalAlias = new Map<number, string>();
     const profileGameCounts = new Map<number, number>();
+    const profileLastGameTime = new Map<number, number>();
 
     for (const match of sortedMatches) {
       if (Array.isArray(match.players)) {
         for (const p of match.players) {
           profileToFinalAlias.set(p.profile_id, p.alias);
           profileGameCounts.set(p.profile_id, (profileGameCounts.get(p.profile_id) || 0) + 1);
+          const matchTime = match.startgametime || 0;
+          const currentMax = profileLastGameTime.get(p.profile_id) || 0;
+          if (matchTime > currentMax) {
+            profileLastGameTime.set(p.profile_id, matchTime);
+          }
         }
       }
     }
@@ -92,8 +98,8 @@ export class EloCalculator {
     const profileRedirects = new Map<number, number>();
     for (const [alias, ids] of aliasToProfiles.entries()) {
       if (ids.length > 1) {
-        // Sort ids by game count descending to choose the profile with the most games as canonical
-        ids.sort((a, b) => (profileGameCounts.get(b) || 0) - (profileGameCounts.get(a) || 0));
+        // Sort ids by last game timestamp descending to choose the most recently played profile as canonical
+        ids.sort((a, b) => (profileLastGameTime.get(b) || 0) - (profileLastGameTime.get(a) || 0));
         const canonicalId = ids[0];
         for (const id of ids) {
           profileRedirects.set(id, canonicalId);

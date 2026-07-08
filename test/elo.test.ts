@@ -1,7 +1,8 @@
 import * as assert from 'node:assert';
 import { test } from 'node:test';
 import { EloCalculator } from '../src/elo.ts';
-import type { Match } from '../src/types.ts';
+import type { Match, EloRanking, PlayerProfile } from '../src/types.ts';
+import { resolveMergedCountry } from '../src/profile_utils.ts';
 
 test('EloCalculator - Strict 4v4 Match Calculation', () => {
   const calculator = new EloCalculator({
@@ -557,4 +558,123 @@ test('EloCalculator - Automagically merges players sharing identical final alias
   // Match 3: 1031 -> 1044 (Opponent Avg 969, expected 0.588, delta +13)
   assert.strictEqual(mergedPlayer.rating, 1044);
   assert.deepStrictEqual(mergedPlayer.ratingHistory, [1000, 1016, 1031, 1044]);
+});
+
+test('EloCalculator - selects the most recently played profile ID as canonical', () => {
+  const calculator = new EloCalculator({
+    defaultRating: 1000,
+    kFactor: 32,
+    enablePlacementKDecay: false,
+    minGamesForLeaderboard: 1
+  });
+
+  const matches: Match[] = [
+    {
+      id: 1,
+      mapname: 'arabia',
+      maxplayers: 8,
+      matchtype_id: 8,
+      description: 'Match 1',
+      startgametime: 1700000000,
+      completiontime: 1700001000,
+      players: [
+        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 1, alias: 'SameName' },
+        { profile_id: 11, teamid: 1, resulttype: 1, race_id: 2, alias: 'A2' },
+        { profile_id: 12, teamid: 1, resulttype: 1, race_id: 3, alias: 'A3' },
+        { profile_id: 13, teamid: 1, resulttype: 1, race_id: 4, alias: 'A4' },
+        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+      ]
+    },
+    {
+      id: 2,
+      mapname: 'arabia',
+      maxplayers: 8,
+      matchtype_id: 8,
+      description: 'Match 2',
+      startgametime: 1700002000,
+      completiontime: 1700003000,
+      players: [
+        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 1, alias: 'SameName' },
+        { profile_id: 14, teamid: 1, resulttype: 1, race_id: 2, alias: 'A5' },
+        { profile_id: 15, teamid: 1, resulttype: 1, race_id: 3, alias: 'A6' },
+        { profile_id: 16, teamid: 1, resulttype: 1, race_id: 4, alias: 'A7' },
+        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+      ]
+    },
+    {
+      id: 3,
+      mapname: 'arabia',
+      maxplayers: 8,
+      matchtype_id: 8,
+      description: 'Match 3',
+      startgametime: 1700004000,
+      completiontime: 1700005000,
+      players: [
+        { profile_id: 1, teamid: 1, resulttype: 1, race_id: 1, alias: 'SameName' },
+        { profile_id: 17, teamid: 1, resulttype: 1, race_id: 2, alias: 'A8' },
+        { profile_id: 18, teamid: 1, resulttype: 1, race_id: 3, alias: 'A9' },
+        { profile_id: 19, teamid: 1, resulttype: 1, race_id: 4, alias: 'A10' },
+        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+      ]
+    }
+  ];
+
+  const ratingsMap = calculator.calculate(matches);
+
+  // Profile ID 2 should NOT exist in the final map
+  assert.strictEqual(ratingsMap.has(2), false);
+
+  // Profile ID 1 should exist
+  const canonicalPlayer = ratingsMap.get(1);
+  assert.ok(canonicalPlayer);
+  assert.strictEqual(canonicalPlayer.gamesCount, 3);
+  assert.strictEqual(canonicalPlayer.wins, 3);
+});
+
+test('resolveMergedCountry - selects canonical country if valid', () => {
+  const p: Partial<EloRanking> = {
+    profile_id: 1,
+    merged_ids: [1, 2]
+  };
+  const profiles: Record<number, Partial<PlayerProfile>> = {
+    1: { country: 'hk' },
+    2: { country: 'cn' }
+  };
+  const country = resolveMergedCountry(p as EloRanking, id => profiles[id]);
+  assert.strictEqual(country, 'hk');
+});
+
+test('resolveMergedCountry - falls back to other merged profile country if canonical is Unknown or empty', () => {
+  const p: Partial<EloRanking> = {
+    profile_id: 1,
+    merged_ids: [1, 2]
+  };
+  const profiles: Record<number, Partial<PlayerProfile>> = {
+    1: { country: 'Unknown' },
+    2: { country: 'hk' }
+  };
+  const country = resolveMergedCountry(p as EloRanking, id => profiles[id]);
+  assert.strictEqual(country, 'hk');
+});
+
+test('resolveMergedCountry - returns Unknown if no profiles have a country code', () => {
+  const p: Partial<EloRanking> = {
+    profile_id: 1,
+    merged_ids: [1, 2]
+  };
+  const profiles: Record<number, Partial<PlayerProfile>> = {
+    1: { country: 'Unknown' },
+    2: {}
+  };
+  const country = resolveMergedCountry(p as EloRanking, id => profiles[id]);
+  assert.strictEqual(country, 'Unknown');
 });
