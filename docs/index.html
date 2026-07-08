@@ -399,10 +399,30 @@
           winrateIndicatorHtml = `<div class="winrate-indicator-bar direction-left" style="width: ${wrWidth}px;"></div>`;
         }
 
+        const eloVal = player.rating;
+        const eloDiff = eloVal - 1000;
+        const eloBarWidth = Math.min(40, Math.round(Math.abs(eloDiff) * 0.1));
+
+        let eloIndicatorHtml = '';
+        if (eloDiff > 0 && eloBarWidth > 0) {
+          eloIndicatorHtml = `<div class="elo-bar direction-right" style="width: ${eloBarWidth}px;"></div>`;
+        } else if (eloDiff < 0 && eloBarWidth > 0) {
+          eloIndicatorHtml = `<div class="elo-bar direction-left" style="width: ${eloBarWidth}px;"></div>`;
+        }
+
         row.innerHTML = `
           <td class="col-rank">${rankContent}</td>
           <td class="col-alias">${flagHtml}${escapeHtml(player.alias)}</td>
-          <td class="col-elo">${player.rating}</td>
+          <td class="col-elo" style="vertical-align: middle;">
+            <div class="elo-container">
+              <span class="elo-value">${player.rating}</span>
+              <div class="elo-bar-wrapper">
+                <div class="elo-bar-center">
+                  ${eloIndicatorHtml}
+                </div>
+              </div>
+            </div>
+          </td>
           <td style="text-align: center; vertical-align: middle;">${sparklineHtml}</td>
           <td>
             <div class="true-diverging-container" title="${player.wins} wins, ${player.losses} losses (${player.winRate}% win rate over ${player.gamesCount} total games)">
