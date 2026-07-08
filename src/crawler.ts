@@ -265,7 +265,11 @@ export class MatchCrawler {
         }
       }
 
-      console.log(`Analyzed ${matchCount} matches. Found ${new10xMatchCount} new 10x matches.`);
+      if (new10xMatchCount > 0) {
+        console.log(`✨ Analyzed ${matchCount} matches. Found ${new10xMatchCount} new 10x matches! 🔥`);
+      } else {
+        console.log(`💤 Analyzed ${matchCount} matches. Found 0 new 10x matches.`);
+      }
 
       const playerMatches = this.db.getMatches()
         .filter(m => m.players.some(p => p.profile_id === profileId));
