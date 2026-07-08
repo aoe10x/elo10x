@@ -423,34 +423,6 @@ td.col-elo {
     text-align: center;
 }
 
-/* Rank badges for top 3 */
-.rank-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: #0b0d13;
-}
-
-.rank-1 {
-    background: var(--gold-rank);
-    box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
-}
-
-.rank-2 {
-    background: var(--silver-rank);
-    box-shadow: 0 0 10px rgba(161, 175, 196, 0.3);
-}
-
-.rank-3 {
-    background: var(--bronze-rank);
-    box-shadow: 0 0 8px rgba(176, 141, 87, 0.3);
-}
-
 .rank-other {
     color: var(--text-muted);
 }
