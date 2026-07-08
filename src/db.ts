@@ -196,9 +196,9 @@ export class JsonDatabase {
   }
 
   // Crawl Queue
-  addToCrawlQueue(profile_ids: number[], maxAgeMs: number = 24 * 60 * 60 * 1000): void {
+  addToCrawlQueue(profile_ids: number[]): void {
     for (const id of profile_ids) {
-      if (!this.isCrawled(id, maxAgeMs) && !this.data.crawl_queue.includes(id)) {
+      if (!this.data.crawl_queue.includes(id)) {
         this.data.crawl_queue.push(id);
       }
     }
