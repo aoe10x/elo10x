@@ -210,6 +210,13 @@ async function main() {
 
   const lastMatchTime = matches.reduce((max, m) => Math.max(max, m.startgametime || 0), 0);
   const updatedAt = lastMatchTime > 0 ? lastMatchTime * 1000 : Date.now();
+  const updatedAtFormatted = new Date(updatedAt).toLocaleString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: true
+  });
 
   // Helper to compile one page
   async function compilePage(
@@ -241,6 +248,7 @@ async function main() {
       .replace('{{playersCount}}', activeCount.toLocaleString())
       .replace('{{eloRange}}', eloRange)
       .replace('{{updatedAt}}', updatedAt.toString())
+      .replace('{{updatedAtFormatted}}', updatedAtFormatted)
       .replace('{{tabActive3x}}', activeTab === '3x' ? 'active' : '')
       .replace('{{tabActivePure}}', activeTab === 'pure' ? 'active' : '')
       .replace('{{tabActiveCombined}}', activeTab === 'combined' ? 'active' : '')
