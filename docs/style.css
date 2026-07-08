@@ -375,20 +375,12 @@ td.col-elo {
     line-height: 1.25;
 }
 
-.elo-bar-wrapper {
-    width: 80px;
-    height: 3px;
-    margin-top: 3px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
 .elo-bar-center {
     width: 2px;
     height: 3px;
     background: rgba(255, 255, 255, 0.12);
     position: relative;
+    margin-top: 4px;
 }
 
 .elo-bar {
@@ -509,21 +501,25 @@ td.col-elo {
     margin-right: 2px;
 }
 
-.table-losses-bar {
+del.table-losses-bar {
+    display: inline-block;
     height: 6px;
     max-width: 80px;
     background: linear-gradient(270deg, #ef4444, #f87171);
     border-radius: 3px;
     transition: width 0.3s ease;
+    text-decoration: none;
 }
 
-.table-wins-bar {
+ins.table-wins-bar {
+    display: inline-block;
     height: 6px;
     max-width: 80px;
     background: linear-gradient(90deg, #10b981, #34d399);
     border-radius: 3px;
     transition: width 0.3s ease;
     margin-right: auto;
+    text-decoration: none;
 }
 
 .record-label-losses {
