@@ -286,46 +286,50 @@
       const minGames = config.minGames || 15;
       const includeProvisional = config.provisional || false;
 
-      // Filter players
-      let filteredPlayers = allPlayers.filter(p => {
-        // Search filter
-        if (searchTerm && !p.alias.toLowerCase().includes(searchTerm)) {
-          return false;
-        }
-        
-        // Games count filter
+      // 1. Filter out by games count/provisional setting first to establish ranks
+      let rankedPlayers = allPlayers.filter(p => {
         if (!includeProvisional && p.gamesCount < minGames) {
           return false;
         }
-
         return true;
       });
 
-      // Sort by rating descending (re-sort in case filters changed original sort logic)
-      filteredPlayers.sort((a, b) => b.rating - a.rating);
+      // Sort by rating descending
+      rankedPlayers.sort((a, b) => b.rating - a.rating);
+
+      // Assign global ranks
+      rankedPlayers.forEach((player, idx) => {
+        player.rank = idx + 1;
+      });
+
+      // 2. Filter by search term for final display
+      let displayPlayers = rankedPlayers;
+      if (searchTerm) {
+        displayPlayers = rankedPlayers.filter(p => p.alias.toLowerCase().includes(searchTerm));
+      }
 
       elements.tbody.innerHTML = '';
 
-      if (filteredPlayers.length === 0) {
+      if (displayPlayers.length === 0) {
         const row = document.createElement('tr');
-        row.innerHTML = `<td colspan="5" style="text-align: center; color: var(--text-muted); padding: 3rem;">No players found matching current filters.</td>`;
+        row.innerHTML = `<td colspan="6" style="text-align: center; color: var(--text-muted); padding: 3rem;">No players found matching current filters.</td>`;
         elements.tbody.appendChild(row);
         return;
       }
 
       // Compute max games and max single wins/losses to scale the record bars
-      const maxGames = Math.max(...filteredPlayers.map(p => p.gamesCount)) || 1;
-      const maxSingleRecord = Math.max(...filteredPlayers.map(p => Math.max(p.wins, p.losses))) || 1;
+      const maxGames = Math.max(...displayPlayers.map(p => p.gamesCount)) || 1;
+      const maxSingleRecord = Math.max(...displayPlayers.map(p => Math.max(p.wins, p.losses))) || 1;
 
-      filteredPlayers.forEach((player, index) => {
+      displayPlayers.forEach((player) => {
         const row = document.createElement('tr');
         
         // 1. Rank Badge
         let rankContent = '';
-        if (index === 0) rankContent = '<span class="rank-badge rank-1">1</span>';
-        else if (index === 1) rankContent = '<span class="rank-badge rank-2">2</span>';
-        else if (index === 2) rankContent = '<span class="rank-badge rank-3">3</span>';
-        else rankContent = `<span class="rank-other">${index + 1}</span>`;
+        if (player.rank === 1) rankContent = '<span class="rank-badge rank-1">1</span>';
+        else if (player.rank === 2) rankContent = '<span class="rank-badge rank-2">2</span>';
+        else if (player.rank === 3) rankContent = '<span class="rank-badge rank-3">3</span>';
+        else rankContent = `<span class="rank-other">${player.rank}</span>`;
 
         const hasValidCountry = player.country && player.country.trim().length === 2 && player.country.toLowerCase() !== 'un';
 
@@ -429,7 +433,7 @@
         detailsRow.style.display = 'none';
         detailsRow.innerHTML = `<td colspan="6" id="details-cell-${player.profile_id}"></td>`;
 
-        row.addEventListener('click', () => togglePlayerDetails(player, index + 1, detailsRow));
+        row.addEventListener('click', () => togglePlayerDetails(player, player.rank, detailsRow));
         elements.tbody.appendChild(row);
         elements.tbody.appendChild(detailsRow);
       });
