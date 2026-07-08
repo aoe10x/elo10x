@@ -28,6 +28,7 @@ export async function* readJsonArrayLines<T>(filePath: string): AsyncGenerator<T
 
     // Strip trailing comma if present
     const cleanLine = trimmed.endsWith(',') ? trimmed.slice(0, -1) : trimmed;
+    if (cleanLine === 'null') continue;
     
     try {
       yield JSON.parse(cleanLine) as T;
@@ -37,9 +38,6 @@ export async function* readJsonArrayLines<T>(filePath: string): AsyncGenerator<T
   }
 }
 
-/**
- * Writes an array of items as a formatted JSON array with exactly one item per line, comma-separated.
- */
 export async function saveJsonArrayLines<T>(filePath: string, items: T[]): Promise<void> {
   const dir = path.dirname(filePath);
   await fs.mkdir(dir, { recursive: true });
@@ -50,10 +48,9 @@ export async function saveJsonArrayLines<T>(filePath: string, items: T[]): Promi
   await fd.write('[\n');
   const len = items.length;
   for (let i = 0; i < len; i++) {
-    const isLast = i === len - 1;
-    const comma = isLast ? '' : ',';
-    await fd.write(`  ${JSON.stringify(items[i])}${comma}\n`);
+    await fd.write(`  ${JSON.stringify(items[i])},\n`);
   }
+  await fd.write('  null\n');
   await fd.write(']\n');
   await fd.close();
 
