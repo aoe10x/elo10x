@@ -60,6 +60,12 @@
         <input type="search" id="search-input" class="search-input" placeholder="Search players by name...">
       </search>
       
+      <div class="filters-wrapper">
+        <label class="filter-item checkbox-filter">
+          <input type="checkbox" id="show-inactive-checkbox">
+          <span>Show inactive players</span>
+        </label>
+      </div>
     </div>
 
     <!-- Leaderboard Panel -->
@@ -193,6 +199,7 @@
 
     const elements = {
       search: document.getElementById('search-input'),
+      showInactive: document.getElementById('show-inactive-checkbox'),
       tbody: document.getElementById('leaderboard-body')
     };
 
@@ -464,18 +471,22 @@
         .replace(/'/g, "&#039;");
     }
 
-    // Real-time client-side search filtering
-    elements.search.addEventListener('input', () => {
+    // Real-time client-side search and inactivity filtering
+    function applyFilters() {
       const query = elements.search.value.toLowerCase().trim();
+      const showInactive = elements.showInactive.checked;
       let matchCount = 0;
       
       document.querySelectorAll('tbody tr.player-row').forEach(row => {
         const alias = row.getAttribute('data-alias').toLowerCase();
         const profileId = row.getAttribute('data-profile-id');
         const detailsRow = document.getElementById(`details-row-${profileId}`);
+        const isInactive = row.getAttribute('data-inactive') === 'true';
         
-        const isMatch = alias.includes(query);
-        if (isMatch) {
+        const matchesSearch = alias.includes(query);
+        const matchesInactive = !isInactive || showInactive;
+        
+        if (matchesSearch && matchesInactive) {
           row.style.display = 'table-row';
           matchCount++;
         } else {
@@ -499,7 +510,10 @@
       } else if (noResultsRow) {
         noResultsRow.style.display = 'none';
       }
-    });
+    }
+
+    elements.search.addEventListener('input', applyFilters);
+    elements.showInactive.addEventListener('change', applyFilters);
 
     // Populate last played relative time on load
     document.querySelectorAll('td.col-last-played').forEach(td => {
