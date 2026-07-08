@@ -65,7 +65,7 @@ function generateSparkline(history: number[] | undefined, rating: number): strin
   `;
 }
 
-function generateRowHtml(player: EloRanking, rank: number, maxSingleRecord: number): string {
+function generateRowHtml(player: EloRanking, rank: number, maxSingleRecord: number, inactiveCutoff: number): string {
   let rankContent = '';
   if (rank === 1) rankContent = '<span class="rank-badge rank-1">1</span>';
   else if (rank === 2) rankContent = '<span class="rank-badge rank-2">2</span>';
@@ -109,8 +109,10 @@ function generateRowHtml(player: EloRanking, rank: number, maxSingleRecord: numb
   const lossWidth = Math.round((player.losses / maxSingleRecord) * 80);
   const sparklineHtml = generateSparkline(player.ratingHistory, player.rating);
 
+  const isInactive = (player.lastPlayedAt || 0) < inactiveCutoff;
+
   return `
-    <tr class="player-row" data-profile-id="${player.profile_id}" data-alias="${escapeHtml(player.alias)}">
+    <tr class="player-row" data-profile-id="${player.profile_id}" data-alias="${escapeHtml(player.alias)}" data-inactive="${isInactive}" ${isInactive ? 'style="display: none;"' : ''}>
       <td class="col-rank">${rankContent}</td>
       <td class="col-alias"><div class="alias-container">${flagHtml}<span class="alias-name" title="${escapeHtml(player.alias)}">${escapeHtml(player.alias)}</span></div></td>
       <td class="col-elo">
@@ -224,16 +226,19 @@ async function main() {
 
     const maxSingleRecord = Math.max(...leaderboard.map(p => Math.max(p.wins, p.losses))) || 1;
 
+    const activeCutoff = lastMatchTime - 180 * 24 * 60 * 60;
+    const activeCount = leaderboard.filter(p => (p.lastPlayedAt || 0) >= activeCutoff).length;
+
     let rowsHtml = '';
     if (leaderboard.length === 0) {
       rowsHtml = `<tr><td colspan="6" style="text-align: center; color: var(--text-muted); padding: 3rem;">No active players currently qualified.</td></tr>`;
     } else {
-      rowsHtml = leaderboard.map((p, idx) => generateRowHtml(p, idx + 1, maxSingleRecord)).join('\n');
+      rowsHtml = leaderboard.map((p, idx) => generateRowHtml(p, idx + 1, maxSingleRecord, activeCutoff)).join('\n');
     }
 
     let compiled = templateHtml
       .replace('{{matchesCount}}', allCalculatedMatchesCount.toLocaleString())
-      .replace('{{playersCount}}', leaderboard.length.toLocaleString())
+      .replace('{{playersCount}}', activeCount.toLocaleString())
       .replace('{{eloRange}}', eloRange)
       .replace('{{updatedAt}}', updatedAt.toString())
       .replace('{{tabActive3x}}', activeTab === '3x' ? 'active' : '')
