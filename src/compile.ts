@@ -55,13 +55,11 @@ function generateSparkline(history: number[] | undefined, rating: number): strin
   const y1000 = padding + (1 - (1000 - minVal) / valRange) * (height - padding * 2);
   
   return `
-    <div class="sparkline-wrapper" title="Elo trend over last ${lastGames.length} matches (min: ${minVal}, max: ${maxVal}, current: ${lastRating})">
-      <svg width="${width}" height="${height}">
-        <line x1="${padding}" y1="${y1000.toFixed(1)}" x2="${width - padding}" y2="${y1000.toFixed(1)}" stroke="rgba(255, 255, 255, 0.15)" stroke-width="0.75" stroke-dasharray="1,1" />
-        <polyline points="${points}" fill="none" stroke="rgba(255, 255, 255, 0.4)" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round" />
-        <circle cx="${width - padding}" cy="${lastRatingY.toFixed(1)}" r="1.75" fill="#d4af37" />
-      </svg>
-    </div>
+    <svg viewBox="0 0 ${width} ${height}">
+      <line x1="${padding}" y1="${y1000.toFixed(1)}" x2="${width - padding}" y2="${y1000.toFixed(1)}" />
+      <polyline points="${points}" />
+      <circle cx="${width - padding}" cy="${lastRatingY.toFixed(1)}" />
+    </svg>
   `;
 }
 
