@@ -292,17 +292,39 @@ export class MatchCrawler {
   }
 
   /**
+   * Seed the crawler queue with players who haven't been crawled in a long time (background refresh)
+   */
+  async seedOldestCrawledPlayers(limit: number = 20): Promise<void> {
+    const profiles = this.db.getAllProfiles();
+    const candidates = profiles.map(p => {
+      const manifest = this.db.getPlayerManifest(p.profile_id);
+      return {
+        profileId: p.profile_id,
+        lastCrawledAt: manifest?.relic?.last_crawled_at || 0
+      };
+    });
+
+    candidates.sort((a, b) => a.lastCrawledAt - b.lastCrawledAt);
+
+    const seeds = candidates.slice(0, limit).map(c => c.profileId);
+    console.log(`Seeding ${seeds.length} oldest/never crawled players to queue.`);
+    if (seeds.length > 0) {
+      this.db.addToCrawlQueue(seeds);
+    }
+  }
+
+  /**
    * Run a snowball crawl up to a limit of crawled players
    */
   async runCrawl(limitCount: number, monthsCutoff: number = 3): Promise<void> {
     const cutoffTimestamp = Math.floor(Date.now() / 1000) - (monthsCutoff * 30 * 24 * 60 * 60);
     console.log(`Starting crawl. Filtering games after Unix timestamp: ${cutoffTimestamp} (${monthsCutoff} months ago)`);
 
-    // Always seed from both live lobbies AND most-recently-active db players.
-    // No fallback logic — run both sources every time for maximum freshness.
-    console.log('Seeding crawl queue from live lobbies + active db players...');
+    // Seed from live lobbies, active db players, and background refreshes
+    console.log('Seeding crawl queue from live lobbies + active db players + oldest crawled...');
     await this.seedFromLobbies();
     await this.seedFromActivePlayers(limitCount);
+    await this.seedOldestCrawledPlayers(20);
 
     if (this.db.getCrawlQueueLength() === 0) {
       console.warn('Queue is empty after seeding. Cannot crawl.');
@@ -313,6 +335,11 @@ export class MatchCrawler {
     while (this.db.getCrawlQueueLength() > 0 && crawledThisSession < limitCount) {
       const profileId = this.db.popFromCrawlQueue();
       if (!profileId) break;
+
+      // Skip if crawled in the last 18 hours (prevents redundant crawls in frequent cron intervals)
+      if (this.db.isCrawled(profileId, 18 * 60 * 60 * 1000)) {
+        continue;
+      }
 
       const success = await this.crawlPlayer(profileId, cutoffTimestamp);
       if (success) {
