@@ -107,7 +107,7 @@
             <p>We use the standard Definitive Edition multiplayer rating formula (Algorithm 3) to compute player adjustments sequentially:</p>
             <ul>
               <li><strong>Baseline Rating:</strong> New players start at <code>1000 ELO</code>.</li>
-              <li><strong>K-Factor:</strong> Set to <code>K = 32</code> to ensure stable but responsive rating updates.</li>
+              <li><strong>Dynamic K-Factor:</strong> Matches default to <code>K = 32</code>. For a player's first 21 matches (placement phase), the K-factor starts near 100 and linearly decays down to 32 to allow rapid rating convergence, modeled after <a href="https://www.reddit.com/r/aoe2/comments/1q7v0bs/comment/nyjcksf/" target="_blank" style="color: var(--text-gold); text-decoration: underline;">AoE2 Ranked placement match scaling</a>.</li>
               <li><strong>Sequential Updates:</strong> Matches are sorted chronologically, and ratings are updated step-by-step.</li>
             </ul>
           </div>
