@@ -83,7 +83,29 @@ header {
     font-size: 1.1rem;
     font-weight: 300;
     letter-spacing: 1px;
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.last-updated-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 0.35rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+}
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--accent-win);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--accent-win);
+    display: inline-block;
 }
 
 /* Summary Dashboard Cards */
