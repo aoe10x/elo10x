@@ -348,17 +348,15 @@ tbody tr:hover {
 }
 
 .alias-name::before {
-    content: "";
+    content: var(--flag-content, none);
     display: inline-block;
     width: 16px;
     height: 12px;
-    background-color: rgba(255, 255, 255, 0.05);
     background-image: var(--flag-url);
     background-size: cover;
     margin-right: 8px;
     flex-shrink: 0;
     border-radius: 2px;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
 th.col-elo, td.col-elo {
@@ -1201,13 +1199,4 @@ footer a:hover {
     vertical-align: middle;
     border-radius: 2px;
     border: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.flag-placeholder {
-    margin-right: 8px;
-    display: inline-block;
-    width: 22px;
-    text-align: center;
-    font-size: 0.85rem;
-    opacity: 0.35;
 }
