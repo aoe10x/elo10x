@@ -356,7 +356,6 @@ tbody tr:hover {
     display: inline-block;
     width: 16px;
     height: 12px;
-    background-image: var(--flag-url);
     background-size: cover;
     margin-right: 8px;
     flex-shrink: 0;
