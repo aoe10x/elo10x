@@ -82,28 +82,34 @@ function generateRowHtml(player: EloRanking, rank: number, maxSingleRecord: numb
       countryName = player.country!.toUpperCase();
     }
   }
-  const flagHtml = hasValidCountry 
-    ? `<img src="https://flagcdn.com/24x18/${player.country!.toLowerCase()}.png" width="22" height="16" alt="${player.country!.toUpperCase()}" class="flag-icon" title="${escapeHtml(countryName)}">` 
-    : `<span class="flag-placeholder">🏳️</span>`;
+  const flagStyle = hasValidCountry 
+    ? `--flag-url: url('https://flagcdn.com/16x12/${player.country!.toLowerCase()}.png');` 
+    : '';
 
   const eloDiff = player.rating - 1000;
   const eloBarWidth = Math.min(40, Math.round(Math.abs(eloDiff) * 0.1));
-  let eloIndicatorHtml = '';
+  let eloDirection = '';
   if (eloDiff > 0 && eloBarWidth > 0) {
-    eloIndicatorHtml = `<div class="elo-bar direction-right" style="width: ${eloBarWidth}px;"></div>`;
+    eloDirection = 'direction-right';
   } else if (eloDiff < 0 && eloBarWidth > 0) {
-    eloIndicatorHtml = `<div class="elo-bar direction-left" style="width: ${eloBarWidth}px;"></div>`;
+    eloDirection = 'direction-left';
   }
+  const eloIndicatorHtml = eloDirection 
+    ? `<div class="elo-bar ${eloDirection}"></div>` 
+    : '';
 
   const winRateVal = player.winRate || 50;
   const wrDiff = winRateVal - 50;
   const wrWidth = Math.min(80, Math.round(Math.abs(wrDiff) * 1.6));
-  let winrateIndicatorHtml = '';
+  let winrateDirection = '';
   if (wrDiff > 0 && wrWidth > 0) {
-    winrateIndicatorHtml = `<div class="winrate-indicator-bar direction-right" style="width: ${wrWidth}px;"></div>`;
+    winrateDirection = 'direction-right';
   } else if (wrDiff < 0 && wrWidth > 0) {
-    winrateIndicatorHtml = `<div class="winrate-indicator-bar direction-left" style="width: ${wrWidth}px;"></div>`;
+    winrateDirection = 'direction-left';
   }
+  const winrateIndicatorHtml = winrateDirection 
+    ? `<div class="winrate-indicator-bar ${winrateDirection}"></div>` 
+    : '';
 
   const winWidth = Math.round((player.wins / maxSingleRecord) * 80);
   const lossWidth = Math.round((player.losses / maxSingleRecord) * 80);
@@ -111,10 +117,15 @@ function generateRowHtml(player: EloRanking, rank: number, maxSingleRecord: numb
 
   const isInactive = (player.lastPlayedAt || 0) < inactiveCutoff;
 
+  let rowStyles = `${flagStyle} --win-width: ${winWidth}px; --loss-width: ${lossWidth}px; --winrate-width: ${wrWidth}px; --elo-width: ${eloBarWidth}px;`;
+  if (isInactive) {
+    rowStyles += ' display: none;';
+  }
+
   return `
-    <tr class="player-row" data-profile-id="${player.profile_id}" data-alias="${escapeHtml(player.alias)}" data-inactive="${isInactive}" ${isInactive ? 'style="display: none;"' : ''}>
+    <tr class="player-row" data-profile-id="${player.profile_id}" data-alias="${escapeHtml(player.alias)}" data-inactive="${isInactive}" style="${rowStyles}">
       <td class="col-rank">${rankContent}</td>
-      <td class="col-alias"><div class="alias-container">${flagHtml}<span class="alias-name" title="${escapeHtml(player.alias)}">${escapeHtml(player.alias)}</span></div></td>
+      <td class="col-alias"><span class="alias-name" title="${escapeHtml(player.alias)}">${escapeHtml(player.alias)}</span></td>
       <td class="col-elo">
         <div class="elo-container">
           <span class="elo-value">${player.rating}</span>
@@ -127,16 +138,16 @@ function generateRowHtml(player: EloRanking, rank: number, maxSingleRecord: numb
       <td class="col-winrate">
         <div class="true-diverging-container" title="${player.wins} wins, ${player.losses} losses (${player.winRate}% win rate over ${player.gamesCount} total games)">
           <div class="losses-side">
-            <span class="record-label-losses">${player.losses}L</span>
-            <del class="table-losses-bar" style="width: ${lossWidth}px;"></del>
+            <span>${player.losses}L</span>
+            <del></del>
           </div>
           <div class="center-divider-line">
             ${winrateIndicatorHtml}
           </div>
           <div class="wins-side">
-            <ins class="table-wins-bar" style="width: ${winWidth}px;"></ins>
-            <span class="record-label-wins">${player.wins}W</span>
-            <span class="record-winrate-percentage">(${player.winRate}%)</span>
+            <ins></ins>
+            <span>${player.wins}W</span>
+            <span>(${player.winRate}%)</span>
           </div>
         </div>
       </td>
