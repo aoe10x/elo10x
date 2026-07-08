@@ -76,9 +76,6 @@ function generateRowHtml(player: EloRanking, rank: number, maxSingleRecord: numb
       countryName = player.country!.toUpperCase();
     }
   }
-  const flagStyle = hasValidCountry 
-    ? `--flag-url: url('https://flagcdn.com/16x12/${player.country!.toLowerCase()}.png');` 
-    : '';
 
   const eloDiff = player.rating - 1000;
   const eloBarWidth = Math.min(40, Math.round(Math.abs(eloDiff) * 0.1));
@@ -111,15 +108,13 @@ function generateRowHtml(player: EloRanking, rank: number, maxSingleRecord: numb
 
   const isInactive = (player.lastPlayedAt || 0) < inactiveCutoff;
 
-  const styleParts: string[] = [];
-  if (flagStyle) styleParts.push(flagStyle);
-  styleParts.push(`--w: ${winWidth}px; --l: ${lossWidth}px; --wr: ${wrWidth}px; --e: ${eloBarWidth}px;`);
-  const rowStyles = styleParts.join(' ');
+  const rowStyles = `--w: ${winWidth}px; --l: ${lossWidth}px; --wr: ${wrWidth}px; --e: ${eloBarWidth}px;`;
+  const countryAttr = hasValidCountry ? ` data-country="${player.country!.toLowerCase()}"` : '';
 
   return `
     <tr class="player-row" data-profile-id="${player.profile_id}" data-alias="${escapeHtml(player.alias)}" data-inactive="${isInactive}" style="${rowStyles}">
       <td class="col-rank">${rankContent}</td>
-      <td class="col-alias"><span class="alias-name" title="${escapeHtml(player.alias)}">${escapeHtml(player.alias)}</span></td>
+      <td class="col-alias"><span class="alias-name"${countryAttr} title="${escapeHtml(player.alias)}">${escapeHtml(player.alias)}</span></td>
       <td class="col-elo">
         <div class="elo-container">
           <span class="elo-value">${player.rating}</span>
@@ -195,6 +190,25 @@ async function main() {
   populateCountries(leaderboard3x);
   populateCountries(leaderboardPure);
   populateCountries(leaderboardCombined);
+
+  // Generate flags.css dynamically
+  const uniqueCountries = new Set<string>();
+  const collectCountries = (list: EloRanking[]) => {
+    for (const p of list) {
+      if (p.country && p.country !== 'Unknown' && p.country.trim().length === 2) {
+        uniqueCountries.add(p.country.toLowerCase());
+      }
+    }
+  };
+  collectCountries(leaderboard3x);
+  collectCountries(leaderboardPure);
+  collectCountries(leaderboardCombined);
+
+  const flagsCssContent = Array.from(uniqueCountries)
+    .sort()
+    .map(cc => `.alias-name[data-country="${cc}"]::before { background-image: url('https://flagcdn.com/16x12/${cc}.png'); }`)
+    .join('\n');
+  await fs.writeFile(path.join(process.cwd(), 'docs', 'flags.css'), flagsCssContent);
 
   // Read Template
   const templatePath = path.join(process.cwd(), 'docs', 'index.template.html');

@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="flags.css">
 </head>
 <body>
   <div class="container">
@@ -515,7 +516,7 @@
       const ts = parseInt(td.getAttribute('data-timestamp'), 10);
       if (ts) {
         td.textContent = timeAgo(ts);
-        td.setAttribute('title', new Date(ts * 1000).toLocaleString());
+        td.setAttribute('title', longDateFormatter.format(new Date(ts * 1000)));
       }
     });
 
