@@ -348,7 +348,7 @@ tbody tr:hover {
 }
 
 .alias-name::before {
-    content: var(--flag-content, none);
+    content: "";
     display: inline-block;
     width: 16px;
     height: 12px;

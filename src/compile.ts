@@ -79,7 +79,7 @@ function generateRowHtml(player: EloRanking, rank: number, maxSingleRecord: numb
     }
   }
   const flagStyle = hasValidCountry 
-    ? `--flag-content: ''; --flag-url: url('https://flagcdn.com/16x12/${player.country!.toLowerCase()}.png');` 
+    ? `--flag-url: url('https://flagcdn.com/16x12/${player.country!.toLowerCase()}.png');` 
     : '';
 
   const eloDiff = player.rating - 1000;
