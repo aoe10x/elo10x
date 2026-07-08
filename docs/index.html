@@ -479,6 +479,10 @@
         ? new Date(player.lastPlayedAt * 1000).toLocaleString() 
         : 'Unknown';
 
+      const idsHtml = (player.merged_ids && player.merged_ids.length > 0)
+        ? `<span><strong>Merged IDs:</strong> <span style="font-family: monospace; font-size: 0.8rem;" title="These duplicate profile IDs were automagically merged because they share the same final alias">${player.merged_ids.join(', ')}</span></span>`
+        : `<span><strong>ID:</strong> <span style="font-family: monospace; font-size: 0.8rem;">${player.profile_id}</span></span>`;
+
       // Compressed HTML template
       cell.innerHTML = `
         <div class="details-expanded-container">
@@ -491,7 +495,7 @@
               <span><strong>Record:</strong> <span style="color: var(--accent-win);">${player.wins}W</span>-<span style="color: var(--accent-loss);">${player.losses}L</span></span>
               <span><strong>Win Rate:</strong> ${player.winRate}%</span>
               <span><strong>Country:</strong> ${escapeHtml(countryName)}</span>
-              <span><strong>ID:</strong> <span style="font-family: monospace; font-size: 0.8rem;">${player.profile_id}</span></span>
+              ${idsHtml}
             </div>
             
             <!-- ELO Trend Chart -->

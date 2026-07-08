@@ -61,6 +61,7 @@ export interface EloRanking {
   country?: string;
   ratingHistory?: number[];
   recentMatches?: RecentMatch[];
+  merged_ids?: number[];
 }
 
 export interface DatabaseSchema {

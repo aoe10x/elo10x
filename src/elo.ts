@@ -315,6 +315,22 @@ export class EloCalculator {
       }
     }
 
+    // 3. Attach merged profile IDs to each canonical rating object
+    const canonicalToMergedIds = new Map<number, Set<number>>();
+    for (const [id, canonicalId] of profileRedirects.entries()) {
+      if (!canonicalToMergedIds.has(canonicalId)) {
+        canonicalToMergedIds.set(canonicalId, new Set<number>());
+      }
+      canonicalToMergedIds.get(canonicalId)!.add(id);
+    }
+
+    for (const [canonicalId, ratingObj] of ratingsMap.entries()) {
+      const mergedIdsSet = canonicalToMergedIds.get(canonicalId);
+      if (mergedIdsSet && mergedIdsSet.size > 1) {
+        ratingObj.merged_ids = Array.from(mergedIdsSet).sort((a, b) => a - b);
+      }
+    }
+
     return ratingsMap;
   }
 
