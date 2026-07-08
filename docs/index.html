@@ -605,7 +605,7 @@
           const longMatchDate = longDateFormatter.format(dateObj);
 
           const civHtml = (m.civ && m.civ !== 'Unknown') 
-            ? `<span class="civ-badge" style="background: rgba(196, 169, 106, 0.12); color: var(--text-gold); border: 1px solid rgba(196, 169, 106, 0.25); border-radius: 4px; padding: 1px 5px; font-size: 0.72rem; font-weight: 500; margin-left: 6px;">⚔️&nbsp;${escapeHtml(m.civ)}</span>`
+            ? `<span class="civ-badge" style="background: rgba(196, 169, 106, 0.12); color: var(--text-gold); border: 1px solid rgba(196, 169, 106, 0.25); border-radius: 4px; padding: 1px 5px; font-size: 0.72rem; font-weight: 500; margin-left: 6px; display: inline-block; vertical-align: middle; line-height: 1;">⚔️&nbsp;${escapeHtml(m.civ)}</span>`
             : '';
 
           const teammatesList = Array.isArray(m.teammates) && m.teammates.length > 0 
@@ -620,18 +620,16 @@
             ? `<div class="timeline-rating-range">Team: <strong>${m.teamAvgElo}</strong> vs Opp: <strong>${m.opponentAvgElo}</strong></div>`
             : `<div class="timeline-rating-range">vs Opp: <strong>${m.opponentAvgElo}</strong></div>`;
           
-          const mapDisplay = (m.mapname && m.mapname.toLowerCase() !== 'my map') 
-            ? m.mapname 
-            : 'Custom Map';
+          const hasRealMap = m.mapname && m.mapname.toLowerCase() !== 'my map' && m.mapname.toLowerCase() !== 'custom map';
+          const mapHtml = hasRealMap ? ` • Map: ${escapeHtml(m.mapname)}` : '';
 
           return `
             <div class="timeline-card" style="align-items: flex-start;" title="ELO change: ${sign}${m.eloChange} (Opponent Avg ELO: ${m.opponentAvgElo})">
               <div class="timeline-left">
                 <div class="timeline-map">
                   ${escapeHtml(m.description || 'Lobby Match')}
-                  ${civHtml}
                 </div>
-                <div class="timeline-meta"><span title="${escapeHtml(longMatchDate)}" style="border-bottom: 1px dashed rgba(255,255,255,0.25); cursor: help;">${matchDate}</span> • Map: ${escapeHtml(mapDisplay)}</div>
+                <div class="timeline-meta"><span title="${escapeHtml(longMatchDate)}" style="border-bottom: 1px dashed rgba(255,255,255,0.25); cursor: help;">${matchDate}</span>${mapHtml}${civHtml}</div>
                 ${teammatesList}
                 ${opponentsList}
               </div>
