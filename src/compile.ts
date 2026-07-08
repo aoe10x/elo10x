@@ -190,7 +190,8 @@ async function main() {
   const playersDir = path.join(outputDir, 'data', 'players');
   await fs.mkdir(playersDir, { recursive: true });
 
-  const updatedAt = Date.now();
+  const lastMatchTime = matches.reduce((max, m) => Math.max(max, m.startgametime || 0), 0);
+  const updatedAt = lastMatchTime > 0 ? lastMatchTime * 1000 : Date.now();
 
   // Helper to compile one page
   async function compilePage(
