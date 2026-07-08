@@ -7,6 +7,7 @@ test('EloCalculator - Strict 4v4 Match Calculation', () => {
   const calculator = new EloCalculator({
     defaultRating: 1000,
     kFactor: 32,
+    enablePlacementKDecay: false,
     minGamesForLeaderboard: 1
   });
 
@@ -52,6 +53,7 @@ test('EloCalculator - Rejects Non-4v4 Matches', () => {
   const calculator = new EloCalculator({
     defaultRating: 1000,
     kFactor: 32,
+    enablePlacementKDecay: false,
     minGamesForLeaderboard: 1
   });
 
@@ -79,6 +81,7 @@ test('EloCalculator - Rejects Team Reconstruction Cases', () => {
   const calculator = new EloCalculator({
     defaultRating: 1000,
     kFactor: 32,
+    enablePlacementKDecay: false,
     minGamesForLeaderboard: 1
   });
 
@@ -110,6 +113,7 @@ test('EloCalculator - Accepts Legacy Loss Code 2', () => {
   const calculator = new EloCalculator({
     defaultRating: 1000,
     kFactor: 32,
+    enablePlacementKDecay: false,
     minGamesForLeaderboard: 1
   });
 
@@ -149,6 +153,7 @@ test('EloCalculator - Filtering and Sorting', () => {
   const calculator = new EloCalculator({
     defaultRating: 1000,
     kFactor: 32,
+    enablePlacementKDecay: false,
     minGamesForLeaderboard: 2
   });
 
@@ -193,6 +198,7 @@ test('EloCalculator - Records ratingHistory chronologically', () => {
   const calculator = new EloCalculator({
     defaultRating: 1000,
     kFactor: 32,
+    enablePlacementKDecay: false,
     minGamesForLeaderboard: 1
   });
 
@@ -251,6 +257,7 @@ test('EloCalculator - DE Algorithm 3 (Individual Elo vs Opposing Team Average)',
   const calculator = new EloCalculator({
     defaultRating: 1000,
     kFactor: 32,
+    enablePlacementKDecay: false,
     minGamesForLeaderboard: 1
   });
 
@@ -327,4 +334,46 @@ test('EloCalculator - DE Algorithm 3 (Individual Elo vs Opposing Team Average)',
   const p9 = ratingsMap.get(9);
   assert.ok(p9);
   assert.strictEqual(p9.rating, 1016);
+});
+
+test('EloCalculator - Placement matches K-factor linear decay', () => {
+  const calculator = new EloCalculator({
+    defaultRating: 1000,
+    kFactor: 32,
+    enablePlacementKDecay: true,
+    minGamesForLeaderboard: 1
+  });
+
+  const matches: Match[] = [
+    {
+      id: 1,
+      mapname: 'arabia',
+      maxplayers: 8,
+      matchtype_id: 8,
+      description: '10x Match 1',
+      startgametime: 1700000000,
+      completiontime: 1700001000,
+      players: [
+        { profile_id: 1, teamid: 1, resulttype: 1, race_id: 1, alias: 'A1' },
+        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 2, alias: 'A2' },
+        { profile_id: 3, teamid: 1, resulttype: 1, race_id: 3, alias: 'A3' },
+        { profile_id: 4, teamid: 1, resulttype: 1, race_id: 4, alias: 'A4' },
+        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+      ]
+    }
+  ];
+
+  const ratingsMap = calculator.calculate(matches);
+  const p1 = ratingsMap.get(1);
+  assert.ok(p1);
+  // Game 1: n = 1.
+  // playerK = 100 - 1 * (100 - 32) / 21 = 96.76.
+  // expected outcome = 0.5.
+  // delta = 96.76 * (1 - 0.5) = 48.38 -> rounds to 48.
+  // new rating = 1000 + 48 = 1048.
+  assert.strictEqual(p1.rating, 1048);
+  assert.strictEqual(p1.ratingHistory?.[1], 1048);
 });
