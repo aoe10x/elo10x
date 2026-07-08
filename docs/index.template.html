@@ -515,6 +515,7 @@
       const ts = parseInt(td.getAttribute('data-timestamp'), 10);
       if (ts) {
         td.textContent = timeAgo(ts);
+        td.setAttribute('title', new Date(ts * 1000).toLocaleString());
       }
     });
 
