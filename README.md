@@ -24,6 +24,16 @@ pnpm run crawl -- --limit 50
 pnpm run crawl -- --limit 50 --months 6
 ```
 
+##### Smart Seeding & Crawl Design
+To run efficiently within a periodic GitHub Actions workflow (running every 4 hours), the Relic API crawler uses a multi-tiered queue strategy:
+*   **Live Seeding**: Fetches active lobbies and live games from `aoe10x.com` APIs, queuing currently active players first for maximum freshness.
+*   **Active Player Seeding**: Appends the most active players in the database (top active from the last 3 days and 30 days) to keep active ranking brackets updated.
+*   **Background Refresh**: Appends the 20 oldest/never-crawled profiles in the database to the back of the queue.
+*   **18-hour Skip Filter**: Before invoking the Relic API for a player, the crawler checks if they have been crawled in the last 18 hours. If so, they are skipped cost-free. This prevents highly active players from exhausting the session quota, allowing the remaining capacity to cycle down and refresh background profiles.
+*   **Snowball Discovery**: Whenever a new 10x match is discovered, all 8 players in that match are appended to the queue to trace their histories.
+
+With a default limit of 50 crawled players per session running every 4 hours (completing 300 crawls per day), this cycle automatically refreshes our entire active database of ~1,800 players once every 6 days, while keeping live/active players updated daily.
+
 #### B. AoE2Insights Chrome Scraper (Historical Backfill)
 Backfills deep match history for players directly from AoE2Insights. This requires having a Chrome instance open with remote debugging enabled on port `9222`:
 ```bash
