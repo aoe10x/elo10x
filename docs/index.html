@@ -221,7 +221,7 @@
         if (currentMode === 'pure') filename = 'leaderboard_pure.json';
         if (currentMode === 'combined') filename = 'leaderboard_combined.json';
         
-        const response = await fetch(`./data/${filename}?t=` + Date.now());
+        const response = await fetch(`./data/${filename}`);
         if (!response.ok) {
           throw new Error(`Leaderboard API (${filename}) returned status: ` + response.status);
         }
@@ -279,7 +279,11 @@
       }
 
       const date = new Date(summaryStats.updatedAt);
-      elements.statUpdated.textContent = date.toLocaleDateString() + '\n' + date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      elements.statUpdated.textContent = timeAgo(Math.floor(summaryStats.updatedAt / 1000));
+      elements.statUpdated.setAttribute('title', longDateFormatter.format(date));
+      elements.statUpdated.style.cursor = 'help';
+      elements.statUpdated.style.borderBottom = '1px dashed rgba(255, 255, 255, 0.2)';
+      elements.statUpdated.style.display = 'inline-block';
     }
 
     function renderLeaderboard() {
