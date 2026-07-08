@@ -190,10 +190,21 @@ async function main() {
   // Decorate leaderboard entries with country metadata from database profiles
   const populateCountries = (list: EloRanking[]) => {
     for (const p of list) {
-      const profile = db.getProfile(p.profile_id);
-      if (profile?.country) {
-        p.country = profile.country;
+      const ids = p.merged_ids && p.merged_ids.length > 0 ? p.merged_ids : [p.profile_id];
+      let resolvedCountry = '';
+      for (const id of ids) {
+        const profile = db.getProfile(id);
+        const country = profile?.country;
+        if (country && country !== 'Unknown' && country.trim() !== '') {
+          resolvedCountry = country;
+          break;
+        }
       }
+      if (!resolvedCountry) {
+        const canonicalProfile = db.getProfile(p.profile_id);
+        resolvedCountry = canonicalProfile?.country || 'Unknown';
+      }
+      p.country = resolvedCountry;
     }
   };
   populateCountries(leaderboard3x);
