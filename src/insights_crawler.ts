@@ -13,6 +13,16 @@ export class InsightsCrawler {
    * via the Chrome DevTools Protocol.
    */
   async scrapePlayerHistory(profileId: number, startPage: number = 1, endPage: number = 20): Promise<{ scraped: number; added: number }> {
+    const manifest = this.db.getPlayerManifest(profileId);
+    const newestMatchId = manifest?.insights?.newest_match_id || 0;
+    const oldestMatchId = manifest?.insights?.oldest_match_id || 0;
+    const hasReachedStart = manifest?.insights?.has_reached_start || false;
+
+    let actualEndPage = endPage;
+    if (hasReachedStart) {
+      actualEndPage = 1;
+    }
+
     console.log(`Connecting to local Chrome instance on port 9222...`);
     
     let wsUrl: string | null = null;
@@ -124,16 +134,18 @@ export class InsightsCrawler {
     console.log(`Opening WebSocket connection to Chrome tab debugger: ${wsUrl}`);
     const ws = new WebSocket(wsUrl);
 
-    const scrapedMatches = await new Promise<any[]>((resolve, reject) => {
+    const resultValue = await new Promise<{ matches: any[], hitDepthLimit: boolean }>((resolve, reject) => {
       ws.onopen = () => {
-        console.log(`Debugger connection established. Injecting scraper script for pages ${startPage} to ${endPage}...`);
+        console.log(`Debugger connection established. Injecting scraper script for pages ${startPage} to ${actualEndPage}...`);
         
         // Construct the JS script to evaluate
         const scriptExpression = `
           (async () => {
             const start = ${startPage};
-            const end = ${endPage};
+            const end = ${actualEndPage};
             const targetProfile = ${profileId};
+            const newestMatchId = ${newestMatchId};
+            const oldestMatchId = ${oldestMatchId};
             const CIV_MAP = {
               "britons": 1, "franks": 2, "goths": 3, "teutons": 4, "japanese": 5, "chinese": 6, 
               "byzantines": 7, "persians": 8, "saracens": 9, "turks": 10, "vikings": 11, "mongols": 12, 
@@ -150,22 +162,41 @@ export class InsightsCrawler {
 
             const results = [];
             const delay = ms => new Promise(res => setTimeout(res, ms));
+            let hitDepthLimit = true;
 
             for (let page = start; page <= end; page++) {
               try {
                 const url = '/user/' + targetProfile + '/matches/?page=' + page;
                 const res = await fetch(url);
-                if (!res.ok) continue;
+                if (!res.ok) {
+                  hitDepthLimit = false;
+                  break;
+                }
                 const html = await res.text();
                 const doc = new DOMParser().parseFromString(html, 'text/html');
                 
-                doc.querySelectorAll('.match-tile').forEach(tile => {
+                const tiles = doc.querySelectorAll('.match-tile');
+                if (tiles.length === 0) {
+                  hitDepthLimit = false;
+                  break;
+                }
+
+                let hitBoundary = false;
+                tiles.forEach(tile => {
+                  if (hitBoundary) return;
                   try {
                     const matchLink = tile.querySelector('header.match-title a');
                     if (!matchLink) return;
                     const matchId = parseInt(matchLink.href.match(/\\/match\\/(\\d+)\\//)[1], 10);
+
+                    // Check for boundary overlap
+                    if (newestMatchId > 0 && matchId <= newestMatchId && matchId >= oldestMatchId) {
+                      hitBoundary = true;
+                      hitDepthLimit = false;
+                      return;
+                    }
+
                     const title = matchLink.innerText.trim();
-                    
                     const mapEl = tile.querySelector('.match-map');
                     const mapname = mapEl ? mapEl.innerText.replace('Custom', '').trim() : '';
                     
@@ -224,16 +255,19 @@ export class InsightsCrawler {
                       players,
                       source: 'aoe2insights_scrape'
                     });
-                  } catch (e) {
-                    // Ignore
-                  }
+                  } catch (e) { }
                 });
+
+                if (hitBoundary) {
+                  break;
+                }
                 await delay(250);
               } catch (e) {
-                // Ignore page fetch errors
+                hitDepthLimit = false;
+                break;
               }
             }
-            return results;
+            return { matches: results, hitDepthLimit };
           })()
         `;
 
@@ -260,7 +294,7 @@ export class InsightsCrawler {
             } else if (response.result?.exceptionDetails) {
               reject(new Error(`JS evaluation threw an exception: ${response.result.exceptionDetails.exception.description}`));
             } else {
-              resolve(response.result?.result?.value || []);
+              resolve(response.result?.result?.value || { matches: [], hitDepthLimit: false });
             }
           }
         } catch (e) {
@@ -276,6 +310,9 @@ export class InsightsCrawler {
         // Closed cleanly or after error
       };
     });
+
+    const scrapedMatches = resultValue.matches || [];
+    const hitDepthLimit = resultValue.hitDepthLimit;
 
     console.log(`Scrape finished. Processing and merging ${scrapedMatches.length} raw matches...`);
 
@@ -340,9 +377,29 @@ export class InsightsCrawler {
       addedCount++;
     }
 
-    if (addedCount > 0) {
-      await this.db.save();
+    // Re-query boundaries from the database to update manifest
+    const playerMatches = this.db.getMatches()
+      .filter(m => m.players.some(p => p.profile_id === profileId));
+
+    let playerNewestId = newestMatchId;
+    let playerOldestId = oldestMatchId;
+
+    if (playerMatches.length > 0) {
+      const ids = playerMatches.map(m => m.id);
+      playerNewestId = Math.max(...ids);
+      playerOldestId = Math.min(...ids);
     }
+
+    const reachedStart = hasReachedStart || !hitDepthLimit;
+
+    this.db.updatePlayerManifest(profileId, 'insights', {
+      last_crawled_at: Math.round(Date.now() / 1000),
+      newest_match_id: playerNewestId,
+      oldest_match_id: playerOldestId,
+      has_reached_start: reachedStart
+    });
+
+    await this.db.save();
 
     return { scraped: filtered10xCount, added: addedCount };
   }

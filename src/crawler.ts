@@ -175,6 +175,9 @@ export class MatchCrawler {
 
       const data = await response.json() as any;
       if (!data.matchHistoryStats || !Array.isArray(data.matchHistoryStats)) {
+        this.db.updatePlayerManifest(profileId, 'relic', {
+          last_crawled_at: Math.round(Date.now() / 1000)
+        });
         this.db.markAsCrawled(profileId);
         return true;
       }
@@ -265,6 +268,18 @@ export class MatchCrawler {
       }
 
       console.log(`Analyzed ${matchCount} matches. Found ${new10xMatchCount} new 10x matches.`);
+
+      const playerMatches = this.db.getMatches()
+        .filter(m => m.players.some(p => p.profile_id === profileId));
+      let playerNewestId = 0;
+      if (playerMatches.length > 0) {
+        playerNewestId = Math.max(...playerMatches.map(m => m.id));
+      }
+      this.db.updatePlayerManifest(profileId, 'relic', {
+        last_crawled_at: Math.round(Date.now() / 1000),
+        newest_match_id: playerNewestId
+      });
+
       this.db.markAsCrawled(profileId);
       return true;
     } catch (err: any) {
