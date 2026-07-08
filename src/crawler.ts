@@ -336,7 +336,13 @@ export class MatchCrawler {
       const profileId = this.db.popFromCrawlQueue();
       if (!profileId) break;
 
-      // Skip if crawled in the last 18 hours (prevents redundant crawls in frequent cron intervals)
+      // Skip if crawled in the last 18 hours.
+      // Rationale: Since the GitHub Action runs every 4 hours, seeding the top active players 
+      // on every run would normally waste our 50-player crawl quota on the exact same players 
+      // over and over. By enforcing an 18-hour skip window:
+      //   1. Active players are crawled at most once per day.
+      //   2. Skipped active players are popped from the queue immediately (cost-free), allowing 
+      //      the remaining session quota to bubble down and refresh the "oldest crawled" players.
       if (this.db.isCrawled(profileId, 18 * 60 * 60 * 1000)) {
         continue;
       }
