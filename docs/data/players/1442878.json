@@ -1,12 +1,12 @@
 {
   "profile_id": 1442878,
   "alias": "Goose",
-  "rating": 1047,
+  "rating": 1031,
   "wins": 30,
-  "losses": 27,
-  "gamesCount": 57,
-  "winRate": 53,
-  "lastPlayedAt": 1783343935,
+  "losses": 28,
+  "gamesCount": 58,
+  "winRate": 52,
+  "lastPlayedAt": 1783609127,
   "country": "nl",
   "merged_ids": [
     1442878,
@@ -70,33 +70,10 @@
     1033,
     1049,
     1063,
-    1047
+    1047,
+    1031
   ],
   "recentMatches": [
-    {
-      "matchId": 475611959,
-      "description": "BAMBOO 10x3xtech",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1778027040,
-      "outcome": "loss",
-      "preRating": 1045,
-      "postRating": 1031,
-      "eloChange": -14,
-      "civ": "Unknown",
-      "teamAvgElo": 960,
-      "opponentAvgElo": 1089,
-      "teammates": [
-        "gvv.vadim",
-        "Master.Ji.ro.714",
-        "BaldAfro"
-      ],
-      "opponents": [
-        "Lumedge",
-        "iamatthe.hell",
-        "Manba Out",
-        "TheRiceMan"
-      ]
-    },
     {
       "matchId": 475625854,
       "description": "3x 10x bamboo - random civ - no noobs",
@@ -551,6 +528,30 @@
         "Dayman",
         "yxsko93",
         "紫蝶黄蜂俱有情"
+      ]
+    },
+    {
+      "matchId": 491098335,
+      "description": "10x shared 3x tech bamboo nothing",
+      "mapname": "my map",
+      "timestamp": 1783609127,
+      "outcome": "loss",
+      "preRating": 1047,
+      "postRating": 1031,
+      "eloChange": -16,
+      "civ": "Armenians",
+      "teamAvgElo": 1057,
+      "opponentAvgElo": 1055,
+      "teammates": [
+        "kekekeya",
+        "fugo520",
+        "wurst456"
+      ],
+      "opponents": [
+        "Texas Red",
+        "S3dated",
+        "G",
+        "BigAl"
       ]
     }
   ]
