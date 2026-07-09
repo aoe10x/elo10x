@@ -1,12 +1,14 @@
 import * as assert from 'node:assert';
 import { test } from 'node:test';
 import { EloCalculator } from '../src/elo.ts';
-import type { Match } from '../src/types.ts';
+import type { Match, EloRanking, PlayerProfile } from '../src/types.ts';
+import { resolveMergedCountry } from '../src/profile_utils.ts';
 
 test('EloCalculator - Strict 4v4 Match Calculation', () => {
   const calculator = new EloCalculator({
     defaultRating: 1000,
     kFactor: 32,
+    enablePlacementKDecay: false,
     minGamesForLeaderboard: 1
   });
 
@@ -52,6 +54,7 @@ test('EloCalculator - Rejects Non-4v4 Matches', () => {
   const calculator = new EloCalculator({
     defaultRating: 1000,
     kFactor: 32,
+    enablePlacementKDecay: false,
     minGamesForLeaderboard: 1
   });
 
@@ -79,6 +82,7 @@ test('EloCalculator - Rejects Team Reconstruction Cases', () => {
   const calculator = new EloCalculator({
     defaultRating: 1000,
     kFactor: 32,
+    enablePlacementKDecay: false,
     minGamesForLeaderboard: 1
   });
 
@@ -110,6 +114,7 @@ test('EloCalculator - Accepts Legacy Loss Code 2', () => {
   const calculator = new EloCalculator({
     defaultRating: 1000,
     kFactor: 32,
+    enablePlacementKDecay: false,
     minGamesForLeaderboard: 1
   });
 
@@ -149,6 +154,7 @@ test('EloCalculator - Filtering and Sorting', () => {
   const calculator = new EloCalculator({
     defaultRating: 1000,
     kFactor: 32,
+    enablePlacementKDecay: false,
     minGamesForLeaderboard: 2
   });
 
@@ -193,6 +199,7 @@ test('EloCalculator - Records ratingHistory chronologically', () => {
   const calculator = new EloCalculator({
     defaultRating: 1000,
     kFactor: 32,
+    enablePlacementKDecay: false,
     minGamesForLeaderboard: 1
   });
 
@@ -251,6 +258,7 @@ test('EloCalculator - DE Algorithm 3 (Individual Elo vs Opposing Team Average)',
   const calculator = new EloCalculator({
     defaultRating: 1000,
     kFactor: 32,
+    enablePlacementKDecay: false,
     minGamesForLeaderboard: 1
   });
 
@@ -327,4 +335,346 @@ test('EloCalculator - DE Algorithm 3 (Individual Elo vs Opposing Team Average)',
   const p9 = ratingsMap.get(9);
   assert.ok(p9);
   assert.strictEqual(p9.rating, 1016);
+});
+
+test('EloCalculator - Placement matches K-factor linear decay', () => {
+  const calculator = new EloCalculator({
+    defaultRating: 1000,
+    kFactor: 32,
+    enablePlacementKDecay: true,
+    minGamesForLeaderboard: 1
+  });
+
+  const matches: Match[] = [
+    {
+      id: 1,
+      mapname: 'arabia',
+      maxplayers: 8,
+      matchtype_id: 8,
+      description: '10x Match 1',
+      startgametime: 1700000000,
+      completiontime: 1700001000,
+      players: [
+        { profile_id: 1, teamid: 1, resulttype: 1, race_id: 1, alias: 'A1' },
+        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 2, alias: 'A2' },
+        { profile_id: 3, teamid: 1, resulttype: 1, race_id: 3, alias: 'A3' },
+        { profile_id: 4, teamid: 1, resulttype: 1, race_id: 4, alias: 'A4' },
+        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+      ]
+    }
+  ];
+
+  const ratingsMap = calculator.calculate(matches);
+  const p1 = ratingsMap.get(1);
+  assert.ok(p1);
+  // Game 1: n = 1.
+  // playerK = 100 - 1 * (100 - 32) / 21 = 96.76.
+  // expected outcome = 0.5.
+  // delta = 96.76 * (1 - 0.5) = 48.38 -> rounds to 48.
+  // new rating = 1000 + 48 = 1048.
+  assert.strictEqual(p1.rating, 1048);
+  assert.strictEqual(p1.ratingHistory?.[1], 1048);
+});
+
+test('EloCalculator - Step-by-step K-factor decay over 22 games', () => {
+  const calculator = new EloCalculator({
+    defaultRating: 1000,
+    kFactor: 32,
+    enablePlacementKDecay: true,
+    minGamesForLeaderboard: 1
+  });
+
+  // 1. Direct unit verification of getPlayerKFactor formula
+  const getKFactor = (gamesCount: number): number => {
+    return (calculator as any).getPlayerKFactor(gamesCount);
+  };
+
+  let previousK = getKFactor(0); // game 1: gamesCount = 0
+  // Verify starting K-factor for game 1 matches expectations
+  assert.strictEqual(previousK, 100 - 1 * (100 - 32) / 21); // ~96.7619
+
+  // Verify K-factor scales down step-by-step from game 1 to game 21
+  for (let game = 2; game <= 21; game++) {
+    const gamesCount = game - 1;
+    const currentK = getKFactor(gamesCount);
+    assert.ok(currentK < previousK, `K-factor for game ${game} (${currentK}) should be less than game ${game - 1} (${previousK})`);
+    previousK = currentK;
+  }
+
+  // Verify that game 21 (gamesCount = 20) is exactly the base K-factor (32)
+  const kGame21 = getKFactor(20);
+  assert.strictEqual(kGame21, 32);
+
+  // Verify that game 22 (gamesCount = 21) remains exactly at 32
+  const kGame22 = getKFactor(21);
+  assert.strictEqual(kGame22, 32);
+
+  // 2. Integration verification with simulated matches
+  const player1ProfileId = 1;
+  const matches: Match[] = [];
+  
+  // Helper to construct a match where Player 1 wins against opponent team of 1000 avg Elo
+  const createMatch = (id: number, player1Won: boolean): Match => {
+    const t1Players = [
+      { profile_id: player1ProfileId, teamid: 1, resulttype: player1Won ? 1 : 0, race_id: 1, alias: 'A1' },
+      { profile_id: 100 + id * 10 + 1, teamid: 1, resulttype: player1Won ? 1 : 0, race_id: 2, alias: `Teammate1_${id}` },
+      { profile_id: 100 + id * 10 + 2, teamid: 1, resulttype: player1Won ? 1 : 0, race_id: 3, alias: `Teammate2_${id}` },
+      { profile_id: 100 + id * 10 + 3, teamid: 1, resulttype: player1Won ? 1 : 0, race_id: 4, alias: `Teammate3_${id}` }
+    ];
+    const t2Players = [
+      { profile_id: 100 + id * 10 + 4, teamid: 2, resulttype: player1Won ? 0 : 1, race_id: 5, alias: `Opponent1_${id}` },
+      { profile_id: 100 + id * 10 + 5, teamid: 2, resulttype: player1Won ? 0 : 1, race_id: 6, alias: `Opponent2_${id}` },
+      { profile_id: 100 + id * 10 + 7, teamid: 2, resulttype: player1Won ? 0 : 1, race_id: 8, alias: `Opponent4_${id}` },
+      { profile_id: 100 + id * 10 + 6, teamid: 2, resulttype: player1Won ? 0 : 1, race_id: 7, alias: `Opponent3_${id}` }
+    ];
+    return {
+      id,
+      mapname: 'arabia',
+      maxplayers: 8,
+      matchtype_id: 8,
+      description: `Match ${id}`,
+      startgametime: 1700000000 + id * 1000,
+      completiontime: 1700000000 + id * 1000 + 500,
+      players: [...t1Players, ...t2Players]
+    };
+  };
+
+  for (let id = 1; id <= 22; id++) {
+    matches.push(createMatch(id, true));
+  }
+
+  const ratingsMap = calculator.calculate(matches);
+  const player1 = ratingsMap.get(player1ProfileId);
+  assert.ok(player1);
+  assert.strictEqual(player1.gamesCount, 22);
+  assert.ok(player1.ratingHistory);
+  assert.strictEqual(player1.ratingHistory.length, 23); // 1 (default) + 22 matches
+
+  // Verify step-by-step ELO progression
+  // Let's re-calculate rating step-by-step using the same logic to verify the history matches
+  let currentRating = 1000;
+  for (let game = 1; game <= 22; game++) {
+    const gamesCount = game - 1;
+    const playerK = getKFactor(gamesCount);
+    // Opponent average is always 1000 since all opponents have only played 1 match and start at 1000 ELO.
+    const opponentAvg = 1000;
+    const expected = 1 / (1 + Math.pow(10, (opponentAvg - currentRating) / 400));
+    const delta = playerK * (1 - expected);
+    currentRating = Math.round(currentRating + delta);
+
+    assert.strictEqual(player1.ratingHistory[game], currentRating, `Rating after game ${game} should match the expected decay calculation`);
+  }
+});
+
+test('EloCalculator - Automagically merges players sharing identical final alias', () => {
+  const calculator = new EloCalculator({
+    defaultRating: 1000,
+    kFactor: 32,
+    enablePlacementKDecay: false, // Turn off decay to keep calculations simple (16 ELO change per game)
+    minGamesForLeaderboard: 1
+  });
+
+  const matches: Match[] = [
+    {
+      id: 1,
+      mapname: 'arabia',
+      maxplayers: 8,
+      matchtype_id: 8,
+      description: 'Match 1',
+      startgametime: 1700000000,
+      completiontime: 1700001000,
+      players: [
+        { profile_id: 1, teamid: 1, resulttype: 1, race_id: 1, alias: 'SameName' },
+        { profile_id: 11, teamid: 1, resulttype: 1, race_id: 2, alias: 'A2' },
+        { profile_id: 12, teamid: 1, resulttype: 1, race_id: 3, alias: 'A3' },
+        { profile_id: 13, teamid: 1, resulttype: 1, race_id: 4, alias: 'A4' },
+        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+      ]
+    },
+    {
+      id: 2,
+      mapname: 'arabia',
+      maxplayers: 8,
+      matchtype_id: 8,
+      description: 'Match 2',
+      startgametime: 1700002000,
+      completiontime: 1700003000,
+      players: [
+        // Different profile ID (2), but identical alias ('SameName').
+        // This player plays 2 matches, so this profile ID has more games and should be selected as the canonical ID.
+        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 1, alias: 'SameName' },
+        { profile_id: 14, teamid: 1, resulttype: 1, race_id: 2, alias: 'A5' },
+        { profile_id: 15, teamid: 1, resulttype: 1, race_id: 3, alias: 'A6' },
+        { profile_id: 16, teamid: 1, resulttype: 1, race_id: 4, alias: 'A7' },
+        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+      ]
+    },
+    {
+      id: 3,
+      mapname: 'arabia',
+      maxplayers: 8,
+      matchtype_id: 8,
+      description: 'Match 3',
+      startgametime: 1700004000,
+      completiontime: 1700005000,
+      players: [
+        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 1, alias: 'SameName' },
+        { profile_id: 17, teamid: 1, resulttype: 1, race_id: 2, alias: 'A8' },
+        { profile_id: 18, teamid: 1, resulttype: 1, race_id: 3, alias: 'A9' },
+        { profile_id: 19, teamid: 1, resulttype: 1, race_id: 4, alias: 'A10' },
+        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+      ]
+    }
+  ];
+
+  const ratingsMap = calculator.calculate(matches);
+
+  // Since profile ID 2 played 2 matches and profile ID 1 played 1 match,
+  // profile ID 2 should be the canonical ID, and profile ID 1 should be redirected to it.
+  
+  // Profile ID 1 should NOT exist in the final map because it was merged into ID 2
+  assert.strictEqual(ratingsMap.has(1), false);
+  
+  // Profile ID 2 should exist and have exactly 3 wins, 3 games count
+  const mergedPlayer = ratingsMap.get(2);
+  assert.ok(mergedPlayer);
+  assert.strictEqual(mergedPlayer.gamesCount, 3);
+  assert.strictEqual(mergedPlayer.wins, 3);
+  // Verified ratings progression with cascading opponent rating decay:
+  // Match 1: 1000 -> 1016 (Opponent Avg 1000, expected 0.5, delta +16)
+  // Match 2: 1016 -> 1031 (Opponent Avg 984, expected 0.546, delta +15)
+  // Match 3: 1031 -> 1044 (Opponent Avg 969, expected 0.588, delta +13)
+  assert.strictEqual(mergedPlayer.rating, 1044);
+  assert.deepStrictEqual(mergedPlayer.ratingHistory, [1000, 1016, 1031, 1044]);
+});
+
+test('EloCalculator - selects the most recently played profile ID as canonical', () => {
+  const calculator = new EloCalculator({
+    defaultRating: 1000,
+    kFactor: 32,
+    enablePlacementKDecay: false,
+    minGamesForLeaderboard: 1
+  });
+
+  const matches: Match[] = [
+    {
+      id: 1,
+      mapname: 'arabia',
+      maxplayers: 8,
+      matchtype_id: 8,
+      description: 'Match 1',
+      startgametime: 1700000000,
+      completiontime: 1700001000,
+      players: [
+        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 1, alias: 'SameName' },
+        { profile_id: 11, teamid: 1, resulttype: 1, race_id: 2, alias: 'A2' },
+        { profile_id: 12, teamid: 1, resulttype: 1, race_id: 3, alias: 'A3' },
+        { profile_id: 13, teamid: 1, resulttype: 1, race_id: 4, alias: 'A4' },
+        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+      ]
+    },
+    {
+      id: 2,
+      mapname: 'arabia',
+      maxplayers: 8,
+      matchtype_id: 8,
+      description: 'Match 2',
+      startgametime: 1700002000,
+      completiontime: 1700003000,
+      players: [
+        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 1, alias: 'SameName' },
+        { profile_id: 14, teamid: 1, resulttype: 1, race_id: 2, alias: 'A5' },
+        { profile_id: 15, teamid: 1, resulttype: 1, race_id: 3, alias: 'A6' },
+        { profile_id: 16, teamid: 1, resulttype: 1, race_id: 4, alias: 'A7' },
+        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+      ]
+    },
+    {
+      id: 3,
+      mapname: 'arabia',
+      maxplayers: 8,
+      matchtype_id: 8,
+      description: 'Match 3',
+      startgametime: 1700004000,
+      completiontime: 1700005000,
+      players: [
+        { profile_id: 1, teamid: 1, resulttype: 1, race_id: 1, alias: 'SameName' },
+        { profile_id: 17, teamid: 1, resulttype: 1, race_id: 2, alias: 'A8' },
+        { profile_id: 18, teamid: 1, resulttype: 1, race_id: 3, alias: 'A9' },
+        { profile_id: 19, teamid: 1, resulttype: 1, race_id: 4, alias: 'A10' },
+        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+      ]
+    }
+  ];
+
+  const ratingsMap = calculator.calculate(matches);
+
+  // Profile ID 2 should NOT exist in the final map
+  assert.strictEqual(ratingsMap.has(2), false);
+
+  // Profile ID 1 should exist
+  const canonicalPlayer = ratingsMap.get(1);
+  assert.ok(canonicalPlayer);
+  assert.strictEqual(canonicalPlayer.gamesCount, 3);
+  assert.strictEqual(canonicalPlayer.wins, 3);
+});
+
+test('resolveMergedCountry - selects canonical country if valid', () => {
+  const p: Partial<EloRanking> = {
+    profile_id: 1,
+    merged_ids: [1, 2]
+  };
+  const profiles: Record<number, Partial<PlayerProfile>> = {
+    1: { country: 'hk' },
+    2: { country: 'cn' }
+  };
+  const country = resolveMergedCountry(p as EloRanking, id => profiles[id]);
+  assert.strictEqual(country, 'hk');
+});
+
+test('resolveMergedCountry - falls back to other merged profile country if canonical is Unknown or empty', () => {
+  const p: Partial<EloRanking> = {
+    profile_id: 1,
+    merged_ids: [1, 2]
+  };
+  const profiles: Record<number, Partial<PlayerProfile>> = {
+    1: { country: 'Unknown' },
+    2: { country: 'hk' }
+  };
+  const country = resolveMergedCountry(p as EloRanking, id => profiles[id]);
+  assert.strictEqual(country, 'hk');
+});
+
+test('resolveMergedCountry - returns Unknown if no profiles have a country code', () => {
+  const p: Partial<EloRanking> = {
+    profile_id: 1,
+    merged_ids: [1, 2]
+  };
+  const profiles: Record<number, Partial<PlayerProfile>> = {
+    1: { country: 'Unknown' },
+    2: {}
+  };
+  const country = resolveMergedCountry(p as EloRanking, id => profiles[id]);
+  assert.strictEqual(country, 'Unknown');
 });
