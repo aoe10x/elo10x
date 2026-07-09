@@ -875,10 +875,21 @@ footer a:hover {
 .timeline-map {
     font-size: 0.95rem;
     font-weight: 600;
-    color: var(--text-light);
+    color: var(--text-gold-light);
     display: flex;
     align-items: center;
     gap: 0.4rem;
+}
+
+.timeline-map a {
+    color: var(--text-gold-light);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.timeline-map a:hover {
+    color: var(--text-gold);
+    text-decoration: underline;
 }
 
 .timeline-meta {

@@ -67769,7 +67769,7 @@
 
           <!-- Column Right: Recent Matches Elo History -->
           <div class="details-col-right">
-            <div class="details-timeline-title">Recent Games Elo History</div>
+            <div class="details-timeline-title">Recent 10x Games</div>
             <div class="modal-timeline" id="timeline-${player.profile_id}"></div>
             <div class="ux-legend">Rating change is based on your Elo vs. the opposing team's average Elo.</div>
           </div>
@@ -67887,7 +67887,7 @@
             <div class="timeline-card" title="Elo change: ${sign}${m.eloChange} (Opponent Avg Elo: ${m.opponentAvgElo})">
               <div class="timeline-left">
                 <div class="timeline-map">
-                  ${escapeHtml(m.description || 'Lobby Match')}
+                  <a href="https://www.aoe2insights.com/match/${m.matchId}/" target="_blank" rel="noopener noreferrer">${escapeHtml(m.description || 'Lobby Match')}</a>
                 </div>
                 <div class="timeline-meta"><span title="${escapeHtml(longMatchDate)}" class="help-tooltip">${matchDate}</span>${mapHtml}${civHtml}</div>
                 ${teammatesList}
