@@ -1,12 +1,12 @@
 {
   "profile_id": 250575,
   "alias": "[RUS-F] Lastman",
-  "rating": 1082,
-  "wins": 26,
-  "losses": 17,
-  "gamesCount": 43,
+  "rating": 1077,
+  "wins": 27,
+  "losses": 18,
+  "gamesCount": 45,
   "winRate": 60,
-  "lastPlayedAt": 1780634460,
+  "lastPlayedAt": 1783629699,
   "country": "ru",
   "merged_ids": [],
   "ratingHistory": [
@@ -53,57 +53,11 @@
     1073,
     1087,
     1068,
-    1082
+    1082,
+    1063,
+    1077
   ],
   "recentMatches": [
-    {
-      "matchId": 375559070,
-      "description": "10x civ bonus shared 4v4",
-      "mapname": "Megarandomnomad",
-      "timestamp": 1740889680,
-      "outcome": "win",
-      "preRating": 1110,
-      "postRating": 1121,
-      "eloChange": 11,
-      "civ": "Unknown",
-      "teamAvgElo": 1005,
-      "opponentAvgElo": 995,
-      "teammates": [
-        "VoidStar",
-        "Miwa",
-        "Vermilion"
-      ],
-      "opponents": [
-        "RagedTugboat493",
-        "liehuo22",
-        "Mad08jojo",
-        "theshyforest"
-      ]
-    },
-    {
-      "matchId": 375569289,
-      "description": "10x civ bonus shared 4v4",
-      "mapname": "Zn@Lakenomad",
-      "timestamp": 1740891840,
-      "outcome": "win",
-      "preRating": 1121,
-      "postRating": 1132,
-      "eloChange": 11,
-      "civ": "Unknown",
-      "teamAvgElo": 1042,
-      "opponentAvgElo": 1018,
-      "teammates": [
-        "Душеприказчик",
-        "Miwa",
-        "orielavr10"
-      ],
-      "opponents": [
-        "theshyforest",
-        "SchneckeLuchs25",
-        "VforKickAss",
-        "Train simulator ur mom edition"
-      ]
-    },
     {
       "matchId": 375946407,
       "description": "10x civ bonus shared 4v4",
@@ -533,6 +487,54 @@
         "Flip Kun",
         "Emotions are prohibited",
         "RedBullWOLOLO26",
+        "mozu5"
+      ]
+    },
+    {
+      "matchId": 491150598,
+      "description": "4v4 10x civ bonus shared\rsudden death\rsudden death",
+      "mapname": "my map",
+      "timestamp": 1783624692,
+      "outcome": "loss",
+      "preRating": 1082,
+      "postRating": 1063,
+      "eloChange": -19,
+      "civ": "Hindustanis",
+      "teamAvgElo": 1028,
+      "opponentAvgElo": 1016,
+      "teammates": [
+        "FastAttack",
+        "Ru3en",
+        "afrenkel"
+      ],
+      "opponents": [
+        "omnomnomnivore",
+        "Lozzer",
+        "Eduardo_AoE",
+        "dertli"
+      ]
+    },
+    {
+      "matchId": 491166016,
+      "description": "4v4 10x civ bonus shared\rsudden death\rsudden death",
+      "mapname": "my map",
+      "timestamp": 1783629699,
+      "outcome": "win",
+      "preRating": 1063,
+      "postRating": 1077,
+      "eloChange": 14,
+      "civ": "Sicilians",
+      "teamAvgElo": 1047,
+      "opponentAvgElo": 1018,
+      "teammates": [
+        "VforKickAss",
+        "benjamin100",
+        "Cheesewheel24"
+      ],
+      "opponents": [
+        "Lego =]",
+        "omnomnomnivore",
+        "RaptorX",
         "mozu5"
       ]
     }

@@ -1,12 +1,12 @@
 {
   "profile_id": 2559539,
   "alias": "Axila, el Turro",
-  "rating": 894,
+  "rating": 884,
   "wins": 19,
-  "losses": 40,
-  "gamesCount": 59,
+  "losses": 41,
+  "gamesCount": 60,
   "winRate": 32,
-  "lastPlayedAt": 1777942406,
+  "lastPlayedAt": 1783629438,
   "country": "ar",
   "merged_ids": [],
   "ratingHistory": [
@@ -69,33 +69,10 @@
     889,
     881,
     903,
-    894
+    894,
+    884
   ],
   "recentMatches": [
-    {
-      "matchId": 431994574,
-      "description": "amazon tunnel 10x  1200+",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1762750200,
-      "outcome": "loss",
-      "preRating": 879,
-      "postRating": 869,
-      "eloChange": -10,
-      "civ": "Unknown",
-      "teamAvgElo": 964,
-      "opponentAvgElo": 1024,
-      "teammates": [
-        "raphael.foscarini",
-        "Not the letter N",
-        "PL_KOLO"
-      ],
-      "opponents": [
-        "Scandalf",
-        "BearBrown",
-        "Spiz.101",
-        "johnnyboy"
-      ]
-    },
     {
       "matchId": 434065133,
       "description": "BAMBOO 10x **NO BEGINNER",
@@ -550,6 +527,30 @@
         "Myriad",
         "zander zim",
         "AoG_Lotsen"
+      ]
+    },
+    {
+      "matchId": 491166065,
+      "description": "10x 3x bamboo",
+      "mapname": "my map",
+      "timestamp": 1783629438,
+      "outcome": "loss",
+      "preRating": 894,
+      "postRating": 884,
+      "eloChange": -10,
+      "civ": "Burgundians",
+      "teamAvgElo": 999,
+      "opponentAvgElo": 1026,
+      "teammates": [
+        "Mahmut",
+        "Wololo",
+        "r9maximus"
+      ],
+      "opponents": [
+        "Denno037",
+        "NothingAtAll11",
+        "Gladiator",
+        "GuguBot"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 3534712,
   "alias": "Maselia",
-  "rating": 963,
+  "rating": 948,
   "wins": 14,
-  "losses": 26,
-  "gamesCount": 40,
-  "winRate": 35,
-  "lastPlayedAt": 1783248374,
+  "losses": 27,
+  "gamesCount": 41,
+  "winRate": 34,
+  "lastPlayedAt": 1783627691,
   "country": "fr",
   "merged_ids": [],
   "ratingHistory": [
@@ -50,33 +50,10 @@
     971,
     960,
     978,
-    963
+    963,
+    948
   ],
   "recentMatches": [
-    {
-      "matchId": 440149701,
-      "description": "4V4 ===10x shared 3Xtech  4V4 random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1765775040,
-      "outcome": "loss",
-      "preRating": 852,
-      "postRating": 846,
-      "eloChange": -6,
-      "civ": "Vietnamese",
-      "teamAvgElo": 1031,
-      "opponentAvgElo": 1091,
-      "teammates": [
-        "FrostByte",
-        "VforKickAss",
-        "Aesthic"
-      ],
-      "opponents": [
-        "choolkkkk",
-        "fxsound",
-        "goldinggunsandparts",
-        "dickerleminka"
-      ]
-    },
     {
       "matchId": 441263204,
       "description": "10x 3x Techs Bamboo Nothing Random Civs",
@@ -531,6 +508,30 @@
         "schrubber",
         "k0rnm@yer",
         "youtube.com/@Korea™"
+      ]
+    },
+    {
+      "matchId": 491161572,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "my map",
+      "timestamp": 1783627691,
+      "outcome": "loss",
+      "preRating": 963,
+      "postRating": 948,
+      "eloChange": -15,
+      "civ": "Khmer",
+      "teamAvgElo": 1071,
+      "opponentAvgElo": 990,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "Parts",
+        "Manba Out"
+      ],
+      "opponents": [
+        "king_doge",
+        "Gregory",
+        "ZutiroteX",
+        "PITON | Shepy"
       ]
     }
   ]

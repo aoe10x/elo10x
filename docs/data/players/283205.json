@@ -1,12 +1,12 @@
 {
   "profile_id": 283205,
   "alias": "r9maximus",
-  "rating": 1037,
+  "rating": 1012,
   "wins": 8,
-  "losses": 7,
-  "gamesCount": 15,
-  "winRate": 53,
-  "lastPlayedAt": 1783541561,
+  "losses": 8,
+  "gamesCount": 16,
+  "winRate": 50,
+  "lastPlayedAt": 1783629438,
   "country": "nl",
   "merged_ids": [],
   "ratingHistory": [
@@ -25,7 +25,8 @@
     1120,
     1093,
     1065,
-    1037
+    1037,
+    1012
   ],
   "recentMatches": [
     {
@@ -386,6 +387,30 @@
         "Gladiator",
         "Cheesewheel24",
         "RA"
+      ]
+    },
+    {
+      "matchId": 491166065,
+      "description": "10x 3x bamboo",
+      "mapname": "my map",
+      "timestamp": 1783629438,
+      "outcome": "loss",
+      "preRating": 1037,
+      "postRating": 1012,
+      "eloChange": -25,
+      "civ": "Bohemians",
+      "teamAvgElo": 999,
+      "opponentAvgElo": 1026,
+      "teammates": [
+        "Mahmut",
+        "Axila, el Turro",
+        "Wololo"
+      ],
+      "opponents": [
+        "Denno037",
+        "NothingAtAll11",
+        "Gladiator",
+        "GuguBot"
       ]
     }
   ]

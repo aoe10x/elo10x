@@ -1,12 +1,12 @@
 {
   "profile_id": 2983594,
   "alias": "FastAttack",
-  "rating": 1033,
+  "rating": 1001,
   "wins": 19,
-  "losses": 21,
-  "gamesCount": 40,
-  "winRate": 48,
-  "lastPlayedAt": 1783526045,
+  "losses": 23,
+  "gamesCount": 42,
+  "winRate": 45,
+  "lastPlayedAt": 1783624692,
   "country": "il",
   "merged_ids": [],
   "ratingHistory": [
@@ -50,57 +50,11 @@
     1017,
     1035,
     1051,
-    1033
+    1033,
+    1017,
+    1001
   ],
   "recentMatches": [
-    {
-      "matchId": 468209932,
-      "description": "4vs4 10x 3x shared civ bonus, random civ",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1775438040,
-      "outcome": "win",
-      "preRating": 970,
-      "postRating": 988,
-      "eloChange": 18,
-      "civ": "Unknown",
-      "teamAvgElo": 1055,
-      "opponentAvgElo": 1016,
-      "teammates": [
-        "arwinDutchy",
-        "beta_player",
-        "ISwaZz"
-      ],
-      "opponents": [
-        "yimacs_yoyoyo",
-        "k0rnm@yer",
-        "GiGi",
-        "La_Contessa"
-      ]
-    },
-    {
-      "matchId": 468215358,
-      "description": "4vs4 10x 3x shared civ bonus, random civ",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1775438880,
-      "outcome": "loss",
-      "preRating": 988,
-      "postRating": 977,
-      "eloChange": -11,
-      "civ": "Unknown",
-      "teamAvgElo": 1003,
-      "opponentAvgElo": 1108,
-      "teammates": [
-        "yimacs_yoyoyo",
-        "GiGi",
-        "Shadow"
-      ],
-      "opponents": [
-        "FrostByte",
-        "ISwaZz",
-        "beta_player",
-        "Saloon_F_F"
-      ]
-    },
     {
       "matchId": 468444501,
       "description": "10x 3x bamboo",
@@ -531,6 +485,54 @@
         "Pineappleman",
         "McKrakfejs",
         "Dr.Ao"
+      ]
+    },
+    {
+      "matchId": 491145801,
+      "description": "Bamboo nothing 10X3X",
+      "mapname": "my map",
+      "timestamp": 1783623136,
+      "outcome": "loss",
+      "preRating": 1033,
+      "postRating": 1017,
+      "eloChange": -16,
+      "civ": "Ethiopians",
+      "teamAvgElo": 1032,
+      "opponentAvgElo": 1041,
+      "teammates": [
+        "yxsko93",
+        "[CSGS]Runescape",
+        "RA"
+      ],
+      "opponents": [
+        "im slow",
+        "Saloon_F_F",
+        "Xinzzo",
+        "golhmogh"
+      ]
+    },
+    {
+      "matchId": 491150598,
+      "description": "4v4 10x civ bonus shared\rsudden death\rsudden death",
+      "mapname": "my map",
+      "timestamp": 1783624692,
+      "outcome": "loss",
+      "preRating": 1017,
+      "postRating": 1001,
+      "eloChange": -16,
+      "civ": "Sicilians",
+      "teamAvgElo": 1028,
+      "opponentAvgElo": 1016,
+      "teammates": [
+        "[RUS-F] Lastman",
+        "Ru3en",
+        "afrenkel"
+      ],
+      "opponents": [
+        "omnomnomnivore",
+        "Lozzer",
+        "Eduardo_AoE",
+        "dertli"
       ]
     }
   ]
