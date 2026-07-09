@@ -1,12 +1,12 @@
 {
   "profile_id": 844252,
   "alias": "Ru3en",
-  "rating": 931,
+  "rating": 919,
   "wins": 10,
-  "losses": 19,
-  "gamesCount": 29,
-  "winRate": 34,
-  "lastPlayedAt": 1782234662,
+  "losses": 20,
+  "gamesCount": 30,
+  "winRate": 33,
+  "lastPlayedAt": 1783624692,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -39,33 +39,10 @@
     971,
     959,
     944,
-    931
+    931,
+    919
   ],
   "recentMatches": [
-    {
-      "matchId": 380207174,
-      "description": "10x civ 3x techs | random civ",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1742696340,
-      "outcome": "loss",
-      "preRating": 827,
-      "postRating": 812,
-      "eloChange": -15,
-      "civ": "Unknown",
-      "teamAvgElo": 999,
-      "opponentAvgElo": 1039,
-      "teammates": [
-        "田瘾犯了",
-        "Lykerya",
-        "atitititi"
-      ],
-      "opponents": [
-        "Random2952",
-        "Leonardos",
-        "JuanMalote",
-        "Open"
-      ]
-    },
     {
       "matchId": 380211458,
       "description": "10x civ 3x techs | random civ",
@@ -520,6 +497,30 @@
         "Mrchris",
         "julien.nicolai",
         "El Barto"
+      ]
+    },
+    {
+      "matchId": 491150598,
+      "description": "4v4 10x civ bonus shared\rsudden death\rsudden death",
+      "mapname": "my map",
+      "timestamp": 1783624692,
+      "outcome": "loss",
+      "preRating": 931,
+      "postRating": 919,
+      "eloChange": -12,
+      "civ": "Romans",
+      "teamAvgElo": 1028,
+      "opponentAvgElo": 1016,
+      "teammates": [
+        "[RUS-F] Lastman",
+        "FastAttack",
+        "afrenkel"
+      ],
+      "opponents": [
+        "omnomnomnivore",
+        "Lozzer",
+        "Eduardo_AoE",
+        "dertli"
       ]
     }
   ]

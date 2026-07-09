@@ -1,12 +1,12 @@
 {
   "profile_id": 6862891,
   "alias": "RA",
-  "rating": 1033,
+  "rating": 1017,
   "wins": 48,
-  "losses": 51,
-  "gamesCount": 99,
+  "losses": 52,
+  "gamesCount": 100,
   "winRate": 48,
-  "lastPlayedAt": 1783541561,
+  "lastPlayedAt": 1783623136,
   "country": "pk",
   "merged_ids": [],
   "ratingHistory": [
@@ -60,7 +60,6 @@
     1061,
     1046,
     1061,
-    1077,
     1064,
     1046,
     1028,
@@ -109,33 +108,10 @@
     1015,
     1031,
     1017,
-    1033
+    1033,
+    1017
   ],
   "recentMatches": [
-    {
-      "matchId": 483361855,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "my map",
-      "timestamp": 1780768922,
-      "outcome": "win",
-      "preRating": 1078,
-      "postRating": 1092,
-      "eloChange": 14,
-      "civ": "Chinese",
-      "teamAvgElo": 1061,
-      "opponentAvgElo": 1031,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "Qtheitalian",
-        "FREESTYLE72"
-      ],
-      "opponents": [
-        "Eddie",
-        "abatyse6533",
-        "realDonaldTrump",
-        "bardad"
-      ]
-    },
     {
       "matchId": 483778302,
       "description": "10x 3x Bamboo best lobby",
@@ -590,6 +566,30 @@
         "Goodsoup",
         "S3dated",
         "r9maximus"
+      ]
+    },
+    {
+      "matchId": 491145801,
+      "description": "Bamboo nothing 10X3X",
+      "mapname": "my map",
+      "timestamp": 1783623136,
+      "outcome": "loss",
+      "preRating": 1033,
+      "postRating": 1017,
+      "eloChange": -16,
+      "civ": "Vikings",
+      "teamAvgElo": 1032,
+      "opponentAvgElo": 1041,
+      "teammates": [
+        "yxsko93",
+        "FastAttack",
+        "[CSGS]Runescape"
+      ],
+      "opponents": [
+        "im slow",
+        "Saloon_F_F",
+        "Xinzzo",
+        "golhmogh"
       ]
     }
   ]
