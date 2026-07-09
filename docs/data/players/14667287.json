@@ -1,12 +1,12 @@
 {
   "profile_id": 14667287,
   "alias": "KhasminC",
-  "rating": 1023,
+  "rating": 1009,
   "wins": 27,
-  "losses": 37,
-  "gamesCount": 64,
+  "losses": 38,
+  "gamesCount": 65,
   "winRate": 42,
-  "lastPlayedAt": 1783435974,
+  "lastPlayedAt": 1783606727,
   "country": "ro",
   "merged_ids": [
     12171150,
@@ -77,33 +77,10 @@
     1037,
     1018,
     1003,
-    1023
+    1023,
+    1009
   ],
   "recentMatches": [
-    {
-      "matchId": 487744365,
-      "description": "10x 3x bamboo no noob q群729084973",
-      "mapname": "my map",
-      "timestamp": 1782310572,
-      "outcome": "loss",
-      "preRating": 994,
-      "postRating": 983,
-      "eloChange": -11,
-      "civ": "Mapuche",
-      "teamAvgElo": 1066,
-      "opponentAvgElo": 1102,
-      "teammates": [
-        "Asterion",
-        "i kun 2.5",
-        "鱼浆"
-      ],
-      "opponents": [
-        "Semisky",
-        "长江黄河不会倒流",
-        "i'm a pupil",
-        "babeleo"
-      ]
-    },
     {
       "matchId": 487755210,
       "description": "bamboo nothing 10x",
@@ -558,6 +535,30 @@
         "Denno037",
         "Maic",
         "Bao Oninon"
+      ]
+    },
+    {
+      "matchId": 491090059,
+      "description": "10x 3x bamboo",
+      "mapname": "my map",
+      "timestamp": 1783606727,
+      "outcome": "loss",
+      "preRating": 1023,
+      "postRating": 1009,
+      "eloChange": -14,
+      "civ": "Sicilians",
+      "teamAvgElo": 1052,
+      "opponentAvgElo": 1066,
+      "teammates": [
+        "I am KSG",
+        "476055690",
+        "Ghandi"
+      ],
+      "opponents": [
+        "Keishi",
+        "紫蝶黄蜂俱有情",
+        "kekekeya",
+        "beat"
       ]
     }
   ]
