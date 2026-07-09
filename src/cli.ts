@@ -165,31 +165,17 @@ async function main(): Promise<void> {
     const endPage = values['end-page'] ? parseInt(values['end-page'], 10) : 10; // default 10 pages for batch runs
     
     const scraper = new InsightsCrawler(db);
-    
-    let totalScraped = 0;
-    let totalAdded = 0;
-    
-    for (const pid of targetProfileIds) {
-      const alias = db.getProfile(pid)?.alias || `Player_${pid}`;
+    console.log(`\n========================================`);
+    console.log(`Starting Batch Crawl for ${targetProfileIds.length} players`);
+    console.log(`========================================`);
+    try {
+      const stats = await scraper.scrapePlayersBatch(targetProfileIds, startPage, endPage);
       console.log(`\n========================================`);
-      console.log(`Scraping history for player: ${alias} (ID ${pid})`);
+      console.log(`Batch Scrape Complete! Crawled players: ${stats.crawled}, New 10x matches added/merged: ${stats.added}`);
       console.log(`========================================`);
-      
-      try {
-        const stats = await scraper.scrapePlayerHistory(pid, startPage, endPage);
-        console.log(`Success: processed ${stats.scraped} matches, added ${stats.added} new matches.`);
-        totalScraped += stats.scraped;
-        totalAdded += stats.added;
-        
-        // Save progress after each player to protect against crashes
-        await db.save();
-      } catch (e: any) {
-        console.error(`Scraper failed for player ${alias}:`, e.message);
-        // Continue to next player in batch instead of hard crash
-      }
+    } catch (err: any) {
+      console.error(`Batch scraper execution failed:`, err.message);
     }
-    
-    console.log(`\nBatch Scrape Complete! Total processed 10x games: ${totalScraped}, Total new games added: ${totalAdded}`);
   }
 
   if (values.elo) {
@@ -230,16 +216,39 @@ async function main(): Promise<void> {
       const leaderboardPath = path.join(process.cwd(), 'docs', 'data', mode.file);
       await fs.mkdir(path.dirname(leaderboardPath), { recursive: true });
       
+      const lastMatchTime = filteredMatches.length > 0 
+        ? Math.max(...filteredMatches.map(m => m.startgametime)) 
+        : 0;
+
       const payload = {
-        updatedAt: Date.now(),
+        updatedAt: lastMatchTime * 1000,
         totalMatches: filteredMatches.length,
         totalPlayers: ratingsMap.size,
         leaderboardCount: leaderboard.length,
         config: { minGames, kFactor, provisional, mode: mode.name },
-        players: leaderboard.map(p => ({
-          ...p,
-          country: db.getProfile(p.profile_id)?.country
-        }))
+        players: leaderboard.map(p => {
+          let country: string | undefined = undefined;
+          const isValidCountry = (c: string | undefined) => 
+            c && c.trim().length === 2 && c.toLowerCase() !== 'un';
+
+          const canonicalCountry = db.getProfile(p.profile_id)?.country;
+          if (isValidCountry(canonicalCountry)) {
+            country = canonicalCountry;
+          } else if (p.merged_ids && p.merged_ids.length > 0) {
+            for (const id of p.merged_ids) {
+              const mergedCountry = db.getProfile(id)?.country;
+              if (isValidCountry(mergedCountry)) {
+                country = mergedCountry;
+                break;
+              }
+            }
+          }
+
+          return {
+            ...p,
+            country
+          };
+        })
       };
       
       await fs.writeFile(leaderboardPath, JSON.stringify(payload, null, 2), 'utf-8');

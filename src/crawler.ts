@@ -9,8 +9,7 @@ function delay(ms: number): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-// Cooldown after which a player can be re-crawled (24 hours)
-const CRAWL_COOLDOWN_MS = 24 * 60 * 60 * 1000;
+// No cooldown — always crawl fresh on every run
 
 export class MatchCrawler {
   private db: JsonDatabase;
@@ -22,41 +21,47 @@ export class MatchCrawler {
   }
 
   /**
-   * Seed the crawl queue using players who participated in the most recent
-   * matches in the database, excluding those crawled within the cooldown period.
+   * Seed the crawl queue from two time windows, deduped:
+   *   - Most active players in the past 3 days  (hot/current players)
+   *   - Most active players in the past 30 days (regular community members)
+   * Both ranked by match count within their window. Combined list is deduped.
    */
   async seedFromActivePlayers(limit: number = 50): Promise<number[]> {
-    console.log('Crawl queue is empty and lobbies are offline. Seeding from active database profiles...');
+    const nowSecs = Math.floor(Date.now() / 1000);
+    const day3ago  = nowSecs - 3  * 24 * 3600;
+    const day30ago = nowSecs - 30 * 24 * 3600;
+
     const matches = this.db.getMatches();
 
-    // Sort matches by startgametime descending (most recent first)
-    const sortedMatches = [...matches].sort((a, b) => b.startgametime - a.startgametime);
+    const counts3d  = new Map<number, number>();
+    const counts30d = new Map<number, number>();
 
-    const seeds: number[] = [];
-    const seedSet = new Set<number>();
-
-    for (const m of sortedMatches) {
-      if (m.players) {
-        for (const p of m.players) {
-          if (!seedSet.has(p.profile_id) && !this.db.isCrawled(p.profile_id, CRAWL_COOLDOWN_MS)) {
-            seedSet.add(p.profile_id);
-            seeds.push(p.profile_id);
-            if (seeds.length >= limit) {
-              break;
-            }
-          }
-        }
-      }
-      if (seeds.length >= limit) {
-        break;
+    for (const m of matches) {
+      for (const p of (m.players ?? [])) {
+        const id = p.profile_id;
+        if (m.startgametime >= day3ago)  counts3d.set(id,  (counts3d.get(id)  ?? 0) + 1);
+        if (m.startgametime >= day30ago) counts30d.set(id, (counts30d.get(id) ?? 0) + 1);
       }
     }
 
-    if (seeds.length > 0) {
-      console.log(`Adding ${seeds.length} active players to queue (cooldown elapsed).`);
-      this.db.addToCrawlQueue(seeds, CRAWL_COOLDOWN_MS);
-      await this.db.save();
+    const topN = (map: Map<number, number>, n: number) =>
+      [...map.entries()].sort((a, b) => b[1] - a[1]).slice(0, n).map(([id]) => id);
+
+    // Take up to half the limit from each window, then dedupe
+    const half    = Math.ceil(limit / 2);
+    const from3d  = topN(counts3d,  half);
+    const from30d = topN(counts30d, half);
+
+    // Merge: 3d first (higher priority), then 30d to fill remaining slots
+    const seen  = new Set<number>(from3d);
+    const seeds = [...from3d];
+    for (const id of from30d) {
+      if (!seen.has(id)) { seen.add(id); seeds.push(id); }
+      if (seeds.length >= limit) break;
     }
+
+    console.log(`Seeding ${seeds.length} players (${from3d.length} from last 3d, ${seeds.length - from3d.length} from last 30d, deduped).`);
+    if (seeds.length > 0) this.db.addToCrawlQueue(seeds);
     return seeds;
   }
 
@@ -135,7 +140,7 @@ export class MatchCrawler {
     const uniqueSeeds = [...new Set(seedIds)];
     if (uniqueSeeds.length > 0) {
       console.log(`Adding ${uniqueSeeds.length} seed profile IDs to queue.`);
-      this.db.addToCrawlQueue(uniqueSeeds, CRAWL_COOLDOWN_MS);
+      this.db.addToCrawlQueue(uniqueSeeds);
       await this.db.save();
     } else {
       console.warn('No active lobbies found to seed. The queue will rely on existing database profiles.');
@@ -170,6 +175,9 @@ export class MatchCrawler {
 
       const data = await response.json() as any;
       if (!data.matchHistoryStats || !Array.isArray(data.matchHistoryStats)) {
+        this.db.updatePlayerManifest(profileId, 'relic', {
+          last_crawled_at: Math.round(Date.now() / 1000)
+        });
         this.db.markAsCrawled(profileId);
         return true;
       }
@@ -181,8 +189,6 @@ export class MatchCrawler {
           const profile: PlayerProfile = {
             profile_id: p.profile_id,
             alias: p.alias || `Player_${p.profile_id}`,
-            xp: p.xp,
-            level: p.level,
             country: p.country
           };
           this.db.addProfile(profile);
@@ -255,11 +261,27 @@ export class MatchCrawler {
           new10xMatchCount++;
 
           // Add participants of this 10x game to crawl queue
-          this.db.addToCrawlQueue(candidatePlayerIds, CRAWL_COOLDOWN_MS);
+          this.db.addToCrawlQueue(candidatePlayerIds);
         }
       }
 
-      console.log(`Analyzed ${matchCount} matches. Found ${new10xMatchCount} new 10x matches.`);
+      if (new10xMatchCount > 0) {
+        console.log(`✨ Analyzed ${matchCount} matches. Found ${new10xMatchCount} new 10x matches! 🔥`);
+      } else {
+        console.log(`💤 Analyzed ${matchCount} matches. Found 0 new 10x matches.`);
+      }
+
+      const playerMatches = this.db.getMatches()
+        .filter(m => m.players.some(p => p.profile_id === profileId));
+      let playerNewestId = 0;
+      if (playerMatches.length > 0) {
+        playerNewestId = Math.max(...playerMatches.map(m => m.id));
+      }
+      this.db.updatePlayerManifest(profileId, 'relic', {
+        last_crawled_at: Math.round(Date.now() / 1000),
+        newest_match_id: playerNewestId
+      });
+
       this.db.markAsCrawled(profileId);
       return true;
     } catch (err: any) {
@@ -270,24 +292,43 @@ export class MatchCrawler {
   }
 
   /**
+   * Seed the crawler queue with players who haven't been crawled in a long time (background refresh)
+   */
+  async seedOldestCrawledPlayers(limit: number = 20): Promise<void> {
+    const profiles = this.db.getAllProfiles();
+    const candidates = profiles.map(p => {
+      const manifest = this.db.getPlayerManifest(p.profile_id);
+      return {
+        profileId: p.profile_id,
+        lastCrawledAt: manifest?.relic?.last_crawled_at || 0
+      };
+    });
+
+    candidates.sort((a, b) => a.lastCrawledAt - b.lastCrawledAt);
+
+    const seeds = candidates.slice(0, limit).map(c => c.profileId);
+    console.log(`Seeding ${seeds.length} oldest/never crawled players to queue.`);
+    if (seeds.length > 0) {
+      this.db.addToCrawlQueue(seeds);
+    }
+  }
+
+  /**
    * Run a snowball crawl up to a limit of crawled players
    */
   async runCrawl(limitCount: number, monthsCutoff: number = 3): Promise<void> {
     const cutoffTimestamp = Math.floor(Date.now() / 1000) - (monthsCutoff * 30 * 24 * 60 * 60);
     console.log(`Starting crawl. Filtering games after Unix timestamp: ${cutoffTimestamp} (${monthsCutoff} months ago)`);
 
-    // Ensure queue has at least some seeds, otherwise run seedFromLobbies
+    // Seed from live lobbies, active db players, and background refreshes
+    console.log('Seeding crawl queue from live lobbies + active db players + oldest crawled...');
+    await this.seedFromLobbies();
+    await this.seedFromActivePlayers(limitCount);
+    await this.seedOldestCrawledPlayers(20);
+
     if (this.db.getCrawlQueueLength() === 0) {
-      console.log('Crawl queue is empty. Fetching initial seeds from lobbies...');
-      const seedIds = await this.seedFromLobbies();
-      if (seedIds.length === 0) {
-        // Fallback to active players in DB
-        const dbSeeds = await this.seedFromActivePlayers(limitCount);
-        if (dbSeeds.length === 0) {
-          console.warn('Queue remains empty after fallback seeding. Cannot crawl.');
-          return;
-        }
-      }
+      console.warn('Queue is empty after seeding. Cannot crawl.');
+      return;
     }
 
     let crawledThisSession = 0;
@@ -295,7 +336,14 @@ export class MatchCrawler {
       const profileId = this.db.popFromCrawlQueue();
       if (!profileId) break;
 
-      if (this.db.isCrawled(profileId, CRAWL_COOLDOWN_MS)) {
+      // Skip if crawled in the last 18 hours.
+      // Rationale: Since the GitHub Action runs every 4 hours, seeding the top active players 
+      // on every run would normally waste our 50-player crawl quota on the exact same players 
+      // over and over. By enforcing an 18-hour skip window:
+      //   1. Active players are crawled at most once per day.
+      //   2. Skipped active players are popped from the queue immediately (cost-free), allowing 
+      //      the remaining session quota to bubble down and refresh the "oldest crawled" players.
+      if (this.db.isCrawled(profileId, 18 * 60 * 60 * 1000)) {
         continue;
       }
 
