@@ -1,12 +1,12 @@
 {
   "profile_id": 14637074,
   "alias": "ArchiCraig",
-  "rating": 979,
+  "rating": 968,
   "wins": 26,
-  "losses": 36,
-  "gamesCount": 62,
-  "winRate": 42,
-  "lastPlayedAt": 1783644867,
+  "losses": 37,
+  "gamesCount": 63,
+  "winRate": 41,
+  "lastPlayedAt": 1783647082,
   "country": "ca",
   "merged_ids": [
     12165758,
@@ -75,33 +75,10 @@
     1018,
     1004,
     990,
-    979
+    979,
+    968
   ],
   "recentMatches": [
-    {
-      "matchId": 455294253,
-      "description": "Bamboo Nothing  10x Shared 3x Tech random civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1770798360,
-      "outcome": "win",
-      "preRating": 1001,
-      "postRating": 1017,
-      "eloChange": 16,
-      "civ": "Unknown",
-      "teamAvgElo": 1040,
-      "opponentAvgElo": 994,
-      "teammates": [
-        "Maic",
-        "skoolied",
-        "nayman"
-      ],
-      "opponents": [
-        "kiggless",
-        "procrastination.exe",
-        "vikneT1",
-        "Ode To  A Pineapple"
-      ]
-    },
     {
       "matchId": 458361622,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -556,6 +533,30 @@
         "EL__PATRON",
         "Myriad",
         "Brotherman Bill"
+      ]
+    },
+    {
+      "matchId": 491212714,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "my map",
+      "timestamp": 1783647082,
+      "outcome": "loss",
+      "preRating": 979,
+      "postRating": 968,
+      "eloChange": -11,
+      "civ": "Bengalis",
+      "teamAvgElo": 1093,
+      "opponentAvgElo": 1088,
+      "teammates": [
+        "Kumad",
+        "Myriad",
+        "Craster"
+      ],
+      "opponents": [
+        "JoeyTribianni69",
+        "Brotherman Bill",
+        "EL__PATRON",
+        "faux"
       ]
     }
   ]
