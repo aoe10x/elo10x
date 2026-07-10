@@ -1,10 +1,10 @@
 import { promises as fs } from 'node:fs';
 import * as path from 'node:path';
 import { parseArgs } from 'node:util';
-import { MatchCrawler } from './crawler.ts';
+import { RelicCrawler } from './relic_crawler.ts';
 import { JsonDatabase } from './db.ts';
 import { EloCalculator } from './elo.ts';
-import { InsightsCrawler } from './insights_crawler.ts';
+import { Aoe2InsightsScraper } from './aoe2insights_scraper.ts';
 
 function showHelp(): void {
   console.log(`
@@ -79,7 +79,7 @@ async function main(): Promise<void> {
   if (values.crawl) {
     const limit = values.limit ? parseInt(values.limit, 10) : 50;
     const months = values.months ? parseInt(values.months, 10) : 3;
-    const crawler = new MatchCrawler(db);
+    const crawler = new RelicCrawler(db);
 
     console.log(`Starting crawl session... (limit: ${limit} players, cutoff: ${months} months)`);
     
@@ -164,7 +164,7 @@ async function main(): Promise<void> {
     const startPage = values['start-page'] ? parseInt(values['start-page'], 10) : 1;
     const endPage = values['end-page'] ? parseInt(values['end-page'], 10) : 10; // default 10 pages for batch runs
     
-    const scraper = new InsightsCrawler(db);
+    const scraper = new Aoe2InsightsScraper(db);
     console.log(`\n========================================`);
     console.log(`Starting Batch Crawl for ${targetProfileIds.length} players`);
     console.log(`========================================`);

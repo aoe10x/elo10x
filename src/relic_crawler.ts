@@ -11,7 +11,7 @@ function delay(ms: number): Promise<void> {
 
 // No cooldown — always crawl fresh on every run
 
-export class MatchCrawler {
+export class RelicCrawler {
   private db: JsonDatabase;
   private delayMs: number;
 
