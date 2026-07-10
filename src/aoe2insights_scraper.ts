@@ -497,8 +497,8 @@ export class Aoe2InsightsScraper {
           const team1 = m.players.filter((p: any) => p.teamid === 1);
           if (team0.length !== 4 || team1.length !== 4) continue;
 
-          // 4. Duplicate Check
-          if (this.db.hasMatch(m.id)) continue;
+          // 4. Duplicate Check & Smart Merge
+          const isExisting = this.db.hasMatch(m.id);
 
           // 5. Build clean Match object
           const matchObj: Match = {
@@ -530,7 +530,9 @@ export class Aoe2InsightsScraper {
           }
 
           this.db.addMatch(matchObj);
-          addedCount++;
+          if (!isExisting) {
+            addedCount++;
+          }
         }
 
         // Delete temporary file

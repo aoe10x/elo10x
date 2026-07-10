@@ -248,10 +248,6 @@ export class RelicCrawler {
         }
 
         if (is10x && isRecent) {
-          if (this.db.hasMatch(m.id)) {
-            continue; // Already processed
-          }
-
           if (participants.length === 0) {
             continue;
           }
@@ -270,18 +266,21 @@ export class RelicCrawler {
             gamemod_id: m.gamemod_id
           };
 
-          const fingerprint = buildMatchFingerprint(matchObj);
-          const existingMatchId = this.db.findMatchIdByFingerprint(fingerprint);
-          if (existingMatchId !== undefined) {
-            console.log(`Skipping duplicate-equivalent match ${m.id}; equivalent to existing match ${existingMatchId}.`);
-            continue;
-          }
-
+          const isExisting = this.db.hasMatch(m.id);
           this.db.addMatch(matchObj);
-          new10xMatchCount++;
 
-          // Add participants of this 10x game to crawl queue
-          this.db.addToCrawlQueue(candidatePlayerIds);
+          if (!isExisting) {
+            const fingerprint = buildMatchFingerprint(matchObj);
+            const existingMatchId = this.db.findMatchIdByFingerprint(fingerprint);
+            if (existingMatchId !== undefined) {
+              console.log(`Skipping duplicate-equivalent match ${m.id}; equivalent to existing match ${existingMatchId}.`);
+              continue;
+            }
+
+            new10xMatchCount++;
+            // Add participants of this 10x game to crawl queue
+            this.db.addToCrawlQueue(candidatePlayerIds);
+          }
         }
       }
 
