@@ -25,7 +25,7 @@ Subcommands:
   elo                       Calculate Elo ratings and pre-render leaderboard.
 
 Options:
-  --limit <number>          Max players to crawl/scrape (default: 150 for relic, 10 for insights crawl).
+  --limit <number>          Max players to crawl/scrape (default: 150 for relic, 80 for insights crawl/active).
   --months <number>         Cutoff months for games (relic only, default: 3).
   --start-page <number>     Start page for AoE2Insights scraper (default: 1).
   --end-page <number>       End page for AoE2Insights scraper (default: 1 for crawl/active, 10 for ID).
@@ -95,7 +95,7 @@ async function main(): Promise<void> {
     }
 
     if (target === 'crawl') {
-      const limit = values.limit ? parseInt(values.limit, 10) : 10;
+      const limit = values.limit ? parseInt(values.limit, 10) : 80;
       const crawler = new InsightsCrawler(db);
 
       console.log(`Starting Insights recent crawl session... (limit: ${limit} players, force: ${!!values.force})`);
@@ -146,7 +146,7 @@ async function main(): Promise<void> {
           17046544   // 田瘾犯了
         ]);
 
-        const limit = values.limit ? parseInt(values.limit, 10) : 20;
+        const limit = values.limit ? parseInt(values.limit, 10) : 80;
 
         for (const pid of activeIds) {
           const isExcluded = isUnscrapedOnly ? scrapedIds.has(pid) : excludedIds.has(pid);
