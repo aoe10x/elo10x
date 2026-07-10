@@ -49,25 +49,34 @@ Because the two crawlers fetch data from different sources with disjointed field
 * **Civilization ID Enrichment**: If a match was first scraped via AoE2Insights (where civilization data is missing for ~90% of matches), and is later crawled via the Relic API, the database populates the missing `civ_id` values on the players.
 When a merge occurs, the database updates the match's source flag to `'merged'`.
 
----
+## 2. AoE2Insights Scraper & Crawler
+For map names and deep historical backfills, the crawler includes a Chrome DevTools Protocol (CDP) scraper that pulls game histories directly from AoE2Insights.
 
-## 2. AoE2Insights Chrome Scraper (Historical Backfill)
+### Headful Chrome & Cloudflare Detection
+Instead of requiring a pre-running Chrome instance, the scraper **automatically launches a headful Chrome process** on port `19222` with a temporary, isolated user profile (`.chrome-user-data-scraper`).
+* **Landing Page**: It starts at `https://rank.10xshared.com/`.
+* **Automatic Detection**: It polls the local Chrome targets. As soon as the user navigates to `aoe2insights.com` and solves the Turnstile challenge, the script detects that the tab title contains `"AoE2 Insights"` (and doesn't contain `"Just a moment"` or `"Cloudflare"`). It then waits 3 seconds and attaches the WebSocket debugger session to begin scraping.
 
-For deep historical backfills, the crawler includes a Chrome DevTools Protocol (CDP) scraper that pulls game history from AoE2Insights.
+### Click-Shield Overlay
+While active, the scraper injects a full-screen semi-transparent overlay saying: `"Scraping in progress... Please do not click!"` which captures all click events. Since the scraper performs background fetches on the tab, the overlay remains visible and prevents accidental user navigation during execution.
 
-This requires running a local Chrome instance with debugging enabled:
+### Crawling Modes
+
+#### A. Automated Recent Matches Crawl (`--crawl-insights`)
+Runs an automated snowball crawl session exactly like the Relic crawler, but fetches **Page 1** of recent games for eligible players via the headful scraper.
 ```bash
-# Launch Chrome with remote debugging on macOS:
-/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
+# Snowball crawl recent games from Insights (default limit: 10)
+pnpm run crawl -- --crawl-insights --limit 10
 ```
 
-Then, execute the scraper via the CLI:
+#### B. Targeted Scrape / Historical Backfill (`--scrape-insights`)
+Backfills deep history for a specific profile ID across a page range, or crawls recent matches for active database players:
 ```bash
-# Scrape matches for top 20 active players
-pnpm run crawl -- --scrape-insights active
+# Scrape pages 1 through 20 for Clean (profile 11783175)
+pnpm run crawl -- --scrape-insights 11783175 --start-page 1 --end-page 20
 
-# Scrape matches for a specific player ID
-pnpm run crawl -- --scrape-insights 64605
+# Scrape Page 1 for the top active database players
+pnpm run crawl -- --scrape-insights active --start-page 1 --end-page 1
 ```
 
 ### Crawl Manifest & Overlap Boundaries
