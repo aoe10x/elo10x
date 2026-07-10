@@ -14,26 +14,34 @@ export class InsightsCrawler {
     const livePlayerIds: number[] = [];
     try {
       console.log('Fetching active profiles from aoe10x.com active lobbies...');
-      const res1 = await fetch('https://www.aoe10x.com/api/lobbies');
+      const res1 = await fetch('https://www.aoe10x.com/api/lobbies', {
+        headers: { 'User-Agent': 'Mozilla/5.0 (AoE2 10x Elo Ranker)' }
+      });
       if (res1.ok) {
-        const lobbies = await res1.json() as any[];
-        for (const lobby of lobbies) {
-          if (lobby.players) {
-            for (const p of lobby.players) {
-              if (p.profileId) livePlayerIds.push(p.profileId);
+        const data = await res1.json() as any;
+        if (data.lobbies && Array.isArray(data.lobbies)) {
+          for (const lobby of data.lobbies) {
+            if (lobby.players && Array.isArray(lobby.players)) {
+              for (const p of lobby.players) {
+                if (p.profileId) livePlayerIds.push(p.profileId);
+              }
             }
           }
         }
       }
       
       console.log('Fetching active profiles from aoe10x.com live matches...');
-      const res2 = await fetch('https://www.aoe10x.com/api/live');
+      const res2 = await fetch('https://www.aoe10x.com/api/live', {
+        headers: { 'User-Agent': 'Mozilla/5.0 (AoE2 10x Elo Ranker)' }
+      });
       if (res2.ok) {
-        const live = await res2.json() as any[];
-        for (const game of live) {
-          if (game.players) {
-            for (const p of game.players) {
-              if (p.profileId) livePlayerIds.push(p.profileId);
+        const data = await res2.json() as any;
+        if (data.live && Array.isArray(data.live)) {
+          for (const game of data.live) {
+            if (game.players && Array.isArray(game.players)) {
+              for (const p of game.players) {
+                if (p.profileId) livePlayerIds.push(p.profileId);
+              }
             }
           }
         }
