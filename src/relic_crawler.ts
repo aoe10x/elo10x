@@ -343,7 +343,7 @@ export class RelicCrawler {
 
     // Seed from live lobbies, active db players, and background refreshes
     console.log('Seeding crawl queue from live lobbies + active db players + oldest crawled...');
-    await this.seedFromLobbies();
+    const livePlayerIds = new Set(await this.seedFromLobbies());
     await this.seedFromActivePlayers(limitCount);
     await this.seedOldestCrawledPlayers(20);
 
@@ -364,14 +364,14 @@ export class RelicCrawler {
         const profileId = this.db.popFromCrawlQueue();
         if (!profileId) break;
 
-        // Skip if crawled in the last 18 hours.
-        // Rationale: Since the GitHub Action runs every 4 hours, seeding the top active players 
-        // on every run would normally waste our 50-player crawl quota on the exact same players 
-        // over and over. By enforcing an 18-hour skip window:
-        //   1. Active players are crawled at most once per day.
-        //   2. Skipped active players are popped from the queue immediately (cost-free), allowing 
-        //      the remaining session quota to bubble down and refresh the "oldest crawled" players.
-        if (this.db.isCrawled(profileId, 18 * 60 * 60 * 1000)) {
+        // Skip check:
+        //   1. Currently live players (online now in lobbies) have 0 cooldown (always crawled).
+        //   2. Other players have an 8-hour cooldown (ensures active players are crawled at least twice per day,
+        //      capturing all recent games before they fall off the Relic API's recent match list).
+        const isLive = livePlayerIds.has(profileId);
+        const cooldownMs = isLive ? 0 : 8 * 60 * 60 * 1000;
+
+        if (this.db.isCrawled(profileId, cooldownMs)) {
           continue;
         }
         batchIds.push(profileId);

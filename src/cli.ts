@@ -15,7 +15,7 @@ Usage:
 
 Options:
   --crawl                   Run a snowball crawler session to fetch 10x games.
-  --limit <number>          Max number of player profiles to crawl in this session (default: 50).
+  --limit <number>          Max number of player profiles to crawl in this session (default: 150).
   --seed                    Force a fetch of online lobbies on aoe10x.com to seed crawler queue.
   --months <number>         Cutoff months for games (default: 3).
   
@@ -77,7 +77,7 @@ async function main(): Promise<void> {
   await db.load();
 
   if (values.crawl) {
-    const limit = values.limit ? parseInt(values.limit, 10) : 50;
+    const limit = values.limit ? parseInt(values.limit, 10) : 150;
     const months = values.months ? parseInt(values.months, 10) : 3;
     const crawler = new RelicCrawler(db);
 
