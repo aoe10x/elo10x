@@ -5,6 +5,7 @@ import { RelicCrawler } from './relic_crawler.ts';
 import { JsonDatabase } from './db.ts';
 import { EloCalculator } from './elo.ts';
 import { Aoe2InsightsScraper } from './aoe2insights_scraper.ts';
+import { InsightsCrawler } from './insights_crawler.ts';
 
 function showHelp(): void {
   console.log(`
@@ -15,6 +16,7 @@ Usage:
 
 Options:
   --crawl                   Run a snowball crawler session to fetch 10x games.
+  --crawl-insights          Run a recent matches crawl session using AoE2Insights scraper.
   --limit <number>          Max number of player profiles to crawl in this session (default: 150).
   --months <number>         Cutoff months for games (default: 3).
   
@@ -43,6 +45,7 @@ Examples:
 async function main(): Promise<void> {
   const options = {
     crawl: { type: 'boolean' as const },
+    'crawl-insights': { type: 'boolean' as const },
     limit: { type: 'string' as const },
     months: { type: 'string' as const },
     'scrape-insights': { type: 'string' as const },
@@ -83,6 +86,17 @@ async function main(): Promise<void> {
     
     await crawler.runCrawl(limit, months);
     console.log('Crawl session complete.');
+    console.log(`Database state: ${db.getMatchesCount()} matches, ${db.getProfilesCount()} cached profiles, ${db.getCrawlQueueLength()} in crawl queue.`);
+  }
+
+  if (values['crawl-insights']) {
+    const limit = values.limit ? parseInt(values.limit, 10) : 10;
+    const crawler = new InsightsCrawler(db);
+
+    console.log(`Starting Insights recent crawl session... (limit: ${limit} players)`);
+    
+    await crawler.runCrawl(limit);
+    console.log('Insights crawl session complete.');
     console.log(`Database state: ${db.getMatchesCount()} matches, ${db.getProfilesCount()} cached profiles, ${db.getCrawlQueueLength()} in crawl queue.`);
   }
 
