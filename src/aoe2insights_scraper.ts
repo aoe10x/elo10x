@@ -467,9 +467,13 @@ export class Aoe2InsightsScraper {
    * Merges temporary scraped player files from scraped_data/ into the main database
    */
   async mergeScrapedData(): Promise<number> {
-    if (!fsSync.existsSync(this.scrapedDataDir)) return 0;
-    
-    const files = await fs.readdir(this.scrapedDataDir);
+    let files: string[];
+    try {
+      files = await fs.readdir(this.scrapedDataDir);
+    } catch (err: any) {
+      if (err.code === 'ENOENT') return 0;
+      throw err;
+    }
     const insightsFiles = files.filter(f => f.startsWith('insights_scraped_') && f.endsWith('.json'));
     
     if (insightsFiles.length === 0) return 0;
