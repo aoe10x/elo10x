@@ -243,6 +243,34 @@ export class JsonDatabase {
   }
 
   addMatch(match: Match): void {
+    const existing = this.matches.get(match.id);
+    if (existing) {
+      let updated = false;
+
+      // 1. Merge map name if generic "my map"
+      if ((existing.mapname === 'my map' || !existing.mapname) && match.mapname && match.mapname !== 'my map') {
+        existing.mapname = match.mapname;
+        updated = true;
+      }
+
+      // 2. Merge player civilization IDs (race_id)
+      if (existing.players && match.players) {
+        for (const ep of existing.players) {
+          const mp = match.players.find(p => p.profile_id === ep.profile_id);
+          if (mp && (!ep.race_id || ep.race_id === 0) && mp.race_id && mp.race_id > 0) {
+            ep.race_id = mp.race_id;
+            updated = true;
+          }
+        }
+      }
+
+      // 3. Update source if merged
+      if (updated && existing.source !== match.source && existing.source !== 'merged') {
+        existing.source = 'merged';
+      }
+      return;
+    }
+
     this.matches.set(match.id, match);
     const fingerprint = buildMatchFingerprint(match);
     if (!this.hasMatchFingerprint(fingerprint)) {

@@ -9,6 +9,7 @@ export interface MatchPlayer {
 export type MatchSource =
   | 'relic_api'
   | 'aoe2insights_scrape'
+  | 'merged'
   | 'unknown';
 
 export interface Match {
