@@ -337,7 +337,7 @@ export class RelicCrawler {
   /**
    * Run a snowball crawl up to a limit of crawled players
    */
-  async runCrawl(limitCount: number, monthsCutoff: number = 3): Promise<void> {
+  async runCrawl(limitCount: number, monthsCutoff: number = 3, force: boolean = false): Promise<void> {
     const cutoffTimestamp = Math.floor(Date.now() / 1000) - (monthsCutoff * 30 * 24 * 60 * 60);
     console.log(`Starting crawl. Filtering games after Unix timestamp: ${cutoffTimestamp} (${monthsCutoff} months ago)`);
 
@@ -365,15 +365,17 @@ export class RelicCrawler {
         const profileId = this.db.popFromCrawlQueue();
         if (!profileId) break;
 
-        // Skip check:
-        //   1. Currently live players (online now in lobbies) have 0 cooldown (always crawled).
-        //   2. Other players have an 8-hour cooldown (ensures active players are crawled at least twice per day,
-        //      capturing all recent games before they fall off the Relic API's recent match list).
-        const isLive = livePlayerIds.has(profileId);
-        const cooldownMs = isLive ? 0 : 8 * 60 * 60 * 1000;
+        if (!force) {
+          // Skip check:
+          //   1. Currently live players (online now in lobbies) have 0 cooldown (always crawled).
+          //   2. Other players have an 8-hour cooldown (ensures active players are crawled at least twice per day,
+          //      capturing all recent games before they fall off the Relic API's recent match list).
+          const isLive = livePlayerIds.has(profileId);
+          const cooldownMs = isLive ? 0 : 8 * 60 * 60 * 1000;
 
-        if (this.db.isCrawled(profileId, cooldownMs)) {
-          continue;
+          if (this.db.isCrawled(profileId, cooldownMs)) {
+            continue;
+          }
         }
         batchIds.push(profileId);
       }

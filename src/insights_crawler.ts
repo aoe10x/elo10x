@@ -106,7 +106,7 @@ export class InsightsCrawler {
     }
   }
 
-  async runCrawl(limitCount: number): Promise<void> {
+  async runCrawl(limitCount: number, force: boolean = false): Promise<void> {
     console.log('Starting Insights recent matches crawl session...');
 
     // Seed the crawl queue
@@ -130,14 +130,16 @@ export class InsightsCrawler {
       const profileId = this.db.popFromCrawlQueue();
       if (!profileId) break;
 
-      const isLive = livePlayerIds.has(profileId);
-      const cooldownSec = isLive ? 0 : 8 * 60 * 60; // 8 hours cooldown
+      if (!force) {
+        const isLive = livePlayerIds.has(profileId);
+        const cooldownSec = isLive ? 0 : 8 * 60 * 60; // 8 hours cooldown
 
-      const manifest = this.db.getPlayerManifest(profileId);
-      const lastCrawledSec = manifest?.insights?.last_crawled_at || 0;
+        const manifest = this.db.getPlayerManifest(profileId);
+        const lastCrawledSec = manifest?.insights?.last_crawled_at || 0;
 
-      if (nowSecs - lastCrawledSec < cooldownSec) {
-        continue;
+        if (nowSecs - lastCrawledSec < cooldownSec) {
+          continue;
+        }
       }
 
       eligibleProfileIds.push(profileId);
