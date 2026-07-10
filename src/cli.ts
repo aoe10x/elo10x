@@ -83,10 +83,6 @@ async function main(): Promise<void> {
 
     console.log(`Starting crawl session... (limit: ${limit} players, cutoff: ${months} months)`);
     
-    if (values.seed) {
-      await crawler.seedFromLobbies();
-    }
-
     await crawler.runCrawl(limit, months);
     console.log('Crawl session complete.');
     console.log(`Database state: ${db.getMatchesCount()} matches, ${db.getProfilesCount()} cached profiles, ${db.getCrawlQueueLength()} in crawl queue.`);
