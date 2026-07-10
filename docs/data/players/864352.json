@@ -1,12 +1,12 @@
 {
   "profile_id": 864352,
   "alias": "Nigerian Farmer",
-  "rating": 1025,
+  "rating": 1011,
   "wins": 12,
-  "losses": 11,
-  "gamesCount": 23,
-  "winRate": 52,
-  "lastPlayedAt": 1783605006,
+  "losses": 12,
+  "gamesCount": 24,
+  "winRate": 50,
+  "lastPlayedAt": 1783679671,
   "country": "se",
   "merged_ids": [],
   "ratingHistory": [
@@ -33,33 +33,10 @@
     1044,
     1056,
     1039,
-    1025
+    1025,
+    1011
   ],
   "recentMatches": [
-    {
-      "matchId": 432700469,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1763028180,
-      "outcome": "win",
-      "preRating": 1064,
-      "postRating": 1099,
-      "eloChange": 35,
-      "civ": "Unknown",
-      "teamAvgElo": 1024,
-      "opponentAvgElo": 998,
-      "teammates": [
-        "ZTH",
-        "DaliMan",
-        "Quitter (Will NOT Hunt)"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "jamoats",
-        "bardad",
-        "shemirage"
-      ]
-    },
     {
       "matchId": 432703488,
       "description": "256x 10x Forest Nothing",
@@ -514,6 +491,30 @@
         "Zavgor",
         "i kun 2.5",
         "Silent Annihilation"
+      ]
+    },
+    {
+      "matchId": 491282263,
+      "description": "Bamboo 10x 3x Welcome",
+      "mapname": "my map",
+      "timestamp": 1783679671,
+      "outcome": "loss",
+      "preRating": 1025,
+      "postRating": 1011,
+      "eloChange": -14,
+      "civ": "Dravidians",
+      "teamAvgElo": 1074,
+      "opponentAvgElo": 1069,
+      "teammates": [
+        "Zavgor",
+        "Scipio",
+        "fxsound"
+      ],
+      "opponents": [
+        "hoderebus",
+        "Lumedge",
+        "tonkatumura",
+        "紫蝶黄蜂俱有情"
       ]
     }
   ]
