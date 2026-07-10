@@ -4,7 +4,7 @@ import { JsonDatabase } from './db.ts';
 import { EloCalculator } from './elo.ts';
 import type { EloRanking } from './types.ts';
 import { resolveMergedCountry } from './profile_utils.ts';
-import { InsightsCrawler } from './insights_crawler.ts';
+import { Aoe2InsightsScraper } from './aoe2insights_scraper.ts';
 
 function escapeHtml(str: string | null | undefined): string {
   if (str === null || str === undefined) return '';
@@ -150,7 +150,7 @@ async function main() {
   await db.load();
 
   // Automatically merge any temporary scraped matches before calculations
-  const crawler = new InsightsCrawler(db);
+  const crawler = new Aoe2InsightsScraper(db);
   await crawler.mergeScrapedData();
 
   console.log(`Loaded matches count: ${db.getMatchesCount()}`);

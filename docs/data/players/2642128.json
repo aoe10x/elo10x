@@ -1,13 +1,13 @@
 {
   "profile_id": 2642128,
   "alias": "afrenkel",
-  "rating": 1080,
+  "rating": 1061,
   "wins": 35,
-  "losses": 24,
-  "gamesCount": 59,
-  "winRate": 59,
-  "lastPlayedAt": 1773900900,
-  "country": "Unknown",
+  "losses": 25,
+  "gamesCount": 60,
+  "winRate": 58,
+  "lastPlayedAt": 1783624692,
+  "country": "il",
   "merged_ids": [],
   "ratingHistory": [
     1000,
@@ -69,33 +69,10 @@
     1038,
     1051,
     1068,
-    1080
+    1080,
+    1061
   ],
   "recentMatches": [
-    {
-      "matchId": 427356088,
-      "description": "10x 3x shared,random, up-up-up,research",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1761010860,
-      "outcome": "loss",
-      "preRating": 1061,
-      "postRating": 1042,
-      "eloChange": -19,
-      "civ": "Unknown",
-      "teamAvgElo": 1041,
-      "opponentAvgElo": 1002,
-      "teammates": [
-        "OOOOOOOOOOO",
-        "Jumbaba101",
-        "beta_player"
-      ],
-      "opponents": [
-        "UweTellkamp",
-        "Fabbss",
-        "Edamde",
-        "kalfa"
-      ]
-    },
     {
       "matchId": 428917904,
       "description": "bamboo 10x",
@@ -550,6 +527,30 @@
         "rios",
         "Kingo385",
         "Gilgamesh"
+      ]
+    },
+    {
+      "matchId": 491150598,
+      "description": "4v4 10x civ bonus shared\rsudden death\rsudden death",
+      "mapname": "my map",
+      "timestamp": 1783624692,
+      "outcome": "loss",
+      "preRating": 1080,
+      "postRating": 1061,
+      "eloChange": -19,
+      "civ": "Chinese",
+      "teamAvgElo": 1028,
+      "opponentAvgElo": 1016,
+      "teammates": [
+        "[RUS-F] Lastman",
+        "FastAttack",
+        "Ru3en"
+      ],
+      "opponents": [
+        "omnomnomnivore",
+        "Lozzer",
+        "Eduardo_AoE",
+        "dertli"
       ]
     }
   ]

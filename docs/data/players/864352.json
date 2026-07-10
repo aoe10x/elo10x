@@ -1,12 +1,12 @@
 {
   "profile_id": 864352,
   "alias": "Nigerian Farmer",
-  "rating": 1039,
+  "rating": 1025,
   "wins": 12,
-  "losses": 10,
-  "gamesCount": 22,
-  "winRate": 55,
-  "lastPlayedAt": 1783510419,
+  "losses": 11,
+  "gamesCount": 23,
+  "winRate": 52,
+  "lastPlayedAt": 1783605006,
   "country": "se",
   "merged_ids": [],
   "ratingHistory": [
@@ -32,33 +32,10 @@
     1021,
     1044,
     1056,
-    1039
+    1039,
+    1025
   ],
   "recentMatches": [
-    {
-      "matchId": 432540214,
-      "description": "BAMBOO 10x 3x",
-      "mapname": "Bamboo Nothing_Paren_Vlocal_V2.5",
-      "timestamp": 1762968300,
-      "outcome": "win",
-      "preRating": 1007,
-      "postRating": 1064,
-      "eloChange": 57,
-      "civ": "Unknown",
-      "teamAvgElo": 1073,
-      "opponentAvgElo": 1100,
-      "teammates": [
-        "YUJIN",
-        "NothingAtAll11",
-        "king_doge"
-      ],
-      "opponents": [
-        "PaddyWon",
-        "Semisky",
-        "Exetel",
-        "AceTrooper"
-      ]
-    },
     {
       "matchId": 432700469,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -513,6 +490,30 @@
         "abatyse6533",
         "Consume Product",
         "bommietommie"
+      ]
+    },
+    {
+      "matchId": 491085132,
+      "description": "3X 10X",
+      "mapname": "my map",
+      "timestamp": 1783605006,
+      "outcome": "loss",
+      "preRating": 1039,
+      "postRating": 1025,
+      "eloChange": -14,
+      "civ": "Bulgarians",
+      "teamAvgElo": 1065,
+      "opponentAvgElo": 1075,
+      "teammates": [
+        "Bryce Coolguy",
+        "Llama",
+        "Lubbock"
+      ],
+      "opponents": [
+        "GiGi",
+        "Zavgor",
+        "i kun 2.5",
+        "Silent Annihilation"
       ]
     }
   ]

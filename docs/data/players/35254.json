@@ -1,12 +1,12 @@
 {
   "profile_id": 35254,
   "alias": "Berberecho_Feroz",
-  "rating": 940,
+  "rating": 928,
   "wins": 11,
-  "losses": 22,
-  "gamesCount": 33,
-  "winRate": 33,
-  "lastPlayedAt": 1782664865,
+  "losses": 23,
+  "gamesCount": 34,
+  "winRate": 32,
+  "lastPlayedAt": 1783611424,
   "country": "es",
   "merged_ids": [],
   "ratingHistory": [
@@ -43,33 +43,10 @@
     875,
     898,
     921,
-    940
+    940,
+    928
   ],
   "recentMatches": [
-    {
-      "matchId": 428638756,
-      "description": "10x 3x Bamboo N",
-      "mapname": "Bamboo Nothing_Paren_Vlocal_V2.5",
-      "timestamp": 1761497520,
-      "outcome": "loss",
-      "preRating": 815,
-      "postRating": 803,
-      "eloChange": -12,
-      "civ": "Unknown",
-      "teamAvgElo": 1038,
-      "opponentAvgElo": 1045,
-      "teammates": [
-        "golhmogh",
-        "277076033",
-        "Temp"
-      ],
-      "opponents": [
-        "Mr. PUTIN my President",
-        "konishika",
-        "SmilesBetray",
-        "aLEXt"
-      ]
-    },
     {
       "matchId": 431052858,
       "description": "10x shared 3x tech bamboo nothing",
@@ -524,6 +501,30 @@
         "Pogonophobia69",
         "sppd3181",
         "Soviet Union"
+      ]
+    },
+    {
+      "matchId": 491105886,
+      "description": "10x 3x BN ",
+      "mapname": "my map",
+      "timestamp": 1783611424,
+      "outcome": "loss",
+      "preRating": 940,
+      "postRating": 928,
+      "eloChange": -12,
+      "civ": "Britons",
+      "teamAvgElo": 1032,
+      "opponentAvgElo": 1034,
+      "teammates": [
+        "pool_champ",
+        "取款机ATM",
+        "Bao Oninon"
+      ],
+      "opponents": [
+        "Jormungand",
+        "momo",
+        "Waryahay",
+        "veeeeker"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 15585138,
   "alias": "I am KSG",
-  "rating": 1210,
+  "rating": 1188,
   "wins": 30,
-  "losses": 9,
-  "gamesCount": 39,
-  "winRate": 77,
-  "lastPlayedAt": 1783182172,
+  "losses": 10,
+  "gamesCount": 40,
+  "winRate": 75,
+  "lastPlayedAt": 1783606727,
   "country": "jp",
   "merged_ids": [
     12406329,
@@ -52,33 +52,10 @@
     1246,
     1223,
     1202,
-    1210
+    1210,
+    1188
   ],
   "recentMatches": [
-    {
-      "matchId": 481338262,
-      "description": "+10x+3xtech   no noob",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1780091160,
-      "outcome": "win",
-      "preRating": 1212,
-      "postRating": 1223,
-      "eloChange": 11,
-      "civ": "Unknown",
-      "teamAvgElo": 1084,
-      "opponentAvgElo": 1067,
-      "teammates": [
-        "Ravenlost",
-        "うすたつっくったおま",
-        "紫蝶黄蜂俱有情"
-      ],
-      "opponents": [
-        "S3dated",
-        "拍车面前人人平等",
-        "Haer Wei Who",
-        "yiban"
-      ]
-    },
     {
       "matchId": 484562825,
       "description": "i kun 10x3x 4v4s",
@@ -533,6 +510,30 @@
         "mgmanager",
         "dorayan",
         "轻绘梨花泪满衣"
+      ]
+    },
+    {
+      "matchId": 491090059,
+      "description": "10x 3x bamboo",
+      "mapname": "my map",
+      "timestamp": 1783606727,
+      "outcome": "loss",
+      "preRating": 1210,
+      "postRating": 1188,
+      "eloChange": -22,
+      "civ": "Vietnamese",
+      "teamAvgElo": 1052,
+      "opponentAvgElo": 1066,
+      "teammates": [
+        "476055690",
+        "KhasminC",
+        "Ghandi"
+      ],
+      "opponents": [
+        "Keishi",
+        "紫蝶黄蜂俱有情",
+        "kekekeya",
+        "beat"
       ]
     }
   ]

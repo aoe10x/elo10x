@@ -4,7 +4,7 @@ import * as fsSync from 'node:fs';
 import type { JsonDatabase } from './db.ts';
 import type { Match, PlayerProfile } from './types.ts';
 
-export class InsightsCrawler {
+export class Aoe2InsightsScraper {
   private db: JsonDatabase;
   private scrapedDataDir: string;
 

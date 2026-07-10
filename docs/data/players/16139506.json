@@ -1,12 +1,12 @@
 {
   "profile_id": 16139506,
   "alias": "GJ Euphory",
-  "rating": 980,
+  "rating": 968,
   "wins": 19,
-  "losses": 23,
-  "gamesCount": 42,
-  "winRate": 45,
-  "lastPlayedAt": 1783401047,
+  "losses": 24,
+  "gamesCount": 43,
+  "winRate": 44,
+  "lastPlayedAt": 1783629502,
   "country": "pe",
   "merged_ids": [
     12999252,
@@ -55,33 +55,10 @@
     986,
     973,
     990,
-    980
+    980,
+    968
   ],
   "recentMatches": [
-    {
-      "matchId": 411134025,
-      "description": "Bamboo Nothing 10x 3x Turbo",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1754525580,
-      "outcome": "loss",
-      "preRating": 1023,
-      "postRating": 1007,
-      "eloChange": -16,
-      "civ": "Unknown",
-      "teamAvgElo": 999,
-      "opponentAvgElo": 1028,
-      "teammates": [
-        "63e pears",
-        "Kalervo Jankko",
-        "BigWillie"
-      ],
-      "opponents": [
-        "Mr.Awesome",
-        "Lord Lee So Cacti",
-        "DEVILZ",
-        "Johnielesh"
-      ]
-    },
     {
       "matchId": 414911559,
       "description": "10x civ x3 tec Bomboo nothing - Only Good Noobs",
@@ -536,6 +513,30 @@
         "TheRiceMan",
         "紫蝶黄蜂俱有情",
         "adrian"
+      ]
+    },
+    {
+      "matchId": 491166335,
+      "description": "10x 3x Bamboo - 10xshared.com",
+      "mapname": "my map",
+      "timestamp": 1783629502,
+      "outcome": "loss",
+      "preRating": 980,
+      "postRating": 968,
+      "eloChange": -12,
+      "civ": "Tatars",
+      "teamAvgElo": 1012,
+      "opponentAvgElo": 1065,
+      "teammates": [
+        "PereCastor",
+        "Vulkan",
+        "wintre"
+      ],
+      "opponents": [
+        "Parts",
+        "Colonel Otto",
+        "疯狂的电脑",
+        "kiggless"
       ]
     }
   ]

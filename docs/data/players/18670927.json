@@ -1,12 +1,12 @@
 {
   "profile_id": 18670927,
   "alias": "PereCastor",
-  "rating": 1005,
+  "rating": 992,
   "wins": 17,
-  "losses": 19,
-  "gamesCount": 36,
-  "winRate": 47,
-  "lastPlayedAt": 1780427092,
+  "losses": 20,
+  "gamesCount": 37,
+  "winRate": 46,
+  "lastPlayedAt": 1783629502,
   "country": "es",
   "merged_ids": [
     13144895,
@@ -49,33 +49,10 @@
     1019,
     1036,
     1020,
-    1005
+    1005,
+    992
   ],
   "recentMatches": [
-    {
-      "matchId": 406223728,
-      "description": "turbo 10x 3x BAMBOO",
-      "mapname": "Bamboo Nothing_Paren_V2.3",
-      "timestamp": 1752530460,
-      "outcome": "loss",
-      "preRating": 1041,
-      "postRating": 1015,
-      "eloChange": -26,
-      "civ": "Unknown",
-      "teamAvgElo": 1032,
-      "opponentAvgElo": 990,
-      "teammates": [
-        "Magnificent",
-        "OldManofStorr",
-        "okfkg173"
-      ],
-      "opponents": [
-        "DnD",
-        "parys",
-        "Lykerya",
-        "ChristopheG1970.Fr"
-      ]
-    },
     {
       "matchId": 406478519,
       "description": "10x shared 3x tech",
@@ -530,6 +507,30 @@
         "Voskarius",
         "Wololoo",
         "CountryLunatic"
+      ]
+    },
+    {
+      "matchId": 491166335,
+      "description": "10x 3x Bamboo - 10xshared.com",
+      "mapname": "my map",
+      "timestamp": 1783629502,
+      "outcome": "loss",
+      "preRating": 1005,
+      "postRating": 992,
+      "eloChange": -13,
+      "civ": "Mayans",
+      "teamAvgElo": 1012,
+      "opponentAvgElo": 1065,
+      "teammates": [
+        "Vulkan",
+        "wintre",
+        "GJ Euphory"
+      ],
+      "opponents": [
+        "Parts",
+        "Colonel Otto",
+        "疯狂的电脑",
+        "kiggless"
       ]
     }
   ]
