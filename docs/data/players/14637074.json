@@ -1,12 +1,12 @@
 {
   "profile_id": 14637074,
   "alias": "ArchiCraig",
-  "rating": 968,
-  "wins": 26,
-  "losses": 37,
-  "gamesCount": 63,
-  "winRate": 41,
-  "lastPlayedAt": 1783647082,
+  "rating": 980,
+  "wins": 27,
+  "losses": 38,
+  "gamesCount": 65,
+  "winRate": 42,
+  "lastPlayedAt": 1783649592,
   "country": "ca",
   "merged_ids": [
     12165758,
@@ -76,57 +76,11 @@
     1004,
     990,
     979,
-    968
+    968,
+    958,
+    980
   ],
   "recentMatches": [
-    {
-      "matchId": 458361622,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1771828500,
-      "outcome": "loss",
-      "preRating": 1017,
-      "postRating": 1003,
-      "eloChange": -14,
-      "civ": "Unknown",
-      "teamAvgElo": 994,
-      "opponentAvgElo": 1057,
-      "teammates": [
-        "Bé",
-        "Al Ghouti",
-        "DON KEVIN"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "Bryce Coolguy",
-        "Pilot in training",
-        "tmrakshay"
-      ]
-    },
-    {
-      "matchId": 459075240,
-      "description": "4vs4 10x 3x shared civ bonus, random civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1772093400,
-      "outcome": "win",
-      "preRating": 1003,
-      "postRating": 1016,
-      "eloChange": 13,
-      "civ": "Unknown",
-      "teamAvgElo": 1019,
-      "opponentAvgElo": 939,
-      "teammates": [
-        "yimacs_yoyoyo",
-        "Idrinkhotbutter",
-        "MARKVILEX"
-      ],
-      "opponents": [
-        "duckbuildperson",
-        "tbtmitch",
-        "byronnnnn",
-        "luciano"
-      ]
-    },
     {
       "matchId": 479314084,
       "description": "10x 3x - BF",
@@ -557,6 +511,54 @@
         "Brotherman Bill",
         "EL__PATRON",
         "faux"
+      ]
+    },
+    {
+      "matchId": 491219282,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "my map",
+      "timestamp": 1783648681,
+      "outcome": "loss",
+      "preRating": 968,
+      "postRating": 958,
+      "eloChange": -10,
+      "civ": "Portuguese",
+      "teamAvgElo": 1081,
+      "opponentAvgElo": 1104,
+      "teammates": [
+        "Kumad",
+        "Myriad",
+        "The Cobra Brothers"
+      ],
+      "opponents": [
+        "EL__PATRON",
+        "Brotherman Bill",
+        "JoeyTribianni69",
+        "faux"
+      ]
+    },
+    {
+      "matchId": 491221840,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "my map",
+      "timestamp": 1783649592,
+      "outcome": "win",
+      "preRating": 958,
+      "postRating": 980,
+      "eloChange": 22,
+      "civ": "Italians",
+      "teamAvgElo": 1066,
+      "opponentAvgElo": 1100,
+      "teammates": [
+        "Brotherman Bill",
+        "EL__PATRON",
+        "faux"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "JoeyTribianni69",
+        "tom"
       ]
     }
   ]

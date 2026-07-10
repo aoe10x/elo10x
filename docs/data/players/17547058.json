@@ -1,11 +1,11 @@
 {
   "profile_id": 17547058,
   "alias": "Brotherman Bill",
-  "rating": 1131,
-  "wins": 57,
+  "rating": 1158,
+  "wins": 59,
   "losses": 40,
-  "gamesCount": 97,
-  "winRate": 59,
+  "gamesCount": 99,
+  "winRate": 60,
   "lastPlayedAt": 1783651097,
   "country": "se",
   "merged_ids": [
@@ -110,57 +110,11 @@
     1087,
     1101,
     1117,
-    1131
+    1131,
+    1146,
+    1158
   ],
   "recentMatches": [
-    {
-      "matchId": 392049254,
-      "description": "BN 3x tech 10x civ 10x res",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1747046460,
-      "outcome": "loss",
-      "preRating": 1137,
-      "postRating": 1116,
-      "eloChange": -21,
-      "civ": "Unknown",
-      "teamAvgElo": 1057,
-      "opponentAvgElo": 1018,
-      "teammates": [
-        "duckbuildperson",
-        "mack",
-        "El Buolas"
-      ],
-      "opponents": [
-        "Clean",
-        "checkdis",
-        "POOZO",
-        "[CL] DAB2"
-      ]
-    },
-    {
-      "matchId": 393795593,
-      "description": "10x 3x bamboo nothing  turbo",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1747683120,
-      "outcome": "loss",
-      "preRating": 1116,
-      "postRating": 1095,
-      "eloChange": -21,
-      "civ": "Unknown",
-      "teamAvgElo": 1063,
-      "opponentAvgElo": 999,
-      "teammates": [
-        "Bao Oninon",
-        "紫蝶黄蜂俱有情",
-        "Skeleton SECRET BOSS"
-      ],
-      "opponents": [
-        "gmc inspector",
-        "Clean",
-        "Trekkspell",
-        "Qtheitalian"
-      ]
-    },
     {
       "matchId": 393797881,
       "description": "10x 3x bamboo nothing  turbo",
@@ -570,16 +524,64 @@
       ]
     },
     {
+      "matchId": 491219282,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "my map",
+      "timestamp": 1783648681,
+      "outcome": "win",
+      "preRating": 1117,
+      "postRating": 1131,
+      "eloChange": 14,
+      "civ": "Cumans",
+      "teamAvgElo": 1104,
+      "opponentAvgElo": 1081,
+      "teammates": [
+        "EL__PATRON",
+        "JoeyTribianni69",
+        "faux"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "The Cobra Brothers",
+        "ArchiCraig"
+      ]
+    },
+    {
+      "matchId": 491221840,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "my map",
+      "timestamp": 1783649592,
+      "outcome": "win",
+      "preRating": 1131,
+      "postRating": 1146,
+      "eloChange": 15,
+      "civ": "Celts",
+      "teamAvgElo": 1066,
+      "opponentAvgElo": 1100,
+      "teammates": [
+        "EL__PATRON",
+        "ArchiCraig",
+        "faux"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "JoeyTribianni69",
+        "tom"
+      ]
+    },
+    {
       "matchId": 491224848,
       "description": "10x 3x bamboo",
       "mapname": "my map",
       "timestamp": 1783651097,
       "outcome": "win",
-      "preRating": 1117,
-      "postRating": 1131,
-      "eloChange": 14,
+      "preRating": 1146,
+      "postRating": 1158,
+      "eloChange": 12,
       "civ": "Turks",
-      "teamAvgElo": 1053,
+      "teamAvgElo": 1060,
       "opponentAvgElo": 1064,
       "teammates": [
         "Parts",
