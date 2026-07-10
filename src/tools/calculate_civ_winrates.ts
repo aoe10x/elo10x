@@ -29,6 +29,11 @@ async function main() {
       name: 'Bamboo Nothing_Paren_V4_Nohills',
       filter: (m: any) => m.mapname === 'Bamboo Nothing_Paren_V4_Nohills',
       id: 'paren_v4_nohills'
+    },
+    {
+      name: 'Amazon Tunnel',
+      filter: (m: any) => m.mapname === 'Amazon Tunnel',
+      id: 'amazon_tunnel'
     }
   ];
 
