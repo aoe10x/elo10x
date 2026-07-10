@@ -5,6 +5,7 @@ import { EloCalculator } from './elo.ts';
 import type { EloRanking } from './types.ts';
 import { resolveMergedCountry } from './profile_utils.ts';
 import { Aoe2InsightsScraper } from './aoe2insights_scraper.ts';
+import { generateCivWinratesReport } from './tools/calculate_civ_winrates.ts';
 
 function escapeHtml(str: string | null | undefined): string {
   if (str === null || str === undefined) return '';
@@ -300,6 +301,9 @@ async function main() {
     };
     await fs.writeFile(playerFile, JSON.stringify(details, null, 2), 'utf-8');
   }
+
+  console.log('Generating civilization winrate reports...');
+  await generateCivWinratesReport(db);
 
   console.log('Compilation success!');
 }
