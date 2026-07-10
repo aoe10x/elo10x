@@ -10,6 +10,7 @@
     "test": "pnpm run typecheck && pnpm run test:node",
     "test:node": "node --experimental-strip-types --test test/**/*.test.ts",
     "crawl": "node --experimental-strip-types src/cli.ts --crawl",
+    "crawl:insights": "node --experimental-strip-types src/cli.ts --crawl-insights",
     "elo": "node --experimental-strip-types src/compile.ts",
     "dev": "statikk docs --port 3000",
     "preflight": "pnpm run typecheck && pnpm run test"
