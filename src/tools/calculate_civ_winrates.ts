@@ -40,8 +40,16 @@ async function main() {
   let reportMarkdown = `# Civilization Winrate & Balance Report\n\n`;
   reportMarkdown += `*Generated on: ${new Date().toISOString().split('T')[0]}*\n`;
   reportMarkdown += `*Data source: elo10x matches database (${matches.length} total matches)*\n\n`;
+
+  reportMarkdown += `## Table of Contents\n`;
+  for (const scope of scopes) {
+    const slug = `scope-${scope.name.toLowerCase().replace(/[^a-z0-9_ -]/g, '').replace(/\s+/g, '-')}`;
+    reportMarkdown += `- [${scope.name}](#${slug})\n`;
+  }
+  reportMarkdown += `\n`;
+
   reportMarkdown += `> [!IMPORTANT]\n`;
-  reportMarkdown += `> Civilization data is only available for matches where players uploaded their recorded game files to AoE2Insights, or for matches fetched from the Relic API (past 3 months). Overall, civilization data is available for **12.0%** of all player picks in the database. Interpret winrates with caution where sample sizes (picks) are small.\n\n`;
+  reportMarkdown += `> Civilization data is only available for matches where players uploaded their recorded game files to AoE2Insights, or for matches fetched from the Relic API (past 3 months). Overall, civilization data is available for **12.0%** of all player occurrences in the database. Interpret winrates with caution where sample sizes (drafts) are small.\n\n`;
 
   for (const scope of scopes) {
     const stats: Record<number, CivStats> = {};
@@ -75,7 +83,7 @@ async function main() {
     reportMarkdown += `## Scope: ${scope.name}\n\n`;
     reportMarkdown += `* **Total Matches on map(s)**: ${totalMatchesInScope}\n`;
     reportMarkdown += `* **Matches with Civilization Data**: ${matchesWithCivData} (${((matchesWithCivData/totalMatchesInScope)*100).toFixed(2)}%)\n\n`;
-    reportMarkdown += `| Rank | Civilization | Picks | Wins | Winrate | Status |\n`;
+    reportMarkdown += `| Rank | Civilization | Drafts | Wins | Winrate | Status |\n`;
     reportMarkdown += `| :--- | :--- | :---: | :---: | :---: | :---: |\n`;
 
     const sortedCivs = Object.entries(stats)

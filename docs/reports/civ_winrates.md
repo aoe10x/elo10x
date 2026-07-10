@@ -3,15 +3,21 @@
 *Generated on: 2026-07-10*
 *Data source: elo10x matches database (31034 total matches)*
 
+## Table of Contents
+- [All Maps (Combined)](#scope-all-maps-combined)
+- [Bamboo Nothing_Paren_V4](#scope-bamboo-nothing_paren_v4)
+- [Bamboo Nothing_Paren_V4_Nohills](#scope-bamboo-nothing_paren_v4_nohills)
+- [Amazon Tunnel](#scope-amazon-tunnel)
+
 > [!IMPORTANT]
-> Civilization data is only available for matches where players uploaded their recorded game files to AoE2Insights, or for matches fetched from the Relic API (past 3 months). Overall, civilization data is available for **12.0%** of all player picks in the database. Interpret winrates with caution where sample sizes (picks) are small.
+> Civilization data is only available for matches where players uploaded their recorded game files to AoE2Insights, or for matches fetched from the Relic API (past 3 months). Overall, civilization data is available for **12.0%** of all player occurrences in the database. Interpret winrates with caution where sample sizes (drafts) are small.
 
 ## Scope: All Maps (Combined)
 
 * **Total Matches on map(s)**: 31034
 * **Matches with Civilization Data**: 3795 (12.23%)
 
-| Rank | Civilization | Picks | Wins | Winrate | Status |
+| Rank | Civilization | Drafts | Wins | Winrate | Status |
 | :--- | :--- | :---: | :---: | :---: | :---: |
 | 1 | **Poles** | 660 | 444 | **67.27%** | 🔴 OP |
 | 2 | **Wei** | 259 | 157 | **60.62%** | 🔴 OP |
@@ -74,7 +80,7 @@
 * **Total Matches on map(s)**: 1413
 * **Matches with Civilization Data**: 334 (23.64%)
 
-| Rank | Civilization | Picks | Wins | Winrate | Status |
+| Rank | Civilization | Drafts | Wins | Winrate | Status |
 | :--- | :--- | :---: | :---: | :---: | :---: |
 | 1 | **Poles** | 55 | 43 | **78.18%** | 🔴 OP |
 | 2 | **Khitans** | 18 | 13 | **72.22%** | 🔴 OP |
@@ -135,7 +141,7 @@
 * **Total Matches on map(s)**: 593
 * **Matches with Civilization Data**: 192 (32.38%)
 
-| Rank | Civilization | Picks | Wins | Winrate | Status |
+| Rank | Civilization | Drafts | Wins | Winrate | Status |
 | :--- | :--- | :---: | :---: | :---: | :---: |
 | 1 | **Poles** | 24 | 23 | **95.83%** | 🔴 OP |
 | 2 | **Wei** | 15 | 11 | **73.33%** | 🔴 OP |
@@ -196,7 +202,7 @@
 * **Total Matches on map(s)**: 5649
 * **Matches with Civilization Data**: 308 (5.45%)
 
-| Rank | Civilization | Picks | Wins | Winrate | Status |
+| Rank | Civilization | Drafts | Wins | Winrate | Status |
 | :--- | :--- | :---: | :---: | :---: | :---: |
 | 1 | **Tupi** | 4 | 3 | **75.00%** | ⚪ Low Sample |
 | 2 | **Romans** | 30 | 21 | **70.00%** | 🔴 OP |
