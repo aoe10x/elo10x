@@ -1,12 +1,12 @@
 {
   "profile_id": 14637074,
   "alias": "ArchiCraig",
-  "rating": 1004,
+  "rating": 979,
   "wins": 26,
-  "losses": 34,
-  "gamesCount": 60,
-  "winRate": 43,
-  "lastPlayedAt": 1783038337,
+  "losses": 36,
+  "gamesCount": 62,
+  "winRate": 42,
+  "lastPlayedAt": 1783644867,
   "country": "ca",
   "merged_ids": [
     12165758,
@@ -73,57 +73,11 @@
     1018,
     1003,
     1018,
-    1004
+    1004,
+    990,
+    979
   ],
   "recentMatches": [
-    {
-      "matchId": 450398330,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1769157720,
-      "outcome": "loss",
-      "preRating": 994,
-      "postRating": 982,
-      "eloChange": -12,
-      "civ": "Unknown",
-      "teamAvgElo": 1023,
-      "opponentAvgElo": 1082,
-      "teammates": [
-        "RedBullWOLOLO26",
-        "Dragonlord Freya",
-        "Termi2023"
-      ],
-      "opponents": [
-        "Kumad",
-        "noshoes",
-        "Myriad",
-        "ZaySol"
-      ]
-    },
-    {
-      "matchId": 450403930,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1769159820,
-      "outcome": "win",
-      "preRating": 982,
-      "postRating": 1001,
-      "eloChange": 19,
-      "civ": "Unknown",
-      "teamAvgElo": 986,
-      "opponentAvgElo": 1047,
-      "teammates": [
-        "Raggamuffin'",
-        "RedBullWOLOLO26",
-        "destructeurdanus"
-      ],
-      "opponents": [
-        "Kumad",
-        "Myriad",
-        "TM AndresgP",
-        "Mattroid 99"
-      ]
-    },
     {
       "matchId": 455294253,
       "description": "Bamboo Nothing  10x Shared 3x Tech random civ",
@@ -554,6 +508,54 @@
         "feid_",
         "rcmccallum",
         "Cale94"
+      ]
+    },
+    {
+      "matchId": 491201433,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "my map",
+      "timestamp": 1783643224,
+      "outcome": "loss",
+      "preRating": 1004,
+      "postRating": 990,
+      "eloChange": -14,
+      "civ": "Berbers",
+      "teamAvgElo": 1036,
+      "opponentAvgElo": 1051,
+      "teammates": [
+        "RedBullWOLOLO26",
+        "ZaySol",
+        "Belisarius"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "Arteik",
+        "Brohio"
+      ]
+    },
+    {
+      "matchId": 491207596,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "my map",
+      "timestamp": 1783644867,
+      "outcome": "loss",
+      "preRating": 990,
+      "postRating": 979,
+      "eloChange": -11,
+      "civ": "Hindustanis",
+      "teamAvgElo": 1045,
+      "opponentAvgElo": 1108,
+      "teammates": [
+        "RedBullWOLOLO26",
+        "Belisarius",
+        "hussein"
+      ],
+      "opponents": [
+        "Kumad",
+        "EL__PATRON",
+        "Myriad",
+        "Brotherman Bill"
       ]
     }
   ]

@@ -1,13 +1,13 @@
 {
   "profile_id": 6279739,
   "alias": "Chikna Raavan",
-  "rating": 1050,
+  "rating": 1034,
   "wins": 30,
-  "losses": 25,
-  "gamesCount": 55,
-  "winRate": 55,
-  "lastPlayedAt": 1754917440,
-  "country": "Unknown",
+  "losses": 26,
+  "gamesCount": 56,
+  "winRate": 54,
+  "lastPlayedAt": 1783642085,
+  "country": "in",
   "merged_ids": [],
   "ratingHistory": [
     1000,
@@ -65,33 +65,10 @@
     1069,
     1051,
     1034,
-    1050
+    1050,
+    1034
   ],
   "recentMatches": [
-    {
-      "matchId": 408559177,
-      "description": "10x 3x",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1753500600,
-      "outcome": "win",
-      "preRating": 1054,
-      "postRating": 1069,
-      "eloChange": 15,
-      "civ": "Unknown",
-      "teamAvgElo": 1019,
-      "opponentAvgElo": 1025,
-      "teammates": [
-        "gstone",
-        "FogHorn",
-        "enterren"
-      ],
-      "opponents": [
-        "GandalfGG",
-        "Fastcastleintoheatedshots",
-        "ArbiterAK",
-        "Daddy"
-      ]
-    },
     {
       "matchId": 409904517,
       "description": "Bamboo Nothing 10x 3x",
@@ -546,6 +523,30 @@
         "Keishi",
         "Lykerya",
         "DGHIR | NICOGP11"
+      ]
+    },
+    {
+      "matchId": 491201161,
+      "description": "10x 3x Bamboo - 10xshared.com",
+      "mapname": "my map",
+      "timestamp": 1783642085,
+      "outcome": "loss",
+      "preRating": 1050,
+      "postRating": 1034,
+      "eloChange": -16,
+      "civ": "Bulgarians",
+      "teamAvgElo": 1040,
+      "opponentAvgElo": 1057,
+      "teammates": [
+        "Emusan",
+        "Goodsoup",
+        "pandasadnap"
+      ],
+      "opponents": [
+        "Parts",
+        "duckbuildperson",
+        "Brotherman Bill",
+        "Tortrix"
       ]
     }
   ]
