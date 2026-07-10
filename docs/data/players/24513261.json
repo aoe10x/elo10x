@@ -1,12 +1,12 @@
 {
   "profile_id": 24513261,
   "alias": "DickerleMinka",
-  "rating": 974,
-  "wins": 6,
-  "losses": 9,
-  "gamesCount": 15,
-  "winRate": 40,
-  "lastPlayedAt": 1783368508,
+  "rating": 985,
+  "wins": 7,
+  "losses": 10,
+  "gamesCount": 17,
+  "winRate": 41,
+  "lastPlayedAt": 1783715989,
   "country": "de",
   "merged_ids": [
     13505030,
@@ -28,7 +28,9 @@
     994,
     963,
     946,
-    974
+    974,
+    954,
+    985
   ],
   "recentMatches": [
     {
@@ -389,6 +391,54 @@
         "BearBrown",
         "0urSneakyBoi",
         "N M E"
+      ]
+    },
+    {
+      "matchId": 491384231,
+      "description": "10x shared 3x tech 4v4 random",
+      "mapname": "my map",
+      "timestamp": 1783712996,
+      "outcome": "loss",
+      "preRating": 974,
+      "postRating": 954,
+      "eloChange": -20,
+      "civ": "Spanish",
+      "teamAvgElo": 1009,
+      "opponentAvgElo": 1035,
+      "teammates": [
+        "pandasadnap",
+        "wintre",
+        "La_Fratellanza"
+      ],
+      "opponents": [
+        "HighPriestCaco",
+        "MARKVILEX",
+        "Paladin",
+        "schrubber"
+      ]
+    },
+    {
+      "matchId": 491392842,
+      "description": "BAMBOO 10x - 3x  **NO NOOB",
+      "mapname": "my map",
+      "timestamp": 1783715989,
+      "outcome": "win",
+      "preRating": 954,
+      "postRating": 985,
+      "eloChange": 31,
+      "civ": "Hindustanis",
+      "teamAvgElo": 996,
+      "opponentAvgElo": 1093,
+      "teammates": [
+        "dRea",
+        "Your Ego",
+        "Chuckyllo4417"
+      ],
+      "opponents": [
+        "DerAdler",
+        "^1Butcher_^4Mars",
+        "Bean goose",
+        "r9maximus"
       ]
     }
   ]
