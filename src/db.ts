@@ -10,31 +10,34 @@ import { buildMatchFingerprint } from './match_fingerprint.ts';
  * The file is assumed to start with '[' and end with ']', with each item on its own line ending with an optional comma.
  */
 export async function* readJsonArrayLines<T>(filePath: string): AsyncGenerator<T> {
-  if (!fsSync.existsSync(filePath)) return;
-
   const fileStream = fsSync.createReadStream(filePath);
   const rl = readline.createInterface({
     input: fileStream,
     crlfDelay: Infinity
   });
 
-  for await (const line of rl) {
-    const trimmed = line.trim();
-    // Skip array opening/closing brackets
-    if (trimmed === '[' || trimmed === ']') {
-      continue;
-    }
-    if (!trimmed) continue;
+  try {
+    for await (const line of rl) {
+      const trimmed = line.trim();
+      // Skip array opening/closing brackets
+      if (trimmed === '[' || trimmed === ']') {
+        continue;
+      }
+      if (!trimmed) continue;
 
-    // Strip trailing comma if present
-    const cleanLine = trimmed.endsWith(',') ? trimmed.slice(0, -1) : trimmed;
-    if (cleanLine === 'null') continue;
-    
-    try {
-      yield JSON.parse(cleanLine) as T;
-    } catch (e) {
-      console.error(`Failed to parse JSON line in ${filePath}: "${cleanLine}"`, e);
+      // Strip trailing comma if present
+      const cleanLine = trimmed.endsWith(',') ? trimmed.slice(0, -1) : trimmed;
+      if (cleanLine === 'null') continue;
+      
+      try {
+        yield JSON.parse(cleanLine) as T;
+      } catch (e) {
+        console.error(`Failed to parse JSON line in ${filePath}: "${cleanLine}"`, e);
+      }
     }
+  } catch (err: any) {
+    if (err.code === 'ENOENT') return;
+    throw err;
   }
 }
 

@@ -63,13 +63,6 @@ export interface EloRanking {
   merged_ids?: number[];
 }
 
-export interface DatabaseSchema {
-  matches: Record<number, Match>;
-  match_fingerprints: Record<string, number>; // fingerprint -> match_id
-  profiles: Record<number, PlayerProfile>;
-  crawled_profiles: Record<number, number>; // profile_id -> timestamp (ms) when crawled
-  crawl_queue: number[];
-}
 
 export interface Lobby {
   matchId: number;
