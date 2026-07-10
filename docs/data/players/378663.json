@@ -1,13 +1,13 @@
 {
   "profile_id": 378663,
   "alias": "blackbird806",
-  "rating": 1044,
+  "rating": 1022,
   "wins": 10,
-  "losses": 9,
-  "gamesCount": 19,
-  "winRate": 53,
-  "lastPlayedAt": 1779418440,
-  "country": "Unknown",
+  "losses": 10,
+  "gamesCount": 20,
+  "winRate": 50,
+  "lastPlayedAt": 1783700541,
+  "country": "fr",
   "merged_ids": [],
   "ratingHistory": [
     1000,
@@ -29,7 +29,8 @@
     983,
     1003,
     1025,
-    1044
+    1044,
+    1022
   ],
   "recentMatches": [
     {
@@ -486,6 +487,30 @@
         "gamingtars",
         "Consume Product",
         "Ghost_pt"
+      ]
+    },
+    {
+      "matchId": 491340971,
+      "description": "10x shared michi 4v4 all welcome",
+      "mapname": "my map",
+      "timestamp": 1783700541,
+      "outcome": "loss",
+      "preRating": 1044,
+      "postRating": 1022,
+      "eloChange": -22,
+      "civ": "Wu",
+      "teamAvgElo": 1038,
+      "opponentAvgElo": 966,
+      "teammates": [
+        "Eemeli",
+        "Howe",
+        "YUJIN"
+      ],
+      "opponents": [
+        "Master.Ji.ro.714",
+        "476055690",
+        "k0rnm@yer",
+        "FleeingCarrot"
       ]
     }
   ]

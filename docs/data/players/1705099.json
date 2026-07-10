@@ -1,12 +1,12 @@
 {
   "profile_id": 1705099,
   "alias": "BearBrown",
-  "rating": 985,
+  "rating": 973,
   "wins": 34,
-  "losses": 34,
-  "gamesCount": 68,
-  "winRate": 50,
-  "lastPlayedAt": 1783376400,
+  "losses": 35,
+  "gamesCount": 69,
+  "winRate": 49,
+  "lastPlayedAt": 1783703137,
   "country": "cz",
   "merged_ids": [],
   "ratingHistory": [
@@ -78,33 +78,10 @@
     1030,
     1013,
     998,
-    985
+    985,
+    973
   ],
   "recentMatches": [
-    {
-      "matchId": 466999257,
-      "description": "3x 10x bamboo - random civ - no noobs",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1775010480,
-      "outcome": "win",
-      "preRating": 1064,
-      "postRating": 1082,
-      "eloChange": 18,
-      "civ": "Unknown",
-      "teamAvgElo": 1065,
-      "opponentAvgElo": 1097,
-      "teammates": [
-        "liehuo22",
-        "TheRiceMan",
-        "fxsound"
-      ],
-      "opponents": [
-        "gemmascho",
-        "Mimi",
-        "im slow",
-        "Delta"
-      ]
-    },
     {
       "matchId": 467011330,
       "description": "4vs4 10x 3x shared civ bonus, random civ",
@@ -559,6 +536,30 @@
         "MARKVILEX",
         "Ode To  A Pineapple",
         "Stigel"
+      ]
+    },
+    {
+      "matchId": 491351394,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "my map",
+      "timestamp": 1783703137,
+      "outcome": "loss",
+      "preRating": 985,
+      "postRating": 973,
+      "eloChange": -12,
+      "civ": "Ethiopians",
+      "teamAvgElo": 1090,
+      "opponentAvgElo": 1063,
+      "teammates": [
+        "Not a Wizard",
+        "Manba Out",
+        "Papillon"
+      ],
+      "opponents": [
+        "Parenquima",
+        "matt",
+        "duusker",
+        "tanoboe"
       ]
     }
   ]
