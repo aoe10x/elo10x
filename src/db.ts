@@ -96,6 +96,14 @@ export class JsonDatabase {
     // Load matches
     this.matches = new Map<number, Match>();
     for await (const match of readJsonArrayLines<Match>(this.matchesPath)) {
+      if (match.players) {
+        for (const p of match.players) {
+          if ((p as any).race_id !== undefined) {
+            p.civ_id = p.civ_id || (p as any).race_id;
+            delete (p as any).race_id;
+          }
+        }
+      }
       this.matches.set(match.id, match);
     }
 

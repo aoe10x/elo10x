@@ -58,14 +58,14 @@ export async function generateCivWinratesReport(db: JsonDatabase): Promise<void>
       if (!scope.filter(m)) continue;
       totalMatchesInScope++;
 
-      const hasCivData = m.players && m.players.some((p: any) => (p.civ_id || p.race_id) && (p.civ_id || p.race_id) > 0);
+      const hasCivData = m.players && m.players.some((p: any) => p.civ_id && p.civ_id > 0);
       if (hasCivData) {
         matchesWithCivData++;
       }
 
       if (m.players) {
         for (const p of m.players) {
-          const civId = p.civ_id || (p as any).race_id;
+          const civId = p.civ_id;
           if (civId && civId > 0) {
             if (!stats[civId]) {
               stats[civId] = { picks: 0, wins: 0 };
