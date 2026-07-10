@@ -1,12 +1,12 @@
 {
   "profile_id": 193215,
   "alias": "Sir_William",
-  "rating": 1053,
+  "rating": 1035,
   "wins": 19,
-  "losses": 17,
-  "gamesCount": 36,
-  "winRate": 53,
-  "lastPlayedAt": 1777330020,
+  "losses": 18,
+  "gamesCount": 37,
+  "winRate": 51,
+  "lastPlayedAt": 1783626748,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -46,33 +46,10 @@
     1110,
     1090,
     1073,
-    1053
+    1053,
+    1035
   ],
   "recentMatches": [
-    {
-      "matchId": 403908367,
-      "description": "10x 3x BN - Mr.PUTIN sucks :(",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1751609520,
-      "outcome": "win",
-      "preRating": 975,
-      "postRating": 998,
-      "eloChange": 23,
-      "civ": "Unknown",
-      "teamAvgElo": 970,
-      "opponentAvgElo": 987,
-      "teammates": [
-        "bijiyumo",
-        "Ferdinand I of Naples",
-        "Borkan"
-      ],
-      "opponents": [
-        "BigAl",
-        "Mehandor",
-        "Juliana",
-        "forgo"
-      ]
-    },
     {
       "matchId": 404786785,
       "description": "10x 3x",
@@ -527,6 +504,30 @@
         "dimon21_8",
         "fer_pinto",
         "Flying Penguin"
+      ]
+    },
+    {
+      "matchId": 491156940,
+      "description": "4v4 10x civ bonus shared\rsudden death\rsudden death",
+      "mapname": "my map",
+      "timestamp": 1783626748,
+      "outcome": "loss",
+      "preRating": 1053,
+      "postRating": 1035,
+      "eloChange": -18,
+      "civ": "Poles",
+      "teamAvgElo": 1016,
+      "opponentAvgElo": 1019,
+      "teammates": [
+        "Grapphy",
+        "Dark",
+        "Nikazio987"
+      ],
+      "opponents": [
+        "[RUS-F] Lastman",
+        "Maselia",
+        "king_doge",
+        "r9maximus"
       ]
     }
   ]

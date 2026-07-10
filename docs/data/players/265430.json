@@ -1,12 +1,12 @@
 {
   "profile_id": 265430,
   "alias": "I LICK TRAINS",
-  "rating": 1059,
+  "rating": 1040,
   "wins": 10,
-  "losses": 9,
-  "gamesCount": 19,
-  "winRate": 53,
-  "lastPlayedAt": 1782944785,
+  "losses": 10,
+  "gamesCount": 20,
+  "winRate": 50,
+  "lastPlayedAt": 1783633094,
   "country": "ch",
   "merged_ids": [],
   "ratingHistory": [
@@ -29,7 +29,8 @@
     1045,
     1023,
     1041,
-    1059
+    1059,
+    1040
   ],
   "recentMatches": [
     {
@@ -486,6 +487,30 @@
         "SimCity3000",
         "MARKVILEX",
         "Apocalypto"
+      ]
+    },
+    {
+      "matchId": 491175053,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "my map",
+      "timestamp": 1783633094,
+      "outcome": "loss",
+      "preRating": 1059,
+      "postRating": 1040,
+      "eloChange": -19,
+      "civ": "Bulgarians",
+      "teamAvgElo": 996,
+      "opponentAvgElo": 1041,
+      "teammates": [
+        "bigabyte",
+        "mozu5",
+        "MarieBrutale"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "omnomnomnivore",
+        "Zak",
+        "GuguBot"
       ]
     }
   ]

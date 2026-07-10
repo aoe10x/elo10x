@@ -17,22 +17,14 @@ pnpm install
 #### A. Relic Link API Crawler (Recent Games)
 Crawls recent match histories for active players using the public Relic Link API.
 ```bash
-# Crawl recent matches for active players (default limit: 50)
-pnpm run crawl -- --limit 50
+# Crawl recent matches for active players (default limit: 150)
+pnpm run crawl -- --limit 150
 
 # Custom months cutoff (e.g. last 6 months)
-pnpm run crawl -- --limit 50 --months 6
+pnpm run crawl -- --limit 150 --months 6
 ```
 
-##### Smart Seeding & Crawl Design
-To run efficiently within a periodic GitHub Actions workflow (running every 4 hours), the Relic API crawler uses a multi-tiered queue strategy:
-*   **Live Seeding**: Fetches active lobbies and live games from `aoe10x.com` APIs, queuing currently active players first for maximum freshness.
-*   **Active Player Seeding**: Appends the most active players in the database (top active from the last 3 days and 30 days) to keep active ranking brackets updated.
-*   **Background Refresh**: Appends the 20 oldest/never-crawled profiles in the database to the back of the queue.
-*   **18-hour Skip Filter**: Before invoking the Relic API for a player, the crawler checks if they have been crawled in the last 18 hours. If so, they are skipped cost-free. This prevents highly active players from exhausting the session quota, allowing the remaining capacity to cycle down and refresh background profiles.
-*   **Snowball Discovery**: Whenever a new 10x match is discovered, all 8 players in that match are appended to the queue to trace their histories.
-
-With a default limit of 50 crawled players per session running every 4 hours (completing 300 crawls per day), this cycle automatically refreshes our entire active database of ~1,800 players once every 6 days, while keeping live/active players updated daily.
+Full details on the Relic API batch crawler, smart seeding strategy, dynamic cooldown calibration, and the AoE2Insights scraper can be found in [docs/updates_and_crawling.md](file:///Users/paulirish/code/elo10x/docs/updates_and_crawling.md).
 
 #### B. AoE2Insights Chrome Scraper (Historical Backfill)
 Backfills deep match history for players directly from AoE2Insights. This requires having a Chrome instance open with remote debugging enabled on port `9222`:
@@ -46,7 +38,7 @@ pnpm run crawl -- --scrape-insights active
 # Scrape matches for a specific player ID
 pnpm run crawl -- --scrape-insights 64605
 ```
-*Note: The insights scraper uses a smart crawl manifest to automatically stop fetching pages once it overlaps with matches already stored in your database.*
+*Note: The insights scraper uses a smart crawl manifest to automatically stop fetching pages once it overlaps with matches already stored in your database (see [docs/updates_and_crawling.md](file:///Users/paulirish/code/elo10x/docs/updates_and_crawling.md)).*
 
 ### 3. Compute Elo & Compile Static Site
 Run the rating calculations and pre-render the entire leaderboard website:
