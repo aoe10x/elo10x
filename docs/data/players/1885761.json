@@ -1,12 +1,12 @@
 {
   "profile_id": 1885761,
   "alias": "Eraser88",
-  "rating": 1017,
+  "rating": 1002,
   "wins": 39,
-  "losses": 43,
-  "gamesCount": 82,
-  "winRate": 48,
-  "lastPlayedAt": 1781068200,
+  "losses": 44,
+  "gamesCount": 83,
+  "winRate": 47,
+  "lastPlayedAt": 1783705042,
   "country": "gb",
   "merged_ids": [],
   "ratingHistory": [
@@ -92,33 +92,10 @@
     1027,
     1014,
     1030,
-    1017
+    1017,
+    1002
   ],
   "recentMatches": [
-    {
-      "matchId": 436257410,
-      "description": "10x 3x shared !!NO NOOBS!!",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1764383400,
-      "outcome": "win",
-      "preRating": 980,
-      "postRating": 998,
-      "eloChange": 18,
-      "civ": "Gurjaras",
-      "teamAvgElo": 1038,
-      "opponentAvgElo": 1015,
-      "teammates": [
-        "ChristopheG1970.Fr",
-        "Mimi",
-        "blankedgamerz"
-      ],
-      "opponents": [
-        "Your Ego",
-        "mgmanager",
-        "QuasarHerzog555",
-        "Age5464"
-      ]
-    },
     {
       "matchId": 437215125,
       "description": "BAMBOO NOTHING 10x",
@@ -573,6 +550,30 @@
         "TheRiceMan",
         "Emusan",
         "tjaw154"
+      ]
+    },
+    {
+      "matchId": 491358346,
+      "description": "10x 3x bamboo",
+      "mapname": "my map",
+      "timestamp": 1783705042,
+      "outcome": "loss",
+      "preRating": 1017,
+      "postRating": 1002,
+      "eloChange": -15,
+      "civ": "Khmer",
+      "teamAvgElo": 1056,
+      "opponentAvgElo": 1042,
+      "teammates": [
+        "Papillon",
+        "Not a Wizard",
+        "[TW] hushin0917"
+      ],
+      "opponents": [
+        "BearBrown",
+        "Frederick",
+        "I LICK TRAINS",
+        "Emusan"
       ]
     }
   ]

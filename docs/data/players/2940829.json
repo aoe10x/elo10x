@@ -1,12 +1,12 @@
 {
   "profile_id": 2940829,
   "alias": "UnstableKnight",
-  "rating": 956,
+  "rating": 944,
   "wins": 10,
-  "losses": 15,
-  "gamesCount": 25,
-  "winRate": 40,
-  "lastPlayedAt": 1783436446,
+  "losses": 16,
+  "gamesCount": 26,
+  "winRate": 38,
+  "lastPlayedAt": 1783710271,
   "country": "za",
   "merged_ids": [],
   "ratingHistory": [
@@ -35,33 +35,10 @@
     997,
     984,
     971,
-    956
+    956,
+    944
   ],
   "recentMatches": [
-    {
-      "matchId": 378602679,
-      "description": "10x civ shared 4v4",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1742085060,
-      "outcome": "loss",
-      "preRating": 1085,
-      "postRating": 1042,
-      "eloChange": -43,
-      "civ": "Unknown",
-      "teamAvgElo": 994,
-      "opponentAvgElo": 1063,
-      "teammates": [
-        "12345",
-        "Gregory",
-        "30Wololo"
-      ],
-      "opponents": [
-        "pandalam",
-        "老K",
-        "wogsihjvaa4865",
-        "NothingAtAll11"
-      ]
-    },
     {
       "matchId": 378760440,
       "description": "10x civ 3x techs| tasty boars ^_^",
@@ -516,6 +493,30 @@
         "Consume Product",
         "The Cobra Brothers",
         "Wololoo"
+      ]
+    },
+    {
+      "matchId": 491375427,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "my map",
+      "timestamp": 1783710271,
+      "outcome": "loss",
+      "preRating": 956,
+      "postRating": 944,
+      "eloChange": -12,
+      "civ": "Berbers",
+      "teamAvgElo": 983,
+      "opponentAvgElo": 1036,
+      "teammates": [
+        "baianitro",
+        "OrangE",
+        "[ ARKI ! ]"
+      ],
+      "opponents": [
+        "BigAl",
+        "Consume Product",
+        "julien.nicolai",
+        "treehugger"
       ]
     }
   ]

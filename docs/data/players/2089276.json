@@ -1,12 +1,12 @@
 {
   "profile_id": 2089276,
   "alias": "DJ",
-  "rating": 951,
+  "rating": 941,
   "wins": 12,
-  "losses": 17,
-  "gamesCount": 29,
-  "winRate": 41,
-  "lastPlayedAt": 1783469187,
+  "losses": 18,
+  "gamesCount": 30,
+  "winRate": 40,
+  "lastPlayedAt": 1783713481,
   "country": "cl",
   "merged_ids": [],
   "ratingHistory": [
@@ -39,33 +39,10 @@
     958,
     944,
     933,
-    951
+    951,
+    941
   ],
   "recentMatches": [
-    {
-      "matchId": 476980734,
-      "description": "10x Shared 3xTech Bamboo Nothing",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1778500020,
-      "outcome": "loss",
-      "preRating": 1022,
-      "postRating": 992,
-      "eloChange": -30,
-      "civ": "Unknown",
-      "teamAvgElo": 1044,
-      "opponentAvgElo": 1059,
-      "teammates": [
-        "[UNem] Toreto",
-        "procrastination.exe",
-        "Battlegoose"
-      ],
-      "opponents": [
-        "{R} Parry",
-        "Hyge",
-        "babeleo",
-        "RedBullWOLOLO26"
-      ]
-    },
     {
       "matchId": 476983980,
       "description": "10x Shared 3xTech Bamboo Nothing",
@@ -243,7 +220,7 @@
       "preRating": 984,
       "postRating": 968,
       "eloChange": -16,
-      "civ": "Mayans",
+      "civ": "Maya",
       "teamAvgElo": 1008,
       "opponentAvgElo": 1064,
       "teammates": [
@@ -520,6 +497,30 @@
         "Master.Ji.ro.714",
         "sonygames4691",
         "flaggavator"
+      ]
+    },
+    {
+      "matchId": 491384982,
+      "description": "10x civ 3x tech",
+      "mapname": "my map",
+      "timestamp": 1783713481,
+      "outcome": "loss",
+      "preRating": 951,
+      "postRating": 941,
+      "eloChange": -10,
+      "civ": "Malay",
+      "teamAvgElo": 959,
+      "opponentAvgElo": 1090,
+      "teammates": [
+        "Borkan",
+        "Moose",
+        "David the DrAVIDian"
+      ],
+      "opponents": [
+        "gabrieldemarmiesse",
+        "liehuo22",
+        "Parenquima",
+        "Lordetion"
       ]
     }
   ]

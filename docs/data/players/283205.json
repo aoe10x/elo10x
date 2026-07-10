@@ -1,12 +1,12 @@
 {
   "profile_id": 283205,
   "alias": "r9maximus",
-  "rating": 1035,
+  "rating": 1012,
   "wins": 9,
-  "losses": 8,
-  "gamesCount": 17,
-  "winRate": 53,
-  "lastPlayedAt": 1783629438,
+  "losses": 9,
+  "gamesCount": 18,
+  "winRate": 50,
+  "lastPlayedAt": 1783715989,
   "country": "nl",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,8 @@
     1065,
     1037,
     1060,
-    1035
+    1035,
+    1012
   ],
   "recentMatches": [
     {
@@ -436,6 +437,30 @@
         "NothingAtAll11",
         "Gladiator",
         "GuguBot"
+      ]
+    },
+    {
+      "matchId": 491392842,
+      "description": "BAMBOO 10x - 3x  **NO NOOB",
+      "mapname": "my map",
+      "timestamp": 1783715989,
+      "outcome": "loss",
+      "preRating": 1035,
+      "postRating": 1012,
+      "eloChange": -23,
+      "civ": "Chinese",
+      "teamAvgElo": 1093,
+      "opponentAvgElo": 996,
+      "teammates": [
+        "DerAdler",
+        "^1Butcher_^4Mars",
+        "Bean goose"
+      ],
+      "opponents": [
+        "dRea",
+        "Your Ego",
+        "Chuckyllo4417",
+        "DickerleMinka"
       ]
     }
   ]
