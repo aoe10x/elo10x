@@ -62,21 +62,21 @@ While active, the scraper injects a full-screen semi-transparent overlay saying:
 
 ### Crawling Modes
 
-#### A. Automated Recent Matches Crawl (`crawl:insights`)
+#### A. Automated Recent Matches Crawl (`crawl`)
 Runs an automated snowball crawl session exactly like the Relic crawler, but fetches **Page 1** of recent games for eligible players via the headful scraper.
 ```bash
-# Snowball crawl recent games from Insights (default limit: 10)
-pnpm crawl:insights --limit 10
+# Snowball crawl recent games from Insights (default limit: 80)
+elo10x crawl --engine insights --limit 80
 ```
 
-#### B. Targeted Scrape / Historical Backfill (`scrape:player`)
+#### B. Targeted Scrape / Historical Backfill (`scrape`)
 Backfills deep history for a specific profile ID across a page range, or crawls recent matches for active database players:
 ```bash
 # Scrape pages 1 through 20 for Clean (profile 11783175)
-pnpm scrape:player 11783175 --start-page 1 --end-page 20
+elo10x scrape 11783175 --start-page 1 --end-page 20
 
 # Scrape Page 1 for the top active database players
-pnpm scrape:player active --start-page 1 --end-page 1
+elo10x scrape active --start-page 1 --end-page 1
 ```
 
 ### Crawl Manifest & Overlap Boundaries

@@ -5,6 +5,9 @@
   "engines": {
     "node": ">=24.11.0"
   },
+  "bin": {
+    "elo10x": "./src/cli.ts"
+  },
   "scripts": {
     "typecheck": "tsc --noEmit",
     "test": "pnpm run typecheck && pnpm run test:node",
