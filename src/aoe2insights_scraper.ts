@@ -393,12 +393,12 @@ export class Aoe2InsightsScraper {
                         const profile_id = parseInt(a.href.match(/\\/user\\/(\\d+)\\//)[1], 10);
                         const alias = a.innerText.trim();
                         const civName = civIcon ? civIcon.title.toLowerCase().trim() : '';
-                        const race_id = CIV_MAP[civName] || 0;
+                        const civ_id = CIV_MAP[civName] || 0;
                         players.push({
                           profile_id,
                           teamid: teamIndex,
                           resulttype: isWin ? 1 : 0,
-                          race_id,
+                          civ_id,
                           alias
                         });
                       }
@@ -514,7 +514,7 @@ export class Aoe2InsightsScraper {
               profile_id: p.profile_id,
               teamid: p.teamid,
               resulttype: p.resulttype,
-              race_id: p.race_id,
+              civ_id: p.civ_id || p.race_id || 0,
               alias: p.alias
             }))
           };
