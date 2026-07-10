@@ -231,7 +231,7 @@ export class RelicCrawler {
               profile_id: pId,
               teamid: r.teamid,
               resulttype: r.resulttype, // 1 = Win, 0 = Loss
-              race_id: r.civilization_id,
+              civ_id: r.civilization_id,
               alias: cachedProfile?.alias || `Player_${pId}`
             });
 

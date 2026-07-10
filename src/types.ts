@@ -1,8 +1,8 @@
 export interface MatchPlayer {
   profile_id: number;
   teamid: number;
-  resulttype: number; // 1 = Win, 2 = Loss
-  race_id: number;
+  resulttype: number; // 1 = Win, 0/2 = Loss
+  civ_id: number;
   alias: string;
 }
 

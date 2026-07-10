@@ -253,12 +253,12 @@ export class JsonDatabase {
         updated = true;
       }
 
-      // 2. Merge player civilization IDs (race_id)
+      // 2. Merge player civilization IDs (civ_id)
       if (existing.players && match.players) {
         for (const ep of existing.players) {
           const mp = match.players.find(p => p.profile_id === ep.profile_id);
-          if (mp && (!ep.race_id || ep.race_id === 0) && mp.race_id && mp.race_id > 0) {
-            ep.race_id = mp.race_id;
+          if (mp && (!ep.civ_id || ep.civ_id === 0) && mp.civ_id && mp.civ_id > 0) {
+            ep.civ_id = mp.civ_id;
             updated = true;
           }
         }
