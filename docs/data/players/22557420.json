@@ -1,12 +1,12 @@
 {
   "profile_id": 22557420,
   "alias": "ZaySol",
-  "rating": 1066,
+  "rating": 1049,
   "wins": 51,
-  "losses": 33,
-  "gamesCount": 84,
-  "winRate": 61,
-  "lastPlayedAt": 1783465564,
+  "losses": 34,
+  "gamesCount": 85,
+  "winRate": 60,
+  "lastPlayedAt": 1783643224,
   "country": "ca",
   "merged_ids": [
     13213207,
@@ -97,33 +97,10 @@
     1089,
     1070,
     1084,
-    1066
+    1066,
+    1049
   ],
   "recentMatches": [
-    {
-      "matchId": 470815357,
-      "description": "10x 3x shared !!NO NOOBS!!",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1776374160,
-      "outcome": "win",
-      "preRating": 1134,
-      "postRating": 1145,
-      "eloChange": 11,
-      "civ": "Unknown",
-      "teamAvgElo": 1087,
-      "opponentAvgElo": 1026,
-      "teammates": [
-        "Age5464",
-        "tacotoy",
-        "tonkatumura"
-      ],
-      "opponents": [
-        "Monk",
-        "mrkus.shlz",
-        "Enn Tore",
-        "Mithrandir the Fool"
-      ]
-    },
     {
       "matchId": 474958937,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -578,6 +555,30 @@
         "MARKVILEX",
         "Paulichromatic",
         "Rita De Valencia"
+      ]
+    },
+    {
+      "matchId": 491201433,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "my map",
+      "timestamp": 1783643224,
+      "outcome": "loss",
+      "preRating": 1066,
+      "postRating": 1049,
+      "eloChange": -17,
+      "civ": "Poles",
+      "teamAvgElo": 1036,
+      "opponentAvgElo": 1051,
+      "teammates": [
+        "ArchiCraig",
+        "RedBullWOLOLO26",
+        "Belisarius"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "Arteik",
+        "Brohio"
       ]
     }
   ]

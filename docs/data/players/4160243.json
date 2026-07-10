@@ -1,12 +1,12 @@
 {
   "profile_id": 4160243,
   "alias": "Denno037",
-  "rating": 1031,
+  "rating": 1016,
   "wins": 29,
-  "losses": 30,
-  "gamesCount": 59,
-  "winRate": 49,
-  "lastPlayedAt": 1783629438,
+  "losses": 31,
+  "gamesCount": 60,
+  "winRate": 48,
+  "lastPlayedAt": 1783631412,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -69,33 +69,10 @@
     1048,
     1032,
     1016,
-    1031
+    1031,
+    1016
   ],
   "recentMatches": [
-    {
-      "matchId": 484876438,
-      "description": "10x civ  3x tech Forest nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1781319420,
-      "outcome": "win",
-      "preRating": 1112,
-      "postRating": 1126,
-      "eloChange": 14,
-      "civ": "Teutons",
-      "teamAvgElo": 1078,
-      "opponentAvgElo": 1071,
-      "teammates": [
-        "Go-Toba",
-        "bijiyumo",
-        "MARKVILEX"
-      ],
-      "opponents": [
-        "VAPE NAYSH Y'ALL",
-        "NothingAtAll11",
-        "Not a Wizard",
-        "Cale94"
-      ]
-    },
     {
       "matchId": 487300126,
       "description": "10x 3x bamboo nothing",
@@ -539,7 +516,7 @@
       "eloChange": 15,
       "civ": "Wei",
       "teamAvgElo": 1026,
-      "opponentAvgElo": 999,
+      "opponentAvgElo": 1005,
       "teammates": [
         "NothingAtAll11",
         "Gladiator",
@@ -550,6 +527,30 @@
         "Axila, el Turro",
         "Wololo",
         "r9maximus"
+      ]
+    },
+    {
+      "matchId": 491171412,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "my map",
+      "timestamp": 1783631412,
+      "outcome": "loss",
+      "preRating": 1031,
+      "postRating": 1016,
+      "eloChange": -15,
+      "civ": "Malay",
+      "teamAvgElo": 1043,
+      "opponentAvgElo": 1047,
+      "teammates": [
+        "Gladiator",
+        "Slayer",
+        "Keishi"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "BigAl",
+        "GuguBot",
+        "obito123"
       ]
     }
   ]

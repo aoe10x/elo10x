@@ -1,11 +1,11 @@
 {
   "profile_id": 3534712,
   "alias": "Maselia",
-  "rating": 948,
-  "wins": 14,
+  "rating": 966,
+  "wins": 15,
   "losses": 27,
-  "gamesCount": 41,
-  "winRate": 34,
+  "gamesCount": 42,
+  "winRate": 36,
   "lastPlayedAt": 1783627691,
   "country": "fr",
   "merged_ids": [],
@@ -51,33 +51,10 @@
     960,
     978,
     963,
-    948
+    981,
+    966
   ],
   "recentMatches": [
-    {
-      "matchId": 441263204,
-      "description": "10x 3x Techs Bamboo Nothing Random Civs",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1766210520,
-      "outcome": "win",
-      "preRating": 846,
-      "postRating": 867,
-      "eloChange": 21,
-      "civ": "Unknown",
-      "teamAvgElo": 972,
-      "opponentAvgElo": 954,
-      "teammates": [
-        "Fastcastleintoheatedshots",
-        "Daan",
-        "Glasg0w"
-      ],
-      "opponents": [
-        "Duffy",
-        "Beating you off",
-        "kewilo_128",
-        "nasahdarryl"
-      ]
-    },
     {
       "matchId": 441525403,
       "description": "10x 3x bamboo nothing  turbo host here",
@@ -511,17 +488,41 @@
       ]
     },
     {
+      "matchId": 491156940,
+      "description": "4v4 10x civ bonus shared\rsudden death\rsudden death",
+      "mapname": "my map",
+      "timestamp": 1783626748,
+      "outcome": "win",
+      "preRating": 963,
+      "postRating": 981,
+      "eloChange": 18,
+      "civ": "Slavs",
+      "teamAvgElo": 1019,
+      "opponentAvgElo": 1016,
+      "teammates": [
+        "[RUS-F] Lastman",
+        "king_doge",
+        "r9maximus"
+      ],
+      "opponents": [
+        "Sir_William",
+        "Grapphy",
+        "Dark",
+        "Nikazio987"
+      ]
+    },
+    {
       "matchId": 491161572,
       "description": "4vs4 10x 3x shared civ bonus, random civ",
       "mapname": "my map",
       "timestamp": 1783627691,
       "outcome": "loss",
-      "preRating": 963,
-      "postRating": 948,
+      "preRating": 981,
+      "postRating": 966,
       "eloChange": -15,
       "civ": "Khmer",
-      "teamAvgElo": 1071,
-      "opponentAvgElo": 990,
+      "teamAvgElo": 1076,
+      "opponentAvgElo": 994,
       "teammates": [
         "yimacs_yoyoyo",
         "Parts",
