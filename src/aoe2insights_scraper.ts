@@ -188,8 +188,6 @@ export class Aoe2InsightsScraper {
           oldest_match_id: playerOldestId,
           has_reached_start: reachedStart
         });
-
-        await this.db.save();
       }
     };
 
@@ -273,6 +271,7 @@ export class Aoe2InsightsScraper {
         await cleanupBrowser();
         console.log(`[SCRAPER] Connection closed. Merging temporary scraped files...`);
         const added = await this.mergeScrapedData();
+        await this.db.save(); // Unconditionally save database once after all changes are merged
         resolve({ crawled: crawledCount, added });
       };
 
@@ -568,7 +567,6 @@ export class Aoe2InsightsScraper {
     }
 
     if (addedCount > 0) {
-      await this.db.save();
       console.log(`[MERGER] Successfully merged ${addedCount} new matches into database.`);
     }
 
