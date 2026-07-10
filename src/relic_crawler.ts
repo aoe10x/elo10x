@@ -153,8 +153,16 @@ export class RelicCrawler {
    * Crawl a single player's recent matches and add new player IDs to crawl queue
    */
   async crawlPlayer(profileId: number, cutoffTimestamp: number): Promise<boolean> {
-    const url = `${BASE_URL}/community/leaderboard/getRecentMatchHistoryByProfileId?title=age2&profile_id=${profileId}`;
-    console.log(`Crawling match history for player ID ${profileId}...`);
+    return this.crawlPlayersBatch([profileId], cutoffTimestamp);
+  }
+
+  /**
+   * Crawl a batch of players' recent matches in a single request and add new player IDs to crawl queue
+   */
+  async crawlPlayersBatch(profileIds: number[], cutoffTimestamp: number): Promise<boolean> {
+    if (profileIds.length === 0) return true;
+    const url = `${BASE_URL}/community/leaderboard/getRecentMatchHistory?title=age2&profile_ids=[${profileIds.join(',')}]`;
+    console.log(`Crawling match history for batch of ${profileIds.length} players...`);
 
     try {
       const response = await fetch(url, {
@@ -162,25 +170,17 @@ export class RelicCrawler {
       });
 
       if (response.status === 429) {
-        console.warn('Rate limited (429). Backing off for 5 seconds...');
-        await delay(5000);
+        console.warn('Rate limited (429). Backing off for 10 seconds...');
+        await delay(10000);
         return false;
       }
 
       if (!response.ok) {
-        console.warn(`Relic API returned error status ${response.status} for player ${profileId}`);
-        this.db.markAsCrawled(profileId); // Mark as done to prevent infinite loops on invalid profiles
+        console.warn(`Relic API returned error status ${response.status} for batch`);
         return false;
       }
 
       const data = await response.json() as any;
-      if (!data.matchHistoryStats || !Array.isArray(data.matchHistoryStats)) {
-        this.db.updatePlayerManifest(profileId, 'relic', {
-          last_crawled_at: Math.round(Date.now() / 1000)
-        });
-        this.db.markAsCrawled(profileId);
-        return true;
-      }
 
       // 1. Extract and cache all profile mappings found in this API response
       const profilesMap = new Map<number, PlayerProfile>();
@@ -196,42 +196,62 @@ export class RelicCrawler {
         }
       }
 
+      // If no matches, mark everyone as crawled and return
+      if (!data.matchHistoryStats || !Array.isArray(data.matchHistoryStats)) {
+        const nowSec = Math.round(Date.now() / 1000);
+        for (const pId of profileIds) {
+          this.db.updatePlayerManifest(pId, 'relic', {
+            last_crawled_at: nowSec
+          });
+          this.db.markAsCrawled(pId);
+        }
+        return true;
+      }
+
       // 2. Scan matches for 10x custom lobbies
       let matchCount = 0;
       let new10xMatchCount = 0;
+      const playerNewestMatchIds = new Map<number, number>();
 
       for (const m of data.matchHistoryStats) {
         matchCount++;
         const lobbyTitle = m.description || '';
         const is10x = /10x/i.test(lobbyTitle);
+        const isRecent = m.startgametime >= cutoffTimestamp;
 
-        // Filter: Match description contains "10x", and was started in the last 3 months
-        if (is10x && m.startgametime >= cutoffTimestamp) {
+        const participants: MatchPlayer[] = [];
+        const candidatePlayerIds: number[] = [];
+
+        if (m.matchhistoryreportresults && Array.isArray(m.matchhistoryreportresults)) {
+          for (const r of m.matchhistoryreportresults) {
+            const pId = r.profile_id;
+            const cachedProfile = this.db.getProfile(pId) || profilesMap.get(pId);
+
+            participants.push({
+              profile_id: pId,
+              teamid: r.teamid,
+              resulttype: r.resulttype, // 1 = Win, 0 = Loss
+              race_id: r.civilization_id,
+              alias: cachedProfile?.alias || `Player_${pId}`
+            });
+
+            candidatePlayerIds.push(pId);
+
+            // Track newest match ID for each queried profile
+            if (profileIds.includes(pId)) {
+              const currentNewest = playerNewestMatchIds.get(pId) || 0;
+              if (m.id > currentNewest) {
+                playerNewestMatchIds.set(pId, m.id);
+              }
+            }
+          }
+        }
+
+        if (is10x && isRecent) {
           if (this.db.hasMatch(m.id)) {
             continue; // Already processed
           }
 
-          const participants: MatchPlayer[] = [];
-          const candidatePlayerIds: number[] = [];
-
-          if (m.matchhistoryreportresults && Array.isArray(m.matchhistoryreportresults)) {
-            for (const r of m.matchhistoryreportresults) {
-              const pId = r.profile_id;
-              const cachedProfile = this.db.getProfile(pId) || profilesMap.get(pId);
-              
-              participants.push({
-                profile_id: pId,
-                teamid: r.teamid,
-                resulttype: r.resulttype, // 1 = Win, 0 = Loss
-                race_id: r.civilization_id,
-                alias: cachedProfile?.alias || `Player_${pId}`
-              });
-
-              candidatePlayerIds.push(pId);
-            }
-          }
-
-          // Skip matches that don't have participants mapped
           if (participants.length === 0) {
             continue;
           }
@@ -268,25 +288,26 @@ export class RelicCrawler {
       if (new10xMatchCount > 0) {
         console.log(`✨ Analyzed ${matchCount} matches. Found ${new10xMatchCount} new 10x matches! 🔥`);
       } else {
-        console.log(`💤 Analyzed ${matchCount} matches. Found 0 new 10x matches.`);
+        console.log(`💤 Checked ${matchCount} matches. Found 0 new 10x matches.`);
       }
 
-      const playerMatches = this.db.getMatches()
-        .filter(m => m.players.some(p => p.profile_id === profileId));
-      let playerNewestId = 0;
-      if (playerMatches.length > 0) {
-        playerNewestId = Math.max(...playerMatches.map(m => m.id));
-      }
-      this.db.updatePlayerManifest(profileId, 'relic', {
-        last_crawled_at: Math.round(Date.now() / 1000),
-        newest_match_id: playerNewestId
-      });
+      // Update manifests and mark all queried profiles as crawled
+      const nowSec = Math.round(Date.now() / 1000);
+      for (const pId of profileIds) {
+        const newestMatchId = playerNewestMatchIds.get(pId) || 0;
+        const prevManifest = this.db.getPlayerManifest(pId);
+        const prevNewestId = prevManifest?.relic?.newest_match_id || 0;
 
-      this.db.markAsCrawled(profileId);
+        this.db.updatePlayerManifest(pId, 'relic', {
+          last_crawled_at: nowSec,
+          newest_match_id: Math.max(newestMatchId, prevNewestId)
+        });
+        this.db.markAsCrawled(pId);
+      }
+
       return true;
     } catch (err: any) {
-      console.error(`Error crawling player ${profileId}:`, err.message);
-      // Don't mark as crawled, we might want to retry later
+      console.error(`Error crawling batch of players:`, err.message);
       return false;
     }
   }
@@ -332,34 +353,43 @@ export class RelicCrawler {
     }
 
     let crawledThisSession = 0;
-    while (this.db.getCrawlQueueLength() > 0 && crawledThisSession < limitCount) {
-      const profileId = this.db.popFromCrawlQueue();
-      if (!profileId) break;
+    const batchSize = 40;
 
-      // Skip if crawled in the last 18 hours.
-      // Rationale: Since the GitHub Action runs every 4 hours, seeding the top active players 
-      // on every run would normally waste our 50-player crawl quota on the exact same players 
-      // over and over. By enforcing an 18-hour skip window:
-      //   1. Active players are crawled at most once per day.
-      //   2. Skipped active players are popped from the queue immediately (cost-free), allowing 
-      //      the remaining session quota to bubble down and refresh the "oldest crawled" players.
-      if (this.db.isCrawled(profileId, 18 * 60 * 60 * 1000)) {
-        continue;
+    while (this.db.getCrawlQueueLength() > 0 && crawledThisSession < limitCount) {
+      const batchIds: number[] = [];
+      const remainingLimit = limitCount - crawledThisSession;
+      const currentBatchSize = Math.min(batchSize, remainingLimit);
+
+      while (batchIds.length < currentBatchSize && this.db.getCrawlQueueLength() > 0) {
+        const profileId = this.db.popFromCrawlQueue();
+        if (!profileId) break;
+
+        // Skip if crawled in the last 18 hours.
+        // Rationale: Since the GitHub Action runs every 4 hours, seeding the top active players 
+        // on every run would normally waste our 50-player crawl quota on the exact same players 
+        // over and over. By enforcing an 18-hour skip window:
+        //   1. Active players are crawled at most once per day.
+        //   2. Skipped active players are popped from the queue immediately (cost-free), allowing 
+        //      the remaining session quota to bubble down and refresh the "oldest crawled" players.
+        if (this.db.isCrawled(profileId, 18 * 60 * 60 * 1000)) {
+          continue;
+        }
+        batchIds.push(profileId);
       }
 
-      const success = await this.crawlPlayer(profileId, cutoffTimestamp);
+      if (batchIds.length === 0) {
+        break;
+      }
+
+      const success = await this.crawlPlayersBatch(batchIds, cutoffTimestamp);
       if (success) {
-        crawledThisSession++;
+        crawledThisSession += batchIds.length;
         console.log(`Progress: ${crawledThisSession}/${limitCount} players crawled this session. Queue length: ${this.db.getCrawlQueueLength()}`);
-        
-        // Periodic save to keep progress in case of crash or interrupt
-        if (crawledThisSession % 5 === 0) {
-          await this.db.save();
-        }
+        await this.db.save();
       }
 
       // Respect rate limits
-      await delay(this.delayMs);
+      await delay(Math.max(1000, this.delayMs * 4));
     }
 
     await this.db.save();
