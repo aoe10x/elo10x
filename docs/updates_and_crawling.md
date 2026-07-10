@@ -43,6 +43,12 @@ $$\text{Eligible Players} \approx 20 + \left(350 \times \frac{4}{8}\right) + 20 
 
 A session limit of **150** is the sweet spot. It ensures that 100% of all live/active players are crawled within a safe 8-hour window without making redundant queries or pulling deeply inactive database records (e.g. if the limit was set to 1000).
 
+### Match Data Merging (Enrichment)
+Because the two crawlers fetch data from different sources with disjointed fields, the database uses a **smart merge** on duplicate match IDs instead of a flat skip:
+* **Map Name Enrichment**: If a match was first crawled via the Relic Link API (which labels custom maps generically as `"my map"`), and is later scraped via AoE2Insights, the database updates the match record with the real custom map name (e.g. `Bamboo Nothing_Paren_V4`).
+* **Civilization ID Enrichment**: If a match was first scraped via AoE2Insights (where civilization data is missing for ~90% of matches), and is later crawled via the Relic API, the database populates the missing `civ_id` values on the players.
+When a merge occurs, the database updates the match's source flag to `'merged'`.
+
 ---
 
 ## 2. AoE2Insights Chrome Scraper (Historical Backfill)

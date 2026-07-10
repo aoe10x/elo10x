@@ -16,7 +16,6 @@ Usage:
 Options:
   --crawl                   Run a snowball crawler session to fetch 10x games.
   --limit <number>          Max number of player profiles to crawl in this session (default: 150).
-  --seed                    Force a fetch of online lobbies on aoe10x.com to seed crawler queue.
   --months <number>         Cutoff months for games (default: 3).
   
   --scrape-insights <id|active|unscraped> Scrape history for player <id>, active players, or active unscraped players from AoE2Insights.
@@ -31,8 +30,8 @@ Options:
   --help, -h                Show this help message.
 
 Examples:
-  # Seed queue and crawl 10 players, then calculate Elo
-  node --experimental-strip-types src/cli.ts --crawl --seed --limit 10
+  # Crawl 10 players, then calculate Elo
+  node --experimental-strip-types src/cli.ts --crawl --limit 10
   
   # Scrape Paulichromatic's match history (pages 1-20) from AoE2Insights
   node --experimental-strip-types src/cli.ts --scrape-insights 404483 --start-page 1 --end-page 20
@@ -45,7 +44,6 @@ async function main(): Promise<void> {
   const options = {
     crawl: { type: 'boolean' as const },
     limit: { type: 'string' as const },
-    seed: { type: 'boolean' as const },
     months: { type: 'string' as const },
     'scrape-insights': { type: 'string' as const },
     'start-page': { type: 'string' as const },
