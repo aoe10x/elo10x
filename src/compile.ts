@@ -146,9 +146,11 @@ function generateRowHtml(player: EloRanking, rank: number, maxSingleRecord: numb
   `;
 }
 
-async function main() {
-  const db = new JsonDatabase();
-  await db.load();
+export async function runCompile(db?: JsonDatabase): Promise<void> {
+  if (!db) {
+    db = new JsonDatabase();
+    await db.load();
+  }
 
   // Automatically merge any temporary scraped matches before calculations
   const crawler = new Aoe2InsightsScraper(db);
@@ -308,4 +310,6 @@ async function main() {
   console.log('Compilation success!');
 }
 
-main().catch(console.error);
+if (process.argv[1] === new URL(import.meta.url).pathname) {
+  runCompile().catch(console.error);
+}
