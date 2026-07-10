@@ -77,6 +77,11 @@ async function main(): Promise<void> {
   const db = new JsonDatabase();
   await db.load();
 
+  // If crawl-insights is specified, override the crawl shortcut from npm scripts
+  if (values['crawl-insights']) {
+    values.crawl = false;
+  }
+
   if (values.crawl) {
     const limit = values.limit ? parseInt(values.limit, 10) : 150;
     const months = values.months ? parseInt(values.months, 10) : 3;
