@@ -1,12 +1,12 @@
 {
   "profile_id": 17547058,
   "alias": "Brotherman Bill",
-  "rating": 1117,
-  "wins": 56,
+  "rating": 1131,
+  "wins": 57,
   "losses": 40,
-  "gamesCount": 96,
-  "winRate": 58,
-  "lastPlayedAt": 1783647082,
+  "gamesCount": 97,
+  "winRate": 59,
+  "lastPlayedAt": 1783651097,
   "country": "se",
   "merged_ids": [
     12526952,
@@ -109,33 +109,10 @@
     1072,
     1087,
     1101,
-    1117
+    1117,
+    1131
   ],
   "recentMatches": [
-    {
-      "matchId": 392039782,
-      "description": "10x 3x Shared Bamboo",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1747042860,
-      "outcome": "win",
-      "preRating": 1125,
-      "postRating": 1137,
-      "eloChange": 12,
-      "civ": "Unknown",
-      "teamAvgElo": 1096,
-      "opponentAvgElo": 1026,
-      "teammates": [
-        "typ53b90",
-        "Ony2017",
-        "El Buolas"
-      ],
-      "opponents": [
-        "Keishi",
-        "cyberocioso",
-        "tpa33.19.05.024",
-        "shark_12"
-      ]
-    },
     {
       "matchId": 392049254,
       "description": "BN 3x tech 10x civ 10x res",
@@ -590,6 +567,30 @@
         "Myriad",
         "Craster",
         "ArchiCraig"
+      ]
+    },
+    {
+      "matchId": 491224848,
+      "description": "10x 3x bamboo",
+      "mapname": "my map",
+      "timestamp": 1783651097,
+      "outcome": "win",
+      "preRating": 1117,
+      "postRating": 1131,
+      "eloChange": 14,
+      "civ": "Turks",
+      "teamAvgElo": 1053,
+      "opponentAvgElo": 1064,
+      "teammates": [
+        "Parts",
+        "Scipio",
+        "Bek0"
+      ],
+      "opponents": [
+        "Mahmut",
+        "baianitro",
+        "Hexicero",
+        "OhSheeep"
       ]
     }
   ]

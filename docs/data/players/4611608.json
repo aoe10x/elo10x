@@ -1,12 +1,12 @@
 {
   "profile_id": 4611608,
   "alias": "baianitro",
-  "rating": 1030,
+  "rating": 1015,
   "wins": 37,
-  "losses": 30,
-  "gamesCount": 67,
-  "winRate": 55,
-  "lastPlayedAt": 1783646343,
+  "losses": 31,
+  "gamesCount": 68,
+  "winRate": 54,
+  "lastPlayedAt": 1783651097,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -77,33 +77,10 @@
     1045,
     1029,
     1046,
-    1030
+    1030,
+    1015
   ],
   "recentMatches": [
-    {
-      "matchId": 480599897,
-      "description": "10x Shared 3xTech Bamboo Nothing",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1779795960,
-      "outcome": "win",
-      "preRating": 1067,
-      "postRating": 1084,
-      "eloChange": 17,
-      "civ": "Unknown",
-      "teamAvgElo": 1062,
-      "opponentAvgElo": 1088,
-      "teammates": [
-        "pool_champ",
-        "TheRiceMan",
-        "Battlegoose"
-      ],
-      "opponents": [
-        "typ53b90",
-        "{R} Parry",
-        "RIchard_Uy",
-        "The Wet Bandit"
-      ]
-    },
     {
       "matchId": 480970088,
       "description": "10x 3x bamboo rand civ pro only",
@@ -558,6 +535,30 @@
         "Al Ghouti",
         "Mehandor",
         "Eduardo_AoE"
+      ]
+    },
+    {
+      "matchId": 491224848,
+      "description": "10x 3x bamboo",
+      "mapname": "my map",
+      "timestamp": 1783651097,
+      "outcome": "loss",
+      "preRating": 1030,
+      "postRating": 1015,
+      "eloChange": -15,
+      "civ": "Aztecs",
+      "teamAvgElo": 1064,
+      "opponentAvgElo": 1053,
+      "teammates": [
+        "Mahmut",
+        "Hexicero",
+        "OhSheeep"
+      ],
+      "opponents": [
+        "Parts",
+        "Brotherman Bill",
+        "Scipio",
+        "Bek0"
       ]
     }
   ]
