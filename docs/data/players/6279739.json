@@ -1,12 +1,12 @@
 {
   "profile_id": 6279739,
   "alias": "Chikna Raavan",
-  "rating": 1034,
-  "wins": 30,
-  "losses": 26,
-  "gamesCount": 56,
-  "winRate": 54,
-  "lastPlayedAt": 1783642085,
+  "rating": 1024,
+  "wins": 31,
+  "losses": 28,
+  "gamesCount": 59,
+  "winRate": 53,
+  "lastPlayedAt": 1783663414,
   "country": "in",
   "merged_ids": [],
   "ratingHistory": [
@@ -66,81 +66,12 @@
     1051,
     1034,
     1050,
-    1034
+    1034,
+    1023,
+    1007,
+    1024
   ],
   "recentMatches": [
-    {
-      "matchId": 409904517,
-      "description": "Bamboo Nothing 10x 3x",
-      "mapname": "Bamboo Nothing_Paren_V2.3",
-      "timestamp": 1754032740,
-      "outcome": "win",
-      "preRating": 1069,
-      "postRating": 1082,
-      "eloChange": 13,
-      "civ": "Unknown",
-      "teamAvgElo": 1018,
-      "opponentAvgElo": 1014,
-      "teammates": [
-        "NothingAtAll11",
-        "Juliana",
-        "Apocalypto"
-      ],
-      "opponents": [
-        "Your Ego",
-        "Buenox",
-        "Ichigoblack",
-        "Borkan"
-      ]
-    },
-    {
-      "matchId": 410063472,
-      "description": "BAMBOO NOTHING 10X3X",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1754101740,
-      "outcome": "loss",
-      "preRating": 1082,
-      "postRating": 1064,
-      "eloChange": -18,
-      "civ": "Unknown",
-      "teamAvgElo": 1055,
-      "opponentAvgElo": 1041,
-      "teammates": [
-        "yxsko93",
-        "YUJIN",
-        "PIEROGI"
-      ],
-      "opponents": [
-        "Ian",
-        "skoolied",
-        "gmc inspector",
-        "Cale94"
-      ]
-    },
-    {
-      "matchId": 410464669,
-      "description": "+10x+3xtcch   no noob",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1754249220,
-      "outcome": "loss",
-      "preRating": 1064,
-      "postRating": 1050,
-      "eloChange": -14,
-      "civ": "Unknown",
-      "teamAvgElo": 1061,
-      "opponentAvgElo": 1106,
-      "teammates": [
-        "bhasudi--",
-        "Legit",
-        "Kinna fresh"
-      ],
-      "opponents": [
-        "拍车面前人人平等",
-        "schrubber",
-        "OK",
-        "WWW.Y"
-      ]
-    },
     {
       "matchId": 410475814,
       "description": "+10x+3xtcch   no noob",
@@ -547,6 +478,78 @@
         "duckbuildperson",
         "Brotherman Bill",
         "Tortrix"
+      ]
+    },
+    {
+      "matchId": 491220894,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "my map",
+      "timestamp": 1783649293,
+      "outcome": "loss",
+      "preRating": 1034,
+      "postRating": 1023,
+      "eloChange": -11,
+      "civ": "Romans",
+      "teamAvgElo": 1038,
+      "opponentAvgElo": 1153,
+      "teammates": [
+        "menorahjury",
+        "pandasadnap",
+        "Bao Oninon"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "Al Ghouti",
+        "G",
+        "Hexicero"
+      ]
+    },
+    {
+      "matchId": 491241522,
+      "description": "Bamboo 10x 3x  (fair and balanced)",
+      "mapname": "my map",
+      "timestamp": 1783657048,
+      "outcome": "loss",
+      "preRating": 1023,
+      "postRating": 1007,
+      "eloChange": -16,
+      "civ": "Franks",
+      "teamAvgElo": 1057,
+      "opponentAvgElo": 1015,
+      "teammates": [
+        "Scipio",
+        "typ53b90",
+        "WipiWi"
+      ],
+      "opponents": [
+        "pool_champ",
+        "TUF | DUKE_NUKEM",
+        "jelliebean11",
+        "Ozyroth"
+      ]
+    },
+    {
+      "matchId": 491254848,
+      "description": "10x 3x Bamboo (big )",
+      "mapname": "my map",
+      "timestamp": 1783663414,
+      "outcome": "win",
+      "preRating": 1007,
+      "postRating": 1024,
+      "eloChange": 17,
+      "civ": "Ethiopians",
+      "teamAvgElo": 1043,
+      "opponentAvgElo": 1036,
+      "teammates": [
+        "adrian",
+        "samseryd",
+        "Waryahay"
+      ],
+      "opponents": [
+        "Scipio",
+        "procrastination.exe",
+        "GiGi",
+        "Sal"
       ]
     }
   ]

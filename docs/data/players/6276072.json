@@ -1,12 +1,12 @@
 {
   "profile_id": 6276072,
   "alias": "{German}Kaese",
-  "rating": 956,
+  "rating": 945,
   "wins": 35,
-  "losses": 54,
-  "gamesCount": 89,
+  "losses": 55,
+  "gamesCount": 90,
   "winRate": 39,
-  "lastPlayedAt": 1783405166,
+  "lastPlayedAt": 1783660051,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -99,33 +99,10 @@
     931,
     951,
     936,
-    956
+    956,
+    945
   ],
   "recentMatches": [
-    {
-      "matchId": 479746899,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1779520260,
-      "outcome": "loss",
-      "preRating": 959,
-      "postRating": 949,
-      "eloChange": -10,
-      "civ": "Japanese",
-      "teamAvgElo": 1055,
-      "opponentAvgElo": 1087,
-      "teammates": [
-        "EL__PATRON",
-        "PowerBeast51461",
-        "Halshy"
-      ],
-      "opponents": [
-        "Kumad",
-        "Battlegoose",
-        "Myriad",
-        "Termi2023"
-      ]
-    },
     {
       "matchId": 481728553,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -580,6 +557,30 @@
         "adrian",
         "typie1517",
         "Scipio"
+      ]
+    },
+    {
+      "matchId": 491247718,
+      "description": "3X 10X",
+      "mapname": "my map",
+      "timestamp": 1783660051,
+      "outcome": "loss",
+      "preRating": 956,
+      "postRating": 945,
+      "eloChange": -11,
+      "civ": "Malians",
+      "teamAvgElo": 1052,
+      "opponentAvgElo": 1065,
+      "teammates": [
+        "GiGi",
+        "Regina Ip",
+        "samseryd"
+      ],
+      "opponents": [
+        "TheRiceMan",
+        "babeleo",
+        "cyberocioso",
+        "Sleeper14"
       ]
     }
   ]
