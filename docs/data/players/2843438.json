@@ -1,12 +1,12 @@
 {
   "profile_id": 2843438,
   "alias": "Scipio",
-  "rating": 1088,
-  "wins": 10,
-  "losses": 8,
-  "gamesCount": 18,
-  "winRate": 56,
-  "lastPlayedAt": 1783691119,
+  "rating": 1079,
+  "wins": 11,
+  "losses": 9,
+  "gamesCount": 20,
+  "winRate": 55,
+  "lastPlayedAt": 1783693373,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -28,7 +28,9 @@
     1075,
     1098,
     1073,
-    1088
+    1088,
+    1064,
+    1079
   ],
   "recentMatches": [
     {
@@ -449,7 +451,7 @@
       "postRating": 1088,
       "eloChange": 15,
       "civ": "Berbers",
-      "teamAvgElo": 1050,
+      "teamAvgElo": 1047,
       "opponentAvgElo": 977,
       "teammates": [
         "Bourne2Believe",
@@ -461,6 +463,54 @@
         "Dr.Ao",
         "JaFu",
         "Monk"
+      ]
+    },
+    {
+      "matchId": 491311326,
+      "description": "10x 3x BaMbOo NoThInG",
+      "mapname": "my map",
+      "timestamp": 1783691580,
+      "outcome": "loss",
+      "preRating": 1088,
+      "postRating": 1064,
+      "eloChange": -24,
+      "civ": "Italians",
+      "teamAvgElo": 1055,
+      "opponentAvgElo": 1008,
+      "teammates": [
+        "Railbuilder",
+        "Emusan",
+        "Grýn"
+      ],
+      "opponents": [
+        "Kaa Da Kaveman",
+        "476055690",
+        "S3dated",
+        "GiGi"
+      ]
+    },
+    {
+      "matchId": 491317064,
+      "description": "10x 3x BaMbOo NoThInG",
+      "mapname": "my map",
+      "timestamp": 1783693373,
+      "outcome": "win",
+      "preRating": 1064,
+      "postRating": 1079,
+      "eloChange": 15,
+      "civ": "Huns",
+      "teamAvgElo": 1025,
+      "opponentAvgElo": 1004,
+      "teammates": [
+        "Kaa Da Kaveman",
+        "Max",
+        "Zavgor"
+      ],
+      "opponents": [
+        "Consume Product",
+        "刘xx",
+        "sppd3181",
+        "Honey badger"
       ]
     }
   ]

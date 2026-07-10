@@ -1,12 +1,12 @@
 {
   "profile_id": 1339461,
   "alias": "Lego =]",
-  "rating": 881,
-  "wins": 6,
-  "losses": 15,
-  "gamesCount": 21,
-  "winRate": 29,
-  "lastPlayedAt": 1783629699,
+  "rating": 901,
+  "wins": 7,
+  "losses": 16,
+  "gamesCount": 23,
+  "winRate": 30,
+  "lastPlayedAt": 1783703351,
   "country": "fr",
   "merged_ids": [],
   "ratingHistory": [
@@ -31,57 +31,11 @@
     871,
     901,
     890,
-    881
+    881,
+    875,
+    901
   ],
   "recentMatches": [
-    {
-      "matchId": 328407724,
-      "description": "10x civ shared 4v4",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1721866260,
-      "outcome": "win",
-      "preRating": 952,
-      "postRating": 1011,
-      "eloChange": 59,
-      "civ": "Unknown",
-      "teamAvgElo": 1013,
-      "opponentAvgElo": 1044,
-      "teammates": [
-        "Honey badger",
-        "UweTellkamp",
-        "RaptorX"
-      ],
-      "opponents": [
-        "pandalam",
-        "gemmascho",
-        "The Naked Gothman",
-        "js5164424"
-      ]
-    },
-    {
-      "matchId": 466793776,
-      "description": "bamboo nothing 10x 3x",
-      "mapname": "Bamboo Nothing V1 [Scorpyon]",
-      "timestamp": 1774928040,
-      "outcome": "win",
-      "preRating": 1011,
-      "postRating": 1063,
-      "eloChange": 52,
-      "civ": "Unknown",
-      "teamAvgElo": 972,
-      "opponentAvgElo": 1061,
-      "teammates": [
-        "Berberecho_Feroz",
-        "Premium",
-        "k0rnm@yer"
-      ],
-      "opponents": [
-        "AceTrooper",
-        "dwalte011",
-        "ULTRA RARE",
-        "MrSniffers"
-      ]
-    },
     {
       "matchId": 471429097,
       "description": "256x 10x Forest Nothing",
@@ -512,6 +466,54 @@
         "VforKickAss",
         "benjamin100",
         "Cheesewheel24"
+      ]
+    },
+    {
+      "matchId": 491348888,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "my map",
+      "timestamp": 1783702527,
+      "outcome": "loss",
+      "preRating": 881,
+      "postRating": 875,
+      "eloChange": -6,
+      "civ": "Bulgarians",
+      "teamAvgElo": 989,
+      "opponentAvgElo": 1122,
+      "teammates": [
+        "iamatthe.hell",
+        "Gasnápido",
+        "Makinaskee"
+      ],
+      "opponents": [
+        "pandalam",
+        "GiGi",
+        "YUJIN",
+        "Dr.Ao"
+      ]
+    },
+    {
+      "matchId": 491353127,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "my map",
+      "timestamp": 1783703351,
+      "outcome": "win",
+      "preRating": 875,
+      "postRating": 901,
+      "eloChange": 26,
+      "civ": "Malians",
+      "teamAvgElo": 1015,
+      "opponentAvgElo": 1134,
+      "teammates": [
+        "iamatthe.hell",
+        "Frederick",
+        "Gasnápido"
+      ],
+      "opponents": [
+        "pandalam",
+        "Dr.Ao",
+        "YUJIN",
+        "GiGi"
       ]
     }
   ]

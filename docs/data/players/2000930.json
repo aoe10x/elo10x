@@ -1,12 +1,12 @@
 {
   "profile_id": 2000930,
   "alias": "XERSVIRUS",
-  "rating": 1010,
+  "rating": 998,
   "wins": 10,
-  "losses": 12,
-  "gamesCount": 22,
-  "winRate": 45,
-  "lastPlayedAt": 1783519249,
+  "losses": 13,
+  "gamesCount": 23,
+  "winRate": 43,
+  "lastPlayedAt": 1783696082,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -32,33 +32,10 @@
     992,
     1011,
     1028,
-    1010
+    1010,
+    998
   ],
   "recentMatches": [
-    {
-      "matchId": 419639746,
-      "description": "10x 3x Bamboo host here 4vs4",
-      "mapname": "Bamboo Nothing_Paren_Vlocal_V2.5",
-      "timestamp": 1758093240,
-      "outcome": "loss",
-      "preRating": 1017,
-      "postRating": 969,
-      "eloChange": -48,
-      "civ": "Unknown",
-      "teamAvgElo": 1027,
-      "opponentAvgElo": 999,
-      "teammates": [
-        "Peresoso",
-        "Canoobso",
-        "fxsound"
-      ],
-      "opponents": [
-        "ChilenoXD",
-        "Al Ghouti",
-        "The Naked Gothman",
-        "Beerdman"
-      ]
-    },
     {
       "matchId": 423206445,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -513,6 +490,30 @@
         "Sensei",
         "Buck104",
         "menorahjury"
+      ]
+    },
+    {
+      "matchId": 491326235,
+      "description": "3X 10X",
+      "mapname": "my map",
+      "timestamp": 1783696082,
+      "outcome": "loss",
+      "preRating": 1010,
+      "postRating": 998,
+      "eloChange": -12,
+      "civ": "Cumans",
+      "teamAvgElo": 997,
+      "opponentAvgElo": 1098,
+      "teammates": [
+        "WipiWi",
+        "星际小菜",
+        "取款机ATM"
+      ],
+      "opponents": [
+        "GiGi",
+        "wintre",
+        "YUJIN",
+        "Not a Wizard"
       ]
     }
   ]
