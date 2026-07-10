@@ -2,11 +2,9 @@ import { JsonDatabase } from '../db.ts';
 import { CIV_NAMES } from '../civ-data.ts';
 import { promises as fs } from 'node:fs';
 import * as path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-async function main() {
-  const db = new JsonDatabase();
-  await db.load();
-
+export async function generateCivWinratesReport(db: JsonDatabase): Promise<void> {
   const matches = db.getMatches();
 
   interface CivStats {
@@ -123,4 +121,16 @@ async function main() {
   console.log(`Report successfully written to: ${reportPath}`);
 }
 
-main().catch(console.error);
+// Standalone execution support
+if (process.argv[1]) {
+  try {
+    const currentFilePath = fileURLToPath(import.meta.url);
+    if (process.argv[1] === currentFilePath || process.argv[1].endsWith('calculate_civ_winrates.ts')) {
+      const db = new JsonDatabase();
+      await db.load();
+      await generateCivWinratesReport(db);
+    }
+  } catch (err) {
+    // Ignore URL file:// conversion errors if run in non-standard environments
+  }
+}
