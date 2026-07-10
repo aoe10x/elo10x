@@ -19,6 +19,7 @@ Options:
   --crawl-insights          Run a recent matches crawl session using AoE2Insights scraper.
   --limit <number>          Max number of player profiles to crawl in this session (default: 150).
   --months <number>         Cutoff months for games (default: 3).
+  --force                   Force crawl/scrape, ignoring player cooldowns.
   
   --scrape-insights <id|active|unscraped> Scrape history for player <id>, active players, or active unscraped players from AoE2Insights.
   --start-page <number>     Start page for AoE2Insights scraper (default: 1).
@@ -55,6 +56,7 @@ async function main(): Promise<void> {
     'min-games': { type: 'string' as const },
     'k-factor': { type: 'string' as const },
     provisional: { type: 'boolean' as const },
+    force: { type: 'boolean' as const },
     help: { type: 'boolean' as const, short: 'h' as const }
   };
 
@@ -87,9 +89,9 @@ async function main(): Promise<void> {
     const months = values.months ? parseInt(values.months, 10) : 3;
     const crawler = new RelicCrawler(db);
 
-    console.log(`Starting crawl session... (limit: ${limit} players, cutoff: ${months} months)`);
+    console.log(`Starting crawl session... (limit: ${limit} players, cutoff: ${months} months, force: ${!!values.force})`);
     
-    await crawler.runCrawl(limit, months);
+    await crawler.runCrawl(limit, months, !!values.force);
     console.log('Crawl session complete.');
     console.log(`Database state: ${db.getMatchesCount()} matches, ${db.getProfilesCount()} cached profiles, ${db.getCrawlQueueLength()} in crawl queue.`);
   }
@@ -98,9 +100,9 @@ async function main(): Promise<void> {
     const limit = values.limit ? parseInt(values.limit, 10) : 10;
     const crawler = new InsightsCrawler(db);
 
-    console.log(`Starting Insights recent crawl session... (limit: ${limit} players)`);
+    console.log(`Starting Insights recent crawl session... (limit: ${limit} players, force: ${!!values.force})`);
     
-    await crawler.runCrawl(limit);
+    await crawler.runCrawl(limit, !!values.force);
     console.log('Insights crawl session complete.');
     console.log(`Database state: ${db.getMatchesCount()} matches, ${db.getProfilesCount()} cached profiles, ${db.getCrawlQueueLength()} in crawl queue.`);
   }

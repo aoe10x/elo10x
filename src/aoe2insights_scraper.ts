@@ -6,6 +6,8 @@ import type { JsonDatabase } from './db.ts';
 import type { Match, PlayerProfile } from './types.ts';
 import { CIV_NAMES } from './civ-data.ts';
 
+const delay = (ms: number) => new Promise<void>(resolve => setTimeout(resolve, ms));
+
 export class Aoe2InsightsScraper {
   private db: JsonDatabase;
   private scrapedDataDir: string;
@@ -36,7 +38,6 @@ export class Aoe2InsightsScraper {
     console.log('============================================================\n');
     console.log('Polling local debugger targets to detect bypassed AoE2Insights tab...');
 
-    const delay = (ms: number) => new Promise(r => setTimeout(r, ms));
     let targetTab: any = null;
 
     while (true) {
@@ -202,6 +203,11 @@ export class Aoe2InsightsScraper {
       ws.onopen = async () => {
         try {
           resetLivenessTimer();
+
+          console.log(`[SCRAPER] Navigating tab to robots.txt to disable ads & tracking scripts...`);
+          await sendCdp('Page.navigate', { url: 'https://www.aoe2insights.com/robots.txt' });
+          await delay(2000); // Wait for navigation to settle
+
           console.log(`[SCRAPER] CDP session opened. Binding '${bindingName}'...`);
           await sendCdp('Runtime.enable');
           await sendCdp('Runtime.addBinding', { name: bindingName });
