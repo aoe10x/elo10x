@@ -26,17 +26,17 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 23
           cache: 'pnpm'
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
       - name: Run Relic API Crawl
-        run: pnpm run crawl --limit 150 --months 3
+        run: node src/cli.ts crawl --limit 150 --months 3
 
       - name: Recalculate ELO Leaderboards
-        run: pnpm run elo
+        run: node src/cli.ts elo
 
       - name: Commit and Push Changes to main
         run: |
