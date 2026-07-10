@@ -1,12 +1,12 @@
 {
   "profile_id": 772327,
   "alias": "wurst456",
-  "rating": 1013,
+  "rating": 976,
   "wins": 11,
-  "losses": 12,
-  "gamesCount": 23,
-  "winRate": 48,
-  "lastPlayedAt": 1783609127,
+  "losses": 15,
+  "gamesCount": 26,
+  "winRate": 42,
+  "lastPlayedAt": 1783713970,
   "country": "at",
   "merged_ids": [],
   "ratingHistory": [
@@ -33,81 +33,12 @@
     994,
     1010,
     1028,
-    1013
+    1013,
+    1000,
+    986,
+    976
   ],
   "recentMatches": [
-    {
-      "matchId": 485674866,
-      "description": "Bamboo nothing 10X3X",
-      "mapname": "my map",
-      "timestamp": 1781548940,
-      "outcome": "loss",
-      "preRating": 1126,
-      "postRating": 1076,
-      "eloChange": -50,
-      "civ": "Incas",
-      "teamAvgElo": 1027,
-      "opponentAvgElo": 1074,
-      "teammates": [
-        "yxsko93",
-        "Sal",
-        "G305"
-      ],
-      "opponents": [
-        "ISwaZz",
-        "MrSniffers",
-        "abatyse6533",
-        "Hebo"
-      ]
-    },
-    {
-      "matchId": 486536519,
-      "description": "+10x+3xtech   no noob",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1781905560,
-      "outcome": "loss",
-      "preRating": 1076,
-      "postRating": 1027,
-      "eloChange": -49,
-      "civ": "Bulgarians",
-      "teamAvgElo": 1074,
-      "opponentAvgElo": 1016,
-      "teammates": [
-        "fxsound",
-        "476055690",
-        "kekekeya"
-      ],
-      "opponents": [
-        "拍车面前人人平等",
-        "OK",
-        "dertli",
-        "Rin Tin Tin"
-      ]
-    },
-    {
-      "matchId": 486555262,
-      "description": "10x 3x BN",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1781911020,
-      "outcome": "loss",
-      "preRating": 1027,
-      "postRating": 981,
-      "eloChange": -46,
-      "civ": "Vietnamese",
-      "teamAvgElo": 1042,
-      "opponentAvgElo": 975,
-      "teammates": [
-        "UnstableKnight",
-        "Frederick",
-        "FrostByte"
-      ],
-      "opponents": [
-        "Rita De Valencia",
-        "TioMg100",
-        "pool_champ",
-        "boat"
-      ]
-    },
     {
       "matchId": 487992298,
       "description": "BAMBOO 10x3xtech",
@@ -117,7 +48,7 @@
       "preRating": 981,
       "postRating": 1030,
       "eloChange": 49,
-      "civ": "Armenians",
+      "civ": "Unknown",
       "teamAvgElo": 1032,
       "opponentAvgElo": 1078,
       "teammates": [
@@ -141,7 +72,7 @@
       "preRating": 1030,
       "postRating": 992,
       "eloChange": -38,
-      "civ": "Italians",
+      "civ": "Unknown",
       "teamAvgElo": 1028,
       "opponentAvgElo": 1022,
       "teammates": [
@@ -165,7 +96,7 @@
       "preRating": 992,
       "postRating": 963,
       "eloChange": -29,
-      "civ": "Aztecs",
+      "civ": "Unknown",
       "teamAvgElo": 1031,
       "opponentAvgElo": 1057,
       "teammates": [
@@ -189,7 +120,7 @@
       "preRating": 963,
       "postRating": 945,
       "eloChange": -18,
-      "civ": "Celts",
+      "civ": "Unknown",
       "teamAvgElo": 1023,
       "opponentAvgElo": 1136,
       "teammates": [
@@ -213,7 +144,7 @@
       "preRating": 945,
       "postRating": 986,
       "eloChange": 41,
-      "civ": "Gurjaras",
+      "civ": "Unknown",
       "teamAvgElo": 1105,
       "opponentAvgElo": 1042,
       "teammates": [
@@ -237,7 +168,7 @@
       "preRating": 986,
       "postRating": 1016,
       "eloChange": 30,
-      "civ": "Huns",
+      "civ": "Unknown",
       "teamAvgElo": 1037,
       "opponentAvgElo": 976,
       "teammates": [
@@ -261,7 +192,7 @@
       "preRating": 1016,
       "postRating": 1050,
       "eloChange": 34,
-      "civ": "Bulgarians",
+      "civ": "Unknown",
       "teamAvgElo": 1037,
       "opponentAvgElo": 1076,
       "teammates": [
@@ -285,7 +216,7 @@
       "preRating": 1050,
       "postRating": 1019,
       "eloChange": -31,
-      "civ": "Mongols",
+      "civ": "Unknown",
       "teamAvgElo": 1054,
       "opponentAvgElo": 1000,
       "teammates": [
@@ -309,7 +240,7 @@
       "preRating": 1019,
       "postRating": 1045,
       "eloChange": 26,
-      "civ": "Burgundians",
+      "civ": "Unknown",
       "teamAvgElo": 1029,
       "opponentAvgElo": 1029,
       "teammates": [
@@ -333,7 +264,7 @@
       "preRating": 1045,
       "postRating": 1021,
       "eloChange": -24,
-      "civ": "Franks",
+      "civ": "Unknown",
       "teamAvgElo": 1046,
       "opponentAvgElo": 1041,
       "teammates": [
@@ -357,7 +288,7 @@
       "preRating": 1021,
       "postRating": 1001,
       "eloChange": -20,
-      "civ": "Turks",
+      "civ": "Unknown",
       "teamAvgElo": 1032,
       "opponentAvgElo": 1065,
       "teammates": [
@@ -381,7 +312,7 @@
       "preRating": 1001,
       "postRating": 981,
       "eloChange": -20,
-      "civ": "Incas",
+      "civ": "Unknown",
       "teamAvgElo": 999,
       "opponentAvgElo": 1020,
       "teammates": [
@@ -501,7 +432,7 @@
       "preRating": 1028,
       "postRating": 1013,
       "eloChange": -15,
-      "civ": "Franks",
+      "civ": "Unknown",
       "teamAvgElo": 1049,
       "opponentAvgElo": 1055,
       "teammates": [
@@ -513,6 +444,78 @@
         "Texas Red",
         "S3dated",
         "G",
+        "BigAl"
+      ]
+    },
+    {
+      "matchId": 491361872,
+      "description": "Bamboo 10x 3x",
+      "mapname": "my map",
+      "timestamp": 1783706158,
+      "outcome": "loss",
+      "preRating": 1013,
+      "postRating": 1000,
+      "eloChange": -13,
+      "civ": "Gurjaras",
+      "teamAvgElo": 994,
+      "opponentAvgElo": 1081,
+      "teammates": [
+        "Sal",
+        "[TW] hushin0917",
+        "OrangE"
+      ],
+      "opponents": [
+        "OldManofStorr",
+        "Eddie",
+        "DerAdler",
+        "CaptainBarbossa"
+      ]
+    },
+    {
+      "matchId": 491382113,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "my map",
+      "timestamp": 1783712219,
+      "outcome": "loss",
+      "preRating": 1000,
+      "postRating": 986,
+      "eloChange": -14,
+      "civ": "Mongols",
+      "teamAvgElo": 1060,
+      "opponentAvgElo": 1048,
+      "teammates": [
+        "HighPriestCaco",
+        "LonelyKnight",
+        "iamatthe.hell"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "sppd3181",
+        "TheRiceMan",
+        "universeagle"
+      ]
+    },
+    {
+      "matchId": 491387662,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "my map",
+      "timestamp": 1783713970,
+      "outcome": "loss",
+      "preRating": 986,
+      "postRating": 976,
+      "eloChange": -10,
+      "civ": "Japanese",
+      "teamAvgElo": 991,
+      "opponentAvgElo": 1128,
+      "teammates": [
+        "Megahaufen",
+        "menorahjury",
+        "wintre"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "Paladin",
+        "TheRiceMan",
         "BigAl"
       ]
     }
