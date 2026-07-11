@@ -1,12 +1,12 @@
 {
   "profile_id": 4782573,
   "alias": "Lama Kužel",
-  "rating": 1084,
+  "rating": 1069,
   "wins": 24,
-  "losses": 20,
-  "gamesCount": 44,
-  "winRate": 55,
-  "lastPlayedAt": 1783348409,
+  "losses": 21,
+  "gamesCount": 45,
+  "winRate": 53,
+  "lastPlayedAt": 1783779552,
   "country": "sk",
   "merged_ids": [
     4782573,
@@ -57,33 +57,10 @@
     1080,
     1093,
     1105,
-    1084
+    1084,
+    1069
   ],
   "recentMatches": [
-    {
-      "matchId": 475830356,
-      "description": "Bamboo 10x 3x",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1778113500,
-      "outcome": "win",
-      "preRating": 1071,
-      "postRating": 1087,
-      "eloChange": 16,
-      "civ": "Vikings",
-      "teamAvgElo": 1061,
-      "opponentAvgElo": 1078,
-      "teammates": [
-        "OldManofStorr",
-        "Ivy",
-        "Xinzzo"
-      ],
-      "opponents": [
-        "YUJIN",
-        "NothingAtAll11",
-        "Max",
-        "TsC_BaTTouSai"
-      ]
-    },
     {
       "matchId": 476028954,
       "description": "+10x+3xtech   no noob",
@@ -538,6 +515,30 @@
         "Nigerian Farmer",
         "notfound",
         "The Cobra Brothers"
+      ]
+    },
+    {
+      "matchId": 491574249,
+      "description": "3X 10X",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783779552,
+      "outcome": "loss",
+      "preRating": 1084,
+      "postRating": 1069,
+      "eloChange": -15,
+      "civ": "Khmer",
+      "teamAvgElo": 994,
+      "opponentAvgElo": 1103,
+      "teammates": [
+        "hoderebus",
+        "勇战到抵",
+        "Barosanu512"
+      ],
+      "opponents": [
+        "GiGi",
+        "476055690",
+        "kaka52pk",
+        "[CSGS]Runescape"
       ]
     }
   ]

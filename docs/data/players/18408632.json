@@ -1,12 +1,12 @@
 {
   "profile_id": 18408632,
   "alias": "ShadowTitan",
-  "rating": 932,
-  "wins": 30,
+  "rating": 954,
+  "wins": 31,
   "losses": 51,
-  "gamesCount": 81,
-  "winRate": 37,
-  "lastPlayedAt": 1778712180,
+  "gamesCount": 82,
+  "winRate": 38,
+  "lastPlayedAt": 1783704649,
   "country": "gb",
   "merged_ids": [
     12928565,
@@ -94,33 +94,10 @@
     863,
     887,
     908,
-    932
+    932,
+    954
   ],
   "recentMatches": [
-    {
-      "matchId": 400486676,
-      "description": "Neoclassical 10x 3x Nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1750223040,
-      "outcome": "win",
-      "preRating": 934,
-      "postRating": 953,
-      "eloChange": 19,
-      "civ": "Unknown",
-      "teamAvgElo": 976,
-      "opponentAvgElo": 1008,
-      "teammates": [
-        "alberto",
-        "omnomnomnivore",
-        "[TSU] Red Cansky"
-      ],
-      "opponents": [
-        "tacotoy",
-        "BigPimpin",
-        "CR | Arepa",
-        "FlyingSheep"
-      ]
-    },
     {
       "matchId": 400491808,
       "description": "10x 3x Bamboo - 10xshared.com",
@@ -575,6 +552,30 @@
         "Ti-tooaoo",
         "nooblet3300",
         "Lietuva_"
+      ]
+    },
+    {
+      "matchId": 491357378,
+      "description": "10x 3x Bamboo - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783704649,
+      "outcome": "win",
+      "preRating": 932,
+      "postRating": 954,
+      "eloChange": 22,
+      "civ": "Mongols",
+      "teamAvgElo": 1062,
+      "opponentAvgElo": 1057,
+      "teammates": [
+        "Dr.Ao",
+        "pandalam",
+        "GiGi"
+      ],
+      "opponents": [
+        "Parts",
+        "bigjames",
+        "YUJIN",
+        "BaldAfro"
       ]
     }
   ]

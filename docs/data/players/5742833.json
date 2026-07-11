@@ -1,12 +1,12 @@
 {
   "profile_id": 5742833,
   "alias": "ConiglioBianco",
-  "rating": 945,
-  "wins": 8,
+  "rating": 966,
+  "wins": 9,
   "losses": 15,
-  "gamesCount": 23,
-  "winRate": 35,
-  "lastPlayedAt": 1775227980,
+  "gamesCount": 24,
+  "winRate": 38,
+  "lastPlayedAt": 1783778260,
   "country": "it",
   "merged_ids": [],
   "ratingHistory": [
@@ -33,33 +33,10 @@
     954,
     972,
     962,
-    945
+    945,
+    966
   ],
   "recentMatches": [
-    {
-      "matchId": 399665276,
-      "description": "+10x+3xtcch   no noob",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1749915840,
-      "outcome": "loss",
-      "preRating": 976,
-      "postRating": 950,
-      "eloChange": -26,
-      "civ": "Unknown",
-      "teamAvgElo": 1021,
-      "opponentAvgElo": 1121,
-      "teammates": [
-        "pandalam",
-        "gmc inspector",
-        "Emotions are prohibited"
-      ],
-      "opponents": [
-        "拍车面前人人平等",
-        "田瘾犯了",
-        "OK",
-        "alexw"
-      ]
-    },
     {
       "matchId": 399954670,
       "description": "10x civ 3x tech random bamboo nothing - Only good noob",
@@ -514,6 +491,30 @@
         "Bug Buff",
         "majorleyendo",
         "Ellie91"
+      ]
+    },
+    {
+      "matchId": 491569556,
+      "description": "BAMBOO 10x - 3x  **NO NOOB",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783778260,
+      "outcome": "win",
+      "preRating": 945,
+      "postRating": 966,
+      "eloChange": 21,
+      "civ": "Burmese",
+      "teamAvgElo": 1038,
+      "opponentAvgElo": 1066,
+      "teammates": [
+        "Bourne2Believe",
+        "Dr.Ao",
+        "QI"
+      ],
+      "opponents": [
+        "dRea",
+        "kekekeya",
+        "bkabkakakak",
+        "476055690"
       ]
     }
   ]

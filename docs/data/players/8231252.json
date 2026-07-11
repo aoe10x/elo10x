@@ -1,12 +1,12 @@
 {
   "profile_id": 8231252,
   "alias": "tedmed",
-  "rating": 959,
-  "wins": 22,
-  "losses": 26,
-  "gamesCount": 48,
+  "rating": 966,
+  "wins": 23,
+  "losses": 27,
+  "gamesCount": 50,
   "winRate": 46,
-  "lastPlayedAt": 1782948870,
+  "lastPlayedAt": 1783738888,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -58,57 +58,11 @@
     934,
     954,
     973,
-    959
+    959,
+    980,
+    966
   ],
   "recentMatches": [
-    {
-      "matchId": 419293641,
-      "description": "10x 3x Bamboo host here 4vs4",
-      "mapname": "Bamboo Nothing_Paren_Vlocal_V2.5",
-      "timestamp": 1757931360,
-      "outcome": "loss",
-      "preRating": 1042,
-      "postRating": 1026,
-      "eloChange": -16,
-      "civ": "Unknown",
-      "teamAvgElo": 1007,
-      "opponentAvgElo": 1039,
-      "teammates": [
-        "ζ |  SaintPΞpsi94",
-        "Fropplez",
-        "jhn31"
-      ],
-      "opponents": [
-        "Al Ghouti",
-        "Evil  Destroyer",
-        "Vanze",
-        "Sir Cuncisión"
-      ]
-    },
-    {
-      "matchId": 438785354,
-      "description": "Bamboo 10x 3x no noobs",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1765284780,
-      "outcome": "loss",
-      "preRating": 1026,
-      "postRating": 1008,
-      "eloChange": -18,
-      "civ": "Wei",
-      "teamAvgElo": 1058,
-      "opponentAvgElo": 989,
-      "teammates": [
-        "fxsound",
-        "Rice Monger (SoullessMZD)",
-        "Bob's Uncle"
-      ],
-      "opponents": [
-        "MoEzy",
-        "Stigel",
-        "The Cobra Brothers",
-        "blankedgamerz"
-      ]
-    },
     {
       "matchId": 443423090,
       "description": "10x 3x bamboo| no sim city",
@@ -539,6 +493,54 @@
         "Gasnápido",
         "tacotoy",
         "Test66"
+      ]
+    },
+    {
+      "matchId": 491428355,
+      "description": "10x 3x Bamboo - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783726686,
+      "outcome": "win",
+      "preRating": 959,
+      "postRating": 980,
+      "eloChange": 21,
+      "civ": "Portuguese",
+      "teamAvgElo": 971,
+      "opponentAvgElo": 1062,
+      "teammates": [
+        "Parts",
+        "TR.elephantman",
+        "AnacletoElit"
+      ],
+      "opponents": [
+        "SimCity3000",
+        "[S33]ff",
+        "Chuckyllo4417",
+        "TheRiceMan"
+      ]
+    },
+    {
+      "matchId": 491463348,
+      "description": "10x_3x_Bamboo_Nothing_Random",
+      "mapname": "Bamboo Nothing v4 (BaLi)",
+      "timestamp": 1783738888,
+      "outcome": "loss",
+      "preRating": 980,
+      "postRating": 966,
+      "eloChange": -14,
+      "civ": "Lithuanians",
+      "teamAvgElo": 1038,
+      "opponentAvgElo": 1019,
+      "teammates": [
+        "Contry",
+        "95Bricks",
+        "Xinzzo"
+      ],
+      "opponents": [
+        "GuguBot",
+        "OhSheeep",
+        "pandasadnap",
+        "kared117"
       ]
     }
   ]

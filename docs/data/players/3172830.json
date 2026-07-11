@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "profile_id": 3172830,
   "alias": "Craster",
@@ -465,3 +466,474 @@
     }
   ]
 }
+||||||| 907fca9
+
+=======
+{
+  "profile_id": 3172830,
+  "alias": "Craster",
+  "rating": 1043,
+  "wins": 9,
+  "losses": 9,
+  "gamesCount": 18,
+  "winRate": 50,
+  "lastPlayedAt": 1783647082,
+  "country": "ve",
+  "merged_ids": [],
+  "ratingHistory": [
+    1000,
+    955,
+    917,
+    887,
+    945,
+    914,
+    964,
+    928,
+    900,
+    946,
+    985,
+    1018,
+    1046,
+    1020,
+    993,
+    1019,
+    1042,
+    1062,
+    1043
+  ],
+  "recentMatches": [
+    {
+      "matchId": 231044799,
+      "description": "10x Shared Civ 4v4",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1683182520,
+      "outcome": "loss",
+      "preRating": 1000,
+      "postRating": 955,
+      "eloChange": -45,
+      "civ": "Burgundians",
+      "teamAvgElo": 998,
+      "opponentAvgElo": 1021,
+      "teammates": [
+        "Rice Monger (SoullessMZD)",
+        "Paulichromatic",
+        "Lolda"
+      ],
+      "opponents": [
+        "CallMeMeatloaf",
+        "Fallen",
+        "katesator",
+        "Sensar"
+      ]
+    },
+    {
+      "matchId": 231066438,
+      "description": "Amazon 10x random civ 4v4",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1683190200,
+      "outcome": "loss",
+      "preRating": 955,
+      "postRating": 917,
+      "eloChange": -38,
+      "civ": "Bohemians",
+      "teamAvgElo": 979,
+      "opponentAvgElo": 1020,
+      "teammates": [
+        "Astro Hawk",
+        "HarHar2800",
+        "PhoenixExplorer777"
+      ],
+      "opponents": [
+        "eban",
+        "MarieBrutale",
+        "The Scientist",
+        "Kene"
+      ]
+    },
+    {
+      "matchId": 231740404,
+      "description": "10x Shared Civ Bonus Random Civ",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1683438600,
+      "outcome": "loss",
+      "preRating": 917,
+      "postRating": 887,
+      "eloChange": -30,
+      "civ": "Aztecs",
+      "teamAvgElo": 960,
+      "opponentAvgElo": 1038,
+      "teammates": [
+        "PapusPopus",
+        "Gloriusevolution",
+        "Taylor18"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "Josh",
+        "Remove Fake Civs Wei Shu Wu",
+        "PoonSlapper"
+      ]
+    },
+    {
+      "matchId": 232503292,
+      "description": "10x civ bonus",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1683715560,
+      "outcome": "win",
+      "preRating": 887,
+      "postRating": 945,
+      "eloChange": 58,
+      "civ": "Burmese",
+      "teamAvgElo": 972,
+      "opponentAvgElo": 1009,
+      "teammates": [
+        "Navarian",
+        "Happytheandy",
+        "IngegnerCane90"
+      ],
+      "opponents": [
+        "[TSU] CJ the Strategos",
+        "Caudillo Porongon",
+        "[TSU] Midu",
+        "[TSU] MrFluffyBunny"
+      ]
+    },
+    {
+      "matchId": 232504012,
+      "description": "10x civ bonus",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1683715860,
+      "outcome": "loss",
+      "preRating": 945,
+      "postRating": 914,
+      "eloChange": -31,
+      "civ": "Bulgarians",
+      "teamAvgElo": 940,
+      "opponentAvgElo": 1042,
+      "teammates": [
+        "Bruchogun8332",
+        "[TSU] Midu",
+        "[TSU] CJ the Strategos"
+      ],
+      "opponents": [
+        "Navarian",
+        "T",
+        "Happytheandy",
+        "[TSU] MrFluffyBunny"
+      ]
+    },
+    {
+      "matchId": 232609789,
+      "description": "10x shared civ random glhf NEW",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1683766860,
+      "outcome": "win",
+      "preRating": 914,
+      "postRating": 964,
+      "eloChange": 50,
+      "civ": "Persians",
+      "teamAvgElo": 979,
+      "opponentAvgElo": 997,
+      "teammates": [
+        "Badman0316",
+        "pau795",
+        "Ashurima"
+      ],
+      "opponents": [
+        "Gloriusevolution",
+        "tuan4444",
+        "Emotions are prohibited",
+        "Dsac"
+      ]
+    },
+    {
+      "matchId": 232833382,
+      "description": "10X Shared civ bonus rondom",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1683859020,
+      "outcome": "loss",
+      "preRating": 964,
+      "postRating": 928,
+      "eloChange": -36,
+      "civ": "Berbers",
+      "teamAvgElo": 979,
+      "opponentAvgElo": 986,
+      "teammates": [
+        "Mobius",
+        "AtiKseN",
+        "CryogenicSharks"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "gemmascho",
+        "shining star",
+        "abc"
+      ]
+    },
+    {
+      "matchId": 232836848,
+      "description": "10X Shared civ bonus rondom",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1683859980,
+      "outcome": "loss",
+      "preRating": 928,
+      "postRating": 900,
+      "eloChange": -28,
+      "civ": "Persians",
+      "teamAvgElo": 993,
+      "opponentAvgElo": 1016,
+      "teammates": [
+        "rockstarPORNSTAR",
+        "Joseph",
+        "Fred Again"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "gemmascho",
+        "shining star",
+        "abc"
+      ]
+    },
+    {
+      "matchId": 235028836,
+      "description": "10x Civ bonus - All Random - Forest nothing",
+      "mapname": "Unknown",
+      "timestamp": 1684654200,
+      "outcome": "win",
+      "preRating": 900,
+      "postRating": 946,
+      "eloChange": 46,
+      "civ": "Bohemians",
+      "teamAvgElo": 1001,
+      "opponentAvgElo": 1012,
+      "teammates": [
+        "LonelyKnight",
+        "CashAttack",
+        "ckumeh"
+      ],
+      "opponents": [
+        "L3Bb3r",
+        "Shemone",
+        "Scipio Africanus",
+        "Niewy"
+      ]
+    },
+    {
+      "matchId": 236558079,
+      "description": "Texas 10x civ bonus Random Civ",
+      "mapname": "Texas",
+      "timestamp": 1685239980,
+      "outcome": "win",
+      "preRating": 946,
+      "postRating": 985,
+      "eloChange": 39,
+      "civ": "Koreans",
+      "teamAvgElo": 986,
+      "opponentAvgElo": 1000,
+      "teammates": [
+        "loser",
+        "Jham",
+        "CryogenicSharks"
+      ],
+      "opponents": [
+        "Archangel",
+        "ImperiorsWar",
+        "rilaaaxmax",
+        "Deve Tuncay"
+      ]
+    },
+    {
+      "matchId": 387454338,
+      "description": "Bamboo 10x shared bonus civ 3x tech Random",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1745397720,
+      "outcome": "win",
+      "preRating": 985,
+      "postRating": 1018,
+      "eloChange": 33,
+      "civ": "Persians",
+      "teamAvgElo": 998,
+      "opponentAvgElo": 989,
+      "teammates": [
+        "Raggamuffin'",
+        "Limestic",
+        "GuilleGodoy95"
+      ],
+      "opponents": [
+        "SpiniestTuna222",
+        "G",
+        "roosfort",
+        "NoxMortus"
+      ]
+    },
+    {
+      "matchId": 390521726,
+      "description": "10x shared",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1746512100,
+      "outcome": "win",
+      "preRating": 1018,
+      "postRating": 1046,
+      "eloChange": 28,
+      "civ": "Poles",
+      "teamAvgElo": 1054,
+      "opponentAvgElo": 990,
+      "teammates": [
+        "Hexicero",
+        "Ragnarokro",
+        "[CL] DAB2"
+      ],
+      "opponents": [
+        "Holy Cheetos",
+        "Rice Monger (SoullessMZD)",
+        "mack",
+        "Yeepers"
+      ]
+    },
+    {
+      "matchId": 391660788,
+      "description": "10x civ shared mod just updated",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1746929100,
+      "outcome": "loss",
+      "preRating": 1046,
+      "postRating": 1020,
+      "eloChange": -26,
+      "civ": "Teutons",
+      "teamAvgElo": 1034,
+      "opponentAvgElo": 1084,
+      "teammates": [
+        "RaptorX",
+        "Zar",
+        "Baz1337"
+      ],
+      "opponents": [
+        "pandalam",
+        "gemmascho",
+        "shining star",
+        "Ren"
+      ]
+    },
+    {
+      "matchId": 395745773,
+      "description": "3x 10x Random BN",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1748416680,
+      "outcome": "loss",
+      "preRating": 1020,
+      "postRating": 993,
+      "eloChange": -27,
+      "civ": "Malians",
+      "teamAvgElo": 1082,
+      "opponentAvgElo": 1025,
+      "teammates": [
+        "Sundev",
+        "Marck",
+        "lockemisc"
+      ],
+      "opponents": [
+        "Fumero",
+        "Clean",
+        "imato",
+        "Boarjack Boarsman"
+      ]
+    },
+    {
+      "matchId": 403531204,
+      "description": "10x Shared Civ Bonus 4v4 Random",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1751443260,
+      "outcome": "win",
+      "preRating": 993,
+      "postRating": 1019,
+      "eloChange": 26,
+      "civ": "Poles",
+      "teamAvgElo": 1089,
+      "opponentAvgElo": 1000,
+      "teammates": [
+        "Kumad",
+        "Myriad",
+        "Sony Toprano"
+      ],
+      "opponents": [
+        "Makkr",
+        "Fenrisulfr",
+        "sg669",
+        "DGHIR | NICOGP11"
+      ]
+    },
+    {
+      "matchId": 403708867,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "Bamboo Nothing_Paren_V2.3",
+      "timestamp": 1751521560,
+      "outcome": "win",
+      "preRating": 1019,
+      "postRating": 1042,
+      "eloChange": 23,
+      "civ": "Vikings",
+      "teamAvgElo": 1026,
+      "opponentAvgElo": 1005,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "Luukascch",
+        "el_puta_rico"
+      ],
+      "opponents": [
+        "kiggless",
+        "[GDL] MX",
+        "Haradrim",
+        "Sensei"
+      ]
+    },
+    {
+      "matchId": 490416797,
+      "description": "256x 10x Forest Nothing",
+      "mapname": "256Xforestnothing",
+      "timestamp": 1783330380,
+      "outcome": "win",
+      "preRating": 1042,
+      "postRating": 1062,
+      "eloChange": 20,
+      "civ": "Berbers",
+      "teamAvgElo": 1017,
+      "opponentAvgElo": 1003,
+      "teammates": [
+        "Optimus",
+        "nooblet3300",
+        "serdaroglu"
+      ],
+      "opponents": [
+        "勇战到抵",
+        "Jeluk",
+        "FrostByte",
+        "Arteik"
+      ]
+    },
+    {
+      "matchId": 491212714,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1783647082,
+      "outcome": "loss",
+      "preRating": 1062,
+      "postRating": 1043,
+      "eloChange": -19,
+      "civ": "Britons",
+      "teamAvgElo": 1094,
+      "opponentAvgElo": 1088,
+      "teammates": [
+        "Kumad",
+        "Myriad",
+        "ArchiCraig"
+      ],
+      "opponents": [
+        "JoeyTribianni69",
+        "Brotherman Bill",
+        "EL__PATRON",
+        "faux"
+      ]
+    }
+  ]
+}
+>>>>>>> 73cec8abef524b024f2112bf1aed981efcc598a8

@@ -1,12 +1,12 @@
 {
   "profile_id": 3635145,
   "alias": "Prinz Kay1",
-  "rating": 1057,
-  "wins": 32,
-  "losses": 28,
-  "gamesCount": 60,
+  "rating": 1061,
+  "wins": 33,
+  "losses": 29,
+  "gamesCount": 62,
   "winRate": 53,
-  "lastPlayedAt": 1783717396,
+  "lastPlayedAt": 1783781775,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -70,57 +70,11 @@
     1005,
     1025,
     1041,
-    1057
+    1057,
+    1045,
+    1061
   ],
   "recentMatches": [
-    {
-      "matchId": 467610744,
-      "description": "10x 3x bamboo random civ - frank sucks",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1775250240,
-      "outcome": "loss",
-      "preRating": 1107,
-      "postRating": 1089,
-      "eloChange": -18,
-      "civ": "Goths",
-      "teamAvgElo": 1069,
-      "opponentAvgElo": 1058,
-      "teammates": [
-        "mamudogurbanniyedoğdun",
-        "LonelyKnight",
-        "okfkg173"
-      ],
-      "opponents": [
-        "bijiyumo",
-        "kaka52pk",
-        "Max",
-        "tonkatumura"
-      ]
-    },
-    {
-      "matchId": 467896947,
-      "description": "10x3x Bamboo Nothing",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1775338680,
-      "outcome": "loss",
-      "preRating": 1089,
-      "postRating": 1073,
-      "eloChange": -16,
-      "civ": "Incas",
-      "teamAvgElo": 1069,
-      "opponentAvgElo": 1092,
-      "teammates": [
-        "UbaneMess",
-        "tonkatumura",
-        "取款机ATM"
-      ],
-      "opponents": [
-        "東亞窪地",
-        "Lumedge",
-        "kekekeya",
-        "ISwaZz"
-      ]
-    },
     {
       "matchId": 468167562,
       "description": "10x3x Bamboo Nothing",
@@ -388,7 +342,7 @@
     {
       "matchId": 491181660,
       "description": "10x 3x Bamboo - 10xshared.com",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1783635384,
       "outcome": "loss",
       "preRating": 1071,
@@ -436,7 +390,7 @@
     {
       "matchId": 491272116,
       "description": "Bamboo 10x 3x Welcome",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
       "timestamp": 1783673981,
       "outcome": "loss",
       "preRating": 1038,
@@ -460,7 +414,7 @@
     {
       "matchId": 491388267,
       "description": "10x 3x Bamboo - 10xshared.com",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1783714256,
       "outcome": "loss",
       "preRating": 1020,
@@ -468,7 +422,7 @@
       "eloChange": -15,
       "civ": "Burgundians",
       "teamAvgElo": 1034,
-      "opponentAvgElo": 1052,
+      "opponentAvgElo": 1048,
       "teammates": [
         "Koalakapitaen",
         "Lordetion",
@@ -492,7 +446,7 @@
       "eloChange": 20,
       "civ": "Berbers",
       "teamAvgElo": 1035,
-      "opponentAvgElo": 1099,
+      "opponentAvgElo": 1096,
       "teammates": [
         "La_Fratellanza",
         "veeeeker",
@@ -551,6 +505,54 @@
         "checkdis",
         "Lordetion",
         "Honey badger"
+      ]
+    },
+    {
+      "matchId": 491534848,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783766568,
+      "outcome": "loss",
+      "preRating": 1057,
+      "postRating": 1045,
+      "eloChange": -12,
+      "civ": "Gurjaras",
+      "teamAvgElo": 1008,
+      "opponentAvgElo": 1141,
+      "teammates": [
+        "k0rnm@yer",
+        "fafounet",
+        "Barosanu512"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "pandalam",
+        "shining star",
+        "fxsound"
+      ]
+    },
+    {
+      "matchId": 491583989,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783781775,
+      "outcome": "win",
+      "preRating": 1045,
+      "postRating": 1061,
+      "eloChange": 16,
+      "civ": "Khmer",
+      "teamAvgElo": 1058,
+      "opponentAvgElo": 1045,
+      "teammates": [
+        "NoAgendaPODCAST",
+        "bommietommie",
+        "Sr.K"
+      ],
+      "opponents": [
+        "Bachter",
+        "kaka52pk",
+        "Dr.Ao",
+        "YUJIN"
       ]
     }
   ]

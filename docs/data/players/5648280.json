@@ -1,12 +1,12 @@
 {
   "profile_id": 5648280,
   "alias": "Rito",
-  "rating": 1048,
+  "rating": 1020,
   "wins": 14,
-  "losses": 12,
-  "gamesCount": 26,
-  "winRate": 54,
-  "lastPlayedAt": 1777165680,
+  "losses": 14,
+  "gamesCount": 28,
+  "winRate": 50,
+  "lastPlayedAt": 1783786135,
   "country": "jp",
   "merged_ids": [],
   "ratingHistory": [
@@ -36,57 +36,11 @@
     1034,
     1049,
     1064,
-    1048
+    1048,
+    1033,
+    1020
   ],
   "recentMatches": [
-    {
-      "matchId": 349176086,
-      "description": "sharex10x tech3x AMAZON",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1730501340,
-      "outcome": "win",
-      "preRating": 1008,
-      "postRating": 1045,
-      "eloChange": 37,
-      "civ": "Magyars",
-      "teamAvgElo": 1040,
-      "opponentAvgElo": 996,
-      "teammates": [
-        "mazen.sw",
-        "Papillon",
-        "G"
-      ],
-      "opponents": [
-        "Shakawakamakapaw",
-        "komatti",
-        "JuanMalote",
-        "Sir Panda Tree"
-      ]
-    },
-    {
-      "matchId": 349185231,
-      "description": "sharex10x tech3x AMAZON",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1730504160,
-      "outcome": "win",
-      "preRating": 1045,
-      "postRating": 1079,
-      "eloChange": 34,
-      "civ": "Burgundians",
-      "teamAvgElo": 1015,
-      "opponentAvgElo": 1015,
-      "teammates": [
-        "I am not AI",
-        "[S33]ff",
-        "gerardoprado93"
-      ],
-      "opponents": [
-        "Papillon",
-        "nagatsuki14",
-        "Shakawakamakapaw",
-        "komatti"
-      ]
-    },
     {
       "matchId": 349409404,
       "description": "shared10x tech3x michi",
@@ -517,6 +471,54 @@
         "I am KSG",
         "konishika",
         "herelin0"
+      ]
+    },
+    {
+      "matchId": 491592203,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783783561,
+      "outcome": "loss",
+      "preRating": 1048,
+      "postRating": 1033,
+      "eloChange": -15,
+      "civ": "Spartans",
+      "teamAvgElo": 1020,
+      "opponentAvgElo": 1077,
+      "teammates": [
+        "jair_silva",
+        "kaka52pk",
+        "取款机ATM"
+      ],
+      "opponents": [
+        "Papillon",
+        "待ったかね？",
+        "Tamra Robinson",
+        "kekekeya"
+      ]
+    },
+    {
+      "matchId": 491601886,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783786135,
+      "outcome": "loss",
+      "preRating": 1033,
+      "postRating": 1020,
+      "eloChange": -13,
+      "civ": "Berbers",
+      "teamAvgElo": 982,
+      "opponentAvgElo": 1092,
+      "teammates": [
+        "dorayan",
+        "待ったかね？",
+        "Wololoo"
+      ],
+      "opponents": [
+        "Papillon",
+        "tonkatumura",
+        "komatti",
+        "kaka52pk"
       ]
     }
   ]

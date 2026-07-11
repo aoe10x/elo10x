@@ -1,12 +1,12 @@
 {
   "profile_id": 3712821,
   "alias": "irvizuett",
-  "rating": 914,
+  "rating": 893,
   "wins": 20,
-  "losses": 36,
-  "gamesCount": 56,
-  "winRate": 36,
-  "lastPlayedAt": 1783388018,
+  "losses": 38,
+  "gamesCount": 58,
+  "winRate": 34,
+  "lastPlayedAt": 1783783100,
   "country": "mx",
   "merged_ids": [],
   "ratingHistory": [
@@ -66,57 +66,11 @@
     879,
     902,
     891,
-    914
+    914,
+    905,
+    893
   ],
   "recentMatches": [
-    {
-      "matchId": 471068340,
-      "description": "10x civ x3 tec Bomboo nothing - Only Good Noobs",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1776468600,
-      "outcome": "win",
-      "preRating": 960,
-      "postRating": 978,
-      "eloChange": 18,
-      "civ": "Britons",
-      "teamAvgElo": 989,
-      "opponentAvgElo": 1013,
-      "teammates": [
-        "Bao Oninon",
-        "__VK__",
-        "rafuk89"
-      ],
-      "opponents": [
-        "Viteaux",
-        "Lumedge",
-        "ChristopheG1970.Fr",
-        "Goodsoup"
-      ]
-    },
-    {
-      "matchId": 472314948,
-      "description": "10x3x Bamboo Nothing",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1776894000,
-      "outcome": "loss",
-      "preRating": 978,
-      "postRating": 963,
-      "eloChange": -15,
-      "civ": "Britons",
-      "teamAvgElo": 1015,
-      "opponentAvgElo": 1003,
-      "teammates": [
-        "東亞窪地",
-        "jkh2448",
-        "okfkg173"
-      ],
-      "opponents": [
-        "Monk",
-        "Feitoria",
-        "SeeYouTomorrow",
-        "Saloon_F_F"
-      ]
-    },
     {
       "matchId": 473366217,
       "description": "10x 3x shared !!NO NOOBS!!",
@@ -547,6 +501,54 @@
         "menorahjury",
         "pandasadnap",
         "Dylan Dog"
+      ]
+    },
+    {
+      "matchId": 491436845,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1783729771,
+      "outcome": "loss",
+      "preRating": 914,
+      "postRating": 905,
+      "eloChange": -9,
+      "civ": "Italians",
+      "teamAvgElo": 1042,
+      "opponentAvgElo": 1074,
+      "teammates": [
+        "Cheesewheel24",
+        "OhSheeep",
+        "BigAl"
+      ],
+      "opponents": [
+        "Parenquima",
+        "Sensei",
+        "konishika",
+        "Regina Ip"
+      ]
+    },
+    {
+      "matchId": 491589071,
+      "description": "Bamboo nothing 10X3X",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783783100,
+      "outcome": "loss",
+      "preRating": 905,
+      "postRating": 893,
+      "eloChange": -12,
+      "civ": "Huns",
+      "teamAvgElo": 920,
+      "opponentAvgElo": 988,
+      "teammates": [
+        "yxsko93",
+        "Pogonophobia69",
+        "SemiQuitt"
+      ],
+      "opponents": [
+        "hoderebus",
+        "[Liiit] Zbyszek",
+        "Shirley",
+        "Belisarius"
       ]
     }
   ]
