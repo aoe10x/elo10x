@@ -21,7 +21,6 @@ Crawls recent match histories for active players using the public Relic Link API
 # Crawl recent matches for active players (default limit: 250)
 elo10x crawl --limit 250
 ```
-*Note: The crawler implements a dynamic cooldown based on player activity. Highly active players are crawled every 2–4 hours to prevent matches from falling off the Relic API's recent match list, while inactive players are crawled once every 3 days to conserve requests.*
 
 #### B. AoE2Insights Scraper (Recent Crawl)
 Crawls recent match histories for active players using the AoE2Insights scraper. It automatically launches a headful Chrome window, waits for you to solve the Cloudflare Turnstile verification, and then crawls page 1 of all eligible player matches.
