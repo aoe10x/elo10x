@@ -45,6 +45,7 @@ jobs:
           git add docs/data/matches.json docs/data/profiles.json docs/data/crawl_state.json docs/index.html docs/pure.html docs/combined.html docs/flags.css docs/data/players/
           if ! git diff --cached --quiet; then
             git commit -m "chore: auto-update matches database and pre-rendered leaderboards [skip ci]"
+            git pull --rebase origin main
             git push origin main
           else
             echo "No new matches crawled. Database is up to date."
