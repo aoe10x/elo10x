@@ -35,7 +35,7 @@ Backfills deep match history for players directly from AoE2Insights. Like the re
 # Scrape pages 1 through 20 for Clean (profile ID 11783175)
 elo10x scrape 11783175 --start-page 1 --end-page 20
 
-# Scrape recent matches for top 20 active players in the database
+# Scrape recent matches for top 80 active players in the database (default limit: 80)
 elo10x scrape active --start-page 1 --end-page 1
 ```
 *Note: The insights scraper uses a click-shield overlay to block accidental interaction while scraping, and a smart crawl manifest to automatically stop fetching pages once it overlaps with matches already stored in your database (see [docs/updates_and_crawling.md](file:///Users/paulirish/code/elo10x/docs/updates_and_crawling.md)).*
