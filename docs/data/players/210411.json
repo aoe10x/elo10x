@@ -1,12 +1,12 @@
 {
   "profile_id": 210411,
   "alias": "Sith",
-  "rating": 976,
+  "rating": 952,
   "wins": 6,
-  "losses": 9,
-  "gamesCount": 15,
-  "winRate": 40,
-  "lastPlayedAt": 1783717726,
+  "losses": 10,
+  "gamesCount": 16,
+  "winRate": 38,
+  "lastPlayedAt": 1783763675,
   "country": "ro",
   "merged_ids": [],
   "ratingHistory": [
@@ -25,7 +25,8 @@
     926,
     962,
     997,
-    976
+    976,
+    952
   ],
   "recentMatches": [
     {
@@ -386,6 +387,30 @@
         "BigAl",
         "PIEROGI",
         "Ferdinand I of Naples"
+      ]
+    },
+    {
+      "matchId": 491527948,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783763675,
+      "outcome": "loss",
+      "preRating": 976,
+      "postRating": 952,
+      "eloChange": -24,
+      "civ": "Teutons",
+      "teamAvgElo": 1044,
+      "opponentAvgElo": 975,
+      "teammates": [
+        "iamatthe.hell",
+        "matt",
+        "Honey badger"
+      ],
+      "opponents": [
+        "Chuckyllo4417",
+        "sppd3181",
+        "axiuluo",
+        "mozu5"
       ]
     }
   ]

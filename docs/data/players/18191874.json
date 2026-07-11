@@ -1,12 +1,12 @@
 {
   "profile_id": 18191874,
   "alias": "Vader",
-  "rating": 1099,
+  "rating": 1085,
   "wins": 44,
-  "losses": 30,
-  "gamesCount": 74,
+  "losses": 31,
+  "gamesCount": 75,
   "winRate": 59,
-  "lastPlayedAt": 1780212240,
+  "lastPlayedAt": 1783768784,
   "country": "pe",
   "merged_ids": [
     12628022,
@@ -87,33 +87,10 @@
     1093,
     1106,
     1087,
-    1099
+    1099,
+    1085
   ],
   "recentMatches": [
-    {
-      "matchId": 473381179,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1777247040,
-      "outcome": "win",
-      "preRating": 1032,
-      "postRating": 1047,
-      "eloChange": 15,
-      "civ": "Unknown",
-      "teamAvgElo": 1014,
-      "opponentAvgElo": 1012,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "apolizer",
-        "enterren"
-      ],
-      "opponents": [
-        "bijiyumo",
-        "QuasarHerzog555",
-        "oklema",
-        "El Broseph"
-      ]
-    },
     {
       "matchId": 473434945,
       "description": "10x civ 3x tech",
@@ -568,6 +545,30 @@
         "Ode To  A Pineapple",
         "mack",
         "Costco1.50HotDog"
+      ]
+    },
+    {
+      "matchId": 491539961,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783768784,
+      "outcome": "loss",
+      "preRating": 1099,
+      "postRating": 1085,
+      "eloChange": -14,
+      "civ": "Maya",
+      "teamAvgElo": 1059,
+      "opponentAvgElo": 1136,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "OrangE",
+        "476055690"
+      ],
+      "opponents": [
+        "pandalam",
+        "fxsound",
+        "dRea",
+        "Kuecken_das_Vollstrecker"
       ]
     }
   ]
