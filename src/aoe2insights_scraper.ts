@@ -169,7 +169,8 @@ export class Aoe2InsightsScraper {
         }, null, 2), 'utf-8');
 
         const relPath = path.relative(process.cwd(), tempFile);
-        console.log(`[SCRAPER] Received player ${playerId}: ${matches.length} matches. Saved to ${relPath} (reached start: ${reachedStartOfHistory})`);
+        const percent = Math.round((crawledCount / profileIds.length) * 100);
+        console.log(`[SCRAPER] [Progress: ${crawledCount}/${profileIds.length} (${percent}%)] Received player ${playerId}: ${matches.length} matches. Saved to ${relPath} (reached start: ${reachedStartOfHistory})`);
 
         // Update Manifest
         const dbMatches = this.db.getMatches().filter(m => m.players.some(p => p.profile_id === playerId));
