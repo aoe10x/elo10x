@@ -130,15 +130,11 @@ async function main(): Promise<void> {
       
       const matches = db.getMatches();
       const playerCounts: Record<number, number> = {};
-      const scrapedIds = new Set<number>();
       
       for (const m of matches) {
         if (m.players) {
           for (const p of m.players) {
             playerCounts[p.profile_id] = (playerCounts[p.profile_id] || 0) + 1;
-            if (m.source === 'aoe2insights_scrape') {
-              scrapedIds.add(p.profile_id);
-            }
           }
         }
       }
@@ -165,7 +161,10 @@ async function main(): Promise<void> {
       const limit = values.limit ? parseInt(values.limit, 10) : 80;
 
       for (const pid of activeIds) {
-        const isExcluded = isUnscrapedOnly ? scrapedIds.has(pid) : excludedIds.has(pid);
+        const manifest = db.getPlayerManifest(pid);
+        const hasBeenScraped = manifest?.insights !== undefined;
+        
+        const isExcluded = isUnscrapedOnly ? hasBeenScraped : excludedIds.has(pid);
         if (!isExcluded) {
           targetProfileIds.push(pid);
           if (targetProfileIds.length >= limit) {
