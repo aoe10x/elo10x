@@ -1,12 +1,12 @@
 {
   "profile_id": 2843438,
   "alias": "Scipio",
-  "rating": 1065,
+  "rating": 1047,
   "wins": 13,
-  "losses": 11,
-  "gamesCount": 24,
-  "winRate": 54,
-  "lastPlayedAt": 1783726013,
+  "losses": 12,
+  "gamesCount": 25,
+  "winRate": 52,
+  "lastPlayedAt": 1783727370,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -34,33 +34,10 @@
     1093,
     1106,
     1086,
-    1065
+    1065,
+    1047
   ],
   "recentMatches": [
-    {
-      "matchId": 490862621,
-      "description": "Bamboo nothing 10X3X",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1783497546,
-      "outcome": "win",
-      "preRating": 949,
-      "postRating": 1003,
-      "eloChange": 54,
-      "civ": "Portuguese",
-      "teamAvgElo": 974,
-      "opponentAvgElo": 1049,
-      "teammates": [
-        "yxsko93",
-        "king_doge",
-        "majorleyendo"
-      ],
-      "opponents": [
-        "NoxMortus",
-        "Daniel_CZ",
-        "勇战到抵",
-        "snakinus"
-      ]
-    },
     {
       "matchId": 490894188,
       "description": "[重賽] 10X 3X Shared Civ Bonus Random CIV 4V4",
@@ -304,7 +281,7 @@
     {
       "matchId": 491283758,
       "description": "3X 10X",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
       "timestamp": 1783680447,
       "outcome": "win",
       "preRating": 1075,
@@ -515,6 +492,30 @@
         "Josh",
         "baianitro",
         "Rita De Valencia"
+      ]
+    },
+    {
+      "matchId": 491430463,
+      "description": "10x 3x Bamboo (<3)",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783727370,
+      "outcome": "loss",
+      "preRating": 1065,
+      "postRating": 1047,
+      "eloChange": -18,
+      "civ": "Bengalis",
+      "teamAvgElo": 1001,
+      "opponentAvgElo": 1022,
+      "teammates": [
+        "procrastination.exe",
+        "E_R_V",
+        "Apocalypto"
+      ],
+      "opponents": [
+        "Chikna Raavan",
+        "MarieBrutale",
+        "GrandUni",
+        "Parenquima"
       ]
     }
   ]

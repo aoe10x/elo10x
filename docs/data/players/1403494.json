@@ -1,12 +1,12 @@
 {
   "profile_id": 1403494,
   "alias": "byronnnnn",
-  "rating": 1038,
-  "wins": 10,
+  "rating": 1055,
+  "wins": 11,
   "losses": 12,
-  "gamesCount": 22,
-  "winRate": 45,
-  "lastPlayedAt": 1782615789,
+  "gamesCount": 23,
+  "winRate": 48,
+  "lastPlayedAt": 1783743765,
   "country": "gb",
   "merged_ids": [],
   "ratingHistory": [
@@ -32,33 +32,10 @@
     1023,
     1041,
     1054,
-    1038
+    1038,
+    1055
   ],
   "recentMatches": [
-    {
-      "matchId": 437771726,
-      "description": "10x 3x bamboo nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1764942780,
-      "outcome": "loss",
-      "preRating": 917,
-      "postRating": 879,
-      "eloChange": -38,
-      "civ": "Malay",
-      "teamAvgElo": 987,
-      "opponentAvgElo": 972,
-      "teammates": [
-        "Mr. PUTIN my President",
-        "benji",
-        "BranchDravidian"
-      ],
-      "opponents": [
-        "Fresh To Death",
-        "{German}Kaese",
-        "Wicki_Woo",
-        "X"
-      ]
-    },
     {
       "matchId": 440470191,
       "description": "10x 3x bamboo",
@@ -513,6 +490,30 @@
         "Myriad",
         "feid_",
         "Wardy21"
+      ]
+    },
+    {
+      "matchId": 491478606,
+      "description": "10x 3x BN ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783743765,
+      "outcome": "win",
+      "preRating": 1038,
+      "postRating": 1055,
+      "eloChange": 17,
+      "civ": "Persians",
+      "teamAvgElo": 1057,
+      "opponentAvgElo": 1069,
+      "teammates": [
+        "pool_champ",
+        "Frederick",
+        "pandasadnap"
+      ],
+      "opponents": [
+        "Zar",
+        "Xinzzo",
+        "[B] Cannino",
+        "Ellie91"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 3712821,
   "alias": "irvizuett",
-  "rating": 914,
+  "rating": 905,
   "wins": 20,
-  "losses": 36,
-  "gamesCount": 56,
-  "winRate": 36,
-  "lastPlayedAt": 1783388018,
+  "losses": 37,
+  "gamesCount": 57,
+  "winRate": 35,
+  "lastPlayedAt": 1783729771,
   "country": "mx",
   "merged_ids": [],
   "ratingHistory": [
@@ -66,33 +66,10 @@
     879,
     902,
     891,
-    914
+    914,
+    905
   ],
   "recentMatches": [
-    {
-      "matchId": 471068340,
-      "description": "10x civ x3 tec Bomboo nothing - Only Good Noobs",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1776468600,
-      "outcome": "win",
-      "preRating": 960,
-      "postRating": 978,
-      "eloChange": 18,
-      "civ": "Britons",
-      "teamAvgElo": 989,
-      "opponentAvgElo": 1013,
-      "teammates": [
-        "Bao Oninon",
-        "__VK__",
-        "rafuk89"
-      ],
-      "opponents": [
-        "Viteaux",
-        "Lumedge",
-        "ChristopheG1970.Fr",
-        "Goodsoup"
-      ]
-    },
     {
       "matchId": 472314948,
       "description": "10x3x Bamboo Nothing",
@@ -547,6 +524,30 @@
         "menorahjury",
         "pandasadnap",
         "Dylan Dog"
+      ]
+    },
+    {
+      "matchId": 491436845,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1783729771,
+      "outcome": "loss",
+      "preRating": 914,
+      "postRating": 905,
+      "eloChange": -9,
+      "civ": "Italians",
+      "teamAvgElo": 1042,
+      "opponentAvgElo": 1074,
+      "teammates": [
+        "Cheesewheel24",
+        "OhSheeep",
+        "BigAl"
+      ],
+      "opponents": [
+        "Parenquima",
+        "Sensei",
+        "konishika",
+        "Regina Ip"
       ]
     }
   ]

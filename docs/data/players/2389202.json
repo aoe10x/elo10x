@@ -1,12 +1,12 @@
 {
   "profile_id": 2389202,
   "alias": "Rooaary",
-  "rating": 997,
+  "rating": 972,
   "wins": 40,
-  "losses": 39,
-  "gamesCount": 79,
-  "winRate": 51,
-  "lastPlayedAt": 1783058754,
+  "losses": 41,
+  "gamesCount": 81,
+  "winRate": 49,
+  "lastPlayedAt": 1783746550,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -89,57 +89,11 @@
     973,
     992,
     1010,
-    997
+    997,
+    987,
+    972
   ],
   "recentMatches": [
-    {
-      "matchId": 386526630,
-      "description": "10x 3x Bamboo Nothing",
-      "mapname": "Bamboo Nothing - +Wild ##############",
-      "timestamp": 1745072820,
-      "outcome": "win",
-      "preRating": 1074,
-      "postRating": 1087,
-      "eloChange": 13,
-      "civ": "Unknown",
-      "teamAvgElo": 1042,
-      "opponentAvgElo": 1009,
-      "teammates": [
-        "Phantom_",
-        "Honey badger",
-        "Bobuler"
-      ],
-      "opponents": [
-        "EzraSkywalker96",
-        "Captain Stripes",
-        "Clean",
-        "Killpop_PAW"
-      ]
-    },
-    {
-      "matchId": 386528246,
-      "description": "10x 3x Bamboo Nothing",
-      "mapname": "Bamboo Nothing - +Wild ##############",
-      "timestamp": 1745073420,
-      "outcome": "loss",
-      "preRating": 1087,
-      "postRating": 1069,
-      "eloChange": -18,
-      "civ": "Unknown",
-      "teamAvgElo": 1008,
-      "opponentAvgElo": 1044,
-      "teammates": [
-        "EzraSkywalker96",
-        "Captain Stripes",
-        "Bobuler"
-      ],
-      "opponents": [
-        "Clean",
-        "紫蝶黄蜂俱有情",
-        "Honey badger",
-        "yellow"
-      ]
-    },
     {
       "matchId": 416835667,
       "description": "10x 3x bamboo",
@@ -570,6 +524,54 @@
         "mrtickles22",
         "TUF | DUKE_NUKEM",
         "adrian"
+      ]
+    },
+    {
+      "matchId": 491485651,
+      "description": "10x 3x Bamboo best lobby",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783745913,
+      "outcome": "loss",
+      "preRating": 997,
+      "postRating": 987,
+      "eloChange": -10,
+      "civ": "Persians",
+      "teamAvgElo": 1065,
+      "opponentAvgElo": 1138,
+      "teammates": [
+        "typ53b90",
+        "Sundev",
+        "Bobuler"
+      ],
+      "opponents": [
+        "TheRiceMan",
+        "田瘾犯了",
+        "Zar",
+        "-toxic- Chicken"
+      ]
+    },
+    {
+      "matchId": 491486942,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783746550,
+      "outcome": "loss",
+      "preRating": 987,
+      "postRating": 972,
+      "eloChange": -15,
+      "civ": "Vikings",
+      "teamAvgElo": 1039,
+      "opponentAvgElo": 1011,
+      "teammates": [
+        "Bobuler",
+        "Stigel",
+        "Zar"
+      ],
+      "opponents": [
+        "baianitro",
+        "95Bricks",
+        "typ53b90",
+        "Sundev"
       ]
     }
   ]
