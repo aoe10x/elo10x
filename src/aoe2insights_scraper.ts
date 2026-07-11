@@ -100,36 +100,14 @@ export class Aoe2InsightsScraper {
     await sendCdp('Runtime.evaluate', { expression });
   }
 
+  /**
+   * Scrapes matches for a list of players from AoE2Insights concurrently via a browser-side script
+   */
   async scrapePlayersBatch(profileIds: number[], startPage: number = 1, endPage: number = 20): Promise<{ crawled: number; added: number }> {
     if (profileIds.length === 0) return { crawled: 0, added: 0 };
-    
+
     await fs.mkdir(this.scrapedDataDir, { recursive: true });
 
-    const CHUNK_SIZE = 80; // Safety batch limit to prevent Chrome memory exhaustion
-    let totalCrawled = 0;
-    let totalAdded = 0;
-
-    for (let i = 0; i < profileIds.length; i += CHUNK_SIZE) {
-      const chunk = profileIds.slice(i, i + CHUNK_SIZE);
-      const chunkNum = Math.floor(i / CHUNK_SIZE) + 1;
-      const totalChunks = Math.ceil(profileIds.length / CHUNK_SIZE);
-      
-      console.log(`\n========================================`);
-      console.log(`[SCRAPER] Processing Chunk ${chunkNum}/${totalChunks} (Size: ${chunk.length} players)`);
-      console.log(`========================================`);
-      
-      const stats = await this.scrapePlayersSingleSession(chunk, startPage, endPage);
-      totalCrawled += stats.crawled;
-      totalAdded += stats.added;
-    }
-
-    return { crawled: totalCrawled, added: totalAdded };
-  }
-
-  /**
-   * Performs the scrape for a single chunk of players in one browser session
-   */
-  private async scrapePlayersSingleSession(profileIds: number[], startPage: number = 1, endPage: number = 20): Promise<{ crawled: number; added: number }> {
     const port = 19222;
     const userDataDir = path.join(process.cwd(), '.chrome-user-data-scraper');
     const { wsUrl, chromeProcess } = await this.launchChromeAndWaitForBypass(port, userDataDir);
