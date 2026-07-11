@@ -1,12 +1,12 @@
 {
   "profile_id": 2843438,
   "alias": "Scipio",
-  "rating": 1047,
+  "rating": 1031,
   "wins": 13,
-  "losses": 12,
-  "gamesCount": 25,
-  "winRate": 52,
-  "lastPlayedAt": 1783727370,
+  "losses": 13,
+  "gamesCount": 26,
+  "winRate": 50,
+  "lastPlayedAt": 1783766529,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -35,33 +35,10 @@
     1106,
     1086,
     1065,
-    1047
+    1047,
+    1031
   ],
   "recentMatches": [
-    {
-      "matchId": 490894188,
-      "description": "[重賽] 10X 3X Shared Civ Bonus Random CIV 4V4",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783516144,
-      "outcome": "win",
-      "preRating": 1003,
-      "postRating": 1055,
-      "eloChange": 52,
-      "civ": "Magyars",
-      "teamAvgElo": 1066,
-      "opponentAvgElo": 1107,
-      "teammates": [
-        "鱼浆",
-        "Bao Oninon",
-        "The Cobra Brothers"
-      ],
-      "opponents": [
-        "老K",
-        "pandalam",
-        "金菜",
-        "Consume Product"
-      ]
-    },
     {
       "matchId": 490927209,
       "description": " 10x 3x bamboo nothing",
@@ -516,6 +493,30 @@
         "MarieBrutale",
         "GrandUni",
         "Parenquima"
+      ]
+    },
+    {
+      "matchId": 491534748,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783766529,
+      "outcome": "loss",
+      "preRating": 1047,
+      "postRating": 1031,
+      "eloChange": -16,
+      "civ": "Koreans",
+      "teamAvgElo": 1012,
+      "opponentAvgElo": 1051,
+      "teammates": [
+        "iamatthe.hell",
+        "matt",
+        "SemiQuitt"
+      ],
+      "opponents": [
+        "Phantom_",
+        "Honey badger",
+        "im slow",
+        "476055690"
       ]
     }
   ]

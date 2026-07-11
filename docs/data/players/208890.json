@@ -1,12 +1,12 @@
 {
   "profile_id": 208890,
   "alias": "[Liiit] Zbyszek",
-  "rating": 1048,
+  "rating": 1032,
   "wins": 28,
-  "losses": 25,
-  "gamesCount": 53,
-  "winRate": 53,
-  "lastPlayedAt": 1783539272,
+  "losses": 26,
+  "gamesCount": 54,
+  "winRate": 52,
+  "lastPlayedAt": 1783761698,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -63,33 +63,10 @@
     1067,
     1052,
     1034,
-    1048
+    1048,
+    1032
   ],
   "recentMatches": [
-    {
-      "matchId": 408778049,
-      "description": "10x 3x Bamboo nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1753580580,
-      "outcome": "win",
-      "preRating": 1038,
-      "postRating": 1055,
-      "eloChange": 17,
-      "civ": "Unknown",
-      "teamAvgElo": 981,
-      "opponentAvgElo": 1060,
-      "teammates": [
-        "bijiyumo",
-        "MaX",
-        "Dragonlord Freya"
-      ],
-      "opponents": [
-        "Dark Knight4094",
-        "YUJIN",
-        "25chai",
-        "Yeepers"
-      ]
-    },
     {
       "matchId": 409451412,
       "description": "BN 10x 10x 3x",
@@ -544,6 +521,30 @@
         "Ruuder",
         "Eat MY Sprouts",
         "Chirijiraden"
+      ]
+    },
+    {
+      "matchId": 491523018,
+      "description": "10x3x bamboo nothing",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1783761698,
+      "outcome": "loss",
+      "preRating": 1048,
+      "postRating": 1032,
+      "eloChange": -16,
+      "civ": "Bulgarians",
+      "teamAvgElo": 1003,
+      "opponentAvgElo": 1058,
+      "teammates": [
+        "_Zeruch_",
+        "Zavgor",
+        "sppd3181"
+      ],
+      "opponents": [
+        "轻绘梨花泪满衣",
+        "jelliebean11",
+        "babeleo",
+        "PIEROGI"
       ]
     }
   ]

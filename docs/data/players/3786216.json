@@ -1,12 +1,12 @@
 {
   "profile_id": 3786216,
   "alias": "Barosanu512",
-  "rating": 1022,
+  "rating": 1011,
   "wins": 53,
-  "losses": 47,
-  "gamesCount": 100,
-  "winRate": 53,
-  "lastPlayedAt": 1783198140,
+  "losses": 48,
+  "gamesCount": 101,
+  "winRate": 52,
+  "lastPlayedAt": 1783766568,
   "country": "ro",
   "merged_ids": [],
   "ratingHistory": [
@@ -35,7 +35,6 @@
     1053,
     1035,
     1048,
-    1031,
     1043,
     1026,
     1007,
@@ -60,6 +59,7 @@
     1111,
     1097,
     1111,
+    1089,
     1102,
     1116,
     1100,
@@ -84,7 +84,6 @@
     1099,
     1086,
     1069,
-    1050,
     1035,
     1051,
     1066,
@@ -109,33 +108,10 @@
     999,
     988,
     1007,
-    1022
+    1022,
+    1011
   ],
   "recentMatches": [
-    {
-      "matchId": 448548176,
-      "description": "3x 10x bamboo - random civ",
-      "mapname": "Bamboo Nothing_Paren_V3.0",
-      "timestamp": 1768537080,
-      "outcome": "win",
-      "preRating": 1067,
-      "postRating": 1081,
-      "eloChange": 14,
-      "civ": "Unknown",
-      "teamAvgElo": 1044,
-      "opponentAvgElo": 1014,
-      "teammates": [
-        "Cale94",
-        "Lumedge",
-        "peanut butter"
-      ],
-      "opponents": [
-        "gemmascho",
-        "schrubber",
-        "將軍的恩情還不完",
-        "Pope Leo I."
-      ]
-    },
     {
       "matchId": 456638756,
       "description": "+10x+3xtech   no noob",
@@ -590,6 +566,30 @@
         "elemnt",
         "shemirage",
         "PIEROGI"
+      ]
+    },
+    {
+      "matchId": 491534848,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783766568,
+      "outcome": "loss",
+      "preRating": 1022,
+      "postRating": 1011,
+      "eloChange": -11,
+      "civ": "Celts",
+      "teamAvgElo": 1008,
+      "opponentAvgElo": 1145,
+      "teammates": [
+        "k0rnm@yer",
+        "fafounet",
+        "Prinz Kay1"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "pandalam",
+        "shining star",
+        "fxsound"
       ]
     }
   ]

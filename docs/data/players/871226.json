@@ -1,12 +1,12 @@
 {
   "profile_id": 871226,
   "alias": "Chaos_Omega",
-  "rating": 1044,
+  "rating": 1027,
   "wins": 11,
-  "losses": 10,
-  "gamesCount": 21,
-  "winRate": 52,
-  "lastPlayedAt": 1780224912,
+  "losses": 11,
+  "gamesCount": 22,
+  "winRate": 50,
+  "lastPlayedAt": 1783732390,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -31,33 +31,10 @@
     986,
     1007,
     1026,
-    1044
+    1044,
+    1027
   ],
   "recentMatches": [
-    {
-      "matchId": 424540212,
-      "description": "10x Shared Civ",
-      "mapname": "Hex Bamboo Nothing",
-      "timestamp": 1760097900,
-      "outcome": "loss",
-      "preRating": 1051,
-      "postRating": 991,
-      "eloChange": -60,
-      "civ": "Unknown",
-      "teamAvgElo": 1080,
-      "opponentAvgElo": 949,
-      "teammates": [
-        "MobBob",
-        "RedBullWOLOLO26",
-        "baianitro"
-      ],
-      "opponents": [
-        "Hexicero",
-        "Emotions are prohibited",
-        "WDWKid3",
-        "Sir_Notabot"
-      ]
-    },
     {
       "matchId": 425123410,
       "description": "+10x+3xtech   no noob",
@@ -512,6 +489,30 @@
         "鱼浆",
         "Lumedge",
         "mitchell_bombers"
+      ]
+    },
+    {
+      "matchId": 491443522,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783732390,
+      "outcome": "loss",
+      "preRating": 1044,
+      "postRating": 1027,
+      "eloChange": -17,
+      "civ": "Unknown",
+      "teamAvgElo": 1134,
+      "opponentAvgElo": 1029,
+      "teammates": [
+        "{R} Parry",
+        "Hexicero",
+        "Lumedge"
+      ],
+      "opponents": [
+        "Consume Product",
+        "Paladin",
+        "crocs",
+        "LB Trice"
       ]
     }
   ]
