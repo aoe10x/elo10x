@@ -7,7 +7,6 @@ async function main() {
 
   const matches = db.getMatches();
   const profiles = db.getAllProfiles();
-  const manifest = db.crawlManifest;
 
   const nowSecs = Math.floor(Date.now() / 1000);
   const day30Sec = 30 * 24 * 60 * 60;
