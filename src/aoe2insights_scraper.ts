@@ -160,8 +160,6 @@ export class Aoe2InsightsScraper {
         const { playerId, matches, hitDepthLimit } = payload;
         crawledCount++;
 
-        console.log(`[SCRAPER] Received player ${playerId}: ${matches.length} matches (depth limit hit: ${hitDepthLimit})`);
-
         // Save raw matches to temporary file under scraped_data/
         const tempFile = path.join(this.scrapedDataDir, `insights_scraped_${playerId}_${Date.now()}.json`);
         await fs.writeFile(tempFile, JSON.stringify({
@@ -169,6 +167,9 @@ export class Aoe2InsightsScraper {
           matches,
           hitDepthLimit
         }, null, 2), 'utf-8');
+
+        const relPath = path.relative(process.cwd(), tempFile);
+        console.log(`[SCRAPER] Received player ${playerId}: ${matches.length} matches. Saved to ${relPath} (depth limit hit: ${hitDepthLimit})`);
 
         // Update Manifest
         const dbMatches = this.db.getMatches().filter(m => m.players.some(p => p.profile_id === playerId));
