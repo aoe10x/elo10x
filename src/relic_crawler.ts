@@ -60,47 +60,47 @@ export class RelicCrawler {
   }
 
   /**
-   * Seed the crawl queue from two time windows, deduped:
-   *   - Most active players in the past 3 days  (hot/current players)
-   *   - Most active players in the past 30 days (regular community members)
-   * Both ranked by match count within their window. Combined list is deduped.
+   * Seeds the crawl queue using Unified Priority Seeding:
+   * Priority = (Activity_30d + 0.5) * Staleness_Hours
+   * This balances active player freshness and prevents inactive player starvation.
    */
-  async seedFromActivePlayers(limit: number = 50): Promise<number[]> {
+  async seedPriorityQueue(limit: number): Promise<number[]> {
     const nowSecs = Math.floor(Date.now() / 1000);
-    const day3ago  = nowSecs - 3  * 24 * 3600;
-    const day30ago = nowSecs - 30 * 24 * 3600;
+    const day30Sec = 30 * 24 * 60 * 60;
+    const day30ago = nowSecs - day30Sec;
 
-    const matches = this.db.getMatches();
-
-    const counts3d  = new Map<number, number>();
-    const counts30d = new Map<number, number>();
-
-    for (const m of matches) {
-      for (const p of (m.players ?? [])) {
-        const id = p.profile_id;
-        if (m.startgametime >= day3ago)  counts3d.set(id,  (counts3d.get(id)  ?? 0) + 1);
-        if (m.startgametime >= day30ago) counts30d.set(id, (counts30d.get(id) ?? 0) + 1);
+    const rolling30d = new Map<number, number>();
+    for (const m of this.db.getMatches()) {
+      if (m.startgametime >= day30ago && m.players) {
+        for (const p of m.players) {
+          rolling30d.set(p.profile_id, (rolling30d.get(p.profile_id) || 0) + 1);
+        }
       }
     }
 
-    const topN = (map: Map<number, number>, n: number) =>
-      [...map.entries()].sort((a, b) => b[1] - a[1]).slice(0, n).map(([id]) => id);
+    const profiles = this.db.getAllProfiles();
+    const scored = profiles.map(p => {
+      const pid = p.profile_id;
+      const activity = rolling30d.get(pid) || 0;
+      const manifest = this.db.getPlayerManifest(pid);
+      
+      // If never crawled, seed staleness to 30 days ago
+      const lastCrawlSec = manifest?.relic?.last_crawled_at || (nowSecs - day30Sec);
+      const stalenessSec = Math.max(0, nowSecs - lastCrawlSec);
+      const stalenessHours = stalenessSec / 3600;
 
-    // Take up to half the limit from each window, then dedupe
-    const half    = Math.ceil(limit / 2);
-    const from3d  = topN(counts3d,  half);
-    const from30d = topN(counts30d, half);
+      // Priority = (Activity + 0.5) * Staleness_Hours
+      const score = (activity + 0.5) * stalenessHours;
+      return { pid, score };
+    });
 
-    // Merge: 3d first (higher priority), then 30d to fill remaining slots
-    const seen  = new Set<number>(from3d);
-    const seeds = [...from3d];
-    for (const id of from30d) {
-      if (!seen.has(id)) { seen.add(id); seeds.push(id); }
-      if (seeds.length >= limit) break;
+    scored.sort((a, b) => b.score - a.score);
+    const seeds = scored.slice(0, limit).map(s => s.pid);
+
+    console.log(`Seeding queue with top ${seeds.length} players using Unified Priority Seeding (activity * staleness).`);
+    if (seeds.length > 0) {
+      this.db.addToCrawlQueue(seeds);
     }
-
-    console.log(`Seeding ${seeds.length} players (${from3d.length} from last 3d, ${seeds.length - from3d.length} from last 30d, deduped).`);
-    if (seeds.length > 0) this.db.addToCrawlQueue(seeds);
     return seeds;
   }
 
@@ -400,27 +400,7 @@ export class RelicCrawler {
     }
   }
 
-  /**
-   * Seed the crawler queue with players who haven't been crawled in a long time (background refresh)
-   */
-  async seedOldestCrawledPlayers(limit: number = 20): Promise<void> {
-    const profiles = this.db.getAllProfiles();
-    const candidates = profiles.map(p => {
-      const manifest = this.db.getPlayerManifest(p.profile_id);
-      return {
-        profileId: p.profile_id,
-        lastCrawledAt: manifest?.relic?.last_crawled_at || 0
-      };
-    });
 
-    candidates.sort((a, b) => a.lastCrawledAt - b.lastCrawledAt);
-
-    const seeds = candidates.slice(0, limit).map(c => c.profileId);
-    console.log(`Seeding ${seeds.length} oldest/never crawled players to queue.`);
-    if (seeds.length > 0) {
-      this.db.addToCrawlQueue(seeds);
-    }
-  }
 
   /**
    * Run a snowball crawl up to a limit of crawled players
@@ -441,11 +421,10 @@ export class RelicCrawler {
       }
     }
 
-    // Seed from live lobbies, active db players, and background refreshes
-    console.log('Seeding crawl queue from live lobbies + active db players + oldest crawled...');
+    // Seed from live lobbies and prioritized player queue
+    console.log('Seeding crawl queue from live lobbies + prioritized player queue...');
     const livePlayerIds = new Set(await this.seedFromLobbies());
-    await this.seedFromActivePlayers(limitCount);
-    await this.seedOldestCrawledPlayers(50); // Scale up background refresh target count to 50
+    await this.seedPriorityQueue(limitCount);
 
     if (this.db.getCrawlQueueLength() === 0) {
       console.warn('Queue is empty after seeding. Cannot crawl.');
