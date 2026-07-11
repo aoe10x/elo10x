@@ -346,7 +346,9 @@ export class Aoe2InsightsScraper {
             await delay(5000); 
             return safeFetch(url); 
           }
-                async function scrapePlayer(playerId, limit, newestMatchId, oldestMatchId, hasReachedStart) {
+        }
+
+        async function scrapePlayer(playerId, limit, newestMatchId, oldestMatchId, hasReachedStart) {
           const results = [];
           let hitDepthLimit = true;
 
