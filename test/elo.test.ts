@@ -22,14 +22,14 @@ test('EloCalculator - Strict 4v4 Match Calculation', () => {
       startgametime: 1700000000,
       completiontime: 1700001000,
       players: [
-        { profile_id: 1, teamid: 1, resulttype: 1, race_id: 1, alias: 'A1' },
-        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 2, alias: 'A2' },
-        { profile_id: 3, teamid: 1, resulttype: 1, race_id: 3, alias: 'A3' },
-        { profile_id: 4, teamid: 1, resulttype: 1, race_id: 4, alias: 'A4' },
-        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
-        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
-        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
-        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+        { profile_id: 1, teamid: 1, resulttype: 1, civ_id: 1, alias: 'A1' },
+        { profile_id: 2, teamid: 1, resulttype: 1, civ_id: 2, alias: 'A2' },
+        { profile_id: 3, teamid: 1, resulttype: 1, civ_id: 3, alias: 'A3' },
+        { profile_id: 4, teamid: 1, resulttype: 1, civ_id: 4, alias: 'A4' },
+        { profile_id: 5, teamid: 2, resulttype: 0, civ_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, civ_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, civ_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, civ_id: 8, alias: 'B4' }
       ]
     }
   ];
@@ -68,8 +68,8 @@ test('EloCalculator - Rejects Non-4v4 Matches', () => {
       startgametime: 1700000000,
       completiontime: 1700001000,
       players: [
-        { profile_id: 1, teamid: 1, resulttype: 1, race_id: 1, alias: 'A1' },
-        { profile_id: 2, teamid: 2, resulttype: 0, race_id: 2, alias: 'B1' }
+        { profile_id: 1, teamid: 1, resulttype: 1, civ_id: 1, alias: 'A1' },
+        { profile_id: 2, teamid: 2, resulttype: 0, civ_id: 2, alias: 'B1' }
       ]
     }
   ];
@@ -95,14 +95,14 @@ test('EloCalculator - Rejects Team Reconstruction Cases', () => {
     startgametime: 1700000000,
     completiontime: 1700000900,
     players: [
-      { profile_id: 1, teamid: 1, resulttype: 1, race_id: 1, alias: 'A1' },
-      { profile_id: 2, teamid: 1, resulttype: 1, race_id: 1, alias: 'A2' },
-      { profile_id: 3, teamid: 1, resulttype: 1, race_id: 1, alias: 'A3' },
-      { profile_id: 4, teamid: 1, resulttype: 1, race_id: 1, alias: 'A4' },
-      { profile_id: 5, teamid: 1, resulttype: 0, race_id: 1, alias: 'B1' },
-      { profile_id: 6, teamid: 2, resulttype: 0, race_id: 1, alias: 'B2' },
-      { profile_id: 7, teamid: 2, resulttype: 0, race_id: 1, alias: 'B3' },
-      { profile_id: 8, teamid: 2, resulttype: 0, race_id: 1, alias: 'B4' }
+      { profile_id: 1, teamid: 1, resulttype: 1, civ_id: 1, alias: 'A1' },
+      { profile_id: 2, teamid: 1, resulttype: 1, civ_id: 1, alias: 'A2' },
+      { profile_id: 3, teamid: 1, resulttype: 1, civ_id: 1, alias: 'A3' },
+      { profile_id: 4, teamid: 1, resulttype: 1, civ_id: 1, alias: 'A4' },
+      { profile_id: 5, teamid: 1, resulttype: 0, civ_id: 1, alias: 'B1' },
+      { profile_id: 6, teamid: 2, resulttype: 0, civ_id: 1, alias: 'B2' },
+      { profile_id: 7, teamid: 2, resulttype: 0, civ_id: 1, alias: 'B3' },
+      { profile_id: 8, teamid: 2, resulttype: 0, civ_id: 1, alias: 'B4' }
     ]
   };
 
@@ -127,14 +127,14 @@ test('EloCalculator - Accepts Legacy Loss Code 2', () => {
     startgametime: 1700000000,
     completiontime: 1700001200,
     players: [
-      { profile_id: 1, teamid: 10, resulttype: 1, race_id: 1, alias: 'A1' },
-      { profile_id: 2, teamid: 10, resulttype: 1, race_id: 1, alias: 'A2' },
-      { profile_id: 3, teamid: 10, resulttype: 1, race_id: 1, alias: 'A3' },
-      { profile_id: 4, teamid: 10, resulttype: 1, race_id: 1, alias: 'A4' },
-      { profile_id: 5, teamid: 20, resulttype: 2, race_id: 1, alias: 'B1' },
-      { profile_id: 6, teamid: 20, resulttype: 2, race_id: 1, alias: 'B2' },
-      { profile_id: 7, teamid: 20, resulttype: 2, race_id: 1, alias: 'B3' },
-      { profile_id: 8, teamid: 20, resulttype: 2, race_id: 1, alias: 'B4' }
+      { profile_id: 1, teamid: 10, resulttype: 1, civ_id: 1, alias: 'A1' },
+      { profile_id: 2, teamid: 10, resulttype: 1, civ_id: 1, alias: 'A2' },
+      { profile_id: 3, teamid: 10, resulttype: 1, civ_id: 1, alias: 'A3' },
+      { profile_id: 4, teamid: 10, resulttype: 1, civ_id: 1, alias: 'A4' },
+      { profile_id: 5, teamid: 20, resulttype: 2, civ_id: 1, alias: 'B1' },
+      { profile_id: 6, teamid: 20, resulttype: 2, civ_id: 1, alias: 'B2' },
+      { profile_id: 7, teamid: 20, resulttype: 2, civ_id: 1, alias: 'B3' },
+      { profile_id: 8, teamid: 20, resulttype: 2, civ_id: 1, alias: 'B4' }
     ]
   };
 
@@ -168,14 +168,14 @@ test('EloCalculator - Filtering and Sorting', () => {
       startgametime: 1700000000,
       completiontime: 1700001000,
       players: [
-        { profile_id: 1, teamid: 1, resulttype: 1, race_id: 1, alias: 'A1' },
-        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 1, alias: 'A2' },
-        { profile_id: 3, teamid: 1, resulttype: 1, race_id: 1, alias: 'A3' },
-        { profile_id: 4, teamid: 1, resulttype: 1, race_id: 1, alias: 'A4' },
-        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 1, alias: 'B1' },
-        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 1, alias: 'B2' },
-        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 1, alias: 'B3' },
-        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 1, alias: 'B4' }
+        { profile_id: 1, teamid: 1, resulttype: 1, civ_id: 1, alias: 'A1' },
+        { profile_id: 2, teamid: 1, resulttype: 1, civ_id: 1, alias: 'A2' },
+        { profile_id: 3, teamid: 1, resulttype: 1, civ_id: 1, alias: 'A3' },
+        { profile_id: 4, teamid: 1, resulttype: 1, civ_id: 1, alias: 'A4' },
+        { profile_id: 5, teamid: 2, resulttype: 0, civ_id: 1, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, civ_id: 1, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, civ_id: 1, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, civ_id: 1, alias: 'B4' }
       ]
     }
   ];
@@ -213,14 +213,14 @@ test('EloCalculator - Records ratingHistory chronologically', () => {
       startgametime: 1700000000,
       completiontime: 1700001000,
       players: [
-        { profile_id: 1, teamid: 1, resulttype: 1, race_id: 1, alias: 'A1' },
-        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 2, alias: 'A2' },
-        { profile_id: 3, teamid: 1, resulttype: 1, race_id: 3, alias: 'A3' },
-        { profile_id: 4, teamid: 1, resulttype: 1, race_id: 4, alias: 'A4' },
-        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
-        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
-        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
-        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+        { profile_id: 1, teamid: 1, resulttype: 1, civ_id: 1, alias: 'A1' },
+        { profile_id: 2, teamid: 1, resulttype: 1, civ_id: 2, alias: 'A2' },
+        { profile_id: 3, teamid: 1, resulttype: 1, civ_id: 3, alias: 'A3' },
+        { profile_id: 4, teamid: 1, resulttype: 1, civ_id: 4, alias: 'A4' },
+        { profile_id: 5, teamid: 2, resulttype: 0, civ_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, civ_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, civ_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, civ_id: 8, alias: 'B4' }
       ]
     },
     {
@@ -232,14 +232,14 @@ test('EloCalculator - Records ratingHistory chronologically', () => {
       startgametime: 1700002000,
       completiontime: 1700003000,
       players: [
-        { profile_id: 1, teamid: 1, resulttype: 1, race_id: 1, alias: 'A1' },
-        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 2, alias: 'A2' },
-        { profile_id: 3, teamid: 1, resulttype: 1, race_id: 3, alias: 'A3' },
-        { profile_id: 4, teamid: 1, resulttype: 1, race_id: 4, alias: 'A4' },
-        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
-        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
-        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
-        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+        { profile_id: 1, teamid: 1, resulttype: 1, civ_id: 1, alias: 'A1' },
+        { profile_id: 2, teamid: 1, resulttype: 1, civ_id: 2, alias: 'A2' },
+        { profile_id: 3, teamid: 1, resulttype: 1, civ_id: 3, alias: 'A3' },
+        { profile_id: 4, teamid: 1, resulttype: 1, civ_id: 4, alias: 'A4' },
+        { profile_id: 5, teamid: 2, resulttype: 0, civ_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, civ_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, civ_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, civ_id: 8, alias: 'B4' }
       ]
     }
   ];
@@ -293,14 +293,14 @@ test('EloCalculator - DE Algorithm 3 (Individual Elo vs Opposing Team Average)',
       startgametime: 1700000000,
       completiontime: 1700001000,
       players: [
-        { profile_id: 1, teamid: 1, resulttype: 1, race_id: 1, alias: 'A1' },
-        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 2, alias: 'A2' },
-        { profile_id: 3, teamid: 1, resulttype: 1, race_id: 3, alias: 'A3' },
-        { profile_id: 4, teamid: 1, resulttype: 1, race_id: 4, alias: 'A4' },
-        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
-        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
-        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
-        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+        { profile_id: 1, teamid: 1, resulttype: 1, civ_id: 1, alias: 'A1' },
+        { profile_id: 2, teamid: 1, resulttype: 1, civ_id: 2, alias: 'A2' },
+        { profile_id: 3, teamid: 1, resulttype: 1, civ_id: 3, alias: 'A3' },
+        { profile_id: 4, teamid: 1, resulttype: 1, civ_id: 4, alias: 'A4' },
+        { profile_id: 5, teamid: 2, resulttype: 0, civ_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, civ_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, civ_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, civ_id: 8, alias: 'B4' }
       ]
     },
     {
@@ -312,14 +312,14 @@ test('EloCalculator - DE Algorithm 3 (Individual Elo vs Opposing Team Average)',
       startgametime: 1700002000,
       completiontime: 1700003000,
       players: [
-        { profile_id: 1, teamid: 1, resulttype: 1, race_id: 1, alias: 'A1' },
-        { profile_id: 9, teamid: 1, resulttype: 1, race_id: 2, alias: 'A9' },
-        { profile_id: 10, teamid: 1, resulttype: 1, race_id: 3, alias: 'A10' },
-        { profile_id: 11, teamid: 1, resulttype: 1, race_id: 4, alias: 'A11' },
-        { profile_id: 12, teamid: 2, resulttype: 0, race_id: 5, alias: 'B12' },
-        { profile_id: 13, teamid: 2, resulttype: 0, race_id: 6, alias: 'B13' },
-        { profile_id: 14, teamid: 2, resulttype: 0, race_id: 7, alias: 'B14' },
-        { profile_id: 15, teamid: 2, resulttype: 0, race_id: 8, alias: 'B15' }
+        { profile_id: 1, teamid: 1, resulttype: 1, civ_id: 1, alias: 'A1' },
+        { profile_id: 9, teamid: 1, resulttype: 1, civ_id: 2, alias: 'A9' },
+        { profile_id: 10, teamid: 1, resulttype: 1, civ_id: 3, alias: 'A10' },
+        { profile_id: 11, teamid: 1, resulttype: 1, civ_id: 4, alias: 'A11' },
+        { profile_id: 12, teamid: 2, resulttype: 0, civ_id: 5, alias: 'B12' },
+        { profile_id: 13, teamid: 2, resulttype: 0, civ_id: 6, alias: 'B13' },
+        { profile_id: 14, teamid: 2, resulttype: 0, civ_id: 7, alias: 'B14' },
+        { profile_id: 15, teamid: 2, resulttype: 0, civ_id: 8, alias: 'B15' }
       ]
     }
   ];
@@ -355,14 +355,14 @@ test('EloCalculator - Placement matches K-factor linear decay', () => {
       startgametime: 1700000000,
       completiontime: 1700001000,
       players: [
-        { profile_id: 1, teamid: 1, resulttype: 1, race_id: 1, alias: 'A1' },
-        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 2, alias: 'A2' },
-        { profile_id: 3, teamid: 1, resulttype: 1, race_id: 3, alias: 'A3' },
-        { profile_id: 4, teamid: 1, resulttype: 1, race_id: 4, alias: 'A4' },
-        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
-        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
-        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
-        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+        { profile_id: 1, teamid: 1, resulttype: 1, civ_id: 1, alias: 'A1' },
+        { profile_id: 2, teamid: 1, resulttype: 1, civ_id: 2, alias: 'A2' },
+        { profile_id: 3, teamid: 1, resulttype: 1, civ_id: 3, alias: 'A3' },
+        { profile_id: 4, teamid: 1, resulttype: 1, civ_id: 4, alias: 'A4' },
+        { profile_id: 5, teamid: 2, resulttype: 0, civ_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, civ_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, civ_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, civ_id: 8, alias: 'B4' }
       ]
     }
   ];
@@ -419,16 +419,16 @@ test('EloCalculator - Step-by-step K-factor decay over 22 games', () => {
   // Helper to construct a match where Player 1 wins against opponent team of 1000 avg Elo
   const createMatch = (id: number, player1Won: boolean): Match => {
     const t1Players = [
-      { profile_id: player1ProfileId, teamid: 1, resulttype: player1Won ? 1 : 0, race_id: 1, alias: 'A1' },
-      { profile_id: 100 + id * 10 + 1, teamid: 1, resulttype: player1Won ? 1 : 0, race_id: 2, alias: `Teammate1_${id}` },
-      { profile_id: 100 + id * 10 + 2, teamid: 1, resulttype: player1Won ? 1 : 0, race_id: 3, alias: `Teammate2_${id}` },
-      { profile_id: 100 + id * 10 + 3, teamid: 1, resulttype: player1Won ? 1 : 0, race_id: 4, alias: `Teammate3_${id}` }
+      { profile_id: player1ProfileId, teamid: 1, resulttype: player1Won ? 1 : 0, civ_id: 1, alias: 'A1' },
+      { profile_id: 100 + id * 10 + 1, teamid: 1, resulttype: player1Won ? 1 : 0, civ_id: 2, alias: `Teammate1_${id}` },
+      { profile_id: 100 + id * 10 + 2, teamid: 1, resulttype: player1Won ? 1 : 0, civ_id: 3, alias: `Teammate2_${id}` },
+      { profile_id: 100 + id * 10 + 3, teamid: 1, resulttype: player1Won ? 1 : 0, civ_id: 4, alias: `Teammate3_${id}` }
     ];
     const t2Players = [
-      { profile_id: 100 + id * 10 + 4, teamid: 2, resulttype: player1Won ? 0 : 1, race_id: 5, alias: `Opponent1_${id}` },
-      { profile_id: 100 + id * 10 + 5, teamid: 2, resulttype: player1Won ? 0 : 1, race_id: 6, alias: `Opponent2_${id}` },
-      { profile_id: 100 + id * 10 + 7, teamid: 2, resulttype: player1Won ? 0 : 1, race_id: 8, alias: `Opponent4_${id}` },
-      { profile_id: 100 + id * 10 + 6, teamid: 2, resulttype: player1Won ? 0 : 1, race_id: 7, alias: `Opponent3_${id}` }
+      { profile_id: 100 + id * 10 + 4, teamid: 2, resulttype: player1Won ? 0 : 1, civ_id: 5, alias: `Opponent1_${id}` },
+      { profile_id: 100 + id * 10 + 5, teamid: 2, resulttype: player1Won ? 0 : 1, civ_id: 6, alias: `Opponent2_${id}` },
+      { profile_id: 100 + id * 10 + 7, teamid: 2, resulttype: player1Won ? 0 : 1, civ_id: 8, alias: `Opponent4_${id}` },
+      { profile_id: 100 + id * 10 + 6, teamid: 2, resulttype: player1Won ? 0 : 1, civ_id: 7, alias: `Opponent3_${id}` }
     ];
     return {
       id,
@@ -487,14 +487,14 @@ test('EloCalculator - Automagically merges players sharing identical final alias
       startgametime: 1700000000,
       completiontime: 1700001000,
       players: [
-        { profile_id: 1, teamid: 1, resulttype: 1, race_id: 1, alias: 'SameName' },
-        { profile_id: 11, teamid: 1, resulttype: 1, race_id: 2, alias: 'A2' },
-        { profile_id: 12, teamid: 1, resulttype: 1, race_id: 3, alias: 'A3' },
-        { profile_id: 13, teamid: 1, resulttype: 1, race_id: 4, alias: 'A4' },
-        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
-        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
-        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
-        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+        { profile_id: 1, teamid: 1, resulttype: 1, civ_id: 1, alias: 'SameName' },
+        { profile_id: 11, teamid: 1, resulttype: 1, civ_id: 2, alias: 'A2' },
+        { profile_id: 12, teamid: 1, resulttype: 1, civ_id: 3, alias: 'A3' },
+        { profile_id: 13, teamid: 1, resulttype: 1, civ_id: 4, alias: 'A4' },
+        { profile_id: 5, teamid: 2, resulttype: 0, civ_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, civ_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, civ_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, civ_id: 8, alias: 'B4' }
       ]
     },
     {
@@ -508,14 +508,14 @@ test('EloCalculator - Automagically merges players sharing identical final alias
       players: [
         // Different profile ID (2), but identical alias ('SameName').
         // This player plays 2 matches, so this profile ID has more games and should be selected as the canonical ID.
-        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 1, alias: 'SameName' },
-        { profile_id: 14, teamid: 1, resulttype: 1, race_id: 2, alias: 'A5' },
-        { profile_id: 15, teamid: 1, resulttype: 1, race_id: 3, alias: 'A6' },
-        { profile_id: 16, teamid: 1, resulttype: 1, race_id: 4, alias: 'A7' },
-        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
-        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
-        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
-        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+        { profile_id: 2, teamid: 1, resulttype: 1, civ_id: 1, alias: 'SameName' },
+        { profile_id: 14, teamid: 1, resulttype: 1, civ_id: 2, alias: 'A5' },
+        { profile_id: 15, teamid: 1, resulttype: 1, civ_id: 3, alias: 'A6' },
+        { profile_id: 16, teamid: 1, resulttype: 1, civ_id: 4, alias: 'A7' },
+        { profile_id: 5, teamid: 2, resulttype: 0, civ_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, civ_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, civ_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, civ_id: 8, alias: 'B4' }
       ]
     },
     {
@@ -527,14 +527,14 @@ test('EloCalculator - Automagically merges players sharing identical final alias
       startgametime: 1700004000,
       completiontime: 1700005000,
       players: [
-        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 1, alias: 'SameName' },
-        { profile_id: 17, teamid: 1, resulttype: 1, race_id: 2, alias: 'A8' },
-        { profile_id: 18, teamid: 1, resulttype: 1, race_id: 3, alias: 'A9' },
-        { profile_id: 19, teamid: 1, resulttype: 1, race_id: 4, alias: 'A10' },
-        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
-        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
-        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
-        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+        { profile_id: 2, teamid: 1, resulttype: 1, civ_id: 1, alias: 'SameName' },
+        { profile_id: 17, teamid: 1, resulttype: 1, civ_id: 2, alias: 'A8' },
+        { profile_id: 18, teamid: 1, resulttype: 1, civ_id: 3, alias: 'A9' },
+        { profile_id: 19, teamid: 1, resulttype: 1, civ_id: 4, alias: 'A10' },
+        { profile_id: 5, teamid: 2, resulttype: 0, civ_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, civ_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, civ_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, civ_id: 8, alias: 'B4' }
       ]
     }
   ];
@@ -578,14 +578,14 @@ test('EloCalculator - selects the most recently played profile ID as canonical',
       startgametime: 1700000000,
       completiontime: 1700001000,
       players: [
-        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 1, alias: 'SameName' },
-        { profile_id: 11, teamid: 1, resulttype: 1, race_id: 2, alias: 'A2' },
-        { profile_id: 12, teamid: 1, resulttype: 1, race_id: 3, alias: 'A3' },
-        { profile_id: 13, teamid: 1, resulttype: 1, race_id: 4, alias: 'A4' },
-        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
-        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
-        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
-        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+        { profile_id: 2, teamid: 1, resulttype: 1, civ_id: 1, alias: 'SameName' },
+        { profile_id: 11, teamid: 1, resulttype: 1, civ_id: 2, alias: 'A2' },
+        { profile_id: 12, teamid: 1, resulttype: 1, civ_id: 3, alias: 'A3' },
+        { profile_id: 13, teamid: 1, resulttype: 1, civ_id: 4, alias: 'A4' },
+        { profile_id: 5, teamid: 2, resulttype: 0, civ_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, civ_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, civ_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, civ_id: 8, alias: 'B4' }
       ]
     },
     {
@@ -597,14 +597,14 @@ test('EloCalculator - selects the most recently played profile ID as canonical',
       startgametime: 1700002000,
       completiontime: 1700003000,
       players: [
-        { profile_id: 2, teamid: 1, resulttype: 1, race_id: 1, alias: 'SameName' },
-        { profile_id: 14, teamid: 1, resulttype: 1, race_id: 2, alias: 'A5' },
-        { profile_id: 15, teamid: 1, resulttype: 1, race_id: 3, alias: 'A6' },
-        { profile_id: 16, teamid: 1, resulttype: 1, race_id: 4, alias: 'A7' },
-        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
-        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
-        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
-        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+        { profile_id: 2, teamid: 1, resulttype: 1, civ_id: 1, alias: 'SameName' },
+        { profile_id: 14, teamid: 1, resulttype: 1, civ_id: 2, alias: 'A5' },
+        { profile_id: 15, teamid: 1, resulttype: 1, civ_id: 3, alias: 'A6' },
+        { profile_id: 16, teamid: 1, resulttype: 1, civ_id: 4, alias: 'A7' },
+        { profile_id: 5, teamid: 2, resulttype: 0, civ_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, civ_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, civ_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, civ_id: 8, alias: 'B4' }
       ]
     },
     {
@@ -616,14 +616,14 @@ test('EloCalculator - selects the most recently played profile ID as canonical',
       startgametime: 1700004000,
       completiontime: 1700005000,
       players: [
-        { profile_id: 1, teamid: 1, resulttype: 1, race_id: 1, alias: 'SameName' },
-        { profile_id: 17, teamid: 1, resulttype: 1, race_id: 2, alias: 'A8' },
-        { profile_id: 18, teamid: 1, resulttype: 1, race_id: 3, alias: 'A9' },
-        { profile_id: 19, teamid: 1, resulttype: 1, race_id: 4, alias: 'A10' },
-        { profile_id: 5, teamid: 2, resulttype: 0, race_id: 5, alias: 'B1' },
-        { profile_id: 6, teamid: 2, resulttype: 0, race_id: 6, alias: 'B2' },
-        { profile_id: 7, teamid: 2, resulttype: 0, race_id: 7, alias: 'B3' },
-        { profile_id: 8, teamid: 2, resulttype: 0, race_id: 8, alias: 'B4' }
+        { profile_id: 1, teamid: 1, resulttype: 1, civ_id: 1, alias: 'SameName' },
+        { profile_id: 17, teamid: 1, resulttype: 1, civ_id: 2, alias: 'A8' },
+        { profile_id: 18, teamid: 1, resulttype: 1, civ_id: 3, alias: 'A9' },
+        { profile_id: 19, teamid: 1, resulttype: 1, civ_id: 4, alias: 'A10' },
+        { profile_id: 5, teamid: 2, resulttype: 0, civ_id: 5, alias: 'B1' },
+        { profile_id: 6, teamid: 2, resulttype: 0, civ_id: 6, alias: 'B2' },
+        { profile_id: 7, teamid: 2, resulttype: 0, civ_id: 7, alias: 'B3' },
+        { profile_id: 8, teamid: 2, resulttype: 0, civ_id: 8, alias: 'B4' }
       ]
     }
   ];

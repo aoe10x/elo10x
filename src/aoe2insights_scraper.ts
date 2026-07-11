@@ -1,8 +1,12 @@
 import { promises as fs } from 'node:fs';
 import * as path from 'node:path';
 import * as fsSync from 'node:fs';
+import { spawn } from 'node:child_process';
 import type { JsonDatabase } from './db.ts';
 import type { Match, PlayerProfile } from './types.ts';
+import { CIV_NAMES } from './civ-data.ts';
+
+const delay = (ms: number) => new Promise<void>(resolve => setTimeout(resolve, ms));
 
 export class Aoe2InsightsScraper {
   private db: JsonDatabase;
@@ -14,73 +18,86 @@ export class Aoe2InsightsScraper {
   }
 
   /**
-   * Discovers the WebSocket debugger URL of the active AoE2Insights tab
+   * Launches headful Chrome and waits for the user to solve Cloudflare on aoe2insights.com
    */
-  private async discoverCdpUrl(): Promise<string | null> {
-    let wsUrl: string | null = null;
-    try {
-      const browserWsUrl = 'ws://127.0.0.1:9222/devtools/browser';
-      const ws = new WebSocket(browserWsUrl);
+  private async launchChromeAndWaitForBypass(port: number, userDataDir: string): Promise<{ wsUrl: string; chromeProcess: any }> {
+    const chromePath = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+    
+    console.log(`[BROWSER] Launching headful Chrome on port ${port}...`);
+    const chromeProcess = spawn(chromePath, [
+      `--remote-debugging-port=${port}`,
+      `--user-data-dir=${userDataDir}`,
+      '--no-first-run',
+      '--no-default-browser-check',
+      'https://rank.10xshared.com/'
+    ]);
 
-      const targetList = await new Promise<any[]>((resolve, reject) => {
-        const timeout = setTimeout(() => {
-          cleanup();
-          reject(new Error("Timeout waiting for Target.getTargets response"));
-        }, 3000);
+    console.log('\n============================================================');
+    console.log('1. Click or navigate to aoe2insights.com in the Chrome window.');
+    console.log('2. Complete the Cloudflare Turnstile challenge if it appears.');
+    console.log('============================================================\n');
+    console.log('Polling local debugger targets to detect bypassed AoE2Insights tab...');
 
-        const cleanup = () => {
-          clearTimeout(timeout);
-          ws.onopen = null;
-          ws.onmessage = null;
-          ws.onerror = null;
-          try {
-            if (ws.readyState === WebSocket.OPEN || ws.readyState === WebSocket.CONNECTING) {
-              ws.close();
-            }
-          } catch (e) {}
-        };
+    let targetTab: any = null;
 
-        ws.onopen = () => {
-          ws.send(JSON.stringify({ id: 1, method: 'Target.getTargets' }));
-        };
-
-        ws.onmessage = (event) => {
-          try {
-            const data = JSON.parse(event.data.toString());
-            if (data.id === 1 && data.result && data.result.targetInfos) {
-              cleanup();
-              resolve(data.result.targetInfos);
-            }
-          } catch (e) {}
-        };
-
-        ws.onerror = (e) => {
-          cleanup();
-          reject(e);
-        };
-      });
-
-      const aoe2insightsTab = targetList.find(t => t.type === 'page' && t.url && t.url.includes('aoe2insights.com'));
-      if (aoe2insightsTab) {
-        wsUrl = `ws://127.0.0.1:9222/devtools/page/${aoe2insightsTab.targetId}`;
-      }
-    } catch {
-      // Fallback to traditional HTTP target list
-    }
-
-    if (!wsUrl) {
+    while (true) {
       try {
-        const res = await fetch('http://127.0.0.1:9222/json');
+        const res = await fetch(`http://127.0.0.1:${port}/json`);
         if (res.ok) {
           const targets = await res.json() as any[];
-          const targetTab = targets.find(t => t.url && t.url.includes('aoe2insights.com'));
-          if (targetTab) {
-            wsUrl = targetTab.webSocketDebuggerUrl;
+          const aoe2insightsTab = targets.find(t => 
+            t.url && 
+            t.url.includes('aoe2insights.com') && 
+            t.title && 
+            t.title.includes('AoE2 Insights') && 
+            !t.title.includes('Just a moment') && 
+            !t.title.includes('Cloudflare')
+          );
+          
+          if (aoe2insightsTab) {
+            targetTab = aoe2insightsTab;
+            console.log(`\n🎉 Detected bypassed AoE2Insights tab: ${targetTab.url}`);
+            break;
           }
         }
       } catch {}
+      await delay(1000);
     }
-    return wsUrl;
+
+    console.log('Waiting 3 seconds for page load to fully settle...');
+    await delay(3000);
+
+    return {
+      wsUrl: targetTab.webSocketDebuggerUrl,
+      chromeProcess
+    };
+  }
+
+  /**
+   * Injects a full-screen semi-transparent click-shield overlay to block accidental human interaction during scraping
+   */
+  private async injectClickShield(sendCdp: (method: string, params?: any) => Promise<any>): Promise<void> {
+    const expression = `
+      (() => {
+        if (document.getElementById('scraping-click-shield')) return;
+        const shield = document.createElement('div');
+        shield.id = 'scraping-click-shield';
+        shield.style.position = 'fixed';
+        shield.style.top = '0';
+        shield.style.left = '0';
+        shield.style.width = '100vw';
+        shield.style.height = '100vh';
+        shield.style.backgroundColor = 'rgba(0, 0, 0, 0.4)';
+        shield.style.zIndex = '999999';
+        shield.style.display = 'flex';
+        shield.style.alignItems = 'center';
+        shield.style.justifyContent = 'center';
+        shield.style.pointerEvents = 'all';
+        shield.innerHTML = '<div style="color: white; font-family: sans-serif; font-size: 20px; font-weight: bold; padding: 15px 30px; background: rgba(0,0,0,0.85); border-radius: 8px; border: 1px solid #444; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">Scraping in progress... Please do not click!</div>';
+        document.body.appendChild(shield);
+      })()
+    `;
+    await sendCdp('Runtime.evaluate', { expression });
   }
 
   /**
@@ -91,14 +108,9 @@ export class Aoe2InsightsScraper {
 
     await fs.mkdir(this.scrapedDataDir, { recursive: true });
 
-    console.log(`Connecting to local Chrome instance on port 9222...`);
-    const wsUrl = await this.discoverCdpUrl();
-    if (!wsUrl) {
-      throw new Error(
-        `Could not find any open Chrome tabs pointing to aoe2insights.com.\n` +
-        `Please open Chrome and navigate to any page on https://www.aoe2insights.com/ first.`
-      );
-    }
+    const port = 19222;
+    const userDataDir = path.join(process.cwd(), '.chrome-user-data-scraper');
+    const { wsUrl, chromeProcess } = await this.launchChromeAndWaitForBypass(port, userDataDir);
 
     console.log(`Opening WebSocket connection to Chrome tab debugger: ${wsUrl}`);
     const ws = new WebSocket(wsUrl);
@@ -148,8 +160,6 @@ export class Aoe2InsightsScraper {
         const { playerId, matches, hitDepthLimit } = payload;
         crawledCount++;
 
-        console.log(`[SCRAPER] Received player ${playerId}: ${matches.length} matches (depth limit hit: ${hitDepthLimit})`);
-
         // Save raw matches to temporary file under scraped_data/
         const tempFile = path.join(this.scrapedDataDir, `insights_scraped_${playerId}_${Date.now()}.json`);
         await fs.writeFile(tempFile, JSON.stringify({
@@ -157,6 +167,9 @@ export class Aoe2InsightsScraper {
           matches,
           hitDepthLimit
         }, null, 2), 'utf-8');
+
+        const relPath = path.relative(process.cwd(), tempFile);
+        console.log(`[SCRAPER] Received player ${playerId}: ${matches.length} matches. Saved to ${relPath} (depth limit hit: ${hitDepthLimit})`);
 
         // Update Manifest
         const dbMatches = this.db.getMatches().filter(m => m.players.some(p => p.profile_id === playerId));
@@ -177,18 +190,31 @@ export class Aoe2InsightsScraper {
           oldest_match_id: playerOldestId,
           has_reached_start: reachedStart
         });
-
-        await this.db.save();
       }
     };
 
     return new Promise<{ crawled: number; added: number }>((resolve, reject) => {
+      const cleanupBrowser = async () => {
+        chromeProcess.kill();
+        try {
+          await fs.rm(userDataDir, { recursive: true, force: true });
+        } catch {}
+      };
+
       ws.onopen = async () => {
         try {
           resetLivenessTimer();
+
+          console.log(`[SCRAPER] Navigating tab to robots.txt to disable ads & tracking scripts...`);
+          await sendCdp('Page.navigate', { url: 'https://www.aoe2insights.com/robots.txt' });
+          await delay(2000); // Wait for navigation to settle
+
           console.log(`[SCRAPER] CDP session opened. Binding '${bindingName}'...`);
           await sendCdp('Runtime.enable');
           await sendCdp('Runtime.addBinding', { name: bindingName });
+
+          console.log(`[SCRAPER] Injecting click shield overlay...`);
+          await this.injectClickShield(sendCdp);
 
           console.log(`[SCRAPER] Injecting batch crawler script for ${profileIds.length} players...`);
           const evalRes = await sendCdp('Runtime.evaluate', {
@@ -200,6 +226,7 @@ export class Aoe2InsightsScraper {
           if (evalRes.exceptionDetails) {
             clearTimeout(livenessTimeout);
             ws.close();
+            await cleanupBrowser();
             reject(new Error(`Injection failed: ${evalRes.exceptionDetails.exception?.description || evalRes.exceptionDetails.text}`));
             return;
           }
@@ -207,6 +234,7 @@ export class Aoe2InsightsScraper {
         } catch (err) {
           clearTimeout(livenessTimeout);
           ws.close();
+          await cleanupBrowser();
           reject(err);
         }
       };
@@ -247,13 +275,16 @@ export class Aoe2InsightsScraper {
 
       ws.onclose = async () => {
         clearTimeout(livenessTimeout);
+        await cleanupBrowser();
         console.log(`[SCRAPER] Connection closed. Merging temporary scraped files...`);
         const added = await this.mergeScrapedData();
+        await this.db.save(); // Unconditionally save database once after all changes are merged
         resolve({ crawled: crawledCount, added });
       };
 
-      ws.onerror = (err) => {
+      ws.onerror = async (err) => {
         clearTimeout(livenessTimeout);
+        await cleanupBrowser();
         reject(err);
       };
     });
@@ -269,6 +300,14 @@ export class Aoe2InsightsScraper {
     bindingName: string,
     playerCutoffs: Record<number, { newest: number; oldest: number; hasReachedStart: boolean }>
   ): string {
+    const civMap: Record<string, number> = {};
+    for (const [idStr, name] of Object.entries(CIV_NAMES)) {
+      const lower = name.toLowerCase().trim();
+      civMap[lower] = parseInt(idStr, 10);
+      if (lower === 'maya') civMap['mayans'] = parseInt(idStr, 10);
+      if (lower === 'hindustanis') civMap['indians'] = parseInt(idStr, 10);
+    }
+
     return `
       (async () => {
         const profileIds = ${JSON.stringify(profileIds)};
@@ -286,19 +325,7 @@ export class Aoe2InsightsScraper {
           stream({ type: 'heartbeat' });
         }, 10000);
 
-        const CIV_MAP = {
-          "britons": 1, "franks": 2, "goths": 3, "teutons": 4, "japanese": 5, "chinese": 6, 
-          "byzantines": 7, "persians": 8, "saracens": 9, "turks": 10, "vikings": 11, "mongols": 12, 
-          "celts": 13, "spanish": 14, "aztecs": 15, "mayans": 16, "huns": 17, "koreans": 18, 
-          "italians": 19, "indians": 20, "hindustanis": 20, "incas": 21, "magyars": 22, "slavs": 23, 
-          "portuguese": 24, "ethiopians": 25, "malians": 26, "berbers": 27, "khmer": 28, "malay": 29, 
-          "burmese": 30, "vietnamese": 31, "bulgarians": 32, "tatars": 33, "cumans": 34, "lithuanians": 35, 
-          "burgundians": 36, "sicilians": 37, "poles": 38, "bohemians": 39, "dravidians": 40, 
-          "bengalis": 41, "gurjaras": 42, "romans": 43, "armenians": 44, "georgians": 45,
-          "achaemenids": 46, "athenians": 47, "spartans": 48, "shu": 49, "wu": 50, "wei": 51,
-          "jurchens": 52, "khitans": 53, "macedonians": 54, "thracians": 55, "puru": 56,
-          "muisca": 57, "mapuche": 58, "tupi": 59
-        };
+        const CIV_MAP = ${JSON.stringify(civMap)};
 
         let rateLimited = false;
         async function safeFetch(url) {
@@ -321,13 +348,13 @@ export class Aoe2InsightsScraper {
           }
         }
 
-        async function scrapePlayer(playerId, limit, newestMatchId, oldestMatchId) {
+        async function scrapePlayer(playerId, limit, newestMatchId, oldestMatchId, hasReachedStart) {
           const results = [];
           let hitDepthLimit = true;
 
           for (let page = startPage; page <= limit; page++) {
             try {
-              const url = '/user/' + playerId + '/matches/?page=' + page;
+               const url = '/user/' + playerId + '/matches/?page=' + page;
               const res = await safeFetch(url);
               if (!res.ok) {
                 hitDepthLimit = false;
@@ -350,8 +377,8 @@ export class Aoe2InsightsScraper {
                   if (!matchLink) return;
                   const matchId = parseInt(matchLink.href.match(/\\/match\\/(\\d+)\\//)[1], 10);
 
-                  // Boundary check for overlap
-                  if (newestMatchId > 0 && matchId <= newestMatchId && matchId >= oldestMatchId) {
+                  // Boundary check for overlap (only if we previously reached the start of history)
+                  if (hasReachedStart && newestMatchId > 0 && matchId <= newestMatchId && matchId >= oldestMatchId) {
                     hitBoundary = true;
                     hitDepthLimit = false;
                     return;
@@ -392,13 +419,13 @@ export class Aoe2InsightsScraper {
                       if (a) {
                         const profile_id = parseInt(a.href.match(/\\/user\\/(\\d+)\\//)[1], 10);
                         const alias = a.innerText.trim();
-                        const civName = civIcon ? civIcon.title.toLowerCase().trim() : '';
-                        const race_id = CIV_MAP[civName] || 0;
+                        const civName = civIcon ? (civIcon.getAttribute('data-tooltip-title') || civIcon.title || '').toLowerCase().trim() : '';
+                        const civ_id = CIV_MAP[civName] || 0;
                         players.push({
                           profile_id,
                           teamid: teamIndex,
                           resulttype: isWin ? 1 : 0,
-                          race_id,
+                          civ_id,
                           alias
                         });
                       }
@@ -440,7 +467,7 @@ export class Aoe2InsightsScraper {
             
             console.log('[BROWSER] Starting crawl for player ' + pid);
             try {
-              const res = await scrapePlayer(pid, limit, cutoff.newest, cutoff.oldest);
+              const res = await scrapePlayer(pid, limit, cutoff.newest, cutoff.oldest, cutoff.hasReachedStart);
               stream({
                 type: 'player_done',
                 playerId: pid,
@@ -467,9 +494,13 @@ export class Aoe2InsightsScraper {
    * Merges temporary scraped player files from scraped_data/ into the main database
    */
   async mergeScrapedData(): Promise<number> {
-    if (!fsSync.existsSync(this.scrapedDataDir)) return 0;
-    
-    const files = await fs.readdir(this.scrapedDataDir);
+    let files: string[];
+    try {
+      files = await fs.readdir(this.scrapedDataDir);
+    } catch (err: any) {
+      if (err.code === 'ENOENT') return 0;
+      throw err;
+    }
     const insightsFiles = files.filter(f => f.startsWith('insights_scraped_') && f.endsWith('.json'));
     
     if (insightsFiles.length === 0) return 0;
@@ -497,8 +528,8 @@ export class Aoe2InsightsScraper {
           const team1 = m.players.filter((p: any) => p.teamid === 1);
           if (team0.length !== 4 || team1.length !== 4) continue;
 
-          // 4. Duplicate Check
-          if (this.db.hasMatch(m.id)) continue;
+          // 4. Duplicate Check & Smart Merge
+          const isExisting = this.db.hasMatch(m.id);
 
           // 5. Build clean Match object
           const matchObj: Match = {
@@ -514,7 +545,7 @@ export class Aoe2InsightsScraper {
               profile_id: p.profile_id,
               teamid: p.teamid,
               resulttype: p.resulttype,
-              race_id: p.race_id,
+              civ_id: p.civ_id || p.race_id || 0,
               alias: p.alias
             }))
           };
@@ -530,7 +561,9 @@ export class Aoe2InsightsScraper {
           }
 
           this.db.addMatch(matchObj);
-          addedCount++;
+          if (!isExisting) {
+            addedCount++;
+          }
         }
 
         // Delete temporary file
@@ -541,7 +574,6 @@ export class Aoe2InsightsScraper {
     }
 
     if (addedCount > 0) {
-      await this.db.save();
       console.log(`[MERGER] Successfully merged ${addedCount} new matches into database.`);
     }
 

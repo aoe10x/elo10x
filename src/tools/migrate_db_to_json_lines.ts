@@ -1,5 +1,6 @@
 import { promises as fs } from 'node:fs';
 import * as path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 async function saveJsonArrayLines<T>(filePath: string, items: T[]): Promise<void> {
   const dir = path.dirname(filePath);
@@ -57,4 +58,11 @@ async function main() {
   console.log('\nMigration complete! You can now safely delete the old db.json file.');
 }
 
-main().catch(console.error);
+if (process.argv[1]) {
+  try {
+    const currentFilePath = fileURLToPath(import.meta.url);
+    if (process.argv[1] === currentFilePath || process.argv[1].endsWith('migrate_db_to_json_lines.ts')) {
+      main().catch(console.error);
+    }
+  } catch (err) {}
+}
