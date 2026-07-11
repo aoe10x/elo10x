@@ -1,12 +1,12 @@
 {
   "profile_id": 228324,
   "alias": "Rin Tin Tin",
-  "rating": 981,
+  "rating": 967,
   "wins": 28,
-  "losses": 31,
-  "gamesCount": 59,
+  "losses": 32,
+  "gamesCount": 60,
   "winRate": 47,
-  "lastPlayedAt": 1783176583,
+  "lastPlayedAt": 1783728578,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -69,33 +69,10 @@
     992,
     1012,
     997,
-    981
+    981,
+    967
   ],
   "recentMatches": [
-    {
-      "matchId": 458751682,
-      "description": "10x 3x shared !!NO NOOBS!!",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1771976940,
-      "outcome": "win",
-      "preRating": 1021,
-      "postRating": 1036,
-      "eloChange": 15,
-      "civ": "Unknown",
-      "teamAvgElo": 992,
-      "opponentAvgElo": 993,
-      "teammates": [
-        "DEVILZ",
-        "你李哥还是你李哥",
-        "FatalNewb"
-      ],
-      "opponents": [
-        "Age5464",
-        "Clean",
-        "Xenomorph",
-        "ROGGAN"
-      ]
-    },
     {
       "matchId": 458762721,
       "description": "10x 3x shared !!NO NOOBS!!",
@@ -550,6 +527,30 @@
         "Not a Wizard",
         "Goodsoup",
         "Filtz"
+      ]
+    },
+    {
+      "matchId": 491433566,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783728578,
+      "outcome": "loss",
+      "preRating": 981,
+      "postRating": 967,
+      "eloChange": -14,
+      "civ": "Magyars",
+      "teamAvgElo": 1034,
+      "opponentAvgElo": 1018,
+      "teammates": [
+        "Chikna Raavan",
+        "RA",
+        "FREESTYLE72"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "Consume Product",
+        "Ye",
+        "Pogonophobia69"
       ]
     }
   ]

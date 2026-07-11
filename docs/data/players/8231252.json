@@ -1,12 +1,12 @@
 {
   "profile_id": 8231252,
   "alias": "tedmed",
-  "rating": 959,
-  "wins": 22,
+  "rating": 980,
+  "wins": 23,
   "losses": 26,
-  "gamesCount": 48,
-  "winRate": 46,
-  "lastPlayedAt": 1782948870,
+  "gamesCount": 49,
+  "winRate": 47,
+  "lastPlayedAt": 1783726686,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -58,33 +58,10 @@
     934,
     954,
     973,
-    959
+    959,
+    980
   ],
   "recentMatches": [
-    {
-      "matchId": 419293641,
-      "description": "10x 3x Bamboo host here 4vs4",
-      "mapname": "Bamboo Nothing_Paren_Vlocal_V2.5",
-      "timestamp": 1757931360,
-      "outcome": "loss",
-      "preRating": 1042,
-      "postRating": 1026,
-      "eloChange": -16,
-      "civ": "Unknown",
-      "teamAvgElo": 1007,
-      "opponentAvgElo": 1039,
-      "teammates": [
-        "ζ |  SaintPΞpsi94",
-        "Fropplez",
-        "jhn31"
-      ],
-      "opponents": [
-        "Al Ghouti",
-        "Evil  Destroyer",
-        "Vanze",
-        "Sir Cuncisión"
-      ]
-    },
     {
       "matchId": 438785354,
       "description": "Bamboo 10x 3x no noobs",
@@ -539,6 +516,30 @@
         "Gasnápido",
         "tacotoy",
         "Test66"
+      ]
+    },
+    {
+      "matchId": 491428355,
+      "description": "10x 3x Bamboo - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783726686,
+      "outcome": "win",
+      "preRating": 959,
+      "postRating": 980,
+      "eloChange": 21,
+      "civ": "Portuguese",
+      "teamAvgElo": 971,
+      "opponentAvgElo": 1066,
+      "teammates": [
+        "Parts",
+        "TR.elephantman",
+        "AnacletoElit"
+      ],
+      "opponents": [
+        "SimCity3000",
+        "[S33]ff",
+        "Chuckyllo4417",
+        "TheRiceMan"
       ]
     }
   ]

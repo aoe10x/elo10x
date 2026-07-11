@@ -1,12 +1,12 @@
 {
   "profile_id": 14637074,
   "alias": "ArchiCraig",
-  "rating": 976,
+  "rating": 965,
   "wins": 27,
-  "losses": 39,
-  "gamesCount": 66,
-  "winRate": 41,
-  "lastPlayedAt": 1783649592,
+  "losses": 40,
+  "gamesCount": 67,
+  "winRate": 40,
+  "lastPlayedAt": 1783732980,
   "country": "ca",
   "merged_ids": [
     12165758,
@@ -79,33 +79,10 @@
     975,
     964,
     954,
-    976
+    976,
+    965
   ],
   "recentMatches": [
-    {
-      "matchId": 479314084,
-      "description": "10x 3x - BF",
-      "mapname": "QS Black Forest",
-      "timestamp": 1779346320,
-      "outcome": "loss",
-      "preRating": 1007,
-      "postRating": 993,
-      "eloChange": -14,
-      "civ": "Hindustanis",
-      "teamAvgElo": 1038,
-      "opponentAvgElo": 1060,
-      "teammates": [
-        "自闭男孩",
-        "feid_",
-        "daimon3288"
-      ],
-      "opponents": [
-        "Parenquima",
-        "Wozbo",
-        "99_rocketahip",
-        "beat"
-      ]
-    },
     {
       "matchId": 480555711,
       "description": "10x Shared Civ Bonus 4v4 Random ",
@@ -560,6 +537,30 @@
         "Myriad",
         "JoeyTribianni69",
         "tom"
+      ]
+    },
+    {
+      "matchId": 491445668,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1783732980,
+      "outcome": "loss",
+      "preRating": 976,
+      "postRating": 965,
+      "eloChange": -11,
+      "civ": "Sicilians",
+      "teamAvgElo": 1030,
+      "opponentAvgElo": 1097,
+      "teammates": [
+        "feid_",
+        "Not a Wizard",
+        "PoonSlapper"
+      ],
+      "opponents": [
+        "Kumad",
+        "EL__PATRON",
+        "tonzo",
+        "Myriad"
       ]
     }
   ]
