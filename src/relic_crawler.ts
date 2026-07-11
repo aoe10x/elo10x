@@ -60,9 +60,10 @@ export class RelicCrawler {
   }
 
   /**
-   * Seeds the crawl queue using Unified Priority Seeding:
-   * Priority = (Activity_30d + 0.5) * Staleness_Hours
-   * This balances active player freshness and prevents inactive player starvation.
+   * Seeds the crawl queue using Normalized Overdue Priority (NOP):
+   * Priority = Staleness_Sec / Cooldown_Sec
+   * Only players whose cooldowns have expired are added to the queue, and
+   * they are ranked by how overdue they are relative to their dynamic cooldown.
    */
   async seedPriorityQueue(limit: number): Promise<number[]> {
     const nowSecs = Math.floor(Date.now() / 1000);
@@ -79,25 +80,36 @@ export class RelicCrawler {
     }
 
     const profiles = this.db.getAllProfiles();
-    const scored = profiles.map(p => {
-      const pid = p.profile_id;
-      const activity = rolling30d.get(pid) || 0;
-      const manifest = this.db.getPlayerManifest(pid);
-      
-      // If never crawled, seed staleness to 30 days ago
-      const lastCrawlSec = manifest?.relic?.last_crawled_at || (nowSecs - day30Sec);
-      const stalenessSec = Math.max(0, nowSecs - lastCrawlSec);
-      const stalenessHours = stalenessSec / 3600;
 
-      // Priority = (Activity + 0.5) * Staleness_Hours
-      const score = (activity + 0.5) * stalenessHours;
+    // 1. Pre-filter: Only select players whose cooldown has expired
+    const eligible = profiles.filter(p => {
+      const pid = p.profile_id;
+      const cooldownMs = this.getDynamicCooldownMs(pid, rolling30d, false);
+      const manifest = this.db.getPlayerManifest(pid);
+      const lastCrawlSec = manifest?.relic?.last_crawled_at || (nowSecs - day30Sec);
+      
+      return (nowSecs - lastCrawlSec >= cooldownMs / 1000);
+    });
+
+    // 2. Score eligible players using Normalized Overdue Ratio (NOP)
+    const scored = eligible.map(p => {
+      const pid = p.profile_id;
+      const cooldownMs = this.getDynamicCooldownMs(pid, rolling30d, false);
+      const manifest = this.db.getPlayerManifest(pid);
+      const lastCrawlSec = manifest?.relic?.last_crawled_at || (nowSecs - day30Sec);
+      
+      const stalenessSec = nowSecs - lastCrawlSec;
+      const cooldownSec = cooldownMs / 1000;
+      const score = stalenessSec / cooldownSec;
+
       return { pid, score };
     });
 
+    // 3. Sort by priority score descending and slice
     scored.sort((a, b) => b.score - a.score);
     const seeds = scored.slice(0, limit).map(s => s.pid);
 
-    console.log(`Seeding queue with top ${seeds.length} players using Unified Priority Seeding (activity * staleness).`);
+    console.log(`Seeding queue with top ${seeds.length} players using Normalized Overdue Priority (NOP).`);
     if (seeds.length > 0) {
       this.db.addToCrawlQueue(seeds);
     }
