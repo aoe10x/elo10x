@@ -1,12 +1,12 @@
 {
   "profile_id": 25438174,
   "alias": "SimCity3000",
-  "rating": 954,
+  "rating": 944,
   "wins": 11,
-  "losses": 18,
-  "gamesCount": 29,
-  "winRate": 38,
-  "lastPlayedAt": 1783729069,
+  "losses": 19,
+  "gamesCount": 30,
+  "winRate": 37,
+  "lastPlayedAt": 1783730000,
   "country": "gb",
   "merged_ids": [
     13661469,
@@ -42,33 +42,10 @@
     966,
     985,
     968,
-    954
+    955,
+    944
   ],
   "recentMatches": [
-    {
-      "matchId": 489172193,
-      "description": "10x civ bonus 4v4 teamgame",
-      "mapname": "Atacama",
-      "timestamp": 1782833066,
-      "outcome": "loss",
-      "preRating": 899,
-      "postRating": 881,
-      "eloChange": -18,
-      "civ": "Portuguese",
-      "teamAvgElo": 978,
-      "opponentAvgElo": 1078,
-      "teammates": [
-        "MyTeamDeservesBetter",
-        "Спітнілий",
-        "FastAttack"
-      ],
-      "opponents": [
-        "I LICK TRAINS",
-        "GOJO",
-        "侯傻傻ᔦఠఠᔨ shasha",
-        "紫蝶黄蜂俱有情"
-      ]
-    },
     {
       "matchId": 489175064,
       "description": "10x civ bonus 4v4 teamgame",
@@ -487,7 +464,7 @@
       "postRating": 968,
       "eloChange": -17,
       "civ": "Bulgarians",
-      "teamAvgElo": 1066,
+      "teamAvgElo": 1062,
       "opponentAvgElo": 971,
       "teammates": [
         "[S33]ff",
@@ -508,11 +485,11 @@
       "timestamp": 1783729069,
       "outcome": "loss",
       "preRating": 968,
-      "postRating": 954,
-      "eloChange": -14,
+      "postRating": 955,
+      "eloChange": -13,
       "civ": "Berbers",
-      "teamAvgElo": 1014,
-      "opponentAvgElo": 1015,
+      "teamAvgElo": 1010,
+      "opponentAvgElo": 1025,
       "teammates": [
         "Paladin",
         "Wololo",
@@ -523,6 +500,30 @@
         "MarieBrutale",
         "Parts",
         "田瘾犯了"
+      ]
+    },
+    {
+      "matchId": 491435897,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1783730000,
+      "outcome": "loss",
+      "preRating": 955,
+      "postRating": 944,
+      "eloChange": -11,
+      "civ": "Saracens",
+      "teamAvgElo": 1022,
+      "opponentAvgElo": 1074,
+      "teammates": [
+        "EL__PATRON",
+        "serdaroglu",
+        "PoonSlapper"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "tonzo",
+        "Bobuler"
       ]
     }
   ]

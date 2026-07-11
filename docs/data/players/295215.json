@@ -1,12 +1,12 @@
 {
   "profile_id": 295215,
   "alias": "Bobuler",
-  "rating": 1004,
-  "wins": 38,
-  "losses": 36,
-  "gamesCount": 74,
+  "rating": 994,
+  "wins": 39,
+  "losses": 38,
+  "gamesCount": 77,
   "winRate": 51,
-  "lastPlayedAt": 1782089548,
+  "lastPlayedAt": 1783746550,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -84,81 +84,12 @@
     1011,
     996,
     985,
-    1004
+    1004,
+    1021,
+    1010,
+    994
   ],
   "recentMatches": [
-    {
-      "matchId": 409910480,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing - Mba",
-      "timestamp": 1754035500,
-      "outcome": "win",
-      "preRating": 1015,
-      "postRating": 1031,
-      "eloChange": 16,
-      "civ": "Vietnamese",
-      "teamAvgElo": 1000,
-      "opponentAvgElo": 1024,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "Paulichromatic",
-        "roosfort"
-      ],
-      "opponents": [
-        "Me_Ha_Ha",
-        "NothingAtAll11",
-        "For_The_King",
-        "diego12347817"
-      ]
-    },
-    {
-      "matchId": 411224899,
-      "description": "10x shared civ bonus Amazon Tunnel Water",
-      "mapname": "Amazon Tunnel Water",
-      "timestamp": 1754559480,
-      "outcome": "win",
-      "preRating": 1031,
-      "postRating": 1046,
-      "eloChange": 15,
-      "civ": "Wu",
-      "teamAvgElo": 1046,
-      "opponentAvgElo": 1009,
-      "teammates": [
-        "Bionerd92",
-        "The Naked Gothman",
-        "AAA"
-      ],
-      "opponents": [
-        "Wardy21",
-        "Ellie91",
-        "strife88",
-        "Echrand"
-      ]
-    },
-    {
-      "matchId": 411616011,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1754732220,
-      "outcome": "win",
-      "preRating": 1046,
-      "postRating": 1062,
-      "eloChange": 16,
-      "civ": "Burmese",
-      "teamAvgElo": 1053,
-      "opponentAvgElo": 1038,
-      "teammates": [
-        "Echrand",
-        "FlyingSheep",
-        "HighPriestCaco"
-      ],
-      "opponents": [
-        "nooblet3300",
-        "1",
-        "tony.li",
-        "꧁〄〘SauL〙〄꧂"
-      ]
-    },
     {
       "matchId": 414680559,
       "description": "10x 3x Bamboo - 10xshared.com",
@@ -565,6 +496,78 @@
         "OhSheeep",
         "Shadow",
         "Rhanex"
+      ]
+    },
+    {
+      "matchId": 491435897,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1783730000,
+      "outcome": "win",
+      "preRating": 1004,
+      "postRating": 1021,
+      "eloChange": 17,
+      "civ": "Tatars",
+      "teamAvgElo": 1074,
+      "opponentAvgElo": 1022,
+      "teammates": [
+        "Kumad",
+        "Myriad",
+        "tonzo"
+      ],
+      "opponents": [
+        "EL__PATRON",
+        "serdaroglu",
+        "PoonSlapper",
+        "SimCity3000"
+      ]
+    },
+    {
+      "matchId": 491485651,
+      "description": "10x 3x Bamboo best lobby",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783745913,
+      "outcome": "loss",
+      "preRating": 1021,
+      "postRating": 1010,
+      "eloChange": -11,
+      "civ": "Vietnamese",
+      "teamAvgElo": 1065,
+      "opponentAvgElo": 1138,
+      "teammates": [
+        "typ53b90",
+        "Sundev",
+        "Rooaary"
+      ],
+      "opponents": [
+        "TheRiceMan",
+        "田瘾犯了",
+        "Zar",
+        "-toxic- Chicken"
+      ]
+    },
+    {
+      "matchId": 491486942,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783746550,
+      "outcome": "loss",
+      "preRating": 1010,
+      "postRating": 994,
+      "eloChange": -16,
+      "civ": "Goths",
+      "teamAvgElo": 1039,
+      "opponentAvgElo": 1011,
+      "teammates": [
+        "Stigel",
+        "Rooaary",
+        "Zar"
+      ],
+      "opponents": [
+        "baianitro",
+        "95Bricks",
+        "typ53b90",
+        "Sundev"
       ]
     }
   ]

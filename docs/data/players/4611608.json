@@ -1,12 +1,12 @@
 {
   "profile_id": 4611608,
   "alias": "baianitro",
-  "rating": 998,
-  "wins": 38,
-  "losses": 33,
-  "gamesCount": 71,
-  "winRate": 54,
-  "lastPlayedAt": 1783726013,
+  "rating": 1003,
+  "wins": 39,
+  "losses": 34,
+  "gamesCount": 73,
+  "winRate": 53,
+  "lastPlayedAt": 1783746550,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -81,57 +81,11 @@
     1014,
     997,
     983,
-    998
+    998,
+    985,
+    1003
   ],
   "recentMatches": [
-    {
-      "matchId": 484145738,
-      "description": "10x 3x BN",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1781053860,
-      "outcome": "win",
-      "preRating": 1118,
-      "postRating": 1128,
-      "eloChange": 10,
-      "civ": "Wei",
-      "teamAvgElo": 1013,
-      "opponentAvgElo": 987,
-      "teammates": [
-        "pool_champ",
-        "The Cobra Brothers",
-        "Manba Out"
-      ],
-      "opponents": [
-        "Borkan",
-        "Acheron",
-        "arwinDutchy",
-        "MrSniffers"
-      ]
-    },
-    {
-      "matchId": 485222674,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1781398459,
-      "outcome": "loss",
-      "preRating": 1128,
-      "postRating": 1107,
-      "eloChange": -21,
-      "civ": "Armenians",
-      "teamAvgElo": 1119,
-      "opponentAvgElo": 1014,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "G",
-        "OhSheeep"
-      ],
-      "opponents": [
-        "{R} Parry",
-        "mack",
-        "develement",
-        "theonlygriffin"
-      ]
-    },
     {
       "matchId": 486217278,
       "description": "10x Shared 3xTech Bamboo Nothing",
@@ -495,7 +449,7 @@
     {
       "matchId": 491369417,
       "description": "Bamboo 10x Shared 3x Tech",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
       "timestamp": 1783708356,
       "outcome": "loss",
       "preRating": 1014,
@@ -562,6 +516,54 @@
         "MarieBrutale",
         "dinapal",
         "E_R_V"
+      ]
+    },
+    {
+      "matchId": 491483230,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783745188,
+      "outcome": "loss",
+      "preRating": 998,
+      "postRating": 985,
+      "eloChange": -13,
+      "civ": "Japanese",
+      "teamAvgElo": 1031,
+      "opponentAvgElo": 1059,
+      "teammates": [
+        "procrastination.exe",
+        "476055690",
+        "hussein"
+      ],
+      "opponents": [
+        "漫山哒哒哒",
+        "Ichigoblack",
+        "FAOse7en",
+        "紫蝶黄蜂俱有情"
+      ]
+    },
+    {
+      "matchId": 491486942,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783746550,
+      "outcome": "win",
+      "preRating": 985,
+      "postRating": 1003,
+      "eloChange": 18,
+      "civ": "Koreans",
+      "teamAvgElo": 1011,
+      "opponentAvgElo": 1039,
+      "teammates": [
+        "95Bricks",
+        "typ53b90",
+        "Sundev"
+      ],
+      "opponents": [
+        "Bobuler",
+        "Stigel",
+        "Rooaary",
+        "Zar"
       ]
     }
   ]

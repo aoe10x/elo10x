@@ -1,12 +1,12 @@
 {
   "profile_id": 8231252,
   "alias": "tedmed",
-  "rating": 980,
+  "rating": 966,
   "wins": 23,
-  "losses": 26,
-  "gamesCount": 49,
-  "winRate": 47,
-  "lastPlayedAt": 1783726686,
+  "losses": 27,
+  "gamesCount": 50,
+  "winRate": 46,
+  "lastPlayedAt": 1783738888,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -59,33 +59,10 @@
     954,
     973,
     959,
-    980
+    980,
+    966
   ],
   "recentMatches": [
-    {
-      "matchId": 438785354,
-      "description": "Bamboo 10x 3x no noobs",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1765284780,
-      "outcome": "loss",
-      "preRating": 1026,
-      "postRating": 1008,
-      "eloChange": -18,
-      "civ": "Wei",
-      "teamAvgElo": 1058,
-      "opponentAvgElo": 989,
-      "teammates": [
-        "fxsound",
-        "Rice Monger (SoullessMZD)",
-        "Bob's Uncle"
-      ],
-      "opponents": [
-        "MoEzy",
-        "Stigel",
-        "The Cobra Brothers",
-        "blankedgamerz"
-      ]
-    },
     {
       "matchId": 443423090,
       "description": "10x 3x bamboo| no sim city",
@@ -529,7 +506,7 @@
       "eloChange": 21,
       "civ": "Portuguese",
       "teamAvgElo": 971,
-      "opponentAvgElo": 1066,
+      "opponentAvgElo": 1062,
       "teammates": [
         "Parts",
         "TR.elephantman",
@@ -540,6 +517,30 @@
         "[S33]ff",
         "Chuckyllo4417",
         "TheRiceMan"
+      ]
+    },
+    {
+      "matchId": 491463348,
+      "description": "10x_3x_Bamboo_Nothing_Random",
+      "mapname": "Bamboo Nothing v4 (BaLi)",
+      "timestamp": 1783738888,
+      "outcome": "loss",
+      "preRating": 980,
+      "postRating": 966,
+      "eloChange": -14,
+      "civ": "Lithuanians",
+      "teamAvgElo": 1038,
+      "opponentAvgElo": 1019,
+      "teammates": [
+        "Contry",
+        "95Bricks",
+        "Xinzzo"
+      ],
+      "opponents": [
+        "GuguBot",
+        "OhSheeep",
+        "pandasadnap",
+        "kared117"
       ]
     }
   ]

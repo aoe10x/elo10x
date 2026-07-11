@@ -1,12 +1,12 @@
 {
   "profile_id": 431580,
   "alias": "<johnny>bravo",
-  "rating": 963,
+  "rating": 951,
   "wins": 19,
-  "losses": 32,
-  "gamesCount": 51,
+  "losses": 33,
+  "gamesCount": 52,
   "winRate": 37,
-  "lastPlayedAt": 1778127970,
+  "lastPlayedAt": 1783741420,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -61,33 +61,10 @@
     931,
     918,
     940,
-    963
+    963,
+    951
   ],
   "recentMatches": [
-    {
-      "matchId": 452605329,
-      "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1769893980,
-      "outcome": "loss",
-      "preRating": 928,
-      "postRating": 920,
-      "eloChange": -8,
-      "civ": "Unknown",
-      "teamAvgElo": 1017,
-      "opponentAvgElo": 1125,
-      "teammates": [
-        "Lumedge",
-        "mozu5",
-        "552084211"
-      ],
-      "opponents": [
-        "老K",
-        "YUJIN",
-        "VergaraRamirez",
-        "politician"
-      ]
-    },
     {
       "matchId": 452909794,
       "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
@@ -542,6 +519,30 @@
         "FAOse7en",
         "vincentc95",
         "typ53b90"
+      ]
+    },
+    {
+      "matchId": 491471100,
+      "description": "10x 3x BN ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783741420,
+      "outcome": "loss",
+      "preRating": 963,
+      "postRating": 951,
+      "eloChange": -12,
+      "civ": "Slavs",
+      "teamAvgElo": 1013,
+      "opponentAvgElo": 1059,
+      "teammates": [
+        "babeleo",
+        "mozu5",
+        "JR_Nero"
+      ],
+      "opponents": [
+        "pool_champ",
+        "Wololo",
+        "Bob's Uncle",
+        "Frederick"
       ]
     }
   ]

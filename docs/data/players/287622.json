@@ -1,12 +1,12 @@
 {
   "profile_id": 287622,
   "alias": "Atomichicken",
-  "rating": 1015,
-  "wins": 10,
+  "rating": 1034,
+  "wins": 11,
   "losses": 10,
-  "gamesCount": 20,
-  "winRate": 50,
-  "lastPlayedAt": 1783038337,
+  "gamesCount": 21,
+  "winRate": 52,
+  "lastPlayedAt": 1783731216,
   "country": "mx",
   "merged_ids": [],
   "ratingHistory": [
@@ -30,33 +30,10 @@
     1030,
     1013,
     1032,
-    1015
+    1015,
+    1034
   ],
   "recentMatches": [
-    {
-      "matchId": 356763630,
-      "description": "10x 3x shared - bamboo",
-      "mapname": "Bamboo Nothing - +Wild ##############",
-      "timestamp": 1733577780,
-      "outcome": "win",
-      "preRating": 1000,
-      "postRating": 1055,
-      "eloChange": 55,
-      "civ": "Unknown",
-      "teamAvgElo": 1003,
-      "opponentAvgElo": 1045,
-      "teammates": [
-        "Parenquima",
-        "pandasadnap",
-        "鱼浆"
-      ],
-      "opponents": [
-        "Kombative",
-        "TopazSkate37557",
-        "Peresoso",
-        "Fringnut"
-      ]
-    },
     {
       "matchId": 358651724,
       "description": "10x shared 3x tech Bamboo nothing random civ",
@@ -511,6 +488,30 @@
         "feid_",
         "rcmccallum",
         "Cale94"
+      ]
+    },
+    {
+      "matchId": 491440356,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1783731216,
+      "outcome": "win",
+      "preRating": 1015,
+      "postRating": 1034,
+      "eloChange": 19,
+      "civ": "Burmese",
+      "teamAvgElo": 1046,
+      "opponentAvgElo": 1077,
+      "teammates": [
+        "EL__PATRON",
+        "PoonSlapper",
+        "feid_"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "tonzo",
+        "ArchiCraig"
       ]
     }
   ]
