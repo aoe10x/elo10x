@@ -9,31 +9,17 @@ import { CIV_NAMES } from './civ-data.ts';
 const delay = (ms: number) => new Promise<void>(resolve => setTimeout(resolve, ms));
 
 export function getChromePath(): string {
-  if (process.env.CHROME_PATH) {
-    return process.env.CHROME_PATH;
-  }
-
+  if (process.env.CHROME_PATH) return process.env.CHROME_PATH;
   if (process.platform === 'darwin') {
     const macPath = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
-    if (fsSync.existsSync(macPath)) {
-      return macPath;
-    }
+    if (fsSync.existsSync(macPath)) return macPath;
   }
-
-  const linuxPaths = [
+  return [
     '/usr/bin/google-chrome',
     '/usr/bin/google-chrome-stable',
     '/usr/bin/chromium',
     '/usr/bin/chromium-browser'
-  ];
-
-  for (const p of linuxPaths) {
-    if (fsSync.existsSync(p)) {
-      return p;
-    }
-  }
-
-  return 'google-chrome';
+  ].find(p => fsSync.existsSync(p)) || 'google-chrome';
 }
 
 export class Aoe2InsightsScraper {
