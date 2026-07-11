@@ -7,25 +7,19 @@ interface SeedingSimulationResult {
   totalLost: number;
   totalCrawls: number;
   lossRatePercent: number;
-  avgCrawlIntervalActiveDays: number; // Avg crawl interval for active players (>15 games/30d)
+  avgCrawlIntervalActiveDays: number; // Avg crawl interval for active players (>=15 games/30d)
   avgCrawlIntervalInactiveDays: number; // Avg crawl interval for inactive players (<5 games/30d)
 }
 
 function runSeedingSimulation(
   playerMatches: Map<number, Match[]>,
-  globalMatches: Match[], // Globally sorted matches
-  candidatePlayerIds: number[], // Optimized candidate list
-  bufferLimit: number, // 10 games
-  cronIntervalHr: number, // 4 hours
-  limitCount: number, // e.g. 250 players per run
+  globalMatches: Match[],
+  candidatePlayerIds: number[],
+  bufferLimit: number,
+  cronIntervalHr: number,
+  limitCount: number,
   cooldownStrategy: (rolling30d: number) => number,
-  seedingStrategy: (
-    playerIds: number[],
-    lastCrawlTimes: Map<number, number>,
-    rolling30dCounts: Map<number, number>,
-    nowSecs: number,
-    limit: number
-  ) => number[] // returns seeded queue
+  seedingStrategyName: 'current' | 'activity_staleness' | 'nop'
 ): Omit<SeedingSimulationResult, 'strategyName' | 'lossRatePercent'> {
   let totalCaptured = 0;
   let totalLost = 0;
@@ -34,14 +28,6 @@ function runSeedingSimulation(
   const cronIntervalSec = cronIntervalHr * 60 * 60;
   const day30Sec = 30 * 24 * 60 * 60;
 
-  // Initialize simulation states
-  const lastCrawlTimes = new Map<number, number>();
-  
-  // Track crawl intervals to check for starvation
-  const crawlIntervalsActive: number[] = [];
-  const crawlIntervalsInactive: number[] = [];
-
-  // Find global start and end times across all matches
   let globalStartSec = Infinity;
   let globalEndSec = 0;
   for (const matches of playerMatches.values()) {
@@ -50,71 +36,134 @@ function runSeedingSimulation(
       if (m.startgametime > globalEndSec) globalEndSec = m.startgametime;
     }
   }
+  // Align global start to cron boundary
+  globalStartSec = Math.floor(globalStartSec / cronIntervalSec) * cronIntervalSec;
 
-  // Seed initial crawl times to 30 days before global start (so they are stale and ready)
+  // Initialize simulation states
+  const lastCrawlTimes = new Map<number, number>();
+  const capturedMatches = new Map<number, Match[]>();
+  const matchPointers = new Map<number, number>();
+  const candidateSet = new Set(candidatePlayerIds);
+
   for (const pid of candidatePlayerIds) {
     lastCrawlTimes.set(pid, globalStartSec - day30Sec);
+    capturedMatches.set(pid, []);
+    matchPointers.set(pid, 0);
   }
 
-  const candidateSet = new Set(candidatePlayerIds);
-  const rolling30dCounts = new Map<number, number>();
-  let leftMatchIdx = 0;
-  let rightMatchIdx = 0;
+  // Pre-sort player matches chronologically for pointer-based iteration
+  const sortedPlayerMatches = new Map<number, Match[]>();
+  for (const [pid, matches] of playerMatches.entries()) {
+    sortedPlayerMatches.set(pid, [...matches].sort((a, b) => a.startgametime - b.startgametime));
+  }
 
-  // Step through time in 4-hour cron increments
+  const crawlIntervalsActive: number[] = [];
+  const crawlIntervalsInactive: number[] = [];
+
+  // Step chronologically through 4-hour cron boundaries (No Match-Event-Driven time progression gaps)
   for (let nowSec = globalStartSec; nowSec <= globalEndSec; nowSec += cronIntervalSec) {
     const windowStartSec = nowSec - day30Sec;
-    
-    // Add matches that have entered the window
-    while (rightMatchIdx < globalMatches.length && globalMatches[rightMatchIdx].startgametime < nowSec) {
-      const m = globalMatches[rightMatchIdx];
-      if (m.players) {
-        for (const p of m.players) {
-          if (candidateSet.has(p.profile_id)) {
-            rolling30dCounts.set(p.profile_id, (rolling30dCounts.get(p.profile_id) || 0) + 1);
-          }
+
+    // 1. Calculate rolling 30d match count using CAPTURED (successfully crawled) history only (No Oracle Bias!)
+    const rolling30dCounts = new Map<number, number>();
+    for (const pid of candidatePlayerIds) {
+      const capMatches = capturedMatches.get(pid)!;
+      let count = 0;
+      for (let j = capMatches.length - 1; j >= 0; j--) {
+        if (capMatches[j].startgametime >= windowStartSec) {
+          count++;
+        } else {
+          break; // Since capturedMatches is kept sorted chronologically
         }
       }
-      rightMatchIdx++;
+      if (count > 0) {
+        rolling30dCounts.set(pid, count);
+      }
     }
-    
-    // Remove matches that have exited the window
-    while (leftMatchIdx < globalMatches.length && globalMatches[leftMatchIdx].startgametime < windowStartSec) {
-      const m = globalMatches[leftMatchIdx];
-      if (m.players) {
-        for (const p of m.players) {
-          if (candidateSet.has(p.profile_id)) {
-            const cur = rolling30dCounts.get(p.profile_id) || 0;
-            if (cur <= 1) {
-              rolling30dCounts.delete(p.profile_id);
-            } else {
-              rolling30dCounts.set(p.profile_id, cur - 1);
-            }
-          }
+
+    // 2. Queue seeding selection
+    let queue: number[] = [];
+
+    if (seedingStrategyName === 'current') {
+      // Current Seeding (Activity-only + Oldest 50)
+      const activeIds = [...candidatePlayerIds].sort((a, b) => {
+        const actA = rolling30dCounts.get(a) || 0;
+        const actB = rolling30dCounts.get(b) || 0;
+        return actB - actA;
+      });
+
+      const oldestIds = [...candidatePlayerIds].sort((a, b) => {
+        const timeA = lastCrawlTimes.get(a) || 0;
+        const timeB = lastCrawlTimes.get(b) || 0;
+        return timeA - timeB;
+      });
+
+      const seen = new Set<number>();
+      
+      for (const pid of activeIds) {
+        seen.add(pid);
+        queue.push(pid);
+      }
+      let oldestAdded = 0;
+      for (const pid of oldestIds) {
+        if (oldestAdded >= 50) break;
+        if (!seen.has(pid)) {
+          seen.add(pid);
+          queue.push(pid);
+          oldestAdded++;
         }
       }
-      leftMatchIdx++;
+    } else if (seedingStrategyName === 'activity_staleness') {
+      // Unified Priority Seeding: Priority = (Activity_30d + 0.5) * Staleness_Hours
+      const scored = candidatePlayerIds.map(pid => {
+        const activity = rolling30dCounts.get(pid) || 0;
+        const lastCrawlSec = lastCrawlTimes.get(pid) || 0;
+        const stalenessSec = Math.max(0, nowSec - lastCrawlSec);
+        const stalenessHours = stalenessSec / 3600;
+        const score = (activity + 0.5) * stalenessHours;
+        return { pid, score };
+      });
+      scored.sort((a, b) => b.score - a.score);
+      queue = scored.map(s => s.pid);
+    } else if (seedingStrategyName === 'nop') {
+      // Normalized Overdue Priority (NOP)
+      // 1. Pre-filter: Only score players whose cooldown has expired (prevents active players on cooldown from blocking queue)
+      const eligible = candidatePlayerIds.filter(pid => {
+        const lastCrawlSec = lastCrawlTimes.get(pid) || 0;
+        const activity = rolling30dCounts.get(pid) || 0;
+        const cooldownSec = cooldownStrategy(activity) / 1000;
+        return (nowSec - lastCrawlSec >= cooldownSec);
+      });
+
+      const scored = eligible.map(pid => {
+        const activity = rolling30dCounts.get(pid) || 0;
+        const lastCrawlSec = lastCrawlTimes.get(pid) || 0;
+        const stalenessSec = nowSec - lastCrawlSec;
+        const cooldownSec = cooldownStrategy(activity) / 1000;
+        const score = stalenessSec / cooldownSec; // NOP Formula
+        return { pid, score };
+      });
+
+      scored.sort((a, b) => b.score - a.score);
+      queue = scored.map(s => s.pid);
     }
 
-    // 2. Run the seeding strategy to get the priority queue
-    const queue = seedingStrategy(candidatePlayerIds, lastCrawlTimes, rolling30dCounts, nowSec, limitCount);
-
-    // 3. Process the queue up to limitCount crawled players
+    // 3. Process queue until we successfully perform limitCount crawls (Full Queue Capacity Utilization)
     let crawledThisCron = 0;
     for (const pid of queue) {
       if (crawledThisCron >= limitCount) break;
 
-      const lastCrawlSec = lastCrawlTimes.get(pid) || 0;
+      const lastCrawlSec = lastCrawlTimes.get(pid)!;
       const activity = rolling30dCounts.get(pid) || 0;
-      
-      // Cooldown check
       const cooldownSec = cooldownStrategy(activity) / 1000;
+
+      // For Strategy 1 and 2, players on cooldown are in the queue, so we skip them here.
+      // For NOP, they are already pre-filtered out of the queue entirely.
       if (nowSec - lastCrawlSec >= cooldownSec) {
-        // Perform crawl
         totalCrawls++;
         crawledThisCron++;
 
-        // Track crawl interval for starvation metrics
+        // Track starvation metrics
         const intervalDays = (nowSec - lastCrawlSec) / (24 * 3600);
         if (activity >= 15) {
           crawlIntervalsActive.push(intervalDays);
@@ -122,19 +171,33 @@ function runSeedingSimulation(
           crawlIntervalsInactive.push(intervalDays);
         }
 
-        // Fetch matches played in interval
-        const matches = playerMatches.get(pid) || [];
-        const matchesInInterval = matches.filter(
-          m => m.startgametime > lastCrawlSec && m.startgametime <= nowSec
-        );
+        // Fetch matches from chronological pointer
+        const matches = sortedPlayerMatches.get(pid)!;
+        let ptr = matchPointers.get(pid)!;
+        const matchesInInterval: Match[] = [];
+
+        while (ptr < matches.length && matches[ptr].startgametime <= nowSec) {
+          if (matches[ptr].startgametime > lastCrawlSec) {
+            matchesInInterval.push(matches[ptr]);
+          }
+          ptr++;
+        }
+        matchPointers.set(pid, ptr);
 
         if (matchesInInterval.length > 0) {
           if (matchesInInterval.length > bufferLimit) {
+            // Buffer keeps the 10 most recent matches
+            matchesInInterval.sort((a, b) => b.startgametime - a.startgametime);
+            const captured = matchesInInterval.slice(0, bufferLimit);
+            capturedMatches.get(pid)!.push(...captured);
             totalCaptured += bufferLimit;
             totalLost += (matchesInInterval.length - bufferLimit);
           } else {
+            capturedMatches.get(pid)!.push(...matchesInInterval);
             totalCaptured += matchesInInterval.length;
           }
+          // Sort captured history for the next step's binary/sliding count
+          capturedMatches.get(pid)!.sort((a, b) => a.startgametime - b.startgametime);
         }
 
         // Update crawl time
@@ -164,7 +227,6 @@ async function main() {
   // Globally sort all matches chronologically
   const globalMatches = [...allMatches].sort((a, b) => a.startgametime - b.startgametime);
 
-  // Group matches by participant profile ID
   const playerMatches = new Map<number, Match[]>();
   let totalPlayerMatchObservations = 0;
 
@@ -201,89 +263,18 @@ async function main() {
     return 72 * 60 * 60 * 1000;
   };
 
-  const strategies: {
-    name: string;
-    seeding: (
-      playerIds: number[],
-      lastCrawlTimes: Map<number, number>,
-      rolling30d: Map<number, number>,
-      nowSecs: number,
-      limit: number
-    ) => number[];
-  }[] = [
+  const strategies: { name: string; key: 'current' | 'activity_staleness' | 'nop' }[] = [
     {
       name: 'Strategy 1: Current Seeding (Activity-only + Oldest 50)',
-      seeding: (playerIds, lastCrawlTimes, rolling30d, nowSecs, limit) => {
-        const activeIds = playerIds.map(pid => ({
-          pid,
-          act: rolling30d.get(pid) || 0
-        }));
-        activeIds.sort((a, b) => b.act - a.act);
-
-        const oldestIds = playerIds.map(pid => ({
-          pid,
-          time: lastCrawlTimes.get(pid) || 0
-        }));
-        oldestIds.sort((a, b) => a.time - b.time);
-
-        const seen = new Set<number>();
-        const queue: number[] = [];
-
-        // Add top active players (up to limit)
-        for (const item of activeIds) {
-          if (queue.length >= limit) break;
-          seen.add(item.pid);
-          queue.push(item.pid);
-        }
-
-        // Add 50 oldest to the back
-        let oldestAdded = 0;
-        for (const item of oldestIds) {
-          if (oldestAdded >= 50) break;
-          if (!seen.has(item.pid)) {
-            seen.add(item.pid);
-            queue.push(item.pid);
-            oldestAdded++;
-          }
-        }
-
-        return queue;
-      }
+      key: 'current'
     },
     {
       name: 'Strategy 2: Unified Priority Seeding (Activity * Staleness)',
-      seeding: (playerIds, lastCrawlTimes, rolling30d, nowSecs, limit) => {
-        // Priority = (Activity_30d + 0.5) * Staleness_Hours
-        const scored = playerIds.map(pid => {
-          const activity = rolling30d.get(pid) || 0;
-          const lastCrawlSec = lastCrawlTimes.get(pid) || 0;
-          const stalenessSec = Math.max(0, nowSecs - lastCrawlSec);
-          const stalenessHours = stalenessSec / 3600;
-          
-          const score = (activity + 0.5) * stalenessHours;
-          return { pid, score };
-        });
-
-        scored.sort((a, b) => b.score - a.score);
-        return scored.slice(0, limit).map(s => s.pid);
-      }
+      key: 'activity_staleness'
     },
     {
-      name: 'Strategy 3: Strict Starvation-Preventing Priority Seeding',
-      seeding: (playerIds, lastCrawlTimes, rolling30d, nowSecs, limit) => {
-        // Priority = Activity_30d * 3 + (Staleness_Hours ^ 1.2)
-        const scored = playerIds.map(pid => {
-          const activity = rolling30d.get(pid) || 0;
-          const lastCrawlSec = lastCrawlTimes.get(pid) || 0;
-          const stalenessHours = (nowSecs - lastCrawlSec) / 3600;
-          
-          const score = (activity * 3) + Math.pow(stalenessHours, 1.2);
-          return { pid, score };
-        });
-
-        scored.sort((a, b) => b.score - a.score);
-        return scored.slice(0, limit).map(s => s.pid);
-      }
+      name: 'Strategy 3: Normalized Overdue Priority (NOP) Seeding',
+      key: 'nop'
     }
   ];
 
@@ -292,7 +283,16 @@ async function main() {
   const results: SeedingSimulationResult[] = [];
   for (const s of strategies) {
     const startSim = Date.now();
-    const res = runSeedingSimulation(playerMatches, globalMatches, candidatePlayerIds, bufferLimit, cronIntervalHr, limitCount, cooldownStrategy, s.seeding);
+    const res = runSeedingSimulation(
+      playerMatches,
+      globalMatches,
+      candidatePlayerIds,
+      bufferLimit,
+      cronIntervalHr,
+      limitCount,
+      cooldownStrategy,
+      s.key
+    );
     const lossRatePercent = (res.totalLost / totalPlayerMatchObservations) * 100;
     
     results.push({
@@ -304,10 +304,10 @@ async function main() {
   }
 
   console.log('\n========================================================================================');
-  console.log('SEEDING STRATEGY SIMULATION RESULTS');
+  console.log('SEEDING STRATEGY SIMULATION RESULTS (BUGS RESOLVED & NO ORACLE BIAS)');
   console.log('========================================================================================');
   console.log(
-    'Strategy'.padEnd(52) + 
+    'Strategy'.padEnd(54) + 
     ' | Crawls'.padStart(10) + 
     ' | Lost'.padStart(8) + 
     ' | Loss %'.padStart(10) + 
@@ -317,7 +317,7 @@ async function main() {
   console.log('----------------------------------------------------------------------------------------');
   for (const r of results) {
     console.log(
-      r.strategyName.padEnd(52) +
+      r.strategyName.padEnd(54) +
       ` | ${r.totalCrawls.toString().padStart(8)}` +
       ` | ${r.totalLost.toString().padStart(6)}` +
       ` | ${r.lossRatePercent.toFixed(4).padStart(8)}%` +
