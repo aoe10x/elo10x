@@ -8,6 +8,34 @@ import { CIV_NAMES } from './civ-data.ts';
 
 const delay = (ms: number) => new Promise<void>(resolve => setTimeout(resolve, ms));
 
+export function getChromePath(): string {
+  if (process.env.CHROME_PATH) {
+    return process.env.CHROME_PATH;
+  }
+
+  if (process.platform === 'darwin') {
+    const macPath = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+    if (fsSync.existsSync(macPath)) {
+      return macPath;
+    }
+  }
+
+  const linuxPaths = [
+    '/usr/bin/google-chrome',
+    '/usr/bin/google-chrome-stable',
+    '/usr/bin/chromium',
+    '/usr/bin/chromium-browser'
+  ];
+
+  for (const p of linuxPaths) {
+    if (fsSync.existsSync(p)) {
+      return p;
+    }
+  }
+
+  return 'google-chrome';
+}
+
 export class Aoe2InsightsScraper {
   private db: JsonDatabase;
   private scrapedDataDir: string;
@@ -21,7 +49,7 @@ export class Aoe2InsightsScraper {
    * Launches headful Chrome and waits for the user to solve Cloudflare on aoe2insights.com
    */
   private async launchChromeAndWaitForBypass(port: number, userDataDir: string): Promise<{ wsUrl: string; chromeProcess: any }> {
-    const chromePath = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+    const chromePath = getChromePath();
     
     console.log(`[BROWSER] Launching headful Chrome on port ${port}...`);
     const chromeProcess = spawn(chromePath, [

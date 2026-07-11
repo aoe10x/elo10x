@@ -4,6 +4,7 @@ import { promises as fs } from 'node:fs';
 import * as path from 'node:path';
 import { spawn } from 'node:child_process';
 import { CIV_NAMES } from '../src/civ-data.ts';
+import { getChromePath } from '../src/aoe2insights_scraper.ts';
 
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -32,10 +33,14 @@ test('AoE2Insights Scraper - Matches List Parsing', async () => {
   // Spawn headless Chrome
   const port = 19233;
   const userDataDir = path.join(process.cwd(), '.chrome-user-data-test');
-  const chromePath = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+  const chromePath = getChromePath();
   
   const chromeProcess = spawn(chromePath, [
     '--headless',
+    '--no-sandbox',
+    '--disable-setuid-sandbox',
+    '--disable-gpu',
+    '--disable-dev-shm-usage',
     `--remote-debugging-port=${port}`,
     `--user-data-dir=${userDataDir}`,
     '--no-first-run',
@@ -88,8 +93,23 @@ test('AoE2Insights Scraper - Matches List Parsing', async () => {
     expression: `document.open(); document.write(${JSON.stringify(fixtureHtml)}); document.close();`
   });
 
-  // Wait for DOM to load
-  await delay(1000);
+  // Poll until elements are found (up to 3 seconds)
+  let elementsLoaded = false;
+  for (let j = 0; j < 30; j++) {
+    const checkRes = await sendCdp('Runtime.evaluate', {
+      expression: `!!document.querySelector('.match-tile')`,
+      returnByValue: true
+    });
+    if (checkRes.result?.value) {
+      elementsLoaded = true;
+      break;
+    }
+    await delay(100);
+  }
+
+  if (!elementsLoaded) {
+    console.warn('[WARNING] .match-tile elements not detected via polling, proceeding anyway...');
+  }
 
   // Run the parsing extraction script
   const parseExpression = `
@@ -169,7 +189,7 @@ test('AoE2Insights Scraper - Matches List Parsing', async () => {
     returnByValue: true
   });
 
-  const parsedMatches = evalRes.result.value as any[];
+  const parsedMatches = evalRes.result?.value as any[];
 
   // Clean up
   ws.close();

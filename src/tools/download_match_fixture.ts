@@ -1,11 +1,12 @@
 import { spawn } from 'node:child_process';
 import { promises as fs } from 'node:fs';
 import * as path from 'node:path';
+import { getChromePath } from '../aoe2insights_scraper.ts';
 
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 async function main() {
-  const chromePath = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+  const chromePath = getChromePath();
   const userDataDir = path.join(process.cwd(), '.chrome-user-data-fixture');
 
   console.log('Launching headful Chrome...');
