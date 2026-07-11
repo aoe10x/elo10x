@@ -7,9 +7,10 @@ This project calculates Elo rankings for the Age of Empires II 10x community (sp
 ## Getting Started
 
 ### 1. Installation
-Clone the repository and install dependencies:
+Clone the repository, install dependencies, and link the CLI binary globally:
 ```bash
 pnpm install
+pnpm link --global
 ```
 
 ### 2. Crawling Match History
@@ -18,32 +19,31 @@ pnpm install
 Crawls recent match histories for active players using the public Relic Link API.
 ```bash
 # Crawl recent matches for active players (default limit: 150)
-pnpm run crawl -- --limit 150
-
-# Custom months cutoff (e.g. last 6 months)
-pnpm run crawl -- --limit 150 --months 6
+elo10x crawl --limit 150
 ```
 
-Full details on the Relic API batch crawler, smart seeding strategy, dynamic cooldown calibration, and the AoE2Insights scraper can be found in [docs/updates_and_crawling.md](file:///Users/paulirish/code/elo10x/docs/updates_and_crawling.md).
-
-#### B. AoE2Insights Chrome Scraper (Historical Backfill)
-Backfills deep match history for players directly from AoE2Insights. This requires having a Chrome instance open with remote debugging enabled on port `9222`:
+#### B. AoE2Insights Scraper (Recent Crawl)
+Crawls recent match histories for active players using the AoE2Insights scraper. It automatically launches a headful Chrome window, waits for you to solve the Cloudflare Turnstile verification, and then crawls page 1 of all eligible player matches.
 ```bash
-# Launch Chrome with remote debugging on macOS:
-/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
-
-# Scrape matches for top 20 active players
-pnpm run crawl -- --scrape-insights active
-
-# Scrape matches for a specific player ID
-pnpm run crawl -- --scrape-insights 64605
+# Crawl recent matches for active/live players (default limit: 80)
+elo10x crawl --engine insights --limit 80
 ```
-*Note: The insights scraper uses a smart crawl manifest to automatically stop fetching pages once it overlaps with matches already stored in your database (see [docs/updates_and_crawling.md](file:///Users/paulirish/code/elo10x/docs/updates_and_crawling.md)).*
+
+#### C. AoE2Insights Scraper (Targeted Scrape / Historical Backfill)
+Backfills deep match history for players directly from AoE2Insights. Like the recent crawl, it launches a headful Chrome window automatically.
+```bash
+# Scrape pages 1 through 20 for Clean (profile ID 11783175)
+elo10x scrape 11783175 --start-page 1 --end-page 20
+
+# Scrape recent matches for top 80 active players in the database (default limit: 80)
+elo10x scrape active --start-page 1 --end-page 1
+```
+*Note: The insights scraper uses a click-shield overlay to block accidental interaction while scraping, and a smart crawl manifest to automatically stop fetching pages once it overlaps with matches already stored in your database (see [docs/updates_and_crawling.md](file:///Users/paulirish/code/elo10x/docs/updates_and_crawling.md)).*
 
 ### 3. Compute Elo & Compile Static Site
 Run the rating calculations and pre-render the entire leaderboard website:
 ```bash
-pnpm run elo
+elo10x elo
 ```
 This script computes Elo ratings and compiles:
 *   `docs/index.html` (10x 3x mode)

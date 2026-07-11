@@ -1,14 +1,15 @@
 export interface MatchPlayer {
   profile_id: number;
   teamid: number;
-  resulttype: number; // 1 = Win, 2 = Loss
-  race_id: number;
+  resulttype: number; // 1 = Win, 0/2 = Loss
+  civ_id: number;
   alias: string;
 }
 
 export type MatchSource =
   | 'relic_api'
   | 'aoe2insights_scrape'
+  | 'merged'
   | 'unknown';
 
 export interface Match {
@@ -62,13 +63,6 @@ export interface EloRanking {
   merged_ids?: number[];
 }
 
-export interface DatabaseSchema {
-  matches: Record<number, Match>;
-  match_fingerprints: Record<string, number>; // fingerprint -> match_id
-  profiles: Record<number, PlayerProfile>;
-  crawled_profiles: Record<number, number>; // profile_id -> timestamp (ms) when crawled
-  crawl_queue: number[];
-}
 
 export interface Lobby {
   matchId: number;

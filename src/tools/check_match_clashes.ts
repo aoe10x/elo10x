@@ -1,5 +1,6 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 async function main() {
   const jsonPath = path.join(process.cwd(), 'docs', 'data', 'db.json');
@@ -57,4 +58,11 @@ async function main() {
   console.log(`Total conflict matches: ${conflictCount}`);
 }
 
-main().catch(console.error);
+if (process.argv[1]) {
+  try {
+    const currentFilePath = fileURLToPath(import.meta.url);
+    if (process.argv[1] === currentFilePath || process.argv[1].endsWith('check_match_clashes.ts')) {
+      main().catch(console.error);
+    }
+  } catch (err) {}
+}

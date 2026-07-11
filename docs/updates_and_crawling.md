@@ -17,6 +17,10 @@ https://aoe-api.worldsedgelink.com/community/leaderboard/getRecentMatchHistory?t
 ```
 This allows requesting up to **40 profiles in a single HTTP request**. Consequently, a session limit of **150 players** requires only **4 API requests** and completes in under 5 seconds, reducing server load and avoiding rate limits.
 
+> [!WARNING]
+> **Relic API History Limits & Unreliability**:
+> According to community observations (shared by Colonel Otto), the Relic API's match history buffer is highly restricted—often keeping only the **most recent 10 games per match type** (e.g. 1v1, Team Random Map)—and can be highly unreliable. This makes the Relic API unsuitable for deep historical backfills and highlights why the AoE2Insights page-by-page scraper is required to recover full player histories.
+
 ### Smart Seeding Design
 On each run, the crawler seeds the crawl queue using a multi-tiered queue strategy:
 * **Live Seeding**: Fetches active lobbies and live games from `aoe10x.com` APIs, queuing currently active players first for maximum freshness.
@@ -43,25 +47,40 @@ $$\text{Eligible Players} \approx 20 + \left(350 \times \frac{4}{8}\right) + 20 
 
 A session limit of **150** is the sweet spot. It ensures that 100% of all live/active players are crawled within a safe 8-hour window without making redundant queries or pulling deeply inactive database records (e.g. if the limit was set to 1000).
 
----
+### Match Data Merging (Enrichment)
+Because the two crawlers fetch data from different sources with disjointed fields, the database uses a **smart merge** on duplicate match IDs instead of a flat skip:
+* **Map Name Enrichment**: If a match was first crawled via the Relic Link API (which labels custom maps generically as `"my map"`), and is later scraped via AoE2Insights, the database updates the match record with the real custom map name (e.g. `Bamboo Nothing_Paren_V4`).
+* **Civilization ID Enrichment**: If a match was first scraped via AoE2Insights (where civilization data is missing for ~90% of matches), and is later crawled via the Relic API, the database populates the missing `civ_id` values on the players.
+When a merge occurs, the database updates the match's source flag to `'merged'`.
 
-## 2. AoE2Insights Chrome Scraper (Historical Backfill)
+## 2. AoE2Insights Scraper & Crawler
+For map names and deep historical backfills, the crawler includes a Chrome DevTools Protocol (CDP) scraper that pulls game histories directly from AoE2Insights.
 
-For deep historical backfills, the crawler includes a Chrome DevTools Protocol (CDP) scraper that pulls game history from AoE2Insights.
+### Headful Chrome & Cloudflare Detection
+Instead of requiring a pre-running Chrome instance, the scraper **automatically launches a headful Chrome process** on port `19222` with a temporary, isolated user profile (`.chrome-user-data-scraper`).
+* **Landing Page**: It starts at `https://rank.10xshared.com/`.
+* **Automatic Detection**: It polls the local Chrome targets. As soon as the user navigates to `aoe2insights.com` and solves the Turnstile challenge, the script detects that the tab title contains `"AoE2 Insights"` (and doesn't contain `"Just a moment"` or `"Cloudflare"`). It then waits 3 seconds and attaches the WebSocket debugger session to begin scraping.
 
-This requires running a local Chrome instance with debugging enabled:
+### Click-Shield Overlay
+While active, the scraper injects a full-screen semi-transparent overlay saying: `"Scraping in progress... Please do not click!"` which captures all click events. Since the scraper performs background fetches on the tab, the overlay remains visible and prevents accidental user navigation during execution.
+
+### Crawling Modes
+
+#### A. Automated Recent Matches Crawl (`crawl`)
+Runs an automated snowball crawl session exactly like the Relic crawler, but fetches **Page 1** of recent games for eligible players via the headful scraper.
 ```bash
-# Launch Chrome with remote debugging on macOS:
-/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
+# Snowball crawl recent games from Insights (default limit: 80)
+elo10x crawl --engine insights --limit 80
 ```
 
-Then, execute the scraper via the CLI:
+#### B. Targeted Scrape / Historical Backfill (`scrape`)
+Backfills deep history for a specific profile ID across a page range, or crawls recent matches for active database players:
 ```bash
-# Scrape matches for top 20 active players
-pnpm run crawl -- --scrape-insights active
+# Scrape pages 1 through 20 for Clean (profile 11783175)
+elo10x scrape 11783175 --start-page 1 --end-page 20
 
-# Scrape matches for a specific player ID
-pnpm run crawl -- --scrape-insights 64605
+# Scrape Page 1 for the top active database players
+elo10x scrape active --start-page 1 --end-page 1
 ```
 
 ### Crawl Manifest & Overlap Boundaries

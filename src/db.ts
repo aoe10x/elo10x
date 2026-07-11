@@ -10,31 +10,34 @@ import { buildMatchFingerprint } from './match_fingerprint.ts';
  * The file is assumed to start with '[' and end with ']', with each item on its own line ending with an optional comma.
  */
 export async function* readJsonArrayLines<T>(filePath: string): AsyncGenerator<T> {
-  if (!fsSync.existsSync(filePath)) return;
-
   const fileStream = fsSync.createReadStream(filePath);
   const rl = readline.createInterface({
     input: fileStream,
     crlfDelay: Infinity
   });
 
-  for await (const line of rl) {
-    const trimmed = line.trim();
-    // Skip array opening/closing brackets
-    if (trimmed === '[' || trimmed === ']') {
-      continue;
-    }
-    if (!trimmed) continue;
+  try {
+    for await (const line of rl) {
+      const trimmed = line.trim();
+      // Skip array opening/closing brackets
+      if (trimmed === '[' || trimmed === ']') {
+        continue;
+      }
+      if (!trimmed) continue;
 
-    // Strip trailing comma if present
-    const cleanLine = trimmed.endsWith(',') ? trimmed.slice(0, -1) : trimmed;
-    if (cleanLine === 'null') continue;
-    
-    try {
-      yield JSON.parse(cleanLine) as T;
-    } catch (e) {
-      console.error(`Failed to parse JSON line in ${filePath}: "${cleanLine}"`, e);
+      // Strip trailing comma if present
+      const cleanLine = trimmed.endsWith(',') ? trimmed.slice(0, -1) : trimmed;
+      if (cleanLine === 'null') continue;
+      
+      try {
+        yield JSON.parse(cleanLine) as T;
+      } catch (e) {
+        console.error(`Failed to parse JSON line in ${filePath}: "${cleanLine}"`, e);
+      }
     }
+  } catch (err: any) {
+    if (err.code === 'ENOENT') return;
+    throw err;
   }
 }
 
@@ -93,6 +96,14 @@ export class JsonDatabase {
     // Load matches
     this.matches = new Map<number, Match>();
     for await (const match of readJsonArrayLines<Match>(this.matchesPath)) {
+      if (match.players) {
+        for (const p of match.players) {
+          if ((p as any).race_id !== undefined) {
+            p.civ_id = p.civ_id || (p as any).race_id;
+            delete (p as any).race_id;
+          }
+        }
+      }
       this.matches.set(match.id, match);
     }
 
@@ -243,6 +254,46 @@ export class JsonDatabase {
   }
 
   addMatch(match: Match): void {
+    const existing = this.matches.get(match.id);
+    if (existing) {
+      let updated = false;
+
+      // 1. Merge map name if generic "my map"
+      if ((existing.mapname === 'my map' || !existing.mapname) && match.mapname && match.mapname !== 'my map') {
+        existing.mapname = match.mapname;
+        updated = true;
+      }
+
+      // 2. Merge player civilization IDs (civ_id)
+      if (existing.players && match.players) {
+        for (const ep of existing.players) {
+          const mp = match.players.find(p => p.profile_id === ep.profile_id);
+          if (mp && (!ep.civ_id || ep.civ_id === 0) && mp.civ_id && mp.civ_id > 0) {
+            ep.civ_id = mp.civ_id;
+            updated = true;
+          }
+        }
+      }
+
+      // 3. Merge creator profile ID
+      if (!existing.creator_profile_id && match.creator_profile_id) {
+        existing.creator_profile_id = match.creator_profile_id;
+        updated = true;
+      }
+
+      // 4. Merge game mod ID
+      if (!existing.gamemod_id && match.gamemod_id) {
+        existing.gamemod_id = match.gamemod_id;
+        updated = true;
+      }
+
+      // 5. Update source if merged
+      if (updated && existing.source !== match.source && existing.source !== 'merged') {
+        existing.source = 'merged';
+      }
+      return;
+    }
+
     this.matches.set(match.id, match);
     const fingerprint = buildMatchFingerprint(match);
     if (!this.hasMatchFingerprint(fingerprint)) {

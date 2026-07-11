@@ -1,3 +1,4 @@
+import zlib from 'node:zlib';
 import type { JsonDatabase } from './db.ts';
 import type { Lobby, Match, MatchPlayer, PlayerProfile } from './types.ts';
 import { buildMatchFingerprint } from './match_fingerprint.ts';
@@ -10,6 +11,44 @@ function delay(ms: number): Promise<void> {
 }
 
 // No cooldown — always crawl fresh on every run
+
+function decodeOptions(optionsB64: string | undefined): Record<string, string> {
+  if (!optionsB64) return {};
+  try {
+    const compressed = Buffer.from(optionsB64, 'base64');
+    const decompressedStr = zlib.inflateSync(compressed).toString('utf8').trim();
+    
+    let rawStr = decompressedStr;
+    if (rawStr.startsWith('"') && rawStr.endsWith('"')) {
+      rawStr = rawStr.slice(1, -1);
+    }
+    
+    const binaryBuffer = Buffer.from(rawStr, 'base64');
+    if (binaryBuffer.length === 0) return {};
+    
+    const pairCount = binaryBuffer.readUInt8(0);
+    const options: Record<string, string> = {};
+    let offset = 1;
+    
+    for (let i = 0; i < pairCount; i++) {
+      if (offset + 4 > binaryBuffer.length) break;
+      const len = binaryBuffer.readInt32LE(offset);
+      offset += 4;
+      if (offset + len > binaryBuffer.length) break;
+      const kvStr = binaryBuffer.toString('utf8', offset, offset + len);
+      offset += len;
+      
+      const colonIndex = kvStr.indexOf(':');
+      if (colonIndex !== -1) {
+        options[kvStr.slice(0, colonIndex)] = kvStr.slice(colonIndex + 1);
+      }
+    }
+    return options;
+  } catch (err: any) {
+    console.warn('Failed to parse match options string:', err.message);
+    return {};
+  }
+}
 
 export class RelicCrawler {
   private db: JsonDatabase;
@@ -153,14 +192,15 @@ export class RelicCrawler {
    * Crawl a single player's recent matches and add new player IDs to crawl queue
    */
   async crawlPlayer(profileId: number, cutoffTimestamp: number): Promise<boolean> {
-    return this.crawlPlayersBatch([profileId], cutoffTimestamp);
+    const result = await this.crawlPlayersBatch([profileId], cutoffTimestamp);
+    return result.success;
   }
 
   /**
    * Crawl a batch of players' recent matches in a single request and add new player IDs to crawl queue
    */
-  async crawlPlayersBatch(profileIds: number[], cutoffTimestamp: number): Promise<boolean> {
-    if (profileIds.length === 0) return true;
+  async crawlPlayersBatch(profileIds: number[], cutoffTimestamp: number): Promise<{ success: boolean; newMatchesCount: number }> {
+    if (profileIds.length === 0) return { success: true, newMatchesCount: 0 };
     const url = `${BASE_URL}/community/leaderboard/getRecentMatchHistory?title=age2&profile_ids=[${profileIds.join(',')}]`;
     console.log(`Crawling match history for batch of ${profileIds.length} players...`);
 
@@ -172,12 +212,12 @@ export class RelicCrawler {
       if (response.status === 429) {
         console.warn('Rate limited (429). Backing off for 10 seconds...');
         await delay(10000);
-        return false;
+        return { success: false, newMatchesCount: 0 };
       }
 
       if (!response.ok) {
         console.warn(`Relic API returned error status ${response.status} for batch`);
-        return false;
+        return { success: false, newMatchesCount: 0 };
       }
 
       const data = await response.json() as any;
@@ -205,7 +245,7 @@ export class RelicCrawler {
           });
           this.db.markAsCrawled(pId);
         }
-        return true;
+        return { success: true, newMatchesCount: 0 };
       }
 
       // 2. Scan matches for 10x custom lobbies
@@ -215,9 +255,30 @@ export class RelicCrawler {
 
       for (const m of data.matchHistoryStats) {
         matchCount++;
+        const parsedOptions = decodeOptions(m.options);
+        
+        const modId = parsedOptions['59'];
+        const modName = parsedOptions['63'];
         const lobbyTitle = m.description || '';
-        const is10x = /10x/i.test(lobbyTitle);
+        
+        // 10x Classification:
+        // - Mod ID 59 is official mod ID (e.g. 363188)
+        // - Mod Name 63 contains "10x" or "3x"
+        // - Or lobby title matches regex
+        const isMod10x = modId === '363188' || (modName && /10x/i.test(modName)) || (modName && /3x/i.test(modName));
+        const isTitle10x = /10x/i.test(lobbyTitle);
+        const is10x = isMod10x || isTitle10x;
+        
         const isRecent = m.startgametime >= cutoffTimestamp;
+
+        // Custom map resolution:
+        // - Key 11 contains custom map .rms script filename
+        // - Fallback to API mapname
+        let mapname = m.mapname || '';
+        const customMap = parsedOptions['11'];
+        if (customMap && customMap.endsWith('.rms')) {
+          mapname = customMap.replace(/\.rms$/i, '').trim();
+        }
 
         const participants: MatchPlayer[] = [];
         const candidatePlayerIds: number[] = [];
@@ -231,7 +292,7 @@ export class RelicCrawler {
               profile_id: pId,
               teamid: r.teamid,
               resulttype: r.resulttype, // 1 = Win, 0 = Loss
-              race_id: r.civilization_id,
+              civ_id: r.civilization_id,
               alias: cachedProfile?.alias || `Player_${pId}`
             });
 
@@ -248,10 +309,6 @@ export class RelicCrawler {
         }
 
         if (is10x && isRecent) {
-          if (this.db.hasMatch(m.id)) {
-            continue; // Already processed
-          }
-
           if (participants.length === 0) {
             continue;
           }
@@ -260,28 +317,31 @@ export class RelicCrawler {
             id: m.id,
             source: 'relic_api',
             creator_profile_id: m.creator_profile_id,
-            mapname: m.mapname || '',
+            mapname: mapname,
             maxplayers: m.maxplayers || 8,
             matchtype_id: m.matchtype_id || 0,
             description: lobbyTitle,
             startgametime: m.startgametime,
             completiontime: m.completiontime,
             players: participants,
-            gamemod_id: m.gamemod_id
+            gamemod_id: modId ? parseInt(modId, 10) : (m.gamemod_id || undefined)
           };
 
-          const fingerprint = buildMatchFingerprint(matchObj);
-          const existingMatchId = this.db.findMatchIdByFingerprint(fingerprint);
-          if (existingMatchId !== undefined) {
-            console.log(`Skipping duplicate-equivalent match ${m.id}; equivalent to existing match ${existingMatchId}.`);
-            continue;
-          }
-
+          const isExisting = this.db.hasMatch(m.id);
           this.db.addMatch(matchObj);
-          new10xMatchCount++;
 
-          // Add participants of this 10x game to crawl queue
-          this.db.addToCrawlQueue(candidatePlayerIds);
+          if (!isExisting) {
+            const fingerprint = buildMatchFingerprint(matchObj);
+            const existingMatchId = this.db.findMatchIdByFingerprint(fingerprint);
+            if (existingMatchId !== undefined) {
+              console.log(`Skipping duplicate-equivalent match ${m.id}; equivalent to existing match ${existingMatchId}.`);
+              continue;
+            }
+
+            new10xMatchCount++;
+            // Add participants of this 10x game to crawl queue
+            this.db.addToCrawlQueue(candidatePlayerIds);
+          }
         }
       }
 
@@ -305,10 +365,10 @@ export class RelicCrawler {
         this.db.markAsCrawled(pId);
       }
 
-      return true;
+      return { success: true, newMatchesCount: new10xMatchCount };
     } catch (err: any) {
       console.error(`Error crawling batch of players:`, err.message);
-      return false;
+      return { success: false, newMatchesCount: 0 };
     }
   }
 
@@ -337,7 +397,7 @@ export class RelicCrawler {
   /**
    * Run a snowball crawl up to a limit of crawled players
    */
-  async runCrawl(limitCount: number, monthsCutoff: number = 3): Promise<void> {
+  async runCrawl(limitCount: number, monthsCutoff: number = 3, force: boolean = false): Promise<void> {
     const cutoffTimestamp = Math.floor(Date.now() / 1000) - (monthsCutoff * 30 * 24 * 60 * 60);
     console.log(`Starting crawl. Filtering games after Unix timestamp: ${cutoffTimestamp} (${monthsCutoff} months ago)`);
 
@@ -353,6 +413,7 @@ export class RelicCrawler {
     }
 
     let crawledThisSession = 0;
+    let totalNewMatchesAdded = 0;
     const batchSize = 40;
 
     while (this.db.getCrawlQueueLength() > 0 && crawledThisSession < limitCount) {
@@ -364,15 +425,17 @@ export class RelicCrawler {
         const profileId = this.db.popFromCrawlQueue();
         if (!profileId) break;
 
-        // Skip check:
-        //   1. Currently live players (online now in lobbies) have 0 cooldown (always crawled).
-        //   2. Other players have an 8-hour cooldown (ensures active players are crawled at least twice per day,
-        //      capturing all recent games before they fall off the Relic API's recent match list).
-        const isLive = livePlayerIds.has(profileId);
-        const cooldownMs = isLive ? 0 : 8 * 60 * 60 * 1000;
+        if (!force) {
+          // Skip check:
+          //   1. Currently live players (online now in lobbies) have 0 cooldown (always crawled).
+          //   2. Other players have an 8-hour cooldown (ensures active players are crawled at least twice per day,
+          //      capturing all recent games before they fall off the Relic API's recent match list).
+          const isLive = livePlayerIds.has(profileId);
+          const cooldownMs = isLive ? 0 : 8 * 60 * 60 * 1000;
 
-        if (this.db.isCrawled(profileId, cooldownMs)) {
-          continue;
+          if (this.db.isCrawled(profileId, cooldownMs)) {
+            continue;
+          }
         }
         batchIds.push(profileId);
       }
@@ -381,9 +444,10 @@ export class RelicCrawler {
         break;
       }
 
-      const success = await this.crawlPlayersBatch(batchIds, cutoffTimestamp);
-      if (success) {
+      const result = await this.crawlPlayersBatch(batchIds, cutoffTimestamp);
+      if (result.success) {
         crawledThisSession += batchIds.length;
+        totalNewMatchesAdded += result.newMatchesCount;
         console.log(`Progress: ${crawledThisSession}/${limitCount} players crawled this session. Queue length: ${this.db.getCrawlQueueLength()}`);
         await this.db.save();
       }
@@ -393,6 +457,11 @@ export class RelicCrawler {
     }
 
     await this.db.save();
-    console.log(`Crawl session finished. Crawled ${crawledThisSession} players. Total matches saved: ${this.db.getMatchesCount()}`);
+    console.log(`\n========================================`);
+    console.log(`Crawl session finished!`);
+    console.log(`- Crawled: ${crawledThisSession} players`);
+    console.log(`- New 10x matches added: ${totalNewMatchesAdded}`);
+    console.log(`- Total matches in DB: ${this.db.getMatchesCount()}`);
+    console.log(`========================================`);
   }
 }
