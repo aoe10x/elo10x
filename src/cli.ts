@@ -159,12 +159,20 @@ async function main(): Promise<void> {
       ]);
 
       const limit = values.limit ? parseInt(values.limit, 10) : 80;
+      const nowSec = Math.floor(Date.now() / 1000);
+      const cooldownSec = 24 * 60 * 60; // 24 hours cooldown for target selection
+      const force = !!values.force;
 
       for (const pid of activeIds) {
         const manifest = db.getPlayerManifest(pid);
+        const lastCrawledSec = manifest?.insights?.last_crawled_at || 0;
         const hasBeenScraped = manifest?.insights !== undefined;
-        
-        const isExcluded = isUnscrapedOnly ? hasBeenScraped : excludedIds.has(pid);
+        const inCooldown = !force && (nowSec - lastCrawledSec < cooldownSec);
+
+        const isExcluded = isUnscrapedOnly 
+          ? hasBeenScraped 
+          : (excludedIds.has(pid) || inCooldown);
+
         if (!isExcluded) {
           targetProfileIds.push(pid);
           if (targetProfileIds.length >= limit) {
