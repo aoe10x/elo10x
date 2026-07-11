@@ -1,11 +1,11 @@
 {
   "profile_id": 13318492,
   "alias": "PlankSac",
-  "rating": 927,
+  "rating": 912,
   "wins": 6,
-  "losses": 11,
-  "gamesCount": 17,
-  "winRate": 35,
+  "losses": 12,
+  "gamesCount": 18,
+  "winRate": 33,
   "lastPlayedAt": 1755145260,
   "country": "Unknown",
   "merged_ids": [],
@@ -26,8 +26,9 @@
     962,
     940,
     920,
-    899,
-    927
+    903,
+    885,
+    912
   ],
   "recentMatches": [
     {
@@ -64,8 +65,8 @@
       "postRating": 925,
       "eloChange": -39,
       "civ": "Unknown",
-      "teamAvgElo": 1046,
-      "opponentAvgElo": 1021,
+      "teamAvgElo": 1045,
+      "opponentAvgElo": 1022,
       "teammates": [
         "hopeinthefield",
         "VL Arcenick",
@@ -88,8 +89,8 @@
       "postRating": 984,
       "eloChange": 59,
       "civ": "Unknown",
-      "teamAvgElo": 1037,
-      "opponentAvgElo": 1039,
+      "teamAvgElo": 1036,
+      "opponentAvgElo": 1038,
       "teammates": [
         "BigAl",
         "tonzo",
@@ -112,7 +113,7 @@
       "postRating": 1021,
       "eloChange": 37,
       "civ": "Unknown",
-      "teamAvgElo": 1015,
+      "teamAvgElo": 1014,
       "opponentAvgElo": 933,
       "teammates": [
         "MONN",
@@ -137,7 +138,7 @@
       "eloChange": -44,
       "civ": "Unknown",
       "teamAvgElo": 1037,
-      "opponentAvgElo": 1008,
+      "opponentAvgElo": 1007,
       "teammates": [
         "The_OfishelJew",
         "TheCobra",
@@ -160,7 +161,7 @@
       "postRating": 943,
       "eloChange": -34,
       "civ": "Unknown",
-      "teamAvgElo": 1025,
+      "teamAvgElo": 1024,
       "opponentAvgElo": 1036,
       "teammates": [
         "ZTH",
@@ -185,7 +186,7 @@
       "eloChange": -24,
       "civ": "Unknown",
       "teamAvgElo": 995,
-      "opponentAvgElo": 1080,
+      "opponentAvgElo": 1082,
       "teammates": [
         "bijiyumo",
         "Peresoso",
@@ -209,7 +210,7 @@
       "eloChange": 46,
       "civ": "Unknown",
       "teamAvgElo": 974,
-      "opponentAvgElo": 1005,
+      "opponentAvgElo": 1006,
       "teammates": [
         "gemmascho",
         "CarloMagno",
@@ -257,7 +258,7 @@
       "eloChange": -30,
       "civ": "Unknown",
       "teamAvgElo": 998,
-      "opponentAvgElo": 1052,
+      "opponentAvgElo": 1051,
       "teammates": [
         "loco wytboy46",
         "Scipio Africanus",
@@ -281,7 +282,7 @@
       "eloChange": -27,
       "civ": "Unknown",
       "teamAvgElo": 1017,
-      "opponentAvgElo": 1035,
+      "opponentAvgElo": 1034,
       "teammates": [
         "NoAgendaPODCAST",
         "snowwang",
@@ -305,7 +306,7 @@
       "eloChange": -26,
       "civ": "Unknown",
       "teamAvgElo": 1011,
-      "opponentAvgElo": 1008,
+      "opponentAvgElo": 1007,
       "teammates": [
         "bijiyumo",
         "Herr Mitesch",
@@ -327,7 +328,7 @@
       "preRating": 928,
       "postRating": 962,
       "eloChange": 34,
-      "civ": "Unknown",
+      "civ": "Mongols",
       "teamAvgElo": 1014,
       "opponentAvgElo": 990,
       "teammates": [
@@ -351,9 +352,9 @@
       "preRating": 962,
       "postRating": 940,
       "eloChange": -22,
-      "civ": "Unknown",
-      "teamAvgElo": 1007,
-      "opponentAvgElo": 1031,
+      "civ": "Portuguese",
+      "teamAvgElo": 1006,
+      "opponentAvgElo": 1030,
       "teammates": [
         "Fastcastleintoheatedshots",
         "^gOsO^",
@@ -376,8 +377,8 @@
       "postRating": 920,
       "eloChange": -20,
       "civ": "Unknown",
-      "teamAvgElo": 1083,
-      "opponentAvgElo": 1025,
+      "teamAvgElo": 1082,
+      "opponentAvgElo": 1024,
       "teammates": [
         "yimacs_yoyoyo",
         "gemmascho",
@@ -391,16 +392,40 @@
       ]
     },
     {
+      "matchId": 411936867,
+      "description": "10x shared 3x tech",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1754859300,
+      "outcome": "loss",
+      "preRating": 920,
+      "postRating": 903,
+      "eloChange": -17,
+      "civ": "Turks",
+      "teamAvgElo": 1013,
+      "opponentAvgElo": 1025,
+      "teammates": [
+        "Jormungand",
+        "calmdown",
+        "ChristopheG1970.Fr"
+      ],
+      "opponents": [
+        "Rita De Valencia",
+        "Lord Lee So Cacti",
+        "tony.li",
+        "VergaraRamirez"
+      ]
+    },
+    {
       "matchId": 411952904,
       "description": "3x tech - 10x shared - bamboo nothing",
       "mapname": "Bamboo Nothing - Scorpyon De",
       "timestamp": 1754864100,
       "outcome": "loss",
-      "preRating": 920,
-      "postRating": 899,
-      "eloChange": -21,
+      "preRating": 903,
+      "postRating": 885,
+      "eloChange": -18,
       "civ": "Unknown",
-      "teamAvgElo": 995,
+      "teamAvgElo": 992,
       "opponentAvgElo": 972,
       "teammates": [
         "KnightofSaintJohn",
@@ -420,12 +445,12 @@
       "mapname": "Bamboo Nothing - Scorpyon De",
       "timestamp": 1755145260,
       "outcome": "win",
-      "preRating": 899,
-      "postRating": 927,
-      "eloChange": 28,
+      "preRating": 885,
+      "postRating": 912,
+      "eloChange": 27,
       "civ": "Unknown",
-      "teamAvgElo": 1001,
-      "opponentAvgElo": 989,
+      "teamAvgElo": 997,
+      "opponentAvgElo": 988,
       "teammates": [
         "brunopt99",
         "veeeeker",
