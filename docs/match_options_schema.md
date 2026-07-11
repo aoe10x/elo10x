@@ -66,6 +66,14 @@ The `options` payload contains global game lobby settings. The schema has evolve
 | **`79`** | Allow Cheats Toggle | New | `y`: Enabled, `n`: Disabled (Ranked default) |
 | **`93`** | Match Type ID | New | Matches the API's `matchtype_id` (e.g. `6`: 1v1 RM, `7`: 2v2 RM, `8`: 3v3 RM, `9`: 4v4 RM, `0`: Custom) |
 
+> [!TIP]
+> **Resolving Mod Information from ID**:
+> You can query the aoe2.se Mod API to fetch details (title, description, screenshots) for any published Mod ID:
+> ```bash
+> curl --url 'https://mods.aoe2.se/api/v1/mod/<mod_id>'
+> ```
+> (e.g., `https://mods.aoe2.se/api/v1/mod/363188` for the 10x Shared Civ PQ mod).
+
 ---
 
 ## 4. SlotInfo Schema

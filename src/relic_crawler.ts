@@ -1,3 +1,4 @@
+import zlib from 'node:zlib';
 import type { JsonDatabase } from './db.ts';
 import type { Lobby, Match, MatchPlayer, PlayerProfile } from './types.ts';
 import { buildMatchFingerprint } from './match_fingerprint.ts';
@@ -10,6 +11,44 @@ function delay(ms: number): Promise<void> {
 }
 
 // No cooldown — always crawl fresh on every run
+
+function decodeOptions(optionsB64: string | undefined): Record<string, string> {
+  if (!optionsB64) return {};
+  try {
+    const compressed = Buffer.from(optionsB64, 'base64');
+    const decompressedStr = zlib.inflateSync(compressed).toString('utf8').trim();
+    
+    let rawStr = decompressedStr;
+    if (rawStr.startsWith('"') && rawStr.endsWith('"')) {
+      rawStr = rawStr.slice(1, -1);
+    }
+    
+    const binaryBuffer = Buffer.from(rawStr, 'base64');
+    if (binaryBuffer.length === 0) return {};
+    
+    const pairCount = binaryBuffer.readUInt8(0);
+    const options: Record<string, string> = {};
+    let offset = 1;
+    
+    for (let i = 0; i < pairCount; i++) {
+      if (offset + 4 > binaryBuffer.length) break;
+      const len = binaryBuffer.readInt32LE(offset);
+      offset += 4;
+      if (offset + len > binaryBuffer.length) break;
+      const kvStr = binaryBuffer.toString('utf8', offset, offset + len);
+      offset += len;
+      
+      const colonIndex = kvStr.indexOf(':');
+      if (colonIndex !== -1) {
+        options[kvStr.slice(0, colonIndex)] = kvStr.slice(colonIndex + 1);
+      }
+    }
+    return options;
+  } catch (err: any) {
+    console.warn('Failed to parse match options string:', err.message);
+    return {};
+  }
+}
 
 export class RelicCrawler {
   private db: JsonDatabase;
@@ -216,9 +255,30 @@ export class RelicCrawler {
 
       for (const m of data.matchHistoryStats) {
         matchCount++;
+        const parsedOptions = decodeOptions(m.options);
+        
+        const modId = parsedOptions['59'];
+        const modName = parsedOptions['63'];
         const lobbyTitle = m.description || '';
-        const is10x = /10x/i.test(lobbyTitle);
+        
+        // 10x Classification:
+        // - Mod ID 59 is official mod ID (e.g. 363188)
+        // - Mod Name 63 contains "10x" or "3x"
+        // - Or lobby title matches regex
+        const isMod10x = modId === '363188' || (modName && /10x/i.test(modName)) || (modName && /3x/i.test(modName));
+        const isTitle10x = /10x/i.test(lobbyTitle);
+        const is10x = isMod10x || isTitle10x;
+        
         const isRecent = m.startgametime >= cutoffTimestamp;
+
+        // Custom map resolution:
+        // - Key 11 contains custom map .rms script filename
+        // - Fallback to API mapname
+        let mapname = m.mapname || '';
+        const customMap = parsedOptions['11'];
+        if (customMap && customMap.endsWith('.rms')) {
+          mapname = customMap.replace(/\.rms$/i, '').trim();
+        }
 
         const participants: MatchPlayer[] = [];
         const candidatePlayerIds: number[] = [];
@@ -257,14 +317,14 @@ export class RelicCrawler {
             id: m.id,
             source: 'relic_api',
             creator_profile_id: m.creator_profile_id,
-            mapname: m.mapname || '',
+            mapname: mapname,
             maxplayers: m.maxplayers || 8,
             matchtype_id: m.matchtype_id || 0,
             description: lobbyTitle,
             startgametime: m.startgametime,
             completiontime: m.completiontime,
             players: participants,
-            gamemod_id: m.gamemod_id
+            gamemod_id: modId ? parseInt(modId, 10) : (m.gamemod_id || undefined)
           };
 
           const isExisting = this.db.hasMatch(m.id);
