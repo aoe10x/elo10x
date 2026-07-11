@@ -1,12 +1,12 @@
 {
   "profile_id": 4436228,
   "alias": "Tamra Robinson",
-  "rating": 1034,
-  "wins": 18,
+  "rating": 1049,
+  "wins": 19,
   "losses": 21,
-  "gamesCount": 39,
-  "winRate": 46,
-  "lastPlayedAt": 1780186980,
+  "gamesCount": 40,
+  "winRate": 48,
+  "lastPlayedAt": 1783783561,
   "country": "gb",
   "merged_ids": [],
   "ratingHistory": [
@@ -49,33 +49,10 @@
     982,
     999,
     1018,
-    1034
+    1034,
+    1049
   ],
   "recentMatches": [
-    {
-      "matchId": 404443934,
-      "description": "10x 3x bamboo nothing  turbo",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1751820240,
-      "outcome": "loss",
-      "preRating": 905,
-      "postRating": 894,
-      "eloChange": -11,
-      "civ": "Unknown",
-      "teamAvgElo": 958,
-      "opponentAvgElo": 1051,
-      "teammates": [
-        "rockcat32",
-        "schrubber",
-        "babeleo"
-      ],
-      "opponents": [
-        "gmc inspector",
-        "[BÜN] Steelbread69",
-        "PIEROGI",
-        "Lowen"
-      ]
-    },
     {
       "matchId": 407574226,
       "description": "256x 10x FN",
@@ -530,6 +507,30 @@
         "pool_champ",
         "Bryce Coolguy",
         "Dayman"
+      ]
+    },
+    {
+      "matchId": 491592203,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783783561,
+      "outcome": "win",
+      "preRating": 1034,
+      "postRating": 1049,
+      "eloChange": 15,
+      "civ": "Bohemians",
+      "teamAvgElo": 1077,
+      "opponentAvgElo": 1020,
+      "teammates": [
+        "Papillon",
+        "待ったかね？",
+        "kekekeya"
+      ],
+      "opponents": [
+        "Rito",
+        "jair_silva",
+        "kaka52pk",
+        "取款机ATM"
       ]
     }
   ]

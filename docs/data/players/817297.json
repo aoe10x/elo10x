@@ -1,12 +1,12 @@
 {
   "profile_id": 817297,
   "alias": "ChiH",
-  "rating": 951,
+  "rating": 940,
   "wins": 19,
-  "losses": 27,
-  "gamesCount": 46,
-  "winRate": 41,
-  "lastPlayedAt": 1783511842,
+  "losses": 28,
+  "gamesCount": 47,
+  "winRate": 40,
+  "lastPlayedAt": 1783776709,
   "country": "ru",
   "merged_ids": [],
   "ratingHistory": [
@@ -56,33 +56,10 @@
     990,
     977,
     965,
-    951
+    951,
+    940
   ],
   "recentMatches": [
-    {
-      "matchId": 479089849,
-      "description": "10x 3x Bamboo Nothing random civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1779254340,
-      "outcome": "loss",
-      "preRating": 1071,
-      "postRating": 1052,
-      "eloChange": -19,
-      "civ": "Cumans",
-      "teamAvgElo": 1020,
-      "opponentAvgElo": 1008,
-      "teammates": [
-        "Mehandor",
-        "Paris Hilton",
-        "skoolied"
-      ],
-      "opponents": [
-        "Ferdinand I of Naples",
-        "Wololoo",
-        "Vince",
-        "Sentauri"
-      ]
-    },
     {
       "matchId": 479093533,
       "description": "10x 3x Bamboo Nothing random civ",
@@ -398,7 +375,7 @@
     {
       "matchId": 490004293,
       "description": "10x 3x bamboo nothing  turbo host here",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
       "timestamp": 1783169915,
       "outcome": "win",
       "preRating": 929,
@@ -446,7 +423,7 @@
     {
       "matchId": 490248624,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
       "timestamp": 1783253587,
       "outcome": "win",
       "preRating": 969,
@@ -470,7 +447,7 @@
     {
       "matchId": 490249984,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
       "timestamp": 1783253748,
       "outcome": "loss",
       "preRating": 990,
@@ -537,6 +514,30 @@
         "majorleyendo",
         "ototomato",
         "CaptainBarbossa"
+      ]
+    },
+    {
+      "matchId": 491564713,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783776709,
+      "outcome": "loss",
+      "preRating": 951,
+      "postRating": 940,
+      "eloChange": -11,
+      "civ": "Unknown",
+      "teamAvgElo": 1030,
+      "opponentAvgElo": 1065,
+      "teammates": [
+        "tonzo",
+        "Chikna Raavan",
+        "紫蝶黄蜂俱有情"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "cyberocioso",
+        "konishika",
+        "Ghost_pt"
       ]
     }
   ]

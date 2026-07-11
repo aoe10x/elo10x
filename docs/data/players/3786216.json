@@ -1,12 +1,12 @@
 {
   "profile_id": 3786216,
   "alias": "Barosanu512",
-  "rating": 1022,
+  "rating": 999,
   "wins": 53,
-  "losses": 47,
-  "gamesCount": 100,
-  "winRate": 53,
-  "lastPlayedAt": 1783198140,
+  "losses": 49,
+  "gamesCount": 102,
+  "winRate": 52,
+  "lastPlayedAt": 1783779552,
   "country": "ro",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,6 @@
     1011,
     1040,
     1017,
-    998,
     986,
     1007,
     1026,
@@ -60,7 +59,7 @@
     1111,
     1097,
     1111,
-    1102,
+    1089,
     1116,
     1100,
     1082,
@@ -93,7 +92,6 @@
     1081,
     1064,
     1048,
-    1063,
     1046,
     1029,
     1011,
@@ -109,57 +107,11 @@
     999,
     988,
     1007,
-    1022
+    1022,
+    1011,
+    999
   ],
   "recentMatches": [
-    {
-      "matchId": 448548176,
-      "description": "3x 10x bamboo - random civ",
-      "mapname": "Bamboo Nothing_Paren_V3.0",
-      "timestamp": 1768537080,
-      "outcome": "win",
-      "preRating": 1067,
-      "postRating": 1081,
-      "eloChange": 14,
-      "civ": "Unknown",
-      "teamAvgElo": 1044,
-      "opponentAvgElo": 1014,
-      "teammates": [
-        "Cale94",
-        "Lumedge",
-        "peanut butter"
-      ],
-      "opponents": [
-        "gemmascho",
-        "schrubber",
-        "將軍的恩情還不完",
-        "Pope Leo I."
-      ]
-    },
-    {
-      "matchId": 456638756,
-      "description": "+10x+3xtech   no noob",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1771277040,
-      "outcome": "loss",
-      "preRating": 1081,
-      "postRating": 1064,
-      "eloChange": -17,
-      "civ": "Mongols",
-      "teamAvgElo": 1027,
-      "opponentAvgElo": 1065,
-      "teammates": [
-        "拍车面前人人平等",
-        "TurnedDuck2267",
-        "UlissePigro"
-      ],
-      "opponents": [
-        "Dellox",
-        "Rice Monger (SoullessMZD)",
-        "[S33]ff",
-        "Janez"
-      ]
-    },
     {
       "matchId": 465530756,
       "description": "10x shared civ bonus tunnel",
@@ -590,6 +542,54 @@
         "elemnt",
         "shemirage",
         "PIEROGI"
+      ]
+    },
+    {
+      "matchId": 491534848,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783766568,
+      "outcome": "loss",
+      "preRating": 1022,
+      "postRating": 1011,
+      "eloChange": -11,
+      "civ": "Celts",
+      "teamAvgElo": 1008,
+      "opponentAvgElo": 1141,
+      "teammates": [
+        "k0rnm@yer",
+        "fafounet",
+        "Prinz Kay1"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "pandalam",
+        "shining star",
+        "fxsound"
+      ]
+    },
+    {
+      "matchId": 491574249,
+      "description": "3X 10X",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783779552,
+      "outcome": "loss",
+      "preRating": 1011,
+      "postRating": 999,
+      "eloChange": -12,
+      "civ": "Bulgarians",
+      "teamAvgElo": 994,
+      "opponentAvgElo": 1103,
+      "teammates": [
+        "hoderebus",
+        "勇战到抵",
+        "Lama Kužel"
+      ],
+      "opponents": [
+        "GiGi",
+        "476055690",
+        "kaka52pk",
+        "[CSGS]Runescape"
       ]
     }
   ]

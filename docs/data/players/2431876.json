@@ -1,12 +1,12 @@
 {
   "profile_id": 2431876,
   "alias": "Ignaqcio",
-  "rating": 913,
+  "rating": 895,
   "wins": 40,
-  "losses": 57,
-  "gamesCount": 97,
-  "winRate": 41,
-  "lastPlayedAt": 1775635140,
+  "losses": 59,
+  "gamesCount": 99,
+  "winRate": 40,
+  "lastPlayedAt": 1783743071,
   "country": "cl",
   "merged_ids": [],
   "ratingHistory": [
@@ -107,57 +107,11 @@
     879,
     902,
     891,
-    913
+    913,
+    904,
+    895
   ],
   "recentMatches": [
-    {
-      "matchId": 455236332,
-      "description": "bamboo nothing 10x 3x PQ",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1770781560,
-      "outcome": "loss",
-      "preRating": 950,
-      "postRating": 937,
-      "eloChange": -13,
-      "civ": "Unknown",
-      "teamAvgElo": 1014,
-      "opponentAvgElo": 1026,
-      "teammates": [
-        "Al Ghouti",
-        "Feid",
-        "TheCobra"
-      ],
-      "opponents": [
-        "apolizer",
-        "Imperator Storm",
-        "McKrakfejs",
-        "JonAa"
-      ]
-    },
-    {
-      "matchId": 455242782,
-      "description": "bamboo nothing 10x 3x PQ",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1770782940,
-      "outcome": "loss",
-      "preRating": 937,
-      "postRating": 926,
-      "eloChange": -11,
-      "civ": "Unknown",
-      "teamAvgElo": 1006,
-      "opponentAvgElo": 1043,
-      "teammates": [
-        "Al Ghouti",
-        "Imperator Storm",
-        "rafuk89"
-      ],
-      "opponents": [
-        "JonAa",
-        "Mortak",
-        "[B] Cannino",
-        "trogfield4"
-      ]
-    },
     {
       "matchId": 456279790,
       "description": "bamboo nothing 10x 3x PQ",
@@ -588,6 +542,54 @@
         "Hellblazer",
         "Prcmt",
         "tedmed"
+      ]
+    },
+    {
+      "matchId": 491472883,
+      "description": "PQ 10x 3x bamboo 4vs4",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783741949,
+      "outcome": "loss",
+      "preRating": 913,
+      "postRating": 904,
+      "eloChange": -9,
+      "civ": "Ethiopians",
+      "teamAvgElo": 997,
+      "opponentAvgElo": 1073,
+      "teammates": [
+        "Al Ghouti",
+        "Dylan Dog",
+        "Moose"
+      ],
+      "opponents": [
+        "田瘾犯了",
+        "Waryahay",
+        "momo",
+        "mozu5"
+      ]
+    },
+    {
+      "matchId": 491477219,
+      "description": "10x_3x_Bamboo_Nothing_Random",
+      "mapname": "Bamboo Nothing v4 (BaLi)",
+      "timestamp": 1783743071,
+      "outcome": "loss",
+      "preRating": 904,
+      "postRating": 895,
+      "eloChange": -9,
+      "civ": "Slavs",
+      "teamAvgElo": 996,
+      "opponentAvgElo": 1074,
+      "teammates": [
+        "Ellie91",
+        "pandasadnap",
+        "Al Ghouti"
+      ],
+      "opponents": [
+        "Contry",
+        "mark0112",
+        "田瘾犯了",
+        "476055690"
       ]
     }
   ]

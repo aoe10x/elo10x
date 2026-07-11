@@ -1,12 +1,12 @@
 {
   "profile_id": 2559539,
   "alias": "Axila, el Turro",
-  "rating": 885,
+  "rating": 878,
   "wins": 19,
-  "losses": 41,
-  "gamesCount": 60,
-  "winRate": 32,
-  "lastPlayedAt": 1783629438,
+  "losses": 42,
+  "gamesCount": 61,
+  "winRate": 31,
+  "lastPlayedAt": 1783785054,
   "country": "ar",
   "merged_ids": [],
   "ratingHistory": [
@@ -70,33 +70,10 @@
     882,
     904,
     895,
-    885
+    885,
+    878
   ],
   "recentMatches": [
-    {
-      "matchId": 434065133,
-      "description": "BAMBOO 10x **NO BEGINNER",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1763535660,
-      "outcome": "loss",
-      "preRating": 869,
-      "postRating": 860,
-      "eloChange": -9,
-      "civ": "Celts",
-      "teamAvgElo": 1039,
-      "opponentAvgElo": 1030,
-      "teammates": [
-        "Logicos123",
-        "rafuk89",
-        "dRea"
-      ],
-      "opponents": [
-        "wEEBER",
-        "Surnrnoner",
-        "gmc inspector",
-        "aLEXt"
-      ]
-    },
     {
       "matchId": 434283140,
       "description": "10x shared 3x tech bamboo",
@@ -551,6 +528,30 @@
         "NothingAtAll11",
         "Gladiator",
         "GuguBot"
+      ]
+    },
+    {
+      "matchId": 491596731,
+      "description": "Bamboo nothing 10X3X",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783785054,
+      "outcome": "loss",
+      "preRating": 885,
+      "postRating": 878,
+      "eloChange": -7,
+      "civ": "Burmese",
+      "teamAvgElo": 955,
+      "opponentAvgElo": 1106,
+      "teammates": [
+        "yxsko93",
+        "omnomnomnivore",
+        "Bachter"
+      ],
+      "opponents": [
+        "sppd3181",
+        "Frederick",
+        "Tiny Hands",
+        "Ghost_pt"
       ]
     }
   ]

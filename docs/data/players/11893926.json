@@ -1,12 +1,12 @@
 {
   "profile_id": 11893926,
   "alias": "Not a Wizard",
-  "rating": 1038,
+  "rating": 959,
   "wins": 57,
-  "losses": 58,
-  "gamesCount": 115,
-  "winRate": 50,
-  "lastPlayedAt": 1783709947,
+  "losses": 64,
+  "gamesCount": 121,
+  "winRate": 47,
+  "lastPlayedAt": 1783739791,
   "country": "us",
   "merged_ids": [
     11693822,
@@ -16,20 +16,19 @@
     1000,
     951,
     1003,
-    1052,
+    1093,
     1132,
     1077,
     1033,
-    1072,
     1105,
     1127,
+    1095,
     1060,
     1029,
-    1003,
     982,
     959,
     945,
-    956,
+    973,
     939,
     926,
     916,
@@ -39,16 +38,15 @@
     929,
     919,
     941,
-    931,
     954,
+    941,
     960,
     982,
-    1000,
     986,
     975,
     994,
+    981,
     969,
-    957,
     979,
     968,
     990,
@@ -58,16 +56,15 @@
     1042,
     1058,
     1072,
-    1054,
+    1069,
     1082,
     1065,
     1049,
-    1034,
     1051,
     1037,
     1052,
+    1071,
     1088,
-    1103,
     1087,
     1104,
     1116,
@@ -77,188 +74,47 @@
     1153,
     1134,
     1143,
-    1123,
+    1104,
     1087,
     1068,
     1050,
-    1033,
     1019,
     1034,
+    1054,
     1070,
     1054,
-    1036,
     1019,
     1032,
     1050,
-    1046,
+    1064,
     1064,
     1044,
     1028,
     1042,
-    1055,
+    1069,
     1083,
     1066,
     1084,
     1064,
-    1077,
     1094,
+    1078,
     1062,
     1046,
-    1063,
     1078,
     1093,
     1105,
+    1088,
     1071,
-    1054,
     1037,
     1022,
-    1038
+    1038,
+    1024,
+    996,
+    982,
+    970,
+    959
   ],
   "recentMatches": [
-    {
-      "matchId": 490026716,
-      "description": "BAMBOO 10x3xtech",
-      "mapname": "my map",
-      "timestamp": 1783176583,
-      "outcome": "win",
-      "preRating": 1055,
-      "postRating": 1069,
-      "eloChange": 14,
-      "civ": "Tupi",
-      "teamAvgElo": 991,
-      "opponentAvgElo": 1002,
-      "teammates": [
-        "476055690",
-        "Goodsoup",
-        "Filtz"
-      ],
-      "opponents": [
-        "iamatthe.hell",
-        "kekekeya",
-        "Rin Tin Tin",
-        "mk48"
-      ]
-    },
-    {
-      "matchId": 490520917,
-      "description": "10x 3x BN ",
-      "mapname": "my map",
-      "timestamp": 1783355747,
-      "outcome": "win",
-      "preRating": 1069,
-      "postRating": 1083,
-      "eloChange": 14,
-      "civ": "Persians",
-      "teamAvgElo": 1119,
-      "opponentAvgElo": 1016,
-      "teammates": [
-        "[CSGS]Runescape",
-        "TheRiceMan",
-        "hussein"
-      ],
-      "opponents": [
-        "pool_champ",
-        "RA",
-        "Optimus",
-        "adrian668"
-      ]
-    },
-    {
-      "matchId": 490546628,
-      "description": "10x 3x BN ",
-      "mapname": "my map",
-      "timestamp": 1783363801,
-      "outcome": "loss",
-      "preRating": 1083,
-      "postRating": 1066,
-      "eloChange": -17,
-      "civ": "Vietnamese",
-      "teamAvgElo": 1049,
-      "opponentAvgElo": 1051,
-      "teammates": [
-        "pool_champ",
-        "tonzo",
-        "Xinzzo"
-      ],
-      "opponents": [
-        "herelin0",
-        "Abused but whole",
-        "Ye",
-        "wurst456"
-      ]
-    },
-    {
-      "matchId": 490568367,
-      "description": "10X 3X BN NO NOOBS",
-      "mapname": "my map",
-      "timestamp": 1783371673,
-      "outcome": "win",
-      "preRating": 1066,
-      "postRating": 1084,
-      "eloChange": 18,
-      "civ": "Tupi",
-      "teamAvgElo": 1080,
-      "opponentAvgElo": 1105,
-      "teammates": [
-        "duckbuildperson",
-        "Maic",
-        "CaptainBarbossa"
-      ],
-      "opponents": [
-        "Hariman",
-        "Paulichromatic",
-        "Abused but whole",
-        "El Barto"
-      ]
-    },
-    {
-      "matchId": 490592499,
-      "description": "10x 3x Bamboo Nothing random civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1783380025,
-      "outcome": "loss",
-      "preRating": 1084,
-      "postRating": 1064,
-      "eloChange": -20,
-      "civ": "Poles",
-      "teamAvgElo": 1042,
-      "opponentAvgElo": 1007,
-      "teammates": [
-        "skoolied",
-        "RA",
-        "LonelyKnight"
-      ],
-      "opponents": [
-        "omnomnomnivore",
-        "tacotoy",
-        "ernestocorrea18",
-        "Mehandor"
-      ]
-    },
-    {
-      "matchId": 490597870,
-      "description": "10x_3x_Bamboo_Nothing_Random",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1783382097,
-      "outcome": "win",
-      "preRating": 1064,
-      "postRating": 1077,
-      "eloChange": 13,
-      "civ": "Magyars",
-      "teamAvgElo": 1068,
-      "opponentAvgElo": 1009,
-      "teammates": [
-        "Contry",
-        "Tiny Hands",
-        "Ozyroth"
-      ],
-      "opponents": [
-        "LonelyKnight",
-        "RedBullWOLOLO26",
-        "StreamerOffline",
-        "calebw704"
-      ]
-    },
     {
       "matchId": 490602775,
       "description": "10x Shared Civ Bonus 4v4 Random ",
@@ -310,7 +166,7 @@
     {
       "matchId": 490906245,
       "description": "i kun 10x3x 4v4s qun729084973",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1783520135,
       "outcome": "loss",
       "preRating": 1078,
@@ -430,7 +286,7 @@
     {
       "matchId": 491326235,
       "description": "3X 10X",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
       "timestamp": 1783696082,
       "outcome": "win",
       "preRating": 1093,
@@ -558,7 +414,7 @@
       "eloChange": -15,
       "civ": "Celts",
       "teamAvgElo": 1012,
-      "opponentAvgElo": 1064,
+      "opponentAvgElo": 1059,
       "teammates": [
         "OrangE",
         "Sal",
@@ -574,7 +430,7 @@
     {
       "matchId": 491374600,
       "description": "4vs4 10x 3x shared civ bonus, random civ",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1783709947,
       "outcome": "win",
       "preRating": 1022,
@@ -593,6 +449,150 @@
         "sppd3181",
         "BarqBarq",
         "Koalakapitaen"
+      ]
+    },
+    {
+      "matchId": 491445668,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1783732980,
+      "outcome": "loss",
+      "preRating": 1038,
+      "postRating": 1024,
+      "eloChange": -14,
+      "civ": "Ethiopians",
+      "teamAvgElo": 1032,
+      "opponentAvgElo": 1092,
+      "teammates": [
+        "ArchiCraig",
+        "feid_",
+        "PoonSlapper"
+      ],
+      "opponents": [
+        "Kumad",
+        "EL__PATRON",
+        "tonzo",
+        "Myriad"
+      ]
+    },
+    {
+      "matchId": 491449881,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1783734328,
+      "outcome": "loss",
+      "preRating": 1024,
+      "postRating": 1011,
+      "eloChange": -13,
+      "civ": "Bohemians",
+      "teamAvgElo": 1025,
+      "opponentAvgElo": 1100,
+      "teammates": [
+        "EL__PATRON",
+        "PoonSlapper",
+        "ArchiCraig"
+      ],
+      "opponents": [
+        "Kumad",
+        "feid_",
+        "tonzo",
+        "Myriad"
+      ]
+    },
+    {
+      "matchId": 491452773,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1783735301,
+      "outcome": "loss",
+      "preRating": 1011,
+      "postRating": 996,
+      "eloChange": -15,
+      "civ": "Spartans",
+      "teamAvgElo": 1068,
+      "opponentAvgElo": 1034,
+      "teammates": [
+        "Kumad",
+        "Myriad",
+        "PoonSlapper"
+      ],
+      "opponents": [
+        "EL__PATRON",
+        "feid_",
+        "JR_Nero",
+        "ArchiCraig"
+      ]
+    },
+    {
+      "matchId": 491455912,
+      "description": "PQ 10x 3x bamboo 4vs4",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783736704,
+      "outcome": "loss",
+      "preRating": 996,
+      "postRating": 982,
+      "eloChange": -14,
+      "civ": "Mapuche",
+      "teamAvgElo": 1040,
+      "opponentAvgElo": 1038,
+      "teammates": [
+        "buyanjavyn",
+        "Colonel Otto",
+        "JR_Nero"
+      ],
+      "opponents": [
+        "Al Ghouti",
+        "Sal",
+        "doraemon",
+        "Xinzzo"
+      ]
+    },
+    {
+      "matchId": 491460341,
+      "description": "PQ 10x 3x bamboo 4vs4",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783737765,
+      "outcome": "loss",
+      "preRating": 982,
+      "postRating": 970,
+      "eloChange": -12,
+      "civ": "Bengalis",
+      "teamAvgElo": 1026,
+      "opponentAvgElo": 1061,
+      "teammates": [
+        "Sal",
+        "Tiny Hands",
+        "Sundev"
+      ],
+      "opponents": [
+        "Al Ghouti",
+        "Xinzzo",
+        "Wololo",
+        "kared117"
+      ]
+    },
+    {
+      "matchId": 491466116,
+      "description": "10x 3x BN ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783739791,
+      "outcome": "loss",
+      "preRating": 970,
+      "postRating": 959,
+      "eloChange": -11,
+      "civ": "Berbers",
+      "teamAvgElo": 1051,
+      "opponentAvgElo": 1079,
+      "teammates": [
+        "pool_champ",
+        "Waryahay",
+        "Bob's Uncle"
+      ],
+      "opponents": [
+        "Meursault005",
+        "Chikna Raavan",
+        "Xinzzo",
+        "fxsound"
       ]
     }
   ]
