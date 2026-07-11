@@ -91,11 +91,17 @@ export class InsightsCrawler {
     const profiles = this.db.getAllProfiles();
     const candidates = profiles.map(p => {
       const manifest = this.db.getPlayerManifest(p.profile_id);
+      
+      // Skip dead/404 profiles that have reached start with 0 matches
+      if (manifest?.insights?.has_reached_start && manifest?.insights?.newest_match_id === 0) {
+        return null;
+      }
+
       return {
         profileId: p.profile_id,
         lastCrawledAt: manifest?.insights?.last_crawled_at || 0
       };
-    });
+    }).filter((c): c is { profileId: number; lastCrawledAt: number } => c !== null);
 
     candidates.sort((a, b) => a.lastCrawledAt - b.lastCrawledAt);
 
@@ -135,8 +141,13 @@ export class InsightsCrawler {
         const cooldownSec = isLive ? 0 : 8 * 60 * 60; // 8 hours cooldown
 
         const manifest = this.db.getPlayerManifest(profileId);
-        const lastCrawledSec = manifest?.insights?.last_crawled_at || 0;
+        
+        // Skip dead/404 profiles that have reached start with 0 matches
+        if (manifest?.insights?.has_reached_start && manifest?.insights?.newest_match_id === 0) {
+          continue;
+        }
 
+        const lastCrawledSec = manifest?.insights?.last_crawled_at || 0;
         if (nowSecs - lastCrawledSec < cooldownSec) {
           continue;
         }
