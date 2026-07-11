@@ -182,9 +182,14 @@ async function main(): Promise<void> {
       }
       
       console.log(`Selected top ${targetProfileIds.length} players for crawling:`);
-      for (const pid of targetProfileIds) {
+      const printLimit = 40;
+      for (let i = 0; i < Math.min(targetProfileIds.length, printLimit); i++) {
+        const pid = targetProfileIds[i];
         const alias = db.getProfile(pid)?.alias || `Player_${pid}`;
         console.log(`- ${alias} (ID ${pid}): ${playerCounts[pid] || 0} matches currently in DB`);
+      }
+      if (targetProfileIds.length > printLimit) {
+        console.log(`... and ${targetProfileIds.length - printLimit} more players.`);
       }
     }
     else {
