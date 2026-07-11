@@ -1,38 +1,31 @@
 {
   "profile_id": 12603720,
   "alias": "BazaLPG",
-  "rating": 1027,
-  "wins": 10,
-  "losses": 10,
-  "gamesCount": 20,
-  "winRate": 50,
-  "lastPlayedAt": 1783180096,
-  "merged_ids": [
-    12603720,
-    18174984
-  ],
+  "rating": 1026,
+  "wins": 8,
+  "losses": 7,
+  "gamesCount": 15,
+  "winRate": 53,
+  "lastPlayedAt": 1755390000,
+  "country": "Unknown",
+  "merged_ids": [],
   "ratingHistory": [
     1000,
-    1045,
-    988,
-    947,
-    1000,
-    1045,
-    996,
-    1032,
-    995,
-    1033,
-    1004,
-    969,
-    946,
-    930,
-    958,
-    943,
-    974,
-    998,
-    1021,
+    1047,
+    989,
+    1030,
+    978,
+    1024,
+    979,
+    1018,
+    1054,
+    1009,
+    1040,
+    1007,
     1041,
-    1027
+    1018,
+    1000,
+    1026
   ],
   "recentMatches": [
     {
@@ -42,11 +35,11 @@
       "timestamp": null,
       "outcome": "win",
       "preRating": 1000,
-      "postRating": 1045,
-      "eloChange": 45,
+      "postRating": 1047,
+      "eloChange": 47,
       "civ": "Unknown",
-      "teamAvgElo": 1018,
-      "opponentAvgElo": 977,
+      "teamAvgElo": 1035,
+      "opponentAvgElo": 988,
       "teammates": [
         "pandalam",
         "FrostByte",
@@ -60,17 +53,65 @@
       ]
     },
     {
+      "matchId": 293311197,
+      "description": "10x shared civ all random",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1708394760,
+      "outcome": "loss",
+      "preRating": 1047,
+      "postRating": 989,
+      "eloChange": -58,
+      "civ": "Vietnamese",
+      "teamAvgElo": 1025,
+      "opponentAvgElo": 964,
+      "teammates": [
+        "♥DraganBorn♥",
+        "Kakikintsugitecture",
+        "你行nissan阿"
+      ],
+      "opponents": [
+        "Mark Rutte",
+        "Ivy",
+        "25chai",
+        "Brotherman Bill"
+      ]
+    },
+    {
+      "matchId": 295850052,
+      "description": "FOREST NOTHING  10x SHARED CIV",
+      "mapname": "Forest Nothing De",
+      "timestamp": 1709398500,
+      "outcome": "win",
+      "preRating": 989,
+      "postRating": 1030,
+      "eloChange": 41,
+      "civ": "Byzantines",
+      "teamAvgElo": 962,
+      "opponentAvgElo": 956,
+      "teammates": [
+        "Jeff",
+        "LORDoftheMEMES",
+        "Lego =]"
+      ],
+      "opponents": [
+        "mrkus.shlz",
+        "VITAL",
+        "adrian",
+        "zellote"
+      ]
+    },
+    {
       "matchId": 300782087,
       "description": "BAMBOO NOTHING 10x SHARED CIV",
       "mapname": "Bamboo Nothing - Scorpyon De",
       "timestamp": 1711231440,
       "outcome": "loss",
-      "preRating": 1045,
-      "postRating": 988,
-      "eloChange": -57,
+      "preRating": 1030,
+      "postRating": 978,
+      "eloChange": -52,
       "civ": "Unknown",
-      "teamAvgElo": 1011,
-      "opponentAvgElo": 966,
+      "teamAvgElo": 963,
+      "opponentAvgElo": 962,
       "teammates": [
         "ALEXSIS",
         "Burger King",
@@ -84,17 +125,41 @@
       ]
     },
     {
+      "matchId": 303503113,
+      "description": "10x shared random civ all welcome host here",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1712190180,
+      "outcome": "win",
+      "preRating": 978,
+      "postRating": 1024,
+      "eloChange": 46,
+      "civ": "Vietnamese",
+      "teamAvgElo": 970,
+      "opponentAvgElo": 1013,
+      "teammates": [
+        "Lumedge",
+        "Cale94",
+        "Croissanne"
+      ],
+      "opponents": [
+        "donot 2v1",
+        "兮梦",
+        "JuanMalote",
+        "HomerDalors"
+      ]
+    },
+    {
       "matchId": 325756540,
       "description": "10x Bamboo",
       "mapname": "Bamboo_Nothing_V3_Nowater",
       "timestamp": 1720817580,
       "outcome": "loss",
-      "preRating": 988,
-      "postRating": 947,
-      "eloChange": -41,
+      "preRating": 1024,
+      "postRating": 979,
+      "eloChange": -45,
       "civ": "Unknown",
-      "teamAvgElo": 997,
-      "opponentAvgElo": 1024,
+      "teamAvgElo": 1019,
+      "opponentAvgElo": 981,
       "teammates": [
         "BigWillie",
         "PIEROGI",
@@ -113,12 +178,12 @@
       "mapname": "Bamboo Nothing - Scorpyon De",
       "timestamp": 1720884360,
       "outcome": "win",
-      "preRating": 947,
-      "postRating": 1000,
-      "eloChange": 53,
+      "preRating": 979,
+      "postRating": 1018,
+      "eloChange": 39,
       "civ": "Unknown",
-      "teamAvgElo": 954,
-      "opponentAvgElo": 1021,
+      "teamAvgElo": 973,
+      "opponentAvgElo": 986,
       "teammates": [
         "MoEzy",
         "Lord Snow",
@@ -137,12 +202,12 @@
       "mapname": "Amazon Tunnel",
       "timestamp": 1721083500,
       "outcome": "win",
-      "preRating": 1000,
-      "postRating": 1045,
-      "eloChange": 45,
+      "preRating": 1018,
+      "postRating": 1054,
+      "eloChange": 36,
       "civ": "Unknown",
-      "teamAvgElo": 1023,
-      "opponentAvgElo": 1026,
+      "teamAvgElo": 1020,
+      "opponentAvgElo": 1011,
       "teammates": [
         "金樽",
         "Phantom_",
@@ -161,12 +226,12 @@
       "mapname": "Bamboo_Nothing_V3_Nowater",
       "timestamp": 1725212640,
       "outcome": "loss",
-      "preRating": 1045,
-      "postRating": 996,
-      "eloChange": -49,
+      "preRating": 1054,
+      "postRating": 1009,
+      "eloChange": -45,
       "civ": "Unknown",
-      "teamAvgElo": 983,
-      "opponentAvgElo": 966,
+      "teamAvgElo": 1009,
+      "opponentAvgElo": 960,
       "teammates": [
         "LECIO",
         "okfkg173",
@@ -185,12 +250,12 @@
       "mapname": "256Xforestnothing",
       "timestamp": 1725765120,
       "outcome": "win",
-      "preRating": 996,
-      "postRating": 1032,
-      "eloChange": 36,
-      "civ": "Unknown",
-      "teamAvgElo": 1032,
-      "opponentAvgElo": 975,
+      "preRating": 1009,
+      "postRating": 1040,
+      "eloChange": 31,
+      "civ": "Franks",
+      "teamAvgElo": 1031,
+      "opponentAvgElo": 978,
       "teammates": [
         "hdygates",
         "FrostByte",
@@ -209,12 +274,12 @@
       "mapname": "256Xforestnothing",
       "timestamp": 1730258580,
       "outcome": "loss",
-      "preRating": 1032,
-      "postRating": 995,
-      "eloChange": -37,
+      "preRating": 1040,
+      "postRating": 1007,
+      "eloChange": -33,
       "civ": "Unknown",
-      "teamAvgElo": 1091,
-      "opponentAvgElo": 1034,
+      "teamAvgElo": 1084,
+      "opponentAvgElo": 1037,
       "teammates": [
         "gemmascho",
         "__3st__",
@@ -233,12 +298,12 @@
       "mapname": "Bamboo_Nothing_V3_Nowater",
       "timestamp": 1730584320,
       "outcome": "win",
-      "preRating": 995,
-      "postRating": 1033,
-      "eloChange": 38,
+      "preRating": 1007,
+      "postRating": 1041,
+      "eloChange": 34,
       "civ": "Unknown",
-      "teamAvgElo": 990,
-      "opponentAvgElo": 1022,
+      "teamAvgElo": 1019,
+      "opponentAvgElo": 1050,
       "teammates": [
         "LECIO",
         "UnL3SHed RagE87",
@@ -252,88 +317,16 @@
       ]
     },
     {
-      "matchId": 356585517,
-      "description": "10x 3x shared !!NO NOOBS!!",
-      "mapname": "Michi",
-      "timestamp": 1733511900,
-      "outcome": "loss",
-      "preRating": 1033,
-      "postRating": 1004,
-      "eloChange": -29,
-      "civ": "Unknown",
-      "teamAvgElo": 1039,
-      "opponentAvgElo": 1079,
-      "teammates": [
-        "JuanMalote",
-        "ChristopheG1970.Fr",
-        "SchneckeLuchs25"
-      ],
-      "opponents": [
-        "Age5464",
-        "Phantom_",
-        "Orinoco",
-        "crumpet"
-      ]
-    },
-    {
-      "matchId": 356636986,
-      "description": "10x 3x Bamboo http://10xshared.com",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1733533140,
-      "outcome": "loss",
-      "preRating": 1004,
-      "postRating": 969,
-      "eloChange": -35,
-      "civ": "Unknown",
-      "teamAvgElo": 973,
-      "opponentAvgElo": 972,
-      "teammates": [
-        "Parts",
-        "HexaKaty",
-        "Kindregg"
-      ],
-      "opponents": [
-        "YUJIN",
-        "Supreme Lord 'Kim Xi Trump'",
-        "SeeYouTomorrow",
-        "1200のせんしん"
-      ]
-    },
-    {
-      "matchId": 362111685,
-      "description": "10x 3x Bamboo http://10xshared.com",
-      "mapname": "Bamboo Nothing - +Wild ##############",
-      "timestamp": 1735715820,
-      "outcome": "loss",
-      "preRating": 969,
-      "postRating": 946,
-      "eloChange": -23,
-      "civ": "Unknown",
-      "teamAvgElo": 1092,
-      "opponentAvgElo": 1053,
-      "teammates": [
-        "Parts",
-        "I Love Clean Coal",
-        "Mimi"
-      ],
-      "opponents": [
-        "NothingAtAll11",
-        "MadRussian",
-        "Gladiator",
-        "CiMNeK"
-      ]
-    },
-    {
       "matchId": 362188102,
       "description": "bamboo nothing 10x (2 mirror)",
       "mapname": "Bamboo_Nothing_V3_Nowater",
       "timestamp": 1735759380,
       "outcome": "loss",
-      "preRating": 946,
-      "postRating": 930,
-      "eloChange": -16,
+      "preRating": 1041,
+      "postRating": 1018,
+      "eloChange": -23,
       "civ": "Unknown",
-      "teamAvgElo": 1024,
+      "teamAvgElo": 1050,
       "opponentAvgElo": 1110,
       "teammates": [
         "evelyncc",
@@ -348,75 +341,27 @@
       ]
     },
     {
-      "matchId": 370926756,
-      "description": "10x shared 3x tech Bamboo nothing random civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1739078700,
-      "outcome": "win",
-      "preRating": 930,
-      "postRating": 958,
-      "eloChange": 28,
-      "civ": "Unknown",
-      "teamAvgElo": 1008,
-      "opponentAvgElo": 944,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "Nimreh",
-        "Emusan"
-      ],
-      "opponents": [
-        "Bé",
-        "ch33tah",
-        "tarator",
-        "flaviozera"
-      ]
-    },
-    {
-      "matchId": 387131130,
-      "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
-      "mapname": "Bamboo Nothing - +Wild ##############",
-      "timestamp": 1745276520,
+      "matchId": 371168341,
+      "description": "10x civ shared 4v4",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1739157960,
       "outcome": "loss",
-      "preRating": 958,
-      "postRating": 943,
-      "eloChange": -15,
-      "civ": "Unknown",
-      "teamAvgElo": 986,
-      "opponentAvgElo": 1109,
+      "preRating": 1018,
+      "postRating": 1000,
+      "eloChange": -18,
+      "civ": "Vietnamese",
+      "teamAvgElo": 1008,
+      "opponentAvgElo": 1149,
       "teammates": [
-        "Broadwing",
-        "Carpet_Taxi",
-        "maddymsg"
+        "HorstSan",
+        "Neebs",
+        "Saghandis"
       ],
       "opponents": [
         "pandalam",
-        "老K",
-        "yimacs_yoyoyo",
-        "Max"
-      ]
-    },
-    {
-      "matchId": 410322736,
-      "description": "10x 3x bamboo nothing  turbo host here",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1754193060,
-      "outcome": "win",
-      "preRating": 943,
-      "postRating": 974,
-      "eloChange": 31,
-      "civ": "Unknown",
-      "teamAvgElo": 1010,
-      "opponentAvgElo": 1053,
-      "teammates": [
-        "TJ",
-        "Al Ghouti",
-        "GandalfGG"
-      ],
-      "opponents": [
-        "gmc inspector",
-        "im slow",
-        "Lykerya",
-        "sppd3181"
+        "__3st__",
+        "DEATH_CAT_",
+        "老K"
       ]
     },
     {
@@ -425,12 +370,12 @@
       "mapname": "Amazon Tunnel",
       "timestamp": 1755390000,
       "outcome": "win",
-      "preRating": 974,
-      "postRating": 998,
-      "eloChange": 24,
+      "preRating": 1000,
+      "postRating": 1026,
+      "eloChange": 26,
       "civ": "Unknown",
-      "teamAvgElo": 1130,
-      "opponentAvgElo": 1003,
+      "teamAvgElo": 1094,
+      "opponentAvgElo": 999,
       "teammates": [
         "pandalam",
         "GiGi",
@@ -441,78 +386,6 @@
         "beta_player",
         "Soviet Rambo",
         "Lesiu"
-      ]
-    },
-    {
-      "matchId": 432355450,
-      "description": "4V4 ===10x shared 3Xtech  4V4 random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1762899120,
-      "outcome": "win",
-      "preRating": 998,
-      "postRating": 1021,
-      "eloChange": 23,
-      "civ": "Unknown",
-      "teamAvgElo": 1075,
-      "opponentAvgElo": 1038,
-      "teammates": [
-        "NothingAtAll11",
-        "Lumedge",
-        "DaliMan"
-      ],
-      "opponents": [
-        "choolkkkk",
-        "grothendieck",
-        "devilishnutcracker",
-        "Railbuilder"
-      ]
-    },
-    {
-      "matchId": 455168100,
-      "description": "i kun 10x3x 4v4s ",
-      "mapname": "my map",
-      "timestamp": 1770731379,
-      "outcome": "win",
-      "preRating": 1021,
-      "postRating": 1041,
-      "eloChange": 20,
-      "civ": "Bulgarians",
-      "teamAvgElo": 1019,
-      "opponentAvgElo": 1033,
-      "teammates": [
-        "Lumedge",
-        "tonkatumura",
-        "Greyhounds"
-      ],
-      "opponents": [
-        "i kun 2.5",
-        "KingOfTheNorth",
-        "The Cobra Brothers",
-        "我是ikun"
-      ]
-    },
-    {
-      "matchId": 490040489,
-      "description": "4vs4 10x 3x shared civ bonus, random civ",
-      "mapname": "my map",
-      "timestamp": 1783180096,
-      "outcome": "loss",
-      "preRating": 1041,
-      "postRating": 1027,
-      "eloChange": -14,
-      "civ": "Persians",
-      "teamAvgElo": 1138,
-      "opponentAvgElo": 1112,
-      "teammates": [
-        "I am KSG",
-        "jair_silva",
-        "Kuecken_das_Vollstrecker"
-      ],
-      "opponents": [
-        "yimacs_yoyoyo",
-        "pandalam",
-        "Miwa",
-        "DreamLegion"
       ]
     }
   ]
