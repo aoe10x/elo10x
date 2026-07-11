@@ -17,6 +17,10 @@ https://aoe-api.worldsedgelink.com/community/leaderboard/getRecentMatchHistory?t
 ```
 This allows requesting up to **40 profiles in a single HTTP request**. Consequently, a session limit of **150 players** requires only **4 API requests** and completes in under 5 seconds, reducing server load and avoiding rate limits.
 
+> [!WARNING]
+> **Relic API History Limits & Unreliability**:
+> According to community observations (shared by Colonel Otto), the Relic API's match history buffer is highly restricted—often keeping only the **most recent 10 games per match type** (e.g. 1v1, Team Random Map)—and can be highly unreliable. This makes the Relic API unsuitable for deep historical backfills and highlights why the AoE2Insights page-by-page scraper is required to recover full player histories.
+
 ### Smart Seeding Design
 On each run, the crawler seeds the crawl queue using a multi-tiered queue strategy:
 * **Live Seeding**: Fetches active lobbies and live games from `aoe10x.com` APIs, queuing currently active players first for maximum freshness.
