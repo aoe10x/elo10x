@@ -1,12 +1,12 @@
 {
   "profile_id": 5044549,
   "alias": "Linkn00",
-  "rating": 987,
-  "wins": 6,
+  "rating": 1017,
+  "wins": 7,
   "losses": 10,
-  "gamesCount": 16,
-  "winRate": 38,
-  "lastPlayedAt": 1783673981,
+  "gamesCount": 17,
+  "winRate": 41,
+  "lastPlayedAt": 1783758337,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -26,7 +26,8 @@
     946,
     978,
     958,
-    987
+    987,
+    1017
   ],
   "recentMatches": [
     {
@@ -411,6 +412,30 @@
         "Prinz Kay1",
         "majorleyendo",
         "AOC_Snake"
+      ]
+    },
+    {
+      "matchId": 491515152,
+      "description": "Bamboo 10x 3x Welcome",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783758337,
+      "outcome": "win",
+      "preRating": 987,
+      "postRating": 1017,
+      "eloChange": 30,
+      "civ": "Saracens",
+      "teamAvgElo": 1061,
+      "opponentAvgElo": 1107,
+      "teammates": [
+        "The Cobra Brothers",
+        "PIEROGI",
+        "雲"
+      ],
+      "opponents": [
+        "Zavgor",
+        "levvafire",
+        "田瘾犯了",
+        "JuanMalote"
       ]
     }
   ]
