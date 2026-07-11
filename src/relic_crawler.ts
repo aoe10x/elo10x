@@ -105,6 +105,34 @@ export class RelicCrawler {
   }
 
   /**
+   * Calculates a dynamic cooldown for player crawling based on their activity in the last 30 days
+   */
+  private getDynamicCooldownMs(profileId: number, counts30d: Map<number, number>, isLive: boolean): number {
+    if (isLive) return 0; // Live players always have 0 cooldown
+    
+    const count = counts30d.get(profileId) || 0;
+    
+    if (count >= 80) {
+      // Extremely active (e.g. 2.6+ games/day) -> Cooldown: 2 hours
+      return 2 * 60 * 60 * 1000;
+    }
+    if (count >= 40) {
+      // Very active (e.g. 1.3+ games/day) -> Cooldown: 4 hours
+      return 4 * 60 * 60 * 1000;
+    }
+    if (count >= 15) {
+      // Moderately active (e.g. 0.5+ games/day) -> Cooldown: 8 hours
+      return 8 * 60 * 60 * 1000;
+    }
+    if (count >= 5) {
+      // Semi-active -> Cooldown: 24 hours (1 day)
+      return 24 * 60 * 60 * 1000;
+    }
+    // Inactive -> Cooldown: 72 hours (3 days)
+    return 72 * 60 * 60 * 1000;
+  }
+
+  /**
    * Seed the crawler queue by fetching active lobbies from aoe10x.com APIs
    */
   async seedFromLobbies(): Promise<number[]> {
@@ -401,11 +429,23 @@ export class RelicCrawler {
     const cutoffTimestamp = Math.floor(Date.now() / 1000) - (monthsCutoff * 30 * 24 * 60 * 60);
     console.log(`Starting crawl. Filtering games after Unix timestamp: ${cutoffTimestamp} (${monthsCutoff} months ago)`);
 
+    // Calculate last 30 days activity once to compute dynamic player cooldowns
+    const nowSecs = Math.floor(Date.now() / 1000);
+    const day30ago = nowSecs - 30 * 24 * 3600;
+    const counts30d = new Map<number, number>();
+    for (const m of this.db.getMatches()) {
+      if (m.startgametime >= day30ago && m.players) {
+        for (const p of m.players) {
+          counts30d.set(p.profile_id, (counts30d.get(p.profile_id) || 0) + 1);
+        }
+      }
+    }
+
     // Seed from live lobbies, active db players, and background refreshes
     console.log('Seeding crawl queue from live lobbies + active db players + oldest crawled...');
     const livePlayerIds = new Set(await this.seedFromLobbies());
     await this.seedFromActivePlayers(limitCount);
-    await this.seedOldestCrawledPlayers(20);
+    await this.seedOldestCrawledPlayers(50); // Scale up background refresh target count to 50
 
     if (this.db.getCrawlQueueLength() === 0) {
       console.warn('Queue is empty after seeding. Cannot crawl.');
@@ -426,12 +466,11 @@ export class RelicCrawler {
         if (!profileId) break;
 
         if (!force) {
-          // Skip check:
-          //   1. Currently live players (online now in lobbies) have 0 cooldown (always crawled).
-          //   2. Other players have an 8-hour cooldown (ensures active players are crawled at least twice per day,
-          //      capturing all recent games before they fall off the Relic API's recent match list).
+          // Dynamic Cooldown Strategy:
+          // 1. Live players have 0 cooldown (always crawled).
+          // 2. Active players cooldown scales dynamically between 2h and 72h based on their recent activity.
           const isLive = livePlayerIds.has(profileId);
-          const cooldownMs = isLive ? 0 : 8 * 60 * 60 * 1000;
+          const cooldownMs = this.getDynamicCooldownMs(profileId, counts30d, isLive);
 
           if (this.db.isCrawled(profileId, cooldownMs)) {
             continue;

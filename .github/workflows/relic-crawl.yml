@@ -33,7 +33,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Run Relic API Crawl
-        run: node src/cli.ts crawl --limit 150 --months 3
+        run: node src/cli.ts crawl --limit 250 --months 3
 
       - name: Recalculate ELO Leaderboards
         run: node src/cli.ts elo
