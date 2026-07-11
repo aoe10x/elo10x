@@ -157,7 +157,7 @@ export class Aoe2InsightsScraper {
       if (payload.type === 'heartbeat') return;
 
       if (payload.type === 'player_done') {
-        const { playerId, matches, hitDepthLimit } = payload;
+        const { playerId, matches, reachedStartOfHistory } = payload;
         crawledCount++;
 
         // Save raw matches to temporary file under scraped_data/
@@ -165,11 +165,11 @@ export class Aoe2InsightsScraper {
         await fs.writeFile(tempFile, JSON.stringify({
           playerId,
           matches,
-          hitDepthLimit
+          reachedStartOfHistory
         }, null, 2), 'utf-8');
 
         const relPath = path.relative(process.cwd(), tempFile);
-        console.log(`[SCRAPER] Received player ${playerId}: ${matches.length} matches. Saved to ${relPath} (depth limit hit: ${hitDepthLimit})`);
+        console.log(`[SCRAPER] Received player ${playerId}: ${matches.length} matches. Saved to ${relPath} (reached start: ${reachedStartOfHistory})`);
 
         // Update Manifest
         const dbMatches = this.db.getMatches().filter(m => m.players.some(p => p.profile_id === playerId));
@@ -182,7 +182,7 @@ export class Aoe2InsightsScraper {
           playerOldestId = Math.min(...allIds);
         }
 
-        const reachedStart = playerCutoffs[playerId].hasReachedStart || !hitDepthLimit;
+        const reachedStart = playerCutoffs[playerId].hasReachedStart || reachedStartOfHistory;
 
         this.db.updatePlayerManifest(playerId, 'insights', {
           last_crawled_at: Math.round(Date.now() / 1000),
@@ -350,7 +350,7 @@ export class Aoe2InsightsScraper {
 
         async function scrapePlayer(playerId, limit, newestMatchId, oldestMatchId, hasReachedStart) {
           const results = [];
-          let hitDepthLimit = true;
+          let reachedStartOfHistory = false;
 
           for (let page = startPage; page <= limit; page++) {
             try {
@@ -358,7 +358,7 @@ export class Aoe2InsightsScraper {
               const res = await safeFetch(url);
               if (!res.ok) {
                 if (res.status === 404) {
-                  hitDepthLimit = false;
+                  reachedStartOfHistory = true;
                 }
                 break;
               }
@@ -367,7 +367,7 @@ export class Aoe2InsightsScraper {
               
               const tiles = doc.querySelectorAll('.match-tile');
               if (tiles.length === 0) {
-                hitDepthLimit = false;
+                reachedStartOfHistory = true;
                 break;
               }
 
@@ -449,6 +449,7 @@ export class Aoe2InsightsScraper {
               });
 
               if (hitBoundary) {
+                reachedStartOfHistory = true;
                 break;
               }
               await delay(250);
@@ -457,7 +458,7 @@ export class Aoe2InsightsScraper {
               break;
             }
           }
-          return { matches: results, hitDepthLimit };
+          return { matches: results, reachedStartOfHistory };
         }
 
         const queue = [...profileIds];
@@ -474,7 +475,7 @@ export class Aoe2InsightsScraper {
                 type: 'player_done',
                 playerId: pid,
                 matches: res.matches,
-                hitDepthLimit: res.hitDepthLimit
+                reachedStartOfHistory: res.reachedStartOfHistory
               });
               console.log('[BROWSER] Finished crawl for player ' + pid + ' (scraped ' + res.matches.length + ' matches)');
             } catch (err) {
