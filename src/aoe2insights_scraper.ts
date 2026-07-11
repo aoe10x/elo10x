@@ -357,7 +357,9 @@ export class Aoe2InsightsScraper {
                const url = '/user/' + playerId + '/matches/?page=' + page;
               const res = await safeFetch(url);
               if (!res.ok) {
-                hitDepthLimit = false;
+                if (res.status === 404) {
+                  hitDepthLimit = false;
+                }
                 break;
               }
               const html = await res.text();
@@ -451,7 +453,7 @@ export class Aoe2InsightsScraper {
               }
               await delay(250);
             } catch (e) {
-              hitDepthLimit = false;
+              console.error('[BROWSER] Error processing page ' + page + ' for player ' + playerId + ':', e.message || e);
               break;
             }
           }
