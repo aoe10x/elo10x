@@ -18,9 +18,10 @@ pnpm link --global
 #### A. Relic Link API Crawler (Recent Games)
 Crawls recent match histories for active players using the public Relic Link API.
 ```bash
-# Crawl recent matches for active players (default limit: 150)
-elo10x crawl --limit 150
+# Crawl recent matches for active players (default limit: 250)
+elo10x crawl --limit 250
 ```
+*Note: The crawler implements a dynamic cooldown based on player activity. Highly active players are crawled every 2–4 hours to prevent matches from falling off the Relic API's recent match list, while inactive players are crawled once every 3 days to conserve requests.*
 
 #### B. AoE2Insights Scraper (Recent Crawl)
 Crawls recent match histories for active players using the AoE2Insights scraper. It automatically launches a headful Chrome window, waits for you to solve the Cloudflare Turnstile verification, and then crawls page 1 of all eligible player matches.
@@ -35,10 +36,13 @@ Backfills deep match history for players directly from AoE2Insights. Like the re
 # Scrape pages 1 through 20 for Clean (profile ID 11783175)
 elo10x scrape 11783175 --start-page 1 --end-page 20
 
-# Scrape recent matches for top 80 active players in the database (default limit: 80)
+# Scrape recent matches for top 80 active players (default limit: 80)
 elo10x scrape active --start-page 1 --end-page 1
+
+# Scrape pages 1 through 20 for the top 80 unscraped players in the database
+elo10x scrape unscraped --limit 80 --start-page 1 --end-page 20
 ```
-*Note: The insights scraper uses a click-shield overlay to block accidental interaction while scraping, and a smart crawl manifest to automatically stop fetching pages once it overlaps with matches already stored in your database (see [docs/updates_and_crawling.md](file:///Users/paulirish/code/elo10x/docs/updates_and_crawling.md)).*
+*Note: The insights scraper uses a click-shield overlay to block accidental interaction while scraping, and a smart crawl manifest to automatically stop fetching pages once it overlaps with matches already stored in your database (see [docs/updates_and_crawling.md](file:///Users/paulirish/code/elo10x/docs/updates_and_crawling.md)). The `scrape active` subcommand rotates through active candidates automatically by enforcing a 24-hour target selection cooldown (use `--force` to ignore the cooldown).*
 
 ### 3. Compute Elo & Compile Static Site
 Run the rating calculations and pre-render the entire leaderboard website:
@@ -91,3 +95,24 @@ Verify code type safety and execute unit tests:
 pnpm test
 ```
 This runs type checking (`tsc --noEmit`) and the native Node.js test runner for unit tests.
+
+---
+
+## Resolving Git Merge Conflicts
+
+Because the database files (`matches.json`, `profiles.json`) are committed to Git to support the static web deploy, conflicts can arise during git pulls if both you and the automated GitHub Actions runner have performed crawlers.
+
+To automatically resolve conflicts:
+1. Run our custom database merge script, pointing it to the remote branch (e.g. `origin/main`):
+   ```bash
+   node src/tools/merge_git_databases.ts origin/main
+   ```
+2. Re-run rating calculations to regenerate player history files and clean up any remaining conflict markers:
+   ```bash
+   elo10x elo
+   ```
+3. Stage and commit all resolved database files:
+   ```bash
+   git add docs/data/matches.json docs/data/profiles.json docs/data/crawl_state.json docs/data/crawl_manifest.json docs/data/players/
+   git commit -m "chore: resolve git conflicts and rebuild ELO leaderboard"
+   ```
