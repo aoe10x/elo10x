@@ -275,7 +275,19 @@ export class JsonDatabase {
         }
       }
 
-      // 3. Update source if merged
+      // 3. Merge creator profile ID
+      if (!existing.creator_profile_id && match.creator_profile_id) {
+        existing.creator_profile_id = match.creator_profile_id;
+        updated = true;
+      }
+
+      // 4. Merge game mod ID
+      if (!existing.gamemod_id && match.gamemod_id) {
+        existing.gamemod_id = match.gamemod_id;
+        updated = true;
+      }
+
+      // 5. Update source if merged
       if (updated && existing.source !== match.source && existing.source !== 'merged') {
         existing.source = 'merged';
       }
