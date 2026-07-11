@@ -346,15 +346,13 @@ export class Aoe2InsightsScraper {
             await delay(5000); 
             return safeFetch(url); 
           }
-        }
-
-        async function scrapePlayer(playerId, limit, newestMatchId, oldestMatchId) {
+                async function scrapePlayer(playerId, limit, newestMatchId, oldestMatchId, hasReachedStart) {
           const results = [];
           let hitDepthLimit = true;
 
           for (let page = startPage; page <= limit; page++) {
             try {
-              const url = '/user/' + playerId + '/matches/?page=' + page;
+               const url = '/user/' + playerId + '/matches/?page=' + page;
               const res = await safeFetch(url);
               if (!res.ok) {
                 hitDepthLimit = false;
@@ -377,8 +375,8 @@ export class Aoe2InsightsScraper {
                   if (!matchLink) return;
                   const matchId = parseInt(matchLink.href.match(/\\/match\\/(\\d+)\\//)[1], 10);
 
-                  // Boundary check for overlap
-                  if (newestMatchId > 0 && matchId <= newestMatchId && matchId >= oldestMatchId) {
+                  // Boundary check for overlap (only if we previously reached the start of history)
+                  if (hasReachedStart && newestMatchId > 0 && matchId <= newestMatchId && matchId >= oldestMatchId) {
                     hitBoundary = true;
                     hitDepthLimit = false;
                     return;
@@ -467,7 +465,7 @@ export class Aoe2InsightsScraper {
             
             console.log('[BROWSER] Starting crawl for player ' + pid);
             try {
-              const res = await scrapePlayer(pid, limit, cutoff.newest, cutoff.oldest);
+              const res = await scrapePlayer(pid, limit, cutoff.newest, cutoff.oldest, cutoff.hasReachedStart);
               stream({
                 type: 'player_done',
                 playerId: pid,
