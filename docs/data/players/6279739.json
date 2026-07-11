@@ -1,12 +1,12 @@
 {
   "profile_id": 6279739,
   "alias": "Chikna Raavan",
-  "rating": 1060,
+  "rating": 1029,
   "wins": 36,
-  "losses": 32,
-  "gamesCount": 68,
-  "winRate": 53,
-  "lastPlayedAt": 1783713601,
+  "losses": 34,
+  "gamesCount": 70,
+  "winRate": 51,
+  "lastPlayedAt": 1783730017,
   "country": "in",
   "merged_ids": [],
   "ratingHistory": [
@@ -78,57 +78,11 @@
     1007,
     1024,
     1044,
-    1060
+    1060,
+    1042,
+    1029
   ],
   "recentMatches": [
-    {
-      "matchId": 410616324,
-      "description": "Bamboo 4x4 10x 3x Shared",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1754293680,
-      "outcome": "loss",
-      "preRating": 1053,
-      "postRating": 1034,
-      "eloChange": -19,
-      "civ": "Maya",
-      "teamAvgElo": 1052,
-      "opponentAvgElo": 997,
-      "teammates": [
-        "Arosive",
-        "dragoesazuis",
-        "Scipio Africanus"
-      ],
-      "opponents": [
-        "Clean",
-        "omnomnomnivore",
-        "RamboRob",
-        "Sensei"
-      ]
-    },
-    {
-      "matchId": 410745483,
-      "description": "10x shared 3x tech",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1754355420,
-      "outcome": "win",
-      "preRating": 1034,
-      "postRating": 1049,
-      "eloChange": 15,
-      "civ": "Sicilians",
-      "teamAvgElo": 1023,
-      "opponentAvgElo": 1003,
-      "teammates": [
-        "Rita De Valencia",
-        "AvPrime",
-        "[Liiit] Zbyszek"
-      ],
-      "opponents": [
-        "Spaceman Rob",
-        "MarieBrutale",
-        "Lozzer",
-        "Branoc"
-      ]
-    },
     {
       "matchId": 410930457,
       "description": "10x3x Diff map  shared bonus random civ  no noob",
@@ -420,7 +374,7 @@
     {
       "matchId": 491201161,
       "description": "10x 3x Bamboo - 10xshared.com",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1783642085,
       "outcome": "loss",
       "preRating": 1051,
@@ -468,7 +422,7 @@
     {
       "matchId": 491241522,
       "description": "Bamboo 10x 3x  (fair and balanced)",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
       "timestamp": 1783657048,
       "outcome": "loss",
       "preRating": 1024,
@@ -558,6 +512,54 @@
         "VAPE NAYSH Y'ALL",
         "Joseph",
         "Kaa Da Kaveman",
+        "田瘾犯了"
+      ]
+    },
+    {
+      "matchId": 491433566,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783728578,
+      "outcome": "loss",
+      "preRating": 1060,
+      "postRating": 1042,
+      "eloChange": -18,
+      "civ": "Berbers",
+      "teamAvgElo": 1034,
+      "opponentAvgElo": 1018,
+      "teammates": [
+        "RA",
+        "Rin Tin Tin",
+        "FREESTYLE72"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "Consume Product",
+        "Ye",
+        "Pogonophobia69"
+      ]
+    },
+    {
+      "matchId": 491437404,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783730017,
+      "outcome": "loss",
+      "preRating": 1042,
+      "postRating": 1029,
+      "eloChange": -13,
+      "civ": "Persians",
+      "teamAvgElo": 1038,
+      "opponentAvgElo": 1105,
+      "teammates": [
+        "Paladin",
+        "Parts",
+        "Apocalypto"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "RA",
+        "Consume Product",
         "田瘾犯了"
       ]
     }
