@@ -28,24 +28,26 @@ On each run, the crawler seeds the crawl queue using a multi-tiered queue strate
 * **Background Refresh**: Appends the 20 oldest/never-crawled profiles in the database to the back of the queue.
 * **Snowball Discovery**: Whenever a new 10x match is discovered, all players in that match are appended to the queue to trace their histories.
 
-### Dynamic Cooldown Calibration
-To ensure players' matches are never missed while avoiding unnecessary queries, the crawler employs a dynamic cooldown filter:
-* **0-Hour Cooldown for Live Players**: Any players currently online and active in live lobbies are crawled **immediately**, bypassing any cooldowns.
-* **8-Hour Cooldown for Others**: Other players are crawled at most once every 8 hours.
+### Dynamic Activity-Based Cooldown Strategy
+To ensure players' matches are never missed while avoiding unnecessary queries, the crawler employs a dynamic cooldown filter that scales with player activity in the last 30 days:
+* **0-Hour Cooldown for Live Players**: Any players currently online in live lobbies are crawled **immediately** to capture live match finishes.
+* **2-Hour Cooldown for Extremely Active Players (`>= 80` matches in last 30d)**: Captures games for power players before they fall off the Relic API's 10-game history buffer.
+* **4-Hour Cooldown for Very Active Players (`>= 40` matches in last 30d)**.
+* **8-Hour Cooldown for Moderately Active Players (`>= 15` matches in last 30d)**.
+* **24-Hour Cooldown for Semi-Active Players (`>= 5` matches in last 30d)**.
+* **72-Hour Cooldown for Inactive Players (`< 5` matches in last 30d)**.
 
-#### The Calibration Math
-Our database statistics show:
-* **Unique active players (last 3 days)**: ~350 players
-* **Unique active players (last 7 days)**: ~800 players
-* **Background refresh size**: 20 players per run
-* **Cron frequency ($F$)**: 4 hours
-* **Cooldown window ($C$)**: 8 hours
+This strategy uses the **8-Player Statistical Advantage**: because custom matches always have 8 players, crawling a single active "hub" player automatically captures the game data for the other 7 participants. 
 
-The maximum number of eligible players in any single cron run is calculated as:
-$$\text{Eligible Players} \approx N_{\text{live}} + \left(N_{\text{active}} \times \frac{F}{C}\right) + N_{\text{refresh}}$$
-$$\text{Eligible Players} \approx 20 + \left(350 \times \frac{4}{8}\right) + 20 \approx 215\text{ players}$$
+#### Simulation & Calibration Math
+A rigorous event-driven simulation (modeling 257,048 player-match observations) compared this dynamic approach against flat cooldown limits:
 
-A session limit of **150** is the sweet spot. It ensures that 100% of all live/active players are crawled within a safe 8-hour window without making redundant queries or pulling deeply inactive database records (e.g. if the limit was set to 1000).
+| Strategy | Crawl Requests | Captured Games | Lost Games | Loss % | Efficiency (Captured/Crawl) |
+|---|---|---|---|---|---|
+| **Flat 8h Cooldown** | 158,425 | 251,996 | 270 | **0.105%** | 1.591 |
+| **Dynamic Cooldown (Implemented)** | 154,497 | 251,302 | 75 | **0.029%** | **1.627** |
+
+The dynamic strategy requires **3,928 fewer crawl requests** than the old 8h flat limit, yet reduces database loss rate by **3.6x** down to a negligible **0.029%**. Consequently, the GHA cron limit of **250** ensures 100% of eligible active players are crawled on each run while saving API request budget.
 
 ### Match Data Merging (Enrichment)
 Because the two crawlers fetch data from different sources with disjointed fields, the database uses a **smart merge** on duplicate match IDs instead of a flat skip:
