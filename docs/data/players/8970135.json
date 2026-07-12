@@ -1,12 +1,12 @@
 {
   "profile_id": 8970135,
   "alias": "Papillon",
-  "rating": 1139,
+  "rating": 1099,
   "wins": 57,
-  "losses": 42,
-  "gamesCount": 99,
-  "winRate": 58,
-  "lastPlayedAt": 1783786135,
+  "losses": 44,
+  "gamesCount": 101,
+  "winRate": 56,
+  "lastPlayedAt": 1783873350,
   "country": "jp",
   "merged_ids": [],
   "ratingHistory": [
@@ -35,7 +35,6 @@
     988,
     1003,
     984,
-    968,
     955,
     945,
     964,
@@ -85,7 +84,6 @@
     1121,
     1135,
     1146,
-    1125,
     1138,
     1150,
     1161,
@@ -107,59 +105,13 @@
     1181,
     1160,
     1139,
-    1117,
-    1129,
-    1139
+    1118,
+    1130,
+    1140,
+    1120,
+    1099
   ],
   "recentMatches": [
-    {
-      "matchId": 383335872,
-      "description": "10xshared_3xtech_BambooNothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1743893220,
-      "outcome": "win",
-      "preRating": 1141,
-      "postRating": 1154,
-      "eloChange": 13,
-      "civ": "Persians",
-      "teamAvgElo": 1040,
-      "opponentAvgElo": 1077,
-      "teammates": [
-        "komatti",
-        "konishika",
-        "社畜のコマ応援隊"
-      ],
-      "opponents": [
-        "TopazSkate37557",
-        "ATTACK ATTACK  ATTACK",
-        "DeathWalker",
-        "うすたつっくったおま"
-      ]
-    },
-    {
-      "matchId": 388734958,
-      "description": "BAMBOO NOTHING 10X3X",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1745878620,
-      "outcome": "win",
-      "preRating": 1154,
-      "postRating": 1166,
-      "eloChange": 12,
-      "civ": "Goths",
-      "teamAvgElo": 1040,
-      "opponentAvgElo": 1054,
-      "teammates": [
-        "Abused but whole",
-        "Boocer",
-        "Axobada"
-      ],
-      "opponents": [
-        "yxsko93",
-        "mack",
-        "Max",
-        "Mr.YaYo"
-      ]
-    },
     {
       "matchId": 388741051,
       "description": "10xshared_3xtech_BambooNothing",
@@ -527,11 +479,11 @@
       "timestamp": 1783781863,
       "outcome": "loss",
       "preRating": 1139,
-      "postRating": 1117,
-      "eloChange": -22,
+      "postRating": 1118,
+      "eloChange": -21,
       "civ": "Magyars",
       "teamAvgElo": 995,
-      "opponentAvgElo": 1014,
+      "opponentAvgElo": 1017,
       "teammates": [
         "dRea",
         "Wololoo",
@@ -550,8 +502,8 @@
       "mapname": "BAMBOO NOTHING - SCORPYON DE",
       "timestamp": 1783783561,
       "outcome": "win",
-      "preRating": 1117,
-      "postRating": 1129,
+      "preRating": 1118,
+      "postRating": 1130,
       "eloChange": 12,
       "civ": "Teutons",
       "teamAvgElo": 1087,
@@ -574,11 +526,11 @@
       "mapname": "BAMBOO NOTHING - SCORPYON DE",
       "timestamp": 1783786135,
       "outcome": "win",
-      "preRating": 1129,
-      "postRating": 1139,
+      "preRating": 1130,
+      "postRating": 1140,
       "eloChange": 10,
       "civ": "Britons",
-      "teamAvgElo": 1090,
+      "teamAvgElo": 1091,
       "opponentAvgElo": 990,
       "teammates": [
         "tonkatumura",
@@ -590,6 +542,54 @@
         "dorayan",
         "待ったかね？",
         "Wololoo"
+      ]
+    },
+    {
+      "matchId": 491815857,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783862933,
+      "outcome": "loss",
+      "preRating": 1140,
+      "postRating": 1120,
+      "eloChange": -20,
+      "civ": "Huns",
+      "teamAvgElo": 1111,
+      "opponentAvgElo": 1060,
+      "teammates": [
+        "NoAgendaPODCAST",
+        "Consume Product",
+        "tonkatumura"
+      ],
+      "opponents": [
+        "The Cobra Brothers",
+        "Frederick",
+        "Mehandor",
+        "mark0112"
+      ]
+    },
+    {
+      "matchId": 491855242,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783873350,
+      "outcome": "loss",
+      "preRating": 1120,
+      "postRating": 1099,
+      "eloChange": -21,
+      "civ": "Magyars",
+      "teamAvgElo": 1117,
+      "opponentAvgElo": 1016,
+      "teammates": [
+        "golhmogh",
+        "Contry",
+        "The Cobra Brothers"
+      ],
+      "opponents": [
+        "gemmascho",
+        "Sal",
+        "Erikton5786",
+        "Emusan"
       ]
     }
   ]

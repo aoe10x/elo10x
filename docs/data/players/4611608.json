@@ -1,12 +1,12 @@
 {
   "profile_id": 4611608,
   "alias": "baianitro",
-  "rating": 1007,
-  "wins": 43,
+  "rating": 1023,
+  "wins": 44,
   "losses": 38,
-  "gamesCount": 81,
-  "winRate": 53,
-  "lastPlayedAt": 1783828804,
+  "gamesCount": 82,
+  "winRate": 54,
+  "lastPlayedAt": 1783830650,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -91,33 +91,10 @@
     1020,
     1003,
     989,
-    1007
+    1007,
+    1023
   ],
   "recentMatches": [
-    {
-      "matchId": 489187040,
-      "description": "Bamboo 10x 3x",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1782837932,
-      "outcome": "loss",
-      "preRating": 1032,
-      "postRating": 1013,
-      "eloChange": -19,
-      "civ": "Huns",
-      "teamAvgElo": 1044,
-      "opponentAvgElo": 970,
-      "teammates": [
-        "OldManofStorr",
-        "DnD",
-        "bischofl"
-      ],
-      "opponents": [
-        "davidll_5",
-        "Strayeagle73",
-        "Soviet Union",
-        "oulouvator"
-      ]
-    },
     {
       "matchId": 489286889,
       "description": "10x 3x BN ",
@@ -153,7 +130,7 @@
       "eloChange": 17,
       "civ": "Vikings",
       "teamAvgElo": 992,
-      "opponentAvgElo": 1051,
+      "opponentAvgElo": 1052,
       "teammates": [
         "__VK__",
         "[TodEs] MnTartara",
@@ -224,8 +201,8 @@
       "postRating": 1031,
       "eloChange": -17,
       "civ": "Incas",
-      "teamAvgElo": 1024,
-      "opponentAvgElo": 1034,
+      "teamAvgElo": 1025,
+      "opponentAvgElo": 1033,
       "teammates": [
         "勇战到抵",
         "Paladin",
@@ -416,7 +393,7 @@
       "postRating": 1038,
       "eloChange": 17,
       "civ": "Aztecs",
-      "teamAvgElo": 1066,
+      "teamAvgElo": 1065,
       "opponentAvgElo": 1052,
       "teammates": [
         "疯狂的电脑",
@@ -465,7 +442,7 @@
       "eloChange": 14,
       "civ": "Goths",
       "teamAvgElo": 1056,
-      "opponentAvgElo": 979,
+      "opponentAvgElo": 978,
       "teammates": [
         "Chinicuila304",
         "EastDanielNowhere",
@@ -572,6 +549,30 @@
         "vincentc95",
         "pool_champ",
         "Tiny Hands"
+      ]
+    },
+    {
+      "matchId": 491732124,
+      "description": "10x Shared 3 x tech Bamboo",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783830650,
+      "outcome": "win",
+      "preRating": 1007,
+      "postRating": 1023,
+      "eloChange": 16,
+      "civ": "Spartans",
+      "teamAvgElo": 1022,
+      "opponentAvgElo": 1008,
+      "teammates": [
+        "Chuckyllo4417",
+        "Candy Burglar",
+        "babeleo"
+      ],
+      "opponents": [
+        "Captain Stripes",
+        "pool_champ",
+        "vincentc95",
+        "紫蝶黄蜂俱有情"
       ]
     }
   ]
