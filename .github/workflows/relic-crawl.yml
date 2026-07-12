@@ -48,7 +48,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git reset --mixed origin/main
-          git add docs/data/matches.json docs/data/profiles.json docs/data/crawl_state.json docs/data/crawl_manifest.json docs/reports/
+          git add data/matches.json data/profiles.json data/crawl_state.json data/crawl_manifest.json docs/reports/
           if ! git diff --cached --quiet; then
             git commit -m "chore: auto-update matches database [skip ci]"
             git push origin main

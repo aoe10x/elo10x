@@ -146,7 +146,7 @@ async function main() {
 
   console.log(`Checking out clean local database files from HEAD (resolving conflict markers on disk)...`);
   try {
-    execSync('git checkout HEAD -- docs/data/matches.json docs/data/profiles.json docs/data/crawl_state.json docs/data/crawl_manifest.json');
+    execSync('git checkout HEAD -- data/matches.json data/profiles.json data/crawl_state.json data/crawl_manifest.json');
   } catch (err: any) {
     console.error('Failed to checkout clean database files from HEAD:', err.message);
     process.exit(1);
@@ -157,10 +157,10 @@ async function main() {
   await db.load();
 
   console.log(`Fetching database files from Git ref "${ref}"...`);
-  const matchesContent = getGitFileContent(ref, 'docs/data/matches.json');
-  const profilesContent = getGitFileContent(ref, 'docs/data/profiles.json');
-  const crawlStateContent = getGitFileContent(ref, 'docs/data/crawl_state.json');
-  const crawlManifestContent = getGitFileContent(ref, 'docs/data/crawl_manifest.json');
+  const matchesContent = getGitFileContent(ref, 'data/matches.json');
+  const profilesContent = getGitFileContent(ref, 'data/profiles.json');
+  const crawlStateContent = getGitFileContent(ref, 'data/crawl_state.json');
+  const crawlManifestContent = getGitFileContent(ref, 'data/crawl_manifest.json');
 
   console.log(`Merging databases...`);
   const stats = mergeDatabasesContent(db, {
