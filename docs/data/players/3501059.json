@@ -1,12 +1,12 @@
 {
   "profile_id": 3501059,
   "alias": "Russie",
-  "rating": 946,
-  "wins": 18,
+  "rating": 966,
+  "wins": 19,
   "losses": 36,
-  "gamesCount": 54,
-  "winRate": 33,
-  "lastPlayedAt": 1782555355,
+  "gamesCount": 55,
+  "winRate": 35,
+  "lastPlayedAt": 1783166777,
   "country": "ie",
   "merged_ids": [],
   "ratingHistory": [
@@ -64,33 +64,10 @@
     952,
     938,
     959,
-    946
+    946,
+    966
   ],
   "recentMatches": [
-    {
-      "matchId": 474411495,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1777628040,
-      "outcome": "loss",
-      "preRating": 948,
-      "postRating": 939,
-      "eloChange": -9,
-      "civ": "Burmese",
-      "teamAvgElo": 982,
-      "opponentAvgElo": 1116,
-      "teammates": [
-        "Sunnydae",
-        "TheZeos",
-        "rodelmonio"
-      ],
-      "opponents": [
-        "Kumad",
-        "EL__PATRON",
-        "Myriad",
-        "PoonSlapper"
-      ]
-    },
     {
       "matchId": 475344086,
       "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
@@ -545,6 +522,30 @@
         "Consume Product",
         "yimacs_yoyoyo",
         "kekekeya"
+      ]
+    },
+    {
+      "matchId": 489994392,
+      "description": "x10 x3",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783166777,
+      "outcome": "win",
+      "preRating": 946,
+      "postRating": 966,
+      "eloChange": 20,
+      "civ": "Persians",
+      "teamAvgElo": 982,
+      "opponentAvgElo": 1037,
+      "teammates": [
+        "476055690",
+        "Zavgor",
+        "Personalizado"
+      ],
+      "opponents": [
+        "ICAC",
+        "mannutipu",
+        "jeevacation@gmail.com",
+        "Kuecken_das_Vollstrecker"
       ]
     }
   ]

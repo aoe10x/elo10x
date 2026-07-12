@@ -1,12 +1,12 @@
 {
   "profile_id": 6926395,
   "alias": "ElCapi7766",
-  "rating": 868,
-  "wins": 5,
+  "rating": 892,
+  "wins": 6,
   "losses": 15,
-  "gamesCount": 20,
-  "winRate": 25,
-  "lastPlayedAt": 1779760610,
+  "gamesCount": 21,
+  "winRate": 29,
+  "lastPlayedAt": 1783836050,
   "country": "cl",
   "merged_ids": [],
   "ratingHistory": [
@@ -30,33 +30,10 @@
     905,
     891,
     879,
-    868
+    868,
+    892
   ],
   "recentMatches": [
-    {
-      "matchId": 355028486,
-      "description": "10x shared civ (brand-new mod)",
-      "mapname": "Amazon Tunnel",
-      "timestamp": null,
-      "outcome": "loss",
-      "preRating": 1000,
-      "postRating": 952,
-      "eloChange": -48,
-      "civ": "Unknown",
-      "teamAvgElo": 1024,
-      "opponentAvgElo": 1000,
-      "teammates": [
-        "asuky",
-        "omega",
-        "TinyKing079"
-      ],
-      "opponents": [
-        "Imperator",
-        "Samaritao",
-        "Castrelspirit",
-        "cauliflower"
-      ]
-    },
     {
       "matchId": 322737028,
       "description": "10X Shared Bonus Random Civ -NO NOOB",
@@ -511,6 +488,30 @@
         "The Unreal Reality",
         "Old_two",
         "自闭男孩"
+      ]
+    },
+    {
+      "matchId": 491746465,
+      "description": "10x 3x Bamboo (ungo bunga)",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783836050,
+      "outcome": "win",
+      "preRating": 868,
+      "postRating": 892,
+      "eloChange": 24,
+      "civ": "Incas",
+      "teamAvgElo": 1047,
+      "opponentAvgElo": 1069,
+      "teammates": [
+        "Lumedge",
+        "{R} Parry",
+        "edalmavuz"
+      ],
+      "opponents": [
+        "Scipio",
+        "konishika",
+        "FAOse7en",
+        "procrastination.exe"
       ]
     }
   ]

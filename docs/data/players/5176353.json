@@ -1,12 +1,12 @@
 {
   "profile_id": 5176353,
   "alias": "Holy Cheetos",
-  "rating": 1019,
-  "wins": 42,
+  "rating": 1036,
+  "wins": 43,
   "losses": 40,
-  "gamesCount": 82,
-  "winRate": 51,
-  "lastPlayedAt": 1783830401,
+  "gamesCount": 83,
+  "winRate": 52,
+  "lastPlayedAt": 1783831627,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -92,33 +92,10 @@
     994,
     981,
     999,
-    1019
+    1019,
+    1036
   ],
   "recentMatches": [
-    {
-      "matchId": 394701577,
-      "description": "BAMBOO NOTHING 10X3X",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1748053320,
-      "outcome": "win",
-      "preRating": 970,
-      "postRating": 989,
-      "eloChange": 19,
-      "civ": "Unknown",
-      "teamAvgElo": 1000,
-      "opponentAvgElo": 1031,
-      "teammates": [
-        "Pikolino",
-        "Raggamuffin'",
-        "Sensei"
-      ],
-      "opponents": [
-        "yxsko93",
-        "Broadwing",
-        "schrubber",
-        "Me_Ha_Ha"
-      ]
-    },
     {
       "matchId": 394724388,
       "description": "bamboo nothing 10x 3x",
@@ -562,7 +539,7 @@
       "eloChange": 20,
       "civ": "Teutons",
       "teamAvgElo": 983,
-      "opponentAvgElo": 1085,
+      "opponentAvgElo": 1088,
       "teammates": [
         "Bridge",
         "DGHIR | NICOGP11",
@@ -573,6 +550,30 @@
         "Stigel",
         "Xinzzo",
         "Mionel Lessi"
+      ]
+    },
+    {
+      "matchId": 491734488,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783831627,
+      "outcome": "win",
+      "preRating": 1019,
+      "postRating": 1036,
+      "eloChange": 17,
+      "civ": "Vikings",
+      "teamAvgElo": 980,
+      "opponentAvgElo": 1031,
+      "teammates": [
+        "menorahjury",
+        "Stigel",
+        "bigjames"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "Bridge",
+        "HyNo",
+        "bull_scoots"
       ]
     }
   ]
