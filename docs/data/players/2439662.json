@@ -1,12 +1,12 @@
 {
   "profile_id": 2439662,
   "alias": "rcmccallum",
-  "rating": 1050,
-  "wins": 8,
+  "rating": 1075,
+  "wins": 9,
   "losses": 7,
-  "gamesCount": 15,
-  "winRate": 53,
-  "lastPlayedAt": 1783722644,
+  "gamesCount": 16,
+  "winRate": 56,
+  "lastPlayedAt": 1783804813,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -25,7 +25,8 @@
     964,
     995,
     1023,
-    1050
+    1050,
+    1075
   ],
   "recentMatches": [
     {
@@ -386,6 +387,30 @@
         "RA",
         "King_Love",
         "TheZeos"
+      ]
+    },
+    {
+      "matchId": 491670851,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783804813,
+      "outcome": "win",
+      "preRating": 1050,
+      "postRating": 1075,
+      "eloChange": 25,
+      "civ": "Sicilians",
+      "teamAvgElo": 1014,
+      "opponentAvgElo": 1064,
+      "teammates": [
+        "RA",
+        "♥DraganBorn♥",
+        "procrastination.exe"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "Lykerya",
+        "GiGi",
+        "develement"
       ]
     }
   ]

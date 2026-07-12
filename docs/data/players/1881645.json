@@ -1,12 +1,12 @@
 {
   "profile_id": 1881645,
   "alias": "Tdot",
-  "rating": 1121,
+  "rating": 1102,
   "wins": 25,
-  "losses": 16,
-  "gamesCount": 41,
-  "winRate": 61,
-  "lastPlayedAt": 1782877144,
+  "losses": 17,
+  "gamesCount": 42,
+  "winRate": 60,
+  "lastPlayedAt": 1783800086,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -51,33 +51,10 @@
     1154,
     1162,
     1139,
-    1121
+    1121,
+    1102
   ],
   "recentMatches": [
-    {
-      "matchId": 366943764,
-      "description": "10x 3x Bamboo Nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1737536280,
-      "outcome": "win",
-      "preRating": 1027,
-      "postRating": 1040,
-      "eloChange": 13,
-      "civ": "Romans",
-      "teamAvgElo": 990,
-      "opponentAvgElo": 972,
-      "teammates": [
-        "EzraSkywalker96",
-        "YE",
-        "SeaPig"
-      ],
-      "opponents": [
-        "Rodan",
-        "Midu",
-        "Fumero",
-        "ilyfk ♡"
-      ]
-    },
     {
       "matchId": 367710021,
       "description": "10x shared 3x tech Bamboo nothing random civ",
@@ -532,6 +509,30 @@
         "[CSGS]Runescape",
         "Hexicero",
         "Mattila_the_Hunt"
+      ]
+    },
+    {
+      "matchId": 491654162,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783800086,
+      "outcome": "loss",
+      "preRating": 1121,
+      "postRating": 1102,
+      "eloChange": -19,
+      "civ": "Vietnamese",
+      "teamAvgElo": 1053,
+      "opponentAvgElo": 1066,
+      "teammates": [
+        "Ellie91",
+        "Lumedge",
+        "Tootin B. Anthony"
+      ],
+      "opponents": [
+        "baianitro",
+        "疯狂的电脑",
+        "Manba Out",
+        "La_Fratellanza"
       ]
     }
   ]

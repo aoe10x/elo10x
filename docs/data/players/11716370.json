@@ -1,12 +1,12 @@
 {
   "profile_id": 11716370,
   "alias": "King_Love",
-  "rating": 983,
+  "rating": 971,
   "wins": 23,
-  "losses": 48,
-  "gamesCount": 71,
+  "losses": 49,
+  "gamesCount": 72,
   "winRate": 32,
-  "lastPlayedAt": 1783722644,
+  "lastPlayedAt": 1783812761,
   "country": "ar",
   "merged_ids": [
     11716370,
@@ -84,33 +84,10 @@
     963,
     980,
     996,
-    983
+    983,
+    971
   ],
   "recentMatches": [
-    {
-      "matchId": 451970285,
-      "description": "Bamboo 10x 3x 4v4",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1769670360,
-      "outcome": "loss",
-      "preRating": 847,
-      "postRating": 839,
-      "eloChange": -8,
-      "civ": "Sicilians",
-      "teamAvgElo": 990,
-      "opponentAvgElo": 1049,
-      "teammates": [
-        "Goodsoup",
-        "jair_silva",
-        "Gadiatorking112"
-      ],
-      "opponents": [
-        "alexw",
-        "fxsound",
-        "AleRayado88",
-        "Legate"
-      ]
-    },
     {
       "matchId": 454230236,
       "description": "4 vs 4 // 10x Shared Random Civ",
@@ -450,7 +427,7 @@
     {
       "matchId": 489752546,
       "description": "i kun 10x3x 4v4s qun729084973",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1783077284,
       "outcome": "win",
       "preRating": 955,
@@ -565,6 +542,30 @@
         "tonzo",
         "Consume Product",
         "rcmccallum"
+      ]
+    },
+    {
+      "matchId": 491688653,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783812761,
+      "outcome": "loss",
+      "preRating": 983,
+      "postRating": 971,
+      "eloChange": -12,
+      "civ": "Spanish",
+      "teamAvgElo": 1045,
+      "opponentAvgElo": 1074,
+      "teammates": [
+        "skoolied",
+        "omega",
+        "fxsound"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "alexw",
+        "{R} Parry",
+        "mozu5"
       ]
     }
   ]

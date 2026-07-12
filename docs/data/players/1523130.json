@@ -1,12 +1,12 @@
 {
   "profile_id": 1523130,
   "alias": "Wimac",
-  "rating": 1032,
+  "rating": 1013,
   "wins": 29,
-  "losses": 29,
-  "gamesCount": 58,
-  "winRate": 50,
-  "lastPlayedAt": 1783475534,
+  "losses": 30,
+  "gamesCount": 59,
+  "winRate": 49,
+  "lastPlayedAt": 1783810707,
   "country": "co",
   "merged_ids": [],
   "ratingHistory": [
@@ -68,33 +68,10 @@
     1044,
     1030,
     1046,
-    1032
+    1032,
+    1013
   ],
   "recentMatches": [
-    {
-      "matchId": 476154856,
-      "description": "10x3x Bamboo Nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1778234820,
-      "outcome": "loss",
-      "preRating": 1107,
-      "postRating": 1089,
-      "eloChange": -18,
-      "civ": "Huns",
-      "teamAvgElo": 1029,
-      "opponentAvgElo": 1070,
-      "teammates": [
-        "東亞窪地",
-        "xXD4rckSh4d0wXx",
-        "Bambuchagt"
-      ],
-      "opponents": [
-        "Chuckyllo4417",
-        "duckbuildperson",
-        "flaviozera",
-        "[B] Zennith"
-      ]
-    },
     {
       "matchId": 476158836,
       "description": "10x Shared 3xTech Bamboo Nothing",
@@ -549,6 +526,30 @@
         "mothysime11",
         "2041239559",
         "rarekittenz67"
+      ]
+    },
+    {
+      "matchId": 491685432,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783810707,
+      "outcome": "loss",
+      "preRating": 1032,
+      "postRating": 1013,
+      "eloChange": -19,
+      "civ": "Teutons",
+      "teamAvgElo": 1052,
+      "opponentAvgElo": 972,
+      "teammates": [
+        "PIEROGI",
+        "Maxim Liann",
+        "疯狂的电脑"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "Yeepers",
+        "Monk",
+        "468673564"
       ]
     }
   ]

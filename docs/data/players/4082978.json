@@ -1,12 +1,12 @@
 {
   "profile_id": 4082978,
   "alias": "Megatron",
-  "rating": 1058,
+  "rating": 1035,
   "wins": 9,
-  "losses": 7,
-  "gamesCount": 16,
-  "winRate": 56,
-  "lastPlayedAt": 1783628758,
+  "losses": 8,
+  "gamesCount": 17,
+  "winRate": 53,
+  "lastPlayedAt": 1783817212,
   "country": "in",
   "merged_ids": [],
   "ratingHistory": [
@@ -26,7 +26,8 @@
     1024,
     1053,
     1031,
-    1058
+    1058,
+    1035
   ],
   "recentMatches": [
     {
@@ -296,7 +297,7 @@
     {
       "matchId": 487873010,
       "description": "10x Shared Civ Bonus 4v4 Random ",
-      "mapname": "my map",
+      "mapname": "Wet Woods v3.0.3",
       "timestamp": 1782353052,
       "outcome": "loss",
       "preRating": 1080,
@@ -320,7 +321,7 @@
     {
       "matchId": 487876085,
       "description": "10x Shared Civ Bonus 4v4 Random ",
-      "mapname": "my map",
+      "mapname": "Wet Woods v3.0.3",
       "timestamp": 1782354136,
       "outcome": "loss",
       "preRating": 1052,
@@ -411,6 +412,30 @@
         "PITON | Shepy",
         "Sal",
         "Manba Out"
+      ]
+    },
+    {
+      "matchId": 491699893,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1783817212,
+      "outcome": "loss",
+      "preRating": 1058,
+      "postRating": 1035,
+      "eloChange": -23,
+      "civ": "Sicilians",
+      "teamAvgElo": 1046,
+      "opponentAvgElo": 1054,
+      "teammates": [
+        "Nuke Toilet",
+        "CrazyFoxMan",
+        "Akoros"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "Nick123",
+        "fredericomw"
       ]
     }
   ]

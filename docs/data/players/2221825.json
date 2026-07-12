@@ -1,12 +1,12 @@
 {
   "profile_id": 2221825,
   "alias": "CrazyFoxMan",
-  "rating": 978,
+  "rating": 965,
   "wins": 44,
-  "losses": 54,
-  "gamesCount": 98,
-  "winRate": 45,
-  "lastPlayedAt": 1783090561,
+  "losses": 55,
+  "gamesCount": 99,
+  "winRate": 44,
+  "lastPlayedAt": 1783817212,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -108,33 +108,10 @@
     980,
     967,
     953,
-    978
+    978,
+    965
   ],
   "recentMatches": [
-    {
-      "matchId": 458825267,
-      "description": "10x 3x Bamboo Nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1771998120,
-      "outcome": "loss",
-      "preRating": 1006,
-      "postRating": 994,
-      "eloChange": -12,
-      "civ": "Incas",
-      "teamAvgElo": 1076,
-      "opponentAvgElo": 1084,
-      "teammates": [
-        "Cale94",
-        "brunopt99",
-        "Tarklow"
-      ],
-      "opponents": [
-        "THE THING",
-        "Carmillum",
-        "God emperor",
-        "ZaySol"
-      ]
-    },
     {
       "matchId": 458875079,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -589,6 +566,30 @@
         "Llama",
         "I am KSG",
         "YUJIN"
+      ]
+    },
+    {
+      "matchId": 491699893,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1783817212,
+      "outcome": "loss",
+      "preRating": 978,
+      "postRating": 965,
+      "eloChange": -13,
+      "civ": "Huns",
+      "teamAvgElo": 1046,
+      "opponentAvgElo": 1054,
+      "teammates": [
+        "Nuke Toilet",
+        "Megatron",
+        "Akoros"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "Nick123",
+        "fredericomw"
       ]
     }
   ]

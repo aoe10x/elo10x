@@ -1,12 +1,12 @@
 {
   "profile_id": 965542,
   "alias": "Paladin",
-  "rating": 1027,
+  "rating": 1012,
   "wins": 53,
-  "losses": 51,
-  "gamesCount": 104,
-  "winRate": 51,
-  "lastPlayedAt": 1783732390,
+  "losses": 52,
+  "gamesCount": 105,
+  "winRate": 50,
+  "lastPlayedAt": 1783816541,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -19,7 +19,7 @@
     1100,
     1128,
     1082,
-    1038,
+    1067,
     1092,
     1115,
     1134,
@@ -35,11 +35,11 @@
     1037,
     1051,
     1065,
-    1078,
     1059,
     1073,
     1088,
     1101,
+    1078,
     1091,
     1101,
     1083,
@@ -51,7 +51,6 @@
     1104,
     1088,
     1071,
-    1087,
     1072,
     1055,
     1036,
@@ -59,6 +58,7 @@
     1069,
     1081,
     1092,
+    1074,
     1055,
     1039,
     1055,
@@ -68,7 +68,6 @@
     1020,
     1004,
     989,
-    974,
     991,
     979,
     998,
@@ -79,12 +78,12 @@
     963,
     947,
     967,
+    985,
     1005,
     1022,
     1006,
     993,
     979,
-    967,
     986,
     1003,
     1023,
@@ -99,8 +98,8 @@
     1052,
     1037,
     1050,
+    1034,
     1016,
-    1002,
     1018,
     1003,
     1019,
@@ -109,33 +108,10 @@
     1031,
     1018,
     1005,
-    1027
+    1027,
+    1012
   ],
   "recentMatches": [
-    {
-      "matchId": 488757143,
-      "description": "10x 3x BN ",
-      "mapname": "my map",
-      "timestamp": 1782669166,
-      "outcome": "win",
-      "preRating": 1013,
-      "postRating": 1026,
-      "eloChange": 13,
-      "civ": "Magyars",
-      "teamAvgElo": 1023,
-      "opponentAvgElo": 951,
-      "teammates": [
-        "pool_champ",
-        "Perxeus",
-        "Chuckyllo4417"
-      ],
-      "opponents": [
-        "PredatorfromthemoviePredator",
-        "oklema",
-        "apolizer",
-        "Vini Santos"
-      ]
-    },
     {
       "matchId": 488790303,
       "description": "4vs4 10x 3x shared civ bonus, random civ",
@@ -163,7 +139,7 @@
     {
       "matchId": 488799892,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
       "timestamp": 1782679513,
       "outcome": "win",
       "preRating": 1014,
@@ -355,7 +331,7 @@
     {
       "matchId": 490385110,
       "description": "10x 3x Bamboo - 10xshared.com",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1783292171,
       "outcome": "loss",
       "preRating": 1016,
@@ -590,6 +566,30 @@
         "Hexicero",
         "Lumedge",
         "Chaos_Omega"
+      ]
+    },
+    {
+      "matchId": 491698701,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783816541,
+      "outcome": "loss",
+      "preRating": 1027,
+      "postRating": 1012,
+      "eloChange": -15,
+      "civ": "Bengalis",
+      "teamAvgElo": 1050,
+      "opponentAvgElo": 1038,
+      "teammates": [
+        "I LICK TRAINS",
+        "Parts",
+        "Lú"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "Ghost_pt",
+        "AAA",
+        "G305"
       ]
     }
   ]

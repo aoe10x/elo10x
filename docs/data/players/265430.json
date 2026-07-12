@@ -1,12 +1,12 @@
 {
   "profile_id": 265430,
   "alias": "I LICK TRAINS",
-  "rating": 1052,
+  "rating": 1035,
   "wins": 13,
-  "losses": 12,
-  "gamesCount": 25,
-  "winRate": 52,
-  "lastPlayedAt": 1783705042,
+  "losses": 13,
+  "gamesCount": 26,
+  "winRate": 50,
+  "lastPlayedAt": 1783816541,
   "country": "ch",
   "merged_ids": [],
   "ratingHistory": [
@@ -35,33 +35,10 @@
     1036,
     1051,
     1035,
-    1052
+    1052,
+    1035
   ],
   "recentMatches": [
-    {
-      "matchId": 485749470,
-      "description": "10x Shared Civ Bonus 4v4 Random ",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1781571523,
-      "outcome": "win",
-      "preRating": 1062,
-      "postRating": 1105,
-      "eloChange": 43,
-      "civ": "Sicilians",
-      "teamAvgElo": 1010,
-      "opponentAvgElo": 1084,
-      "teammates": [
-        "PoonSlapper",
-        "Caballero",
-        "Sins_Sniper"
-      ],
-      "opponents": [
-        "Kumad",
-        "Myriad",
-        "EL__PATRON",
-        "JR_Nero"
-      ]
-    },
     {
       "matchId": 485745414,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -516,6 +493,30 @@
         "Not a Wizard",
         "Eraser88",
         "[TW] hushin0917"
+      ]
+    },
+    {
+      "matchId": 491698701,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783816541,
+      "outcome": "loss",
+      "preRating": 1052,
+      "postRating": 1035,
+      "eloChange": -17,
+      "civ": "Incas",
+      "teamAvgElo": 1050,
+      "opponentAvgElo": 1038,
+      "teammates": [
+        "Parts",
+        "Paladin",
+        "Lú"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "Ghost_pt",
+        "AAA",
+        "G305"
       ]
     }
   ]
