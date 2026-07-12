@@ -17,10 +17,12 @@
     "scrape:player": "node src/cli.ts insights",
     "elo": "node src/cli.ts elo",
     "dev": "statikk docs --port 3000",
+    "deploy": "gh-pages -d docs -m \"chore: deploy static leaderboard [skip ci]\"",
     "preflight": "pnpm run typecheck && pnpm run test"
   },
   "devDependencies": {
     "@types/node": "^22.13.0",
+    "gh-pages": "^6.3.0",
     "statikk": "^3.0.0",
     "typescript": "^5.7.3"
   }

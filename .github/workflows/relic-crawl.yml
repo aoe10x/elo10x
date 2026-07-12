@@ -48,10 +48,16 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git reset --mixed origin/main
-          git add docs/data/matches.json docs/data/profiles.json docs/data/crawl_state.json docs/data/crawl_manifest.json docs/index.html docs/pure.html docs/combined.html docs/flags.css docs/data/players/ docs/reports/
+          git add docs/data/matches.json docs/data/profiles.json docs/data/crawl_state.json docs/data/crawl_manifest.json docs/reports/
           if ! git diff --cached --quiet; then
-            git commit -m "chore: auto-update matches database and pre-rendered leaderboards [skip ci]"
+            git commit -m "chore: auto-update matches database [skip ci]"
             git push origin main
           else
             echo "No new matches crawled. Database is up to date."
           fi
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
