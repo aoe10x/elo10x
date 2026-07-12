@@ -1,13 +1,13 @@
 {
   "profile_id": 9690785,
-  "alias": "Sir_Notabot",
-  "rating": 886,
+  "alias": "有如扶桑初日升",
+  "rating": 879,
   "wins": 8,
-  "losses": 19,
-  "gamesCount": 27,
-  "winRate": 30,
-  "lastPlayedAt": 1761598980,
-  "country": "Unknown",
+  "losses": 20,
+  "gamesCount": 28,
+  "winRate": 29,
+  "lastPlayedAt": 1783838011,
+  "country": "cn",
   "merged_ids": [],
   "ratingHistory": [
     1000,
@@ -37,33 +37,10 @@
     916,
     905,
     896,
-    886
+    886,
+    879
   ],
   "recentMatches": [
-    {
-      "matchId": 421508724,
-      "description": "10x 3x shared !!NO NOOBS!!",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1758920280,
-      "outcome": "win",
-      "preRating": 920,
-      "postRating": 964,
-      "eloChange": 44,
-      "civ": "Cumans",
-      "teamAvgElo": 1032,
-      "opponentAvgElo": 983,
-      "teammates": [
-        "Age5464",
-        "Emusan",
-        "Max"
-      ],
-      "opponents": [
-        "勇战到抵",
-        "Railbuilder",
-        "tacotoy",
-        "rafuk89"
-      ]
-    },
     {
       "matchId": 423649396,
       "description": "10x 3x shared !!NO NOOBS!!",
@@ -518,6 +495,30 @@
         "TJ",
         "Shadow",
         "i kun 2.5"
+      ]
+    },
+    {
+      "matchId": 491750004,
+      "description": "bamboo nothing 10x",
+      "mapname": "Bamboo Nothing v3 (BaLi)",
+      "timestamp": 1783838011,
+      "outcome": "loss",
+      "preRating": 886,
+      "postRating": 879,
+      "eloChange": -7,
+      "civ": "Mongols",
+      "teamAvgElo": 1015,
+      "opponentAvgElo": 1097,
+      "teammates": [
+        "Waryahay",
+        "adrian",
+        "DapperArtist381"
+      ],
+      "opponents": [
+        "[B] Zennith",
+        "Ryrysmash22",
+        "typ53b90",
+        "kekekeya"
       ]
     }
   ]
