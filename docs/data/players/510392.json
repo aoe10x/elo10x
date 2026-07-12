@@ -1,12 +1,12 @@
 {
   "profile_id": 510392,
   "alias": "DFG3",
-  "rating": 1021,
-  "wins": 30,
+  "rating": 1035,
+  "wins": 31,
   "losses": 26,
-  "gamesCount": 56,
+  "gamesCount": 57,
   "winRate": 54,
-  "lastPlayedAt": 1778388660,
+  "lastPlayedAt": 1778790053,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -66,33 +66,10 @@
     1032,
     1049,
     1036,
-    1021
+    1021,
+    1035
   ],
   "recentMatches": [
-    {
-      "matchId": 404823471,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1751959440,
-      "outcome": "win",
-      "preRating": 1087,
-      "postRating": 1103,
-      "eloChange": 16,
-      "civ": "Italians",
-      "teamAvgElo": 1077,
-      "opponentAvgElo": 1086,
-      "teammates": [
-        "AAA",
-        "Rafier",
-        "SleepySwede"
-      ],
-      "opponents": [
-        "Kumad",
-        "SlimeJesse",
-        "Tunguska",
-        "Myriad"
-      ]
-    },
     {
       "matchId": 404828255,
       "description": "10x_3x_Bamboo_Nothing_Random",
@@ -536,7 +513,7 @@
       "eloChange": -15,
       "civ": "Malians",
       "teamAvgElo": 1080,
-      "opponentAvgElo": 1052,
+      "opponentAvgElo": 1054,
       "teammates": [
         "Ellie91",
         "ISwaZz",
@@ -547,6 +524,30 @@
         "wintre",
         "Bryce Coolguy",
         "Disvara"
+      ]
+    },
+    {
+      "matchId": 477812695,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "my map",
+      "timestamp": 1778790053,
+      "outcome": "win",
+      "preRating": 1021,
+      "postRating": 1035,
+      "eloChange": 14,
+      "civ": "Vietnamese",
+      "teamAvgElo": 1008,
+      "opponentAvgElo": 967,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "cyberocioso",
+        "smol camel"
+      ],
+      "opponents": [
+        "fast resign",
+        "helianth",
+        "adamc11",
+        "OrangE"
       ]
     }
   ]

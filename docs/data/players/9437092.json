@@ -1,12 +1,12 @@
 {
   "profile_id": 9437092,
   "alias": "Belisarius",
-  "rating": 1014,
+  "rating": 1002,
   "wins": 10,
-  "losses": 9,
-  "gamesCount": 19,
-  "winRate": 53,
-  "lastPlayedAt": 1783825447,
+  "losses": 10,
+  "gamesCount": 20,
+  "winRate": 50,
+  "lastPlayedAt": 1783841178,
   "country": "tr",
   "merged_ids": [
     9437092,
@@ -32,7 +32,8 @@
     1033,
     1013,
     1034,
-    1014
+    1014,
+    1002
   ],
   "recentMatches": [
     {
@@ -238,7 +239,7 @@
       "eloChange": -50,
       "civ": "Vietnamese",
       "teamAvgElo": 1049,
-      "opponentAvgElo": 974,
+      "opponentAvgElo": 973,
       "teammates": [
         "Bryce Coolguy",
         "Paolo Carrosel",
@@ -261,7 +262,7 @@
       "postRating": 1038,
       "eloChange": -35,
       "civ": "Malay",
-      "teamAvgElo": 1047,
+      "teamAvgElo": 1046,
       "opponentAvgElo": 1061,
       "teammates": [
         "BearBrown",
@@ -286,7 +287,7 @@
       "eloChange": 31,
       "civ": "Shu",
       "teamAvgElo": 1035,
-      "opponentAvgElo": 1023,
+      "opponentAvgElo": 1024,
       "teammates": [
         "Xinzzo",
         "e_yag",
@@ -309,7 +310,7 @@
       "postRating": 1041,
       "eloChange": -28,
       "civ": "Dravidians",
-      "teamAvgElo": 1062,
+      "teamAvgElo": 1061,
       "opponentAvgElo": 1101,
       "teammates": [
         "PoonSlapper",
@@ -334,7 +335,7 @@
       "eloChange": -28,
       "civ": "Portuguese",
       "teamAvgElo": 1038,
-      "opponentAvgElo": 1055,
+      "opponentAvgElo": 1056,
       "teammates": [
         "ArchiCraig",
         "RedBullWOLOLO26",
@@ -357,7 +358,7 @@
       "postRating": 993,
       "eloChange": -20,
       "civ": "Spanish",
-      "teamAvgElo": 1048,
+      "teamAvgElo": 1047,
       "opponentAvgElo": 1114,
       "teammates": [
         "ArchiCraig",
@@ -382,7 +383,7 @@
       "eloChange": 20,
       "civ": "Malians",
       "teamAvgElo": 983,
-      "opponentAvgElo": 922,
+      "opponentAvgElo": 921,
       "teammates": [
         "hoderebus",
         "[Liiit] Zbyszek",
@@ -453,7 +454,7 @@
       "postRating": 1034,
       "eloChange": 21,
       "civ": "Britons",
-      "teamAvgElo": 1085,
+      "teamAvgElo": 1084,
       "opponentAvgElo": 1015,
       "teammates": [
         "Kumad",
@@ -489,6 +490,30 @@
         "TJ",
         "476055690",
         "ernestocorrea18"
+      ]
+    },
+    {
+      "matchId": 491758395,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783841178,
+      "outcome": "loss",
+      "preRating": 1014,
+      "postRating": 1002,
+      "eloChange": -12,
+      "civ": "Celts",
+      "teamAvgElo": 1031,
+      "opponentAvgElo": 1138,
+      "teammates": [
+        "{R} Parry",
+        "Paladin",
+        "476055690"
+      ],
+      "opponents": [
+        "Ye",
+        "田瘾犯了",
+        "Bean goose",
+        "鱼浆"
       ]
     }
   ]

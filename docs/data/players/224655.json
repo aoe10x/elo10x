@@ -1,11 +1,11 @@
 {
   "profile_id": 224655,
   "alias": "Refur",
-  "rating": 924,
-  "wins": 31,
+  "rating": 943,
+  "wins": 32,
   "losses": 43,
-  "gamesCount": 74,
-  "winRate": 42,
+  "gamesCount": 75,
+  "winRate": 43,
   "lastPlayedAt": 1778759640,
   "country": "de",
   "merged_ids": [],
@@ -82,35 +82,12 @@
     986,
     973,
     959,
-    949,
-    937,
-    924
+    948,
+    936,
+    957,
+    943
   ],
   "recentMatches": [
-    {
-      "matchId": 401661080,
-      "description": "+10x+3xtcch   no noob",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1750676700,
-      "outcome": "win",
-      "preRating": 970,
-      "postRating": 987,
-      "eloChange": 17,
-      "civ": "Chinese",
-      "teamAvgElo": 1049,
-      "opponentAvgElo": 985,
-      "teammates": [
-        "拍车面前人人平等",
-        "鱼浆",
-        "田瘾犯了"
-      ],
-      "opponents": [
-        "hoderebus",
-        "Elric of Melnibone",
-        "Gorbachev",
-        "aLEXt"
-      ]
-    },
     {
       "matchId": 403167375,
       "description": "10x 3x bamboo nothing",
@@ -502,11 +479,11 @@
       "timestamp": 1778590560,
       "outcome": "loss",
       "preRating": 959,
-      "postRating": 949,
-      "eloChange": -10,
+      "postRating": 948,
+      "eloChange": -11,
       "civ": "Burmese",
       "teamAvgElo": 975,
-      "opponentAvgElo": 1084,
+      "opponentAvgElo": 1079,
       "teammates": [
         "Officer i cant breath",
         "Sal",
@@ -525,11 +502,11 @@
       "mapname": "Skinny_Tunnel",
       "timestamp": 1778677260,
       "outcome": "loss",
-      "preRating": 949,
-      "postRating": 937,
+      "preRating": 948,
+      "postRating": 936,
       "eloChange": -12,
       "civ": "Chinese",
-      "teamAvgElo": 1001,
+      "teamAvgElo": 1000,
       "opponentAvgElo": 1028,
       "teammates": [
         "duckbuildperson",
@@ -544,17 +521,41 @@
       ]
     },
     {
+      "matchId": 477657162,
+      "description": "…::||||    10x  3x    ||||::…",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1778736297,
+      "outcome": "win",
+      "preRating": 936,
+      "postRating": 957,
+      "eloChange": 21,
+      "civ": "Armenians",
+      "teamAvgElo": 1055,
+      "opponentAvgElo": 1057,
+      "teammates": [
+        "Flying Penguin",
+        "TsC_BaTTouSai",
+        "田瘾犯了"
+      ],
+      "opponents": [
+        "FlyingSheep",
+        "{R} Parry",
+        "Sadek",
+        "Bao Oninon"
+      ]
+    },
+    {
       "matchId": 477654108,
       "description": "10x Shared 3xTech Bamboo Nothing",
       "mapname": "Bamboo Nothing_Paren_V4",
       "timestamp": 1778759640,
       "outcome": "loss",
-      "preRating": 937,
-      "postRating": 924,
-      "eloChange": -13,
+      "preRating": 957,
+      "postRating": 943,
+      "eloChange": -14,
       "civ": "Tupi",
-      "teamAvgElo": 1053,
-      "opponentAvgElo": 1007,
+      "teamAvgElo": 1052,
+      "opponentAvgElo": 1011,
       "teammates": [
         "{R} Parry",
         "Wardy21",
