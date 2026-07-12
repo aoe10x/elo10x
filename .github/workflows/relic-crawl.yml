@@ -35,6 +35,11 @@ jobs:
       - name: Run Relic API Crawl
         run: node src/cli.ts crawl --limit 250 --months 3
 
+      - name: Merge Remote Changes
+        run: |
+          git fetch origin main
+          node src/tools/merge_git_databases.ts origin/main
+
       - name: Recalculate ELO Leaderboards
         run: node src/cli.ts elo
 
@@ -42,10 +47,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data/matches.json docs/data/profiles.json docs/data/crawl_state.json docs/index.html docs/pure.html docs/combined.html docs/flags.css docs/data/players/ docs/reports/
+          git reset --mixed origin/main
+          git add docs/data/matches.json docs/data/profiles.json docs/data/crawl_state.json docs/data/crawl_manifest.json docs/index.html docs/pure.html docs/combined.html docs/flags.css docs/data/players/ docs/reports/
           if ! git diff --cached --quiet; then
             git commit -m "chore: auto-update matches database and pre-rendered leaderboards [skip ci]"
-            git pull --rebase origin main
             git push origin main
           else
             echo "No new matches crawled. Database is up to date."
