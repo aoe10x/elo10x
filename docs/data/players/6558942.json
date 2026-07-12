@@ -1,12 +1,12 @@
 {
   "profile_id": 6558942,
   "alias": "Dr.Ao",
-  "rating": 1107,
+  "rating": 1068,
   "wins": 17,
-  "losses": 12,
-  "gamesCount": 29,
-  "winRate": 59,
-  "lastPlayedAt": 1783817880,
+  "losses": 14,
+  "gamesCount": 31,
+  "winRate": 55,
+  "lastPlayedAt": 1783873024,
   "country": "cn",
   "merged_ids": [],
   "ratingHistory": [
@@ -39,57 +39,11 @@
     1067,
     1084,
     1096,
-    1107
+    1107,
+    1088,
+    1068
   ],
   "recentMatches": [
-    {
-      "matchId": 490923945,
-      "description": "10x 3x bamboo",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1783526045,
-      "outcome": "win",
-      "preRating": 908,
-      "postRating": 952,
-      "eloChange": 44,
-      "civ": "Shu",
-      "teamAvgElo": 1009,
-      "opponentAvgElo": 1012,
-      "teammates": [
-        "Lykerya",
-        "Pineappleman",
-        "McKrakfejs"
-      ],
-      "opponents": [
-        "mgmanager",
-        "FastAttack",
-        "tonzo",
-        "SlimeJesse"
-      ]
-    },
-    {
-      "matchId": 490927209,
-      "description": " 10x 3x bamboo nothing",
-      "mapname": "BAMBOO_NOTHING_-_SCORPYON_DE_v3",
-      "timestamp": 1783527203,
-      "outcome": "win",
-      "preRating": 952,
-      "postRating": 989,
-      "eloChange": 37,
-      "civ": "Gurjaras",
-      "teamAvgElo": 968,
-      "opponentAvgElo": 1001,
-      "teammates": [
-        "mgmanager",
-        "sppd3181",
-        "SlimeJesse"
-      ],
-      "opponents": [
-        "Kaa Da Kaveman",
-        "abatyse6533",
-        "Scipio",
-        "KyrThanos"
-      ]
-    },
     {
       "matchId": 491095280,
       "description": "i kun 10x3x 4v4s qun729084973",
@@ -172,7 +126,7 @@
       "postRating": 1010,
       "eloChange": -19,
       "civ": "Shu",
-      "teamAvgElo": 1078,
+      "teamAvgElo": 1079,
       "opponentAvgElo": 1123,
       "teammates": [
         "GiGi",
@@ -244,7 +198,7 @@
       "postRating": 994,
       "eloChange": 23,
       "civ": "Hindustanis",
-      "teamAvgElo": 1121,
+      "teamAvgElo": 1122,
       "opponentAvgElo": 999,
       "teammates": [
         "pandalam",
@@ -268,7 +222,7 @@
       "postRating": 976,
       "eloChange": -18,
       "civ": "Japanese",
-      "teamAvgElo": 1133,
+      "teamAvgElo": 1134,
       "opponentAvgElo": 1025,
       "teammates": [
         "pandalam",
@@ -292,7 +246,7 @@
       "postRating": 998,
       "eloChange": 22,
       "civ": "Bohemians",
-      "teamAvgElo": 1061,
+      "teamAvgElo": 1062,
       "opponentAvgElo": 1058,
       "teammates": [
         "pandalam",
@@ -413,7 +367,7 @@
       "eloChange": 18,
       "civ": "Burmese",
       "teamAvgElo": 1046,
-      "opponentAvgElo": 1083,
+      "opponentAvgElo": 1084,
       "teammates": [
         "GiGi",
         "Bachter",
@@ -520,6 +474,54 @@
         "AAA",
         "Chikna Raavan",
         "Satanus9001"
+      ]
+    },
+    {
+      "matchId": 491848569,
+      "description": "PQ 10x 3x bamboo 4vs4",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783871608,
+      "outcome": "loss",
+      "preRating": 1107,
+      "postRating": 1088,
+      "eloChange": -19,
+      "civ": "Ethiopians",
+      "teamAvgElo": 1104,
+      "opponentAvgElo": 1039,
+      "teammates": [
+        "Brotherman Bill",
+        "Bao Oninon",
+        "sppd3181"
+      ],
+      "opponents": [
+        "Al Ghouti",
+        "golhmogh",
+        "Sal",
+        "r9maximus"
+      ]
+    },
+    {
+      "matchId": 491854706,
+      "description": "10x 3x BN ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783873024,
+      "outcome": "loss",
+      "preRating": 1088,
+      "postRating": 1068,
+      "eloChange": -20,
+      "civ": "Poles",
+      "teamAvgElo": 1041,
+      "opponentAvgElo": 995,
+      "teammates": [
+        "pool_champ",
+        "Yeepers",
+        "rob"
+      ],
+      "opponents": [
+        "wintre",
+        "apolizer",
+        "DnD",
+        "FPS Geo"
       ]
     }
   ]

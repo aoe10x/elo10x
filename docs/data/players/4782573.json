@@ -1,12 +1,12 @@
 {
   "profile_id": 4782573,
   "alias": "Lama Kužel",
-  "rating": 1063,
-  "wins": 25,
+  "rating": 1078,
+  "wins": 26,
   "losses": 22,
-  "gamesCount": 47,
-  "winRate": 53,
-  "lastPlayedAt": 1783779552,
+  "gamesCount": 48,
+  "winRate": 54,
+  "lastPlayedAt": 1783861529,
   "country": "sk",
   "merged_ids": [
     4782573,
@@ -60,33 +60,10 @@
     1087,
     1099,
     1078,
-    1063
+    1063,
+    1078
   ],
   "recentMatches": [
-    {
-      "matchId": 476028954,
-      "description": "+10x+3xtech   no noob",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1778194920,
-      "outcome": "loss",
-      "preRating": 1074,
-      "postRating": 1061,
-      "eloChange": -13,
-      "civ": "Vietnamese",
-      "teamAvgElo": 1062,
-      "opponentAvgElo": 1141,
-      "teammates": [
-        "Clean",
-        "abatyse6533",
-        "tonkatumura"
-      ],
-      "opponents": [
-        "拍车面前人人平等",
-        "Lumedge",
-        "fxsound",
-        "Grimmie"
-      ]
-    },
     {
       "matchId": 479581255,
       "description": "bamboo nothing 10x",
@@ -122,7 +99,7 @@
       "eloChange": -17,
       "civ": "Dravidians",
       "teamAvgElo": 1071,
-      "opponentAvgElo": 1020,
+      "opponentAvgElo": 1024,
       "teammates": [
         "wintre",
         "matt",
@@ -169,7 +146,7 @@
       "postRating": 1056,
       "eloChange": 13,
       "civ": "Saracens",
-      "teamAvgElo": 1031,
+      "teamAvgElo": 1030,
       "opponentAvgElo": 986,
       "teammates": [
         "mgmanager",
@@ -265,8 +242,8 @@
       "postRating": 1054,
       "eloChange": -17,
       "civ": "Tatars",
-      "teamAvgElo": 1069,
-      "opponentAvgElo": 1041,
+      "teamAvgElo": 1070,
+      "opponentAvgElo": 1042,
       "teammates": [
         "R301",
         "Emusan",
@@ -337,7 +314,7 @@
       "postRating": 1043,
       "eloChange": 20,
       "civ": "Turks",
-      "teamAvgElo": 1084,
+      "teamAvgElo": 1085,
       "opponentAvgElo": 1117,
       "teammates": [
         "Ghost_pt",
@@ -386,7 +363,7 @@
       "eloChange": 16,
       "civ": "Turks",
       "teamAvgElo": 1080,
-      "opponentAvgElo": 1062,
+      "opponentAvgElo": 1061,
       "teammates": [
         "i kun 2.5",
         "Grimmie",
@@ -433,8 +410,8 @@
       "postRating": 1073,
       "eloChange": 16,
       "civ": "Vikings",
-      "teamAvgElo": 1041,
-      "opponentAvgElo": 1053,
+      "teamAvgElo": 1042,
+      "opponentAvgElo": 1054,
       "teammates": [
         "YUJIN",
         "Eat MY Sprouts",
@@ -457,7 +434,7 @@
       "postRating": 1087,
       "eloChange": 14,
       "civ": "Poles",
-      "teamAvgElo": 1092,
+      "teamAvgElo": 1093,
       "opponentAvgElo": 1027,
       "teammates": [
         "Lumedge",
@@ -482,7 +459,7 @@
       "eloChange": 12,
       "civ": "Britons",
       "teamAvgElo": 1135,
-      "opponentAvgElo": 1001,
+      "opponentAvgElo": 1003,
       "teammates": [
         "Fajny Człowiek",
         "Lumedge",
@@ -505,8 +482,8 @@
       "postRating": 1078,
       "eloChange": -21,
       "civ": "Persians",
-      "teamAvgElo": 1126,
-      "opponentAvgElo": 997,
+      "teamAvgElo": 1127,
+      "opponentAvgElo": 998,
       "teammates": [
         "YUJIN",
         "[CSGS]Runescape",
@@ -541,6 +518,30 @@
         "476055690",
         "kaka52pk",
         "[CSGS]Runescape"
+      ]
+    },
+    {
+      "matchId": 491810993,
+      "description": "Bamboo nothing 10X3X",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783861529,
+      "outcome": "win",
+      "preRating": 1063,
+      "postRating": 1078,
+      "eloChange": 15,
+      "civ": "Vikings",
+      "teamAvgElo": 1010,
+      "opponentAvgElo": 1047,
+      "teammates": [
+        "yxsko93",
+        "The Cobra Brothers",
+        "levvafire"
+      ],
+      "opponents": [
+        "golhmogh",
+        "Lumedge",
+        "KingOfTheNorth",
+        "mark0112"
       ]
     }
   ]
