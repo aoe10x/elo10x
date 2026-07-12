@@ -1,12 +1,12 @@
 {
   "profile_id": 632840,
   "alias": "malth",
-  "rating": 937,
+  "rating": 927,
   "wins": 7,
-  "losses": 14,
-  "gamesCount": 21,
-  "winRate": 33,
-  "lastPlayedAt": 1783601296,
+  "losses": 15,
+  "gamesCount": 22,
+  "winRate": 32,
+  "lastPlayedAt": 1783852168,
   "country": "jp",
   "merged_ids": [],
   "ratingHistory": [
@@ -31,33 +31,10 @@
     981,
     964,
     948,
-    937
+    937,
+    927
   ],
   "recentMatches": [
-    {
-      "matchId": 357668421,
-      "description": "10x civ shared 4v4",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1733956020,
-      "outcome": "win",
-      "preRating": 972,
-      "postRating": 1020,
-      "eloChange": 48,
-      "civ": "Unknown",
-      "teamAvgElo": 1078,
-      "opponentAvgElo": 978,
-      "teammates": [
-        "pandalam",
-        "terrifictotalus",
-        "Kinna fresh"
-      ],
-      "opponents": [
-        "nhan09d2",
-        "Soviet Union",
-        "Whytebeard",
-        "CEO of Ciderlove"
-      ]
-    },
     {
       "matchId": 360368438,
       "description": "TURBO 10x shared civ  3x tec RANDOM CIV",
@@ -445,15 +422,15 @@
     {
       "matchId": 489769959,
       "description": "10x 3x bamboo nothing  turbo host here",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
       "timestamp": 1783084445,
       "outcome": "loss",
       "preRating": 981,
       "postRating": 964,
       "eloChange": -17,
       "civ": "Byzantines",
-      "teamAvgElo": 1037,
-      "opponentAvgElo": 1024,
+      "teamAvgElo": 1034,
+      "opponentAvgElo": 1022,
       "teammates": [
         "RA",
         "JaFu",
@@ -476,8 +453,8 @@
       "postRating": 948,
       "eloChange": -16,
       "civ": "Bulgarians",
-      "teamAvgElo": 1018,
-      "opponentAvgElo": 995,
+      "teamAvgElo": 1017,
+      "opponentAvgElo": 998,
       "teammates": [
         "mozu5",
         "Bridge",
@@ -500,8 +477,8 @@
       "postRating": 937,
       "eloChange": -11,
       "civ": "Mongols",
-      "teamAvgElo": 1011,
-      "opponentAvgElo": 1059,
+      "teamAvgElo": 1010,
+      "opponentAvgElo": 1058,
       "teammates": [
         "Silent Annihilation",
         "Saloon_F_F",
@@ -512,6 +489,30 @@
         "builttospill",
         "鱼浆",
         "Cheesewheel24"
+      ]
+    },
+    {
+      "matchId": 491784357,
+      "description": "3X 10X",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783852168,
+      "outcome": "loss",
+      "preRating": 937,
+      "postRating": 927,
+      "eloChange": -10,
+      "civ": "Hindustanis",
+      "teamAvgElo": 1072,
+      "opponentAvgElo": 1074,
+      "teammates": [
+        "GiGi",
+        "pandalam",
+        "MARKVILEX"
+      ],
+      "opponents": [
+        "青松",
+        "kekekeya",
+        "Tamra Robinson",
+        "SilentAim420"
       ]
     }
   ]

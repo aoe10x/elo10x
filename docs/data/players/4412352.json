@@ -1,12 +1,12 @@
 {
   "profile_id": 4412352,
   "alias": "Monster_HK",
-  "rating": 994,
+  "rating": 981,
   "wins": 24,
-  "losses": 31,
-  "gamesCount": 55,
-  "winRate": 44,
-  "lastPlayedAt": 1783336380,
+  "losses": 32,
+  "gamesCount": 56,
+  "winRate": 43,
+  "lastPlayedAt": 1783823938,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -61,37 +61,14 @@
     1072,
     1051,
     1033,
+    1019,
+    1036,
     1020,
-    1037,
-    1021,
-    1008,
-    994
+    1007,
+    993,
+    981
   ],
   "recentMatches": [
-    {
-      "matchId": 442138239,
-      "description": "Bamboo 10x 3x no noobs",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1766497020,
-      "outcome": "loss",
-      "preRating": 955,
-      "postRating": 940,
-      "eloChange": -15,
-      "civ": "Chinese",
-      "teamAvgElo": 1001,
-      "opponentAvgElo": 970,
-      "teammates": [
-        "Cosongasas",
-        "fxsound",
-        "TopazSkate37557"
-      ],
-      "opponents": [
-        "MoEzy",
-        "memeboy420",
-        "CSA_R_Griffith",
-        "The Cobra Brothers"
-      ]
-    },
     {
       "matchId": 449505930,
       "description": "10x 3x BAMBOO NOTHING",
@@ -294,7 +271,7 @@
       "postRating": 1023,
       "eloChange": 18,
       "civ": "Dravidians",
-      "teamAvgElo": 1035,
+      "teamAvgElo": 1028,
       "opponentAvgElo": 1049,
       "teammates": [
         "FlyingSheep",
@@ -391,7 +368,7 @@
       "eloChange": -21,
       "civ": "Aztecs",
       "teamAvgElo": 1087,
-      "opponentAvgElo": 972,
+      "opponentAvgElo": 968,
       "teammates": [
         "TheRiceMan",
         "1250929080",
@@ -414,8 +391,8 @@
       "postRating": 1033,
       "eloChange": -18,
       "civ": "Huns",
-      "teamAvgElo": 995,
-      "opponentAvgElo": 1014,
+      "teamAvgElo": 998,
+      "opponentAvgElo": 1013,
       "teammates": [
         "dwalte011",
         "Kaa Da Kaveman",
@@ -435,11 +412,11 @@
       "timestamp": 1781494107,
       "outcome": "loss",
       "preRating": 1033,
-      "postRating": 1020,
-      "eloChange": -13,
+      "postRating": 1019,
+      "eloChange": -14,
       "civ": "Ethiopians",
       "teamAvgElo": 1033,
-      "opponentAvgElo": 1088,
+      "opponentAvgElo": 1087,
       "teammates": [
         "pool_champ",
         "aLEXt",
@@ -458,12 +435,12 @@
       "mapname": "Bamboo Nothing_Paren_V4_Nohills",
       "timestamp": 1781580615,
       "outcome": "win",
-      "preRating": 1020,
-      "postRating": 1037,
+      "preRating": 1019,
+      "postRating": 1036,
       "eloChange": 17,
       "civ": "Teutons",
-      "teamAvgElo": 1087,
-      "opponentAvgElo": 1034,
+      "teamAvgElo": 1088,
+      "opponentAvgElo": 1035,
       "teammates": [
         "Keishi",
         "ELWATON",
@@ -482,11 +459,11 @@
       "mapname": "Bamboo Nothing_Paren_V4",
       "timestamp": 1781754103,
       "outcome": "loss",
-      "preRating": 1037,
-      "postRating": 1021,
+      "preRating": 1036,
+      "postRating": 1020,
       "eloChange": -16,
       "civ": "Turks",
-      "teamAvgElo": 1079,
+      "teamAvgElo": 1078,
       "opponentAvgElo": 1030,
       "teammates": [
         "baianitro",
@@ -506,12 +483,12 @@
       "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1783310926,
       "outcome": "loss",
-      "preRating": 1021,
-      "postRating": 1008,
+      "preRating": 1020,
+      "postRating": 1007,
       "eloChange": -13,
       "civ": "Vietnamese",
-      "teamAvgElo": 1081,
-      "opponentAvgElo": 1082,
+      "teamAvgElo": 1080,
+      "opponentAvgElo": 1081,
       "teammates": [
         "田瘾犯了",
         "Dogberto",
@@ -530,12 +507,12 @@
       "mapname": "Bamboo Nothing - Scorpyon De",
       "timestamp": 1783336380,
       "outcome": "loss",
-      "preRating": 1008,
-      "postRating": 994,
+      "preRating": 1007,
+      "postRating": 993,
       "eloChange": -14,
       "civ": "Magyars",
       "teamAvgElo": 997,
-      "opponentAvgElo": 1049,
+      "opponentAvgElo": 1048,
       "teammates": [
         "abatyse6533",
         "Moose",
@@ -546,6 +523,30 @@
         "{R} Parry",
         "Sundev",
         "derailer9"
+      ]
+    },
+    {
+      "matchId": 491716530,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783823938,
+      "outcome": "loss",
+      "preRating": 993,
+      "postRating": 981,
+      "eloChange": -12,
+      "civ": "Hindustanis",
+      "teamAvgElo": 1019,
+      "opponentAvgElo": 1076,
+      "teammates": [
+        "derailer9",
+        "ebonzhang",
+        "Terry"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "duckbuildperson",
+        "NoxMortus",
+        "Brotherman Bill"
       ]
     }
   ]

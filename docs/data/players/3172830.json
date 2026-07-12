@@ -1,12 +1,12 @@
 {
   "profile_id": 3172830,
   "alias": "Craster",
-  "rating": 1047,
+  "rating": 1028,
   "wins": 9,
-  "losses": 9,
-  "gamesCount": 18,
-  "winRate": 50,
-  "lastPlayedAt": 1783647082,
+  "losses": 10,
+  "gamesCount": 19,
+  "winRate": 47,
+  "lastPlayedAt": 1783822519,
   "country": "ve",
   "merged_ids": [],
   "ratingHistory": [
@@ -28,7 +28,8 @@
     1022,
     1046,
     1066,
-    1047
+    1047,
+    1028
   ],
   "recentMatches": [
     {
@@ -449,7 +450,7 @@
       "postRating": 1047,
       "eloChange": -19,
       "civ": "Britons",
-      "teamAvgElo": 1097,
+      "teamAvgElo": 1098,
       "opponentAvgElo": 1092,
       "teammates": [
         "Kumad",
@@ -461,6 +462,30 @@
         "Brotherman Bill",
         "EL__PATRON",
         "faux"
+      ]
+    },
+    {
+      "matchId": 491712370,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783822519,
+      "outcome": "loss",
+      "preRating": 1047,
+      "postRating": 1028,
+      "eloChange": -19,
+      "civ": "Franks",
+      "teamAvgElo": 1010,
+      "opponentAvgElo": 1047,
+      "teammates": [
+        "Chuckyllo4417",
+        "duckbuildperson",
+        "irvizuett"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "Terry",
+        "LeosMind",
+        "MalekBTW"
       ]
     }
   ]

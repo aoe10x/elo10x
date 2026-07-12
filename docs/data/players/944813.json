@@ -1,12 +1,12 @@
 {
   "profile_id": 944813,
   "alias": "faux",
-  "rating": 1114,
+  "rating": 1097,
   "wins": 32,
-  "losses": 34,
-  "gamesCount": 66,
+  "losses": 35,
+  "gamesCount": 67,
   "winRate": 48,
-  "lastPlayedAt": 1783649592,
+  "lastPlayedAt": 1783819775,
   "country": "gb",
   "merged_ids": [],
   "ratingHistory": [
@@ -74,35 +74,12 @@
     1026,
     1044,
     1065,
-    1082,
-    1098,
-    1114
+    1083,
+    1099,
+    1115,
+    1097
   ],
   "recentMatches": [
-    {
-      "matchId": 448097458,
-      "description": "10x 3x bamboo random",
-      "mapname": "Bamboo Nothing_Paren_V3.0",
-      "timestamp": 1768367400,
-      "outcome": "win",
-      "preRating": 976,
-      "postRating": 996,
-      "eloChange": 20,
-      "civ": "Khmer",
-      "teamAvgElo": 1067,
-      "opponentAvgElo": 1056,
-      "teammates": [
-        "bijiyumo",
-        "jair_silva",
-        "Imperator Storm"
-      ],
-      "opponents": [
-        "im slow",
-        "Paolo Carrosel",
-        "Thiago Bassi",
-        "Dayman"
-      ]
-    },
     {
       "matchId": 450956142,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -330,7 +307,7 @@
       "eloChange": -15,
       "civ": "Khmer",
       "teamAvgElo": 1045,
-      "opponentAvgElo": 1068,
+      "opponentAvgElo": 1069,
       "teammates": [
         "feid_",
         "PoonSlapper",
@@ -354,7 +331,7 @@
       "eloChange": 14,
       "civ": "Armenians",
       "teamAvgElo": 1074,
-      "opponentAvgElo": 990,
+      "opponentAvgElo": 988,
       "teammates": [
         "Kumad",
         "Myriad",
@@ -378,7 +355,7 @@
       "eloChange": -16,
       "civ": "Cumans",
       "teamAvgElo": 1032,
-      "opponentAvgElo": 1042,
+      "opponentAvgElo": 1043,
       "teammates": [
         "POPE TAME",
         "Sentinel",
@@ -402,7 +379,7 @@
       "eloChange": 19,
       "civ": "Tatars",
       "teamAvgElo": 1074,
-      "opponentAvgElo": 1095,
+      "opponentAvgElo": 1096,
       "teammates": [
         "Kumad",
         "Wardy21",
@@ -425,7 +402,7 @@
       "postRating": 1026,
       "eloChange": -14,
       "civ": "Japanese",
-      "teamAvgElo": 1093,
+      "teamAvgElo": 1094,
       "opponentAvgElo": 1094,
       "teammates": [
         "PoonSlapper",
@@ -449,7 +426,7 @@
       "postRating": 1044,
       "eloChange": 18,
       "civ": "Byzantines",
-      "teamAvgElo": 1057,
+      "teamAvgElo": 1058,
       "opponentAvgElo": 1080,
       "teammates": [
         "EL__PATRON",
@@ -494,11 +471,11 @@
       "timestamp": 1783647082,
       "outcome": "win",
       "preRating": 1065,
-      "postRating": 1082,
-      "eloChange": 17,
+      "postRating": 1083,
+      "eloChange": 18,
       "civ": "Byzantines",
       "teamAvgElo": 1092,
-      "opponentAvgElo": 1097,
+      "opponentAvgElo": 1098,
       "teammates": [
         "JoeyTribianni69",
         "Brotherman Bill",
@@ -517,12 +494,12 @@
       "mapname": "Wet Woods v3.0.3",
       "timestamp": 1783648681,
       "outcome": "win",
-      "preRating": 1082,
-      "postRating": 1098,
+      "preRating": 1083,
+      "postRating": 1099,
       "eloChange": 16,
       "civ": "Romans",
       "teamAvgElo": 1108,
-      "opponentAvgElo": 1082,
+      "opponentAvgElo": 1083,
       "teammates": [
         "EL__PATRON",
         "Brotherman Bill",
@@ -541,11 +518,11 @@
       "mapname": "Wet Woods v3.0.3",
       "timestamp": 1783649592,
       "outcome": "win",
-      "preRating": 1098,
-      "postRating": 1114,
+      "preRating": 1099,
+      "postRating": 1115,
       "eloChange": 16,
       "civ": "Vietnamese",
-      "teamAvgElo": 1070,
+      "teamAvgElo": 1071,
       "opponentAvgElo": 1101,
       "teammates": [
         "Brotherman Bill",
@@ -557,6 +534,30 @@
         "Myriad",
         "JoeyTribianni69",
         "tom"
+      ]
+    },
+    {
+      "matchId": 491706382,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1783819775,
+      "outcome": "loss",
+      "preRating": 1115,
+      "postRating": 1097,
+      "eloChange": -18,
+      "civ": "Bengalis",
+      "teamAvgElo": 1079,
+      "opponentAvgElo": 1078,
+      "teammates": [
+        "feid_",
+        "Akoros",
+        "Belisarius"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "Jelly",
+        "Brotherman Bill"
       ]
     }
   ]

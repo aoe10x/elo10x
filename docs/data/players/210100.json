@@ -1,13 +1,13 @@
 {
   "profile_id": 210100,
   "alias": "Midu",
-  "rating": 972,
+  "rating": 960,
   "wins": 21,
-  "losses": 29,
-  "gamesCount": 50,
-  "winRate": 42,
+  "losses": 30,
+  "gamesCount": 51,
+  "winRate": 41,
   "lastPlayedAt": 1781078100,
-  "country": "Unknown",
+  "country": "de",
   "merged_ids": [],
   "ratingHistory": [
     1000,
@@ -60,33 +60,10 @@
     945,
     963,
     983,
-    972
+    970,
+    960
   ],
   "recentMatches": [
-    {
-      "matchId": 450123687,
-      "description": "4 vs 4 // 10x Shared Random Civ",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1769057400,
-      "outcome": "win",
-      "preRating": 954,
-      "postRating": 975,
-      "eloChange": 21,
-      "civ": "Lithuanians",
-      "teamAvgElo": 985,
-      "opponentAvgElo": 1076,
-      "teammates": [
-        "Varondil",
-        "lemon",
-        "Supersonic Rocketship"
-      ],
-      "opponents": [
-        "Juk3",
-        "znifer",
-        "camus",
-        "SoulCatcher"
-      ]
-    },
     {
       "matchId": 451746495,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -520,17 +497,41 @@
       ]
     },
     {
+      "matchId": 473186838,
+      "description": "10x 3x BAMBOO best lobby",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1777160967,
+      "outcome": "loss",
+      "preRating": 983,
+      "postRating": 970,
+      "eloChange": -13,
+      "civ": "Vietnamese",
+      "teamAvgElo": 1053,
+      "opponentAvgElo": 1060,
+      "teammates": [
+        "typ53b90",
+        "Ghost_pt",
+        "OhSheeep"
+      ],
+      "opponents": [
+        "LethalP59",
+        "ZTH",
+        "petterpacceli",
+        "nayman"
+      ]
+    },
+    {
       "matchId": 484224444,
       "description": "10x Shared Civ Bonus 4v4 Random",
       "mapname": "Wet Woods V3.0.3",
       "timestamp": 1781078100,
       "outcome": "loss",
-      "preRating": 983,
-      "postRating": 972,
-      "eloChange": -11,
+      "preRating": 970,
+      "postRating": 960,
+      "eloChange": -10,
       "civ": "Cumans",
-      "teamAvgElo": 1035,
-      "opponentAvgElo": 1097,
+      "teamAvgElo": 1031,
+      "opponentAvgElo": 1098,
       "teammates": [
         "SitzKrieg",
         "Emotions are prohibited",

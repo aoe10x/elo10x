@@ -1,12 +1,12 @@
 {
   "profile_id": 25707591,
   "alias": "menorahjury",
-  "rating": 906,
-  "wins": 4,
+  "rating": 970,
+  "wins": 6,
   "losses": 11,
-  "gamesCount": 15,
-  "winRate": 27,
-  "lastPlayedAt": 1783714645,
+  "gamesCount": 17,
+  "winRate": 35,
+  "lastPlayedAt": 1783831627,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -25,7 +25,9 @@
     944,
     932,
     919,
-    906
+    906,
+    942,
+    970
   ],
   "recentMatches": [
     {
@@ -39,7 +41,7 @@
       "eloChange": 54,
       "civ": "Unknown",
       "teamAvgElo": 1042,
-      "opponentAvgElo": 1039,
+      "opponentAvgElo": 1040,
       "teammates": [
         "HighPriestCaco",
         "Yoreik",
@@ -62,8 +64,8 @@
       "postRating": 1004,
       "eloChange": -50,
       "civ": "Dravidians",
-      "teamAvgElo": 1073,
-      "opponentAvgElo": 1032,
+      "teamAvgElo": 1072,
+      "opponentAvgElo": 1031,
       "teammates": [
         "Lumedge",
         "Wololo",
@@ -87,7 +89,7 @@
       "eloChange": -40,
       "civ": "Spanish",
       "teamAvgElo": 1109,
-      "opponentAvgElo": 1040,
+      "opponentAvgElo": 1041,
       "teammates": [
         "[B] Cannino",
         "maddymsg",
@@ -111,7 +113,7 @@
       "eloChange": 50,
       "civ": "Incas",
       "teamAvgElo": 1002,
-      "opponentAvgElo": 1018,
+      "opponentAvgElo": 1016,
       "teammates": [
         "maddymsg",
         "HighPriestCaco",
@@ -151,7 +153,7 @@
     {
       "matchId": 490610168,
       "description": "10x_3x_Bamboo_Nothing_Random",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
       "timestamp": 1783388018,
       "outcome": "loss",
       "preRating": 980,
@@ -207,7 +209,7 @@
       "eloChange": -21,
       "civ": "Aztecs",
       "teamAvgElo": 990,
-      "opponentAvgElo": 1078,
+      "opponentAvgElo": 1077,
       "teammates": [
         "adrian",
         "bigjames",
@@ -278,8 +280,8 @@
       "postRating": 959,
       "eloChange": 38,
       "civ": "Slavs",
-      "teamAvgElo": 1050,
-      "opponentAvgElo": 989,
+      "teamAvgElo": 1049,
+      "opponentAvgElo": 988,
       "teammates": [
         "Parts",
         "wintre",
@@ -302,7 +304,7 @@
       "postRating": 944,
       "eloChange": -15,
       "civ": "Japanese",
-      "teamAvgElo": 1042,
+      "teamAvgElo": 1041,
       "opponentAvgElo": 1155,
       "teammates": [
         "pandasadnap",
@@ -326,7 +328,7 @@
       "postRating": 932,
       "eloChange": -12,
       "civ": "Malians",
-      "teamAvgElo": 964,
+      "teamAvgElo": 963,
       "opponentAvgElo": 1176,
       "teammates": [
         "iamatthe.hell",
@@ -375,7 +377,7 @@
       "eloChange": -13,
       "civ": "Spanish",
       "teamAvgElo": 1000,
-      "opponentAvgElo": 1110,
+      "opponentAvgElo": 1109,
       "teammates": [
         "VAPE NAYSH Y'ALL",
         "Megahaufen",
@@ -386,6 +388,54 @@
         "Paladin",
         "TheRiceMan",
         "Joseph"
+      ]
+    },
+    {
+      "matchId": 491730888,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783830401,
+      "outcome": "win",
+      "preRating": 906,
+      "postRating": 942,
+      "eloChange": 36,
+      "civ": "Romans",
+      "teamAvgElo": 983,
+      "opponentAvgElo": 1087,
+      "teammates": [
+        "Holy Cheetos",
+        "Bridge",
+        "DGHIR | NICOGP11"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "Stigel",
+        "Xinzzo",
+        "Mionel Lessi"
+      ]
+    },
+    {
+      "matchId": 491734488,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783831627,
+      "outcome": "win",
+      "preRating": 942,
+      "postRating": 970,
+      "eloChange": 28,
+      "civ": "Poles",
+      "teamAvgElo": 980,
+      "opponentAvgElo": 1031,
+      "teammates": [
+        "Stigel",
+        "Holy Cheetos",
+        "bigjames"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "Bridge",
+        "HyNo",
+        "bull_scoots"
       ]
     }
   ]

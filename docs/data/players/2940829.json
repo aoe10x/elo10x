@@ -1,12 +1,12 @@
 {
   "profile_id": 2940829,
   "alias": "UnstableKnight",
-  "rating": 910,
+  "rating": 898,
   "wins": 12,
-  "losses": 23,
-  "gamesCount": 35,
-  "winRate": 34,
-  "lastPlayedAt": 1783710271,
+  "losses": 24,
+  "gamesCount": 36,
+  "winRate": 33,
+  "lastPlayedAt": 1783809997,
   "country": "za",
   "merged_ids": [],
   "ratingHistory": [
@@ -45,33 +45,10 @@
     947,
     935,
     921,
-    910
+    910,
+    898
   ],
   "recentMatches": [
-    {
-      "matchId": 385182869,
-      "description": "10x 3x bamboo nothing  turbo",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1744583640,
-      "outcome": "win",
-      "preRating": 887,
-      "postRating": 922,
-      "eloChange": 35,
-      "civ": "Portuguese",
-      "teamAvgElo": 950,
-      "opponentAvgElo": 1056,
-      "teammates": [
-        "gmc inspector",
-        "Oracle",
-        "Lord Lee So Cacti"
-      ],
-      "opponents": [
-        "awdsxq",
-        "Ac_financier",
-        "一念一繁华",
-        "GandalfGG"
-      ]
-    },
     {
       "matchId": 385202788,
       "description": "10x 3x Bamboo - 10xshared.com",
@@ -443,7 +420,7 @@
       "eloChange": -12,
       "civ": "Burgundians",
       "teamAvgElo": 1044,
-      "opponentAvgElo": 1053,
+      "opponentAvgElo": 1052,
       "teammates": [
         "鱼浆",
         "blind_mist",
@@ -491,7 +468,7 @@
       "eloChange": -14,
       "civ": "Bulgarians",
       "teamAvgElo": 984,
-      "opponentAvgElo": 990,
+      "opponentAvgElo": 989,
       "teammates": [
         "紫蝶黄蜂俱有情",
         "obito123",
@@ -514,7 +491,7 @@
       "postRating": 910,
       "eloChange": -11,
       "civ": "Berbers",
-      "teamAvgElo": 973,
+      "teamAvgElo": 972,
       "opponentAvgElo": 1032,
       "teammates": [
         "baianitro",
@@ -526,6 +503,30 @@
         "Consume Product",
         "julien.nicolai",
         "treehugger"
+      ]
+    },
+    {
+      "matchId": 491683572,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783809997,
+      "outcome": "loss",
+      "preRating": 910,
+      "postRating": 898,
+      "eloChange": -12,
+      "civ": "Cumans",
+      "teamAvgElo": 1006,
+      "opponentAvgElo": 1006,
+      "teammates": [
+        "Rita De Valencia",
+        "Chony",
+        "omega"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "pentagonator",
+        "Jelly",
+        "Slayer"
       ]
     }
   ]

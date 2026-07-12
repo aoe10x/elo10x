@@ -1,12 +1,12 @@
 {
   "profile_id": 5013613,
   "alias": "Makinaskee",
-  "rating": 975,
-  "wins": 6,
-  "losses": 9,
-  "gamesCount": 15,
-  "winRate": 40,
-  "lastPlayedAt": 1783702527,
+  "rating": 990,
+  "wins": 9,
+  "losses": 12,
+  "gamesCount": 21,
+  "winRate": 43,
+  "lastPlayedAt": 1783805801,
   "country": "ar",
   "merged_ids": [],
   "ratingHistory": [
@@ -25,33 +25,15 @@
     983,
     954,
     992,
-    975
+    975,
+    957,
+    936,
+    962,
+    948,
+    971,
+    990
   ],
   "recentMatches": [
-    {
-      "matchId": 363999858,
-      "description": "10x Shared - 3x Tech BAMBOO 4V4",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1736402580,
-      "outcome": "win",
-      "preRating": 1000,
-      "postRating": 1050,
-      "eloChange": 50,
-      "civ": "Unknown",
-      "teamAvgElo": 1038,
-      "opponentAvgElo": 1014,
-      "teammates": [
-        "reZZivAEr",
-        "Grimmie",
-        "Edgeville"
-      ],
-      "opponents": [
-        "Your Ego",
-        "dRea",
-        "Bob's Uncle",
-        "Doormat"
-      ]
-    },
     {
       "matchId": 371637323,
       "description": "10x shared 3x tech Bamboo nothing random civ",
@@ -206,8 +188,8 @@
       "postRating": 1027,
       "eloChange": -38,
       "civ": "Koreans",
-      "teamAvgElo": 1058,
-      "opponentAvgElo": 1060,
+      "teamAvgElo": 1056,
+      "opponentAvgElo": 1059,
       "teammates": [
         "nayman",
         "helianth",
@@ -230,8 +212,8 @@
       "postRating": 997,
       "eloChange": -30,
       "civ": "Italians",
-      "teamAvgElo": 1040,
-      "opponentAvgElo": 1081,
+      "teamAvgElo": 1041,
+      "opponentAvgElo": 1082,
       "teammates": [
         "PITON | Shepy",
         "Wololoo",
@@ -255,7 +237,7 @@
       "eloChange": -32,
       "civ": "Sicilians",
       "teamAvgElo": 1094,
-      "opponentAvgElo": 1021,
+      "opponentAvgElo": 1014,
       "teammates": [
         "Kumad",
         "Myriad",
@@ -278,7 +260,7 @@
       "postRating": 946,
       "eloChange": -19,
       "civ": "Tatars",
-      "teamAvgElo": 1027,
+      "teamAvgElo": 1020,
       "opponentAvgElo": 1116,
       "teammates": [
         "fast resign",
@@ -302,8 +284,8 @@
       "postRating": 983,
       "eloChange": 37,
       "civ": "Armenians",
-      "teamAvgElo": 1015,
-      "opponentAvgElo": 1024,
+      "teamAvgElo": 1016,
+      "opponentAvgElo": 1025,
       "teammates": [
         "SpawN",
         "Regina Ip",
@@ -327,7 +309,7 @@
       "eloChange": -29,
       "civ": "Cumans",
       "teamAvgElo": 971,
-      "opponentAvgElo": 985,
+      "opponentAvgElo": 986,
       "teammates": [
         "Spiz.101",
         "pool_champ",
@@ -374,7 +356,7 @@
       "postRating": 975,
       "eloChange": -17,
       "civ": "Koreans",
-      "teamAvgElo": 1000,
+      "teamAvgElo": 999,
       "opponentAvgElo": 1122,
       "teammates": [
         "iamatthe.hell",
@@ -386,6 +368,150 @@
         "GiGi",
         "YUJIN",
         "Dr.Ao"
+      ]
+    },
+    {
+      "matchId": 491616859,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1783790561,
+      "outcome": "loss",
+      "preRating": 975,
+      "postRating": 957,
+      "eloChange": -18,
+      "civ": "Slavs",
+      "teamAvgElo": 1005,
+      "opponentAvgElo": 1058,
+      "teammates": [
+        "Chikna Raavan",
+        "Ferdinand I of Naples",
+        "kaka52pk"
+      ],
+      "opponents": [
+        "Parenquima",
+        "bull_scoots",
+        "Yeepers",
+        "Parts"
+      ]
+    },
+    {
+      "matchId": 491629644,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783793697,
+      "outcome": "loss",
+      "preRating": 957,
+      "postRating": 936,
+      "eloChange": -21,
+      "civ": "Huns",
+      "teamAvgElo": 1040,
+      "opponentAvgElo": 983,
+      "teammates": [
+        "NoAgendaPODCAST",
+        "Feitoria",
+        "Maic"
+      ],
+      "opponents": [
+        "sppd3181",
+        "Yeepers",
+        "AAA",
+        "jair_silva"
+      ]
+    },
+    {
+      "matchId": 491656486,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783800591,
+      "outcome": "win",
+      "preRating": 936,
+      "postRating": 962,
+      "eloChange": 26,
+      "civ": "Tatars",
+      "teamAvgElo": 1007,
+      "opponentAvgElo": 1017,
+      "teammates": [
+        "Maxim Liann",
+        "McKrakfejs",
+        "jair_silva"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "ActualWizard",
+        "SpiniestTuna222",
+        "AAA"
+      ]
+    },
+    {
+      "matchId": 491662237,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783802037,
+      "outcome": "loss",
+      "preRating": 962,
+      "postRating": 948,
+      "eloChange": -14,
+      "civ": "Saracens",
+      "teamAvgElo": 1004,
+      "opponentAvgElo": 1054,
+      "teammates": [
+        "AAA",
+        "Nuke Toilet",
+        "jair_silva"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "SpiniestTuna222",
+        "Manba Out",
+        "nooblet3300"
+      ]
+    },
+    {
+      "matchId": 491670052,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783804501,
+      "outcome": "win",
+      "preRating": 948,
+      "postRating": 971,
+      "eloChange": 23,
+      "civ": "Romans",
+      "teamAvgElo": 996,
+      "opponentAvgElo": 1060,
+      "teammates": [
+        "Monkeymonk",
+        "Ye",
+        "Mehandor"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "apolizer",
+        "Scadufax",
+        "MadRussian"
+      ]
+    },
+    {
+      "matchId": 491673294,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783805801,
+      "outcome": "win",
+      "preRating": 971,
+      "postRating": 990,
+      "eloChange": 19,
+      "civ": "Spanish",
+      "teamAvgElo": 982,
+      "opponentAvgElo": 1044,
+      "teammates": [
+        "apolizer",
+        "Scadufax",
+        "MRmoreto"
+      ],
+      "opponents": [
+        "iamatthe.hell",
+        "{R} Parry",
+        "MadRussian",
+        "Ellie91"
       ]
     }
   ]

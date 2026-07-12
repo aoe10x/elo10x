@@ -1,12 +1,12 @@
 {
   "profile_id": 35254,
   "alias": "Berberecho_Feroz",
-  "rating": 936,
+  "rating": 925,
   "wins": 13,
-  "losses": 27,
-  "gamesCount": 40,
-  "winRate": 33,
-  "lastPlayedAt": 1783816200,
+  "losses": 28,
+  "gamesCount": 41,
+  "winRate": 32,
+  "lastPlayedAt": 1783843694,
   "country": "es",
   "merged_ids": [],
   "ratingHistory": [
@@ -50,33 +50,10 @@
     908,
     928,
     917,
-    936
+    936,
+    925
   ],
   "recentMatches": [
-    {
-      "matchId": 435881997,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1764227400,
-      "outcome": "win",
-      "preRating": 820,
-      "postRating": 844,
-      "eloChange": 24,
-      "civ": "Malians",
-      "teamAvgElo": 995,
-      "opponentAvgElo": 1011,
-      "teammates": [
-        "Goodsoup",
-        "PapusPopus",
-        "ooo"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "sonygames4691",
-        "oklema",
-        "dnz n 40 skrms"
-      ]
-    },
     {
       "matchId": 437257133,
       "description": "3x 10x bamboo - random civ",
@@ -423,8 +400,8 @@
       "postRating": 884,
       "eloChange": 23,
       "civ": "Ethiopians",
-      "teamAvgElo": 986,
-      "opponentAvgElo": 1035,
+      "teamAvgElo": 985,
+      "opponentAvgElo": 1031,
       "teammates": [
         "CrazyKaelby",
         "Xinzzo",
@@ -448,7 +425,7 @@
       "eloChange": 24,
       "civ": "Slavs",
       "teamAvgElo": 1008,
-      "opponentAvgElo": 1074,
+      "opponentAvgElo": 1071,
       "teammates": [
         "RA",
         "Mimi",
@@ -472,7 +449,7 @@
       "eloChange": 20,
       "civ": "Malay",
       "teamAvgElo": 1014,
-      "opponentAvgElo": 996,
+      "opponentAvgElo": 997,
       "teammates": [
         "VAPE NAYSH Y'ALL",
         "golhmogh",
@@ -495,8 +472,8 @@
       "postRating": 917,
       "eloChange": -11,
       "civ": "Britons",
-      "teamAvgElo": 1030,
-      "opponentAvgElo": 1038,
+      "teamAvgElo": 1029,
+      "opponentAvgElo": 1035,
       "teammates": [
         "pool_champ",
         "取款机ATM",
@@ -519,8 +496,8 @@
       "postRating": 936,
       "eloChange": 19,
       "civ": "Vietnamese",
-      "teamAvgElo": 1022,
-      "opponentAvgElo": 977,
+      "teamAvgElo": 1023,
+      "opponentAvgElo": 983,
       "teammates": [
         "SpiniestTuna222",
         "LonelyKnight",
@@ -531,6 +508,30 @@
         "DnD",
         "Jelly",
         "Antimier"
+      ]
+    },
+    {
+      "matchId": 491763480,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783843694,
+      "outcome": "loss",
+      "preRating": 936,
+      "postRating": 925,
+      "eloChange": -11,
+      "civ": "Japanese",
+      "teamAvgElo": 1015,
+      "opponentAvgElo": 1047,
+      "teammates": [
+        "Ravenlost",
+        "babeleo",
+        "_Pilin69_"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "Bridge",
+        "GiGi",
+        "平生不修善果 只爱石油军火"
       ]
     }
   ]

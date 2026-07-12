@@ -1,12 +1,12 @@
 {
   "profile_id": 2312150,
   "alias": "Perxeus",
-  "rating": 952,
-  "wins": 6,
-  "losses": 12,
-  "gamesCount": 18,
-  "winRate": 33,
-  "lastPlayedAt": 1782671042,
+  "rating": 963,
+  "wins": 7,
+  "losses": 13,
+  "gamesCount": 20,
+  "winRate": 35,
+  "lastPlayedAt": 1783835821,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -28,7 +28,9 @@
     959,
     983,
     964,
-    952
+    952,
+    939,
+    963
   ],
   "recentMatches": [
     {
@@ -66,7 +68,7 @@
       "eloChange": -40,
       "civ": "Sicilians",
       "teamAvgElo": 1000,
-      "opponentAvgElo": 1003,
+      "opponentAvgElo": 1004,
       "teammates": [
         "Bambuchagt",
         "gamingtars",
@@ -89,8 +91,8 @@
       "postRating": 888,
       "eloChange": -25,
       "civ": "Britons",
-      "teamAvgElo": 966,
-      "opponentAvgElo": 1084,
+      "teamAvgElo": 968,
+      "opponentAvgElo": 1085,
       "teammates": [
         "oklema",
         "Chirijiraden",
@@ -113,8 +115,8 @@
       "postRating": 867,
       "eloChange": -21,
       "civ": "Vietnamese",
-      "teamAvgElo": 1023,
-      "opponentAvgElo": 1086,
+      "teamAvgElo": 1022,
+      "opponentAvgElo": 1087,
       "teammates": [
         "DEVILZ",
         "PredatorfromthemoviePredator",
@@ -162,7 +164,7 @@
       "eloChange": -16,
       "civ": "Sicilians",
       "teamAvgElo": 980,
-      "opponentAvgElo": 1086,
+      "opponentAvgElo": 1085,
       "teammates": [
         "BobbleHead_Tim",
         "Vicky R",
@@ -209,7 +211,7 @@
       "postRating": 938,
       "eloChange": 49,
       "civ": "Poles",
-      "teamAvgElo": 1030,
+      "teamAvgElo": 1029,
       "opponentAvgElo": 1007,
       "teammates": [
         "Parts",
@@ -233,7 +235,7 @@
       "postRating": 978,
       "eloChange": 40,
       "civ": "Dravidians",
-      "teamAvgElo": 1010,
+      "teamAvgElo": 1008,
       "opponentAvgElo": 980,
       "teammates": [
         "Bachter",
@@ -305,7 +307,7 @@
       "postRating": 960,
       "eloChange": 37,
       "civ": "Incas",
-      "teamAvgElo": 1042,
+      "teamAvgElo": 1041,
       "opponentAvgElo": 994,
       "teammates": [
         "HighPriestCaco",
@@ -353,7 +355,7 @@
       "postRating": 975,
       "eloChange": 35,
       "civ": "Armenians",
-      "teamAvgElo": 1044,
+      "teamAvgElo": 1045,
       "opponentAvgElo": 1044,
       "teammates": [
         "duckbuildperson",
@@ -370,7 +372,7 @@
     {
       "matchId": 488614427,
       "description": "10x 3x Bamboo best lobby",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
       "timestamp": 1782624096,
       "outcome": "loss",
       "preRating": 975,
@@ -394,7 +396,7 @@
     {
       "matchId": 488757143,
       "description": "10x 3x BN ",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
       "timestamp": 1782669166,
       "outcome": "win",
       "preRating": 959,
@@ -402,7 +404,7 @@
       "eloChange": 24,
       "civ": "Huns",
       "teamAvgElo": 1023,
-      "opponentAvgElo": 951,
+      "opponentAvgElo": 952,
       "teammates": [
         "pool_champ",
         "Chuckyllo4417",
@@ -426,7 +428,7 @@
       "eloChange": -19,
       "civ": "Persians",
       "teamAvgElo": 997,
-      "opponentAvgElo": 1043,
+      "opponentAvgElo": 1044,
       "teammates": [
         "apolizer",
         "GuguBot",
@@ -442,7 +444,7 @@
     {
       "matchId": 488764967,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
       "timestamp": 1782671042,
       "outcome": "loss",
       "preRating": 964,
@@ -461,6 +463,54 @@
         "PITON | Shepy",
         "ISwaZz",
         "LonelyKnight"
+      ]
+    },
+    {
+      "matchId": 491742325,
+      "description": "10x 3x Bamboo (Fair & Balanced)",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783834844,
+      "outcome": "loss",
+      "preRating": 952,
+      "postRating": 939,
+      "eloChange": -13,
+      "civ": "Incas",
+      "teamAvgElo": 1000,
+      "opponentAvgElo": 1065,
+      "teammates": [
+        "RIchard_Uy",
+        "476055690",
+        "Chikna Raavan"
+      ],
+      "opponents": [
+        "Scipio",
+        "Xinzzo",
+        "Nimu.-",
+        "aLEXt"
+      ]
+    },
+    {
+      "matchId": 491745198,
+      "description": "bamboo nothing 10x",
+      "mapname": "Bamboo Nothing v3 (BaLi)",
+      "timestamp": 1783835821,
+      "outcome": "win",
+      "preRating": 939,
+      "postRating": 963,
+      "eloChange": 24,
+      "civ": "Koreans",
+      "teamAvgElo": 981,
+      "opponentAvgElo": 1073,
+      "teammates": [
+        "[B] Zennith",
+        "RIchard_Uy",
+        "Ti-tooaoo"
+      ],
+      "opponents": [
+        "adrian",
+        "476055690",
+        "Xinzzo",
+        "aLEXt"
       ]
     }
   ]

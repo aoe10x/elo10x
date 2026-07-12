@@ -1,12 +1,12 @@
 {
   "profile_id": 1922640,
   "alias": "Paing",
-  "rating": 988,
+  "rating": 972,
   "wins": 8,
-  "losses": 10,
-  "gamesCount": 18,
-  "winRate": 44,
-  "lastPlayedAt": 1783736093,
+  "losses": 11,
+  "gamesCount": 19,
+  "winRate": 42,
+  "lastPlayedAt": 1783814563,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -28,7 +28,8 @@
     1005,
     980,
     963,
-    988
+    988,
+    972
   ],
   "recentMatches": [
     {
@@ -377,7 +378,7 @@
       "postRating": 1005,
       "eloChange": -26,
       "civ": "Unknown",
-      "teamAvgElo": 1072,
+      "teamAvgElo": 1069,
       "opponentAvgElo": 1032,
       "teammates": [
         "[B] Cannino",
@@ -394,7 +395,7 @@
     {
       "matchId": 489269152,
       "description": "10x 3x Bamboo Nothing random civ",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
       "timestamp": 1782865849,
       "outcome": "loss",
       "preRating": 1005,
@@ -426,7 +427,7 @@
       "eloChange": -17,
       "civ": "Poles",
       "teamAvgElo": 961,
-      "opponentAvgElo": 1073,
+      "opponentAvgElo": 1074,
       "teammates": [
         "skoolied",
         "[TodEs] MnTartara",
@@ -449,8 +450,8 @@
       "postRating": 988,
       "eloChange": 25,
       "civ": "Bengalis",
-      "teamAvgElo": 1062,
-      "opponentAvgElo": 1031,
+      "teamAvgElo": 1061,
+      "opponentAvgElo": 1030,
       "teammates": [
         "Parts",
         "GuguBot",
@@ -461,6 +462,30 @@
         "PITON | Shepy",
         "勇战到抵",
         "Eduardo_AoE"
+      ]
+    },
+    {
+      "matchId": 491693004,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783814563,
+      "outcome": "loss",
+      "preRating": 988,
+      "postRating": 972,
+      "eloChange": -16,
+      "civ": "Slavs",
+      "teamAvgElo": 1020,
+      "opponentAvgElo": 1048,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "dinapal",
+        "omnomnomnivore"
+      ],
+      "opponents": [
+        "田瘾犯了",
+        "Jelly",
+        "疯狂的电脑",
+        "Holy Cheetos"
       ]
     }
   ]

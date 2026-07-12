@@ -1,12 +1,12 @@
 {
   "profile_id": 367257,
   "alias": "Bambamdumm",
-  "rating": 1037,
-  "wins": 20,
+  "rating": 1057,
+  "wins": 21,
   "losses": 21,
-  "gamesCount": 41,
-  "winRate": 49,
-  "lastPlayedAt": 1783440701,
+  "gamesCount": 42,
+  "winRate": 50,
+  "lastPlayedAt": 1783839682,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -46,38 +46,15 @@
     1036,
     1050,
     1034,
-    1019,
-    1036,
     1020,
-    1036,
-    1051,
-    1037
+    1037,
+    1021,
+    1037,
+    1052,
+    1038,
+    1057
   ],
   "recentMatches": [
-    {
-      "matchId": 396027708,
-      "description": "turbo 10x 3x livestock",
-      "mapname": "Bamboo Nothing_Paren_V2",
-      "timestamp": 1748536440,
-      "outcome": "win",
-      "preRating": 1045,
-      "postRating": 1063,
-      "eloChange": 18,
-      "civ": "Unknown",
-      "teamAvgElo": 1022,
-      "opponentAvgElo": 1088,
-      "teammates": [
-        "暗刺",
-        "Lykerya",
-        "Mortak"
-      ],
-      "opponents": [
-        "ShanksLuffy",
-        "NoLifeKing",
-        "勇战到抵",
-        "EzraSkywalker96"
-      ]
-    },
     {
       "matchId": 396030745,
       "description": "10x civ 3x tech random bamboo nothing - Only good noob",
@@ -377,7 +354,7 @@
       "eloChange": -16,
       "civ": "Malay",
       "teamAvgElo": 988,
-      "opponentAvgElo": 1054,
+      "opponentAvgElo": 1050,
       "teammates": [
         "NoAgendaPODCAST",
         "okfkg173",
@@ -397,11 +374,11 @@
       "timestamp": 1779971040,
       "outcome": "loss",
       "preRating": 1034,
-      "postRating": 1019,
-      "eloChange": -15,
+      "postRating": 1020,
+      "eloChange": -14,
       "civ": "Magyars",
-      "teamAvgElo": 1018,
-      "opponentAvgElo": 1066,
+      "teamAvgElo": 1016,
+      "opponentAvgElo": 1069,
       "teammates": [
         "Xinzzo",
         "FlyingSheep",
@@ -420,12 +397,12 @@
       "mapname": "Bamboo Nothing_Paren_V4",
       "timestamp": 1780062300,
       "outcome": "win",
-      "preRating": 1019,
-      "postRating": 1036,
+      "preRating": 1020,
+      "postRating": 1037,
       "eloChange": 17,
       "civ": "Tatars",
-      "teamAvgElo": 1063,
-      "opponentAvgElo": 1032,
+      "teamAvgElo": 1058,
+      "opponentAvgElo": 1035,
       "teammates": [
         "Ellie91",
         "{R} Parry",
@@ -444,11 +421,11 @@
       "mapname": "Bamboo Nothing - Scorpyon De",
       "timestamp": 1781356140,
       "outcome": "loss",
-      "preRating": 1036,
-      "postRating": 1020,
+      "preRating": 1037,
+      "postRating": 1021,
       "eloChange": -16,
       "civ": "Maya",
-      "teamAvgElo": 1040,
+      "teamAvgElo": 1039,
       "opponentAvgElo": 1042,
       "teammates": [
         "yiban",
@@ -468,11 +445,11 @@
       "mapname": "Bamboo Nothing_Paren_V4",
       "timestamp": 1782633529,
       "outcome": "win",
-      "preRating": 1020,
-      "postRating": 1036,
+      "preRating": 1021,
+      "postRating": 1037,
       "eloChange": 16,
       "civ": "Burmese",
-      "teamAvgElo": 1035,
+      "teamAvgElo": 1036,
       "opponentAvgElo": 1018,
       "teammates": [
         "ActualWizard",
@@ -492,8 +469,8 @@
       "mapname": "Bamboo Nothing_Paren_V4",
       "timestamp": 1782842034,
       "outcome": "win",
-      "preRating": 1036,
-      "postRating": 1051,
+      "preRating": 1037,
+      "postRating": 1052,
       "eloChange": 15,
       "civ": "Tatars",
       "teamAvgElo": 960,
@@ -516,12 +493,12 @@
       "mapname": "Bamboo Nothing_Paren_V4",
       "timestamp": 1783440701,
       "outcome": "loss",
-      "preRating": 1051,
-      "postRating": 1037,
+      "preRating": 1052,
+      "postRating": 1038,
       "eloChange": -14,
       "civ": "Malay",
-      "teamAvgElo": 1098,
-      "opponentAvgElo": 1092,
+      "teamAvgElo": 1094,
+      "opponentAvgElo": 1091,
       "teammates": [
         "^gOsO^",
         "jpllops",
@@ -532,6 +509,30 @@
         "NothingAtAll11",
         "Miwa",
         "Cheesewheel24"
+      ]
+    },
+    {
+      "matchId": 491754723,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783839682,
+      "outcome": "win",
+      "preRating": 1038,
+      "postRating": 1057,
+      "eloChange": 19,
+      "civ": "Vietnamese",
+      "teamAvgElo": 1070,
+      "opponentAvgElo": 1112,
+      "teammates": [
+        "{R} Parry",
+        "Ye",
+        "SmilesBetray"
+      ],
+      "opponents": [
+        "田瘾犯了",
+        "Paladin",
+        "好女孩",
+        "typ53b90"
       ]
     }
   ]

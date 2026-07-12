@@ -1,12 +1,12 @@
 {
   "profile_id": 11716370,
   "alias": "King_Love",
-  "rating": 983,
+  "rating": 971,
   "wins": 23,
-  "losses": 48,
-  "gamesCount": 71,
+  "losses": 49,
+  "gamesCount": 72,
   "winRate": 32,
-  "lastPlayedAt": 1783722644,
+  "lastPlayedAt": 1783812761,
   "country": "ar",
   "merged_ids": [
     11716370,
@@ -84,33 +84,10 @@
     963,
     980,
     996,
-    983
+    983,
+    971
   ],
   "recentMatches": [
-    {
-      "matchId": 451970285,
-      "description": "Bamboo 10x 3x 4v4",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1769670360,
-      "outcome": "loss",
-      "preRating": 847,
-      "postRating": 839,
-      "eloChange": -8,
-      "civ": "Sicilians",
-      "teamAvgElo": 990,
-      "opponentAvgElo": 1049,
-      "teammates": [
-        "Goodsoup",
-        "jair_silva",
-        "Gadiatorking112"
-      ],
-      "opponents": [
-        "alexw",
-        "fxsound",
-        "AleRayado88",
-        "Legate"
-      ]
-    },
     {
       "matchId": 454230236,
       "description": "4 vs 4 // 10x Shared Random Civ",
@@ -194,7 +171,7 @@
       "eloChange": 25,
       "civ": "Spanish",
       "teamAvgElo": 958,
-      "opponentAvgElo": 1080,
+      "opponentAvgElo": 1084,
       "teammates": [
         "Rita De Valencia",
         "Wozbo",
@@ -242,7 +219,7 @@
       "eloChange": 24,
       "civ": "Burmese",
       "teamAvgElo": 1018,
-      "opponentAvgElo": 1076,
+      "opponentAvgElo": 1075,
       "teammates": [
         "拍车面前人人平等",
         "Lumedge",
@@ -290,7 +267,7 @@
       "eloChange": 20,
       "civ": "Shu",
       "teamAvgElo": 1025,
-      "opponentAvgElo": 998,
+      "opponentAvgElo": 996,
       "teammates": [
         "鱼浆",
         "duddelaar",
@@ -313,7 +290,7 @@
       "postRating": 919,
       "eloChange": -13,
       "civ": "Armenians",
-      "teamAvgElo": 1039,
+      "teamAvgElo": 1041,
       "opponentAvgElo": 987,
       "teammates": [
         "cyberocioso",
@@ -337,7 +314,7 @@
       "postRating": 906,
       "eloChange": -13,
       "civ": "Lithuanians",
-      "teamAvgElo": 1057,
+      "teamAvgElo": 1056,
       "opponentAvgElo": 981,
       "teammates": [
         "{R} Parry",
@@ -409,7 +386,7 @@
       "postRating": 935,
       "eloChange": -12,
       "civ": "Saracens",
-      "teamAvgElo": 955,
+      "teamAvgElo": 956,
       "opponentAvgElo": 1042,
       "teammates": [
         "dinapal",
@@ -450,14 +427,14 @@
     {
       "matchId": 489752546,
       "description": "i kun 10x3x 4v4s qun729084973",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1783077284,
       "outcome": "win",
       "preRating": 955,
       "postRating": 975,
       "eloChange": 20,
       "civ": "Malians",
-      "teamAvgElo": 1041,
+      "teamAvgElo": 1042,
       "opponentAvgElo": 1054,
       "teammates": [
         "YUJIN",
@@ -481,7 +458,7 @@
       "postRating": 963,
       "eloChange": -12,
       "civ": "Unknown",
-      "teamAvgElo": 1017,
+      "teamAvgElo": 1016,
       "opponentAvgElo": 1062,
       "teammates": [
         "Antimier",
@@ -498,7 +475,7 @@
     {
       "matchId": 490367781,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
       "timestamp": 1783286209,
       "outcome": "win",
       "preRating": 963,
@@ -530,7 +507,7 @@
       "eloChange": 16,
       "civ": "Cumans",
       "teamAvgElo": 997,
-      "opponentAvgElo": 990,
+      "opponentAvgElo": 989,
       "teammates": [
         "Exsilire",
         "NothingAtAll11",
@@ -553,7 +530,7 @@
       "postRating": 983,
       "eloChange": -13,
       "civ": "Cumans",
-      "teamAvgElo": 1036,
+      "teamAvgElo": 1035,
       "opponentAvgElo": 1055,
       "teammates": [
         "yimacs_yoyoyo",
@@ -565,6 +542,30 @@
         "tonzo",
         "Consume Product",
         "rcmccallum"
+      ]
+    },
+    {
+      "matchId": 491688653,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783812761,
+      "outcome": "loss",
+      "preRating": 983,
+      "postRating": 971,
+      "eloChange": -12,
+      "civ": "Spanish",
+      "teamAvgElo": 1045,
+      "opponentAvgElo": 1074,
+      "teammates": [
+        "skoolied",
+        "omega",
+        "fxsound"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "alexw",
+        "{R} Parry",
+        "mozu5"
       ]
     }
   ]
