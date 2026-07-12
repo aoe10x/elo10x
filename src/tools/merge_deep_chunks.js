@@ -2,7 +2,7 @@
 /**
  * merge_deep_chunks.js
  *
- * Merges all scraped_data/deep_chunk_*.json files into docs/data/db.json.
+ * Merges all scraped_data/deep_chunk_*.json files into the JSON line-formatted database under data/.
  * - Filters for 10x games by lobby description
  * - Deduplicates by match ID and fingerprint
  * - Safe to run multiple times (idempotent)
@@ -112,10 +112,10 @@ async function run() {
   if (totalAdded > 0) {
     console.log('\nSaving database...');
     await db.save();
-    console.log(`✅ Done! db.json now has ${db.getMatchesCount()} matches.`);
+    console.log(`✅ Done! Database now has ${db.getMatchesCount()} matches.`);
     console.log('\nNext step: pnpm run elo');
   } else {
-    console.log('\nℹ️  No new matches to add — db.json unchanged.');
+    console.log('\nℹ️  No new matches to add — database unchanged.');
   }
 }
 
