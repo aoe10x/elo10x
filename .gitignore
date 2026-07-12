@@ -7,5 +7,4 @@ scraped_data/
 .chrome-user-data*
 
 # Pre-rendered leaderboards and detail JSONs (published to gh-pages branch)
-docs/*.html
-docs/data/players/
+dist/

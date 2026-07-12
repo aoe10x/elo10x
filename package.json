@@ -16,8 +16,8 @@
     "crawl:insights": "node src/cli.ts insights crawl",
     "scrape:player": "node src/cli.ts insights",
     "elo": "node src/cli.ts elo",
-    "dev": "statikk docs --port 3000",
-    "deploy": "gh-pages -d docs -m \"chore: deploy static leaderboard [skip ci]\"",
+    "dev": "statikk dist --port 3000",
+    "deploy": "gh-pages -d dist -m \"chore: deploy static leaderboard [skip ci]\"",
     "preflight": "pnpm run typecheck && pnpm run test"
   },
   "devDependencies": {
