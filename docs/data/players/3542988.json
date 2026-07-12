@@ -1,13 +1,13 @@
 {
   "profile_id": 3542988,
   "alias": "adamc11",
-  "rating": 926,
+  "rating": 908,
   "wins": 5,
-  "losses": 10,
-  "gamesCount": 15,
-  "winRate": 33,
+  "losses": 11,
+  "gamesCount": 16,
+  "winRate": 31,
   "lastPlayedAt": 1782099420,
-  "country": "Unknown",
+  "country": "gb",
   "merged_ids": [],
   "ratingHistory": [
     1000,
@@ -25,7 +25,8 @@
     867,
     850,
     890,
-    926
+    873,
+    908
   ],
   "recentMatches": [
     {
@@ -365,16 +366,40 @@
       ]
     },
     {
+      "matchId": 477812695,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "my map",
+      "timestamp": 1778790053,
+      "outcome": "loss",
+      "preRating": 890,
+      "postRating": 873,
+      "eloChange": -17,
+      "civ": "Mongols",
+      "teamAvgElo": 967,
+      "opponentAvgElo": 1008,
+      "teammates": [
+        "fast resign",
+        "helianth",
+        "OrangE"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "cyberocioso",
+        "smol camel",
+        "DFG3"
+      ]
+    },
+    {
       "matchId": 487153616,
       "description": "black forest 10x shared",
       "mapname": "Rage Forest 2026 Beta C",
       "timestamp": 1782099420,
       "outcome": "win",
-      "preRating": 890,
-      "postRating": 926,
-      "eloChange": 36,
+      "preRating": 873,
+      "postRating": 908,
+      "eloChange": 35,
       "civ": "Romans",
-      "teamAvgElo": 1014,
+      "teamAvgElo": 1010,
       "opponentAvgElo": 1045,
       "teammates": [
         "DerAdler",

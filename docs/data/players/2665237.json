@@ -1,13 +1,13 @@
 {
   "profile_id": 2665237,
   "alias": "Composite Bowman",
-  "rating": 1004,
-  "wins": 17,
+  "rating": 1023,
+  "wins": 18,
   "losses": 19,
-  "gamesCount": 36,
-  "winRate": 47,
-  "lastPlayedAt": 1778820420,
-  "country": "Unknown",
+  "gamesCount": 37,
+  "winRate": 49,
+  "lastPlayedAt": 1779740957,
+  "country": "be",
   "merged_ids": [],
   "ratingHistory": [
     1000,
@@ -46,33 +46,10 @@
     979,
     997,
     987,
-    1004
+    1004,
+    1023
   ],
   "recentMatches": [
-    {
-      "matchId": 378185729,
-      "description": "10x civ 3x tech random bamboo nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1741926480,
-      "outcome": "win",
-      "preRating": 1015,
-      "postRating": 1040,
-      "eloChange": 25,
-      "civ": "Unknown",
-      "teamAvgElo": 1016,
-      "opponentAvgElo": 1058,
-      "teammates": [
-        "Ferdinand I of Naples",
-        "Carpet_Taxi",
-        "Rita De Valencia"
-      ],
-      "opponents": [
-        "Viteaux",
-        "Shadow",
-        "yimacs_yoyoyo",
-        "Duffy"
-      ]
-    },
     {
       "matchId": 379992893,
       "description": "10x 3x bamboo",
@@ -468,7 +445,7 @@
       "eloChange": 18,
       "civ": "Vietnamese",
       "teamAvgElo": 959,
-      "opponentAvgElo": 1016,
+      "opponentAvgElo": 1012,
       "teammates": [
         "Ye",
         "CristoTheRealCeisto",
@@ -491,8 +468,8 @@
       "postRating": 987,
       "eloChange": -10,
       "civ": "Unknown",
-      "teamAvgElo": 1012,
-      "opponentAvgElo": 1139,
+      "teamAvgElo": 1013,
+      "opponentAvgElo": 1142,
       "teammates": [
         "NoAgendaPODCAST",
         "LonelyKnight",
@@ -515,7 +492,7 @@
       "postRating": 1004,
       "eloChange": 17,
       "civ": "Burgundians",
-      "teamAvgElo": 997,
+      "teamAvgElo": 991,
       "opponentAvgElo": 1004,
       "teammates": [
         "helianth",
@@ -527,6 +504,30 @@
         "WDWKid3",
         "Chirijiraden",
         "NothingAtAll11"
+      ]
+    },
+    {
+      "matchId": 480509637,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1779740957,
+      "outcome": "win",
+      "preRating": 1004,
+      "postRating": 1023,
+      "eloChange": 19,
+      "civ": "Bengalis",
+      "teamAvgElo": 999,
+      "opponentAvgElo": 1059,
+      "teammates": [
+        "gemmascho",
+        "JBL",
+        "Tortrix"
+      ],
+      "opponents": [
+        "king_doge",
+        "Fresh Dumbledor",
+        "Carpet_Taxi",
+        "田瘾犯了"
       ]
     }
   ]
