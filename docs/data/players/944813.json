@@ -1,12 +1,12 @@
 {
   "profile_id": 944813,
   "alias": "faux",
-  "rating": 1114,
+  "rating": 1096,
   "wins": 32,
-  "losses": 34,
-  "gamesCount": 66,
+  "losses": 35,
+  "gamesCount": 67,
   "winRate": 48,
-  "lastPlayedAt": 1783649592,
+  "lastPlayedAt": 1783819775,
   "country": "gb",
   "merged_ids": [],
   "ratingHistory": [
@@ -76,33 +76,10 @@
     1065,
     1082,
     1098,
-    1114
+    1114,
+    1096
   ],
   "recentMatches": [
-    {
-      "matchId": 448097458,
-      "description": "10x 3x bamboo random",
-      "mapname": "Bamboo Nothing_Paren_V3.0",
-      "timestamp": 1768367400,
-      "outcome": "win",
-      "preRating": 976,
-      "postRating": 996,
-      "eloChange": 20,
-      "civ": "Khmer",
-      "teamAvgElo": 1067,
-      "opponentAvgElo": 1056,
-      "teammates": [
-        "bijiyumo",
-        "jair_silva",
-        "Imperator Storm"
-      ],
-      "opponents": [
-        "im slow",
-        "Paolo Carrosel",
-        "Thiago Bassi",
-        "Dayman"
-      ]
-    },
     {
       "matchId": 450956142,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -557,6 +534,30 @@
         "Myriad",
         "JoeyTribianni69",
         "tom"
+      ]
+    },
+    {
+      "matchId": 491706382,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1783819775,
+      "outcome": "loss",
+      "preRating": 1114,
+      "postRating": 1096,
+      "eloChange": -18,
+      "civ": "Bengalis",
+      "teamAvgElo": 1079,
+      "opponentAvgElo": 1078,
+      "teammates": [
+        "feid_",
+        "Akoros",
+        "Belisarius"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "Jelly",
+        "Brotherman Bill"
       ]
     }
   ]

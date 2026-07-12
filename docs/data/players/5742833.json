@@ -1,12 +1,12 @@
 {
   "profile_id": 5742833,
   "alias": "ConiglioBianco",
-  "rating": 951,
+  "rating": 940,
   "wins": 12,
-  "losses": 21,
-  "gamesCount": 33,
-  "winRate": 36,
-  "lastPlayedAt": 1783778260,
+  "losses": 22,
+  "gamesCount": 34,
+  "winRate": 35,
+  "lastPlayedAt": 1783814446,
   "country": "it",
   "merged_ids": [],
   "ratingHistory": [
@@ -43,33 +43,10 @@
     954,
     945,
     929,
-    951
+    951,
+    940
   ],
   "recentMatches": [
-    {
-      "matchId": 400360907,
-      "description": "+10x+3xtcch   no noob",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1750170900,
-      "outcome": "loss",
-      "preRating": 943,
-      "postRating": 924,
-      "eloChange": -19,
-      "civ": "Huns",
-      "teamAvgElo": 1005,
-      "opponentAvgElo": 1046,
-      "teammates": [
-        "拍车面前人人平等",
-        "PaulMac",
-        "JackWU"
-      ],
-      "opponents": [
-        "田瘾犯了",
-        "Emotions are prohibited",
-        "468673564",
-        "Exetel"
-      ]
-    },
     {
       "matchId": 400363847,
       "description": "+10x+3xtcch   no noob",
@@ -524,6 +501,30 @@
         "kekekeya",
         "bkabkakakak",
         "476055690"
+      ]
+    },
+    {
+      "matchId": 491692987,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783814446,
+      "outcome": "loss",
+      "preRating": 951,
+      "postRating": 940,
+      "eloChange": -11,
+      "civ": "Dravidians",
+      "teamAvgElo": 979,
+      "opponentAvgElo": 1057,
+      "teammates": [
+        "Maxim Liann",
+        "Chuckyllo4417",
+        "Mehandor"
+      ],
+      "opponents": [
+        "baianitro",
+        "Chinicuila304",
+        "EastDanielNowhere",
+        "El Barto"
       ]
     }
   ]

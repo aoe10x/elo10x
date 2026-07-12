@@ -1,12 +1,12 @@
 {
   "profile_id": 1438500,
   "alias": "Tootin B. Anthony",
-  "rating": 952,
+  "rating": 941,
   "wins": 12,
-  "losses": 22,
-  "gamesCount": 34,
-  "winRate": 35,
-  "lastPlayedAt": 1782576331,
+  "losses": 23,
+  "gamesCount": 35,
+  "winRate": 34,
+  "lastPlayedAt": 1783800086,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -44,33 +44,10 @@
     951,
     939,
     963,
-    952
+    952,
+    941
   ],
   "recentMatches": [
-    {
-      "matchId": 460320146,
-      "description": "10x 3x - bamboo - 3.1",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1772526360,
-      "outcome": "loss",
-      "preRating": 900,
-      "postRating": 886,
-      "eloChange": -14,
-      "civ": "Vikings",
-      "teamAvgElo": 1012,
-      "opponentAvgElo": 1068,
-      "teammates": [
-        "Parenquima",
-        "Xinzzo",
-        "Jesse Welles"
-      ],
-      "opponents": [
-        "Stigel",
-        "procrastination.exe",
-        "fxsound",
-        "omnomnomnivore"
-      ]
-    },
     {
       "matchId": 460478365,
       "description": "bamboo nothing 10x 3x",
@@ -525,6 +502,30 @@
         "Emusan",
         "Bryce Coolguy",
         "取款机ATM"
+      ]
+    },
+    {
+      "matchId": 491654162,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783800086,
+      "outcome": "loss",
+      "preRating": 952,
+      "postRating": 941,
+      "eloChange": -11,
+      "civ": "Persians",
+      "teamAvgElo": 1053,
+      "opponentAvgElo": 1066,
+      "teammates": [
+        "Ellie91",
+        "Lumedge",
+        "Tdot"
+      ],
+      "opponents": [
+        "baianitro",
+        "疯狂的电脑",
+        "Manba Out",
+        "La_Fratellanza"
       ]
     }
   ]

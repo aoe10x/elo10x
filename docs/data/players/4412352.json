@@ -1,12 +1,12 @@
 {
   "profile_id": 4412352,
   "alias": "Monster_HK",
-  "rating": 994,
+  "rating": 982,
   "wins": 24,
-  "losses": 31,
-  "gamesCount": 55,
-  "winRate": 44,
-  "lastPlayedAt": 1783336380,
+  "losses": 32,
+  "gamesCount": 56,
+  "winRate": 43,
+  "lastPlayedAt": 1783823938,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -65,33 +65,10 @@
     1037,
     1021,
     1008,
-    994
+    994,
+    982
   ],
   "recentMatches": [
-    {
-      "matchId": 442138239,
-      "description": "Bamboo 10x 3x no noobs",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1766497020,
-      "outcome": "loss",
-      "preRating": 955,
-      "postRating": 940,
-      "eloChange": -15,
-      "civ": "Chinese",
-      "teamAvgElo": 1001,
-      "opponentAvgElo": 970,
-      "teammates": [
-        "Cosongasas",
-        "fxsound",
-        "TopazSkate37557"
-      ],
-      "opponents": [
-        "MoEzy",
-        "memeboy420",
-        "CSA_R_Griffith",
-        "The Cobra Brothers"
-      ]
-    },
     {
       "matchId": 449505930,
       "description": "10x 3x BAMBOO NOTHING",
@@ -546,6 +523,30 @@
         "{R} Parry",
         "Sundev",
         "derailer9"
+      ]
+    },
+    {
+      "matchId": 491716530,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783823938,
+      "outcome": "loss",
+      "preRating": 994,
+      "postRating": 982,
+      "eloChange": -12,
+      "civ": "Hindustanis",
+      "teamAvgElo": 1022,
+      "opponentAvgElo": 1073,
+      "teammates": [
+        "derailer9",
+        "ebonzhang",
+        "Terry"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "duckbuildperson",
+        "NoxMortus",
+        "Brotherman Bill"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 14257681,
   "alias": "Memberwise",
-  "rating": 1044,
+  "rating": 1027,
   "wins": 49,
-  "losses": 52,
-  "gamesCount": 101,
-  "winRate": 49,
-  "lastPlayedAt": 1781458762,
+  "losses": 53,
+  "gamesCount": 102,
+  "winRate": 48,
+  "lastPlayedAt": 1783787489,
   "country": "gb",
   "merged_ids": [
     12133403,
@@ -30,7 +30,6 @@
     1056,
     1028,
     1004,
-    1027,
     1048,
     1031,
     1015,
@@ -38,6 +37,7 @@
     1014,
     1033,
     1050,
+    1066,
     1080,
     1062,
     1046,
@@ -63,7 +63,6 @@
     958,
     976,
     996,
-    1013,
     1028,
     1045,
     1061,
@@ -87,6 +86,7 @@
     1041,
     1052,
     1065,
+    1078,
     1095,
     1077,
     1060,
@@ -95,7 +95,6 @@
     1077,
     1060,
     1077,
-    1062,
     1048,
     1067,
     1052,
@@ -112,33 +111,10 @@
     993,
     1008,
     1026,
-    1044
+    1044,
+    1027
   ],
   "recentMatches": [
-    {
-      "matchId": 467402677,
-      "description": "BAMBOO 10x - 3x  **NO BEGINNER",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1775176680,
-      "outcome": "loss",
-      "preRating": 1077,
-      "postRating": 1060,
-      "eloChange": -17,
-      "civ": "Ethiopians",
-      "teamAvgElo": 1092,
-      "opponentAvgElo": 1048,
-      "teammates": [
-        "LonelyKnight",
-        "Max",
-        "_S_"
-      ],
-      "opponents": [
-        "GiGi",
-        "MLT | JimmyPage_9",
-        "Meursault005",
-        "dRea"
-      ]
-    },
     {
       "matchId": 467604986,
       "description": "BAMBOO 10x - 3x  **NO BEGINNER",
@@ -593,6 +569,30 @@
         "Josh",
         "sppd3181",
         "Chirijiraden"
+      ]
+    },
+    {
+      "matchId": 491605615,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783787489,
+      "outcome": "loss",
+      "preRating": 1044,
+      "postRating": 1027,
+      "eloChange": -17,
+      "civ": "Malians",
+      "teamAvgElo": 1040,
+      "opponentAvgElo": 1014,
+      "teammates": [
+        "NoAgendaPODCAST",
+        "Emusan",
+        "levvafire"
+      ],
+      "opponents": [
+        "O(∩_∩)O哈哈~",
+        "maialen_zubi",
+        "Skarbrand",
+        "取款机ATM"
       ]
     }
   ]

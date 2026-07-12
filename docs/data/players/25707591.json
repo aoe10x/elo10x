@@ -1,12 +1,12 @@
 {
   "profile_id": 25707591,
   "alias": "menorahjury",
-  "rating": 906,
-  "wins": 4,
+  "rating": 941,
+  "wins": 5,
   "losses": 11,
-  "gamesCount": 15,
-  "winRate": 27,
-  "lastPlayedAt": 1783714645,
+  "gamesCount": 16,
+  "winRate": 31,
+  "lastPlayedAt": 1783830401,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -25,7 +25,8 @@
     944,
     932,
     919,
-    906
+    906,
+    941
   ],
   "recentMatches": [
     {
@@ -386,6 +387,30 @@
         "Paladin",
         "TheRiceMan",
         "Joseph"
+      ]
+    },
+    {
+      "matchId": 491730888,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783830401,
+      "outcome": "win",
+      "preRating": 906,
+      "postRating": 941,
+      "eloChange": 35,
+      "civ": "Romans",
+      "teamAvgElo": 983,
+      "opponentAvgElo": 1085,
+      "teammates": [
+        "Holy Cheetos",
+        "Bridge",
+        "DGHIR | NICOGP11"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "Stigel",
+        "Xinzzo",
+        "Mionel Lessi"
       ]
     }
   ]

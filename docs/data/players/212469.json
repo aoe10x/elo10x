@@ -1,13 +1,13 @@
 {
   "profile_id": 212469,
   "alias": "EastDanielNowhere",
-  "rating": 1048,
-  "wins": 44,
+  "rating": 1061,
+  "wins": 45,
   "losses": 32,
-  "gamesCount": 76,
+  "gamesCount": 77,
   "winRate": 58,
-  "lastPlayedAt": 1782607066,
-  "country": "Unknown",
+  "lastPlayedAt": 1783814446,
+  "country": "co",
   "merged_ids": [],
   "ratingHistory": [
     1000,
@@ -86,33 +86,10 @@
     1062,
     1047,
     1064,
-    1048
+    1048,
+    1061
   ],
   "recentMatches": [
-    {
-      "matchId": 460108281,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1772441100,
-      "outcome": "loss",
-      "preRating": 1214,
-      "postRating": 1192,
-      "eloChange": -22,
-      "civ": "Khitans",
-      "teamAvgElo": 1050,
-      "opponentAvgElo": 1068,
-      "teammates": [
-        "EL__PATRON",
-        "Nic Cage",
-        "DGHIR | NICOGP11"
-      ],
-      "opponents": [
-        "Kumad",
-        "WWW.Y",
-        "Myriad",
-        "Blueye"
-      ]
-    },
     {
       "matchId": 461469952,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -380,7 +357,7 @@
     {
       "matchId": 485207564,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
       "timestamp": 1781392700,
       "outcome": "loss",
       "preRating": 1113,
@@ -548,7 +525,7 @@
     {
       "matchId": 488569496,
       "description": "10x Shared Civ Bonus 4v4 Random ",
-      "mapname": "my map",
+      "mapname": "Wet Woods v3.0.3",
       "timestamp": 1782607066,
       "outcome": "loss",
       "preRating": 1064,
@@ -567,6 +544,30 @@
         "Myriad",
         "PoonSlapper",
         "Scootyplz"
+      ]
+    },
+    {
+      "matchId": 491692987,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783814446,
+      "outcome": "win",
+      "preRating": 1048,
+      "postRating": 1061,
+      "eloChange": 13,
+      "civ": "Malians",
+      "teamAvgElo": 1057,
+      "opponentAvgElo": 979,
+      "teammates": [
+        "baianitro",
+        "Chinicuila304",
+        "El Barto"
+      ],
+      "opponents": [
+        "Maxim Liann",
+        "Chuckyllo4417",
+        "Mehandor",
+        "ConiglioBianco"
       ]
     }
   ]
