@@ -1,13 +1,13 @@
 {
   "profile_id": 586600,
   "alias": "RULO",
-  "rating": 971,
+  "rating": 961,
   "wins": 20,
-  "losses": 32,
-  "gamesCount": 52,
+  "losses": 33,
+  "gamesCount": 53,
   "winRate": 38,
-  "lastPlayedAt": 1782621463,
-  "country": "Unknown",
+  "lastPlayedAt": 1783832760,
+  "country": "ar",
   "merged_ids": [],
   "ratingHistory": [
     1000,
@@ -62,33 +62,10 @@
     979,
     966,
     952,
-    971
+    971,
+    961
   ],
   "recentMatches": [
-    {
-      "matchId": 464430019,
-      "description": "10x shared bonus 3x tech fast",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1774086060,
-      "outcome": "win",
-      "preRating": 927,
-      "postRating": 950,
-      "eloChange": 23,
-      "civ": "Franks",
-      "teamAvgElo": 1005,
-      "opponentAvgElo": 1103,
-      "teammates": [
-        "sniper-123",
-        "helianth",
-        "紫蝶黄蜂俱有情"
-      ],
-      "opponents": [
-        "Clean",
-        "AAA",
-        "CobraBubbles801",
-        "田瘾犯了"
-      ]
-    },
     {
       "matchId": 464433376,
       "description": "10x shared bonus 3x tech fast",
@@ -476,7 +453,7 @@
     {
       "matchId": 480081969,
       "description": "10x 3x Bamboo best lobby",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
       "timestamp": 1779604119,
       "outcome": "loss",
       "preRating": 979,
@@ -543,6 +520,30 @@
         "476055690",
         "edalmavuz",
         "RedBullWOLOLO26"
+      ]
+    },
+    {
+      "matchId": 491737618,
+      "description": "10x shared and 3x tech | Bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783832760,
+      "outcome": "loss",
+      "preRating": 971,
+      "postRating": 961,
+      "eloChange": -10,
+      "civ": "Teutons",
+      "teamAvgElo": 1022,
+      "opponentAvgElo": 1104,
+      "teammates": [
+        "FAOse7en",
+        "Candy Burglar",
+        "ch33tah"
+      ],
+      "opponents": [
+        "Chikna Raavan",
+        "Lumedge",
+        "Parenquima",
+        "EastDanielNowhere"
       ]
     }
   ]

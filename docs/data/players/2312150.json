@@ -1,12 +1,12 @@
 {
   "profile_id": 2312150,
   "alias": "Perxeus",
-  "rating": 952,
-  "wins": 6,
-  "losses": 12,
-  "gamesCount": 18,
-  "winRate": 33,
-  "lastPlayedAt": 1782671042,
+  "rating": 963,
+  "wins": 7,
+  "losses": 13,
+  "gamesCount": 20,
+  "winRate": 35,
+  "lastPlayedAt": 1783835821,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -28,7 +28,9 @@
     959,
     983,
     964,
-    952
+    952,
+    939,
+    963
   ],
   "recentMatches": [
     {
@@ -461,6 +463,54 @@
         "PITON | Shepy",
         "ISwaZz",
         "LonelyKnight"
+      ]
+    },
+    {
+      "matchId": 491742325,
+      "description": "10x 3x Bamboo (Fair & Balanced)",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783834844,
+      "outcome": "loss",
+      "preRating": 952,
+      "postRating": 939,
+      "eloChange": -13,
+      "civ": "Incas",
+      "teamAvgElo": 1000,
+      "opponentAvgElo": 1066,
+      "teammates": [
+        "RIchard_Uy",
+        "476055690",
+        "Chikna Raavan"
+      ],
+      "opponents": [
+        "Scipio",
+        "Xinzzo",
+        "Nimu.-",
+        "aLEXt"
+      ]
+    },
+    {
+      "matchId": 491745198,
+      "description": "bamboo nothing 10x",
+      "mapname": "Bamboo Nothing v3 (BaLi)",
+      "timestamp": 1783835821,
+      "outcome": "win",
+      "preRating": 939,
+      "postRating": 963,
+      "eloChange": 24,
+      "civ": "Koreans",
+      "teamAvgElo": 981,
+      "opponentAvgElo": 1073,
+      "teammates": [
+        "[B] Zennith",
+        "RIchard_Uy",
+        "Ti-tooaoo"
+      ],
+      "opponents": [
+        "adrian",
+        "476055690",
+        "Xinzzo",
+        "aLEXt"
       ]
     }
   ]
