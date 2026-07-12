@@ -19,7 +19,9 @@ async function getAvailableTab(port: number): Promise<any> {
 
 test('AoE2Insights Scraper - Matches List Parsing', async () => {
   const fixturePath = path.join(process.cwd(), 'test', 'fixtures', 'user_matches.html');
-  const fixtureHtml = await fs.readFile(fixturePath, 'utf-8');
+  const rawHtml = await fs.readFile(fixturePath, 'utf-8');
+  // Strip script tags to prevent ads and tracking scripts from executing and overwriting the DOM
+  const fixtureHtml = rawHtml.replace(/<script[\s\S]*?<\/script>/gi, '');
 
   // Construct CIV_MAP dynamically
   const civMap: Record<string, number> = {};

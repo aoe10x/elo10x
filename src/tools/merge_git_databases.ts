@@ -144,6 +144,14 @@ async function main() {
     process.exit(1);
   }
 
+  console.log(`Checking out clean local database files from HEAD (resolving conflict markers on disk)...`);
+  try {
+    execSync('git checkout HEAD -- docs/data/matches.json docs/data/profiles.json docs/data/crawl_state.json docs/data/crawl_manifest.json');
+  } catch (err: any) {
+    console.error('Failed to checkout clean database files from HEAD:', err.message);
+    process.exit(1);
+  }
+
   console.log(`Loading local database...`);
   const db = new JsonDatabase();
   await db.load();
