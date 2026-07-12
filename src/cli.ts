@@ -149,15 +149,6 @@ async function main(): Promise<void> {
         }
       }
 
-      const excludedIds = new Set<number>([
-        404483,    // Paulichromatic
-        3046506,   // NoAgendaPODCAST
-        249997,    // Kumad
-        295872,    // Myriad
-        3309404,   // Parts
-        17046544   // 田瘾犯了
-      ]);
-
       const limit = values.limit ? parseInt(values.limit, 10) : 80;
       const nowSec = Math.floor(Date.now() / 1000);
       const cooldownSec = 24 * 60 * 60; // 24 hours cooldown for target selection
@@ -171,7 +162,7 @@ async function main(): Promise<void> {
 
         const isExcluded = isUnscrapedOnly 
           ? hasBeenScraped 
-          : (excludedIds.has(pid) || inCooldown);
+          : inCooldown;
 
         if (!isExcluded) {
           targetProfileIds.push(pid);
@@ -182,9 +173,14 @@ async function main(): Promise<void> {
       }
       
       console.log(`Selected top ${targetProfileIds.length} players for crawling:`);
-      for (const pid of targetProfileIds) {
+      const printLimit = 40;
+      for (let i = 0; i < Math.min(targetProfileIds.length, printLimit); i++) {
+        const pid = targetProfileIds[i];
         const alias = db.getProfile(pid)?.alias || `Player_${pid}`;
         console.log(`- ${alias} (ID ${pid}): ${playerCounts[pid] || 0} matches currently in DB`);
+      }
+      if (targetProfileIds.length > printLimit) {
+        console.log(`... and ${targetProfileIds.length - printLimit} more players.`);
       }
     }
     else {

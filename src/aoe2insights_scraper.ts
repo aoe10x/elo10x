@@ -8,6 +8,20 @@ import { CIV_NAMES } from './civ-data.ts';
 
 const delay = (ms: number) => new Promise<void>(resolve => setTimeout(resolve, ms));
 
+export function getChromePath(): string {
+  if (process.env.CHROME_PATH) return process.env.CHROME_PATH;
+  if (process.platform === 'darwin') {
+    const macPath = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+    if (fsSync.existsSync(macPath)) return macPath;
+  }
+  return [
+    '/usr/bin/google-chrome',
+    '/usr/bin/google-chrome-stable',
+    '/usr/bin/chromium',
+    '/usr/bin/chromium-browser'
+  ].find(p => fsSync.existsSync(p)) || 'google-chrome';
+}
+
 export class Aoe2InsightsScraper {
   private db: JsonDatabase;
   private scrapedDataDir: string;
@@ -21,7 +35,7 @@ export class Aoe2InsightsScraper {
    * Launches headful Chrome and waits for the user to solve Cloudflare on aoe2insights.com
    */
   private async launchChromeAndWaitForBypass(port: number, userDataDir: string): Promise<{ wsUrl: string; chromeProcess: any }> {
-    const chromePath = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+    const chromePath = getChromePath();
     
     console.log(`[BROWSER] Launching headful Chrome on port ${port}...`);
     const chromeProcess = spawn(chromePath, [
@@ -157,7 +171,7 @@ export class Aoe2InsightsScraper {
       if (payload.type === 'heartbeat') return;
 
       if (payload.type === 'player_done') {
-        const { playerId, matches, hitDepthLimit } = payload;
+        const { playerId, matches, reachedStartOfHistory } = payload;
         crawledCount++;
 
         // Save raw matches to temporary file under scraped_data/
@@ -165,11 +179,12 @@ export class Aoe2InsightsScraper {
         await fs.writeFile(tempFile, JSON.stringify({
           playerId,
           matches,
-          hitDepthLimit
+          reachedStartOfHistory
         }, null, 2), 'utf-8');
 
         const relPath = path.relative(process.cwd(), tempFile);
-        console.log(`[SCRAPER] Received player ${playerId}: ${matches.length} matches. Saved to ${relPath} (depth limit hit: ${hitDepthLimit})`);
+        const percent = Math.round((crawledCount / profileIds.length) * 100);
+        console.log(`[SCRAPER] [Progress: ${crawledCount}/${profileIds.length} (${percent}%)] Received player ${playerId}: ${matches.length} matches. Saved to ${relPath} (reached start: ${reachedStartOfHistory})`);
 
         // Update Manifest
         const dbMatches = this.db.getMatches().filter(m => m.players.some(p => p.profile_id === playerId));
@@ -182,7 +197,7 @@ export class Aoe2InsightsScraper {
           playerOldestId = Math.min(...allIds);
         }
 
-        const reachedStart = playerCutoffs[playerId].hasReachedStart || !hitDepthLimit;
+        const reachedStart = playerCutoffs[playerId].hasReachedStart || reachedStartOfHistory;
 
         this.db.updatePlayerManifest(playerId, 'insights', {
           last_crawled_at: Math.round(Date.now() / 1000),
@@ -350,14 +365,16 @@ export class Aoe2InsightsScraper {
 
         async function scrapePlayer(playerId, limit, newestMatchId, oldestMatchId, hasReachedStart) {
           const results = [];
-          let hitDepthLimit = true;
+          let reachedStartOfHistory = false;
 
           for (let page = startPage; page <= limit; page++) {
             try {
                const url = '/user/' + playerId + '/matches/?page=' + page;
               const res = await safeFetch(url);
               if (!res.ok) {
-                hitDepthLimit = false;
+                if (res.status === 404) {
+                  reachedStartOfHistory = true;
+                }
                 break;
               }
               const html = await res.text();
@@ -365,7 +382,7 @@ export class Aoe2InsightsScraper {
               
               const tiles = doc.querySelectorAll('.match-tile');
               if (tiles.length === 0) {
-                hitDepthLimit = false;
+                reachedStartOfHistory = true;
                 break;
               }
 
@@ -447,15 +464,16 @@ export class Aoe2InsightsScraper {
               });
 
               if (hitBoundary) {
+                reachedStartOfHistory = true;
                 break;
               }
               await delay(250);
             } catch (e) {
-              hitDepthLimit = false;
+              console.error('[BROWSER] Error processing page ' + page + ' for player ' + playerId + ':', e.message || e);
               break;
             }
           }
-          return { matches: results, hitDepthLimit };
+          return { matches: results, reachedStartOfHistory };
         }
 
         const queue = [...profileIds];
@@ -472,7 +490,7 @@ export class Aoe2InsightsScraper {
                 type: 'player_done',
                 playerId: pid,
                 matches: res.matches,
-                hitDepthLimit: res.hitDepthLimit
+                reachedStartOfHistory: res.reachedStartOfHistory
               });
               console.log('[BROWSER] Finished crawl for player ' + pid + ' (scraped ' + res.matches.length + ' matches)');
             } catch (err) {

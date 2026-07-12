@@ -60,48 +60,88 @@ export class RelicCrawler {
   }
 
   /**
-   * Seed the crawl queue from two time windows, deduped:
-   *   - Most active players in the past 3 days  (hot/current players)
-   *   - Most active players in the past 30 days (regular community members)
-   * Both ranked by match count within their window. Combined list is deduped.
+   * Seeds the crawl queue using Normalized Overdue Priority (NOP):
+   * Priority = Staleness_Sec / Cooldown_Sec
+   * Only players whose cooldowns have expired are added to the queue, and
+   * they are ranked by how overdue they are relative to their dynamic cooldown.
    */
-  async seedFromActivePlayers(limit: number = 50): Promise<number[]> {
+  async seedPriorityQueue(limit: number): Promise<number[]> {
     const nowSecs = Math.floor(Date.now() / 1000);
-    const day3ago  = nowSecs - 3  * 24 * 3600;
-    const day30ago = nowSecs - 30 * 24 * 3600;
+    const day30Sec = 30 * 24 * 60 * 60;
+    const day30ago = nowSecs - day30Sec;
 
-    const matches = this.db.getMatches();
-
-    const counts3d  = new Map<number, number>();
-    const counts30d = new Map<number, number>();
-
-    for (const m of matches) {
-      for (const p of (m.players ?? [])) {
-        const id = p.profile_id;
-        if (m.startgametime >= day3ago)  counts3d.set(id,  (counts3d.get(id)  ?? 0) + 1);
-        if (m.startgametime >= day30ago) counts30d.set(id, (counts30d.get(id) ?? 0) + 1);
+    const rolling30d = new Map<number, number>();
+    for (const m of this.db.getMatches()) {
+      if (m.startgametime >= day30ago && m.players) {
+        for (const p of m.players) {
+          rolling30d.set(p.profile_id, (rolling30d.get(p.profile_id) || 0) + 1);
+        }
       }
     }
 
-    const topN = (map: Map<number, number>, n: number) =>
-      [...map.entries()].sort((a, b) => b[1] - a[1]).slice(0, n).map(([id]) => id);
+    const profiles = this.db.getAllProfiles();
 
-    // Take up to half the limit from each window, then dedupe
-    const half    = Math.ceil(limit / 2);
-    const from3d  = topN(counts3d,  half);
-    const from30d = topN(counts30d, half);
+    // 1. Pre-filter: Only select players whose cooldown has expired
+    const eligible = profiles.filter(p => {
+      const pid = p.profile_id;
+      const cooldownMs = this.getDynamicCooldownMs(pid, rolling30d, false);
+      const manifest = this.db.getPlayerManifest(pid);
+      const lastCrawlSec = manifest?.relic?.last_crawled_at || (nowSecs - day30Sec);
+      
+      return (nowSecs - lastCrawlSec >= cooldownMs / 1000);
+    });
 
-    // Merge: 3d first (higher priority), then 30d to fill remaining slots
-    const seen  = new Set<number>(from3d);
-    const seeds = [...from3d];
-    for (const id of from30d) {
-      if (!seen.has(id)) { seen.add(id); seeds.push(id); }
-      if (seeds.length >= limit) break;
+    // 2. Score eligible players using Normalized Overdue Ratio (NOP)
+    const scored = eligible.map(p => {
+      const pid = p.profile_id;
+      const cooldownMs = this.getDynamicCooldownMs(pid, rolling30d, false);
+      const manifest = this.db.getPlayerManifest(pid);
+      const lastCrawlSec = manifest?.relic?.last_crawled_at || (nowSecs - day30Sec);
+      
+      const stalenessSec = nowSecs - lastCrawlSec;
+      const cooldownSec = cooldownMs / 1000;
+      const score = stalenessSec / cooldownSec;
+
+      return { pid, score };
+    });
+
+    // 3. Sort by priority score descending and slice
+    scored.sort((a, b) => b.score - a.score);
+    const seeds = scored.slice(0, limit).map(s => s.pid);
+
+    console.log(`Seeding queue with top ${seeds.length} players using Normalized Overdue Priority (NOP).`);
+    if (seeds.length > 0) {
+      this.db.addToCrawlQueue(seeds);
     }
-
-    console.log(`Seeding ${seeds.length} players (${from3d.length} from last 3d, ${seeds.length - from3d.length} from last 30d, deduped).`);
-    if (seeds.length > 0) this.db.addToCrawlQueue(seeds);
     return seeds;
+  }
+
+  /**
+   * Calculates a dynamic cooldown for player crawling based on their activity in the last 30 days
+   */
+  private getDynamicCooldownMs(profileId: number, counts30d: Map<number, number>, isLive: boolean): number {
+    if (isLive) return 0; // Live players always have 0 cooldown
+    
+    const count = counts30d.get(profileId) || 0;
+    
+    if (count >= 80) {
+      // Extremely active (e.g. 2.6+ games/day) -> Cooldown: 2 hours
+      return 2 * 60 * 60 * 1000;
+    }
+    if (count >= 40) {
+      // Very active (e.g. 1.3+ games/day) -> Cooldown: 4 hours
+      return 4 * 60 * 60 * 1000;
+    }
+    if (count >= 15) {
+      // Moderately active (e.g. 0.5+ games/day) -> Cooldown: 8 hours
+      return 8 * 60 * 60 * 1000;
+    }
+    if (count >= 5) {
+      // Semi-active -> Cooldown: 24 hours (1 day)
+      return 24 * 60 * 60 * 1000;
+    }
+    // Inactive -> Cooldown: 72 hours (3 days)
+    return 72 * 60 * 60 * 1000;
   }
 
   /**
@@ -372,27 +412,7 @@ export class RelicCrawler {
     }
   }
 
-  /**
-   * Seed the crawler queue with players who haven't been crawled in a long time (background refresh)
-   */
-  async seedOldestCrawledPlayers(limit: number = 20): Promise<void> {
-    const profiles = this.db.getAllProfiles();
-    const candidates = profiles.map(p => {
-      const manifest = this.db.getPlayerManifest(p.profile_id);
-      return {
-        profileId: p.profile_id,
-        lastCrawledAt: manifest?.relic?.last_crawled_at || 0
-      };
-    });
 
-    candidates.sort((a, b) => a.lastCrawledAt - b.lastCrawledAt);
-
-    const seeds = candidates.slice(0, limit).map(c => c.profileId);
-    console.log(`Seeding ${seeds.length} oldest/never crawled players to queue.`);
-    if (seeds.length > 0) {
-      this.db.addToCrawlQueue(seeds);
-    }
-  }
 
   /**
    * Run a snowball crawl up to a limit of crawled players
@@ -401,11 +421,22 @@ export class RelicCrawler {
     const cutoffTimestamp = Math.floor(Date.now() / 1000) - (monthsCutoff * 30 * 24 * 60 * 60);
     console.log(`Starting crawl. Filtering games after Unix timestamp: ${cutoffTimestamp} (${monthsCutoff} months ago)`);
 
-    // Seed from live lobbies, active db players, and background refreshes
-    console.log('Seeding crawl queue from live lobbies + active db players + oldest crawled...');
+    // Calculate last 30 days activity once to compute dynamic player cooldowns
+    const nowSecs = Math.floor(Date.now() / 1000);
+    const day30ago = nowSecs - 30 * 24 * 3600;
+    const counts30d = new Map<number, number>();
+    for (const m of this.db.getMatches()) {
+      if (m.startgametime >= day30ago && m.players) {
+        for (const p of m.players) {
+          counts30d.set(p.profile_id, (counts30d.get(p.profile_id) || 0) + 1);
+        }
+      }
+    }
+
+    // Seed from live lobbies and prioritized player queue
+    console.log('Seeding crawl queue from live lobbies + prioritized player queue...');
     const livePlayerIds = new Set(await this.seedFromLobbies());
-    await this.seedFromActivePlayers(limitCount);
-    await this.seedOldestCrawledPlayers(20);
+    await this.seedPriorityQueue(limitCount);
 
     if (this.db.getCrawlQueueLength() === 0) {
       console.warn('Queue is empty after seeding. Cannot crawl.');
@@ -426,12 +457,11 @@ export class RelicCrawler {
         if (!profileId) break;
 
         if (!force) {
-          // Skip check:
-          //   1. Currently live players (online now in lobbies) have 0 cooldown (always crawled).
-          //   2. Other players have an 8-hour cooldown (ensures active players are crawled at least twice per day,
-          //      capturing all recent games before they fall off the Relic API's recent match list).
+          // Dynamic Cooldown Strategy:
+          // 1. Live players have 0 cooldown (always crawled).
+          // 2. Active players cooldown scales dynamically between 2h and 72h based on their recent activity.
           const isLive = livePlayerIds.has(profileId);
-          const cooldownMs = isLive ? 0 : 8 * 60 * 60 * 1000;
+          const cooldownMs = this.getDynamicCooldownMs(profileId, counts30d, isLive);
 
           if (this.db.isCrawled(profileId, cooldownMs)) {
             continue;
