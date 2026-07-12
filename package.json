@@ -17,7 +17,7 @@
     "scrape:player": "node src/cli.ts scrape",
     "elo": "node src/cli.ts elo",
     "dev": "statikk dist --port 3000",
-    "deploy": "gh-pages -d dist -f -m \"chore: deploy static leaderboard [skip ci]\"",
+    "deploy": "gh-pages --dist dist --no-history --message \"chore: deploy static leaderboard [skip ci]\"",
     "preflight": "pnpm run typecheck && pnpm run test"
   },
   "devDependencies": {
