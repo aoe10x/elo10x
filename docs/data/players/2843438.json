@@ -1,12 +1,12 @@
 {
   "profile_id": 2843438,
   "alias": "Scipio",
-  "rating": 1062,
-  "wins": 18,
-  "losses": 16,
-  "gamesCount": 34,
-  "winRate": 53,
-  "lastPlayedAt": 1783836050,
+  "rating": 1040,
+  "wins": 19,
+  "losses": 19,
+  "gamesCount": 38,
+  "winRate": 50,
+  "lastPlayedAt": 1783844500,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -44,105 +44,13 @@
     1051,
     1066,
     1079,
-    1062
+    1062,
+    1047,
+    1033,
+    1021,
+    1040
   ],
   "recentMatches": [
-    {
-      "matchId": 491282263,
-      "description": "Bamboo 10x 3x Welcome",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1783679671,
-      "outcome": "loss",
-      "preRating": 1103,
-      "postRating": 1075,
-      "eloChange": -28,
-      "civ": "Britons",
-      "teamAvgElo": 1074,
-      "opponentAvgElo": 1070,
-      "teammates": [
-        "Zavgor",
-        "fxsound",
-        "Nigerian Farmer"
-      ],
-      "opponents": [
-        "hoderebus",
-        "Lumedge",
-        "tonkatumura",
-        "紫蝶黄蜂俱有情"
-      ]
-    },
-    {
-      "matchId": 491283758,
-      "description": "3X 10X",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783680447,
-      "outcome": "win",
-      "preRating": 1075,
-      "postRating": 1098,
-      "eloChange": 23,
-      "civ": "Tatars",
-      "teamAvgElo": 1079,
-      "opponentAvgElo": 1055,
-      "teammates": [
-        "GiGi",
-        "Lumedge",
-        "axiuluo"
-      ],
-      "opponents": [
-        "Zavgor",
-        "Consume Product",
-        "hoderebus",
-        "Dellox"
-      ]
-    },
-    {
-      "matchId": 491285355,
-      "description": "3X 10X",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783681351,
-      "outcome": "loss",
-      "preRating": 1098,
-      "postRating": 1074,
-      "eloChange": -24,
-      "civ": "Hindustanis",
-      "teamAvgElo": 1097,
-      "opponentAvgElo": 1071,
-      "teammates": [
-        "tonkatumura",
-        "axiuluo",
-        "Honey badger"
-      ],
-      "opponents": [
-        "GiGi",
-        "gmc inspector",
-        "FAOse7en",
-        "wintre"
-      ]
-    },
-    {
-      "matchId": 491309673,
-      "description": "10x3x bamboo nothing",
-      "mapname": "Bamboo_Nothing_v2_NoWater DE",
-      "timestamp": 1783691119,
-      "outcome": "win",
-      "preRating": 1074,
-      "postRating": 1089,
-      "eloChange": 15,
-      "civ": "Berbers",
-      "teamAvgElo": 1051,
-      "opponentAvgElo": 976,
-      "teammates": [
-        "Bourne2Believe",
-        "Consume Product",
-        "476055690"
-      ],
-      "opponents": [
-        "轻绘梨花泪满衣",
-        "Dr.Ao",
-        "JaFu",
-        "Monk"
-      ]
-    },
     {
       "matchId": 491311326,
       "description": "10x 3x BaMbOo NoThInG",
@@ -226,7 +134,7 @@
       "eloChange": 13,
       "civ": "Vikings",
       "teamAvgElo": 1057,
-      "opponentAvgElo": 1035,
+      "opponentAvgElo": 1034,
       "teammates": [
         "BigAl",
         "PIEROGI",
@@ -441,7 +349,7 @@
       "postRating": 1051,
       "eloChange": 14,
       "civ": "Saracens",
-      "teamAvgElo": 1078,
+      "teamAvgElo": 1079,
       "opponentAvgElo": 986,
       "teammates": [
         "pool_champ",
@@ -525,6 +433,102 @@
         "{R} Parry",
         "edalmavuz",
         "ElCapi7766"
+      ]
+    },
+    {
+      "matchId": 491752170,
+      "description": "3X 10X",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783838550,
+      "outcome": "loss",
+      "preRating": 1062,
+      "postRating": 1047,
+      "eloChange": -15,
+      "civ": "Malay",
+      "teamAvgElo": 1094,
+      "opponentAvgElo": 1093,
+      "teammates": [
+        "GiGi",
+        "田瘾犯了",
+        "cyberocioso"
+      ],
+      "opponents": [
+        "procrastination.exe",
+        "Lumedge",
+        "edalmavuz",
+        "{R} Parry"
+      ]
+    },
+    {
+      "matchId": 491753814,
+      "description": "bamboo nothing 10x",
+      "mapname": "Bamboo Nothing v3 (BaLi)",
+      "timestamp": 1783839550,
+      "outcome": "loss",
+      "preRating": 1047,
+      "postRating": 1033,
+      "eloChange": -14,
+      "civ": "Slavs",
+      "teamAvgElo": 1049,
+      "opponentAvgElo": 1097,
+      "teammates": [
+        "Lykerya",
+        "Preacher!",
+        "reticall"
+      ],
+      "opponents": [
+        "[B] Zennith",
+        "GiGi",
+        "edalmavuz",
+        "golhmogh"
+      ]
+    },
+    {
+      "matchId": 491757367,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783840832,
+      "outcome": "loss",
+      "preRating": 1033,
+      "postRating": 1021,
+      "eloChange": -12,
+      "civ": "Britons",
+      "teamAvgElo": 1043,
+      "opponentAvgElo": 1125,
+      "teammates": [
+        "Lykerya",
+        "golhmogh",
+        "serdaroglu"
+      ],
+      "opponents": [
+        "SmilesBetray",
+        "GiGi",
+        "tonkatumura",
+        "typ53b90"
+      ]
+    },
+    {
+      "matchId": 491766109,
+      "description": "10x 3x Bamboo (ungo bunga)",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783844500,
+      "outcome": "win",
+      "preRating": 1021,
+      "postRating": 1040,
+      "eloChange": 19,
+      "civ": "Khmer",
+      "teamAvgElo": 1010,
+      "opponentAvgElo": 1091,
+      "teammates": [
+        "boroinbishop",
+        "golhmogh",
+        "apolizer"
+      ],
+      "opponents": [
+        "The Cobra Brothers",
+        "GiGi",
+        "Bridge",
+        "鱼浆"
       ]
     }
   ]
