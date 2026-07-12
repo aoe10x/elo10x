@@ -85,7 +85,6 @@ header {
     font-size: 1.1rem;
     font-weight: 300;
     letter-spacing: 1px;
-    margin-bottom: 1.25rem;
 }
 
 .last-updated-badge {
@@ -98,7 +97,7 @@ header {
     border-radius: 12px;
     font-size: 0.8rem;
     color: var(--text-muted);
-    margin-bottom: 2.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .status-dot {
@@ -153,9 +152,6 @@ header {
 
 /* Search & Filter Section */
 .controls-panel {
-    background: var(--bg-card);
-    backdrop-filter: blur(12px);
-    border: 1px solid var(--border-color);
     border-radius: 16px;
     padding: 1rem 1.5rem;
     margin-bottom: 1rem;
