@@ -1,12 +1,12 @@
 {
   "profile_id": 434838,
   "alias": "jpllops",
-  "rating": 1011,
-  "wins": 7,
+  "rating": 1035,
+  "wins": 8,
   "losses": 8,
-  "gamesCount": 15,
-  "winRate": 47,
-  "lastPlayedAt": 1783872543,
+  "gamesCount": 16,
+  "winRate": 50,
+  "lastPlayedAt": 1783875853,
   "country": "se",
   "merged_ids": [],
   "ratingHistory": [
@@ -25,7 +25,8 @@
     1098,
     1063,
     1038,
-    1011
+    1011,
+    1035
   ],
   "recentMatches": [
     {
@@ -279,7 +280,7 @@
       "eloChange": 21,
       "civ": "Ethiopians",
       "teamAvgElo": 1038,
-      "opponentAvgElo": 989,
+      "opponentAvgElo": 988,
       "teammates": [
         "Sundev",
         "TR.elephantman",
@@ -386,6 +387,30 @@
         "avaldivia",
         "_Zeruch_",
         "Bao Oninon"
+      ]
+    },
+    {
+      "matchId": 491865006,
+      "description": "10x 3x BN ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783875853,
+      "outcome": "win",
+      "preRating": 1011,
+      "postRating": 1035,
+      "eloChange": 24,
+      "civ": "Mongols",
+      "teamAvgElo": 1001,
+      "opponentAvgElo": 1006,
+      "teammates": [
+        "DnD",
+        "bhasudi--",
+        "r9maximus"
+      ],
+      "opponents": [
+        "pool_champ",
+        "Parts",
+        "SlimeJesse",
+        "bigjames"
       ]
     }
   ]

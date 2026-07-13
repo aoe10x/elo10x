@@ -1,12 +1,12 @@
 {
   "profile_id": 2439662,
   "alias": "rcmccallum",
-  "rating": 1075,
-  "wins": 9,
+  "rating": 1094,
+  "wins": 10,
   "losses": 7,
-  "gamesCount": 16,
-  "winRate": 56,
-  "lastPlayedAt": 1783804813,
+  "gamesCount": 17,
+  "winRate": 59,
+  "lastPlayedAt": 1783881342,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -26,7 +26,8 @@
     995,
     1023,
     1050,
-    1075
+    1075,
+    1094
   ],
   "recentMatches": [
     {
@@ -112,7 +113,7 @@
       "eloChange": -43,
       "civ": "Incas",
       "teamAvgElo": 1076,
-      "opponentAvgElo": 1060,
+      "opponentAvgElo": 1059,
       "teammates": [
         "RIchard_Uy",
         "iamatthe.hell",
@@ -184,7 +185,7 @@
       "eloChange": -40,
       "civ": "Burgundians",
       "teamAvgElo": 1031,
-      "opponentAvgElo": 1009,
+      "opponentAvgElo": 1008,
       "teammates": [
         "Gasnápido",
         "veeeeker",
@@ -411,6 +412,30 @@
         "Lykerya",
         "GiGi",
         "develement"
+      ]
+    },
+    {
+      "matchId": 491885531,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783881342,
+      "outcome": "win",
+      "preRating": 1075,
+      "postRating": 1094,
+      "eloChange": 19,
+      "civ": "Bohemians",
+      "teamAvgElo": 1036,
+      "opponentAvgElo": 1025,
+      "teammates": [
+        "k0rnm@yer",
+        "Gladiator",
+        "Monkeymonk"
+      ],
+      "opponents": [
+        "gemmascho",
+        "julien.nicolai",
+        "Ghandi",
+        "Consume Product"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 864352,
   "alias": "Nigerian Farmer",
-  "rating": 999,
+  "rating": 981,
   "wins": 13,
-  "losses": 14,
-  "gamesCount": 27,
-  "winRate": 48,
-  "lastPlayedAt": 1783679671,
+  "losses": 15,
+  "gamesCount": 28,
+  "winRate": 46,
+  "lastPlayedAt": 1783877559,
   "country": "se",
   "merged_ids": [],
   "ratingHistory": [
@@ -37,33 +37,10 @@
     1043,
     1026,
     1012,
-    999
+    999,
+    981
   ],
   "recentMatches": [
-    {
-      "matchId": 436937949,
-      "description": "4V4 ===10x shared 3Xtech  4V4 random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1764599580,
-      "outcome": "loss",
-      "preRating": 1048,
-      "postRating": 1010,
-      "eloChange": -38,
-      "civ": "Unknown",
-      "teamAvgElo": 1025,
-      "opponentAvgElo": 1044,
-      "teammates": [
-        "Mr. PUTIN my President",
-        "鱼浆",
-        "Snake"
-      ],
-      "opponents": [
-        "choolkkkk",
-        "River Plate 09-12-18",
-        "sshadow",
-        "2手下留情1"
-      ]
-    },
     {
       "matchId": 463703500,
       "description": "10x Amazon Tunnel, 40 min treaty, 4vs4",
@@ -315,7 +292,7 @@
       "eloChange": -15,
       "civ": "Lithuanians",
       "teamAvgElo": 1013,
-      "opponentAvgElo": 1087,
+      "opponentAvgElo": 1086,
       "teammates": [
         "nice",
         "平生不修善果 只爱石油军火",
@@ -410,7 +387,7 @@
       "postRating": 1030,
       "eloChange": 21,
       "civ": "Saracens",
-      "teamAvgElo": 998,
+      "teamAvgElo": 997,
       "opponentAvgElo": 1127,
       "teammates": [
         "yxsko93",
@@ -518,6 +495,30 @@
         "Lumedge",
         "tonkatumura",
         "紫蝶黄蜂俱有情"
+      ]
+    },
+    {
+      "matchId": 491870542,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783877559,
+      "outcome": "loss",
+      "preRating": 999,
+      "postRating": 981,
+      "eloChange": -18,
+      "civ": "Saracens",
+      "teamAvgElo": 1027,
+      "opponentAvgElo": 956,
+      "teammates": [
+        "gemmascho",
+        "mgmanager",
+        "wintre"
+      ],
+      "opponents": [
+        "ustra90",
+        "ChristopheG1970.Fr",
+        "-[RDU]- Gorda America Forever",
+        "Mankaur"
       ]
     }
   ]

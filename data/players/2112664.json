@@ -1,12 +1,12 @@
 {
   "profile_id": 2112664,
   "alias": "julien.nicolai",
-  "rating": 1040,
+  "rating": 1024,
   "wins": 14,
-  "losses": 13,
-  "gamesCount": 27,
-  "winRate": 52,
-  "lastPlayedAt": 1783710271,
+  "losses": 14,
+  "gamesCount": 28,
+  "winRate": 50,
+  "lastPlayedAt": 1783881342,
   "country": "fr",
   "merged_ids": [],
   "ratingHistory": [
@@ -37,33 +37,10 @@
     992,
     1010,
     1026,
-    1040
+    1040,
+    1024
   ],
   "recentMatches": [
-    {
-      "matchId": 320718488,
-      "description": "10x bamboo",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1718736780,
-      "outcome": "win",
-      "preRating": 980,
-      "postRating": 1018,
-      "eloChange": 38,
-      "civ": "Malians",
-      "teamAvgElo": 979,
-      "opponentAvgElo": 992,
-      "teammates": [
-        "MoEzy",
-        "Fish Boom",
-        "shark_12"
-      ],
-      "opponents": [
-        "TRU3POW3R",
-        "Dad",
-        "Picc™",
-        "frasween"
-      ]
-    },
     {
       "matchId": 321413885,
       "description": "10x 256x forest nothing",
@@ -518,6 +495,30 @@
         "OrangE",
         "[ ARKI ! ]",
         "UnstableKnight"
+      ]
+    },
+    {
+      "matchId": 491885531,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783881342,
+      "outcome": "loss",
+      "preRating": 1040,
+      "postRating": 1024,
+      "eloChange": -16,
+      "civ": "Gurjaras",
+      "teamAvgElo": 1025,
+      "opponentAvgElo": 1036,
+      "teammates": [
+        "gemmascho",
+        "Ghandi",
+        "Consume Product"
+      ],
+      "opponents": [
+        "k0rnm@yer",
+        "rcmccallum",
+        "Gladiator",
+        "Monkeymonk"
       ]
     }
   ]

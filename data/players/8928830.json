@@ -1,12 +1,12 @@
 {
   "profile_id": 8928830,
   "alias": "Given Sens",
-  "rating": 1030,
+  "rating": 1017,
   "wins": 29,
-  "losses": 34,
-  "gamesCount": 63,
-  "winRate": 46,
-  "lastPlayedAt": 1783745220,
+  "losses": 35,
+  "gamesCount": 64,
+  "winRate": 45,
+  "lastPlayedAt": 1783951175,
   "country": "nl",
   "merged_ids": [],
   "ratingHistory": [
@@ -73,33 +73,10 @@
     1076,
     1061,
     1043,
-    1030
+    1030,
+    1017
   ],
   "recentMatches": [
-    {
-      "matchId": 447009020,
-      "description": "10x_3x_Bamboo_Nothing_Random",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1768035420,
-      "outcome": "win",
-      "preRating": 1010,
-      "postRating": 1027,
-      "eloChange": 17,
-      "civ": "Chinese",
-      "teamAvgElo": 1005,
-      "opponentAvgElo": 1037,
-      "teammates": [
-        "Contry",
-        "spits",
-        "Gasior"
-      ],
-      "opponents": [
-        "Bul-Kathos",
-        "UbaneMess",
-        "[B] pro.PHET",
-        "tbtmitch"
-      ]
-    },
     {
       "matchId": 448857470,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -422,7 +399,7 @@
       "postRating": 1048,
       "eloChange": -14,
       "civ": "Italians",
-      "teamAvgElo": 1061,
+      "teamAvgElo": 1060,
       "opponentAvgElo": 1116,
       "teammates": [
         "wintre",
@@ -554,6 +531,30 @@
         "golhmogh",
         "Kuecken_das_Vollstrecker",
         "BigAl"
+      ]
+    },
+    {
+      "matchId": 492064466,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783951175,
+      "outcome": "loss",
+      "preRating": 1030,
+      "postRating": 1017,
+      "eloChange": -13,
+      "civ": "Khmer",
+      "teamAvgElo": 1066,
+      "opponentAvgElo": 1099,
+      "teammates": [
+        "i kun 2.5",
+        "我是ikun",
+        "balbers08"
+      ],
+      "opponents": [
+        "tonzo",
+        "Lumedge",
+        "GOJO",
+        "kekekeya"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 2984097,
   "alias": "jmm",
-  "rating": 1089,
+  "rating": 1071,
   "wins": 42,
-  "losses": 31,
-  "gamesCount": 73,
-  "winRate": 58,
-  "lastPlayedAt": 1778597100,
+  "losses": 32,
+  "gamesCount": 74,
+  "winRate": 57,
+  "lastPlayedAt": 1783903080,
   "country": "ar",
   "merged_ids": [],
   "ratingHistory": [
@@ -83,33 +83,10 @@
     1074,
     1091,
     1107,
-    1089
+    1089,
+    1071
   ],
   "recentMatches": [
-    {
-      "matchId": 457590257,
-      "description": "Bamboo 10x 3x 4v4",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1771606260,
-      "outcome": "win",
-      "preRating": 1131,
-      "postRating": 1143,
-      "eloChange": 12,
-      "civ": "Unknown",
-      "teamAvgElo": 1083,
-      "opponentAvgElo": 1031,
-      "teammates": [
-        "alexw",
-        "Temp",
-        "kekekeya"
-      ],
-      "opponents": [
-        "Froggylebarbare",
-        "Milky",
-        "Emusan",
-        "Mithrandir the Fool"
-      ]
-    },
     {
       "matchId": 458075728,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -529,7 +506,7 @@
       "eloChange": 16,
       "civ": "Turks",
       "teamAvgElo": 1023,
-      "opponentAvgElo": 1081,
+      "opponentAvgElo": 1080,
       "teammates": [
         "DPK75",
         "Monkeymonk",
@@ -564,6 +541,30 @@
         "samseryd",
         "Grimmie",
         "Vladimir Trump"
+      ]
+    },
+    {
+      "matchId": 491965293,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1783903080,
+      "outcome": "loss",
+      "preRating": 1089,
+      "postRating": 1071,
+      "eloChange": -18,
+      "civ": "Japanese",
+      "teamAvgElo": 1019,
+      "opponentAvgElo": 1048,
+      "teammates": [
+        "Scipio",
+        "holguin_c18",
+        "Chuckyllo4417"
+      ],
+      "opponents": [
+        "Parenquima",
+        "tonzo",
+        "juancito.trukupey",
+        "calebw704"
       ]
     }
   ]

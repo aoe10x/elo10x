@@ -1,12 +1,12 @@
 {
   "profile_id": 6279739,
   "alias": "Chikna Raavan",
-  "rating": 1035,
-  "wins": 43,
-  "losses": 41,
-  "gamesCount": 84,
+  "rating": 1023,
+  "wins": 45,
+  "losses": 44,
+  "gamesCount": 89,
   "winRate": 51,
-  "lastPlayedAt": 1783834844,
+  "lastPlayedAt": 1783974943,
   "country": "in",
   "merged_ids": [],
   "ratingHistory": [
@@ -94,129 +94,14 @@
     1051,
     1066,
     1050,
-    1035
+    1035,
+    1019,
+    1003,
+    1021,
+    1007,
+    1023
   ],
   "recentMatches": [
-    {
-      "matchId": 491241522,
-      "description": "Bamboo 10x 3x  (fair and balanced)",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783657048,
-      "outcome": "loss",
-      "preRating": 1027,
-      "postRating": 1010,
-      "eloChange": -17,
-      "civ": "Franks",
-      "teamAvgElo": 1060,
-      "opponentAvgElo": 1012,
-      "teammates": [
-        "Scipio",
-        "typ53b90",
-        "WipiWi"
-      ],
-      "opponents": [
-        "pool_champ",
-        "TUF | DUKE_NUKEM",
-        "jelliebean11",
-        "Ozyroth"
-      ]
-    },
-    {
-      "matchId": 491254848,
-      "description": "10x 3x Bamboo (big )",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783663414,
-      "outcome": "win",
-      "preRating": 1010,
-      "postRating": 1027,
-      "eloChange": 17,
-      "civ": "Ethiopians",
-      "teamAvgElo": 1044,
-      "opponentAvgElo": 1039,
-      "teammates": [
-        "adrian",
-        "samseryd",
-        "Waryahay"
-      ],
-      "opponents": [
-        "Scipio",
-        "procrastination.exe",
-        "GiGi",
-        "Sal"
-      ]
-    },
-    {
-      "matchId": 491342714,
-      "description": "10x 3x BN ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1783700471,
-      "outcome": "win",
-      "preRating": 1027,
-      "postRating": 1047,
-      "eloChange": 20,
-      "civ": "Spartans",
-      "teamAvgElo": 1069,
-      "opponentAvgElo": 1125,
-      "teammates": [
-        "pool_champ",
-        "Xinzzo",
-        "Manba Out"
-      ],
-      "opponents": [
-        "Not a Wizard",
-        "matt",
-        "fxsound",
-        "Lumedge"
-      ]
-    },
-    {
-      "matchId": 491386399,
-      "description": "10x civ  3x tech Forest nothing",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783713601,
-      "outcome": "win",
-      "preRating": 1047,
-      "postRating": 1064,
-      "eloChange": 17,
-      "civ": "Poles",
-      "teamAvgElo": 1068,
-      "opponentAvgElo": 1058,
-      "teammates": [
-        "Maic",
-        "Manba Out",
-        "pandasadnap"
-      ],
-      "opponents": [
-        "VAPE NAYSH Y'ALL",
-        "Joseph",
-        "Kaa Da Kaveman",
-        "田瘾犯了"
-      ]
-    },
-    {
-      "matchId": 491430463,
-      "description": "10x 3x Bamboo (<3)",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783727370,
-      "outcome": "win",
-      "preRating": 1064,
-      "postRating": 1077,
-      "eloChange": 13,
-      "civ": "Bulgarians",
-      "teamAvgElo": 1024,
-      "opponentAvgElo": 1002,
-      "teammates": [
-        "MarieBrutale",
-        "GrandUni",
-        "Parenquima"
-      ],
-      "opponents": [
-        "Scipio",
-        "procrastination.exe",
-        "E_R_V",
-        "Apocalypto"
-      ]
-    },
     {
       "matchId": 491433566,
       "description": "4vs4 10x 3x shared civ bonus, random civ",
@@ -575,6 +460,126 @@
         "Xinzzo",
         "Nimu.-",
         "aLEXt"
+      ]
+    },
+    {
+      "matchId": 491870240,
+      "description": "10x shared and 3x tech | Bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783877559,
+      "outcome": "loss",
+      "preRating": 1035,
+      "postRating": 1019,
+      "eloChange": -16,
+      "civ": "Sicilians",
+      "teamAvgElo": 1061,
+      "opponentAvgElo": 1029,
+      "teammates": [
+        "Craster",
+        "青松",
+        "Al Ghouti"
+      ],
+      "opponents": [
+        "Funkyton",
+        "Ravenlost",
+        "sppd3181",
+        "YUJIN"
+      ]
+    },
+    {
+      "matchId": 491912852,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783887582,
+      "outcome": "loss",
+      "preRating": 1019,
+      "postRating": 1003,
+      "eloChange": -16,
+      "civ": "Japanese",
+      "teamAvgElo": 1067,
+      "opponentAvgElo": 1023,
+      "teammates": [
+        "NoAgendaPODCAST",
+        "Ye",
+        "wintre"
+      ],
+      "opponents": [
+        "Joseph",
+        "iamatthe.hell",
+        "0urSneakyBoi",
+        "[B] Cannino"
+      ]
+    },
+    {
+      "matchId": 491917600,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783888770,
+      "outcome": "win",
+      "preRating": 1003,
+      "postRating": 1021,
+      "eloChange": 18,
+      "civ": "Mongols",
+      "teamAvgElo": 1054,
+      "opponentAvgElo": 1045,
+      "teammates": [
+        "Paulichromatic",
+        "Sensei",
+        "Ye"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "Gasnápido",
+        "Brotherman Bill",
+        "MarieBrutale"
+      ]
+    },
+    {
+      "matchId": 492106233,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783964251,
+      "outcome": "loss",
+      "preRating": 1021,
+      "postRating": 1007,
+      "eloChange": -14,
+      "civ": "Berbers",
+      "teamAvgElo": 1025,
+      "opponentAvgElo": 1070,
+      "teammates": [
+        "Optimus",
+        "YUJIN",
+        "Consume Product"
+      ],
+      "opponents": [
+        "Emusan",
+        "Dellox",
+        "Shadow",
+        "wintre"
+      ]
+    },
+    {
+      "matchId": 492144011,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783974943,
+      "outcome": "win",
+      "preRating": 1007,
+      "postRating": 1023,
+      "eloChange": 16,
+      "civ": "Tatars",
+      "teamAvgElo": 1016,
+      "opponentAvgElo": 998,
+      "teammates": [
+        "bischofl",
+        "yimacs_yoyoyo",
+        "omega"
+      ],
+      "opponents": [
+        "Lykerya",
+        "iamatthe.hell",
+        "Heklort",
+        "Mehandor"
       ]
     }
   ]

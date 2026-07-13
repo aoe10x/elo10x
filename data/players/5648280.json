@@ -1,12 +1,12 @@
 {
   "profile_id": 5648280,
   "alias": "Rito",
-  "rating": 1041,
-  "wins": 22,
-  "losses": 17,
-  "gamesCount": 39,
-  "winRate": 56,
-  "lastPlayedAt": 1783786135,
+  "rating": 1076,
+  "wins": 25,
+  "losses": 18,
+  "gamesCount": 43,
+  "winRate": 58,
+  "lastPlayedAt": 1783877842,
   "country": "jp",
   "merged_ids": [],
   "ratingHistory": [
@@ -49,105 +49,13 @@
     1087,
     1070,
     1055,
-    1041
+    1041,
+    1059,
+    1076,
+    1093,
+    1076
   ],
   "recentMatches": [
-    {
-      "matchId": 349428978,
-      "description": "shared10x tech3x amazon",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1730591880,
-      "outcome": "win",
-      "preRating": 1128,
-      "postRating": 1141,
-      "eloChange": 13,
-      "civ": "Aztecs",
-      "teamAvgElo": 1046,
-      "opponentAvgElo": 1026,
-      "teammates": [
-        "komatti",
-        "nagatsuki14",
-        "tonkatumura"
-      ],
-      "opponents": [
-        "Papillon",
-        "Zak",
-        "I am not AI",
-        "konishika"
-      ]
-    },
-    {
-      "matchId": 349434203,
-      "description": "shared10x tech3x amazon",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1730593560,
-      "outcome": "loss",
-      "preRating": 1141,
-      "postRating": 1117,
-      "eloChange": -24,
-      "civ": "Maya",
-      "teamAvgElo": 1072,
-      "opponentAvgElo": 947,
-      "teammates": [
-        "Papillon",
-        "tonkatumura",
-        "nagatsuki14"
-      ],
-      "opponents": [
-        "komatti",
-        "konishika",
-        "I am not AI",
-        "Meatmyballs"
-      ]
-    },
-    {
-      "matchId": 349888177,
-      "description": "10x 3x BAMBOO",
-      "mapname": "Bamboo_Nothing_V2_Nowater De",
-      "timestamp": 1730767440,
-      "outcome": "win",
-      "preRating": 1117,
-      "postRating": 1128,
-      "eloChange": 11,
-      "civ": "Armenians",
-      "teamAvgElo": 1018,
-      "opponentAvgElo": 1006,
-      "teammates": [
-        "TopazSkate37557",
-        "Gorbachev",
-        "うすたつっくったおま"
-      ],
-      "opponents": [
-        "nagatsuki14",
-        "komatti",
-        "Emusan",
-        "Keishi"
-      ]
-    },
-    {
-      "matchId": 350075375,
-      "description": "shared10x tech3x amazon",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1730850240,
-      "outcome": "win",
-      "preRating": 1128,
-      "postRating": 1139,
-      "eloChange": 11,
-      "civ": "Byzantines",
-      "teamAvgElo": 1047,
-      "opponentAvgElo": 1005,
-      "teammates": [
-        "Papillon",
-        "The Cobra Brothers",
-        "liemlnt"
-      ],
-      "opponents": [
-        "Keishi",
-        "Ikumo",
-        "Grimmie",
-        "komatti"
-      ]
-    },
     {
       "matchId": 350078277,
       "description": "shared10x tech3x amazon",
@@ -530,6 +438,102 @@
         "tonkatumura",
         "komatti",
         "kaka52pk"
+      ]
+    },
+    {
+      "matchId": 491860712,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783874653,
+      "outcome": "win",
+      "preRating": 1041,
+      "postRating": 1059,
+      "eloChange": 18,
+      "civ": "Bulgarians",
+      "teamAvgElo": 1078,
+      "opponentAvgElo": 1082,
+      "teammates": [
+        "Contry",
+        "Bryce Coolguy",
+        "Lumedge"
+      ],
+      "opponents": [
+        "Papillon",
+        "Emusan",
+        "gemmascho",
+        "GarvSANGWAN"
+      ]
+    },
+    {
+      "matchId": 491863504,
+      "description": "10x_3x_Bamboo_Nothing_Random",
+      "mapname": "Bamboo Nothing v4 (BaLi)",
+      "timestamp": 1783875454,
+      "outcome": "win",
+      "preRating": 1059,
+      "postRating": 1076,
+      "eloChange": 17,
+      "civ": "Tatars",
+      "teamAvgElo": 1090,
+      "opponentAvgElo": 1075,
+      "teammates": [
+        "Emusan",
+        "Lumedge",
+        "Al Ghouti"
+      ],
+      "opponents": [
+        "Contry",
+        "Bryce Coolguy",
+        "Papillon",
+        "FPS Geo"
+      ]
+    },
+    {
+      "matchId": 491868361,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783876650,
+      "outcome": "win",
+      "preRating": 1076,
+      "postRating": 1093,
+      "eloChange": 17,
+      "civ": "Romans",
+      "teamAvgElo": 1066,
+      "opponentAvgElo": 1092,
+      "teammates": [
+        "konishika",
+        "Emusan",
+        "FPS Geo"
+      ],
+      "opponents": [
+        "Papillon",
+        "Al Ghouti",
+        "Lumedge",
+        "bull_scoots"
+      ]
+    },
+    {
+      "matchId": 491872709,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783877842,
+      "outcome": "loss",
+      "preRating": 1093,
+      "postRating": 1076,
+      "eloChange": -17,
+      "civ": "Persians",
+      "teamAvgElo": 1050,
+      "opponentAvgElo": 1064,
+      "teammates": [
+        "R301",
+        "BeatsNArt",
+        "feid_"
+      ],
+      "opponents": [
+        "Papillon",
+        "konishika",
+        "FPS Geo",
+        "frank13.gomez"
       ]
     }
   ]

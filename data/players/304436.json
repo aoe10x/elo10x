@@ -1,12 +1,12 @@
 {
   "profile_id": 304436,
   "alias": "Josh",
-  "rating": 989,
-  "wins": 26,
+  "rating": 1006,
+  "wins": 27,
   "losses": 28,
-  "gamesCount": 54,
-  "winRate": 48,
-  "lastPlayedAt": 1783726013,
+  "gamesCount": 55,
+  "winRate": 49,
+  "lastPlayedAt": 1783902419,
   "country": "mx",
   "merged_ids": [
     304436,
@@ -67,33 +67,10 @@
     968,
     989,
     973,
-    989
+    989,
+    1006
   ],
   "recentMatches": [
-    {
-      "matchId": 397600784,
-      "description": "3x 10x Random BN",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1749116520,
-      "outcome": "loss",
-      "preRating": 1029,
-      "postRating": 1010,
-      "eloChange": -19,
-      "civ": "Gurjaras",
-      "teamAvgElo": 1027,
-      "opponentAvgElo": 959,
-      "teammates": [
-        "Fumero",
-        "Raggamuffin'",
-        "Mr.YaYo"
-      ],
-      "opponents": [
-        "Duffy",
-        "Marck",
-        "buyanjavyn",
-        "Trajano"
-      ]
-    },
     {
       "matchId": 401112143,
       "description": "10x shared 3x tech Bamboo nothing random civ",
@@ -489,7 +466,7 @@
       "eloChange": 21,
       "civ": "Byzantines",
       "teamAvgElo": 1074,
-      "opponentAvgElo": 1082,
+      "opponentAvgElo": 1081,
       "teammates": [
         "typ53b90",
         "kaka52pk",
@@ -537,7 +514,7 @@
       "eloChange": 16,
       "civ": "Hindustanis",
       "teamAvgElo": 975,
-      "opponentAvgElo": 969,
+      "opponentAvgElo": 968,
       "teammates": [
         "[TodEs] MnTartara",
         "baianitro",
@@ -548,6 +525,30 @@
         "MarieBrutale",
         "dinapal",
         "E_R_V"
+      ]
+    },
+    {
+      "matchId": 491963595,
+      "description": "10x 3x BN ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783902419,
+      "outcome": "win",
+      "preRating": 989,
+      "postRating": 1006,
+      "eloChange": 17,
+      "civ": "Poles",
+      "teamAvgElo": 1056,
+      "opponentAvgElo": 1021,
+      "teammates": [
+        "pool_champ",
+        "Consume Product",
+        "Fringnut"
+      ],
+      "opponents": [
+        "Ye",
+        "Ravenlost",
+        "leandrod_c",
+        "YM1604"
       ]
     }
   ]

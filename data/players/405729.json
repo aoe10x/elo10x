@@ -1,12 +1,12 @@
 {
   "profile_id": 405729,
   "alias": "Bambuchagt",
-  "rating": 1024,
+  "rating": 1012,
   "wins": 18,
-  "losses": 23,
-  "gamesCount": 41,
-  "winRate": 44,
-  "lastPlayedAt": 1783297579,
+  "losses": 24,
+  "gamesCount": 42,
+  "winRate": 43,
+  "lastPlayedAt": 1783893318,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -51,33 +51,10 @@
     970,
     988,
     1007,
-    1024
+    1024,
+    1012
   ],
   "recentMatches": [
-    {
-      "matchId": 482227288,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1780381080,
-      "outcome": "win",
-      "preRating": 926,
-      "postRating": 945,
-      "eloChange": 19,
-      "civ": "Celts",
-      "teamAvgElo": 964,
-      "opponentAvgElo": 995,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "Paulichromatic",
-        "Sentinel"
-      ],
-      "opponents": [
-        "develement",
-        "Wololo",
-        "The Cobra Brothers",
-        "SickFishh"
-      ]
-    },
     {
       "matchId": 482324601,
       "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
@@ -520,7 +497,7 @@
       "postRating": 1024,
       "eloChange": 17,
       "civ": "Byzantines",
-      "teamAvgElo": 997,
+      "teamAvgElo": 996,
       "opponentAvgElo": 1032,
       "teammates": [
         "NoAgendaPODCAST",
@@ -532,6 +509,30 @@
         "GuguBot",
         "vincentc95",
         "勇战到抵"
+      ]
+    },
+    {
+      "matchId": 491935522,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783893318,
+      "outcome": "loss",
+      "preRating": 1024,
+      "postRating": 1012,
+      "eloChange": -12,
+      "civ": "Khmer",
+      "teamAvgElo": 1066,
+      "opponentAvgElo": 1108,
+      "teammates": [
+        "{R} Parry",
+        "FREESTYLE72",
+        "Brotherman Bill"
+      ],
+      "opponents": [
+        "Apocalypto",
+        "Regina Ip",
+        "田瘾犯了",
+        "Kuecken_das_Vollstrecker"
       ]
     }
   ]

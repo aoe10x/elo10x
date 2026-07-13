@@ -1,12 +1,12 @@
 {
   "profile_id": 3427427,
   "alias": "Funkyton",
-  "rating": 963,
-  "wins": 27,
+  "rating": 983,
+  "wins": 28,
   "losses": 51,
-  "gamesCount": 78,
+  "gamesCount": 79,
   "winRate": 35,
-  "lastPlayedAt": 1782944785,
+  "lastPlayedAt": 1783877559,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -88,33 +88,10 @@
     932,
     955,
     975,
-    963
+    963,
+    983
   ],
   "recentMatches": [
-    {
-      "matchId": 384128385,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1744192500,
-      "outcome": "win",
-      "preRating": 893,
-      "postRating": 914,
-      "eloChange": 21,
-      "civ": "Magyars",
-      "teamAvgElo": 1019,
-      "opponentAvgElo": 1012,
-      "teammates": [
-        "Kumad",
-        "JoeyTribianni69",
-        "Myriad"
-      ],
-      "opponents": [
-        "Oh the Jermanity",
-        "Equisde",
-        "Alectus",
-        "123412343421431"
-      ]
-    },
     {
       "matchId": 391983747,
       "description": "10x Shared Turbo Tunnel",
@@ -569,6 +546,30 @@
         "I LICK TRAINS",
         "Chirijiraden",
         "kiggless"
+      ]
+    },
+    {
+      "matchId": 491870240,
+      "description": "10x shared and 3x tech | Bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783877559,
+      "outcome": "win",
+      "preRating": 963,
+      "postRating": 983,
+      "eloChange": 20,
+      "civ": "Wu",
+      "teamAvgElo": 1029,
+      "opponentAvgElo": 1061,
+      "teammates": [
+        "Ravenlost",
+        "sppd3181",
+        "YUJIN"
+      ],
+      "opponents": [
+        "Chikna Raavan",
+        "Craster",
+        "青松",
+        "Al Ghouti"
       ]
     }
   ]

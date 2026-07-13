@@ -1,12 +1,12 @@
 {
   "profile_id": 14257681,
   "alias": "Memberwise",
-  "rating": 1033,
+  "rating": 1020,
   "wins": 50,
-  "losses": 53,
-  "gamesCount": 103,
-  "winRate": 49,
-  "lastPlayedAt": 1783787489,
+  "losses": 54,
+  "gamesCount": 104,
+  "winRate": 48,
+  "lastPlayedAt": 1783888127,
   "country": "gb",
   "merged_ids": [
     12133403,
@@ -23,9 +23,9 @@
     922,
     899,
     940,
-    984,
     1023,
     995,
+    1031,
     1056,
     1028,
     1004,
@@ -43,13 +43,13 @@
     1046,
     1029,
     1014,
-    1001,
     1020,
     1007,
     1024,
     1038,
     1024,
     1009,
+    993,
     978,
     965,
     982,
@@ -62,7 +62,6 @@
     958,
     976,
     996,
-    1013,
     1028,
     1045,
     1061,
@@ -75,6 +74,7 @@
     1099,
     1081,
     1094,
+    1075,
     1059,
     1041,
     1055,
@@ -82,7 +82,6 @@
     1056,
     1041,
     1057,
-    1041,
     1052,
     1065,
     1078,
@@ -99,10 +98,10 @@
     1067,
     1052,
     1069,
+    1053,
     1036,
     1020,
     1006,
-    993,
     1010,
     996,
     1012,
@@ -112,33 +111,10 @@
     1017,
     1034,
     1051,
-    1033
+    1033,
+    1020
   ],
   "recentMatches": [
-    {
-      "matchId": 467700949,
-      "description": "10x 3x bamboo random civ - yeeepers sucks",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1775272920,
-      "outcome": "loss",
-      "preRating": 1077,
-      "postRating": 1062,
-      "eloChange": -15,
-      "civ": "Unknown",
-      "teamAvgElo": 1067,
-      "opponentAvgElo": 1097,
-      "teammates": [
-        "bijiyumo",
-        "Honey badger",
-        "McKrakfejs"
-      ],
-      "opponents": [
-        "brunopt99",
-        "TheRiceMan",
-        "MrSniffers",
-        "gstone"
-      ]
-    },
     {
       "matchId": 467704895,
       "description": "10x 3x bamboo random civ - yeeepers sucks",
@@ -510,7 +486,7 @@
       "eloChange": 14,
       "civ": "Goths",
       "teamAvgElo": 1050,
-      "opponentAvgElo": 967,
+      "opponentAvgElo": 968,
       "teammates": [
         "procrastination.exe",
         "Parpalho",
@@ -593,6 +569,30 @@
         "maialen_zubi",
         "Skarbrand",
         "取款机ATM"
+      ]
+    },
+    {
+      "matchId": 491915276,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783888127,
+      "outcome": "loss",
+      "preRating": 1033,
+      "postRating": 1020,
+      "eloChange": -13,
+      "civ": "Burmese",
+      "teamAvgElo": 1005,
+      "opponentAvgElo": 1098,
+      "teammates": [
+        "gemmascho",
+        "-[RDU]- Gorda America Forever",
+        "wurst456"
+      ],
+      "opponents": [
+        "CristoTheRealCeisto",
+        "Honey badger",
+        "[BRE] Francis",
+        "ISwaZz"
       ]
     }
   ]

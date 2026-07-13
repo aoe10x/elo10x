@@ -1,12 +1,12 @@
 {
   "profile_id": 15759569,
   "alias": "恩底弥翁之鹰",
-  "rating": 1090,
-  "wins": 8,
-  "losses": 7,
-  "gamesCount": 15,
+  "rating": 1087,
+  "wins": 9,
+  "losses": 8,
+  "gamesCount": 17,
   "winRate": 53,
-  "lastPlayedAt": 1783083275,
+  "lastPlayedAt": 1783939331,
   "country": "cn",
   "merged_ids": [
     12372902,
@@ -28,7 +28,9 @@
     1012,
     1038,
     1066,
-    1090
+    1090,
+    1112,
+    1087
   ],
   "recentMatches": [
     {
@@ -389,6 +391,54 @@
         "kekekeya",
         "476055690",
         "Bao Oninon"
+      ]
+    },
+    {
+      "matchId": 492036874,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783939046,
+      "outcome": "win",
+      "preRating": 1090,
+      "postRating": 1112,
+      "eloChange": 22,
+      "civ": "Bulgarians",
+      "teamAvgElo": 1051,
+      "opponentAvgElo": 1056,
+      "teammates": [
+        "dimon21_8",
+        "鱼浆",
+        "Flip Kun"
+      ],
+      "opponents": [
+        "i kun 2.5",
+        "Age5464",
+        "Goose",
+        "平生不修善果 只爱石油军火"
+      ]
+    },
+    {
+      "matchId": 492038014,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783939331,
+      "outcome": "loss",
+      "preRating": 1112,
+      "postRating": 1087,
+      "eloChange": -25,
+      "civ": "Sicilians",
+      "teamAvgElo": 1084,
+      "opponentAvgElo": 1077,
+      "teammates": [
+        "鱼浆",
+        "Goose",
+        "beat"
+      ],
+      "opponents": [
+        "i kun 2.5",
+        "Lumedge",
+        "476055690",
+        "平生不修善果 只爱石油军火"
       ]
     }
   ]

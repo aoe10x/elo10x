@@ -1,12 +1,12 @@
 {
   "profile_id": 8970135,
   "alias": "Papillon",
-  "rating": 1099,
-  "wins": 57,
-  "losses": 44,
-  "gamesCount": 101,
-  "winRate": 56,
-  "lastPlayedAt": 1783873350,
+  "rating": 1066,
+  "wins": 58,
+  "losses": 47,
+  "gamesCount": 105,
+  "winRate": 55,
+  "lastPlayedAt": 1783877842,
   "country": "jp",
   "merged_ids": [],
   "ratingHistory": [
@@ -19,7 +19,6 @@
     873,
     918,
     960,
-    922,
     891,
     865,
     841,
@@ -35,7 +34,7 @@
     988,
     1003,
     984,
-    955,
+    968,
     945,
     964,
     951,
@@ -52,7 +51,6 @@
     952,
     973,
     989,
-    972,
     989,
     1006,
     1021,
@@ -70,7 +68,6 @@
     997,
     1013,
     1030,
-    1046,
     1062,
     1079,
     1092,
@@ -84,9 +81,9 @@
     1121,
     1135,
     1146,
+    1125,
     1138,
     1150,
-    1161,
     1141,
     1154,
     1166,
@@ -103,111 +100,18 @@
     1162,
     1172,
     1181,
-    1160,
     1139,
     1118,
     1130,
     1140,
     1120,
-    1099
+    1099,
+    1082,
+    1066,
+    1050,
+    1066
   ],
   "recentMatches": [
-    {
-      "matchId": 388741051,
-      "description": "10xshared_3xtech_BambooNothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1745880720,
-      "outcome": "loss",
-      "preRating": 1166,
-      "postRating": 1145,
-      "eloChange": -21,
-      "civ": "Bengalis",
-      "teamAvgElo": 1101,
-      "opponentAvgElo": 1045,
-      "teammates": [
-        "Rito",
-        "社畜のコマ応援隊",
-        "Abused but whole"
-      ],
-      "opponents": [
-        "komatti",
-        "うすたつっくったおま",
-        "konishika",
-        "Dayman"
-      ]
-    },
-    {
-      "matchId": 388744263,
-      "description": "10xshared_3xtech_BambooNothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1745881800,
-      "outcome": "loss",
-      "preRating": 1145,
-      "postRating": 1125,
-      "eloChange": -20,
-      "civ": "Hindustanis",
-      "teamAvgElo": 1055,
-      "opponentAvgElo": 1066,
-      "teammates": [
-        "komatti",
-        "うすたつっくったおま",
-        "Koalakapitaen"
-      ],
-      "opponents": [
-        "konishika",
-        "Rito",
-        "社畜のコマ応援隊",
-        "tonkatumura"
-      ]
-    },
-    {
-      "matchId": 388750459,
-      "description": "10xshared_3xtech_BambooNothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1745884080,
-      "outcome": "win",
-      "preRating": 1125,
-      "postRating": 1138,
-      "eloChange": 13,
-      "civ": "Georgians",
-      "teamAvgElo": 1065,
-      "opponentAvgElo": 1055,
-      "teammates": [
-        "komatti",
-        "うすたつっくったおま",
-        "Rito"
-      ],
-      "opponents": [
-        "konishika",
-        "tonkatumura",
-        "bckd00r",
-        "社畜のコマ応援隊"
-      ]
-    },
-    {
-      "matchId": 388751026,
-      "description": "10xshared_3xtech_BambooNothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1745884260,
-      "outcome": "win",
-      "preRating": 1138,
-      "postRating": 1150,
-      "eloChange": 12,
-      "civ": "Aztecs",
-      "teamAvgElo": 1079,
-      "opponentAvgElo": 1052,
-      "teammates": [
-        "konishika",
-        "tonkatumura",
-        "うすたつっくったおま"
-      ],
-      "opponents": [
-        "komatti",
-        "社畜のコマ応援隊",
-        "martin",
-        "Rito"
-      ]
-    },
     {
       "matchId": 388754751,
       "description": "10xshared_3xtech_BambooNothing",
@@ -578,7 +482,7 @@
       "postRating": 1099,
       "eloChange": -21,
       "civ": "Magyars",
-      "teamAvgElo": 1117,
+      "teamAvgElo": 1120,
       "opponentAvgElo": 1016,
       "teammates": [
         "golhmogh",
@@ -590,6 +494,102 @@
         "Sal",
         "Erikton5786",
         "Emusan"
+      ]
+    },
+    {
+      "matchId": 491860712,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783874653,
+      "outcome": "loss",
+      "preRating": 1099,
+      "postRating": 1082,
+      "eloChange": -17,
+      "civ": "Unknown",
+      "teamAvgElo": 1082,
+      "opponentAvgElo": 1078,
+      "teammates": [
+        "Emusan",
+        "gemmascho",
+        "GarvSANGWAN"
+      ],
+      "opponents": [
+        "Rito",
+        "Contry",
+        "Bryce Coolguy",
+        "Lumedge"
+      ]
+    },
+    {
+      "matchId": 491863504,
+      "description": "10x_3x_Bamboo_Nothing_Random",
+      "mapname": "Bamboo Nothing v4 (BaLi)",
+      "timestamp": 1783875454,
+      "outcome": "loss",
+      "preRating": 1082,
+      "postRating": 1066,
+      "eloChange": -16,
+      "civ": "Mapuche",
+      "teamAvgElo": 1075,
+      "opponentAvgElo": 1090,
+      "teammates": [
+        "Contry",
+        "Bryce Coolguy",
+        "FPS Geo"
+      ],
+      "opponents": [
+        "Emusan",
+        "Lumedge",
+        "Rito",
+        "Al Ghouti"
+      ]
+    },
+    {
+      "matchId": 491868361,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783876650,
+      "outcome": "loss",
+      "preRating": 1066,
+      "postRating": 1050,
+      "eloChange": -16,
+      "civ": "Byzantines",
+      "teamAvgElo": 1092,
+      "opponentAvgElo": 1066,
+      "teammates": [
+        "Al Ghouti",
+        "Lumedge",
+        "bull_scoots"
+      ],
+      "opponents": [
+        "konishika",
+        "Emusan",
+        "Rito",
+        "FPS Geo"
+      ]
+    },
+    {
+      "matchId": 491872709,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783877842,
+      "outcome": "win",
+      "preRating": 1050,
+      "postRating": 1066,
+      "eloChange": 16,
+      "civ": "Spartans",
+      "teamAvgElo": 1064,
+      "opponentAvgElo": 1050,
+      "teammates": [
+        "konishika",
+        "FPS Geo",
+        "frank13.gomez"
+      ],
+      "opponents": [
+        "R301",
+        "Rito",
+        "BeatsNArt",
+        "feid_"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 3172830,
   "alias": "Craster",
-  "rating": 1028,
+  "rating": 1010,
   "wins": 9,
-  "losses": 10,
-  "gamesCount": 19,
-  "winRate": 47,
-  "lastPlayedAt": 1783822519,
+  "losses": 11,
+  "gamesCount": 20,
+  "winRate": 45,
+  "lastPlayedAt": 1783877559,
   "country": "ve",
   "merged_ids": [],
   "ratingHistory": [
@@ -29,7 +29,8 @@
     1046,
     1066,
     1047,
-    1028
+    1028,
+    1010
   ],
   "recentMatches": [
     {
@@ -486,6 +487,30 @@
         "Terry",
         "LeosMind",
         "MalekBTW"
+      ]
+    },
+    {
+      "matchId": 491870240,
+      "description": "10x shared and 3x tech | Bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783877559,
+      "outcome": "loss",
+      "preRating": 1028,
+      "postRating": 1010,
+      "eloChange": -18,
+      "civ": "Mongols",
+      "teamAvgElo": 1061,
+      "opponentAvgElo": 1029,
+      "teammates": [
+        "Chikna Raavan",
+        "青松",
+        "Al Ghouti"
+      ],
+      "opponents": [
+        "Funkyton",
+        "Ravenlost",
+        "sppd3181",
+        "YUJIN"
       ]
     }
   ]

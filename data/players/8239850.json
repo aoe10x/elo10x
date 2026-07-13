@@ -1,12 +1,12 @@
 {
   "profile_id": 8239850,
   "alias": "charingane1",
-  "rating": 1020,
-  "wins": 13,
+  "rating": 1036,
+  "wins": 14,
   "losses": 12,
-  "gamesCount": 25,
-  "winRate": 52,
-  "lastPlayedAt": 1753764600,
+  "gamesCount": 26,
+  "winRate": 54,
+  "lastPlayedAt": 1783894851,
   "country": "ma",
   "merged_ids": [],
   "ratingHistory": [
@@ -35,33 +35,10 @@
     1003,
     1022,
     1005,
-    1020
+    1020,
+    1036
   ],
   "recentMatches": [
-    {
-      "matchId": 400097239,
-      "description": "10x shared 3x tech Bamboo nothing random civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1750056180,
-      "outcome": "loss",
-      "preRating": 1109,
-      "postRating": 1054,
-      "eloChange": -55,
-      "civ": "Portuguese",
-      "teamAvgElo": 1066,
-      "opponentAvgElo": 979,
-      "teammates": [
-        "tbtmitch",
-        "FREESTYLE72",
-        "[CL] DAB2"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "SpiniestTuna222",
-        "Tunguska",
-        "ZTH"
-      ]
-    },
     {
       "matchId": 400247657,
       "description": "10x 3x bamboo nothing random civ",
@@ -516,6 +493,30 @@
         "Kaa Da Kaveman",
         "Doormat",
         "Apocalypto"
+      ]
+    },
+    {
+      "matchId": 491940415,
+      "description": "10x3x Bamboo Nothing ",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v1",
+      "timestamp": 1783894851,
+      "outcome": "win",
+      "preRating": 1020,
+      "postRating": 1036,
+      "eloChange": 16,
+      "civ": "Sicilians",
+      "teamAvgElo": 990,
+      "opponentAvgElo": 1028,
+      "teammates": [
+        "AwoLl",
+        "WipiWi",
+        "X"
+      ],
+      "opponents": [
+        "TJ",
+        "Holy Cheetos",
+        "Perxeus",
+        "jonathahyoga"
       ]
     }
   ]

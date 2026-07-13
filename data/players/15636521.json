@@ -1,12 +1,12 @@
 {
   "profile_id": 15636521,
   "alias": "bardad",
-  "rating": 976,
-  "wins": 10,
-  "losses": 15,
-  "gamesCount": 25,
-  "winRate": 40,
-  "lastPlayedAt": 1781993658,
+  "rating": 974,
+  "wins": 11,
+  "losses": 17,
+  "gamesCount": 28,
+  "winRate": 39,
+  "lastPlayedAt": 1783960528,
   "country": "co",
   "merged_ids": [
     12347758,
@@ -38,81 +38,12 @@
     990,
     1006,
     992,
-    976
+    976,
+    965,
+    984,
+    974
   ],
   "recentMatches": [
-    {
-      "matchId": 432700469,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1763028180,
-      "outcome": "loss",
-      "preRating": 908,
-      "postRating": 880,
-      "eloChange": -28,
-      "civ": "Portuguese",
-      "teamAvgElo": 988,
-      "opponentAvgElo": 1019,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "jamoats",
-        "shemirage"
-      ],
-      "opponents": [
-        "ZTH",
-        "DaliMan",
-        "Quitter (Will NOT Hunt)",
-        "Nigerian Farmer"
-      ]
-    },
-    {
-      "matchId": 432703668,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1763029500,
-      "outcome": "win",
-      "preRating": 880,
-      "postRating": 934,
-      "eloChange": 54,
-      "civ": "Burgundians",
-      "teamAvgElo": 954,
-      "opponentAvgElo": 1023,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "Lowen",
-        "mack"
-      ],
-      "opponents": [
-        "Thaizila",
-        "johnnyboy",
-        "HighPriestCaco",
-        "SouthernCavalier"
-      ]
-    },
-    {
-      "matchId": 438355926,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1765144200,
-      "outcome": "loss",
-      "preRating": 934,
-      "postRating": 910,
-      "eloChange": -24,
-      "civ": "Hindustanis",
-      "teamAvgElo": 1062,
-      "opponentAvgElo": 1062,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "NoxMortus",
-        "kekekeya"
-      ],
-      "opponents": [
-        "kaka52pk",
-        "HighPriestCaco",
-        "Megahaufen",
-        "ChristopheG1970.Fr"
-      ]
-    },
     {
       "matchId": 438625363,
       "description": "bamboo nothing 10x 3x",
@@ -315,7 +246,7 @@
       "postRating": 955,
       "eloChange": -18,
       "civ": "Sicilians",
-      "teamAvgElo": 1046,
+      "teamAvgElo": 1043,
       "opponentAvgElo": 1043,
       "teammates": [
         "NoAgendaPODCAST",
@@ -428,7 +359,7 @@
     {
       "matchId": 481719931,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "my map",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
       "timestamp": 1780183768,
       "outcome": "win",
       "preRating": 972,
@@ -519,6 +450,78 @@
         "JR_Nero",
         "Honey badger",
         "jonathahyoga"
+      ]
+    },
+    {
+      "matchId": 492085319,
+      "description": "10x 3x bamboo nothing  turbo host here",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783957635,
+      "outcome": "loss",
+      "preRating": 976,
+      "postRating": 965,
+      "eloChange": -11,
+      "civ": "Burgundians",
+      "teamAvgElo": 1040,
+      "opponentAvgElo": 1083,
+      "teammates": [
+        "^gOsO^",
+        "Nimreh",
+        "Zar"
+      ],
+      "opponents": [
+        "gmc inspector",
+        "Axobada",
+        "dimon21_8",
+        "Lumedge"
+      ]
+    },
+    {
+      "matchId": 492088742,
+      "description": "10x 3x bamboo nothing  turbo host here",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783958770,
+      "outcome": "win",
+      "preRating": 965,
+      "postRating": 984,
+      "eloChange": 19,
+      "civ": "Teutons",
+      "teamAvgElo": 945,
+      "opponentAvgElo": 1032,
+      "teammates": [
+        "Nimreh",
+        "davidll_5",
+        "SimCity3000"
+      ],
+      "opponents": [
+        "gmc inspector",
+        "^gOsO^",
+        "Paolo Carrosel",
+        "Arakli61"
+      ]
+    },
+    {
+      "matchId": 492094256,
+      "description": "10x 3x Bamboo Nothing Turbo",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783960528,
+      "outcome": "loss",
+      "preRating": 984,
+      "postRating": 974,
+      "eloChange": -10,
+      "civ": "Italians",
+      "teamAvgElo": 973,
+      "opponentAvgElo": 1131,
+      "teammates": [
+        "Optimus",
+        "Wimac",
+        "Blin4ik"
+      ],
+      "opponents": [
+        "Ian",
+        "Dr.Ao",
+        "Lumedge",
+        "TheRiceMan"
       ]
     }
   ]

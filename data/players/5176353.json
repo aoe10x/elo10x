@@ -1,12 +1,12 @@
 {
   "profile_id": 5176353,
   "alias": "Holy Cheetos",
-  "rating": 1035,
-  "wins": 43,
-  "losses": 40,
-  "gamesCount": 83,
+  "rating": 1032,
+  "wins": 44,
+  "losses": 41,
+  "gamesCount": 85,
   "winRate": 52,
-  "lastPlayedAt": 1783831627,
+  "lastPlayedAt": 1783894851,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -93,57 +93,11 @@
     980,
     998,
     1018,
-    1035
+    1035,
+    1051,
+    1032
   ],
   "recentMatches": [
-    {
-      "matchId": 394724388,
-      "description": "bamboo nothing 10x 3x",
-      "mapname": "Bamboo Nothing V1 [Scorpyon]",
-      "timestamp": 1748059140,
-      "outcome": "win",
-      "preRating": 989,
-      "postRating": 1008,
-      "eloChange": 19,
-      "civ": "Unknown",
-      "teamAvgElo": 999,
-      "opponentAvgElo": 1059,
-      "teammates": [
-        "AceTrooper",
-        "Rita De Valencia",
-        "Memberwise"
-      ],
-      "opponents": [
-        "Sundev",
-        "La_Fratellanza",
-        "Broadwing",
-        "OhSheeep"
-      ]
-    },
-    {
-      "matchId": 395229911,
-      "description": "10x 3x bamboo nothing random civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1748222040,
-      "outcome": "loss",
-      "preRating": 1008,
-      "postRating": 994,
-      "eloChange": -14,
-      "civ": "Unknown",
-      "teamAvgElo": 960,
-      "opponentAvgElo": 1059,
-      "teammates": [
-        "Paris Hilton",
-        "Kaa Da Kaveman",
-        "| Dr. Pedda"
-      ],
-      "opponents": [
-        "bijiyumo",
-        "VergaraRamirez",
-        "iamatthe.hell",
-        "Fajny Człowiek"
-      ]
-    },
     {
       "matchId": 397896928,
       "description": "Bamboo 10x bonus civs 3x tech Random",
@@ -574,6 +528,54 @@
         "Bridge",
         "HyNo",
         "bull_scoots"
+      ]
+    },
+    {
+      "matchId": 491875863,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783878769,
+      "outcome": "win",
+      "preRating": 1035,
+      "postRating": 1051,
+      "eloChange": 16,
+      "civ": "Britons",
+      "teamAvgElo": 979,
+      "opponentAvgElo": 1031,
+      "teammates": [
+        "MarieBrutale",
+        "Ivy",
+        "King_Love"
+      ],
+      "opponents": [
+        "gemmascho",
+        "Shadow",
+        "wintre",
+        "Sal"
+      ]
+    },
+    {
+      "matchId": 491940415,
+      "description": "10x3x Bamboo Nothing ",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v1",
+      "timestamp": 1783894851,
+      "outcome": "loss",
+      "preRating": 1051,
+      "postRating": 1032,
+      "eloChange": -19,
+      "civ": "Saracens",
+      "teamAvgElo": 1028,
+      "opponentAvgElo": 990,
+      "teammates": [
+        "TJ",
+        "Perxeus",
+        "jonathahyoga"
+      ],
+      "opponents": [
+        "AwoLl",
+        "WipiWi",
+        "X",
+        "charingane1"
       ]
     }
   ]

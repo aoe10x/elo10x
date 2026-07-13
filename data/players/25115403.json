@@ -1,12 +1,12 @@
 {
   "profile_id": 25115403,
   "alias": "Abelardo4tojr",
-  "rating": 1216,
+  "rating": 1188,
   "wins": 14,
-  "losses": 4,
-  "gamesCount": 18,
-  "winRate": 78,
-  "lastPlayedAt": 1783723270,
+  "losses": 5,
+  "gamesCount": 19,
+  "winRate": 74,
+  "lastPlayedAt": 1783917890,
   "country": "mx",
   "merged_ids": [
     13603326,
@@ -31,7 +31,8 @@
     1176,
     1191,
     1205,
-    1216
+    1216,
+    1188
   ],
   "recentMatches": [
     {
@@ -165,7 +166,7 @@
       "eloChange": 37,
       "civ": "Huns",
       "teamAvgElo": 1086,
-      "opponentAvgElo": 1105,
+      "opponentAvgElo": 1104,
       "teammates": [
         "OhSheeep",
         "yonahan.08",
@@ -464,6 +465,30 @@
         "jair_silva",
         "Chuckyllo4417",
         "Given Sens"
+      ]
+    },
+    {
+      "matchId": 492004405,
+      "description": "256x 10x Forest Nothing",
+      "mapname": "256xForestNothing",
+      "timestamp": 1783917890,
+      "outcome": "loss",
+      "preRating": 1216,
+      "postRating": 1188,
+      "eloChange": -28,
+      "civ": "Slavs",
+      "teamAvgElo": 1058,
+      "opponentAvgElo": 1056,
+      "teammates": [
+        "Magical Taylor",
+        "Ti-tooaoo",
+        "edalmavuz"
+      ],
+      "opponents": [
+        "nooblet3300",
+        "hdygates",
+        "雲",
+        "Sal"
       ]
     }
   ]

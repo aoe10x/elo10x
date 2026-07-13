@@ -1,12 +1,12 @@
 {
   "profile_id": 11418969,
   "alias": "肥仔",
-  "rating": 1023,
+  "rating": 1010,
   "wins": 13,
-  "losses": 16,
-  "gamesCount": 29,
-  "winRate": 45,
-  "lastPlayedAt": 1783161960,
+  "losses": 17,
+  "gamesCount": 30,
+  "winRate": 43,
+  "lastPlayedAt": 1783861966,
   "country": "hk",
   "merged_ids": [],
   "ratingHistory": [
@@ -39,33 +39,10 @@
     1000,
     988,
     1007,
-    1023
+    1023,
+    1010
   ],
   "recentMatches": [
-    {
-      "matchId": 485380927,
-      "description": "Bamboo nothing 10X3X",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1781474700,
-      "outcome": "win",
-      "preRating": 1018,
-      "postRating": 1050,
-      "eloChange": 32,
-      "civ": "Incas",
-      "teamAvgElo": 987,
-      "opponentAvgElo": 1002,
-      "teammates": [
-        "yxsko93",
-        "kekekeya",
-        "476055690"
-      ],
-      "opponents": [
-        "Pogonophobia69",
-        "pkT^^",
-        "apolizer",
-        "Monkeymonk"
-      ]
-    },
     {
       "matchId": 486070751,
       "description": "i kun 10x3x 4v4s ",
@@ -93,7 +70,7 @@
     {
       "matchId": 486696176,
       "description": "bamboo nothing 10x",
-      "mapname": "my map",
+      "mapname": "Bamboo Nothing v3 (BaLi)",
       "timestamp": 1781929006,
       "outcome": "win",
       "preRating": 1022,
@@ -292,7 +269,7 @@
       "postRating": 1050,
       "eloChange": -18,
       "civ": "Gurjaras",
-      "teamAvgElo": 1034,
+      "teamAvgElo": 1033,
       "opponentAvgElo": 1057,
       "teammates": [
         "ActualWizard",
@@ -520,6 +497,30 @@
         "feid_",
         "Tiny Hands",
         "RoR | zWraithhh"
+      ]
+    },
+    {
+      "matchId": 491811618,
+      "description": "[重賽] 10X 3X Shared Civ Bonus Random CIV 4V4",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783861966,
+      "outcome": "loss",
+      "preRating": 1023,
+      "postRating": 1010,
+      "eloChange": -13,
+      "civ": "Burmese",
+      "teamAvgElo": 1068,
+      "opponentAvgElo": 1097,
+      "teammates": [
+        "鱼浆",
+        "kekekeya",
+        "Ti-tooaoo"
+      ],
+      "opponents": [
+        "老K",
+        "pandalam",
+        "NoxMortus",
+        "NickVecc"
       ]
     }
   ]

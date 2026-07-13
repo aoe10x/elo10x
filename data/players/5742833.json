@@ -1,12 +1,12 @@
 {
   "profile_id": 5742833,
   "alias": "ConiglioBianco",
-  "rating": 940,
-  "wins": 12,
+  "rating": 961,
+  "wins": 13,
   "losses": 22,
-  "gamesCount": 34,
-  "winRate": 35,
-  "lastPlayedAt": 1783814446,
+  "gamesCount": 35,
+  "winRate": 37,
+  "lastPlayedAt": 1783874095,
   "country": "it",
   "merged_ids": [],
   "ratingHistory": [
@@ -44,33 +44,10 @@
     945,
     929,
     951,
-    940
+    940,
+    961
   ],
   "recentMatches": [
-    {
-      "matchId": 400363847,
-      "description": "+10x+3xtcch   no noob",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1750173360,
-      "outcome": "loss",
-      "preRating": 924,
-      "postRating": 901,
-      "eloChange": -23,
-      "civ": "Persians",
-      "teamAvgElo": 1010,
-      "opponentAvgElo": 961,
-      "teammates": [
-        "拍车面前人人平等",
-        "GN",
-        "Ringwarithfuf"
-      ],
-      "opponents": [
-        "我只是智障，又不是脑子不好",
-        "WarsneG666",
-        "in☭pired by Columbine",
-        "Ray"
-      ]
-    },
     {
       "matchId": 400595158,
       "description": "10x 3x bamboo nothing random civ",
@@ -525,6 +502,30 @@
         "Chinicuila304",
         "EastDanielNowhere",
         "El Barto"
+      ]
+    },
+    {
+      "matchId": 491859046,
+      "description": "10x 3x BN ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783874095,
+      "outcome": "win",
+      "preRating": 940,
+      "postRating": 961,
+      "eloChange": 21,
+      "civ": "Celts",
+      "teamAvgElo": 1046,
+      "opponentAvgElo": 1061,
+      "teammates": [
+        "pool_champ",
+        "Bao Oninon",
+        "beat"
+      ],
+      "opponents": [
+        "青松",
+        "Gasnápido",
+        "Test66",
+        "rob"
       ]
     }
   ]

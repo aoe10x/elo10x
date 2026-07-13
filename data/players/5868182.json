@@ -1,11 +1,11 @@
 {
   "profile_id": 5868182,
   "alias": "mark0112",
-  "rating": 995,
+  "rating": 985,
   "wins": 20,
-  "losses": 25,
-  "gamesCount": 45,
-  "winRate": 44,
+  "losses": 26,
+  "gamesCount": 46,
+  "winRate": 43,
   "lastPlayedAt": 1783864163,
   "country": "tw",
   "merged_ids": [],
@@ -55,33 +55,10 @@
     1005,
     989,
     1010,
-    995
+    1000,
+    985
   ],
   "recentMatches": [
-    {
-      "matchId": 398364577,
-      "description": "10x 3x shared !!NO NOOBS!!",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1749403380,
-      "outcome": "win",
-      "preRating": 1037,
-      "postRating": 1054,
-      "eloChange": 17,
-      "civ": "Hindustanis",
-      "teamAvgElo": 1065,
-      "opponentAvgElo": 1058,
-      "teammates": [
-        "MickeyMouse",
-        "Zinzin",
-        "极限男电脑人"
-      ],
-      "opponents": [
-        "Age5464",
-        "fr3d7ing",
-        "aLEXt",
-        "TheGusJ"
-      ]
-    },
     {
       "matchId": 403596688,
       "description": "Bamboo Nothing 10x 3x PRO'S ONLY!",
@@ -515,16 +492,40 @@
       ]
     },
     {
+      "matchId": 491819542,
+      "description": "[重賽] 10X 3X Shared Civ Bonus Random CIV 4V4",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783864014,
+      "outcome": "loss",
+      "preRating": 1010,
+      "postRating": 1000,
+      "eloChange": -10,
+      "civ": "Celts",
+      "teamAvgElo": 1061,
+      "opponentAvgElo": 1146,
+      "teammates": [
+        "鱼浆",
+        "bhasudi--",
+        "TheCobra"
+      ],
+      "opponents": [
+        "老K",
+        "pandalam",
+        "GiGi",
+        "The Cobra Brothers"
+      ]
+    },
+    {
       "matchId": 491820211,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
       "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
       "timestamp": 1783864163,
       "outcome": "loss",
-      "preRating": 1010,
-      "postRating": 995,
+      "preRating": 1000,
+      "postRating": 985,
       "eloChange": -15,
       "civ": "Bengalis",
-      "teamAvgElo": 1042,
+      "teamAvgElo": 1036,
       "opponentAvgElo": 1023,
       "teammates": [
         "McKrakfejs",

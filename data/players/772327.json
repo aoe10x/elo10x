@@ -1,12 +1,12 @@
 {
   "profile_id": 772327,
   "alias": "wurst456",
-  "rating": 976,
+  "rating": 939,
   "wins": 11,
-  "losses": 15,
-  "gamesCount": 26,
-  "winRate": 42,
-  "lastPlayedAt": 1783713970,
+  "losses": 18,
+  "gamesCount": 29,
+  "winRate": 38,
+  "lastPlayedAt": 1783888127,
   "country": "at",
   "merged_ids": [],
   "ratingHistory": [
@@ -36,81 +36,12 @@
     1013,
     1000,
     986,
-    976
+    976,
+    961,
+    948,
+    939
   ],
   "recentMatches": [
-    {
-      "matchId": 487992298,
-      "description": "BAMBOO 10x3xtech",
-      "mapname": "my map",
-      "timestamp": 1782407072,
-      "outcome": "win",
-      "preRating": 982,
-      "postRating": 1031,
-      "eloChange": 49,
-      "civ": "Armenians",
-      "teamAvgElo": 1034,
-      "opponentAvgElo": 1081,
-      "teammates": [
-        "KhasminC",
-        "omnomnomnivore",
-        "El Barto"
-      ],
-      "opponents": [
-        "iamatthe.hell",
-        "konishika",
-        "Wil",
-        "McKrakfejs"
-      ]
-    },
-    {
-      "matchId": 488226294,
-      "description": "10x 3x Bamboo - 10xshared.com",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1782522120,
-      "outcome": "loss",
-      "preRating": 1031,
-      "postRating": 993,
-      "eloChange": -38,
-      "civ": "Italians",
-      "teamAvgElo": 1029,
-      "opponentAvgElo": 1024,
-      "teammates": [
-        "Parts",
-        "Mimi",
-        "[TW] hushin0917"
-      ],
-      "opponents": [
-        "Consume Product",
-        "Trekkspell",
-        "The Naked Gothman",
-        "Lumedge"
-      ]
-    },
-    {
-      "matchId": 488366041,
-      "description": "10x 3x bamboo no noob q群729084973",
-      "mapname": "my map",
-      "timestamp": 1782544566,
-      "outcome": "loss",
-      "preRating": 993,
-      "postRating": 964,
-      "eloChange": -29,
-      "civ": "Aztecs",
-      "teamAvgElo": 1037,
-      "opponentAvgElo": 1059,
-      "teammates": [
-        "TaKKo",
-        "-[RDU]- Gorda America Forever",
-        "{R} Parry"
-      ],
-      "opponents": [
-        "Semisky",
-        "Nimu.-",
-        "typ53b90",
-        "axiuluo"
-      ]
-    },
     {
       "matchId": 488467249,
       "description": "10x 3x bamboo no noob q群729084973",
@@ -145,7 +76,7 @@
       "postRating": 987,
       "eloChange": 41,
       "civ": "Gurjaras",
-      "teamAvgElo": 1107,
+      "teamAvgElo": 1106,
       "opponentAvgElo": 1043,
       "teammates": [
         "kekekeya",
@@ -361,7 +292,7 @@
       "postRating": 994,
       "eloChange": -15,
       "civ": "Celts",
-      "teamAvgElo": 988,
+      "teamAvgElo": 987,
       "opponentAvgElo": 1067,
       "teammates": [
         "NoAgendaPODCAST",
@@ -517,6 +448,78 @@
         "Paladin",
         "TheRiceMan",
         "BigAl"
+      ]
+    },
+    {
+      "matchId": 491884656,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783880882,
+      "outcome": "loss",
+      "preRating": 976,
+      "postRating": 961,
+      "eloChange": -15,
+      "civ": "Celts",
+      "teamAvgElo": 992,
+      "opponentAvgElo": 1003,
+      "teammates": [
+        "FPS Geo",
+        "PitlerCHU",
+        "yxsko93"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "Bachter",
+        "Yeepers",
+        "Mukero320"
+      ]
+    },
+    {
+      "matchId": 491892527,
+      "description": "10x civ  3x tech Forest nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783883092,
+      "outcome": "loss",
+      "preRating": 961,
+      "postRating": 948,
+      "eloChange": -13,
+      "civ": "Gurjaras",
+      "teamAvgElo": 1000,
+      "opponentAvgElo": 1016,
+      "teammates": [
+        "VAPE NAYSH Y'ALL",
+        "k0rnm@yer",
+        "moon"
+      ],
+      "opponents": [
+        "Voskarius",
+        "[TodEs] MnTartara",
+        "Yeepers",
+        "Monk"
+      ]
+    },
+    {
+      "matchId": 491915276,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783888127,
+      "outcome": "loss",
+      "preRating": 948,
+      "postRating": 939,
+      "eloChange": -9,
+      "civ": "Spanish",
+      "teamAvgElo": 1005,
+      "opponentAvgElo": 1098,
+      "teammates": [
+        "gemmascho",
+        "-[RDU]- Gorda America Forever",
+        "Memberwise"
+      ],
+      "opponents": [
+        "CristoTheRealCeisto",
+        "Honey badger",
+        "[BRE] Francis",
+        "ISwaZz"
       ]
     }
   ]

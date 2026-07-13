@@ -1,12 +1,12 @@
 {
   "profile_id": 498792,
   "alias": "Zdzichu",
-  "rating": 971,
-  "wins": 10,
+  "rating": 988,
+  "wins": 11,
   "losses": 13,
-  "gamesCount": 23,
-  "winRate": 43,
-  "lastPlayedAt": 1783373472,
+  "gamesCount": 24,
+  "winRate": 46,
+  "lastPlayedAt": 1783946033,
   "country": "pl",
   "merged_ids": [],
   "ratingHistory": [
@@ -33,33 +33,10 @@
     945,
     932,
     951,
-    971
+    971,
+    988
   ],
   "recentMatches": [
-    {
-      "matchId": 397569840,
-      "description": "10x shared",
-      "mapname": "(Trial) Hex Bamboo Nothing",
-      "timestamp": 1749103680,
-      "outcome": "loss",
-      "preRating": 1122,
-      "postRating": 1064,
-      "eloChange": -58,
-      "civ": "Malay",
-      "teamAvgElo": 1088,
-      "opponentAvgElo": 1000,
-      "teammates": [
-        "Hexicero",
-        "thepanch",
-        "tommy1801000fun"
-      ],
-      "opponents": [
-        "Imperator Storm",
-        "kaosune",
-        "For_The_King",
-        "The Wet Bandit"
-      ]
-    },
     {
       "matchId": 397577252,
       "description": "10x shared 3x tech Bamboo nothing random civ",
@@ -514,6 +491,30 @@
         "BigAl",
         "Xinzzo",
         "killentire russian scienceteam"
+      ]
+    },
+    {
+      "matchId": 492051359,
+      "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783946033,
+      "outcome": "win",
+      "preRating": 971,
+      "postRating": 988,
+      "eloChange": 17,
+      "civ": "Tatars",
+      "teamAvgElo": 1146,
+      "opponentAvgElo": 1000,
+      "teammates": [
+        "老K",
+        "Grimmie",
+        "pandalam"
+      ],
+      "opponents": [
+        "Ti-tooaoo",
+        "Paolo Carrosel",
+        "abatyse6533",
+        "tonkatumura"
       ]
     }
   ]

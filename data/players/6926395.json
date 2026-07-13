@@ -1,12 +1,12 @@
 {
   "profile_id": 6926395,
   "alias": "ElCapi7766",
-  "rating": 892,
-  "wins": 6,
+  "rating": 914,
+  "wins": 7,
   "losses": 15,
-  "gamesCount": 21,
-  "winRate": 29,
-  "lastPlayedAt": 1783836050,
+  "gamesCount": 22,
+  "winRate": 32,
+  "lastPlayedAt": 1783897843,
   "country": "cl",
   "merged_ids": [],
   "ratingHistory": [
@@ -31,33 +31,10 @@
     891,
     879,
     868,
-    892
+    892,
+    914
   ],
   "recentMatches": [
-    {
-      "matchId": 322737028,
-      "description": "10X Shared Bonus Random Civ -NO NOOB",
-      "mapname": "Migration",
-      "timestamp": 1719555000,
-      "outcome": "win",
-      "preRating": 952,
-      "postRating": 1007,
-      "eloChange": 55,
-      "civ": "Burmese",
-      "teamAvgElo": 994,
-      "opponentAvgElo": 1017,
-      "teammates": [
-        "Your Ego",
-        "faux",
-        "mozu5"
-      ],
-      "opponents": [
-        "kiggless",
-        "RagedTugboat493",
-        "That's a lot of scalps",
-        "meltonci"
-      ]
-    },
     {
       "matchId": 327123532,
       "description": "10x shared ramdom civ",
@@ -512,6 +489,30 @@
         "konishika",
         "FAOse7en",
         "procrastination.exe"
+      ]
+    },
+    {
+      "matchId": 491949933,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783897843,
+      "outcome": "win",
+      "preRating": 892,
+      "postRating": 914,
+      "eloChange": 22,
+      "civ": "Hindustanis",
+      "teamAvgElo": 1065,
+      "opponentAvgElo": 1032,
+      "teammates": [
+        "Consume Product",
+        "Phantom_",
+        "田瘾犯了"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "chulliman_13",
+        "Jelly",
+        "Ravenlost"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 1191990,
   "alias": "Joeywaterfall",
-  "rating": 945,
-  "wins": 14,
+  "rating": 966,
+  "wins": 15,
   "losses": 19,
-  "gamesCount": 33,
-  "winRate": 42,
-  "lastPlayedAt": 1783383506,
+  "gamesCount": 34,
+  "winRate": 44,
+  "lastPlayedAt": 1783917063,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -43,33 +43,10 @@
     917,
     939,
     958,
-    945
+    945,
+    966
   ],
   "recentMatches": [
-    {
-      "matchId": 399185864,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1749717240,
-      "outcome": "loss",
-      "preRating": 958,
-      "postRating": 929,
-      "eloChange": -29,
-      "civ": "Malay",
-      "teamAvgElo": 1000,
-      "opponentAvgElo": 932,
-      "teammates": [
-        "labelleouvrage",
-        "puje",
-        "Asuna"
-      ],
-      "opponents": [
-        "Kumad",
-        "Emotions are prohibited",
-        "Myriad",
-        "Foufi"
-      ]
-    },
     {
       "matchId": 399191078,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -524,6 +501,30 @@
         "LonelyKnight",
         "Legate",
         "feid_"
+      ]
+    },
+    {
+      "matchId": 492002793,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783917063,
+      "outcome": "win",
+      "preRating": 945,
+      "postRating": 966,
+      "eloChange": 21,
+      "civ": "Mongols",
+      "teamAvgElo": 1039,
+      "opponentAvgElo": 1063,
+      "teammates": [
+        "{R} Parry",
+        "Xinzzo",
+        "WorldsFastestTurtle"
+      ],
+      "opponents": [
+        "beat",
+        "Makinaskee",
+        "Parts",
+        "Hughmungus Chungus"
       ]
     }
   ]

@@ -1,11 +1,11 @@
 {
   "profile_id": 823357,
   "alias": "J G Wentworth",
-  "rating": 923,
-  "wins": 11,
+  "rating": 942,
+  "wins": 12,
   "losses": 20,
-  "gamesCount": 31,
-  "winRate": 35,
+  "gamesCount": 32,
+  "winRate": 38,
   "lastPlayedAt": 1782451500,
   "country": "us",
   "merged_ids": [],
@@ -41,33 +41,10 @@
     959,
     945,
     933,
-    923
+    952,
+    942
   ],
   "recentMatches": [
-    {
-      "matchId": 348003301,
-      "description": "10x 3x shared civ bonus random civ only-no noob",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1730009400,
-      "outcome": "win",
-      "preRating": 889,
-      "postRating": 932,
-      "eloChange": 43,
-      "civ": "Unknown",
-      "teamAvgElo": 953,
-      "opponentAvgElo": 1041,
-      "teammates": [
-        "Nimu.-",
-        "Retrosics",
-        "Wucky the Plucky Ducky"
-      ],
-      "opponents": [
-        "Your Ego",
-        "Edamde",
-        "johnnyboy",
-        "[CL] DAB2"
-      ]
-    },
     {
       "matchId": 348007822,
       "description": "10x 3x shared civ bonus random civ only-no noob",
@@ -501,16 +478,40 @@
       ]
     },
     {
+      "matchId": 474186413,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1777507804,
+      "outcome": "win",
+      "preRating": 933,
+      "postRating": 952,
+      "eloChange": 19,
+      "civ": "Koreans",
+      "teamAvgElo": 961,
+      "opponentAvgElo": 997,
+      "teammates": [
+        "Wucky the Plucky Ducky",
+        "cyberocioso",
+        "ratin"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "GCARMINATTI",
+        "squall",
+        "Emotions are prohibited"
+      ]
+    },
+    {
       "matchId": 488052761,
       "description": "4vs4 10x 3x shared civ bonus, random civ",
       "mapname": "Bamboo Nothing_Paren_V4",
       "timestamp": 1782451500,
       "outcome": "loss",
-      "preRating": 933,
-      "postRating": 923,
+      "preRating": 952,
+      "postRating": 942,
       "eloChange": -10,
       "civ": "Teutons",
-      "teamAvgElo": 973,
+      "teamAvgElo": 981,
       "opponentAvgElo": 1079,
       "teammates": [
         "yimacs_yoyoyo",

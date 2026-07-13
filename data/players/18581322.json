@@ -1,12 +1,12 @@
 {
   "profile_id": 18581322,
   "alias": "ZingyArrow36932",
-  "rating": 985,
+  "rating": 971,
   "wins": 40,
-  "losses": 56,
-  "gamesCount": 96,
-  "winRate": 42,
-  "lastPlayedAt": 1779949680,
+  "losses": 57,
+  "gamesCount": 97,
+  "winRate": 41,
+  "lastPlayedAt": 1783899912,
   "country": "si",
   "merged_ids": [
     12664320,
@@ -109,33 +109,10 @@
     993,
     982,
     969,
-    985
+    985,
+    971
   ],
   "recentMatches": [
-    {
-      "matchId": 453758802,
-      "description": "BAMBOO 10x - 3x  **NO BEGINNER",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1770265380,
-      "outcome": "loss",
-      "preRating": 965,
-      "postRating": 952,
-      "eloChange": -13,
-      "civ": "Aztecs",
-      "teamAvgElo": 1015,
-      "opponentAvgElo": 1038,
-      "teammates": [
-        "Your Ego",
-        "ajs",
-        "dRea"
-      ],
-      "opponents": [
-        "Jose",
-        "[CSGS]Runescape",
-        "Gadiatorking112",
-        "SouthernCavalier"
-      ]
-    },
     {
       "matchId": 457525754,
       "description": "10x Shared 3xTech Bamboo Nothing",
@@ -590,6 +567,30 @@
         "Zortopos",
         "Kabali Khan",
         "PowerBeast51461"
+      ]
+    },
+    {
+      "matchId": 491956465,
+      "description": "256x 10x Forest Nothing",
+      "mapname": "256xForestNothing",
+      "timestamp": 1783899912,
+      "outcome": "loss",
+      "preRating": 985,
+      "postRating": 971,
+      "eloChange": -14,
+      "civ": "Hindustanis",
+      "teamAvgElo": 1034,
+      "opponentAvgElo": 1030,
+      "teammates": [
+        "Zeriel",
+        "Consume Product",
+        "63e pears"
+      ],
+      "opponents": [
+        "nooblet3300",
+        "Wozbo",
+        "[ ARKI ! ]",
+        "Ian"
       ]
     }
   ]

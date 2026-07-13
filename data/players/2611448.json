@@ -1,12 +1,12 @@
 {
   "profile_id": 2611448,
   "alias": "Ozyroth",
-  "rating": 1019,
+  "rating": 980,
   "wins": 7,
-  "losses": 8,
-  "gamesCount": 15,
-  "winRate": 47,
-  "lastPlayedAt": 1783657048,
+  "losses": 10,
+  "gamesCount": 17,
+  "winRate": 41,
+  "lastPlayedAt": 1783915636,
   "country": "mx",
   "merged_ids": [],
   "ratingHistory": [
@@ -25,7 +25,9 @@
     1054,
     1020,
     988,
-    1019
+    1019,
+    999,
+    980
   ],
   "recentMatches": [
     {
@@ -183,7 +185,7 @@
       "eloChange": 42,
       "civ": "Saracens",
       "teamAvgElo": 1053,
-      "opponentAvgElo": 1075,
+      "opponentAvgElo": 1074,
       "teammates": [
         "pool_champ",
         "beat",
@@ -279,7 +281,7 @@
       "eloChange": 38,
       "civ": "Armenians",
       "teamAvgElo": 1019,
-      "opponentAvgElo": 1055,
+      "opponentAvgElo": 1054,
       "teammates": [
         "{R} Parry",
         "DGHIR | NICOGP11",
@@ -386,6 +388,54 @@
         "Chikna Raavan",
         "typ53b90",
         "WipiWi"
+      ]
+    },
+    {
+      "matchId": 491996820,
+      "description": "x3x10x Shared (PQ3.5 Qualty daycare)",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783914267,
+      "outcome": "loss",
+      "preRating": 1019,
+      "postRating": 999,
+      "eloChange": -20,
+      "civ": "Slavs",
+      "teamAvgElo": 1049,
+      "opponentAvgElo": 1072,
+      "teammates": [
+        "aLEXt",
+        "-[RDU]- Gorda America Forever",
+        "ActualWizard"
+      ],
+      "opponents": [
+        "babeleo",
+        "田瘾犯了",
+        "omar",
+        "Wilting Odin"
+      ]
+    },
+    {
+      "matchId": 491999586,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783915636,
+      "outcome": "loss",
+      "preRating": 999,
+      "postRating": 980,
+      "eloChange": -19,
+      "civ": "Malians",
+      "teamAvgElo": 1047,
+      "opponentAvgElo": 1059,
+      "teammates": [
+        "ch33tah",
+        "typ53b90",
+        "Monster_HK"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "-[RDU]- Gorda America Forever",
+        "beat",
+        "Tiny Hands"
       ]
     }
   ]
