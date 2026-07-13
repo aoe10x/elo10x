@@ -49,10 +49,10 @@ Run the rating calculations and pre-render the entire leaderboard website:
 elo10x elo
 ```
 This script computes Elo ratings and compiles:
-*   `docs/index.html` (10x 3x mode)
-*   `docs/pure.html` (Pure 10x mode)
-*   `docs/combined.html` (Combined mode)
-*   `docs/data/players/[profile_id].json` (Downsampled historical data for the details panel charts)
+*   `dist/index.html` (10x 3x mode)
+*   `dist/pure.html` (Pure 10x mode)
+*   `dist/combined.html` (Combined mode)
+*   `dist/data/players/[profile_id].json` (Downsampled historical data for the details panel charts)
 
 ### 4. Run the Leaderboard Dashboard Locally
 Launch the lightweight HTTP server to inspect the compiled leaderboard pages:
@@ -65,7 +65,7 @@ Then open [http://localhost:3000](http://localhost:3000) in your web browser.
 
 ## Database File Layout
 
-Data is stored under `docs/data/` using line-formatted JSON files to keep Git diffs minimal and deterministic:
+Data is stored under `data/` using line-formatted JSON files to keep Git diffs minimal and deterministic:
 *   `matches.json`: Chronologically sorted matches (exactly one match object per line).
 *   `profiles.json`: Player profiles containing aliases and countries (sorted by profile ID).
 *   `crawl_state.json`: Crawl queue, transient crawl states, and match fingerprints.
@@ -112,6 +112,6 @@ To automatically resolve conflicts:
    ```
 3. Stage and commit all resolved database files:
    ```bash
-   git add docs/data/matches.json docs/data/profiles.json docs/data/crawl_state.json docs/data/crawl_manifest.json docs/data/players/
+   git add data/matches.json data/profiles.json data/crawl_state.json data/crawl_manifest.json
    git commit -m "chore: resolve git conflicts and rebuild ELO leaderboard"
    ```

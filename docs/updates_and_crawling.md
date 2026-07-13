@@ -86,4 +86,4 @@ elo10x scrape active --start-page 1 --end-page 1
 ```
 
 ### Crawl Manifest & Overlap Boundaries
-To avoid scraping unnecessarily, the AoE2Insights scraper consults `docs/data/crawl_manifest.json`. It tracks the `newest_match_id` and `oldest_match_id` found in our database for each player. Once the scraper encounters games already stored in the local database, it terminates the page fetch for that player immediately.
+To avoid scraping unnecessarily, the AoE2Insights scraper consults `data/crawl_manifest.json`. It tracks the `newest_match_id` and `oldest_match_id` found in our database for each player. Once the scraper encounters games already stored in the local database, it terminates the page fetch for that player immediately.

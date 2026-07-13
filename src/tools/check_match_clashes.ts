@@ -1,11 +1,10 @@
-import * as fs from 'node:fs';
-import * as path from 'node:path';
+import { JsonDatabase } from '../db.ts';
 import { fileURLToPath } from 'node:url';
 
 async function main() {
-  const jsonPath = path.join(process.cwd(), 'docs', 'data', 'db.json');
-  const db = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
-  const matches = Object.values(db.matches) as any[];
+  const db = new JsonDatabase();
+  await db.load();
+  const matches = db.getMatches();
 
   // First build final alias mapping
   const profileToFinalAlias = new Map<number, string>();

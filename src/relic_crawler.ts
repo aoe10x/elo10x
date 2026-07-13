@@ -156,7 +156,7 @@ export class RelicCrawler {
       try {
         console.log(`Fetching seed profiles from ${url}...`);
         const response = await fetch(url, {
-          headers: { 'User-Agent': 'Mozilla/5.0 (AoE2 10x Elo Ranker)' }
+          headers: { 'User-Agent': 'Mozilla/5.0 (AoE2 10x Elo Ranker; +https://rank.10xshared.com/)' }
         });
         if (!response.ok) {
           console.warn(`Failed to fetch lobbies from ${url}: ${response.statusText}`);
@@ -246,7 +246,7 @@ export class RelicCrawler {
 
     try {
       const response = await fetch(url, {
-        headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36' }
+        headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) AoE2-10x-Elo-Ranker/1.0 (+https://rank.10xshared.com/)' }
       });
 
       if (response.status === 429) {
