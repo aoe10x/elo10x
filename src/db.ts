@@ -4,6 +4,7 @@ import * as readline from 'node:readline';
 import * as fsSync from 'node:fs';
 import type { Match, PlayerProfile, PlayerCrawlManifest } from './types.ts';
 import { buildMatchFingerprint } from './match_fingerprint.ts';
+import { matchToTuple, tupleToMatch } from './matches_tuple.ts';
 
 /**
  * Generator that yields parsed JSON objects from a line-by-line JSON array file.
@@ -93,24 +94,30 @@ export class JsonDatabase {
       // Directory exists or couldn't be created
     }
 
-    // Load matches
-    this.matches = new Map<number, Match>();
-    for await (const match of readJsonArrayLines<Match>(this.matchesPath)) {
-      if (match.players) {
-        for (const p of match.players) {
-          if ((p as any).race_id !== undefined) {
-            p.civ_id = p.civ_id || (p as any).race_id;
-            delete (p as any).race_id;
-          }
-        }
-      }
-      this.matches.set(match.id, match);
-    }
-
     // Load profiles
     this.profiles = new Map<number, PlayerProfile>();
     for await (const profile of readJsonArrayLines<PlayerProfile>(this.profilesPath)) {
       this.profiles.set(profile.profile_id, profile);
+    }
+
+    // Load matches
+    this.matches = new Map<number, Match>();
+    for await (const matchData of readJsonArrayLines<any>(this.matchesPath)) {
+      let match: Match;
+      if (Array.isArray(matchData)) {
+        match = tupleToMatch(matchData, id => this.profiles.get(id)?.alias);
+      } else {
+        match = matchData;
+        if (match.players) {
+          for (const p of match.players) {
+            if ((p as any).race_id !== undefined) {
+              p.civ_id = p.civ_id || (p as any).race_id;
+              delete (p as any).race_id;
+            }
+          }
+        }
+      }
+      this.matches.set(match.id, match);
     }
 
     // Load crawl state
@@ -188,10 +195,10 @@ export class JsonDatabase {
   async save(): Promise<void> {
     this.pruneUnusedProfiles();
 
-    // Sort matches chronologically
+    // Sort matches chronologically and map to Option B tuple format
     const sortedMatches = Array.from(this.matches.values()).sort((a, b) => {
       return (a.startgametime || 0) - (b.startgametime || 0);
-    });
+    }).map(matchToTuple);
 
     // Sort profiles by ID for diff cleanliness and strip out any legacy properties (xp/level)
     const sortedProfiles = Array.from(this.profiles.values()).map(p => {
