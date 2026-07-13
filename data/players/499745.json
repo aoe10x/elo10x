@@ -1,7 +1,7 @@
 {
   "profile_id": 499745,
   "alias": "DRAX",
-  "rating": 1000,
+  "rating": 999,
   "wins": 10,
   "losses": 12,
   "gamesCount": 22,
@@ -14,7 +14,7 @@
     1050,
     1100,
     1046,
-    1004,
+    1005,
     968,
     1017,
     975,
@@ -32,7 +32,7 @@
     1013,
     998,
     982,
-    1000
+    999
   ],
   "recentMatches": [
     {
@@ -66,8 +66,8 @@
       "timestamp": 1781356534,
       "outcome": "loss",
       "preRating": 1046,
-      "postRating": 1004,
-      "eloChange": -42,
+      "postRating": 1005,
+      "eloChange": -41,
       "civ": "Cumans",
       "teamAvgElo": 1066,
       "opponentAvgElo": 1062,
@@ -89,9 +89,9 @@
       "mapname": "Bamboo Nothing_Paren_V4",
       "timestamp": 1781368860,
       "outcome": "loss",
-      "preRating": 1004,
+      "preRating": 1005,
       "postRating": 968,
-      "eloChange": -36,
+      "eloChange": -37,
       "civ": "Incas",
       "teamAvgElo": 1025,
       "opponentAvgElo": 1050,
@@ -190,7 +190,7 @@
       "eloChange": -30,
       "civ": "Dravidians",
       "teamAvgElo": 1061,
-      "opponentAvgElo": 1077,
+      "opponentAvgElo": 1078,
       "teammates": [
         "McKrakfejs",
         "albero",
@@ -262,7 +262,7 @@
       "eloChange": 29,
       "civ": "Huns",
       "teamAvgElo": 1017,
-      "opponentAvgElo": 976,
+      "opponentAvgElo": 975,
       "teammates": [
         "aLEXt",
         "bigjames",
@@ -334,7 +334,7 @@
       "eloChange": 30,
       "civ": "Burgundians",
       "teamAvgElo": 1074,
-      "opponentAvgElo": 1031,
+      "opponentAvgElo": 1032,
       "teammates": [
         "fxsound",
         "^gOsO^",
@@ -498,11 +498,11 @@
       "timestamp": 1783968818,
       "outcome": "win",
       "preRating": 982,
-      "postRating": 1000,
-      "eloChange": 18,
+      "postRating": 999,
+      "eloChange": 17,
       "civ": "Teutons",
-      "teamAvgElo": 1012,
-      "opponentAvgElo": 1016,
+      "teamAvgElo": 1010,
+      "opponentAvgElo": 997,
       "teammates": [
         "iamatthe.hell",
         "Scrat",

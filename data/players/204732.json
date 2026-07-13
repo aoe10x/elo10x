@@ -1,7 +1,7 @@
 {
   "profile_id": 204732,
   "alias": "熊本組",
-  "rating": 1137,
+  "rating": 1136,
   "wins": 130,
   "losses": 89,
   "gamesCount": 219,
@@ -108,8 +108,8 @@
     1145,
     1148,
     1168,
-    1124,
-    1137
+    1123,
+    1136
   ],
   "recentMatches": [
     {
@@ -527,11 +527,11 @@
       "timestamp": 1777051560,
       "outcome": "loss",
       "preRating": 1168,
-      "postRating": 1146,
-      "eloChange": -22,
+      "postRating": 1145,
+      "eloChange": -23,
       "civ": "Portuguese",
       "teamAvgElo": 1020,
-      "opponentAvgElo": 1019,
+      "opponentAvgElo": 1016,
       "teammates": [
         "EzraSkywalker96",
         "SickFishh",
@@ -550,12 +550,12 @@
       "mapname": "Bamboo Nothing_Paren_V4",
       "timestamp": 1777730520,
       "outcome": "loss",
-      "preRating": 1146,
-      "postRating": 1124,
+      "preRating": 1145,
+      "postRating": 1123,
       "eloChange": -22,
       "civ": "Vietnamese",
-      "teamAvgElo": 1089,
-      "opponentAvgElo": 1010,
+      "teamAvgElo": 1088,
+      "opponentAvgElo": 1009,
       "teammates": [
         "yimacs_yoyoyo",
         "Keishi",
@@ -574,8 +574,8 @@
       "mapname": "Bamboo Nothing V3 (Bali)",
       "timestamp": 1779466560,
       "outcome": "win",
-      "preRating": 1124,
-      "postRating": 1137,
+      "preRating": 1123,
+      "postRating": 1136,
       "eloChange": 13,
       "civ": "Vikings",
       "teamAvgElo": 1044,

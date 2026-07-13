@@ -1,11 +1,11 @@
 {
   "profile_id": 24300464,
   "alias": "Manba Out",
-  "rating": 1160,
+  "rating": 1138,
   "wins": 31,
-  "losses": 18,
-  "gamesCount": 49,
-  "winRate": 63,
+  "losses": 19,
+  "gamesCount": 50,
+  "winRate": 62,
   "lastPlayedAt": 1783884868,
   "country": "cn",
   "merged_ids": [
@@ -62,33 +62,10 @@
     1127,
     1140,
     1150,
-    1160
+    1127,
+    1138
   ],
   "recentMatches": [
-    {
-      "matchId": 487564949,
-      "description": "Bamboo 10x 3x",
-      "mapname": "my map",
-      "timestamp": 1782236675,
-      "outcome": "win",
-      "preRating": 1076,
-      "postRating": 1092,
-      "eloChange": 16,
-      "civ": "Bohemians",
-      "teamAvgElo": 1100,
-      "opponentAvgElo": 1071,
-      "teammates": [
-        "OldManofStorr",
-        "beat",
-        "The Cobra Brothers"
-      ],
-      "opponents": [
-        "Moose",
-        "Mimi",
-        "pool_champ",
-        "Eat MY Sprouts"
-      ]
-    },
     {
       "matchId": 487604299,
       "description": "10x 3x bamboo NO IDIOT",
@@ -172,7 +149,7 @@
       "eloChange": 12,
       "civ": "Unknown",
       "teamAvgElo": 1045,
-      "opponentAvgElo": 1040,
+      "opponentAvgElo": 1041,
       "teammates": [
         "Emusan",
         "Sensei",
@@ -291,7 +268,7 @@
       "postRating": 1135,
       "eloChange": -23,
       "civ": "Malay",
-      "teamAvgElo": 1083,
+      "teamAvgElo": 1084,
       "opponentAvgElo": 995,
       "teammates": [
         "yimacs_yoyoyo",
@@ -522,17 +499,41 @@
       ]
     },
     {
+      "matchId": 491875268,
+      "description": "10x shared and 3x tech | Bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783878447,
+      "outcome": "loss",
+      "preRating": 1150,
+      "postRating": 1127,
+      "eloChange": -23,
+      "civ": "Bengalis",
+      "teamAvgElo": 1075,
+      "opponentAvgElo": 998,
+      "teammates": [
+        "Kalervo Jankko",
+        "Honey badger",
+        "Phantom_"
+      ],
+      "opponents": [
+        "Chikna Raavan",
+        "apolizer",
+        "iamatthe.hell",
+        "bull_scoots"
+      ]
+    },
+    {
       "matchId": 491900821,
       "description": "10x civ  3x tech Forest nothing",
       "mapname": "BAMBOO NOTHING - SCORPYON DE",
       "timestamp": 1783884868,
       "outcome": "win",
-      "preRating": 1150,
-      "postRating": 1160,
-      "eloChange": 10,
+      "preRating": 1127,
+      "postRating": 1138,
+      "eloChange": 11,
       "civ": "Turks",
-      "teamAvgElo": 1051,
-      "opponentAvgElo": 1014,
+      "teamAvgElo": 1043,
+      "opponentAvgElo": 1013,
       "teammates": [
         "VAPE NAYSH Y'ALL",
         "wintre",

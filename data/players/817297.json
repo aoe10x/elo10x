@@ -1,12 +1,12 @@
 {
   "profile_id": 817297,
   "alias": "ChiH",
-  "rating": 938,
-  "wins": 20,
+  "rating": 961,
+  "wins": 21,
   "losses": 29,
-  "gamesCount": 49,
-  "winRate": 41,
-  "lastPlayedAt": 1783776709,
+  "gamesCount": 50,
+  "winRate": 42,
+  "lastPlayedAt": 1783887729,
   "country": "ru",
   "merged_ids": [],
   "ratingHistory": [
@@ -25,10 +25,10 @@
     938,
     979,
     1008,
-    1034,
-    1056,
-    1036,
-    1058,
+    1033,
+    1055,
+    1035,
+    1057,
     1035,
     1054,
     1069,
@@ -59,33 +59,10 @@
     974,
     962,
     949,
-    938
+    938,
+    961
   ],
   "recentMatches": [
-    {
-      "matchId": 479093533,
-      "description": "10x 3x Bamboo Nothing random civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1779255600,
-      "outcome": "loss",
-      "preRating": 1045,
-      "postRating": 1028,
-      "eloChange": -17,
-      "civ": "Chinese",
-      "teamAvgElo": 1034,
-      "opponentAvgElo": 1025,
-      "teammates": [
-        "Paris Hilton",
-        "OhSheeep",
-        "Mitralyöz Selahattin"
-      ],
-      "opponents": [
-        "Pilot in training",
-        "cyberocioso",
-        "skoolied",
-        "KA-BAR"
-      ]
-    },
     {
       "matchId": 479215346,
       "description": "IDIOT TRASH STUPID ONLY!!!10x 3x bamboo rand civ",
@@ -193,7 +170,7 @@
       "eloChange": -15,
       "civ": "Burmese",
       "teamAvgElo": 1070,
-      "opponentAvgElo": 1013,
+      "opponentAvgElo": 1016,
       "teammates": [
         "gamingtars",
         "[B] Cannino",
@@ -409,7 +386,7 @@
       "eloChange": 21,
       "civ": "Chinese",
       "teamAvgElo": 1031,
-      "opponentAvgElo": 1047,
+      "opponentAvgElo": 1046,
       "teammates": [
         "Joseph",
         "Ghost_pt",
@@ -540,6 +517,30 @@
         "cyberocioso",
         "konishika",
         "Ghost_pt"
+      ]
+    },
+    {
+      "matchId": 491912620,
+      "description": "10x civ 3x tech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783887729,
+      "outcome": "win",
+      "preRating": 938,
+      "postRating": 961,
+      "eloChange": 23,
+      "civ": "Burgundians",
+      "teamAvgElo": 1063,
+      "opponentAvgElo": 1097,
+      "teammates": [
+        "Gasnápido",
+        "Saloon_F_F",
+        "Catwomim"
+      ],
+      "opponents": [
+        "gabrieldemarmiesse",
+        "BigAl",
+        "Mad08jojo",
+        "McKrakfejs"
       ]
     }
   ]

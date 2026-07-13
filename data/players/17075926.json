@@ -1,11 +1,11 @@
 {
   "profile_id": 17075926,
   "alias": "Lordetion",
-  "rating": 1035,
-  "wins": 22,
+  "rating": 1050,
+  "wins": 23,
   "losses": 29,
-  "gamesCount": 51,
-  "winRate": 43,
+  "gamesCount": 52,
+  "winRate": 44,
   "lastPlayedAt": 1783945527,
   "country": "tr",
   "merged_ids": [
@@ -61,36 +61,13 @@
     1016,
     1002,
     990,
-    978,
-    998,
-    1015,
-    1035
+    1007,
+    994,
+    1013,
+    1030,
+    1050
   ],
   "recentMatches": [
-    {
-      "matchId": 475984021,
-      "description": "i kun 10x3x 4v4s",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1778177880,
-      "outcome": "win",
-      "preRating": 933,
-      "postRating": 954,
-      "eloChange": 21,
-      "civ": "Chinese",
-      "teamAvgElo": 1005,
-      "opponentAvgElo": 1040,
-      "teammates": [
-        "fRy0ne",
-        "babeleo",
-        "Nervacek"
-      ],
-      "opponents": [
-        "i kun 2.5",
-        "Dellox",
-        "TUF | DUKE_NUKEM",
-        "McKrakfejs"
-      ]
-    },
     {
       "matchId": 476005378,
       "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
@@ -366,7 +343,7 @@
       "eloChange": 13,
       "civ": "Tatars",
       "teamAvgElo": 1088,
-      "opponentAvgElo": 958,
+      "opponentAvgElo": 959,
       "teammates": [
         "gabrieldemarmiesse",
         "liehuo22",
@@ -452,16 +429,40 @@
       ]
     },
     {
+      "matchId": 491856808,
+      "description": "10x3x bamboo nothing",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1783873876,
+      "outcome": "win",
+      "preRating": 990,
+      "postRating": 1007,
+      "eloChange": 17,
+      "civ": "Bohemians",
+      "teamAvgElo": 1035,
+      "opponentAvgElo": 1004,
+      "teammates": [
+        "轻绘梨花泪满衣",
+        "levvafire",
+        "La_Fratellanza"
+      ],
+      "opponents": [
+        "im slow",
+        "Kalervo Jankko",
+        "bigjames",
+        "jpllops"
+      ]
+    },
+    {
       "matchId": 491865833,
       "description": "3x 10x bamboo - random civ - no noobs  ",
       "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1783876091,
       "outcome": "loss",
-      "preRating": 990,
-      "postRating": 978,
-      "eloChange": -12,
+      "preRating": 1007,
+      "postRating": 994,
+      "eloChange": -13,
       "civ": "Italians",
-      "teamAvgElo": 1050,
+      "teamAvgElo": 1051,
       "opponentAvgElo": 1068,
       "teammates": [
         "gemmascho",
@@ -481,11 +482,11 @@
       "mapname": "BAMBOO NOTHING - SCORPYON DE",
       "timestamp": 1783889557,
       "outcome": "win",
-      "preRating": 978,
-      "postRating": 998,
-      "eloChange": 20,
+      "preRating": 994,
+      "postRating": 1013,
+      "eloChange": 19,
       "civ": "Malay",
-      "teamAvgElo": 1044,
+      "teamAvgElo": 1043,
       "opponentAvgElo": 1056,
       "teammates": [
         "Eraniss",
@@ -505,12 +506,12 @@
       "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1783943979,
       "outcome": "win",
-      "preRating": 998,
-      "postRating": 1015,
+      "preRating": 1013,
+      "postRating": 1030,
       "eloChange": 17,
       "civ": "Hindustanis",
-      "teamAvgElo": 1045,
-      "opponentAvgElo": 1029,
+      "teamAvgElo": 1061,
+      "opponentAvgElo": 1032,
       "teammates": [
         "i kun 2.5",
         "Consume Product",
@@ -529,12 +530,12 @@
       "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1783945527,
       "outcome": "win",
-      "preRating": 1015,
-      "postRating": 1035,
+      "preRating": 1030,
+      "postRating": 1050,
       "eloChange": 20,
       "civ": "Incas",
-      "teamAvgElo": 986,
-      "opponentAvgElo": 1110,
+      "teamAvgElo": 987,
+      "opponentAvgElo": 1114,
       "teammates": [
         "Monk",
         "勇战到抵",

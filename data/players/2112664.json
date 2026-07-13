@@ -1,11 +1,11 @@
 {
   "profile_id": 2112664,
   "alias": "julien.nicolai",
-  "rating": 1024,
+  "rating": 1008,
   "wins": 14,
-  "losses": 14,
-  "gamesCount": 28,
-  "winRate": 50,
+  "losses": 15,
+  "gamesCount": 29,
+  "winRate": 48,
   "lastPlayedAt": 1783881342,
   "country": "fr",
   "merged_ids": [],
@@ -38,33 +38,10 @@
     1010,
     1026,
     1040,
-    1024
+    1023,
+    1008
   ],
   "recentMatches": [
-    {
-      "matchId": 321413885,
-      "description": "10x 256x forest nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1719024180,
-      "outcome": "win",
-      "preRating": 1018,
-      "postRating": 1052,
-      "eloChange": 34,
-      "civ": "Saracens",
-      "teamAvgElo": 1010,
-      "opponentAvgElo": 1008,
-      "teammates": [
-        "Honey badger",
-        "Temp",
-        "Feitoria"
-      ],
-      "opponents": [
-        "Rodney McKay",
-        "Blueye",
-        "Broadwing",
-        "UlissePigro"
-      ]
-    },
     {
       "matchId": 343563485,
       "description": "10x with 256x  Forest Nothing Fun",
@@ -498,17 +475,41 @@
       ]
     },
     {
+      "matchId": 491882544,
+      "description": "10x civ  3x tech Forest nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783880657,
+      "outcome": "loss",
+      "preRating": 1040,
+      "postRating": 1023,
+      "eloChange": -17,
+      "civ": "Dravidians",
+      "teamAvgElo": 1031,
+      "opponentAvgElo": 1019,
+      "teammates": [
+        "-[RDU]- Gorda America Forever",
+        "Tiny Hands",
+        "Tortrix"
+      ],
+      "opponents": [
+        "VAPE NAYSH Y'ALL",
+        "TheCobra",
+        "BeatsNArt",
+        "Shadow"
+      ]
+    },
+    {
       "matchId": 491885531,
       "description": "3x 10x bamboo - random civ - no noobs  ",
       "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1783881342,
       "outcome": "loss",
-      "preRating": 1040,
-      "postRating": 1024,
-      "eloChange": -16,
+      "preRating": 1023,
+      "postRating": 1008,
+      "eloChange": -15,
       "civ": "Gurjaras",
-      "teamAvgElo": 1025,
-      "opponentAvgElo": 1036,
+      "teamAvgElo": 1028,
+      "opponentAvgElo": 1039,
       "teammates": [
         "gemmascho",
         "Ghandi",

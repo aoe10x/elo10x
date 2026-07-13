@@ -1,14 +1,17 @@
 {
-  "profile_id": 11747667,
+  "profile_id": 3565274,
   "alias": "Ricardo V",
-  "rating": 1003,
-  "wins": 20,
+  "rating": 1022,
+  "wins": 21,
   "losses": 27,
-  "gamesCount": 47,
-  "winRate": 43,
-  "lastPlayedAt": 1781173080,
-  "country": "Unknown",
-  "merged_ids": [],
+  "gamesCount": 48,
+  "winRate": 44,
+  "lastPlayedAt": 1783962138,
+  "country": "pe",
+  "merged_ids": [
+    3565274,
+    11747667
+  ],
   "ratingHistory": [
     1000,
     1049,
@@ -57,33 +60,10 @@
     979,
     968,
     986,
-    1003
+    1003,
+    1022
   ],
   "recentMatches": [
-    {
-      "matchId": 407628062,
-      "description": "256x 10x FN",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1753089480,
-      "outcome": "loss",
-      "preRating": 986,
-      "postRating": 971,
-      "eloChange": -15,
-      "civ": "Armenians",
-      "teamAvgElo": 960,
-      "opponentAvgElo": 1015,
-      "teammates": [
-        "Your Average Duck",
-        "big bozif",
-        "FAOse7en"
-      ],
-      "opponents": [
-        "nooblet3300",
-        "THE VIPER PERUANO",
-        "Rey Brujo",
-        "For_The_King"
-      ]
-    },
     {
       "matchId": 407633280,
       "description": "256x 10x FN",
@@ -538,6 +518,30 @@
         "Kaa Da Kaveman",
         "Monster_HK",
         "UndreamtBacon8"
+      ]
+    },
+    {
+      "matchId": 492099018,
+      "description": "10x 3x bamboo nothing  turbo host here",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783962138,
+      "outcome": "win",
+      "preRating": 1003,
+      "postRating": 1022,
+      "eloChange": 19,
+      "civ": "Tatars",
+      "teamAvgElo": 1042,
+      "opponentAvgElo": 1069,
+      "teammates": [
+        "TheRiceMan",
+        "Not a Wizard",
+        "Wimac"
+      ],
+      "opponents": [
+        "gmc inspector",
+        "tonzo",
+        "PereCastor",
+        "GarvSANGWAN"
       ]
     }
   ]

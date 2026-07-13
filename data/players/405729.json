@@ -1,11 +1,11 @@
 {
   "profile_id": 405729,
   "alias": "Bambuchagt",
-  "rating": 1012,
+  "rating": 997,
   "wins": 18,
-  "losses": 24,
-  "gamesCount": 42,
-  "winRate": 43,
+  "losses": 25,
+  "gamesCount": 43,
+  "winRate": 42,
   "lastPlayedAt": 1783893318,
   "country": "us",
   "merged_ids": [],
@@ -52,33 +52,10 @@
     988,
     1007,
     1024,
-    1012
+    1009,
+    997
   ],
   "recentMatches": [
-    {
-      "matchId": 482324601,
-      "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1780428720,
-      "outcome": "loss",
-      "preRating": 945,
-      "postRating": 937,
-      "eloChange": -8,
-      "civ": "Saracens",
-      "teamAvgElo": 1015,
-      "opponentAvgElo": 1145,
-      "teammates": [
-        "kaka52pk",
-        "majorleyendo",
-        "476055690"
-      ],
-      "opponents": [
-        "pandalam",
-        "老K",
-        "GiGi",
-        "herelin0"
-      ]
-    },
     {
       "matchId": 482335806,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -89,7 +66,7 @@
       "postRating": 956,
       "eloChange": 19,
       "civ": "Huns",
-      "teamAvgElo": 1014,
+      "teamAvgElo": 1013,
       "opponentAvgElo": 1000,
       "teammates": [
         "NoAgendaPODCAST",
@@ -512,17 +489,41 @@
       ]
     },
     {
+      "matchId": 491925183,
+      "description": "10x civ  3x tech Forest nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783890679,
+      "outcome": "loss",
+      "preRating": 1024,
+      "postRating": 1009,
+      "eloChange": -15,
+      "civ": "Byzantines",
+      "teamAvgElo": 1028,
+      "opponentAvgElo": 1052,
+      "teammates": [
+        "VAPE NAYSH Y'ALL",
+        "FPS Geo",
+        "ch33tah"
+      ],
+      "opponents": [
+        "bommietommie",
+        "Eraniss",
+        "vincentc95",
+        "Paulichromatic"
+      ]
+    },
+    {
       "matchId": 491935522,
       "description": "10x Shared 3xTech Bamboo Nothing",
       "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1783893318,
       "outcome": "loss",
-      "preRating": 1024,
-      "postRating": 1012,
+      "preRating": 1009,
+      "postRating": 997,
       "eloChange": -12,
       "civ": "Khmer",
-      "teamAvgElo": 1066,
-      "opponentAvgElo": 1108,
+      "teamAvgElo": 1065,
+      "opponentAvgElo": 1109,
       "teammates": [
         "{R} Parry",
         "FREESTYLE72",

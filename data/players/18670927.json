@@ -1,12 +1,12 @@
 {
   "profile_id": 18670927,
   "alias": "PereCastor",
-  "rating": 1016,
+  "rating": 1001,
   "wins": 22,
-  "losses": 22,
-  "gamesCount": 44,
-  "winRate": 50,
-  "lastPlayedAt": 1783864289,
+  "losses": 23,
+  "gamesCount": 45,
+  "winRate": 49,
+  "lastPlayedAt": 1783962138,
   "country": "es",
   "merged_ids": [
     13144895,
@@ -57,33 +57,10 @@
     1057,
     1040,
     1025,
-    1016
+    1016,
+    1001
   ],
   "recentMatches": [
-    {
-      "matchId": 410909905,
-      "description": "10x civ x3 tec Bomboo nothing - Only Good Noobs",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1754429220,
-      "outcome": "win",
-      "preRating": 1026,
-      "postRating": 1043,
-      "eloChange": 17,
-      "civ": "Unknown",
-      "teamAvgElo": 1049,
-      "opponentAvgElo": 1037,
-      "teammates": [
-        "Viteaux",
-        "Kinna fresh",
-        "noob"
-      ],
-      "opponents": [
-        "iamatthe.hell",
-        "Kaiko",
-        "Chuckyllo4417",
-        "Theoryworld"
-      ]
-    },
     {
       "matchId": 419913181,
       "description": "10x 3x shared !!NO NOOBS!!",
@@ -538,6 +515,30 @@
         "pandalam",
         "GiGi",
         "ISwaZz"
+      ]
+    },
+    {
+      "matchId": 492099018,
+      "description": "10x 3x bamboo nothing  turbo host here",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783962138,
+      "outcome": "loss",
+      "preRating": 1016,
+      "postRating": 1001,
+      "eloChange": -15,
+      "civ": "Burmese",
+      "teamAvgElo": 1069,
+      "opponentAvgElo": 1042,
+      "teammates": [
+        "gmc inspector",
+        "tonzo",
+        "GarvSANGWAN"
+      ],
+      "opponents": [
+        "TheRiceMan",
+        "Not a Wizard",
+        "Wimac",
+        "Ricardo V"
       ]
     }
   ]

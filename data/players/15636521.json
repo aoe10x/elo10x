@@ -1,12 +1,12 @@
 {
   "profile_id": 15636521,
   "alias": "bardad",
-  "rating": 974,
+  "rating": 960,
   "wins": 11,
-  "losses": 17,
-  "gamesCount": 28,
-  "winRate": 39,
-  "lastPlayedAt": 1783960528,
+  "losses": 18,
+  "gamesCount": 29,
+  "winRate": 38,
+  "lastPlayedAt": 1783961220,
   "country": "co",
   "merged_ids": [
     12347758,
@@ -41,33 +41,10 @@
     976,
     965,
     984,
-    974
+    975,
+    960
   ],
   "recentMatches": [
-    {
-      "matchId": 438625363,
-      "description": "bamboo nothing 10x 3x",
-      "mapname": "Bamboo Nothing V1 [Scorpyon]",
-      "timestamp": 1765236240,
-      "outcome": "win",
-      "preRating": 910,
-      "postRating": 961,
-      "eloChange": 51,
-      "civ": "Unknown",
-      "teamAvgElo": 1031,
-      "opponentAvgElo": 1075,
-      "teammates": [
-        "AceTrooper",
-        "Honey badger",
-        "Lowen"
-      ],
-      "opponents": [
-        "QuasarHerzog555",
-        "Bourne2Believe",
-        "Nordsee",
-        "Lumedge"
-      ]
-    },
     {
       "matchId": 449721296,
       "description": "BAMBOO NOTHING 10x 3x",
@@ -271,7 +248,7 @@
       "eloChange": -14,
       "civ": "Malay",
       "teamAvgElo": 1052,
-      "opponentAvgElo": 1080,
+      "opponentAvgElo": 1079,
       "teammates": [
         "SpawN",
         "Don Pollo",
@@ -295,7 +272,7 @@
       "eloChange": 23,
       "civ": "Bohemians",
       "teamAvgElo": 1016,
-      "opponentAvgElo": 1004,
+      "opponentAvgElo": 1003,
       "teammates": [
         "Clean",
         "nooblet3300",
@@ -342,7 +319,7 @@
       "postRating": 972,
       "eloChange": -13,
       "civ": "Burgundians",
-      "teamAvgElo": 1024,
+      "teamAvgElo": 1023,
       "opponentAvgElo": 1044,
       "teammates": [
         "tbtmitch",
@@ -415,7 +392,7 @@
       "eloChange": -14,
       "civ": "Lithuanians",
       "teamAvgElo": 1031,
-      "opponentAvgElo": 1059,
+      "opponentAvgElo": 1058,
       "teammates": [
         "Eddie",
         "abatyse6533",
@@ -462,8 +439,8 @@
       "postRating": 965,
       "eloChange": -11,
       "civ": "Burgundians",
-      "teamAvgElo": 1040,
-      "opponentAvgElo": 1083,
+      "teamAvgElo": 1035,
+      "opponentAvgElo": 1090,
       "teammates": [
         "^gOsO^",
         "Nimreh",
@@ -486,8 +463,8 @@
       "postRating": 984,
       "eloChange": 19,
       "civ": "Teutons",
-      "teamAvgElo": 945,
-      "opponentAvgElo": 1032,
+      "teamAvgElo": 946,
+      "opponentAvgElo": 1036,
       "teammates": [
         "Nimreh",
         "davidll_5",
@@ -507,11 +484,11 @@
       "timestamp": 1783960528,
       "outcome": "loss",
       "preRating": 984,
-      "postRating": 974,
-      "eloChange": -10,
+      "postRating": 975,
+      "eloChange": -9,
       "civ": "Italians",
       "teamAvgElo": 973,
-      "opponentAvgElo": 1131,
+      "opponentAvgElo": 1135,
       "teammates": [
         "Optimus",
         "Wimac",
@@ -522,6 +499,30 @@
         "Dr.Ao",
         "Lumedge",
         "TheRiceMan"
+      ]
+    },
+    {
+      "matchId": 492095598,
+      "description": "10x 3x bamboo nothing  turbo host here",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783961220,
+      "outcome": "loss",
+      "preRating": 975,
+      "postRating": 960,
+      "eloChange": -15,
+      "civ": "Sicilians",
+      "teamAvgElo": 1038,
+      "opponentAvgElo": 1005,
+      "teammates": [
+        "gmc inspector",
+        "sico",
+        "Wimac"
+      ],
+      "opponents": [
+        "Arkan",
+        "Age5464",
+        "tonzo",
+        "Optimus"
       ]
     }
   ]
