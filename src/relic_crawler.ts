@@ -271,7 +271,6 @@ export class RelicCrawler {
             alias: p.alias || `Player_${p.profile_id}`,
             country: p.country
           };
-          this.db.addProfile(profile);
           profilesMap.set(p.profile_id, profile);
         }
       }
@@ -351,6 +350,14 @@ export class RelicCrawler {
         if (is10x && isRecent) {
           if (participants.length === 0) {
             continue;
+          }
+
+          // Cache profiles of participants of this 10x match
+          for (const pId of candidatePlayerIds) {
+            const prof = profilesMap.get(pId);
+            if (prof) {
+              this.db.addProfile(prof);
+            }
           }
 
           const matchObj: Match = {
