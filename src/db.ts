@@ -117,7 +117,7 @@ export class JsonDatabase {
     try {
       const stateContent = await fs.readFile(this.crawlStatePath, 'utf-8');
       const state = JSON.parse(stateContent);
-      this.matchFingerprints = new Map<string, number>(Object.entries(state.match_fingerprints || {}));
+      this.matchFingerprints = new Map<string, number>();
       
       this.crawledProfiles = new Map<number, number>();
       if (state.crawled_profiles) {
@@ -210,11 +210,7 @@ export class JsonDatabase {
     await saveJsonArrayLines(this.matchesPath, sortedMatches);
     await saveJsonArrayLines(this.profilesPath, sortedProfiles);
 
-    // Sort fingerprints, crawled profiles, and the queue to keep files deterministic
-    const sortedFingerprints = Object.fromEntries(
-      Array.from(this.matchFingerprints.entries()).sort((a, b) => a[0].localeCompare(b[0]))
-    );
-
+    // Sort crawled profiles and the queue to keep files deterministic
     const sortedCrawled = Object.fromEntries(
       Array.from(this.crawledProfiles.entries()).sort((a, b) => a[0] - b[0])
     );
@@ -222,7 +218,6 @@ export class JsonDatabase {
     const sortedQueue = [...this.crawlQueue].sort((a, b) => a - b);
 
     const crawlState = {
-      match_fingerprints: sortedFingerprints,
       crawled_profiles: sortedCrawled,
       crawl_queue: sortedQueue
     };
