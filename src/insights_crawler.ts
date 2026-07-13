@@ -15,7 +15,7 @@ export class InsightsCrawler {
     try {
       console.log('Fetching active profiles from aoe10x.com active lobbies...');
       const res1 = await fetch('https://www.aoe10x.com/api/lobbies', {
-        headers: { 'User-Agent': 'Mozilla/5.0 (AoE2 10x Elo Ranker)' }
+        headers: { 'User-Agent': 'Mozilla/5.0 (AoE2 10x Elo Ranker; +https://rank.10xshared.com/)' }
       });
       if (res1.ok) {
         const data = await res1.json() as any;
@@ -32,7 +32,7 @@ export class InsightsCrawler {
       
       console.log('Fetching active profiles from aoe10x.com live matches...');
       const res2 = await fetch('https://www.aoe10x.com/api/live', {
-        headers: { 'User-Agent': 'Mozilla/5.0 (AoE2 10x Elo Ranker)' }
+        headers: { 'User-Agent': 'Mozilla/5.0 (AoE2 10x Elo Ranker; +https://rank.10xshared.com/)' }
       });
       if (res2.ok) {
         const data = await res2.json() as any;

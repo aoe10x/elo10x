@@ -207,19 +207,43 @@ export async function runCompile(db?: JsonDatabase): Promise<void> {
   collectCountries(leaderboardPure);
   collectCountries(leaderboardCombined);
 
+  const outputDir = path.join(process.cwd(), 'dist');
+  const playersDir = path.join(outputDir, 'data', 'players');
+  await fs.mkdir(playersDir, { recursive: true });
+
   const flagsCssContent = Array.from(uniqueCountries)
     .sort()
     .map(cc => `.alias-name[data-country="${cc}"]::before { background-image: url('https://flagcdn.com/16x12/${cc}.png'); }`)
     .join('\n');
-  await fs.writeFile(path.join(process.cwd(), 'docs', 'flags.css'), flagsCssContent);
+  await fs.writeFile(path.join(outputDir, 'flags.css'), flagsCssContent);
+
+  // Copy style.css, .nojekyll, and CNAME from web/ to dist/
+  await fs.copyFile(
+    path.join(process.cwd(), 'web', 'style.css'),
+    path.join(outputDir, 'style.css')
+  );
+  await fs.copyFile(
+    path.join(process.cwd(), 'web', '.nojekyll'),
+    path.join(outputDir, '.nojekyll')
+  );
+  await fs.copyFile(
+    path.join(process.cwd(), 'web', 'CNAME'),
+    path.join(outputDir, 'CNAME')
+  );
+
+  // Copy matches.json and profiles.json from data/ to dist/data/
+  await fs.copyFile(
+    path.join(process.cwd(), 'data', 'matches.json'),
+    path.join(outputDir, 'data', 'matches.json')
+  );
+  await fs.copyFile(
+    path.join(process.cwd(), 'data', 'profiles.json'),
+    path.join(outputDir, 'data', 'profiles.json')
+  );
 
   // Read Template
-  const templatePath = path.join(process.cwd(), 'docs', 'index.template.html');
+  const templatePath = path.join(process.cwd(), 'web', 'index.template.html');
   const templateHtml = await fs.readFile(templatePath, 'utf-8');
-
-  const outputDir = path.join(process.cwd(), 'docs');
-  const playersDir = path.join(outputDir, 'data', 'players');
-  await fs.mkdir(playersDir, { recursive: true });
 
   const lastMatchTime = matches.reduce((max, m) => Math.max(max, m.startgametime || 0), 0);
   const updatedAt = lastMatchTime > 0 ? lastMatchTime * 1000 : Date.now();

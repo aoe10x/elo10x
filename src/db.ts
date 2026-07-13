@@ -76,7 +76,7 @@ export class JsonDatabase {
 
   private isLoaded: boolean = false;
 
-  constructor(dataDir: string = path.join(process.cwd(), 'docs', 'data')) {
+  constructor(dataDir: string = path.join(process.cwd(), 'data')) {
     this.dataDir = dataDir;
     this.matchesPath = path.join(dataDir, 'matches.json');
     this.profilesPath = path.join(dataDir, 'profiles.json');
