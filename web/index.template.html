@@ -109,7 +109,7 @@
         <h3>Elo Calculation Methodology</h3>
         <div class="methodology-grid">
           <div class="methodology-card">
-            <h4>Parameters & Calibration</h4>
+            <h4>Parameters</h4>
             <p>Ratings are calculated sequentially in chronological order, using the following calibration rules:</p>
             <ul>
               <li><strong>Starting Rating:</strong> New players begin at <code>1000 Elo</code>.</li>
@@ -122,7 +122,7 @@
             </ul>
           </div>
           <div class="methodology-card">
-            <h4>Elo Update Formula</h4>
+            <h4>Formula</h4>
             <p>We compute individual rating adjustments by comparing a player's rating against the average rating of the opposing team:</p>
             <div class="formula-box">
               E<sub>p</sub> = 1 / (1 + 10<sup>(R<sub>opp</sub> - R<sub>p</sub>) / 400</sup>)<br>
@@ -138,22 +138,23 @@
             <p class="methodology-note">For an interactive tool to simulate these Elo changes, see <a href="https://www.twestaoe.net/tools/elocalculator" target="_blank">T-West's AoE2 Elo Calculator</a>.</p>
           </div>
           <div class="methodology-card">
-            <h4>Match Eligibility & Gaps</h4>
-            <p>To ensure competitive integrity, we only process matches that meet the following strict validation checks:</p>
+            <h4>Match Eligibility</h4>
+            <p>We only process matches that meet the following checks:</p>
             <ul>
               <li><strong>Strict 4v4 format:</strong> The match must contain exactly 8 tracked players.</li>
-              <li><strong>Two distinct teams:</strong> Exactly 4 players per team.</li>
               <li><strong>Outcome verification:</strong> Exactly 4 winners and 4 losers must be reported. Ambiguous, draw, or bugged lobby reports are discarded.</li>
             </ul>
+            <h4>Data Collection</h4>
             <p class="methodology-note">
-              <strong>Data Collection Note:</strong> Collection is manual and gaps exist. Matches are not recorded if "Record Game" was left unchecked in the lobby settings. Furthermore, public APIs do not support querying all custom lobbies globally; we must crawl by tracing individual player histories. That said, we strive to include as many games as possible.
+               Collection is manual and gaps exist. Matches are not recorded if "Allow Spectators" was left unchecked in the lobby settings. 
+               <p>Furthermore, public APIs do not support querying all custom lobbies globally; we must crawl by tracing individual player histories. That said, we strive to include as many games as possible.
             </p>
           </div>
         </div>
       </div>
 
       <footer>
-        <p>Data scraped from Relic Link multiplayer servers. Site built for the <a href="https://10xshared.com/" target="_blank">AoE2 10x community</a>.</p>
+        <p>Data from from Relic Link multiplayer servers and AOE2Insights. Site built for the <a href="https://10xshared.com/" target="_blank">AoE2 10x community</a>.</p>
         <!-- GitHub Repository: https://github.com/aoe10x/elo10x -->
       </footer>
   </div>
