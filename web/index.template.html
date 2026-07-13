@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AoE2 10x Community Elo Leaderboard</title>
+  <title>aoe2 10x Elo Leaderboard</title>
   <meta name="description" content="Elo rating rankings and detailed statistics for the Age of Empires II 10x Shared Civ Bonus community.">
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏆</text></svg>">
@@ -19,7 +19,7 @@
 <body>
   <div class="container">
     <header>
-      <h1 class="header-logo" id="main-title">AoE2 10x Leaderboard</h1>
+      <h1 class="header-logo" id="main-title">aoe2 10x Leaderboard</h1>
       <p class="header-subtitle">Elo rankings for the <a href="https://10xshared.com/" target="_blank">10x Shared Civ Bonus community</a></p>
       <div class="last-updated-badge">
         <span class="status-dot"></span>
@@ -45,7 +45,7 @@
 
     <!-- Mode Selector Tabs -->
     <div class="tabs-container">
-      <a href="index.html" class="tab-btn {{tabActive3x}}" id="tab-3x">10x 3x</a>
+      <a href="./" class="tab-btn {{tabActive3x}}" id="tab-3x">10x 3x</a>
       <a href="pure.html" class="tab-btn {{tabActivePure}}" id="tab-pure">10x</a>
       <a href="combined.html" class="tab-btn {{tabActiveCombined}}" id="tab-combined">Combined</a>
     </div>
@@ -109,7 +109,7 @@
         <h3>Elo Calculation Methodology</h3>
         <div class="methodology-grid">
           <div class="methodology-card">
-            <h4>Parameters & Calibration</h4>
+            <h4>Parameters</h4>
             <p>Ratings are calculated sequentially in chronological order, using the following calibration rules:</p>
             <ul>
               <li><strong>Starting Rating:</strong> New players begin at <code>1000 Elo</code>.</li>
@@ -122,7 +122,7 @@
             </ul>
           </div>
           <div class="methodology-card">
-            <h4>Elo Update Formula</h4>
+            <h4>Formula</h4>
             <p>We compute individual rating adjustments by comparing a player's rating against the average rating of the opposing team:</p>
             <div class="formula-box">
               E<sub>p</sub> = 1 / (1 + 10<sup>(R<sub>opp</sub> - R<sub>p</sub>) / 400</sup>)<br>
@@ -138,22 +138,26 @@
             <p class="methodology-note">For an interactive tool to simulate these Elo changes, see <a href="https://www.twestaoe.net/tools/elocalculator" target="_blank">T-West's AoE2 Elo Calculator</a>.</p>
           </div>
           <div class="methodology-card">
-            <h4>Match Eligibility & Gaps</h4>
-            <p>To ensure competitive integrity, we only process matches that meet the following strict validation checks:</p>
+            <h4>Match Eligibility</h4>
+            <p>We only process matches that meet the following checks:</p>
             <ul>
               <li><strong>Strict 4v4 format:</strong> The match must contain exactly 8 tracked players.</li>
-              <li><strong>Two distinct teams:</strong> Exactly 4 players per team.</li>
               <li><strong>Outcome verification:</strong> Exactly 4 winners and 4 losers must be reported. Ambiguous, draw, or bugged lobby reports are discarded.</li>
             </ul>
+            <h4>Data Collection</h4>
             <p class="methodology-note">
-              <strong>Data Collection Note:</strong> Collection is manual and gaps exist. Matches are not recorded if "Record Game" was left unchecked in the lobby settings. Furthermore, public APIs do not support querying all custom lobbies globally; we must crawl by tracing individual player histories. That said, we strive to include as many games as possible.
+               Matches are crawled from the Relic Link API, but are not recorded if "Allow Spectators" was left unchecked in the lobby settings.
+            </p>
+            <p class="methodology-note">
+               Because public APIs do not support searching all custom lobbies globally, we trace lobby history by crawling the match history of active 10x players.
             </p>
           </div>
         </div>
       </div>
 
       <footer>
-        <p>Data scraped from Relic Link multiplayer servers. Site built for the <a href="https://10xshared.com/" target="_blank">AoE2 10x community</a>.</p>
+        <p>Data from from Relic Link servers and AOE2Insights. 
+        <p>Site built for the <a href="https://10xshared.com/" target="_blank">aoe2 10x community</a>. Just for fun. Don't take any of this too seriously.</p>
         <!-- GitHub Repository: https://github.com/aoe10x/elo10x -->
       </footer>
   </div>
@@ -420,7 +424,7 @@
             : '';
 
           const teammatesList = Array.isArray(m.teammates) && m.teammates.length > 0 
-            ? `<div class="timeline-roster"><span class="roster-label-win">With:</span> <span class="roster-names">${m.teammates.map(escapeHtml).join(', ')}</span></div>`
+            ? `<div class="timeline-roster">${civHtml}<span class="roster-label-win">With:</span> <span class="roster-names">${m.teammates.map(escapeHtml).join(', ')}</span></div>`
             : '';
 
           const opponentsList = Array.isArray(m.opponents) && m.opponents.length > 0 
@@ -432,7 +436,7 @@
             : `<div class="timeline-rating-range">vs Opp: <strong>${m.opponentAvgElo}</strong></div>`;
           
           const hasRealMap = m.mapname && m.mapname.toLowerCase() !== 'my map' && m.mapname.toLowerCase() !== 'custom map';
-          const mapHtml = hasRealMap ? ` • Map: ${escapeHtml(m.mapname)}` : '';
+          const mapHtml = hasRealMap ? ` • ${escapeHtml(m.mapname)}` : '';
 
           return `
             <div class="timeline-card" title="Elo change: ${sign}${m.eloChange} (Opponent Avg Elo: ${m.opponentAvgElo})">
@@ -440,7 +444,7 @@
                 <div class="timeline-map">
                   <a href="https://www.aoe2insights.com/match/${m.matchId}/" target="_blank" rel="noopener noreferrer">${escapeHtml(m.description || 'Lobby Match')}</a>
                 </div>
-                <div class="timeline-meta"><span title="${escapeHtml(longMatchDate)}" class="help-tooltip">${matchDate}</span>${mapHtml}${civHtml}</div>
+                <div class="timeline-meta"><span title="${escapeHtml(longMatchDate)}" class="help-tooltip">${matchDate}</span>${mapHtml}</div>
                 ${teammatesList}
                 ${opponentsList}
               </div>
