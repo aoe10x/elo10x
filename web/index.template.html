@@ -45,7 +45,7 @@
 
     <!-- Mode Selector Tabs -->
     <div class="tabs-container">
-      <a href="index.html" class="tab-btn {{tabActive3x}}" id="tab-3x">10x 3x</a>
+      <a href="./" class="tab-btn {{tabActive3x}}" id="tab-3x">10x 3x</a>
       <a href="pure.html" class="tab-btn {{tabActivePure}}" id="tab-pure">10x</a>
       <a href="combined.html" class="tab-btn {{tabActiveCombined}}" id="tab-combined">Combined</a>
     </div>
@@ -420,7 +420,7 @@
             : '';
 
           const teammatesList = Array.isArray(m.teammates) && m.teammates.length > 0 
-            ? `<div class="timeline-roster"><span class="roster-label-win">With:</span> <span class="roster-names">${m.teammates.map(escapeHtml).join(', ')}</span></div>`
+            ? `<div class="timeline-roster">${civHtml}<span class="roster-label-win">With:</span> <span class="roster-names">${m.teammates.map(escapeHtml).join(', ')}</span></div>`
             : '';
 
           const opponentsList = Array.isArray(m.opponents) && m.opponents.length > 0 
@@ -432,7 +432,7 @@
             : `<div class="timeline-rating-range">vs Opp: <strong>${m.opponentAvgElo}</strong></div>`;
           
           const hasRealMap = m.mapname && m.mapname.toLowerCase() !== 'my map' && m.mapname.toLowerCase() !== 'custom map';
-          const mapHtml = hasRealMap ? ` • Map: ${escapeHtml(m.mapname)}` : '';
+          const mapHtml = hasRealMap ? ` • ${escapeHtml(m.mapname)}` : '';
 
           return `
             <div class="timeline-card" title="Elo change: ${sign}${m.eloChange} (Opponent Avg Elo: ${m.opponentAvgElo})">
@@ -440,7 +440,7 @@
                 <div class="timeline-map">
                   <a href="https://www.aoe2insights.com/match/${m.matchId}/" target="_blank" rel="noopener noreferrer">${escapeHtml(m.description || 'Lobby Match')}</a>
                 </div>
-                <div class="timeline-meta"><span title="${escapeHtml(longMatchDate)}" class="help-tooltip">${matchDate}</span>${mapHtml}${civHtml}</div>
+                <div class="timeline-meta"><span title="${escapeHtml(longMatchDate)}" class="help-tooltip">${matchDate}</span>${mapHtml}</div>
                 ${teammatesList}
                 ${opponentsList}
               </div>

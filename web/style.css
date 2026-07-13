@@ -152,8 +152,6 @@ header {
 
 /* Search & Filter Section */
 .controls-panel {
-    border-radius: 16px;
-    padding: 1rem 1.5rem;
     margin-bottom: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -791,6 +789,7 @@ footer a:hover {
     outline: none;
     width: 140px;
     text-align: center;
+    text-decoration: none;
 }
 
 .tab-btn:hover {
@@ -1143,9 +1142,9 @@ footer a:hover {
     padding: 1px 5px;
     font-size: 0.72rem;
     font-weight: 500;
-    margin-left: 6px;
+    margin-right: 6px;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: text-bottom;
     line-height: 1;
 }
 
