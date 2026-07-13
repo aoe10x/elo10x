@@ -1,14 +1,17 @@
 {
   "profile_id": 367423,
-  "alias": "Draconis",
-  "rating": 1046,
+  "alias": "Joey",
+  "rating": 1022,
   "wins": 10,
-  "losses": 7,
-  "gamesCount": 17,
-  "winRate": 59,
+  "losses": 8,
+  "gamesCount": 18,
+  "winRate": 56,
   "lastPlayedAt": 1773481200,
   "country": "us",
-  "merged_ids": [],
+  "merged_ids": [
+    367423,
+    12287564
+  ],
   "ratingHistory": [
     1000,
     952,
@@ -25,9 +28,10 @@
     1154,
     1114,
     1077,
-    1048,
-    1070,
-    1046
+    1046,
+    1021,
+    1043,
+    1022
   ],
   "recentMatches": [
     {
@@ -237,7 +241,7 @@
       "teammates": [
         "Anne Flank",
         "Federigo Giambelli",
-        "Jonas' pet woof"
+        "i <3 b00bies"
       ],
       "opponents": [
         "Dylan Dog",
@@ -336,7 +340,7 @@
         "Anne Flank"
       ],
       "opponents": [
-        "WWW.Y",
+        "紫蝶黄蜂俱有情",
         "Tina",
         "DerDieDas",
         "mrtickles22"
@@ -367,16 +371,40 @@
       ]
     },
     {
+      "matchId": 450000672,
+      "description": "10x 3x shared !!NO NOOBS!!",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1769011380,
+      "outcome": "loss",
+      "preRating": 1077,
+      "postRating": 1046,
+      "eloChange": -31,
+      "civ": "Persians",
+      "teamAvgElo": 1049,
+      "opponentAvgElo": 1004,
+      "teammates": [
+        "[B] Carlian",
+        "Juliana",
+        "菜神"
+      ],
+      "opponents": [
+        "Age5464",
+        "Master Polo4905",
+        "ilovesushi12",
+        "yoda"
+      ]
+    },
+    {
       "matchId": 459101943,
       "description": "4v4 10x shared civ mod",
       "mapname": "Arena",
       "timestamp": 1772102940,
       "outcome": "loss",
-      "preRating": 1077,
-      "postRating": 1048,
-      "eloChange": -29,
+      "preRating": 1046,
+      "postRating": 1021,
+      "eloChange": -25,
       "civ": "Unknown",
-      "teamAvgElo": 1013,
+      "teamAvgElo": 1005,
       "opponentAvgElo": 1033,
       "teammates": [
         "Janjira",
@@ -396,11 +424,11 @@
       "mapname": "Arena",
       "timestamp": 1772104560,
       "outcome": "win",
-      "preRating": 1048,
-      "postRating": 1070,
+      "preRating": 1021,
+      "postRating": 1043,
       "eloChange": 22,
       "civ": "Unknown",
-      "teamAvgElo": 975,
+      "teamAvgElo": 968,
       "opponentAvgElo": 1012,
       "teammates": [
         "Janjira",
@@ -420,11 +448,11 @@
       "mapname": "Arena",
       "timestamp": 1773481200,
       "outcome": "loss",
-      "preRating": 1070,
-      "postRating": 1046,
-      "eloChange": -24,
+      "preRating": 1043,
+      "postRating": 1022,
+      "eloChange": -21,
       "civ": "Magyars",
-      "teamAvgElo": 1022,
+      "teamAvgElo": 1016,
       "opponentAvgElo": 1042,
       "teammates": [
         "Janjira",
