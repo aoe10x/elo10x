@@ -143,15 +143,6 @@ async function main() {
     console.error('Usage: node src/tools/merge_git_databases.ts <git-ref> (e.g. origin/main)');
     process.exit(1);
   }
-
-  console.log(`Checking out clean local database files from HEAD (resolving conflict markers on disk)...`);
-  try {
-    execSync('git checkout HEAD -- data/matches.json data/profiles.json data/crawl_state.json data/crawl_manifest.json');
-  } catch (err: any) {
-    console.error('Failed to checkout clean database files from HEAD:', err.message);
-    process.exit(1);
-  }
-
   console.log(`Loading local database...`);
   const db = new JsonDatabase();
   await db.load();

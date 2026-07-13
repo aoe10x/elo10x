@@ -79,7 +79,7 @@ export class RelicCrawler {
       }
     }
 
-    const profiles = this.db.getAllProfiles();
+    const profiles = this.db.getAllProfiles().filter(p => (rolling30d.get(p.profile_id) || 0) > 0);
 
     // 1. Pre-filter: Only select players whose cooldown has expired
     const eligible = profiles.filter(p => {
@@ -271,7 +271,6 @@ export class RelicCrawler {
             alias: p.alias || `Player_${p.profile_id}`,
             country: p.country
           };
-          this.db.addProfile(profile);
           profilesMap.set(p.profile_id, profile);
         }
       }
@@ -353,6 +352,14 @@ export class RelicCrawler {
             continue;
           }
 
+          // Cache profiles of participants of this 10x match
+          for (const pId of candidatePlayerIds) {
+            const prof = profilesMap.get(pId);
+            if (prof) {
+              this.db.addProfile(prof);
+            }
+          }
+
           const matchObj: Match = {
             id: m.id,
             source: 'relic_api',
@@ -368,7 +375,6 @@ export class RelicCrawler {
           };
 
           const isExisting = this.db.hasMatch(m.id);
-          this.db.addMatch(matchObj);
 
           if (!isExisting) {
             const fingerprint = buildMatchFingerprint(matchObj);
@@ -378,9 +384,12 @@ export class RelicCrawler {
               continue;
             }
 
+            this.db.addMatch(matchObj);
             new10xMatchCount++;
             // Add participants of this 10x game to crawl queue
             this.db.addToCrawlQueue(candidatePlayerIds);
+          } else {
+            this.db.addMatch(matchObj);
           }
         }
       }
