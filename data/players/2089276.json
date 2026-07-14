@@ -1,12 +1,12 @@
 {
   "profile_id": 2089276,
   "alias": "DJ",
-  "rating": 930,
+  "rating": 921,
   "wins": 13,
-  "losses": 21,
-  "gamesCount": 34,
-  "winRate": 38,
-  "lastPlayedAt": 1783906097,
+  "losses": 22,
+  "gamesCount": 35,
+  "winRate": 37,
+  "lastPlayedAt": 1783994824,
   "country": "cl",
   "merged_ids": [],
   "ratingHistory": [
@@ -44,33 +44,10 @@
     936,
     953,
     943,
-    930
+    930,
+    921
   ],
   "recentMatches": [
-    {
-      "matchId": 477147576,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1778564940,
-      "outcome": "loss",
-      "preRating": 1021,
-      "postRating": 992,
-      "eloChange": -29,
-      "civ": "Goths",
-      "teamAvgElo": 1002,
-      "opponentAvgElo": 973,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "Doormat",
-        "Proto Potato"
-      ],
-      "opponents": [
-        "AtilaElHuno7013",
-        "Acrostock",
-        "Sam",
-        "Stigel"
-      ]
-    },
     {
       "matchId": 477568289,
       "description": "256x 10x Forest Nothing",
@@ -130,7 +107,7 @@
       "eloChange": -21,
       "civ": "Persians",
       "teamAvgElo": 1043,
-      "opponentAvgElo": 1041,
+      "opponentAvgElo": 1044,
       "teammates": [
         "Creweer",
         "tedmed",
@@ -178,7 +155,7 @@
       "eloChange": -14,
       "civ": "Slavs",
       "teamAvgElo": 1046,
-      "opponentAvgElo": 1066,
+      "opponentAvgElo": 1065,
       "teammates": [
         "{R} Parry",
         "Goodsoup",
@@ -370,7 +347,7 @@
       "eloChange": -12,
       "civ": "Teutons",
       "teamAvgElo": 1026,
-      "opponentAvgElo": 1066,
+      "opponentAvgElo": 1070,
       "teammates": [
         "S3dated",
         "Rita De Valencia",
@@ -394,7 +371,7 @@
       "eloChange": -15,
       "civ": "Bulgarians",
       "teamAvgElo": 1031,
-      "opponentAvgElo": 1002,
+      "opponentAvgElo": 1003,
       "teammates": [
         "iamatthe.hell",
         "399 the Grizzly Bear - RIP <3",
@@ -490,7 +467,7 @@
       "eloChange": -10,
       "civ": "Malay",
       "teamAvgElo": 959,
-      "opponentAvgElo": 1088,
+      "opponentAvgElo": 1086,
       "teammates": [
         "Borkan",
         "Moose",
@@ -525,6 +502,30 @@
         "Tlatoani",
         "OhSheeep",
         "mozu5"
+      ]
+    },
+    {
+      "matchId": 492199980,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1783994824,
+      "outcome": "loss",
+      "preRating": 930,
+      "postRating": 921,
+      "eloChange": -9,
+      "civ": "Italians",
+      "teamAvgElo": 989,
+      "opponentAvgElo": 1089,
+      "teammates": [
+        "Idrinkhotbutter",
+        "꧁⁧⁧𒐪𒀱꧅ঔৣ꧂ᅠᅠᅠᅠᅠᅠᅠᅠᅠุ",
+        "WonderGround"
+      ],
+      "opponents": [
+        "Parenquima",
+        "BigAl",
+        "Leprechaun Hunter!!!",
+        "EastDanielNowhere"
       ]
     }
   ]

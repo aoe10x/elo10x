@@ -1,12 +1,12 @@
 {
   "profile_id": 245396,
   "alias": "boroinbishop",
-  "rating": 1002,
+  "rating": 986,
   "wins": 45,
-  "losses": 56,
-  "gamesCount": 101,
-  "winRate": 45,
-  "lastPlayedAt": 1783949680,
+  "losses": 57,
+  "gamesCount": 102,
+  "winRate": 44,
+  "lastPlayedAt": 1784016700,
   "country": "gb",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,6 @@
     976,
     1003,
     1025,
-    1046,
     1066,
     1047,
     1028,
@@ -35,6 +34,7 @@
     995,
     981,
     969,
+    989,
     1005,
     992,
     977,
@@ -60,7 +60,6 @@
     989,
     976,
     994,
-    980,
     967,
     986,
     971,
@@ -84,6 +83,7 @@
     982,
     1000,
     986,
+    1002,
     988,
     975,
     995,
@@ -92,7 +92,6 @@
     1011,
     996,
     981,
-    999,
     1015,
     1001,
     986,
@@ -109,33 +108,10 @@
     1013,
     1001,
     984,
-    1002
+    1002,
+    986
   ],
   "recentMatches": [
-    {
-      "matchId": 438086459,
-      "description": "10x 3x shared !!NO NOOBS!!",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1765059780,
-      "outcome": "loss",
-      "preRating": 1011,
-      "postRating": 996,
-      "eloChange": -15,
-      "civ": "Byzantines",
-      "teamAvgElo": 1031,
-      "opponentAvgElo": 1023,
-      "teammates": [
-        "Age5464",
-        "oklema",
-        "Mimi"
-      ],
-      "opponents": [
-        "kaka52pk",
-        "利群王扁",
-        "HighPriestCaco",
-        "[TYGRAI]4Freedom"
-      ]
-    },
     {
       "matchId": 438829062,
       "description": "4V4 ===10x shared 3Xtech  4V4 random",
@@ -506,7 +482,7 @@
       "postRating": 1013,
       "eloChange": 21,
       "civ": "Lithuanians",
-      "teamAvgElo": 1008,
+      "teamAvgElo": 1007,
       "opponentAvgElo": 1095,
       "teammates": [
         "Scipio",
@@ -530,7 +506,7 @@
       "postRating": 1001,
       "eloChange": -12,
       "civ": "Mongols",
-      "teamAvgElo": 1017,
+      "teamAvgElo": 1016,
       "opponentAvgElo": 1097,
       "teammates": [
         "Lykerya",
@@ -554,7 +530,7 @@
       "postRating": 984,
       "eloChange": -17,
       "civ": "Hindustanis",
-      "teamAvgElo": 1015,
+      "teamAvgElo": 1014,
       "opponentAvgElo": 978,
       "teammates": [
         "紫蝶黄蜂俱有情",
@@ -590,6 +566,30 @@
         "babeleo",
         "GrandUni",
         "Prinz Kay1"
+      ]
+    },
+    {
+      "matchId": 492242444,
+      "description": "bamboo nothing 10x",
+      "mapname": "Bamboo Nothing v3 (BaLi)",
+      "timestamp": 1784016700,
+      "outcome": "loss",
+      "preRating": 1002,
+      "postRating": 986,
+      "eloChange": -16,
+      "civ": "Italians",
+      "teamAvgElo": 1066,
+      "opponentAvgElo": 1010,
+      "teammates": [
+        "Bourne2Believe",
+        "Lykerya",
+        "FAOse7en"
+      ],
+      "opponents": [
+        "[B] Zennith",
+        "[B] Cannino",
+        "Fyrst",
+        "Paolo Carrosel"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 4820851,
   "alias": "madmarc90",
-  "rating": 1035,
+  "rating": 1020,
   "wins": 12,
-  "losses": 11,
-  "gamesCount": 23,
-  "winRate": 52,
-  "lastPlayedAt": 1782117360,
+  "losses": 12,
+  "gamesCount": 24,
+  "winRate": 50,
+  "lastPlayedAt": 1782616193,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -33,33 +33,10 @@
     1019,
     1033,
     1020,
-    1035
+    1035,
+    1020
   ],
   "recentMatches": [
-    {
-      "matchId": 231488024,
-      "description": "10x Shared Civ 4v4",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1683357120,
-      "outcome": "loss",
-      "preRating": 1033,
-      "postRating": 980,
-      "eloChange": -53,
-      "civ": "Berbers",
-      "teamAvgElo": 1025,
-      "opponentAvgElo": 954,
-      "teammates": [
-        "Xaplise",
-        "tbtmitch",
-        "Ragnarokro"
-      ],
-      "opponents": [
-        "Kendriesh",
-        "399 the Grizzly Bear - RIP <3",
-        "Lady Uterus",
-        "CallMeMeatloaf"
-      ]
-    },
     {
       "matchId": 314202684,
       "description": "10x civ  Forest Nothing Fun",
@@ -503,7 +480,7 @@
       "eloChange": 15,
       "civ": "Franks",
       "teamAvgElo": 1006,
-      "opponentAvgElo": 1000,
+      "opponentAvgElo": 999,
       "teammates": [
         "BAKO",
         "whobro123",
@@ -514,6 +491,30 @@
         "nooblet3300",
         "Nigerian Farmer",
         "Infiniti G35"
+      ]
+    },
+    {
+      "matchId": 488593329,
+      "description": "10x 3x Bamboo - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1782616193,
+      "outcome": "loss",
+      "preRating": 1035,
+      "postRating": 1020,
+      "eloChange": -15,
+      "civ": "Italians",
+      "teamAvgElo": 1085,
+      "opponentAvgElo": 1051,
+      "teammates": [
+        "edalmavuz",
+        "青松",
+        "Parenquima"
+      ],
+      "opponents": [
+        "Parts",
+        "Meursault005",
+        "hussein",
+        "Ruuder"
       ]
     }
   ]

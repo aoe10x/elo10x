@@ -1,12 +1,12 @@
 {
   "profile_id": 5044549,
   "alias": "Linkn00",
-  "rating": 1002,
-  "wins": 7,
+  "rating": 1020,
+  "wins": 8,
   "losses": 11,
-  "gamesCount": 18,
-  "winRate": 39,
-  "lastPlayedAt": 1783758337,
+  "gamesCount": 19,
+  "winRate": 42,
+  "lastPlayedAt": 1784018438,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,8 +27,9 @@
     932,
     963,
     945,
-    973,
-    1002
+    972,
+    1001,
+    1020
   ],
   "recentMatches": [
     {
@@ -258,7 +259,7 @@
       "eloChange": 50,
       "civ": "Cumans",
       "teamAvgElo": 992,
-      "opponentAvgElo": 1006,
+      "opponentAvgElo": 1007,
       "teammates": [
         "yxsko93",
         "schrubber",
@@ -422,10 +423,10 @@
       "timestamp": 1783673981,
       "outcome": "win",
       "preRating": 945,
-      "postRating": 973,
-      "eloChange": 28,
+      "postRating": 972,
+      "eloChange": 27,
       "civ": "Burgundians",
-      "teamAvgElo": 998,
+      "teamAvgElo": 999,
       "opponentAvgElo": 1024,
       "teammates": [
         "Zavgor",
@@ -445,11 +446,11 @@
       "mapname": "BAMBOO NOTHING - SCORPYON DE",
       "timestamp": 1783758337,
       "outcome": "win",
-      "preRating": 973,
-      "postRating": 1002,
+      "preRating": 972,
+      "postRating": 1001,
       "eloChange": 29,
       "civ": "Saracens",
-      "teamAvgElo": 1059,
+      "teamAvgElo": 1058,
       "opponentAvgElo": 1111,
       "teammates": [
         "The Cobra Brothers",
@@ -461,6 +462,30 @@
         "levvafire",
         "田瘾犯了",
         "JuanMalote"
+      ]
+    },
+    {
+      "matchId": 492245409,
+      "description": "bamboo nothing 10x",
+      "mapname": "Bamboo Nothing v3 (BaLi)",
+      "timestamp": 1784018438,
+      "outcome": "win",
+      "preRating": 1001,
+      "postRating": 1020,
+      "eloChange": 19,
+      "civ": "Ethiopians",
+      "teamAvgElo": 1034,
+      "opponentAvgElo": 1005,
+      "teammates": [
+        "[B] Zennith",
+        "[B] Cannino",
+        "紫蝶黄蜂俱有情"
+      ],
+      "opponents": [
+        "Paolo Carrosel",
+        "Paladin",
+        "wurst456",
+        "dimon21_8"
       ]
     }
   ]
