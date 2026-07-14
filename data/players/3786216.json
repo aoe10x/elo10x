@@ -1,12 +1,12 @@
 {
   "profile_id": 3786216,
   "alias": "Barosanu512",
-  "rating": 1002,
-  "wins": 54,
+  "rating": 1020,
+  "wins": 55,
   "losses": 49,
-  "gamesCount": 103,
-  "winRate": 52,
-  "lastPlayedAt": 1783779552,
+  "gamesCount": 104,
+  "winRate": 53,
+  "lastPlayedAt": 1784060722,
   "country": "ro",
   "merged_ids": [],
   "ratingHistory": [
@@ -20,9 +20,9 @@
     973,
     935,
     972,
-    1015,
     1046,
     1069,
+    1032,
     1001,
     1026,
     1052,
@@ -40,13 +40,13 @@
     1038,
     1019,
     1004,
-    1021,
     1036,
     1051,
     1065,
     1078,
     1061,
     1075,
+    1058,
     1074,
     1086,
     1101,
@@ -59,7 +59,6 @@
     1115,
     1101,
     1115,
-    1093,
     1106,
     1120,
     1104,
@@ -72,6 +71,7 @@
     1075,
     1089,
     1102,
+    1113,
     1093,
     1077,
     1059,
@@ -79,7 +79,6 @@
     1088,
     1067,
     1080,
-    1091,
     1103,
     1090,
     1073,
@@ -96,10 +95,10 @@
     1051,
     1034,
     1016,
+    1002,
     986,
     972,
     991,
-    1010,
     1027,
     1012,
     1032,
@@ -109,33 +108,10 @@
     1010,
     1025,
     1014,
-    1002
+    1002,
+    1020
   ],
   "recentMatches": [
-    {
-      "matchId": 465530756,
-      "description": "10x shared civ bonus tunnel",
-      "mapname": "Aw4 Rage Forest (Beta 2)",
-      "timestamp": 1774483680,
-      "outcome": "loss",
-      "preRating": 1069,
-      "postRating": 1053,
-      "eloChange": -16,
-      "civ": "Franks",
-      "teamAvgElo": 1050,
-      "opponentAvgElo": 1062,
-      "teammates": [
-        "baianitro",
-        "Lezec",
-        "SimCity2000"
-      ],
-      "opponents": [
-        "Rgeadn",
-        "FastAttack",
-        "tonzo",
-        "Frederick"
-      ]
-    },
     {
       "matchId": 466443436,
       "description": "10x 256x forest nothing",
@@ -482,7 +458,7 @@
       "postRating": 991,
       "eloChange": -11,
       "civ": "Dravidians",
-      "teamAvgElo": 982,
+      "teamAvgElo": 983,
       "opponentAvgElo": 1112,
       "teammates": [
         "Fathrilocram",
@@ -506,7 +482,7 @@
       "postRating": 1010,
       "eloChange": 19,
       "civ": "Aztecs",
-      "teamAvgElo": 1042,
+      "teamAvgElo": 1043,
       "opponentAvgElo": 1064,
       "teammates": [
         "DerAdler",
@@ -578,7 +554,7 @@
       "postRating": 1002,
       "eloChange": -12,
       "civ": "Bulgarians",
-      "teamAvgElo": 993,
+      "teamAvgElo": 994,
       "opponentAvgElo": 1105,
       "teammates": [
         "hoderebus",
@@ -590,6 +566,30 @@
         "476055690",
         "kaka52pk",
         "[CSGS]Runescape"
+      ]
+    },
+    {
+      "matchId": 492354149,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784060722,
+      "outcome": "win",
+      "preRating": 1002,
+      "postRating": 1020,
+      "eloChange": 18,
+      "civ": "Italians",
+      "teamAvgElo": 1043,
+      "opponentAvgElo": 1046,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "NothingAtAll11",
+        "pool_champ"
+      ],
+      "opponents": [
+        "疯狂的电脑",
+        "iamatthe.hell",
+        "wintre",
+        "SACALA QUE ME CAGO"
       ]
     }
   ]
