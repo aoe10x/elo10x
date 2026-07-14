@@ -1,7 +1,7 @@
 import { execSync } from 'node:child_process';
 import { JsonDatabase } from '../db.ts';
 import type { Match, PlayerProfile, PlayerCrawlManifest } from '../types.ts';
-import { tupleToMatch } from '../matches_tuple.ts';
+import { tupleToMatch, type MatchTuple } from '../matches_tuple.ts';
 
 function getGitFileContent(ref: string, relativePath: string): string {
   try {
@@ -56,7 +56,7 @@ export function mergeDatabasesContent(
   }
 
   // 2. Merge matches second
-  const incomingMatches = parseJsonArrayLines<any>(incoming.matchesJson);
+  const incomingMatches = parseJsonArrayLines<Match | MatchTuple>(incoming.matchesJson);
   let incomingNewMatches = 0;
   for (const mData of incomingMatches) {
     let m: Match;
