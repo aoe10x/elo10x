@@ -168,3 +168,61 @@ test('Database Merger Tool - Core Merging Logic', async () => {
 
   await cleanTempDb();
 });
+
+test('Database Merger Tool - Tuple Merging Logic', async () => {
+  await cleanTempDb();
+
+  // 1. Initial local DB state (Option B tuple format on disk)
+  const initialMatches = `[
+    [101, null, "my map", 1700000000, null, [[1, 0, 1, 4], [2, 1, 0, 5]], null, "10x 3x"],
+    null
+  ]`;
+  const initialProfiles = `[
+    {"profile_id":1,"alias":"PlayerOne","country":"US"},
+    {"profile_id":2,"alias":"PlayerTwo","country":"Unknown"},
+    null
+  ]`;
+  
+  await initTempDb({
+    matches: initialMatches,
+    profiles: initialProfiles
+  });
+
+  const db = new JsonDatabase(tempDbDir);
+  await db.load();
+
+  // 2. Incoming database content from git (also in tuple format)
+  const incomingMatches = `[
+    [101, null, "my map", 1700000000, null, [[1, 0, 1, 4], [2, 1, 0, 5]], null, "10x 3x"],
+    [102, null, "enclosed", 1700100000, null, [[1, 0, 1, 7], [3, 1, 0, 8]], null, "10x"],
+    null
+  ]`;
+  const incomingProfiles = `[
+    {"profile_id":1,"alias":"PlayerOneUpdated","country":"US"},
+    {"profile_id":2,"alias":"PlayerTwo","country":"FR"},
+    {"profile_id":3,"alias":"PlayerThree","country":"DE"},
+    null
+  ]`;
+
+  // 3. Execute merge
+  const stats = mergeDatabasesContent(db, {
+    matchesJson: incomingMatches,
+    profilesJson: incomingProfiles,
+    stateJson: '{}',
+    manifestJson: '{}'
+  });
+
+  assert.strictEqual(stats.addedMatches, 1, 'Should add exactly 1 new match (102)');
+  assert.strictEqual(db.getMatchesCount(), 2, 'Total matches in db should be 2');
+
+  // Verify match 102 was correctly merged and has resolved player aliases
+  const m102 = db.getMatches().find(m => m.id === 102);
+  assert.ok(m102);
+  assert.strictEqual(m102.mapname, 'enclosed');
+  assert.strictEqual(m102.players.length, 2);
+  assert.strictEqual(m102.players[0].alias, 'PlayerOneUpdated', 'Alias should be resolved from merged profiles');
+  assert.strictEqual(m102.players[1].alias, 'PlayerThree', 'Alias should be resolved from merged profiles');
+
+  await cleanTempDb();
+});
+
