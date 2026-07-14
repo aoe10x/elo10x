@@ -1,12 +1,12 @@
 {
   "profile_id": 2392026,
   "alias": "Herr Mitesch",
-  "rating": 1043,
-  "wins": 54,
+  "rating": 1059,
+  "wins": 55,
   "losses": 48,
-  "gamesCount": 102,
+  "gamesCount": 103,
   "winRate": 53,
-  "lastPlayedAt": 1783982043,
+  "lastPlayedAt": 1784027837,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -23,10 +23,10 @@
     1056,
     1024,
     1053,
-    1025,
     1055,
     1077,
     1099,
+    1113,
     1128,
     1103,
     1082,
@@ -47,7 +47,6 @@
     1107,
     1089,
     1101,
-    1082,
     1094,
     1107,
     1119,
@@ -60,6 +59,7 @@
     1047,
     1062,
     1048,
+    1063,
     1045,
     1026,
     1014,
@@ -72,7 +72,6 @@
     985,
     1003,
     992,
-    980,
     999,
     1014,
     997,
@@ -92,11 +91,11 @@
     1041,
     1057,
     1040,
+    1058,
     1072,
     1053,
     1039,
     1053,
-    1034,
     1051,
     1064,
     1078,
@@ -109,33 +108,10 @@
     1061,
     1079,
     1061,
-    1043
+    1043,
+    1059
   ],
   "recentMatches": [
-    {
-      "matchId": 470248226,
-      "description": "NONOOB! 10x 3x bamboo",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1776141780,
-      "outcome": "loss",
-      "preRating": 1057,
-      "postRating": 1040,
-      "eloChange": -17,
-      "civ": "Khmer",
-      "teamAvgElo": 1005,
-      "opponentAvgElo": 1032,
-      "teammates": [
-        "mack",
-        "Emusan",
-        "Dayman"
-      ],
-      "opponents": [
-        "LonelyKnight",
-        "oklema",
-        "Paolo Carrosel",
-        "Proto Potato"
-      ]
-    },
     {
       "matchId": 470483858,
       "description": "BAMBOO 10x - 3x  **NO BEGINNER",
@@ -506,7 +482,7 @@
       "postRating": 1061,
       "eloChange": 17,
       "civ": "Byzantines",
-      "teamAvgElo": 998,
+      "teamAvgElo": 996,
       "opponentAvgElo": 1057,
       "teammates": [
         "Lykerya",
@@ -590,6 +566,30 @@
         "Chirijiraden",
         "自闭男孩",
         "Manba Out"
+      ]
+    },
+    {
+      "matchId": 492261199,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784027837,
+      "outcome": "win",
+      "preRating": 1043,
+      "postRating": 1059,
+      "eloChange": 16,
+      "civ": "Portuguese",
+      "teamAvgElo": 1038,
+      "opponentAvgElo": 1041,
+      "teammates": [
+        "babeleo",
+        "Consume Product",
+        "FrostByte"
+      ],
+      "opponents": [
+        "i kun 2.5",
+        "kaka52pk",
+        "hoderebus",
+        "okfkg173"
       ]
     }
   ]

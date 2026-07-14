@@ -1,12 +1,12 @@
 {
   "profile_id": 12286121,
   "alias": "Ti-tooaoo",
-  "rating": 948,
+  "rating": 940,
   "wins": 18,
-  "losses": 26,
-  "gamesCount": 44,
-  "winRate": 41,
-  "lastPlayedAt": 1783946033,
+  "losses": 27,
+  "gamesCount": 45,
+  "winRate": 40,
+  "lastPlayedAt": 1784030798,
   "country": "tw",
   "merged_ids": [
     12286121,
@@ -57,33 +57,10 @@
     982,
     968,
     956,
-    948
+    948,
+    940
   ],
   "recentMatches": [
-    {
-      "matchId": 477667660,
-      "description": "bamboo nothing 10x",
-      "mapname": "Bamboo Nothing V3 (Bali)",
-      "timestamp": 1778768160,
-      "outcome": "loss",
-      "preRating": 996,
-      "postRating": 982,
-      "eloChange": -14,
-      "civ": "Saracens",
-      "teamAvgElo": 1022,
-      "opponentAvgElo": 1050,
-      "teammates": [
-        "[B] Zennith",
-        "DreamLegion",
-        "Maselia"
-      ],
-      "opponents": [
-        "isaylemon",
-        "Keishi",
-        "H0LLy2610",
-        "babeleo"
-      ]
-    },
     {
       "matchId": 477686969,
       "description": "bamboo nothing 10x",
@@ -478,7 +455,7 @@
       "postRating": 968,
       "eloChange": -14,
       "civ": "Vietnamese",
-      "teamAvgElo": 991,
+      "teamAvgElo": 995,
       "opponentAvgElo": 1035,
       "teammates": [
         "-[RDU]- Gorda America Forever",
@@ -538,6 +515,30 @@
         "Grimmie",
         "pandalam",
         "Zdzichu"
+      ]
+    },
+    {
+      "matchId": 492267054,
+      "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784030798,
+      "outcome": "loss",
+      "preRating": 948,
+      "postRating": 940,
+      "eloChange": -8,
+      "civ": "Gurjaras",
+      "teamAvgElo": 970,
+      "opponentAvgElo": 1125,
+      "teammates": [
+        "wurst456",
+        "Paolo Carrosel",
+        "majorleyendo"
+      ],
+      "opponents": [
+        "老K",
+        "pandalam",
+        "Jormungand",
+        "Prinz Kay1"
       ]
     }
   ]
