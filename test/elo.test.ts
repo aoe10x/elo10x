@@ -389,7 +389,7 @@ test('EloCalculator - Step-by-step K-factor decay over 22 games', () => {
 
   // 1. Direct unit verification of getPlayerKFactor formula
   const getKFactor = (gamesCount: number): number => {
-    return (calculator as any).getPlayerKFactor(gamesCount);
+    return (calculator as object as { getPlayerKFactor: (g: number) => number }).getPlayerKFactor(gamesCount);
   };
 
   let previousK = getKFactor(0); // game 1: gamesCount = 0

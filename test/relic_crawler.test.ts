@@ -4,7 +4,6 @@ import { promises as fs } from 'node:fs';
 import * as path from 'node:path';
 import { JsonDatabase } from '../src/db.ts';
 import { RelicCrawler } from '../src/relic_crawler.ts';
-import type { Match } from '../src/types.ts';
 
 const tempDbDir = path.join(process.cwd(), 'test', 'temp_relic_crawler_test');
 
@@ -99,28 +98,20 @@ test('RelicCrawler - duplicate-equivalent match detection and queue seeding', as
     { profile_id: 3, alias: "P3" }
   ];
 
-  globalThis.fetch = (async (url: any) => {
-    const urlStr = typeof url === 'string' ? url : url.toString();
+  globalThis.fetch = (async (url: string | URL | Request) => {
+    const urlStr = typeof url === 'string' ? url : (url as { toString(): string }).toString();
     if (urlStr.includes('/api/lobbies') || urlStr.includes('/api/live')) {
-      return {
-        ok: true,
-        status: 200,
-        json: async () => ({ lobbies: [] })
-      } as any;
+      return new Response(JSON.stringify({ lobbies: [] }), { status: 200 });
     }
     if (urlStr.includes('getRecentMatchHistory')) {
-      return {
-        ok: true,
-        status: 200,
-        json: async () => ({
-          result: { code: 0, message: "Success" },
-          matchHistoryStats: mockMatches,
-          profiles: mockProfiles
-        })
-      } as any;
+      return new Response(JSON.stringify({
+        result: { code: 0, message: "Success" },
+        matchHistoryStats: mockMatches,
+        profiles: mockProfiles
+      }), { status: 200 });
     }
-    return { ok: false, status: 404 } as any;
-  }) as any;
+    return new Response(null, { status: 404 });
+  }) as typeof globalThis.fetch;
 
   // 3. Execute crawlPlayersBatch
   const result = await crawler.crawlPlayersBatch([1], 1600000000);
@@ -137,7 +128,7 @@ test('RelicCrawler - duplicate-equivalent match detection and queue seeding', as
   assert.ok(!db.hasMatch(1003), 'Match 1003 (duplicate-equivalent) should NOT be in database');
 
   // Verify player 3 (participant of new match 1002) was added to the crawl queue
-  const queue = (db as any).crawlQueue;
+  const queue = db.crawlQueue;
   assert.ok(queue.includes(3), 'New participant 3 should be added to crawl queue');
   assert.ok(!queue.includes(2), 'Existing participant 2 (from duplicate match) should NOT be added to crawl queue');
 });

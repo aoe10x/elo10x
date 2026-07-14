@@ -43,7 +43,6 @@ function runSeedingSimulation(
   const lastCrawlTimes = new Map<number, number>();
   const capturedMatches = new Map<number, Match[]>();
   const matchPointers = new Map<number, number>();
-  const candidateSet = new Set(candidatePlayerIds);
 
   for (const pid of candidatePlayerIds) {
     lastCrawlTimes.set(pid, globalStartSec - day30Sec);

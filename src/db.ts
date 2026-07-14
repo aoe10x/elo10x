@@ -2,9 +2,10 @@ import { promises as fs } from 'node:fs';
 import * as path from 'node:path';
 import * as readline from 'node:readline';
 import * as fsSync from 'node:fs';
-import type { Match, PlayerProfile, PlayerCrawlManifest } from './types.ts';
+import type { Match, PlayerProfile, PlayerCrawlManifest, MatchPlayer, InsightsCrawlManifest, RelicCrawlManifest } from './types.ts';
 import { buildMatchFingerprint } from './match_fingerprint.ts';
 import { matchToTuple, tupleToMatch } from './matches_tuple.ts';
+import type { MatchTuple } from './matches_tuple.ts';
 
 /**
  * Generator that yields parsed JSON objects from a line-by-line JSON array file.
@@ -36,8 +37,9 @@ export async function* readJsonArrayLines<T>(filePath: string): AsyncGenerator<T
         console.error(`Failed to parse JSON line in ${filePath}: "${cleanLine}"`, e);
       }
     }
-  } catch (err: any) {
-    if (err.code === 'ENOENT') return;
+  } catch (err) {
+    const error = err as { code?: string };
+    if (error.code === 'ENOENT') return;
     throw err;
   }
 }
@@ -68,12 +70,12 @@ export class JsonDatabase {
   private crawlStatePath: string;
   private crawlManifestPath: string;
 
-  private matches!: Map<number, Match>;
+  public matches!: Map<number, Match>;
   private profiles!: Map<number, PlayerProfile>;
   private matchFingerprints!: Map<string, number>;
-  private crawledProfiles!: Map<number, number>;
-  private crawlQueue!: number[];
-  private crawlManifest!: Map<number, PlayerCrawlManifest>;
+  public crawledProfiles!: Map<number, number>;
+  public crawlQueue!: number[];
+  public crawlManifest!: Map<number, PlayerCrawlManifest>;
 
   private isLoaded: boolean = false;
 
@@ -102,17 +104,21 @@ export class JsonDatabase {
 
     // Load matches
     this.matches = new Map<number, Match>();
-    for await (const matchData of readJsonArrayLines<any>(this.matchesPath)) {
+    for await (const matchData of readJsonArrayLines<Match | MatchTuple>(this.matchesPath)) {
       let match: Match;
       if (Array.isArray(matchData)) {
-        match = tupleToMatch(matchData, id => this.profiles.get(id)?.alias);
+        match = tupleToMatch(matchData as MatchTuple, id => this.profiles.get(id)?.alias);
       } else {
         match = matchData;
         if (match.players) {
+          interface LegacyMatchPlayer extends MatchPlayer {
+            race_id?: number;
+          }
           for (const p of match.players) {
-            if ((p as any).race_id !== undefined) {
-              p.civ_id = p.civ_id || (p as any).race_id;
-              delete (p as any).race_id;
+            const lp = p as LegacyMatchPlayer;
+            if (lp.race_id !== undefined) {
+              lp.civ_id = lp.civ_id || lp.race_id;
+              delete lp.race_id;
             }
           }
         }
@@ -133,13 +139,14 @@ export class JsonDatabase {
         }
       }
       this.crawlQueue = state.crawl_queue || [];
-    } catch (error: any) {
-      if (error.code === 'ENOENT') {
+    } catch (error) {
+      const err = error as { code?: string; message?: string };
+      if (err.code === 'ENOENT') {
         this.matchFingerprints = new Map<string, number>();
         this.crawledProfiles = new Map<number, number>();
         this.crawlQueue = [];
       } else {
-        throw new Error(`Failed to read crawler state: ${error.message}`);
+        throw new Error(`Failed to read crawler state: ${err.message}`);
       }
     }
 
@@ -151,9 +158,10 @@ export class JsonDatabase {
       for (const [idStr, data] of Object.entries(manifest)) {
         this.crawlManifest.set(Number(idStr), data as PlayerCrawlManifest);
       }
-    } catch (error: any) {
-      if (error.code !== 'ENOENT') {
-        throw new Error(`Failed to read crawl manifest: ${error.message}`);
+    } catch (error) {
+      const err = error as { code?: string; message?: string };
+      if (err.code !== 'ENOENT') {
+        throw new Error(`Failed to read crawl manifest: ${err.message}`);
       }
     }
 
@@ -419,19 +427,26 @@ export class JsonDatabase {
 
 
 
-  updatePlayerManifest(profileId: number, source: 'insights' | 'relic', data: any): void {
+  updatePlayerManifest(profileId: number, source: 'insights' | 'relic', data: Partial<InsightsCrawlManifest> | Partial<RelicCrawlManifest>): void {
     const existing = this.crawlManifest.get(profileId) || {};
-    existing[source] = {
-      ...existing[source],
-      ...data
-    };
+    if (source === 'insights') {
+      existing.insights = {
+        ...existing.insights,
+        ...(data as Partial<InsightsCrawlManifest>)
+      } as InsightsCrawlManifest;
+    } else {
+      existing.relic = {
+        ...existing.relic,
+        ...(data as Partial<RelicCrawlManifest>)
+      } as RelicCrawlManifest;
+    }
     this.crawlManifest.set(profileId, existing);
   }
 
   migrateCrawlManifest(): void {
     for (const [profileId, data] of this.crawlManifest.entries()) {
-      if (data.insights && ('hit_depth_limit' in (data.insights as any) || !('newest_match_id' in data.insights))) {
-        const oldInsights = data.insights as any;
+      if (data.insights && ('hit_depth_limit' in (data.insights as object) || !('newest_match_id' in data.insights))) {
+        const oldInsights = data.insights as { hit_depth_limit?: boolean; last_crawled_at: number; newest_match_id?: number; oldest_match_id?: number; has_reached_start?: boolean };
         const playerMatches = Array.from(this.matches.values())
           .filter(m => m.players.some(p => p.profile_id === profileId));
         

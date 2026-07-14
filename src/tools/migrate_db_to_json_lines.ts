@@ -1,6 +1,7 @@
 import { promises as fs } from 'node:fs';
 import * as path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import type { Match } from '../types.ts';
 
 async function saveJsonArrayLines<T>(filePath: string, items: T[]): Promise<void> {
   const dir = path.dirname(filePath);
@@ -32,7 +33,7 @@ async function main() {
   const oldDb = JSON.parse(await fs.readFile(oldDbPath, 'utf-8'));
 
   // 1. Migrate Matches (sorted chronologically)
-  const matchesList = Object.values(oldDb.matches || {}).sort((a: any, b: any) => {
+  const matchesList = (Object.values(oldDb.matches || {}) as Match[]).sort((a, b) => {
     return (a.startgametime || 0) - (b.startgametime || 0);
   });
   const matchesPath = path.join(dataDir, 'matches.json');

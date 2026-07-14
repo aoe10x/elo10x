@@ -5,6 +5,14 @@ import { getChromePath } from '../aoe2insights_scraper.ts';
 
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
+interface ChromeDevToolsTarget {
+  id: string;
+  type: string;
+  title: string;
+  url: string;
+  webSocketDebuggerUrl: string;
+}
+
 async function main() {
   const chromePath = getChromePath();
   const userDataDir = path.join(process.cwd(), '.chrome-user-data-fixture');
@@ -25,20 +33,20 @@ async function main() {
   console.log('============================================================\n');
   console.log('Polling local debugger targets to detect the target page...');
 
-  let targetTab: any = null;
+  let targetTab: ChromeDevToolsTarget | null = null;
   let filename = 'user_matches.html';
 
   while (true) {
     try {
       const res = await fetch('http://127.0.0.1:19222/json');
       if (res.ok) {
-        const targets = await res.json() as any[];
+        const targets = await res.json() as ChromeDevToolsTarget[];
         // Find tabs that match URL patterns
         const matchesTab = targets.find(t => t.url && t.url.includes('aoe2insights.com/user/') && t.url.includes('/matches'));
         const detailTab = targets.find(t => t.url && t.url.includes('aoe2insights.com/match/'));
 
         // Helper to check if tab is fully loaded and bypassed Cloudflare
-        const isBypassed = (t: any) => 
+        const isBypassed = (t: ChromeDevToolsTarget) => 
           t.title && 
           t.title.includes('AoE2 Insights') && 
           !t.title.includes('Just a moment') && 
@@ -64,6 +72,9 @@ async function main() {
   await delay(3000);
 
   console.log('Connecting to tab debugger to extract HTML...');
+  if (!targetTab) {
+    throw new Error('Target tab is null');
+  }
   const wsUrl = targetTab.webSocketDebuggerUrl;
   const ws = new WebSocket(wsUrl);
 
