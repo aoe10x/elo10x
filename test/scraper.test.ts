@@ -5,14 +5,23 @@ import * as path from 'node:path';
 import { spawn } from 'node:child_process';
 import { CIV_NAMES } from '../src/civ-data.ts';
 import { getChromePath } from '../src/aoe2insights_scraper.ts';
+import type { Match } from '../src/types.ts';
+
+interface ChromeDevToolsTarget {
+  id: string;
+  type: string;
+  title: string;
+  url: string;
+  webSocketDebuggerUrl: string;
+}
 
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
-async function getAvailableTab(port: number): Promise<any> {
+async function getAvailableTab(port: number): Promise<ChromeDevToolsTarget | null> {
   const res = await fetch(`http://127.0.0.1:${port}/json`);
   if (res.ok) {
-    const targets = await res.json() as any[];
-    return targets.find(t => t.type === 'page');
+    const targets = await res.json() as ChromeDevToolsTarget[];
+    return targets.find(t => t.type === 'page') || null;
   }
   return null;
 }
@@ -67,16 +76,23 @@ test('AoE2Insights Scraper - Matches List Parsing', async () => {
 
   const ws = new WebSocket(tab.webSocketDebuggerUrl);
 
-  const sendCdp = (method: string, params: any = {}) => {
-    return new Promise<any>((resolve, reject) => {
+  interface CdpResponse<T> {
+    result?: {
+      type?: string;
+      value?: T;
+    };
+  }
+
+  const sendCdp = <T = string | number | boolean | object | null>(method: string, params: object = {}): Promise<CdpResponse<T>> => {
+    return new Promise((resolve, reject) => {
       const id = Math.floor(Math.random() * 1000000);
       const handler = (event: MessageEvent) => {
         try {
-          const res = JSON.parse(event.data.toString());
+          const res = JSON.parse(event.data.toString()) as { id: number; error?: { message: string }; result?: CdpResponse<T> };
           if (res.id === id) {
             ws.removeEventListener('message', handler);
             if (res.error) reject(new Error(res.error.message));
-            else resolve(res.result);
+            else resolve(res.result as CdpResponse<T>);
           }
         } catch {}
       };
@@ -98,7 +114,7 @@ test('AoE2Insights Scraper - Matches List Parsing', async () => {
   // Poll until elements are found (up to 3 seconds)
   let elementsLoaded = false;
   for (let j = 0; j < 30; j++) {
-    const checkRes = await sendCdp('Runtime.evaluate', {
+    const checkRes = await sendCdp<boolean>('Runtime.evaluate', {
       expression: `!!document.querySelector('.match-tile')`,
       returnByValue: true
     });
@@ -186,12 +202,12 @@ test('AoE2Insights Scraper - Matches List Parsing', async () => {
     })()
   `;
 
-  const evalRes = await sendCdp('Runtime.evaluate', {
+  const evalRes = await sendCdp<Match[]>('Runtime.evaluate', {
     expression: parseExpression,
     returnByValue: true
   });
 
-  const parsedMatches = evalRes.result?.value as any[];
+  const parsedMatches = evalRes.result?.value as Match[];
 
   // Clean up
   ws.close();

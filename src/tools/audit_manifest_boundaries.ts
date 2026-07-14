@@ -5,14 +5,14 @@ async function main() {
   const db = new JsonDatabase();
   await db.load();
 
-  const manifestData = (db as any).crawlManifest || {};
+  const manifestData = db.crawlManifest;
   let totalInsightsProfiles = 0;
   let deadProfiles = 0;
   let activeReachableProfiles = 0;
   const suspiciousProfiles: { playerId: number; alias: string; dbMatchesCount: number; oldestMatchId: number }[] = [];
 
   for (const [playerId, entry] of manifestData.entries()) {
-    const insights = (entry as any).insights;
+    const insights = entry.insights;
     if (!insights) continue;
 
     totalInsightsProfiles++;

@@ -68,15 +68,6 @@ function generateRowHtml(player: EloRanking, rank: number, maxSingleRecord: numb
   const rankContent = `<span class="rank-other">${rank}</span>`;
 
   const hasValidCountry = player.country && player.country.trim().length === 2 && player.country.toLowerCase() !== 'un';
-  let countryName = '';
-  if (hasValidCountry) {
-    try {
-      const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
-      countryName = regionNames.of(player.country!.toUpperCase()) || player.country!.toUpperCase();
-    } catch {
-      countryName = player.country!.toUpperCase();
-    }
-  }
 
   const eloDiff = player.rating - 1000;
   const eloBarWidth = Math.min(40, Math.round(Math.abs(eloDiff) * 0.1));

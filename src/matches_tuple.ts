@@ -1,4 +1,4 @@
-import type { Match, MatchPlayer } from './types.ts';
+import type { Match, MatchPlayer, MatchSource } from './types.ts';
 
 export type MatchPlayerTuple = [
   number, // 0: profile_id
@@ -14,11 +14,11 @@ export type MatchTuple = [
   number,                     // 3: startgametime
   number | null,              // 4: completiontime
   MatchPlayerTuple[],         // 5: players
-  number | null,              // 6: gamemod_id (null if 363188)
-  string | null,              // 7: description
-  string | null,              // 8: source (null if 'relic_api')
-  number | null,              // 9: maxplayers (null if 8)
-  number | null               // 10: matchtype_id (null if 0)
+  (number | null)?,           // 6: gamemod_id (null if 363188)
+  (string | null)?,           // 7: description
+  (string | null)?,           // 8: source (null if 'relic_api')
+  (number | null)?,           // 9: maxplayers (null if 8)
+  (number | null)?            // 10: matchtype_id (null if 0)
 ];
 
 export function matchToTuple(m: Match): MatchTuple {
@@ -44,14 +44,15 @@ export function matchToTuple(m: Match): MatchTuple {
   ];
 
   // Trim trailing nulls to save extra space
-  while (tuple.length > 0 && tuple[tuple.length - 1] === null) {
-    tuple.pop();
+  const trimmed = [...tuple] as MatchTuple;
+  while (trimmed.length > 0 && trimmed[trimmed.length - 1] === null) {
+    trimmed.pop();
   }
 
-  return tuple;
+  return trimmed;
 }
 
-export function tupleToMatch(tuple: any[], profileLookup?: (profileId: number) => string | undefined): Match {
+export function tupleToMatch(tuple: MatchTuple, profileLookup?: (profileId: number) => string | undefined): Match {
   const players: MatchPlayer[] = (tuple[5] || []).map((p: MatchPlayerTuple) => {
     const profileId = p[0];
     const alias = (profileLookup ? profileLookup(profileId) : undefined) || `Player_${profileId}`;
@@ -68,13 +69,13 @@ export function tupleToMatch(tuple: any[], profileLookup?: (profileId: number) =
   return {
     id: tuple[0],
     creator_profile_id: tuple[1] ?? undefined,
-    mapname: tuple[2] ?? undefined,
+    mapname: tuple[2] ?? '',
     startgametime: tuple[3],
-    completiontime: tuple[4] ?? undefined,
+    completiontime: tuple[4] ?? tuple[3],
     players: players,
     gamemod_id: tuple[6] ?? 363188,
-    description: tuple[7] ?? undefined,
-    source: tuple[8] ?? 'relic_api',
+    description: tuple[7] ?? '',
+    source: (tuple[8] as MatchSource | null | undefined) ?? 'relic_api',
     maxplayers: tuple[9] ?? 8,
     matchtype_id: tuple[10] ?? 0
   };

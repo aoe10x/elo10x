@@ -4,6 +4,7 @@ import { promises as fs } from 'node:fs';
 import * as path from 'node:path';
 import { JsonDatabase } from '../src/db.ts';
 import { mergeDatabasesContent } from '../src/tools/merge_git_databases.ts';
+import type { MatchPlayer } from '../src/types.ts';
 
 const tempDbDir = path.join(process.cwd(), 'test', 'temp_database_test');
 
@@ -103,16 +104,19 @@ test('Database Merger Tool - Core Merging Logic', async () => {
   assert.strictEqual(db.getMatchesCount(), 2, 'Should have 2 matches total');
 
   // Verify match 101 was successfully merged (enriched with insights mapname and updated source)
-  const match101 = (db as any).matches.get(101);
+  const match101 = db.matches.get(101);
   assert.ok(match101);
   assert.strictEqual(match101.mapname, 'Enclosed_Paren_V2', 'Duplicate match map name should be updated');
   assert.strictEqual(match101.source, 'merged', 'Duplicate match source should be set to merged');
 
   // Verify match 102 was added and race_id was migrated to civ_id
-  const match102 = (db as any).matches.get(102);
+  const match102 = db.matches.get(102);
   assert.ok(match102);
-  assert.strictEqual(match102.players?.[0].civ_id, 7, 'race_id should migrate to civ_id');
-  assert.strictEqual((match102.players?.[0] as any).race_id, undefined, 'race_id property should be removed');
+  assert.strictEqual(match102.players[0].civ_id, 7, 'race_id should migrate to civ_id');
+  interface LegacyMatchPlayer extends MatchPlayer {
+    race_id?: number;
+  }
+  assert.strictEqual((match102.players[0] as LegacyMatchPlayer).race_id, undefined, 'race_id property should be removed');
 
   // Verify profiles were merged
   const profile1 = db.getProfile(1);
@@ -126,13 +130,13 @@ test('Database Merger Tool - Core Merging Logic', async () => {
   assert.strictEqual(profile3.alias, 'PlayerThree');
 
   // Verify crawl state merged (crawlQueue deduplicated)
-  const localQueue = (db as any).crawlQueue;
+  const localQueue = db.crawlQueue;
   assert.deepStrictEqual(localQueue, [3, 4, 5]);
 
   // Verify crawled profiles timestamps merged (taking max)
-  assert.strictEqual((db as any).crawledProfiles.get(1), 1700100000, 'Profile 1 crawled time should update');
-  assert.strictEqual((db as any).crawledProfiles.get(2), 1700000000, 'Profile 2 crawled time should remain unchanged');
-  assert.strictEqual((db as any).crawledProfiles.get(3), 1700100000, 'Profile 3 crawled time should be added');
+  assert.strictEqual(db.crawledProfiles.get(1), 1700100000, 'Profile 1 crawled time should update');
+  assert.strictEqual(db.crawledProfiles.get(2), 1700000000, 'Profile 2 crawled time should remain unchanged');
+  assert.strictEqual(db.crawledProfiles.get(3), 1700100000, 'Profile 3 crawled time should be added');
 
   // Verify crawl manifest merged
   const manifest1 = db.getPlayerManifest(1);
@@ -164,7 +168,7 @@ test('Database Merger Tool - Core Merging Logic', async () => {
 
   assert.strictEqual(verifyDb.getMatchesCount(), 2);
   assert.strictEqual(verifyDb.getProfile(2)?.country, 'FR');
-  assert.deepStrictEqual((verifyDb as any).crawlQueue, [3, 4, 5]);
+  assert.deepStrictEqual(verifyDb.crawlQueue, [3, 4, 5]);
 
   await cleanTempDb();
 });

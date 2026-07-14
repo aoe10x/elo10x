@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import { promises as fs } from 'node:fs';
-import * as path from 'node:path';
 import { parseArgs } from 'node:util';
 import { RelicCrawler } from './relic_crawler.ts';
 import { JsonDatabase } from './db.ts';
@@ -65,11 +63,11 @@ async function main(): Promise<void> {
     help: { type: 'boolean' as const, short: 'h' as const }
   };
 
-  let parsed: any;
+  let parsed: ReturnType<typeof parseArgs>;
   try {
     parsed = parseArgs({ args: process.argv.slice(2), options, allowPositionals: true });
-  } catch (err: any) {
-    console.error(`Error parsing arguments: ${err.message}`);
+  } catch (err) {
+    console.error(`Error parsing arguments: ${(err as Error).message}`);
     showHelp();
     process.exit(1);
   }
@@ -86,12 +84,12 @@ async function main(): Promise<void> {
   await db.load();
 
   if (subcommand === 'crawl') {
-    const engine = values.engine || 'relic';
+    const engine = (values.engine as string) || 'relic';
     const force = !!values.force;
 
     if (engine === 'relic') {
-      const limit = values.limit ? parseInt(values.limit, 10) : 150;
-      const months = values.months ? parseInt(values.months, 10) : 3;
+      const limit = values.limit ? parseInt(values.limit as string, 10) : 150;
+      const months = values.months ? parseInt(values.months as string, 10) : 3;
       const crawler = new RelicCrawler(db);
 
       console.log(`Starting Relic crawl session... (limit: ${limit} players, cutoff: ${months} months, force: ${force})`);
@@ -100,7 +98,7 @@ async function main(): Promise<void> {
       console.log(`Database state: ${db.getMatchesCount()} matches, ${db.getProfilesCount()} cached profiles, ${db.getCrawlQueueLength()} in crawl queue.`);
     }
     else if (engine === 'insights') {
-      const limit = values.limit ? parseInt(values.limit, 10) : 80;
+      const limit = values.limit ? parseInt(values.limit as string, 10) : 80;
       const crawler = new InsightsCrawler(db);
 
       console.log(`Starting Insights crawl session... (limit: ${limit} players, force: ${force})`);
@@ -121,7 +119,7 @@ async function main(): Promise<void> {
     }
 
     let targetProfileIds: number[] = [];
-    const startPage = values['start-page'] ? parseInt(values['start-page'], 10) : 1;
+    const startPage = values['start-page'] ? parseInt(values['start-page'] as string, 10) : 1;
     let defaultEndPage = 1;
 
     if (target === 'active' || target === 'unscraped') {
@@ -149,7 +147,7 @@ async function main(): Promise<void> {
         }
       }
 
-      const limit = values.limit ? parseInt(values.limit, 10) : 80;
+      const limit = values.limit ? parseInt(values.limit as string, 10) : 80;
       const nowSec = Math.floor(Date.now() / 1000);
       const cooldownSec = 24 * 60 * 60; // 24 hours cooldown for target selection
       const force = !!values.force;
@@ -193,7 +191,7 @@ async function main(): Promise<void> {
       defaultEndPage = 10;
     }
     
-    const endPage = values['end-page'] ? parseInt(values['end-page'], 10) : defaultEndPage;
+    const endPage = values['end-page'] ? parseInt(values['end-page'] as string, 10) : defaultEndPage;
     const scraper = new Aoe2InsightsScraper(db);
     console.log(`\n========================================`);
     console.log(`Starting Batch Scrape for ${targetProfileIds.length} players`);
@@ -203,8 +201,8 @@ async function main(): Promise<void> {
       console.log(`\n========================================`);
       console.log(`Batch Scrape Complete! Crawled players: ${stats.crawled}, New 10x matches added/merged: ${stats.added}`);
       console.log(`========================================`);
-    } catch (err: any) {
-      console.error(`Batch scraper execution failed:`, err.message);
+    } catch (err) {
+      console.error(`Batch scraper execution failed:`, (err as Error).message);
     }
   }
   else if (subcommand === 'elo') {

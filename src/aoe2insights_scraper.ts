@@ -1,10 +1,15 @@
 import { promises as fs } from 'node:fs';
 import * as path from 'node:path';
 import * as fsSync from 'node:fs';
-import { spawn } from 'node:child_process';
+import { spawn, type ChildProcess } from 'node:child_process';
 import type { JsonDatabase } from './db.ts';
-import type { Match, PlayerProfile } from './types.ts';
+import type { Match, MatchPlayer } from './types.ts';
 import { CIV_NAMES } from './civ-data.ts';
+import type { Protocol } from 'devtools-protocol';
+
+interface ChromeDevToolsTarget extends Protocol.Target.TargetInfo {
+  webSocketDebuggerUrl: string;
+}
 
 const delay = (ms: number) => new Promise<void>(resolve => setTimeout(resolve, ms));
 
@@ -34,7 +39,7 @@ export class Aoe2InsightsScraper {
   /**
    * Launches headful Chrome and waits for the user to solve Cloudflare on aoe2insights.com
    */
-  private async launchChromeAndWaitForBypass(port: number, userDataDir: string): Promise<{ wsUrl: string; chromeProcess: any }> {
+  private async launchChromeAndWaitForBypass(port: number, userDataDir: string): Promise<{ wsUrl: string; chromeProcess: ChildProcess }> {
     const chromePath = getChromePath();
     
     console.log(`[BROWSER] Launching headful Chrome on port ${port}...`);
@@ -52,13 +57,13 @@ export class Aoe2InsightsScraper {
     console.log('============================================================\n');
     console.log('Polling local debugger targets to detect bypassed AoE2Insights tab...');
 
-    let targetTab: any = null;
+    let targetTab: ChromeDevToolsTarget | null = null;
 
     while (true) {
       try {
         const res = await fetch(`http://127.0.0.1:${port}/json`);
         if (res.ok) {
-          const targets = await res.json() as any[];
+          const targets = await res.json() as ChromeDevToolsTarget[];
           const aoe2insightsTab = targets.find(t => 
             t.url && 
             t.url.includes('aoe2insights.com') && 
@@ -81,6 +86,10 @@ export class Aoe2InsightsScraper {
     console.log('Waiting 3 seconds for page load to fully settle...');
     await delay(3000);
 
+    if (!targetTab) {
+      throw new Error('Target tab is null');
+    }
+
     return {
       wsUrl: targetTab.webSocketDebuggerUrl,
       chromeProcess
@@ -90,7 +99,7 @@ export class Aoe2InsightsScraper {
   /**
    * Injects a full-screen semi-transparent click-shield overlay to block accidental human interaction during scraping
    */
-  private async injectClickShield(sendCdp: (method: string, params?: any) => Promise<any>): Promise<void> {
+  private async injectClickShield(sendCdp: <T>(method: string, params?: object) => Promise<T>): Promise<void> {
     const expression = `
       (() => {
         if (document.getElementById('scraping-click-shield')) return;
@@ -131,12 +140,15 @@ export class Aoe2InsightsScraper {
 
     const bindingName = 'streamScrapeResult';
     let msgId = 1;
-    const pendingRequests = new Map<number, { resolve: (val: any) => void; reject: (err: any) => void }>();
+    const pendingRequests = new Map<number, { resolve: (val: object | null | undefined) => void; reject: (err: Error) => void }>();
 
-    const sendCdp = (method: string, params: any = {}) => {
-      return new Promise<any>((resolve, reject) => {
+    const sendCdp = <T>(method: string, params: object = {}): Promise<T> => {
+      return new Promise<T>((resolve, reject) => {
         const id = msgId++;
-        pendingRequests.set(id, { resolve, reject });
+        pendingRequests.set(id, { 
+          resolve: (val) => resolve(val as T), 
+          reject 
+        });
         ws.send(JSON.stringify({ id, method, params }));
       });
     };
@@ -166,7 +178,12 @@ export class Aoe2InsightsScraper {
 
     const handleScraperMessage = async (payloadStr: string) => {
       resetLivenessTimer();
-      const payload = JSON.parse(payloadStr);
+      const payload = JSON.parse(payloadStr) as {
+        type: string;
+        playerId: number;
+        matches: Match[];
+        reachedStartOfHistory: boolean;
+      };
 
       if (payload.type === 'heartbeat') return;
 
@@ -188,7 +205,7 @@ export class Aoe2InsightsScraper {
 
         // Update Manifest
         const dbMatches = this.db.getMatches().filter(m => m.players.some(p => p.profile_id === playerId));
-        const allIds = [...dbMatches.map(m => m.id), ...matches.map((m: any) => m.id)];
+        const allIds = [...dbMatches.map(m => m.id), ...matches.map(m => m.id)];
         
         let playerNewestId = playerCutoffs[playerId].newest;
         let playerOldestId = playerCutoffs[playerId].oldest;
@@ -218,22 +235,22 @@ export class Aoe2InsightsScraper {
           resetLivenessTimer();
 
           console.log(`[SCRAPER] Navigating tab to robots.txt to disable ads & tracking scripts...`);
-          await sendCdp('Page.navigate', { url: 'https://www.aoe2insights.com/robots.txt' });
+          await sendCdp<Protocol.Page.NavigateResponse>('Page.navigate', { url: 'https://www.aoe2insights.com/robots.txt' } as Protocol.Page.NavigateRequest);
           await delay(2000); // Wait for navigation to settle
 
           console.log(`[SCRAPER] CDP session opened. Binding '${bindingName}'...`);
           await sendCdp('Runtime.enable');
-          await sendCdp('Runtime.addBinding', { name: bindingName });
+          await sendCdp('Runtime.addBinding', { name: bindingName } as Protocol.Runtime.AddBindingRequest);
 
           console.log(`[SCRAPER] Injecting click shield overlay...`);
           await this.injectClickShield(sendCdp);
 
           console.log(`[SCRAPER] Injecting batch crawler script for ${profileIds.length} players...`);
-          const evalRes = await sendCdp('Runtime.evaluate', {
+          const evalRes = await sendCdp<Protocol.Runtime.EvaluateResponse>('Runtime.evaluate', {
             expression: script,
             awaitPromise: false,
             returnByValue: true
-          });
+          } as Protocol.Runtime.EvaluateRequest);
 
           if (evalRes.exceptionDetails) {
             clearTimeout(livenessTimeout);
@@ -258,30 +275,31 @@ export class Aoe2InsightsScraper {
             const { resolve: res, reject: rej } = pendingRequests.get(response.id)!;
             pendingRequests.delete(response.id);
             if (response.error) rej(new Error(response.error.message));
-            else res(response.result);
+            else res(response.result as object | null | undefined);
           }
 
           if (response.method === 'Runtime.bindingCalled') {
-            const { name, payload } = response.params;
-            if (name === bindingName) {
-              if (payload === 'ALL_DONE') {
+            const params = response.params as Protocol.Runtime.BindingCalledEvent;
+            if (params.name === bindingName) {
+              if (params.payload === 'ALL_DONE') {
                 console.log(`[SCRAPER] Scraper signaled completion of all targets.`);
                 clearTimeout(livenessTimeout);
                 ws.close();
               } else {
-                handleScraperMessage(payload).catch(console.error);
+                handleScraperMessage(params.payload).catch(console.error);
               }
             }
           }
 
           if (response.method === 'Runtime.consoleAPICalled') {
-            const text = response.params.args.map((a: any) => a.value ?? a.description ?? '').join(' ');
+            const params = response.params as Protocol.Runtime.ConsoleAPICalledEvent;
+            const text = params.args.map((a) => a.value ?? a.description ?? '').join(' ');
             if (text.includes('[BROWSER]')) {
               process.stdout.write(`  [Chrome] ${text}\n`);
             }
           }
-        } catch (e: any) {
-          console.error(`[SCRAPER] Message processing error:`, e.message);
+        } catch (e) {
+          console.error(`[SCRAPER] Message processing error:`, (e as Error).message);
         }
       };
 
@@ -512,8 +530,9 @@ export class Aoe2InsightsScraper {
     let files: string[];
     try {
       files = await fs.readdir(this.scrapedDataDir);
-    } catch (err: any) {
-      if (err.code === 'ENOENT') return 0;
+    } catch (err) {
+      const error = err as { code?: string };
+      if (error.code === 'ENOENT') return 0;
       throw err;
     }
     const insightsFiles = files.filter(f => f.startsWith('insights_scraped_') && f.endsWith('.json'));
@@ -528,7 +547,7 @@ export class Aoe2InsightsScraper {
       const filePath = path.join(this.scrapedDataDir, file);
       try {
         const fileContent = await fs.readFile(filePath, 'utf-8');
-        const payload = JSON.parse(fileContent);
+        const payload = JSON.parse(fileContent) as { playerId: number; matches: Match[]; reachedStartOfHistory: boolean };
         const matches = payload.matches || [];
 
         for (const m of matches) {
@@ -539,14 +558,17 @@ export class Aoe2InsightsScraper {
           if (!m.players || m.players.length !== 8) continue;
 
           // 3. Must be a 4v4 team game
-          const team0 = m.players.filter((p: any) => p.teamid === 0);
-          const team1 = m.players.filter((p: any) => p.teamid === 1);
+          const team0 = m.players.filter(p => p.teamid === 0);
+          const team1 = m.players.filter(p => p.teamid === 1);
           if (team0.length !== 4 || team1.length !== 4) continue;
 
           // 4. Duplicate Check & Smart Merge
           const isExisting = this.db.hasMatch(m.id);
 
           // 5. Build clean Match object
+          interface LegacyMatchPlayer extends MatchPlayer {
+            race_id?: number;
+          }
           const matchObj: Match = {
             id: m.id,
             source: 'aoe2insights_scrape',
@@ -556,7 +578,7 @@ export class Aoe2InsightsScraper {
             description: m.description,
             startgametime: m.startgametime || m.completiontime - 1800,
             completiontime: m.completiontime,
-            players: m.players.map((p: any) => ({
+            players: (m.players as LegacyMatchPlayer[]).map(p => ({
               profile_id: p.profile_id,
               teamid: p.teamid,
               resulttype: p.resulttype,
@@ -583,8 +605,8 @@ export class Aoe2InsightsScraper {
 
         // Delete temporary file
         await fs.unlink(filePath);
-      } catch (err: any) {
-        console.error(`[MERGER] Failed to process/delete file ${file}:`, err.message);
+      } catch (err) {
+        console.error(`[MERGER] Failed to process/delete file ${file}:`, (err as Error).message);
       }
     }
 

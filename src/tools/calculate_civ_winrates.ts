@@ -3,6 +3,7 @@ import { CIV_NAMES } from '../civ-data.ts';
 import { promises as fs } from 'node:fs';
 import * as path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import type { Match, MatchPlayer } from '../types.ts';
 
 export async function generateCivWinratesReport(db: JsonDatabase): Promise<void> {
   const matches = db.getMatches();
@@ -20,17 +21,17 @@ export async function generateCivWinratesReport(db: JsonDatabase): Promise<void>
     },
     {
       name: 'Bamboo Nothing_Paren_V4',
-      filter: (m: any) => m.mapname === 'Bamboo Nothing_Paren_V4',
+      filter: (m: Match) => m.mapname === 'Bamboo Nothing_Paren_V4',
       id: 'paren_v4'
     },
     {
       name: 'Bamboo Nothing_Paren_V4_Nohills',
-      filter: (m: any) => m.mapname === 'Bamboo Nothing_Paren_V4_Nohills',
+      filter: (m: Match) => m.mapname === 'Bamboo Nothing_Paren_V4_Nohills',
       id: 'paren_v4_nohills'
     },
     {
       name: 'Amazon Tunnel',
-      filter: (m: any) => m.mapname === 'Amazon Tunnel',
+      filter: (m: Match) => m.mapname === 'Amazon Tunnel',
       id: 'amazon_tunnel'
     }
   ];
@@ -58,7 +59,7 @@ export async function generateCivWinratesReport(db: JsonDatabase): Promise<void>
       if (!scope.filter(m)) continue;
       totalMatchesInScope++;
 
-      const hasCivData = m.players && m.players.some((p: any) => p.civ_id && p.civ_id > 0);
+      const hasCivData = m.players && m.players.some((p: MatchPlayer) => p.civ_id && p.civ_id > 0);
       if (hasCivData) {
         matchesWithCivData++;
       }

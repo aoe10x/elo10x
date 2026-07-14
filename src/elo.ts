@@ -83,7 +83,7 @@ export class EloCalculator {
     }
 
     const profileRedirects = new Map<number, number>();
-    for (const [alias, ids] of aliasToProfiles.entries()) {
+    for (const [_alias, ids] of aliasToProfiles.entries()) {
       if (ids.length > 1) {
         // Sort ids by last game timestamp descending to choose the most recently played profile as canonical
         ids.sort((a, b) => (profileLastGameTime.get(b) || 0) - (profileLastGameTime.get(a) || 0));
