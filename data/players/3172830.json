@@ -1,12 +1,12 @@
 {
   "profile_id": 3172830,
   "alias": "Craster",
-  "rating": 1010,
-  "wins": 9,
+  "rating": 1030,
+  "wins": 10,
   "losses": 11,
-  "gamesCount": 20,
-  "winRate": 45,
-  "lastPlayedAt": 1783877559,
+  "gamesCount": 21,
+  "winRate": 48,
+  "lastPlayedAt": 1783987409,
   "country": "ve",
   "merged_ids": [],
   "ratingHistory": [
@@ -30,33 +30,10 @@
     1066,
     1047,
     1028,
-    1010
+    1010,
+    1030
   ],
   "recentMatches": [
-    {
-      "matchId": 231044799,
-      "description": "10x Shared Civ 4v4",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1683182520,
-      "outcome": "loss",
-      "preRating": 1000,
-      "postRating": 950,
-      "eloChange": -50,
-      "civ": "Burgundians",
-      "teamAvgElo": 1009,
-      "opponentAvgElo": 990,
-      "teammates": [
-        "Rice Monger (SoullessMZD)",
-        "Paulichromatic",
-        "Lolda"
-      ],
-      "opponents": [
-        "CallMeMeatloaf",
-        "Fallen",
-        "katesator",
-        "Sensar"
-      ]
-    },
     {
       "matchId": 231066438,
       "description": "Amazon 10x random civ 4v4",
@@ -451,7 +428,7 @@
       "postRating": 1047,
       "eloChange": -19,
       "civ": "Britons",
-      "teamAvgElo": 1098,
+      "teamAvgElo": 1099,
       "opponentAvgElo": 1092,
       "teammates": [
         "Kumad",
@@ -500,7 +477,7 @@
       "eloChange": -18,
       "civ": "Mongols",
       "teamAvgElo": 1061,
-      "opponentAvgElo": 1029,
+      "opponentAvgElo": 1027,
       "teammates": [
         "Chikna Raavan",
         "青松",
@@ -511,6 +488,30 @@
         "Ravenlost",
         "sppd3181",
         "YUJIN"
+      ]
+    },
+    {
+      "matchId": 492180636,
+      "description": "10x3x Bamboo Nothing ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783987409,
+      "outcome": "win",
+      "preRating": 1010,
+      "postRating": 1030,
+      "eloChange": 20,
+      "civ": "Sicilians",
+      "teamAvgElo": 994,
+      "opponentAvgElo": 1110,
+      "teammates": [
+        "Monkeymonk",
+        "RAOV",
+        "JR_Nero"
+      ],
+      "opponents": [
+        "TJ",
+        "feid_",
+        "Contry",
+        "Abelardo4tojr"
       ]
     }
   ]

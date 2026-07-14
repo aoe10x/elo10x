@@ -1,12 +1,12 @@
 {
   "profile_id": 14782740,
   "alias": "CobraBubbles801",
-  "rating": 976,
-  "wins": 36,
+  "rating": 995,
+  "wins": 37,
   "losses": 47,
-  "gamesCount": 83,
-  "winRate": 43,
-  "lastPlayedAt": 1783806616,
+  "gamesCount": 84,
+  "winRate": 44,
+  "lastPlayedAt": 1783982229,
   "country": "us",
   "merged_ids": [
     12201815,
@@ -96,33 +96,10 @@
     986,
     972,
     991,
-    976
+    976,
+    995
   ],
   "recentMatches": [
-    {
-      "matchId": 464983344,
-      "description": "10x 3 tech amazon",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1774259820,
-      "outcome": "win",
-      "preRating": 1014,
-      "postRating": 1028,
-      "eloChange": 14,
-      "civ": "Unknown",
-      "teamAvgElo": 987,
-      "opponentAvgElo": 976,
-      "teammates": [
-        "manskii99",
-        "Noobman",
-        "Scootyplz"
-      ],
-      "opponents": [
-        "Hellblazer",
-        "LaefeBTL",
-        "ANCIANO",
-        "__VK__"
-      ]
-    },
     {
       "matchId": 468757494,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -374,7 +351,7 @@
       "eloChange": 16,
       "civ": "Vikings",
       "teamAvgElo": 1017,
-      "opponentAvgElo": 1011,
+      "opponentAvgElo": 1010,
       "teammates": [
         "Winston Smokehill",
         "Wardy21",
@@ -518,7 +495,7 @@
       "eloChange": -14,
       "civ": "Romans",
       "teamAvgElo": 991,
-      "opponentAvgElo": 1030,
+      "opponentAvgElo": 1029,
       "teammates": [
         "BarqBarq",
         "Sentinel",
@@ -565,7 +542,7 @@
       "postRating": 976,
       "eloChange": -15,
       "civ": "Jurchens",
-      "teamAvgElo": 1067,
+      "teamAvgElo": 1068,
       "opponentAvgElo": 1006,
       "teammates": [
         "Wozbo",
@@ -577,6 +554,30 @@
         "Linkot",
         "TheCobra",
         "apolizer"
+      ]
+    },
+    {
+      "matchId": 492166272,
+      "description": "10x3x Bamboo Nothing ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783982229,
+      "outcome": "win",
+      "preRating": 976,
+      "postRating": 995,
+      "eloChange": 19,
+      "civ": "Tatars",
+      "teamAvgElo": 992,
+      "opponentAvgElo": 1038,
+      "teammates": [
+        "PNAL | CaligariClown",
+        "CosteLoco",
+        "Chuckyllo4417"
+      ],
+      "opponents": [
+        "TJ",
+        "skoolied",
+        "JR_Nero",
+        "Brotherman Bill"
       ]
     }
   ]

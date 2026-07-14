@@ -1,12 +1,12 @@
 {
   "profile_id": 228324,
   "alias": "Rin Tin Tin",
-  "rating": 977,
+  "rating": 962,
   "wins": 30,
-  "losses": 32,
-  "gamesCount": 62,
+  "losses": 33,
+  "gamesCount": 63,
   "winRate": 48,
-  "lastPlayedAt": 1783728578,
+  "lastPlayedAt": 1783978080,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -72,33 +72,10 @@
     1025,
     1009,
     992,
-    977
+    977,
+    962
   ],
   "recentMatches": [
-    {
-      "matchId": 459653706,
-      "description": "bamboo nothing 10x 3x",
-      "mapname": "Bamboo Nothing V1 [Scorpyon]",
-      "timestamp": 1772312040,
-      "outcome": "win",
-      "preRating": 1059,
-      "postRating": 1075,
-      "eloChange": 16,
-      "civ": "Teutons",
-      "teamAvgElo": 1076,
-      "opponentAvgElo": 1059,
-      "teammates": [
-        "king_doge",
-        "Bacteria on Putin's tiny rooster",
-        "Waryahay"
-      ],
-      "opponents": [
-        "AceTrooper",
-        "UbaneMess",
-        "Ghost_pt",
-        "SmilesBetray"
-      ]
-    },
     {
       "matchId": 460492847,
       "description": "10x shared amazon tunnel random civ",
@@ -553,6 +530,30 @@
         "Consume Product",
         "Ye",
         "Pogonophobia69"
+      ]
+    },
+    {
+      "matchId": 492154300,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783978080,
+      "outcome": "loss",
+      "preRating": 977,
+      "postRating": 962,
+      "eloChange": -15,
+      "civ": "Franks",
+      "teamAvgElo": 998,
+      "opponentAvgElo": 1006,
+      "teammates": [
+        "gemmascho",
+        "JR_Nero",
+        "Delta"
+      ],
+      "opponents": [
+        "Chikna Raavan",
+        "疯狂的电脑",
+        "[S33]ff",
+        "Maxim Liann"
       ]
     }
   ]

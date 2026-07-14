@@ -1,12 +1,12 @@
 {
   "profile_id": 5013613,
   "alias": "Makinaskee",
-  "rating": 959,
+  "rating": 945,
   "wins": 11,
-  "losses": 17,
-  "gamesCount": 28,
-  "winRate": 39,
-  "lastPlayedAt": 1783965420,
+  "losses": 18,
+  "gamesCount": 29,
+  "winRate": 38,
+  "lastPlayedAt": 1783988902,
   "country": "ar",
   "merged_ids": [],
   "ratingHistory": [
@@ -38,33 +38,10 @@
     997,
     983,
     972,
-    959
+    959,
+    945
   ],
   "recentMatches": [
-    {
-      "matchId": 483999337,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "my map",
-      "timestamp": 1780968012,
-      "outcome": "loss",
-      "preRating": 1027,
-      "postRating": 997,
-      "eloChange": -30,
-      "civ": "Italians",
-      "teamAvgElo": 1041,
-      "opponentAvgElo": 1082,
-      "teammates": [
-        "PITON | Shepy",
-        "Wololoo",
-        "mack"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "PowerBeast51461",
-        "Tdot",
-        "Shadow"
-      ]
-    },
     {
       "matchId": 484239323,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -172,7 +149,7 @@
       "eloChange": 38,
       "civ": "Malians",
       "teamAvgElo": 981,
-      "opponentAvgElo": 1100,
+      "opponentAvgElo": 1101,
       "teammates": [
         "nayman",
         "Ferdinand I of Naples",
@@ -244,7 +221,7 @@
       "eloChange": -21,
       "civ": "Huns",
       "teamAvgElo": 1041,
-      "opponentAvgElo": 982,
+      "opponentAvgElo": 980,
       "teammates": [
         "NoAgendaPODCAST",
         "Feitoria",
@@ -267,7 +244,7 @@
       "postRating": 962,
       "eloChange": 26,
       "civ": "Tatars",
-      "teamAvgElo": 1007,
+      "teamAvgElo": 1012,
       "opponentAvgElo": 1017,
       "teammates": [
         "Maxim Liann",
@@ -339,7 +316,7 @@
       "postRating": 990,
       "eloChange": 19,
       "civ": "Spanish",
-      "teamAvgElo": 981,
+      "teamAvgElo": 982,
       "opponentAvgElo": 1045,
       "teammates": [
         "apolizer",
@@ -387,7 +364,7 @@
       "postRating": 993,
       "eloChange": -15,
       "civ": "Romans",
-      "teamAvgElo": 1020,
+      "teamAvgElo": 1021,
       "opponentAvgElo": 1033,
       "teammates": [
         "疯狂的电脑",
@@ -436,7 +413,7 @@
       "eloChange": 18,
       "civ": "Huns",
       "teamAvgElo": 997,
-      "opponentAvgElo": 1027,
+      "opponentAvgElo": 1030,
       "teammates": [
         "{R} Parry",
         "ch33tah",
@@ -459,7 +436,7 @@
       "postRating": 983,
       "eloChange": -14,
       "civ": "Magyars",
-      "teamAvgElo": 995,
+      "teamAvgElo": 996,
       "opponentAvgElo": 1047,
       "teammates": [
         "-[RDU]- Gorda America Forever",
@@ -483,7 +460,7 @@
       "postRating": 972,
       "eloChange": -11,
       "civ": "Incas",
-      "teamAvgElo": 1016,
+      "teamAvgElo": 1017,
       "opponentAvgElo": 1097,
       "teammates": [
         "Lykerya",
@@ -507,7 +484,7 @@
       "postRating": 959,
       "eloChange": -13,
       "civ": "Slavs",
-      "teamAvgElo": 985,
+      "teamAvgElo": 988,
       "opponentAvgElo": 1038,
       "teammates": [
         "LeosMind",
@@ -519,6 +496,30 @@
         "Bambamdumm",
         "Trekkspell",
         "abatyse6533"
+      ]
+    },
+    {
+      "matchId": 492182683,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1783988902,
+      "outcome": "loss",
+      "preRating": 959,
+      "postRating": 945,
+      "eloChange": -14,
+      "civ": "Chinese",
+      "teamAvgElo": 1053,
+      "opponentAvgElo": 992,
+      "teammates": [
+        "Kumad",
+        "Myriad",
+        "Manba Out"
+      ],
+      "opponents": [
+        "EL__PATRON",
+        "Kaa Da Kaveman",
+        "Belisarius",
+        "joe"
       ]
     }
   ]

@@ -1,7 +1,7 @@
 {
   "profile_id": 11739620,
   "alias": "Kombative",
-  "rating": 1028,
+  "rating": 1029,
   "wins": 45,
   "losses": 45,
   "gamesCount": 90,
@@ -101,9 +101,9 @@
     1050,
     1031,
     1045,
-    1028,
-    1045,
-    1028
+    1029,
+    1046,
+    1029
   ],
   "recentMatches": [
     {
@@ -521,11 +521,11 @@
       "timestamp": 1780396920,
       "outcome": "loss",
       "preRating": 1045,
-      "postRating": 1028,
-      "eloChange": -17,
+      "postRating": 1029,
+      "eloChange": -16,
       "civ": "Huns",
       "teamAvgElo": 1045,
-      "opponentAvgElo": 1032,
+      "opponentAvgElo": 1036,
       "teammates": [
         "Sal",
         "{R} Parry",
@@ -544,8 +544,8 @@
       "mapname": "Bamboo Nothing_Paren_V4",
       "timestamp": 1781090760,
       "outcome": "win",
-      "preRating": 1028,
-      "postRating": 1045,
+      "preRating": 1029,
+      "postRating": 1046,
       "eloChange": 17,
       "civ": "Franks",
       "teamAvgElo": 1111,
@@ -568,8 +568,8 @@
       "mapname": "Bamboo Nothing_Paren_V4_Nohills",
       "timestamp": 1781765580,
       "outcome": "loss",
-      "preRating": 1045,
-      "postRating": 1028,
+      "preRating": 1046,
+      "postRating": 1029,
       "eloChange": -17,
       "civ": "Bohemians",
       "teamAvgElo": 1037,

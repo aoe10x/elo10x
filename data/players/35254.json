@@ -1,12 +1,12 @@
 {
   "profile_id": 35254,
   "alias": "Berberecho_Feroz",
-  "rating": 925,
-  "wins": 13,
+  "rating": 945,
+  "wins": 14,
   "losses": 28,
-  "gamesCount": 41,
-  "winRate": 32,
-  "lastPlayedAt": 1783843694,
+  "gamesCount": 42,
+  "winRate": 33,
+  "lastPlayedAt": 1783979891,
   "country": "es",
   "merged_ids": [],
   "ratingHistory": [
@@ -51,33 +51,10 @@
     928,
     917,
     936,
-    925
+    925,
+    945
   ],
   "recentMatches": [
-    {
-      "matchId": 437257133,
-      "description": "3x 10x bamboo - random civ",
-      "mapname": "Bamboo Nothing_Paren_V2",
-      "timestamp": 1764737280,
-      "outcome": "loss",
-      "preRating": 844,
-      "postRating": 832,
-      "eloChange": -12,
-      "civ": "Burmese",
-      "teamAvgElo": 955,
-      "opponentAvgElo": 928,
-      "teammates": [
-        "gemmascho",
-        "mack",
-        "kiggless"
-      ],
-      "opponents": [
-        "McKrakfejs",
-        "Eat MY Sprouts",
-        "dnz n 40 skrms",
-        "AlkanTR"
-      ]
-    },
     {
       "matchId": 448068756,
       "description": "4 vs 4 // 10x Shared Random Civ",
@@ -448,7 +425,7 @@
       "postRating": 928,
       "eloChange": 20,
       "civ": "Malay",
-      "teamAvgElo": 1014,
+      "teamAvgElo": 1015,
       "opponentAvgElo": 997,
       "teammates": [
         "VAPE NAYSH Y'ALL",
@@ -532,6 +509,30 @@
         "Bridge",
         "GiGi",
         "平生不修善果 只爱石油军火"
+      ]
+    },
+    {
+      "matchId": 492159694,
+      "description": "10x3x Bamboo Nothing ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783979891,
+      "outcome": "win",
+      "preRating": 925,
+      "postRating": 945,
+      "eloChange": 20,
+      "civ": "Tatars",
+      "teamAvgElo": 1014,
+      "opponentAvgElo": 1010,
+      "teammates": [
+        "Brotherman Bill",
+        "Chuckyllo4417",
+        "Ode To  A Pineapple"
+      ],
+      "opponents": [
+        "TJ",
+        "Chinicuila304",
+        "Kaa Da Kaveman",
+        "jair_silva"
       ]
     }
   ]

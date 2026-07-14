@@ -1,12 +1,12 @@
 {
   "profile_id": 4013344,
   "alias": "RedHotPenguin",
-  "rating": 1045,
-  "wins": 30,
+  "rating": 1058,
+  "wins": 31,
   "losses": 20,
-  "gamesCount": 50,
-  "winRate": 60,
-  "lastPlayedAt": 1782647078,
+  "gamesCount": 51,
+  "winRate": 61,
+  "lastPlayedAt": 1783237155,
   "country": "au",
   "merged_ids": [],
   "ratingHistory": [
@@ -60,33 +60,10 @@
     1101,
     1081,
     1062,
-    1045
+    1045,
+    1058
   ],
   "recentMatches": [
-    {
-      "matchId": 380351108,
-      "description": "10xshared_3xtech_BambooNothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1742742240,
-      "outcome": "win",
-      "preRating": 1125,
-      "postRating": 1136,
-      "eloChange": 11,
-      "civ": "Burmese",
-      "teamAvgElo": 1027,
-      "opponentAvgElo": 1007,
-      "teammates": [
-        "Kinna fresh",
-        "Miwa",
-        "_S_"
-      ],
-      "opponents": [
-        "komatti",
-        "Gannicus",
-        "JuanMalote",
-        "RIchard_Uy"
-      ]
-    },
     {
       "matchId": 380358339,
       "description": "10xshared_3xtech_BambooNothing",
@@ -506,7 +483,7 @@
       "eloChange": -19,
       "civ": "Huns",
       "teamAvgElo": 1062,
-      "opponentAvgElo": 1015,
+      "opponentAvgElo": 1014,
       "teammates": [
         "typ53b90",
         "The Wet Bandit",
@@ -530,7 +507,7 @@
       "eloChange": -17,
       "civ": "Armenians",
       "teamAvgElo": 1044,
-      "opponentAvgElo": 1031,
+      "opponentAvgElo": 1030,
       "teammates": [
         "NoAgendaPODCAST",
         "Vex114",
@@ -541,6 +518,30 @@
         "Evil  Destroyer",
         "golhmogh",
         "鱼浆"
+      ]
+    },
+    {
+      "matchId": 490207384,
+      "description": "10 shared civ",
+      "mapname": "my map",
+      "timestamp": 1783237155,
+      "outcome": "win",
+      "preRating": 1045,
+      "postRating": 1058,
+      "eloChange": 13,
+      "civ": "Malay",
+      "teamAvgElo": 956,
+      "opponentAvgElo": 986,
+      "teammates": [
+        "东方臣",
+        "Pelopincho",
+        "昊帅气"
+      ],
+      "opponents": [
+        "熙熙",
+        "冰凝",
+        "sppd3181",
+        "祝我好梦"
       ]
     }
   ]

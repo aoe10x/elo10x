@@ -1,12 +1,12 @@
 {
   "profile_id": 19902528,
   "alias": "TheZeos",
-  "rating": 889,
+  "rating": 879,
   "wins": 10,
-  "losses": 20,
-  "gamesCount": 30,
-  "winRate": 33,
-  "lastPlayedAt": 1783722644,
+  "losses": 21,
+  "gamesCount": 31,
+  "winRate": 32,
+  "lastPlayedAt": 1783981252,
   "country": "cl",
   "merged_ids": [
     12851136,
@@ -43,33 +43,10 @@
     916,
     908,
     898,
-    889
+    889,
+    879
   ],
   "recentMatches": [
-    {
-      "matchId": 381949099,
-      "description": "10x 3x - bamboo",
-      "mapname": "Bamboo Nothing - +Wild ##############",
-      "timestamp": 1743343380,
-      "outcome": "loss",
-      "preRating": 1060,
-      "postRating": 1026,
-      "eloChange": -34,
-      "civ": "Unknown",
-      "teamAvgElo": 1075,
-      "opponentAvgElo": 1037,
-      "teammates": [
-        "Keishi",
-        "i kun 2.5",
-        "awdsxq"
-      ],
-      "opponents": [
-        "Parenquima",
-        "Kinna fresh",
-        "abaranwal91",
-        "Organic Machines"
-      ]
-    },
     {
       "matchId": 392502163,
       "description": "10x Shared Turbo Tunnel",
@@ -524,6 +501,30 @@
         "tonzo",
         "Consume Product",
         "rcmccallum"
+      ]
+    },
+    {
+      "matchId": 492163478,
+      "description": "10x 3x BaMbOo NoThInG",
+      "mapname": "BAMBOO_NOTHING_-_SCORPYON_DE_v3",
+      "timestamp": 1783981252,
+      "outcome": "loss",
+      "preRating": 889,
+      "postRating": 879,
+      "eloChange": -10,
+      "civ": "Poles",
+      "teamAvgElo": 991,
+      "opponentAvgElo": 1025,
+      "teammates": [
+        "Ode To  A Pineapple",
+        "CosteLoco",
+        "yimacs_yoyoyo"
+      ],
+      "opponents": [
+        "Kaa Da Kaveman",
+        "399 the Grizzly Bear - RIP <3",
+        "Vulkan",
+        "alexw"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 1700069,
   "alias": "Madness",
-  "rating": 1031,
+  "rating": 1017,
   "wins": 35,
-  "losses": 33,
-  "gamesCount": 68,
+  "losses": 34,
+  "gamesCount": 69,
   "winRate": 51,
-  "lastPlayedAt": 1783015975,
+  "lastPlayedAt": 1783977891,
   "country": "ch",
   "merged_ids": [
     1700069,
@@ -81,33 +81,10 @@
     1015,
     1031,
     1016,
-    1031
+    1031,
+    1017
   ],
   "recentMatches": [
-    {
-      "matchId": 462757614,
-      "description": "Bamboo 10x 3x 4v4",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1773466020,
-      "outcome": "win",
-      "preRating": 1099,
-      "postRating": 1113,
-      "eloChange": 14,
-      "civ": "Berbers",
-      "teamAvgElo": 1077,
-      "opponentAvgElo": 1046,
-      "teammates": [
-        "alexw",
-        "Xinzzo",
-        "Delta"
-      ],
-      "opponents": [
-        "__VK__",
-        "TM AndresgP",
-        "田瘾犯了",
-        "McKrakfejs"
-      ]
-    },
     {
       "matchId": 463210293,
       "description": "BN 10x 3x no shitty players",
@@ -263,7 +240,7 @@
       "eloChange": 17,
       "civ": "Celts",
       "teamAvgElo": 1023,
-      "opponentAvgElo": 1060,
+      "opponentAvgElo": 1063,
       "teammates": [
         "mrkus.shlz",
         "gmc inspector",
@@ -562,6 +539,30 @@
         "golhmogh",
         "Lozzer",
         "Consume Product"
+      ]
+    },
+    {
+      "matchId": 492153443,
+      "description": "10x 3x BaMbOo NoThInG",
+      "mapname": "BAMBOO_NOTHING_-_SCORPYON_DE_v3",
+      "timestamp": 1783977891,
+      "outcome": "loss",
+      "preRating": 1031,
+      "postRating": 1017,
+      "eloChange": -14,
+      "civ": "Slavs",
+      "teamAvgElo": 1045,
+      "opponentAvgElo": 1072,
+      "teammates": [
+        "Kaa Da Kaveman",
+        "Manba Out",
+        "RA"
+      ],
+      "opponents": [
+        "Consume Product",
+        "NothingAtAll11",
+        "tonzo",
+        "kiggless"
       ]
     }
   ]
