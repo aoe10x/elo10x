@@ -1,12 +1,12 @@
 {
   "profile_id": 316872,
   "alias": "shemirage",
-  "rating": 977,
+  "rating": 962,
   "wins": 7,
-  "losses": 9,
-  "gamesCount": 16,
-  "winRate": 44,
-  "lastPlayedAt": 1783199400,
+  "losses": 10,
+  "gamesCount": 17,
+  "winRate": 41,
+  "lastPlayedAt": 1784001480,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -26,7 +26,8 @@
     940,
     973,
     950,
-    977
+    977,
+    962
   ],
   "recentMatches": [
     {
@@ -411,6 +412,30 @@
         "Monk",
         "漫山哒哒哒",
         "ambmdh"
+      ]
+    },
+    {
+      "matchId": 492217801,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784001480,
+      "outcome": "loss",
+      "preRating": 977,
+      "postRating": 962,
+      "eloChange": -15,
+      "civ": "Wu",
+      "teamAvgElo": 995,
+      "opponentAvgElo": 1102,
+      "teammates": [
+        "baianitro",
+        "beat",
+        "Maxim Liann"
+      ],
+      "opponents": [
+        "gmc inspector",
+        "侯傻傻ᔦఠఠᔨ shasha",
+        "田瘾犯了",
+        "Keishi"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 9755871,
   "alias": "brycedevore22",
-  "rating": 945,
-  "wins": 6,
+  "rating": 972,
+  "wins": 7,
   "losses": 10,
-  "gamesCount": 16,
-  "winRate": 38,
-  "lastPlayedAt": 1775724420,
+  "gamesCount": 17,
+  "winRate": 41,
+  "lastPlayedAt": 1783995552,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -26,7 +26,8 @@
     893,
     929,
     910,
-    945
+    945,
+    972
   ],
   "recentMatches": [
     {
@@ -411,6 +412,30 @@
         "helianth",
         "nooblet3300",
         "Sensei"
+      ]
+    },
+    {
+      "matchId": 492201631,
+      "description": "10x3x Bamboo Nothing ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783995552,
+      "outcome": "win",
+      "preRating": 945,
+      "postRating": 972,
+      "eloChange": 27,
+      "civ": "Spanish",
+      "teamAvgElo": 1005,
+      "opponentAvgElo": 1017,
+      "teammates": [
+        "NothingAtAll11",
+        "Not a Wizard",
+        "Me_Ha_Ha"
+      ],
+      "opponents": [
+        "TJ",
+        "[B] Cannino",
+        "JuMpEr",
+        "Mahmut"
       ]
     }
   ]

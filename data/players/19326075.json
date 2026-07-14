@@ -1,12 +1,12 @@
 {
   "profile_id": 19326075,
   "alias": "afranciscosa",
-  "rating": 1034,
-  "wins": 26,
+  "rating": 1046,
+  "wins": 27,
   "losses": 33,
-  "gamesCount": 59,
-  "winRate": 44,
-  "lastPlayedAt": 1783771623,
+  "gamesCount": 60,
+  "winRate": 45,
+  "lastPlayedAt": 1783979632,
   "country": "pt",
   "merged_ids": [
     12766131,
@@ -72,33 +72,10 @@
     977,
     995,
     1015,
-    1034
+    1034,
+    1046
   ],
   "recentMatches": [
-    {
-      "matchId": 475586889,
-      "description": "10x 3x BAMBOO NOTHING",
-      "mapname": "Bamboo_Nothing_-_Scorpyon_De_V3",
-      "timestamp": 1778019480,
-      "outcome": "win",
-      "preRating": 948,
-      "postRating": 966,
-      "eloChange": 18,
-      "civ": "Gurjaras",
-      "teamAvgElo": 1025,
-      "opponentAvgElo": 993,
-      "teammates": [
-        "Kaa Da Kaveman",
-        "YUJIN",
-        "黑铁局局长"
-      ],
-      "opponents": [
-        "SpawN",
-        "Honeybugss",
-        "ChiH",
-        "kekekeya"
-      ]
-    },
     {
       "matchId": 476343045,
       "description": "3x 10x bamboo - random civ - no noobs",
@@ -518,7 +495,7 @@
       "eloChange": 20,
       "civ": "Spanish",
       "teamAvgElo": 1059,
-      "opponentAvgElo": 1081,
+      "opponentAvgElo": 1082,
       "teammates": [
         "MadRussian",
         "dRea",
@@ -553,6 +530,30 @@
         "dRea",
         "sppd3181",
         "pandalam"
+      ]
+    },
+    {
+      "matchId": 492159323,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783979632,
+      "outcome": "win",
+      "preRating": 1034,
+      "postRating": 1046,
+      "eloChange": 12,
+      "civ": "Portuguese",
+      "teamAvgElo": 1009,
+      "opponentAvgElo": 949,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "DPK75",
+        "399 the Grizzly Bear - RIP <3"
+      ],
+      "opponents": [
+        "CosteLoco",
+        "MarieBrutale",
+        "Gasnápido",
+        "Wololoo"
       ]
     }
   ]

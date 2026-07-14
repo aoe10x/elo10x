@@ -1,12 +1,12 @@
 {
   "profile_id": 1438500,
   "alias": "Tootin B. Anthony",
-  "rating": 960,
+  "rating": 946,
   "wins": 13,
-  "losses": 23,
-  "gamesCount": 36,
-  "winRate": 36,
-  "lastPlayedAt": 1783882033,
+  "losses": 24,
+  "gamesCount": 37,
+  "winRate": 35,
+  "lastPlayedAt": 1783984180,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -46,33 +46,10 @@
     963,
     952,
     941,
-    960
+    960,
+    946
   ],
   "recentMatches": [
-    {
-      "matchId": 462120879,
-      "description": "bamboo nothing 10x 3x",
-      "mapname": "Bamboo Nothing V1 [Scorpyon]",
-      "timestamp": 1773201060,
-      "outcome": "win",
-      "preRating": 915,
-      "postRating": 947,
-      "eloChange": 32,
-      "civ": "Portuguese",
-      "teamAvgElo": 1059,
-      "opponentAvgElo": 1073,
-      "teammates": [
-        "MrSniffers",
-        "Jose",
-        "Mimi"
-      ],
-      "opponents": [
-        "AceTrooper",
-        "TheRiceMan",
-        "Gresu",
-        "McKrakfejs"
-      ]
-    },
     {
       "matchId": 462386371,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -516,7 +493,7 @@
       "eloChange": 19,
       "civ": "Slavs",
       "teamAvgElo": 972,
-      "opponentAvgElo": 1012,
+      "opponentAvgElo": 1011,
       "teammates": [
         "im slow",
         "[B] Cannino",
@@ -527,6 +504,30 @@
         "apolizer",
         "ElmoWithoutL",
         "Sokaryus"
+      ]
+    },
+    {
+      "matchId": 492172435,
+      "description": "10x 3x Bamboo - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783984180,
+      "outcome": "loss",
+      "preRating": 960,
+      "postRating": 946,
+      "eloChange": -14,
+      "civ": "Burgundians",
+      "teamAvgElo": 984,
+      "opponentAvgElo": 1000,
+      "teammates": [
+        "Parts",
+        "Rita De Valencia",
+        "Consume Product"
+      ],
+      "opponents": [
+        "PITON | Shepy",
+        "Hoof",
+        "CosteLoco",
+        "Ode To  A Pineapple"
       ]
     }
   ]

@@ -1,14 +1,17 @@
 {
-  "profile_id": 13032467,
+  "profile_id": 21203567,
   "alias": "emmanueldltq08",
-  "rating": 870,
+  "rating": 858,
   "wins": 4,
-  "losses": 12,
-  "gamesCount": 16,
-  "winRate": 25,
-  "lastPlayedAt": 1781768580,
-  "country": "Unknown",
-  "merged_ids": [],
+  "losses": 13,
+  "gamesCount": 17,
+  "winRate": 24,
+  "lastPlayedAt": 1783985657,
+  "country": "mx",
+  "merged_ids": [
+    13032467,
+    21203567
+  ],
   "ratingHistory": [
     1000,
     956,
@@ -26,7 +29,8 @@
     916,
     898,
     883,
-    870
+    870,
+    858
   ],
   "recentMatches": [
     {
@@ -411,6 +415,30 @@
         "Lezec",
         "Myriad",
         "helianth"
+      ]
+    },
+    {
+      "matchId": 492175913,
+      "description": "10x 3x Bamboo - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783985657,
+      "outcome": "loss",
+      "preRating": 870,
+      "postRating": 858,
+      "eloChange": -12,
+      "civ": "Wei",
+      "teamAvgElo": 965,
+      "opponentAvgElo": 1047,
+      "teammates": [
+        "Parts",
+        "Rita De Valencia",
+        "Ode To  A Pineapple"
+      ],
+      "opponents": [
+        "CosteLoco",
+        "Hoof",
+        "田瘾犯了",
+        "pandasadnap"
       ]
     }
   ]

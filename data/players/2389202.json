@@ -1,12 +1,12 @@
 {
   "profile_id": 2389202,
   "alias": "Rooaary",
-  "rating": 964,
-  "wins": 44,
-  "losses": 45,
-  "gamesCount": 89,
+  "rating": 966,
+  "wins": 45,
+  "losses": 46,
+  "gamesCount": 91,
   "winRate": 49,
-  "lastPlayedAt": 1783746550,
+  "lastPlayedAt": 1783998804,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -99,57 +99,11 @@
     1000,
     987,
     978,
-    964
+    964,
+    980,
+    966
   ],
   "recentMatches": [
-    {
-      "matchId": 417780144,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1757288580,
-      "outcome": "loss",
-      "preRating": 1079,
-      "postRating": 1063,
-      "eloChange": -16,
-      "civ": "Magyars",
-      "teamAvgElo": 1021,
-      "opponentAvgElo": 1081,
-      "teammates": [
-        "06raph06",
-        "DeathWalker",
-        "30Wololo"
-      ],
-      "opponents": [
-        "nooblet3300",
-        "Bryce Coolguy",
-        "Fringnut",
-        "Kindregg"
-      ]
-    },
-    {
-      "matchId": 419249537,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1757913300,
-      "outcome": "loss",
-      "preRating": 1063,
-      "postRating": 1046,
-      "eloChange": -17,
-      "civ": "Unknown",
-      "teamAvgElo": 1055,
-      "opponentAvgElo": 1048,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "OhSheeep",
-        "rafuk89"
-      ],
-      "opponents": [
-        "LUIS123456E",
-        "THE THING",
-        "fxsound",
-        "MarieBrutale"
-      ]
-    },
     {
       "matchId": 420257693,
       "description": "turbo 10x 3x bamboo",
@@ -580,6 +534,54 @@
         "95Bricks",
         "typ53b90",
         "Sundev"
+      ]
+    },
+    {
+      "matchId": 492197539,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783993776,
+      "outcome": "win",
+      "preRating": 964,
+      "postRating": 980,
+      "eloChange": 16,
+      "civ": "Bohemians",
+      "teamAvgElo": 1027,
+      "opponentAvgElo": 974,
+      "teammates": [
+        "Mehandor",
+        "RAOV",
+        "NothingAtAll11"
+      ],
+      "opponents": [
+        "baianitro",
+        "Maxim Liann",
+        "CosteLoco",
+        "pandasadnap"
+      ]
+    },
+    {
+      "matchId": 492211519,
+      "description": "10x 3x bamboo nothing  turbo host here",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783998804,
+      "outcome": "loss",
+      "preRating": 980,
+      "postRating": 966,
+      "eloChange": -14,
+      "civ": "Burmese",
+      "teamAvgElo": 973,
+      "opponentAvgElo": 1026,
+      "teammates": [
+        "irvizuett",
+        "[B] Cannino",
+        "Keishi"
+      ],
+      "opponents": [
+        "gmc inspector",
+        "SpiniestTuna222",
+        "侯傻傻ᔦఠఠᔨ shasha",
+        "Makinaskee"
       ]
     }
   ]

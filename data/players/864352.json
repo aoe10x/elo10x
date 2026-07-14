@@ -1,12 +1,12 @@
 {
   "profile_id": 864352,
   "alias": "Nigerian Farmer",
-  "rating": 981,
+  "rating": 956,
   "wins": 13,
-  "losses": 15,
-  "gamesCount": 28,
-  "winRate": 46,
-  "lastPlayedAt": 1783877559,
+  "losses": 17,
+  "gamesCount": 30,
+  "winRate": 43,
+  "lastPlayedAt": 1783988102,
   "country": "se",
   "merged_ids": [],
   "ratingHistory": [
@@ -38,57 +38,11 @@
     1026,
     1012,
     999,
-    981
+    981,
+    968,
+    956
   ],
   "recentMatches": [
-    {
-      "matchId": 463703500,
-      "description": "10x Amazon Tunnel, 40 min treaty, 4vs4",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1773801840,
-      "outcome": "loss",
-      "preRating": 1010,
-      "postRating": 972,
-      "eloChange": -38,
-      "civ": "Tatars",
-      "teamAvgElo": 1000,
-      "opponentAvgElo": 985,
-      "teammates": [
-        "neal",
-        "Enneb",
-        "KarlLagerfeuer"
-      ],
-      "opponents": [
-        "Zohan",
-        "Wasserhahn24",
-        "Patches",
-        "BigLoserLoser"
-      ]
-    },
-    {
-      "matchId": 471456089,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1776585180,
-      "outcome": "loss",
-      "preRating": 972,
-      "postRating": 948,
-      "eloChange": -24,
-      "civ": "Bulgarians",
-      "teamAvgElo": 984,
-      "opponentAvgElo": 1077,
-      "teammates": [
-        "NothingAtAll11",
-        "Bodied",
-        "develement"
-      ],
-      "opponents": [
-        "zulin",
-        "nooblet3300",
-        "Bryce Coolguy",
-        "babeleo"
-      ]
-    },
     {
       "matchId": 482445675,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -519,6 +473,54 @@
         "ChristopheG1970.Fr",
         "-[RDU]- Gorda America Forever",
         "Mankaur"
+      ]
+    },
+    {
+      "matchId": 492179781,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1783987223,
+      "outcome": "loss",
+      "preRating": 981,
+      "postRating": 968,
+      "eloChange": -13,
+      "civ": "Koreans",
+      "teamAvgElo": 1003,
+      "opponentAvgElo": 1038,
+      "teammates": [
+        "derailer9",
+        "Parts",
+        "Ode To  A Pineapple"
+      ],
+      "opponents": [
+        "Parenquima",
+        "Rita De Valencia",
+        "Brotherman Bill",
+        "leandrod_c"
+      ]
+    },
+    {
+      "matchId": 492182010,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783988102,
+      "outcome": "loss",
+      "preRating": 968,
+      "postRating": 956,
+      "eloChange": -12,
+      "civ": "Mongols",
+      "teamAvgElo": 994,
+      "opponentAvgElo": 1058,
+      "teammates": [
+        "Tiny Hands",
+        "Tortrix",
+        "THE VIPER PERUANO"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "Brotherman Bill",
+        "Terry",
+        "Ode To  A Pineapple"
       ]
     }
   ]

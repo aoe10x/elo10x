@@ -1,12 +1,12 @@
 {
   "profile_id": 4084571,
   "alias": "Mahmut",
-  "rating": 973,
+  "rating": 951,
   "wins": 6,
-  "losses": 9,
-  "gamesCount": 15,
-  "winRate": 40,
-  "lastPlayedAt": 1783651097,
+  "losses": 10,
+  "gamesCount": 16,
+  "winRate": 38,
+  "lastPlayedAt": 1783995552,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -25,7 +25,8 @@
     984,
     1021,
     994,
-    973
+    973,
+    951
   ],
   "recentMatches": [
     {
@@ -386,6 +387,30 @@
         "Brotherman Bill",
         "Scipio",
         "Bek0"
+      ]
+    },
+    {
+      "matchId": 492201631,
+      "description": "10x3x Bamboo Nothing ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783995552,
+      "outcome": "loss",
+      "preRating": 973,
+      "postRating": 951,
+      "eloChange": -22,
+      "civ": "Hindustanis",
+      "teamAvgElo": 1017,
+      "opponentAvgElo": 1005,
+      "teammates": [
+        "TJ",
+        "[B] Cannino",
+        "JuMpEr"
+      ],
+      "opponents": [
+        "NothingAtAll11",
+        "Not a Wizard",
+        "brycedevore22",
+        "Me_Ha_Ha"
       ]
     }
   ]

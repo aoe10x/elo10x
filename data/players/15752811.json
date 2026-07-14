@@ -1,12 +1,12 @@
 {
   "profile_id": 15752811,
   "alias": "Hoof",
-  "rating": 945,
-  "wins": 7,
+  "rating": 987,
+  "wins": 9,
   "losses": 10,
-  "gamesCount": 17,
-  "winRate": 41,
-  "lastPlayedAt": 1783297579,
+  "gamesCount": 19,
+  "winRate": 47,
+  "lastPlayedAt": 1783985657,
   "country": "nz",
   "merged_ids": [
     12372808,
@@ -30,7 +30,9 @@
     949,
     931,
     915,
-    945
+    945,
+    968,
+    987
   ],
   "recentMatches": [
     {
@@ -439,6 +441,54 @@
         "GuguBot",
         "vincentc95",
         "勇战到抵"
+      ]
+    },
+    {
+      "matchId": 492172435,
+      "description": "10x 3x Bamboo - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783984180,
+      "outcome": "win",
+      "preRating": 945,
+      "postRating": 968,
+      "eloChange": 23,
+      "civ": "Wu",
+      "teamAvgElo": 1000,
+      "opponentAvgElo": 984,
+      "teammates": [
+        "PITON | Shepy",
+        "CosteLoco",
+        "Ode To  A Pineapple"
+      ],
+      "opponents": [
+        "Parts",
+        "Rita De Valencia",
+        "Tootin B. Anthony",
+        "Consume Product"
+      ]
+    },
+    {
+      "matchId": 492175913,
+      "description": "10x 3x Bamboo - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783985657,
+      "outcome": "win",
+      "preRating": 968,
+      "postRating": 987,
+      "eloChange": 19,
+      "civ": "Malay",
+      "teamAvgElo": 1047,
+      "opponentAvgElo": 965,
+      "teammates": [
+        "CosteLoco",
+        "田瘾犯了",
+        "pandasadnap"
+      ],
+      "opponents": [
+        "Parts",
+        "Rita De Valencia",
+        "Ode To  A Pineapple",
+        "emmanueldltq08"
       ]
     }
   ]

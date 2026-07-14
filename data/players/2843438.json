@@ -1,12 +1,12 @@
 {
   "profile_id": 2843438,
   "alias": "Scipio",
-  "rating": 1017,
-  "wins": 21,
-  "losses": 23,
-  "gamesCount": 44,
+  "rating": 1018,
+  "wins": 22,
+  "losses": 24,
+  "gamesCount": 46,
   "winRate": 48,
-  "lastPlayedAt": 1783936091,
+  "lastPlayedAt": 1783996551,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -54,57 +54,11 @@
     1033,
     1018,
     1002,
-    1017
+    1017,
+    1034,
+    1018
   ],
   "recentMatches": [
-    {
-      "matchId": 491430463,
-      "description": "10x 3x Bamboo (<3)",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783727370,
-      "outcome": "loss",
-      "preRating": 1066,
-      "postRating": 1048,
-      "eloChange": -18,
-      "civ": "Bengalis",
-      "teamAvgElo": 1002,
-      "opponentAvgElo": 1024,
-      "teammates": [
-        "procrastination.exe",
-        "E_R_V",
-        "Apocalypto"
-      ],
-      "opponents": [
-        "Chikna Raavan",
-        "MarieBrutale",
-        "GrandUni",
-        "Parenquima"
-      ]
-    },
-    {
-      "matchId": 491534748,
-      "description": "BAMBOO 10x3xtech",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783766529,
-      "outcome": "loss",
-      "preRating": 1048,
-      "postRating": 1032,
-      "eloChange": -16,
-      "civ": "Koreans",
-      "teamAvgElo": 1014,
-      "opponentAvgElo": 1058,
-      "teammates": [
-        "iamatthe.hell",
-        "matt",
-        "SemiQuitt"
-      ],
-      "opponents": [
-        "Phantom_",
-        "Honey badger",
-        "im slow",
-        "476055690"
-      ]
-    },
     {
       "matchId": 491537116,
       "description": "10x 3x Bamboo (big ole anime tatas)",
@@ -187,7 +141,7 @@
       "postRating": 1036,
       "eloChange": 16,
       "civ": "Aztecs",
-      "teamAvgElo": 1028,
+      "teamAvgElo": 1029,
       "opponentAvgElo": 1021,
       "teammates": [
         "TJ",
@@ -331,7 +285,7 @@
       "postRating": 1034,
       "eloChange": -14,
       "civ": "Malay",
-      "teamAvgElo": 1092,
+      "teamAvgElo": 1093,
       "opponentAvgElo": 1092,
       "teammates": [
         "GiGi",
@@ -535,6 +489,54 @@
         "Consume Product",
         "Eemeli",
         "468673564"
+      ]
+    },
+    {
+      "matchId": 492202351,
+      "description": "10x 3x Bamboo (bad dragon)",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783995200,
+      "outcome": "win",
+      "preRating": 1017,
+      "postRating": 1034,
+      "eloChange": 17,
+      "civ": "Vikings",
+      "teamAvgElo": 994,
+      "opponentAvgElo": 1041,
+      "teammates": [
+        "Optimus",
+        "Parts",
+        "[TodEs] MnTartara"
+      ],
+      "opponents": [
+        "Monkeymonk",
+        "gmc inspector",
+        "Makinaskee",
+        "adrian"
+      ]
+    },
+    {
+      "matchId": 492205946,
+      "description": "10x 3x Bamboo (no laggers)",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783996551,
+      "outcome": "loss",
+      "preRating": 1034,
+      "postRating": 1018,
+      "eloChange": -16,
+      "civ": "Khmer",
+      "teamAvgElo": 995,
+      "opponentAvgElo": 1042,
+      "teammates": [
+        "Not a Wizard",
+        "Master.Ji.ro.714",
+        "[B] Cannino"
+      ],
+      "opponents": [
+        "Makinaskee",
+        "Monkeymonk",
+        "adrian",
+        "duckbuildperson"
       ]
     }
   ]

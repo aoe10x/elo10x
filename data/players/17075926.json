@@ -1,11 +1,11 @@
 {
   "profile_id": 17075926,
   "alias": "Lordetion",
-  "rating": 1050,
-  "wins": 23,
+  "rating": 1063,
+  "wins": 24,
   "losses": 29,
-  "gamesCount": 52,
-  "winRate": 44,
+  "gamesCount": 53,
+  "winRate": 45,
   "lastPlayedAt": 1783945527,
   "country": "tr",
   "merged_ids": [
@@ -64,34 +64,11 @@
     1007,
     994,
     1013,
-    1030,
-    1050
+    1028,
+    1044,
+    1063
   ],
   "recentMatches": [
-    {
-      "matchId": 476005378,
-      "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1778186880,
-      "outcome": "loss",
-      "preRating": 954,
-      "postRating": 943,
-      "eloChange": -11,
-      "civ": "Maya",
-      "teamAvgElo": 1106,
-      "opponentAvgElo": 1060,
-      "teammates": [
-        "pandalam",
-        "Pogonophobia69",
-        "老K"
-      ],
-      "opponents": [
-        "ototomato",
-        "Lumedge",
-        "bommietommie",
-        "majorleyendo"
-      ]
-    },
     {
       "matchId": 477472884,
       "description": "NO NOO!!! 10x 3x bamboo rand civ",
@@ -501,16 +478,40 @@
       ]
     },
     {
+      "matchId": 491926274,
+      "description": "10x shared and 3x tech | Bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783890995,
+      "outcome": "win",
+      "preRating": 1013,
+      "postRating": 1028,
+      "eloChange": 15,
+      "civ": "Burgundians",
+      "teamAvgElo": 1020,
+      "opponentAvgElo": 984,
+      "teammates": [
+        "Chikna Raavan",
+        "Monk",
+        "ZaySol"
+      ],
+      "opponents": [
+        "Melody2030",
+        "Razaar",
+        "Albanks",
+        "erik"
+      ]
+    },
+    {
       "matchId": 492046613,
       "description": "i kun 10x3x 4v4s qun729084973",
       "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1783943979,
       "outcome": "win",
-      "preRating": 1013,
-      "postRating": 1030,
-      "eloChange": 17,
+      "preRating": 1028,
+      "postRating": 1044,
+      "eloChange": 16,
       "civ": "Hindustanis",
-      "teamAvgElo": 1062,
+      "teamAvgElo": 1066,
       "opponentAvgElo": 1030,
       "teammates": [
         "i kun 2.5",
@@ -530,11 +531,11 @@
       "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1783945527,
       "outcome": "win",
-      "preRating": 1030,
-      "postRating": 1050,
-      "eloChange": 20,
+      "preRating": 1044,
+      "postRating": 1063,
+      "eloChange": 19,
       "civ": "Incas",
-      "teamAvgElo": 987,
+      "teamAvgElo": 994,
       "opponentAvgElo": 1114,
       "teammates": [
         "Monk",

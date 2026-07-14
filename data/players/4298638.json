@@ -1,11 +1,11 @@
 {
   "profile_id": 4298638,
   "alias": "THE VIPER PERUANO",
-  "rating": 1011,
+  "rating": 989,
   "wins": 32,
-  "losses": 38,
-  "gamesCount": 70,
-  "winRate": 46,
+  "losses": 40,
+  "gamesCount": 72,
+  "winRate": 44,
   "lastPlayedAt": 1783989435,
   "country": "pe",
   "merged_ids": [],
@@ -80,57 +80,11 @@
     986,
     974,
     994,
-    1011
+    984,
+    971,
+    989
   ],
   "recentMatches": [
-    {
-      "matchId": 451412055,
-      "description": "10x+3xtech no noob",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1769474580,
-      "outcome": "loss",
-      "preRating": 983,
-      "postRating": 971,
-      "eloChange": -12,
-      "civ": "Dravidians",
-      "teamAvgElo": 1035,
-      "opponentAvgElo": 1063,
-      "teammates": [
-        "OK",
-        "罰Kojima罪",
-        "Poliwag"
-      ],
-      "opponents": [
-        "DEVILZ",
-        "QuasarHerzog555",
-        "[S33]ff",
-        "Nordsee"
-      ]
-    },
-    {
-      "matchId": 453651339,
-      "description": "BAMBOO NOTHING 3X10X",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1770229560,
-      "outcome": "win",
-      "preRating": 971,
-      "postRating": 990,
-      "eloChange": 19,
-      "civ": "Bulgarians",
-      "teamAvgElo": 1057,
-      "opponentAvgElo": 1043,
-      "teammates": [
-        "fxsound",
-        "[TSU] Red Cansky",
-        "km_wp"
-      ],
-      "opponents": [
-        "VÅGEN",
-        "kaka52pk",
-        "TopazSkate37557",
-        "Waryahay"
-      ]
-    },
     {
       "matchId": 455335944,
       "description": "10x 3x BAMBOO best lobby",
@@ -525,7 +479,7 @@
       "postRating": 994,
       "eloChange": 20,
       "civ": "Gurjaras",
-      "teamAvgElo": 997,
+      "teamAvgElo": 996,
       "opponentAvgElo": 1056,
       "teammates": [
         "[B] Zennith",
@@ -540,16 +494,64 @@
       ]
     },
     {
+      "matchId": 492155180,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783978557,
+      "outcome": "loss",
+      "preRating": 994,
+      "postRating": 984,
+      "eloChange": -10,
+      "civ": "Britons",
+      "teamAvgElo": 1021,
+      "opponentAvgElo": 1133,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "[BRE] Francis",
+        "Candy Burglar"
+      ],
+      "opponents": [
+        "TheRiceMan",
+        "Xinzzo",
+        "PIEROGI",
+        "Brotherman Bill"
+      ]
+    },
+    {
+      "matchId": 492182010,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783988102,
+      "outcome": "loss",
+      "preRating": 984,
+      "postRating": 971,
+      "eloChange": -13,
+      "civ": "Celts",
+      "teamAvgElo": 994,
+      "opponentAvgElo": 1058,
+      "teammates": [
+        "Nigerian Farmer",
+        "Tiny Hands",
+        "Tortrix"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "Brotherman Bill",
+        "Terry",
+        "Ode To  A Pineapple"
+      ]
+    },
+    {
       "matchId": 492185941,
       "description": "10x_3x_Bamboo_Nothing_Random",
       "mapname": "Bamboo Nothing v4 (BaLi)",
       "timestamp": 1783989435,
       "outcome": "win",
-      "preRating": 994,
-      "postRating": 1011,
-      "eloChange": 17,
+      "preRating": 971,
+      "postRating": 989,
+      "eloChange": 18,
       "civ": "Turks",
-      "teamAvgElo": 1051,
+      "teamAvgElo": 1059,
       "opponentAvgElo": 1005,
       "teammates": [
         "Contry",

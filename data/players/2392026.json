@@ -1,12 +1,12 @@
 {
   "profile_id": 2392026,
   "alias": "Herr Mitesch",
-  "rating": 1061,
+  "rating": 1043,
   "wins": 54,
-  "losses": 47,
-  "gamesCount": 101,
+  "losses": 48,
+  "gamesCount": 102,
   "winRate": 53,
-  "lastPlayedAt": 1783767568,
+  "lastPlayedAt": 1783982043,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,6 @@
     1055,
     1077,
     1099,
-    1113,
     1128,
     1103,
     1082,
@@ -35,6 +34,7 @@
     1078,
     1091,
     1102,
+    1117,
     1127,
     1139,
     1147,
@@ -60,7 +60,6 @@
     1047,
     1062,
     1048,
-    1063,
     1045,
     1026,
     1014,
@@ -84,6 +83,7 @@
     992,
     1011,
     1026,
+    1043,
     1025,
     1010,
     1023,
@@ -92,7 +92,6 @@
     1041,
     1057,
     1040,
-    1058,
     1072,
     1053,
     1039,
@@ -109,33 +108,10 @@
     1044,
     1061,
     1079,
-    1061
+    1061,
+    1043
   ],
   "recentMatches": [
-    {
-      "matchId": 461815759,
-      "description": "BAMBOO 10x - 3x  **NO BEGINNER",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1773079620,
-      "outcome": "win",
-      "preRating": 1041,
-      "postRating": 1057,
-      "eloChange": 16,
-      "civ": "Vietnamese",
-      "teamAvgElo": 1026,
-      "opponentAvgElo": 1032,
-      "teammates": [
-        "gabrieldemarmiesse",
-        "TioMg100",
-        "[S33]ff"
-      ],
-      "opponents": [
-        "TheCobra",
-        "TR.elephantman",
-        "majorleyendo",
-        "dRea"
-      ]
-    },
     {
       "matchId": 470248226,
       "description": "NONOOB! 10x 3x bamboo",
@@ -590,6 +566,30 @@
         "476055690",
         "SemiQuitt",
         "[Liiit] Zbyszek"
+      ]
+    },
+    {
+      "matchId": 492166009,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1783982043,
+      "outcome": "loss",
+      "preRating": 1061,
+      "postRating": 1043,
+      "eloChange": -18,
+      "civ": "Dravidians",
+      "teamAvgElo": 1048,
+      "opponentAvgElo": 1023,
+      "teammates": [
+        "jair_silva",
+        "Gasnápido",
+        "RaptorX"
+      ],
+      "opponents": [
+        "baianitro",
+        "Chirijiraden",
+        "自闭男孩",
+        "Manba Out"
       ]
     }
   ]

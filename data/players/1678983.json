@@ -1,12 +1,12 @@
 {
   "profile_id": 1678983,
   "alias": "The_DonMiguel",
-  "rating": 964,
+  "rating": 947,
   "wins": 7,
-  "losses": 11,
-  "gamesCount": 18,
-  "winRate": 39,
-  "lastPlayedAt": 1781075100,
+  "losses": 12,
+  "gamesCount": 19,
+  "winRate": 37,
+  "lastPlayedAt": 1783992676,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -28,7 +28,8 @@
     969,
     995,
     980,
-    964
+    964,
+    947
   ],
   "recentMatches": [
     {
@@ -461,6 +462,30 @@
         "Ivar The Rager",
         "CrazyFoxMan",
         "Myriad"
+      ]
+    },
+    {
+      "matchId": 492193377,
+      "description": "10x 3x bamboo nothing  turbo host here",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783992676,
+      "outcome": "loss",
+      "preRating": 964,
+      "postRating": 947,
+      "eloChange": -17,
+      "civ": "Cumans",
+      "teamAvgElo": 968,
+      "opponentAvgElo": 1010,
+      "teammates": [
+        "Tortrix",
+        "megusta",
+        "Makinaskee"
+      ],
+      "opponents": [
+        "gmc inspector",
+        "Optimus",
+        "WipiWi",
+        "乐平"
       ]
     }
   ]

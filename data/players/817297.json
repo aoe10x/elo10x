@@ -1,12 +1,12 @@
 {
   "profile_id": 817297,
   "alias": "ChiH",
-  "rating": 961,
-  "wins": 21,
+  "rating": 980,
+  "wins": 22,
   "losses": 29,
-  "gamesCount": 50,
-  "winRate": 42,
-  "lastPlayedAt": 1783887729,
+  "gamesCount": 51,
+  "winRate": 43,
+  "lastPlayedAt": 1783984637,
   "country": "ru",
   "merged_ids": [],
   "ratingHistory": [
@@ -60,33 +60,10 @@
     962,
     949,
     938,
-    961
+    961,
+    980
   ],
   "recentMatches": [
-    {
-      "matchId": 479215346,
-      "description": "IDIOT TRASH STUPID ONLY!!!10x 3x bamboo rand civ",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1779314100,
-      "outcome": "win",
-      "preRating": 1028,
-      "postRating": 1042,
-      "eloChange": 14,
-      "civ": "Portuguese",
-      "teamAvgElo": 1066,
-      "opponentAvgElo": 985,
-      "teammates": [
-        "fxsound",
-        "H0LLy2610",
-        "Lietuva_"
-      ],
-      "opponents": [
-        "gvv.vadim",
-        "Emusan",
-        "Boocer",
-        "kekekeya"
-      ]
-    },
     {
       "matchId": 479219281,
       "description": "+10x+3xtech   no noob",
@@ -541,6 +518,30 @@
         "BigAl",
         "Mad08jojo",
         "McKrakfejs"
+      ]
+    },
+    {
+      "matchId": 492173115,
+      "description": "10x 3x Bamboo Nothing random civ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783984637,
+      "outcome": "win",
+      "preRating": 961,
+      "postRating": 980,
+      "eloChange": 19,
+      "civ": "Saracens",
+      "teamAvgElo": 1014,
+      "opponentAvgElo": 1016,
+      "teammates": [
+        "Brotherman Bill",
+        "PNAL | CaligariClown",
+        "RAOV"
+      ],
+      "opponents": [
+        "skoolied",
+        "TheZeos",
+        "Your Ego",
+        "Manba Out"
       ]
     }
   ]

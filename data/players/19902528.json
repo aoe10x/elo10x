@@ -1,12 +1,12 @@
 {
   "profile_id": 19902528,
   "alias": "TheZeos",
-  "rating": 879,
+  "rating": 869,
   "wins": 10,
-  "losses": 21,
-  "gamesCount": 31,
-  "winRate": 32,
-  "lastPlayedAt": 1783981252,
+  "losses": 22,
+  "gamesCount": 32,
+  "winRate": 31,
+  "lastPlayedAt": 1783984637,
   "country": "cl",
   "merged_ids": [
     12851136,
@@ -44,33 +44,10 @@
     908,
     898,
     889,
-    879
+    879,
+    869
   ],
   "recentMatches": [
-    {
-      "matchId": 392502163,
-      "description": "10x Shared Turbo Tunnel",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1747226220,
-      "outcome": "loss",
-      "preRating": 1026,
-      "postRating": 997,
-      "eloChange": -29,
-      "civ": "Spanish",
-      "teamAvgElo": 1027,
-      "opponentAvgElo": 1049,
-      "teammates": [
-        "12345",
-        "NoLifeKing",
-        "Sadek"
-      ],
-      "opponents": [
-        "{R} Parry",
-        "tpa33.19.05.024",
-        "NPG | DEFENSIVO",
-        "安全原子"
-      ]
-    },
     {
       "matchId": 392692586,
       "description": "10x 3x - bambo - 10xshared.com",
@@ -513,8 +490,8 @@
       "postRating": 879,
       "eloChange": -10,
       "civ": "Poles",
-      "teamAvgElo": 991,
-      "opponentAvgElo": 1025,
+      "teamAvgElo": 988,
+      "opponentAvgElo": 1028,
       "teammates": [
         "Ode To  A Pineapple",
         "CosteLoco",
@@ -525,6 +502,30 @@
         "399 the Grizzly Bear - RIP <3",
         "Vulkan",
         "alexw"
+      ]
+    },
+    {
+      "matchId": 492173115,
+      "description": "10x 3x Bamboo Nothing random civ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783984637,
+      "outcome": "loss",
+      "preRating": 879,
+      "postRating": 869,
+      "eloChange": -10,
+      "civ": "Malians",
+      "teamAvgElo": 1016,
+      "opponentAvgElo": 1014,
+      "teammates": [
+        "skoolied",
+        "Your Ego",
+        "Manba Out"
+      ],
+      "opponents": [
+        "Brotherman Bill",
+        "ChiH",
+        "PNAL | CaligariClown",
+        "RAOV"
       ]
     }
   ]

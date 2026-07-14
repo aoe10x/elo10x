@@ -1,12 +1,12 @@
 {
   "profile_id": 3432985,
   "alias": "Melody2030",
-  "rating": 1000,
+  "rating": 985,
   "wins": 50,
-  "losses": 54,
-  "gamesCount": 104,
+  "losses": 55,
+  "gamesCount": 105,
   "winRate": 48,
-  "lastPlayedAt": 1783467415,
+  "lastPlayedAt": 1783890995,
   "country": "es",
   "merged_ids": [],
   "ratingHistory": [
@@ -19,7 +19,7 @@
     1003,
     1046,
     1010,
-    970,
+    940,
     915,
     891,
     926,
@@ -35,11 +35,11 @@
     937,
     956,
     976,
-    960,
     946,
     965,
     982,
     997,
+    1010,
     998,
     982,
     1002,
@@ -51,7 +51,6 @@
     1006,
     1022,
     1038,
-    1023,
     1009,
     1026,
     1041,
@@ -59,6 +58,7 @@
     1069,
     1054,
     1036,
+    1051,
     1066,
     1081,
     1061,
@@ -68,7 +68,6 @@
     1085,
     1067,
     1050,
-    1065,
     1050,
     1030,
     1045,
@@ -79,12 +78,12 @@
     1052,
     1033,
     1017,
+    1000,
     984,
     972,
     956,
     946,
     933,
-    919,
     941,
     929,
     949,
@@ -99,8 +98,8 @@
     1021,
     1007,
     992,
+    1010,
     1024,
-    1007,
     995,
     1015,
     998,
@@ -109,33 +108,10 @@
     1013,
     1000,
     1017,
-    1000
+    1000,
+    985
   ],
   "recentMatches": [
-    {
-      "matchId": 431767356,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1762675680,
-      "outcome": "loss",
-      "preRating": 975,
-      "postRating": 964,
-      "eloChange": -11,
-      "civ": "Unknown",
-      "teamAvgElo": 1072,
-      "opponentAvgElo": 1095,
-      "teammates": [
-        "nooblet3300",
-        "KryZal",
-        "Bryce Coolguy"
-      ],
-      "opponents": [
-        "Clean",
-        "Apostate of Hate",
-        "kiggless",
-        "DrompferFTW"
-      ]
-    },
     {
       "matchId": 431770631,
       "description": "256x 10x Forest Nothing",
@@ -590,6 +566,30 @@
         "rarekittenz67",
         "jair_silva",
         "obito123"
+      ]
+    },
+    {
+      "matchId": 491926274,
+      "description": "10x shared and 3x tech | Bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783890995,
+      "outcome": "loss",
+      "preRating": 1000,
+      "postRating": 985,
+      "eloChange": -15,
+      "civ": "Koreans",
+      "teamAvgElo": 984,
+      "opponentAvgElo": 1020,
+      "teammates": [
+        "Razaar",
+        "Albanks",
+        "erik"
+      ],
+      "opponents": [
+        "Chikna Raavan",
+        "Monk",
+        "Lordetion",
+        "ZaySol"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 474932,
   "alias": "dazaetgb",
-  "rating": 951,
+  "rating": 941,
   "wins": 7,
-  "losses": 12,
-  "gamesCount": 19,
-  "winRate": 37,
-  "lastPlayedAt": 1783498500,
+  "losses": 13,
+  "gamesCount": 20,
+  "winRate": 35,
+  "lastPlayedAt": 1784004818,
   "country": "mx",
   "merged_ids": [],
   "ratingHistory": [
@@ -29,7 +29,8 @@
     965,
     946,
     927,
-    951
+    951,
+    941
   ],
   "recentMatches": [
     {
@@ -486,6 +487,30 @@
         "Wozbo",
         "bigjames",
         "Apocalypto"
+      ]
+    },
+    {
+      "matchId": 492225230,
+      "description": "10x3x Bamboo Nothing ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784004818,
+      "outcome": "loss",
+      "preRating": 951,
+      "postRating": 941,
+      "eloChange": -10,
+      "civ": "Koreans",
+      "teamAvgElo": 1032,
+      "opponentAvgElo": 1118,
+      "teammates": [
+        "TJ",
+        "Keishi",
+        "BigAl"
+      ],
+      "opponents": [
+        "typ53b90",
+        "田瘾犯了",
+        "hoderebus",
+        "bigabyte"
       ]
     }
   ]

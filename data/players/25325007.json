@@ -1,12 +1,12 @@
 {
   "profile_id": 25325007,
   "alias": "Master.Ji.ro.714",
-  "rating": 960,
+  "rating": 948,
   "wins": 9,
-  "losses": 14,
-  "gamesCount": 23,
-  "winRate": 39,
-  "lastPlayedAt": 1783700541,
+  "losses": 15,
+  "gamesCount": 24,
+  "winRate": 38,
+  "lastPlayedAt": 1783996551,
   "country": "co",
   "merged_ids": [
     13640611,
@@ -36,33 +36,10 @@
     936,
     955,
     942,
-    960
+    960,
+    948
   ],
   "recentMatches": [
-    {
-      "matchId": 475608811,
-      "description": "BAMBOO 10x3xtech",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1778026080,
-      "outcome": "loss",
-      "preRating": 951,
-      "postRating": 913,
-      "eloChange": -38,
-      "civ": "Gurjaras",
-      "teamAvgElo": 1104,
-      "opponentAvgElo": 992,
-      "teammates": [
-        "iamatthe.hell",
-        "Max",
-        "I am KSG"
-      ],
-      "opponents": [
-        "QuasarHerzog555",
-        "mgmanager",
-        "NothingAtAll11",
-        "Goose"
-      ]
-    },
     {
       "matchId": 475611959,
       "description": "BAMBOO 10x3xtech",
@@ -517,6 +494,30 @@
         "Eemeli",
         "Howe",
         "YUJIN"
+      ]
+    },
+    {
+      "matchId": 492205946,
+      "description": "10x 3x Bamboo (no laggers)",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1783996551,
+      "outcome": "loss",
+      "preRating": 960,
+      "postRating": 948,
+      "eloChange": -12,
+      "civ": "Vikings",
+      "teamAvgElo": 995,
+      "opponentAvgElo": 1042,
+      "teammates": [
+        "Scipio",
+        "Not a Wizard",
+        "[B] Cannino"
+      ],
+      "opponents": [
+        "Makinaskee",
+        "Monkeymonk",
+        "adrian",
+        "duckbuildperson"
       ]
     }
   ]

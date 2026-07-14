@@ -1,12 +1,12 @@
 {
   "profile_id": 332079,
   "alias": "mrtickles22",
-  "rating": 1017,
-  "wins": 37,
-  "losses": 34,
-  "gamesCount": 71,
-  "winRate": 52,
-  "lastPlayedAt": 1783758886,
+  "rating": 1006,
+  "wins": 38,
+  "losses": 36,
+  "gamesCount": 74,
+  "winRate": 51,
+  "lastPlayedAt": 1784006547,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -81,81 +81,12 @@
     991,
     980,
     999,
-    1017
+    1017,
+    1035,
+    1021,
+    1006
   ],
   "recentMatches": [
-    {
-      "matchId": 448184575,
-      "description": "10x Shared civ 4v4",
-      "mapname": "Arena",
-      "timestamp": 1768396320,
-      "outcome": "win",
-      "preRating": 1045,
-      "postRating": 1060,
-      "eloChange": 15,
-      "civ": "Goths",
-      "teamAvgElo": 989,
-      "opponentAvgElo": 1032,
-      "teammates": [
-        "GJ Euphory",
-        "fxsound",
-        "SeeYouTomorrow"
-      ],
-      "opponents": [
-        "Mel Gibson",
-        "dollar store jesus",
-        "Joey",
-        "Anne Flank"
-      ]
-    },
-    {
-      "matchId": 452550491,
-      "description": "10x 3x BAMBOO best lobby",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1769872680,
-      "outcome": "loss",
-      "preRating": 1060,
-      "postRating": 1044,
-      "eloChange": -16,
-      "civ": "Incas",
-      "teamAvgElo": 1047,
-      "opponentAvgElo": 1063,
-      "teammates": [
-        "Kombative",
-        "typ53b90",
-        "kekekeya"
-      ],
-      "opponents": [
-        "Keishi",
-        "Nimu.-",
-        "Tiny Hands",
-        "mozu5"
-      ]
-    },
-    {
-      "matchId": 452558834,
-      "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1769876520,
-      "outcome": "win",
-      "preRating": 1044,
-      "postRating": 1060,
-      "eloChange": 16,
-      "civ": "Aztecs",
-      "teamAvgElo": 1080,
-      "opponentAvgElo": 1049,
-      "teammates": [
-        "老K",
-        "GiGi",
-        "abatyse6533"
-      ],
-      "opponents": [
-        "jelliebean11",
-        "SAVAGEWATER",
-        "Rybo",
-        "LiamakaLiam"
-      ]
-    },
     {
       "matchId": 461501767,
       "description": "x3x10x Shared (PQ3.1x11 Qualty daycare)",
@@ -526,7 +457,7 @@
       "postRating": 999,
       "eloChange": 19,
       "civ": "Ethiopians",
-      "teamAvgElo": 997,
+      "teamAvgElo": 996,
       "opponentAvgElo": 1056,
       "teammates": [
         "[B] Zennith",
@@ -550,7 +481,7 @@
       "postRating": 1017,
       "eloChange": 18,
       "civ": "Japanese",
-      "teamAvgElo": 1009,
+      "teamAvgElo": 1010,
       "opponentAvgElo": 1037,
       "teammates": [
         "Chuckyllo4417",
@@ -562,6 +493,78 @@
         "yimacs_yoyoyo",
         "AZZ",
         "勇战到抵"
+      ]
+    },
+    {
+      "matchId": 492221184,
+      "description": "10x3x Bamboo Nothing ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784002756,
+      "outcome": "win",
+      "preRating": 1017,
+      "postRating": 1035,
+      "eloChange": 18,
+      "civ": "Vikings",
+      "teamAvgElo": 1001,
+      "opponentAvgElo": 1057,
+      "teammates": [
+        "TJ",
+        "gmc inspector",
+        "Maxim Liann"
+      ],
+      "opponents": [
+        "Sundev",
+        "Keishi",
+        "baianitro",
+        "侯傻傻ᔦఠఠᔨ shasha"
+      ]
+    },
+    {
+      "matchId": 492224484,
+      "description": "10x 3x Bamboo best lobby",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784004611,
+      "outcome": "loss",
+      "preRating": 1035,
+      "postRating": 1021,
+      "eloChange": -14,
+      "civ": "Wei",
+      "teamAvgElo": 1092,
+      "opponentAvgElo": 1072,
+      "teammates": [
+        "Keishi",
+        "gmc inspector",
+        "田瘾犯了"
+      ],
+      "opponents": [
+        "typ53b90",
+        "bigabyte",
+        "BigAl",
+        "hoderebus"
+      ]
+    },
+    {
+      "matchId": 492228017,
+      "description": "10x 3x Bamboo best lobby",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784006547,
+      "outcome": "loss",
+      "preRating": 1021,
+      "postRating": 1006,
+      "eloChange": -15,
+      "civ": "Wu",
+      "teamAvgElo": 1029,
+      "opponentAvgElo": 1053,
+      "teammates": [
+        "babeleo",
+        "The Cobra Brothers",
+        "476055690"
+      ],
+      "opponents": [
+        "typ53b90",
+        "Keishi",
+        "bigabyte",
+        "[B] Cannino"
       ]
     }
   ]

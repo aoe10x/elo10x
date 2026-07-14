@@ -1,11 +1,11 @@
 {
   "profile_id": 6279739,
   "alias": "Chikna Raavan",
-  "rating": 1067,
-  "wins": 48,
+  "rating": 1079,
+  "wins": 49,
   "losses": 44,
-  "gamesCount": 92,
-  "winRate": 52,
+  "gamesCount": 93,
+  "winRate": 53,
   "lastPlayedAt": 1783978080,
   "country": "in",
   "merged_ids": [],
@@ -99,36 +99,13 @@
     1038,
     1021,
     1038,
-    1055,
-    1040,
-    1054,
-    1067
+    1052,
+    1068,
+    1052,
+    1066,
+    1079
   ],
   "recentMatches": [
-    {
-      "matchId": 491557401,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
-      "timestamp": 1783774628,
-      "outcome": "loss",
-      "preRating": 1060,
-      "postRating": 1046,
-      "eloChange": -14,
-      "civ": "Teutons",
-      "teamAvgElo": 1061,
-      "opponentAvgElo": 1109,
-      "teammates": [
-        "GrandUni",
-        "NoxMortus",
-        "babeleo"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "fxsound",
-        "shining star",
-        "ototomato"
-      ]
-    },
     {
       "matchId": 491564713,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -356,7 +333,7 @@
       "eloChange": -16,
       "civ": "Shu",
       "teamAvgElo": 1058,
-      "opponentAvgElo": 1062,
+      "opponentAvgElo": 1061,
       "teammates": [
         "{R} Parry",
         "edalmavuz",
@@ -451,7 +428,7 @@
       "postRating": 1021,
       "eloChange": -17,
       "civ": "Japanese",
-      "teamAvgElo": 1072,
+      "teamAvgElo": 1074,
       "opponentAvgElo": 1024,
       "teammates": [
         "NoAgendaPODCAST",
@@ -476,7 +453,7 @@
       "eloChange": 17,
       "civ": "Mongols",
       "teamAvgElo": 1060,
-      "opponentAvgElo": 1049,
+      "opponentAvgElo": 1051,
       "teammates": [
         "Paulichromatic",
         "Sensei",
@@ -490,16 +467,40 @@
       ]
     },
     {
+      "matchId": 491926274,
+      "description": "10x shared and 3x tech | Bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783890995,
+      "outcome": "win",
+      "preRating": 1038,
+      "postRating": 1052,
+      "eloChange": 14,
+      "civ": "Maya",
+      "teamAvgElo": 1020,
+      "opponentAvgElo": 984,
+      "teammates": [
+        "Monk",
+        "Lordetion",
+        "ZaySol"
+      ],
+      "opponents": [
+        "Melody2030",
+        "Razaar",
+        "Albanks",
+        "erik"
+      ]
+    },
+    {
       "matchId": 492081254,
       "description": "10x shared and 3x tech | Bamboo nothing",
       "mapname": "BAMBOO NOTHING - SCORPYON DE",
       "timestamp": 1783956572,
       "outcome": "win",
-      "preRating": 1038,
-      "postRating": 1055,
-      "eloChange": 17,
+      "preRating": 1052,
+      "postRating": 1068,
+      "eloChange": 16,
       "civ": "Sicilians",
-      "teamAvgElo": 1007,
+      "teamAvgElo": 1023,
       "opponentAvgElo": 1057,
       "teammates": [
         "Not a Wizard",
@@ -519,11 +520,11 @@
       "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1783964251,
       "outcome": "loss",
-      "preRating": 1055,
-      "postRating": 1040,
-      "eloChange": -15,
+      "preRating": 1068,
+      "postRating": 1052,
+      "eloChange": -16,
       "civ": "Berbers",
-      "teamAvgElo": 1053,
+      "teamAvgElo": 1056,
       "opponentAvgElo": 1074,
       "teammates": [
         "Optimus",
@@ -543,11 +544,11 @@
       "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1783974943,
       "outcome": "win",
-      "preRating": 1040,
-      "postRating": 1054,
+      "preRating": 1052,
+      "postRating": 1066,
       "eloChange": 14,
       "civ": "Tatars",
-      "teamAvgElo": 1025,
+      "teamAvgElo": 1028,
       "opponentAvgElo": 999,
       "teammates": [
         "bischofl",
@@ -567,11 +568,11 @@
       "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1783978080,
       "outcome": "win",
-      "preRating": 1054,
-      "postRating": 1067,
+      "preRating": 1066,
+      "postRating": 1079,
       "eloChange": 13,
       "civ": "Slavs",
-      "teamAvgElo": 1006,
+      "teamAvgElo": 1010,
       "opponentAvgElo": 998,
       "teammates": [
         "疯狂的电脑",

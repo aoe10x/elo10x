@@ -1,12 +1,12 @@
 {
   "profile_id": 1523130,
   "alias": "Wimac",
-  "rating": 1010,
+  "rating": 995,
   "wins": 31,
-  "losses": 33,
-  "gamesCount": 64,
+  "losses": 34,
+  "gamesCount": 65,
   "winRate": 48,
-  "lastPlayedAt": 1783982597,
+  "lastPlayedAt": 1783983269,
   "country": "co",
   "merged_ids": [],
   "ratingHistory": [
@@ -74,33 +74,10 @@
     986,
     971,
     990,
-    1010
+    1010,
+    995
   ],
   "recentMatches": [
-    {
-      "matchId": 478578520,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1779068220,
-      "outcome": "loss",
-      "preRating": 1065,
-      "postRating": 1048,
-      "eloChange": -17,
-      "civ": "Unknown",
-      "teamAvgElo": 1035,
-      "opponentAvgElo": 1045,
-      "teammates": [
-        "30Wololo",
-        "nooblet3300",
-        "Ortys"
-      ],
-      "opponents": [
-        "wintre",
-        "Lietuva_",
-        "ElmoWithoutL",
-        "ncomgeek"
-      ]
-    },
     {
       "matchId": 478679579,
       "description": "10x Shared 3xTech Bamboo Nothing",
@@ -520,7 +497,7 @@
       "eloChange": 19,
       "civ": "Slavs",
       "teamAvgElo": 1043,
-      "opponentAvgElo": 1043,
+      "opponentAvgElo": 1034,
       "teammates": [
         "TheRiceMan",
         "Not a Wizard",
@@ -543,7 +520,7 @@
       "postRating": 1010,
       "eloChange": 20,
       "civ": "Wei",
-      "teamAvgElo": 1059,
+      "teamAvgElo": 1060,
       "opponentAvgElo": 1079,
       "teammates": [
         "TheRiceMan",
@@ -555,6 +532,30 @@
         "疯狂的电脑",
         "田瘾犯了",
         "Tavo"
+      ]
+    },
+    {
+      "matchId": 492169878,
+      "description": "10x 3x Bamboo Nothing random civ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1783983269,
+      "outcome": "loss",
+      "preRating": 1010,
+      "postRating": 995,
+      "eloChange": -15,
+      "civ": "Huns",
+      "teamAvgElo": 1051,
+      "opponentAvgElo": 1037,
+      "teammates": [
+        "Parenquima",
+        "PNAL | CaligariClown",
+        "CosteLoco"
+      ],
+      "opponents": [
+        "skoolied",
+        "Chirijiraden",
+        "Manba Out",
+        "Brotherman Bill"
       ]
     }
   ]
