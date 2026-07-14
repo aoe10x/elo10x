@@ -18,11 +18,13 @@
     "elo": "node src/cli.ts elo",
     "dev": "statikk dist --port 3000",
     "deploy": "gh-pages --dist dist --no-history --message \"chore: deploy static leaderboard [skip ci]\"",
-    "preflight": "pnpm run typecheck && pnpm run test"
+    "lint": "oxlint --config .oxlintrc.json",
+    "preflight": "pnpm run lint && pnpm run typecheck && pnpm run test"
   },
   "devDependencies": {
     "@types/node": "^22.13.0",
     "gh-pages": "^6.3.0",
+    "oxlint": "^1.74.0",
     "statikk": "^3.0.0",
     "typescript": "^5.7.3"
   }
