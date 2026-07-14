@@ -1,12 +1,13 @@
 import { execSync } from 'node:child_process';
 import { JsonDatabase } from '../db.ts';
-import type { Match, PlayerProfile, PlayerCrawlManifest } from '../types.ts';
+import type { Match, PlayerProfile, PlayerCrawlManifest, MatchPlayer } from '../types.ts';
+import { tupleToMatch, type MatchTuple } from '../matches_tuple.ts';
 
 function getGitFileContent(ref: string, relativePath: string): string {
   try {
     return execSync(`git show ${ref}:${relativePath}`, { encoding: 'utf-8', maxBuffer: 100 * 1024 * 1024 });
-  } catch (err: any) {
-    console.warn(`Warning: Could not read ${relativePath} from ${ref}: ${err.message}`);
+  } catch (err) {
+    console.warn(`Warning: Could not read ${relativePath} from ${ref}: ${(err as Error).message}`);
     return '';
   }
 }
@@ -22,8 +23,8 @@ function parseJsonArrayLines<T>(content: string): T[] {
     if (cleanLine === 'null') continue;
     try {
       items.push(JSON.parse(cleanLine));
-    } catch (err: any) {
-      console.error('Failed to parse line:', cleanLine, err.message);
+    } catch (err) {
+      console.error('Failed to parse line:', cleanLine, (err as Error).message);
     }
   }
   return items;
@@ -38,25 +39,7 @@ export function mergeDatabasesContent(
     manifestJson: string;
   }
 ): { addedMatches: number } {
-  // 1. Merge matches
-  const incomingMatches = parseJsonArrayLines<Match>(incoming.matchesJson);
-  let incomingNewMatches = 0;
-  for (const m of incomingMatches) {
-    if (m.players) {
-      for (const p of m.players) {
-        if ((p as any).race_id !== undefined) {
-          p.civ_id = p.civ_id || (p as any).race_id;
-          delete (p as any).race_id;
-        }
-      }
-    }
-
-    const isNew = !db.hasMatch(m.id);
-    db.addMatch(m);
-    if (isNew) incomingNewMatches++;
-  }
-
-  // 2. Merge profiles
+  // 1. Merge profiles first
   const incomingProfiles = parseJsonArrayLines<PlayerProfile>(incoming.profilesJson);
   for (const p of incomingProfiles) {
     const existing = db.getProfile(p.profile_id);
@@ -72,6 +55,35 @@ export function mergeDatabasesContent(
     }
   }
 
+  interface LegacyMatchPlayer extends MatchPlayer {
+    race_id?: number;
+  }
+
+  // 2. Merge matches second
+  const incomingMatches = parseJsonArrayLines<Match | MatchTuple>(incoming.matchesJson);
+  let incomingNewMatches = 0;
+  for (const mData of incomingMatches) {
+    let m: Match;
+    if (Array.isArray(mData)) {
+      m = tupleToMatch(mData, id => db.getProfile(id)?.alias);
+    } else {
+      m = mData;
+      if (m.players) {
+        for (const p of m.players) {
+          const lp = p as LegacyMatchPlayer;
+          if (lp.race_id !== undefined) {
+            lp.civ_id = lp.civ_id || lp.race_id;
+            delete lp.race_id;
+          }
+        }
+      }
+    }
+
+    const isNew = !db.hasMatch(m.id);
+    db.addMatch(m);
+    if (isNew) incomingNewMatches++;
+  }
+
   // 3. Merge crawl state
   if (incoming.stateJson) {
     try {
@@ -82,15 +94,15 @@ export function mergeDatabasesContent(
       if (state.crawled_profiles) {
         for (const [idStr, time] of Object.entries(state.crawled_profiles)) {
           const profileId = Number(idStr);
-          const localTime = (db as any).crawledProfiles.get(profileId) || 0;
+          const localTime = db.crawledProfiles.get(profileId) || 0;
           const incomingTime = Number(time);
           if (incomingTime > localTime) {
-            (db as any).crawledProfiles.set(profileId, incomingTime);
+            db.crawledProfiles.set(profileId, incomingTime);
           }
         }
       }
-    } catch (err: any) {
-      console.error('Failed to merge crawl state:', err.message);
+    } catch (err) {
+      console.error('Failed to merge crawl state:', (err as Error).message);
     }
   }
 
@@ -129,8 +141,8 @@ export function mergeDatabasesContent(
           }
         }
       }
-    } catch (err: any) {
-      console.error('Failed to merge crawl manifest:', err.message);
+    } catch (err) {
+      console.error('Failed to merge crawl manifest:', (err as Error).message);
     }
   }
 

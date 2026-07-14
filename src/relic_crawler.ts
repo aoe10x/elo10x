@@ -44,8 +44,8 @@ function decodeOptions(optionsB64: string | undefined): Record<string, string> {
       }
     }
     return options;
-  } catch (err: any) {
-    console.warn('Failed to parse match options string:', err.message);
+  } catch (err) {
+    console.warn('Failed to parse match options string:', (err as Error).message);
     return {};
   }
 }
@@ -162,11 +162,15 @@ export class RelicCrawler {
           console.warn(`Failed to fetch lobbies from ${url}: ${response.statusText}`);
           return;
         }
-        const data = await response.json() as any;
+        interface Aoe10xLobbiesResponse {
+          lobbies?: Lobby[];
+          games?: { players?: { profileId?: number; name?: string; country?: string }[] }[];
+        }
+        const data = await response.json() as Aoe10xLobbiesResponse;
         
         // 1. Process lobbies structure
         if (data.lobbies && Array.isArray(data.lobbies)) {
-          for (const lobby of data.lobbies as Lobby[]) {
+          for (const lobby of data.lobbies) {
             if (lobby.host && lobby.host.profileId) {
               seedIds.push(lobby.host.profileId);
               this.db.addProfile({
@@ -200,15 +204,15 @@ export class RelicCrawler {
                   this.db.addProfile({
                     profile_id: p.profileId,
                     alias: p.name || `Player_${p.profileId}`,
-                    country: p.country
+                    country: p.country || 'Unknown'
                   });
                 }
               }
             }
           }
         }
-      } catch (err: any) {
-        console.error(`Error during lobby seeding from ${url}:`, err.message);
+      } catch (err) {
+        console.error(`Error during lobby seeding from ${url}:`, (err as Error).message);
       }
     };
 
@@ -260,7 +264,34 @@ export class RelicCrawler {
         return { success: false, newMatchesCount: 0 };
       }
 
-      const data = await response.json() as any;
+      interface RelicProfile {
+        profile_id: number;
+        alias?: string;
+        country?: string;
+      }
+      interface RelicMatchHistoryStat {
+        id: number;
+        creator_profile_id?: number;
+        mapname?: string;
+        maxplayers?: number;
+        matchtype_id?: number;
+        description?: string;
+        startgametime: number;
+        completiontime: number;
+        options?: string;
+        gamemod_id?: number;
+        matchhistoryreportresults?: {
+          profile_id: number;
+          teamid: number;
+          resulttype: number;
+          civilization_id: number;
+        }[];
+      }
+      interface RelicHistoryResponse {
+        profiles?: RelicProfile[];
+        matchHistoryStats?: RelicMatchHistoryStat[];
+      }
+      const data = await response.json() as RelicHistoryResponse;
 
       // 1. Extract and cache all profile mappings found in this API response
       const profilesMap = new Map<number, PlayerProfile>();
@@ -415,8 +446,8 @@ export class RelicCrawler {
       }
 
       return { success: true, newMatchesCount: new10xMatchCount };
-    } catch (err: any) {
-      console.error(`Error crawling batch of players:`, err.message);
+    } catch (err) {
+      console.error(`Error crawling batch of players:`, (err as Error).message);
       return { success: false, newMatchesCount: 0 };
     }
   }

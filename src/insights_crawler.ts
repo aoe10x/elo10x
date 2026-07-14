@@ -18,7 +18,7 @@ export class InsightsCrawler {
         headers: { 'User-Agent': 'Mozilla/5.0 (AoE2 10x Elo Ranker; +https://rank.10xshared.com/)' }
       });
       if (res1.ok) {
-        const data = await res1.json() as any;
+        const data = await res1.json() as { lobbies?: { players?: { profileId?: number }[] }[] };
         if (data.lobbies && Array.isArray(data.lobbies)) {
           for (const lobby of data.lobbies) {
             if (lobby.players && Array.isArray(lobby.players)) {
@@ -35,7 +35,7 @@ export class InsightsCrawler {
         headers: { 'User-Agent': 'Mozilla/5.0 (AoE2 10x Elo Ranker; +https://rank.10xshared.com/)' }
       });
       if (res2.ok) {
-        const data = await res2.json() as any;
+        const data = await res2.json() as { live?: { players?: { profileId?: number }[] }[] };
         if (data.live && Array.isArray(data.live)) {
           for (const game of data.live) {
             if (game.players && Array.isArray(game.players)) {
@@ -46,8 +46,8 @@ export class InsightsCrawler {
           }
         }
       }
-    } catch (err: any) {
-      console.error('Failed to fetch live profiles:', err.message);
+    } catch (err) {
+      console.error('Failed to fetch live profiles:', (err as Error).message);
     }
 
     const uniqueLive = [...new Set(livePlayerIds)];
@@ -168,8 +168,8 @@ export class InsightsCrawler {
       const result = await this.scraper.scrapePlayersBatch(eligibleProfileIds, 1, 1);
       crawledThisSession = result.crawled;
       totalNewMatchesAdded = result.added;
-    } catch (err: any) {
-      console.error('Error during Insights crawl session:', err.message);
+    } catch (err) {
+      console.error('Error during Insights crawl session:', (err as Error).message);
     }
 
     await this.db.save();

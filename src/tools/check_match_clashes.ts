@@ -34,8 +34,6 @@ async function main() {
   
   let conflictCount = 0;
   for (const m of matches) {
-    const visibleAliases = m.players.map((p: any) => p.alias);
-    
     // Check if any clashing alias appears multiple times in this match
     // either via different profile IDs or same profile ID
     const aliasCounts = new Map<string, number>();

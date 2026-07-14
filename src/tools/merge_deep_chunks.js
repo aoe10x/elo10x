@@ -12,7 +12,7 @@
  */
 
 import fs from 'fs/promises';
-import { existsSync, readdirSync } from 'fs';
+import { readdirSync } from 'fs';
 import path from 'path';
 import { JsonDatabase } from '../db.ts';
 import { buildMatchFingerprint } from '../match_fingerprint.ts';
