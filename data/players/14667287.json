@@ -1,12 +1,12 @@
 {
   "profile_id": 14667287,
   "alias": "KhasminC",
-  "rating": 1061,
+  "rating": 1046,
   "wins": 37,
-  "losses": 45,
-  "gamesCount": 82,
+  "losses": 46,
+  "gamesCount": 83,
   "winRate": 45,
-  "lastPlayedAt": 1784032958,
+  "lastPlayedAt": 1784041691,
   "country": "ro",
   "merged_ids": [
     12171150,
@@ -95,33 +95,10 @@
     1078,
     1093,
     1076,
-    1061
+    1061,
+    1046
   ],
   "recentMatches": [
-    {
-      "matchId": 487992298,
-      "description": "BAMBOO 10x3xtech",
-      "mapname": "my map",
-      "timestamp": 1782407072,
-      "outcome": "win",
-      "preRating": 959,
-      "postRating": 980,
-      "eloChange": 21,
-      "civ": "Poles",
-      "teamAvgElo": 1034,
-      "opponentAvgElo": 1082,
-      "teammates": [
-        "wurst456",
-        "omnomnomnivore",
-        "El Barto"
-      ],
-      "opponents": [
-        "iamatthe.hell",
-        "konishika",
-        "Wil",
-        "McKrakfejs"
-      ]
-    },
     {
       "matchId": 488674779,
       "description": "10x 3x bamboo NO IDIOT",
@@ -576,6 +553,30 @@
         "pandalam",
         "Lykerya",
         "可爱小奇犽"
+      ]
+    },
+    {
+      "matchId": 492297847,
+      "description": "+10x+3xtech   no noob ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784041691,
+      "outcome": "loss",
+      "preRating": 1061,
+      "postRating": 1046,
+      "eloChange": -15,
+      "civ": "Shu",
+      "teamAvgElo": 1058,
+      "opponentAvgElo": 1081,
+      "teammates": [
+        "拍车面前人人平等",
+        "OK",
+        "G"
+      ],
+      "opponents": [
+        "tonkatumura",
+        "Chuckyllo4417",
+        "The Cobra Brothers",
+        "iamatthe.hell"
       ]
     }
   ]
