@@ -211,9 +211,6 @@ export class Aoe2InsightsScraper {
     return new Promise<{ crawled: number; added: number }>((resolve, reject) => {
       const cleanupBrowser = async () => {
         chromeProcess.kill();
-        try {
-          await fs.rm(userDataDir, { recursive: true, force: true });
-        } catch {}
       };
 
       ws.onopen = async () => {
