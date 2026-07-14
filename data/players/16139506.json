@@ -1,12 +1,12 @@
 {
   "profile_id": 16139506,
   "alias": "GJ Euphory",
-  "rating": 959,
-  "wins": 20,
-  "losses": 27,
-  "gamesCount": 47,
+  "rating": 964,
+  "wins": 21,
+  "losses": 28,
+  "gamesCount": 49,
   "winRate": 43,
-  "lastPlayedAt": 1783629502,
+  "lastPlayedAt": 1784049713,
   "country": "pe",
   "merged_ids": [
     12999252,
@@ -60,57 +60,11 @@
     964,
     981,
     971,
-    959
+    959,
+    977,
+    964
   ],
   "recentMatches": [
-    {
-      "matchId": 416020368,
-      "description": "10x 3x Shared Bamboo",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1756564800,
-      "outcome": "loss",
-      "preRating": 1018,
-      "postRating": 1003,
-      "eloChange": -15,
-      "civ": "Unknown",
-      "teamAvgElo": 977,
-      "opponentAvgElo": 1040,
-      "teammates": [
-        "maarvlii19",
-        "maddymsg",
-        "Teun"
-      ],
-      "opponents": [
-        "typ53b90",
-        "konishika",
-        "Mizer",
-        "[B] Carlian"
-      ]
-    },
-    {
-      "matchId": 429513857,
-      "description": "10x 3x BAMBOO best lobby",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1761823980,
-      "outcome": "win",
-      "preRating": 1003,
-      "postRating": 1020,
-      "eloChange": 17,
-      "civ": "Unknown",
-      "teamAvgElo": 1046,
-      "opponentAvgElo": 1033,
-      "teammates": [
-        "typ53b90",
-        "田瘾犯了",
-        "tmrakshay"
-      ],
-      "opponents": [
-        "major_myth",
-        "SAVAGEWATER",
-        "Imgonnadieyou",
-        "FAOse7en"
-      ]
-    },
     {
       "matchId": 442494973,
       "description": "10x 3x BAMBOO NOTHING",
@@ -541,6 +495,54 @@
         "Colonel Otto",
         "疯狂的电脑",
         "kiggless"
+      ]
+    },
+    {
+      "matchId": 492318960,
+      "description": "10x shared and 3x tech | Bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784048481,
+      "outcome": "win",
+      "preRating": 959,
+      "postRating": 977,
+      "eloChange": 18,
+      "civ": "Wu",
+      "teamAvgElo": 975,
+      "opponentAvgElo": 1009,
+      "teammates": [
+        "Eraser88",
+        "Consume Product",
+        "MnK Ultra"
+      ],
+      "opponents": [
+        "Chikna Raavan",
+        "schrubber",
+        "teyiiip",
+        "Makinaskee"
+      ]
+    },
+    {
+      "matchId": 492322694,
+      "description": "10x shared and 3x tech | Bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784049713,
+      "outcome": "loss",
+      "preRating": 977,
+      "postRating": 964,
+      "eloChange": -13,
+      "civ": "Lithuanians",
+      "teamAvgElo": 1025,
+      "opponentAvgElo": 1053,
+      "teammates": [
+        "Consume Product",
+        "Makinaskee",
+        "CNZS_TheZero"
+      ],
+      "opponents": [
+        "Chikna Raavan",
+        "WipiWi",
+        "im slow",
+        "NothingAtAll11"
       ]
     }
   ]

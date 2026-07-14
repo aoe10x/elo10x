@@ -1,12 +1,12 @@
 {
   "profile_id": 9766616,
   "alias": "CNZS_TheZero",
-  "rating": 1134,
+  "rating": 1114,
   "wins": 33,
-  "losses": 17,
-  "gamesCount": 50,
-  "winRate": 66,
-  "lastPlayedAt": 1783684202,
+  "losses": 18,
+  "gamesCount": 51,
+  "winRate": 65,
+  "lastPlayedAt": 1784049713,
   "country": "cn",
   "merged_ids": [],
   "ratingHistory": [
@@ -60,33 +60,10 @@
     1128,
     1141,
     1123,
-    1134
+    1134,
+    1114
   ],
   "recentMatches": [
-    {
-      "matchId": 377079397,
-      "description": "10x shared civ 3x tech bonus 4v4",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1741485960,
-      "outcome": "win",
-      "preRating": 1163,
-      "postRating": 1172,
-      "eloChange": 9,
-      "civ": "Koreans",
-      "teamAvgElo": 1045,
-      "opponentAvgElo": 1003,
-      "teammates": [
-        "duckbuildperson",
-        "Drancerpy",
-        "Giovigiova"
-      ],
-      "opponents": [
-        "疯狂的电脑",
-        "HighPriestCaco",
-        "Yee",
-        "Noddybear"
-      ]
-    },
     {
       "matchId": 377081378,
       "description": "10x 3x Bamboo - ####################",
@@ -541,6 +518,30 @@
         "sppd3181",
         "blankedgamerz",
         "Honey badger"
+      ]
+    },
+    {
+      "matchId": 492322694,
+      "description": "10x shared and 3x tech | Bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784049713,
+      "outcome": "loss",
+      "preRating": 1134,
+      "postRating": 1114,
+      "eloChange": -20,
+      "civ": "Bohemians",
+      "teamAvgElo": 1025,
+      "opponentAvgElo": 1053,
+      "teammates": [
+        "Consume Product",
+        "Makinaskee",
+        "GJ Euphory"
+      ],
+      "opponents": [
+        "Chikna Raavan",
+        "WipiWi",
+        "im slow",
+        "NothingAtAll11"
       ]
     }
   ]

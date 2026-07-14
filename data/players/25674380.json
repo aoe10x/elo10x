@@ -1,12 +1,12 @@
 {
   "profile_id": 25674380,
   "alias": "Optimus",
-  "rating": 958,
-  "wins": 6,
-  "losses": 10,
-  "gamesCount": 16,
-  "winRate": 38,
-  "lastPlayedAt": 1784000127,
+  "rating": 965,
+  "wins": 7,
+  "losses": 11,
+  "gamesCount": 18,
+  "winRate": 39,
+  "lastPlayedAt": 1784053581,
   "country": "us",
   "merged_ids": [
     13700923,
@@ -29,7 +29,9 @@
     971,
     1004,
     980,
-    958
+    958,
+    981,
+    965
   ],
   "recentMatches": [
     {
@@ -414,6 +416,54 @@
         "Jeluk",
         "NothingAtAll11",
         "野猪王z"
+      ]
+    },
+    {
+      "matchId": 492323874,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784050024,
+      "outcome": "win",
+      "preRating": 958,
+      "postRating": 981,
+      "eloChange": 23,
+      "civ": "Cumans",
+      "teamAvgElo": 1007,
+      "opponentAvgElo": 974,
+      "teammates": [
+        "Filtz",
+        "tonzo",
+        "julien.nicolai"
+      ],
+      "opponents": [
+        "gemmascho",
+        "SpiniestTuna222",
+        "Keishi",
+        "Rüdiger"
+      ]
+    },
+    {
+      "matchId": 492336080,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784053581,
+      "outcome": "loss",
+      "preRating": 981,
+      "postRating": 965,
+      "eloChange": -16,
+      "civ": "Poles",
+      "teamAvgElo": 1034,
+      "opponentAvgElo": 1055,
+      "teammates": [
+        "iamatthe.hell",
+        "NothingAtAll11",
+        "DnD"
+      ],
+      "opponents": [
+        "Trekkspell",
+        "Makinaskee",
+        "Brotherman Bill",
+        "La_Fratellanza"
       ]
     }
   ]

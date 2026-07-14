@@ -1,12 +1,12 @@
 {
   "profile_id": 10276649,
   "alias": "Jappie",
-  "rating": 1051,
+  "rating": 1031,
   "wins": 19,
-  "losses": 15,
-  "gamesCount": 34,
-  "winRate": 56,
-  "lastPlayedAt": 1782396200,
+  "losses": 16,
+  "gamesCount": 35,
+  "winRate": 54,
+  "lastPlayedAt": 1784054028,
   "country": "be",
   "merged_ids": [],
   "ratingHistory": [
@@ -44,33 +44,10 @@
     1039,
     1053,
     1070,
-    1051
+    1051,
+    1031
   ],
   "recentMatches": [
-    {
-      "matchId": 404907828,
-      "description": "+10x+3xtcch   no noob",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1752005520,
-      "outcome": "loss",
-      "preRating": 1034,
-      "postRating": 1014,
-      "eloChange": -20,
-      "civ": "Unknown",
-      "teamAvgElo": 1044,
-      "opponentAvgElo": 1114,
-      "teammates": [
-        "bijiyumo",
-        "maxymczech",
-        "yimacs_yoyoyo"
-      ],
-      "opponents": [
-        "拍车面前人人平等",
-        "kaka52pk",
-        "AceTrooper",
-        "Venrag"
-      ]
-    },
     {
       "matchId": 406204017,
       "description": "10x shared civ bonus",
@@ -525,6 +502,30 @@
         "JCUP",
         "ChloeDapche",
         "tyehcwc402004"
+      ]
+    },
+    {
+      "matchId": 492336821,
+      "description": "10x 3x Bamboo - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784054028,
+      "outcome": "loss",
+      "preRating": 1051,
+      "postRating": 1031,
+      "eloChange": -20,
+      "civ": "Chinese",
+      "teamAvgElo": 1043,
+      "opponentAvgElo": 964,
+      "teammates": [
+        "tima_1999",
+        "Alf II",
+        "Armyofme_"
+      ],
+      "opponents": [
+        "Parts",
+        "[B] Cannino",
+        "yxsko93",
+        "z e o H"
       ]
     }
   ]

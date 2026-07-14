@@ -1,12 +1,12 @@
 {
   "profile_id": 2112664,
   "alias": "julien.nicolai",
-  "rating": 1008,
-  "wins": 14,
+  "rating": 1022,
+  "wins": 15,
   "losses": 15,
-  "gamesCount": 29,
-  "winRate": 48,
-  "lastPlayedAt": 1783881342,
+  "gamesCount": 30,
+  "winRate": 50,
+  "lastPlayedAt": 1784050024,
   "country": "fr",
   "merged_ids": [],
   "ratingHistory": [
@@ -39,33 +39,10 @@
     1026,
     1040,
     1023,
-    1008
+    1008,
+    1022
   ],
   "recentMatches": [
-    {
-      "matchId": 343563485,
-      "description": "10x with 256x  Forest Nothing Fun",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1728187980,
-      "outcome": "loss",
-      "preRating": 1052,
-      "postRating": 1015,
-      "eloChange": -37,
-      "civ": "Tatars",
-      "teamAvgElo": 1001,
-      "opponentAvgElo": 1018,
-      "teammates": [
-        "hdygates",
-        "Ivan Rodriguez",
-        "MarieBrutale"
-      ],
-      "opponents": [
-        "[doGs] Walkuski.",
-        "Vince",
-        "Radlberger Nervenzusammenbruch",
-        "[doGs] Charlie the Bird."
-      ]
-    },
     {
       "matchId": 346043576,
       "description": "4vs4 10x FN 256 - random civ",
@@ -520,6 +497,30 @@
         "rcmccallum",
         "Gladiator",
         "Monkeymonk"
+      ]
+    },
+    {
+      "matchId": 492323874,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784050024,
+      "outcome": "win",
+      "preRating": 1008,
+      "postRating": 1022,
+      "eloChange": 14,
+      "civ": "Incas",
+      "teamAvgElo": 1007,
+      "opponentAvgElo": 974,
+      "teammates": [
+        "Optimus",
+        "Filtz",
+        "tonzo"
+      ],
+      "opponents": [
+        "gemmascho",
+        "SpiniestTuna222",
+        "Keishi",
+        "Rüdiger"
       ]
     }
   ]

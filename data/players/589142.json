@@ -1,12 +1,12 @@
 {
   "profile_id": 589142,
   "alias": "Armyofme_",
-  "rating": 1121,
-  "wins": 41,
-  "losses": 38,
-  "gamesCount": 79,
+  "rating": 1107,
+  "wins": 42,
+  "losses": 39,
+  "gamesCount": 81,
   "winRate": 52,
-  "lastPlayedAt": 1782933752,
+  "lastPlayedAt": 1784055881,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -89,57 +89,11 @@
     1110,
     1125,
     1108,
-    1121
+    1121,
+    1098,
+    1107
   ],
   "recentMatches": [
-    {
-      "matchId": 457271953,
-      "description": "10x 3x - bamboo - 3.0",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1771489680,
-      "outcome": "win",
-      "preRating": 1018,
-      "postRating": 1033,
-      "eloChange": 15,
-      "civ": "Bulgarians",
-      "teamAvgElo": 1079,
-      "opponentAvgElo": 1004,
-      "teammates": [
-        "Parenquima",
-        "[B] pro.PHET",
-        "NoAgendaPODCAST"
-      ],
-      "opponents": [
-        "SpiniestTuna222",
-        "The.Gocho",
-        "ImOneWithTheTree",
-        "MarieBrutale"
-      ]
-    },
-    {
-      "matchId": 457685572,
-      "description": "Bamboo 10x 3x",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1771640640,
-      "outcome": "loss",
-      "preRating": 1033,
-      "postRating": 1017,
-      "eloChange": -16,
-      "civ": "Bohemians",
-      "teamAvgElo": 1050,
-      "opponentAvgElo": 1033,
-      "teammates": [
-        "fxsound",
-        "Mehandor",
-        "SeeYouTomorrow"
-      ],
-      "opponents": [
-        "OldManofStorr",
-        "im slow",
-        "Dellox",
-        "dkarsten27"
-      ]
-    },
     {
       "matchId": 457787994,
       "description": "10x 3x Bamboo Nothing",
@@ -570,6 +524,54 @@
         "DnD",
         "MARKVILEX",
         "Emusan"
+      ]
+    },
+    {
+      "matchId": 492336821,
+      "description": "10x 3x Bamboo - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784054028,
+      "outcome": "loss",
+      "preRating": 1121,
+      "postRating": 1098,
+      "eloChange": -23,
+      "civ": "Slavs",
+      "teamAvgElo": 1043,
+      "opponentAvgElo": 964,
+      "teammates": [
+        "tima_1999",
+        "Alf II",
+        "Jappie"
+      ],
+      "opponents": [
+        "Parts",
+        "[B] Cannino",
+        "yxsko93",
+        "z e o H"
+      ]
+    },
+    {
+      "matchId": 492342118,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784055881,
+      "outcome": "win",
+      "preRating": 1098,
+      "postRating": 1107,
+      "eloChange": 9,
+      "civ": "Maya",
+      "teamAvgElo": 1002,
+      "opponentAvgElo": 935,
+      "teammates": [
+        "Consume Product",
+        "JaFu",
+        "MnK Ultra"
+      ],
+      "opponents": [
+        "Lykerya",
+        "yxsko93",
+        "PredatorfromthemoviePredator",
+        "Makinaskee"
       ]
     }
   ]

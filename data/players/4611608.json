@@ -1,12 +1,12 @@
 {
   "profile_id": 4611608,
   "alias": "baianitro",
-  "rating": 995,
+  "rating": 980,
   "wins": 47,
-  "losses": 44,
-  "gamesCount": 91,
-  "winRate": 52,
-  "lastPlayedAt": 1784002756,
+  "losses": 45,
+  "gamesCount": 92,
+  "winRate": 51,
+  "lastPlayedAt": 1784055284,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -101,33 +101,10 @@
     1001,
     1023,
     1011,
-    995
+    995,
+    980
   ],
   "recentMatches": [
-    {
-      "matchId": 491483230,
-      "description": "Bamboo 10x Shared 3x Tech",
-      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
-      "timestamp": 1783745188,
-      "outcome": "loss",
-      "preRating": 1000,
-      "postRating": 987,
-      "eloChange": -13,
-      "civ": "Japanese",
-      "teamAvgElo": 1039,
-      "opponentAvgElo": 1061,
-      "teammates": [
-        "procrastination.exe",
-        "476055690",
-        "hussein"
-      ],
-      "opponents": [
-        "漫山哒哒哒",
-        "Ichigoblack",
-        "FAOse7en",
-        "紫蝶黄蜂俱有情"
-      ]
-    },
     {
       "matchId": 491486942,
       "description": "Bamboo 10x Shared 3x Tech",
@@ -582,6 +559,30 @@
         "mrtickles22",
         "gmc inspector",
         "Maxim Liann"
+      ]
+    },
+    {
+      "matchId": 492341115,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784055284,
+      "outcome": "loss",
+      "preRating": 995,
+      "postRating": 980,
+      "eloChange": -15,
+      "civ": "Bengalis",
+      "teamAvgElo": 998,
+      "opponentAvgElo": 1007,
+      "teammates": [
+        "Trekkspell",
+        "gemmascho",
+        "DnD"
+      ],
+      "opponents": [
+        "Keishi",
+        "SpiniestTuna222",
+        "NothingAtAll11",
+        "Paris Hilton"
       ]
     }
   ]
