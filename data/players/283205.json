@@ -1,12 +1,12 @@
 {
   "profile_id": 283205,
   "alias": "r9maximus",
-  "rating": 1044,
+  "rating": 1028,
   "wins": 20,
-  "losses": 18,
-  "gamesCount": 38,
-  "winRate": 53,
-  "lastPlayedAt": 1783971194,
+  "losses": 19,
+  "gamesCount": 39,
+  "winRate": 51,
+  "lastPlayedAt": 1784137976,
   "country": "nl",
   "merged_ids": [],
   "ratingHistory": [
@@ -48,33 +48,10 @@
     1032,
     1047,
     1059,
-    1044
+    1044,
+    1028
   ],
   "recentMatches": [
-    {
-      "matchId": 414037859,
-      "description": "bamboo nothing 10x 3x",
-      "mapname": "Bamboo Nothing V1 [Scorpyon]",
-      "timestamp": 1755742560,
-      "outcome": "win",
-      "preRating": 1045,
-      "postRating": 1063,
-      "eloChange": 18,
-      "civ": "Armenians",
-      "teamAvgElo": 1085,
-      "opponentAvgElo": 1020,
-      "teammates": [
-        "AceTrooper",
-        "liehuo22",
-        "Jormungand"
-      ],
-      "opponents": [
-        "lu_zypher",
-        "Bé",
-        "Lucky",
-        "[TYGRAI]4Freedom"
-      ]
-    },
     {
       "matchId": 414627071,
       "description": "256x 10x Forest Nothing",
@@ -529,6 +506,30 @@
         "[B] Cannino",
         "RA",
         "gmc inspector"
+      ]
+    },
+    {
+      "matchId": 492536314,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784137976,
+      "outcome": "loss",
+      "preRating": 1044,
+      "postRating": 1028,
+      "eloChange": -16,
+      "civ": "Spanish",
+      "teamAvgElo": 1025,
+      "opponentAvgElo": 1039,
+      "teammates": [
+        "Your Ego",
+        "wintre",
+        "AKRM2163"
+      ],
+      "opponents": [
+        "Parts",
+        "DnD",
+        "ElmoWithoutL",
+        "iamatthe.hell"
       ]
     }
   ]

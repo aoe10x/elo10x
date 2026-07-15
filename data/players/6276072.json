@@ -1,12 +1,12 @@
 {
   "profile_id": 6276072,
   "alias": "{German}Kaese",
-  "rating": 968,
+  "rating": 955,
   "wins": 41,
-  "losses": 64,
-  "gamesCount": 105,
+  "losses": 65,
+  "gamesCount": 106,
   "winRate": 39,
-  "lastPlayedAt": 1784084554,
+  "lastPlayedAt": 1784136266,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -17,8 +17,8 @@
     920,
     970,
     1016,
-    976,
     1020,
+    991,
     957,
     932,
     909,
@@ -31,10 +31,10 @@
     894,
     917,
     938,
-    955,
     939,
     955,
     975,
+    992,
     975,
     960,
     979,
@@ -45,12 +45,12 @@
     914,
     902,
     922,
-    911,
     930,
     950,
     970,
     957,
     940,
+    927,
     915,
     936,
     924,
@@ -59,7 +59,6 @@
     888,
     912,
     902,
-    891,
     915,
     934,
     956,
@@ -68,12 +67,12 @@
     919,
     941,
     961,
+    950,
     940,
     928,
     917,
     938,
     959,
-    980,
     965,
     951,
     938,
@@ -84,10 +83,10 @@
     963,
     949,
     966,
+    985,
     973,
     960,
     950,
-    968,
     956,
     943,
     963,
@@ -100,8 +99,8 @@
     895,
     886,
     906,
+    928,
     948,
-    937,
     925,
     946,
     932,
@@ -109,33 +108,10 @@
     942,
     928,
     948,
-    968
+    968,
+    955
   ],
   "recentMatches": [
-    {
-      "matchId": 485834355,
-      "description": "i kun 10x3x 4v4s",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1781638380,
-      "outcome": "loss",
-      "preRating": 963,
-      "postRating": 952,
-      "eloChange": -11,
-      "civ": "Cumans",
-      "teamAvgElo": 1039,
-      "opponentAvgElo": 1064,
-      "teammates": [
-        "i kun 2.5",
-        "Drancerpy",
-        "Jackbrick"
-      ],
-      "opponents": [
-        "DnD",
-        "Lama Kužel",
-        "Emusan",
-        "Enn Tore"
-      ]
-    },
     {
       "matchId": 486054851,
       "description": "Bamboo nothing 10X3X",
@@ -590,6 +566,30 @@
         "duckbuildperson",
         "Your Ego",
         "Master Polo4905"
+      ]
+    },
+    {
+      "matchId": 492530601,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784136266,
+      "outcome": "loss",
+      "preRating": 968,
+      "postRating": 955,
+      "eloChange": -13,
+      "civ": "Hindustanis",
+      "teamAvgElo": 975,
+      "opponentAvgElo": 1036,
+      "teammates": [
+        "Ph03n1x",
+        "YomaYo",
+        "Goldfinn1"
+      ],
+      "opponents": [
+        "Parts",
+        "DnD",
+        "Grimmie",
+        "Your Ego"
       ]
     }
   ]

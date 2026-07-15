@@ -1,12 +1,12 @@
 {
   "profile_id": 3635145,
   "alias": "Prinz Kay1",
-  "rating": 1064,
-  "wins": 37,
+  "rating": 1078,
+  "wins": 38,
   "losses": 33,
-  "gamesCount": 70,
-  "winRate": 53,
-  "lastPlayedAt": 1784069962,
+  "gamesCount": 71,
+  "winRate": 54,
+  "lastPlayedAt": 1784141171,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -80,33 +80,10 @@
     1021,
     1035,
     1051,
-    1064
+    1064,
+    1078
   ],
   "recentMatches": [
-    {
-      "matchId": 490280859,
-      "description": "Bamboo nothing 10X3X",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1783262969,
-      "outcome": "loss",
-      "preRating": 1099,
-      "postRating": 1079,
-      "eloChange": -20,
-      "civ": "Unknown",
-      "teamAvgElo": 1033,
-      "opponentAvgElo": 1016,
-      "teammates": [
-        "yxsko93",
-        "Charu",
-        "master"
-      ],
-      "opponents": [
-        "Mandriao",
-        "tonkatumura",
-        "Zak",
-        "Nigerian Farmer"
-      ]
-    },
     {
       "matchId": 490502443,
       "description": "Bamboo nothing 10X3X",
@@ -561,6 +538,30 @@
         "Chirijiraden",
         "ElmoWithoutL",
         "Parts"
+      ]
+    },
+    {
+      "matchId": 492546514,
+      "description": "10x 3x Bamboo",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784141171,
+      "outcome": "win",
+      "preRating": 1064,
+      "postRating": 1078,
+      "eloChange": 14,
+      "civ": "Hindustanis",
+      "teamAvgElo": 987,
+      "opponentAvgElo": 1019,
+      "teammates": [
+        "Wololoo",
+        "bommietommie",
+        "Nain Patient"
+      ],
+      "opponents": [
+        "Not a Wizard",
+        "afranciscosa",
+        "Lozzer",
+        "Vader"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 19326075,
   "alias": "afranciscosa",
-  "rating": 1046,
+  "rating": 1010,
   "wins": 27,
-  "losses": 33,
-  "gamesCount": 60,
-  "winRate": 45,
-  "lastPlayedAt": 1783979632,
+  "losses": 35,
+  "gamesCount": 62,
+  "winRate": 44,
+  "lastPlayedAt": 1784141171,
   "country": "pt",
   "merged_ids": [
     12766131,
@@ -73,57 +73,11 @@
     995,
     1015,
     1034,
-    1046
+    1046,
+    1028,
+    1010
   ],
   "recentMatches": [
-    {
-      "matchId": 476343045,
-      "description": "3x 10x bamboo - random civ - no noobs",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1778300880,
-      "outcome": "win",
-      "preRating": 966,
-      "postRating": 983,
-      "eloChange": 17,
-      "civ": "Sicilians",
-      "teamAvgElo": 975,
-      "opponentAvgElo": 981,
-      "teammates": [
-        "MARKVILEX",
-        "Nimu.-",
-        "Emotions are prohibited"
-      ],
-      "opponents": [
-        "gemmascho",
-        "Sashagoy",
-        "DickerleMinka",
-        "AtilaElHuno7013"
-      ]
-    },
-    {
-      "matchId": 477090811,
-      "description": "10x civ 3x tech",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1778524129,
-      "outcome": "win",
-      "preRating": 983,
-      "postRating": 999,
-      "eloChange": 16,
-      "civ": "Japanese",
-      "teamAvgElo": 1052,
-      "opponentAvgElo": 986,
-      "teammates": [
-        "LethalP59",
-        "MrSniffers",
-        "Ficki-T-E"
-      ],
-      "opponents": [
-        "gabrieldemarmiesse",
-        "Bachter",
-        "QuasarHerzog555",
-        "Johnielesh"
-      ]
-    },
     {
       "matchId": 477063958,
       "description": "BAMBOO 10x - 3x  **NO NOOB",
@@ -554,6 +508,54 @@
         "MarieBrutale",
         "Gasnápido",
         "Wololoo"
+      ]
+    },
+    {
+      "matchId": 492539979,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784139102,
+      "outcome": "loss",
+      "preRating": 1046,
+      "postRating": 1028,
+      "eloChange": -18,
+      "civ": "Bengalis",
+      "teamAvgElo": 1054,
+      "opponentAvgElo": 1012,
+      "teammates": [
+        "im slow",
+        "Chuckyllo4417",
+        "sppd3181"
+      ],
+      "opponents": [
+        "gemmascho",
+        "Kalervo Jankko",
+        "Manba Out",
+        "Mr.YaYo"
+      ]
+    },
+    {
+      "matchId": 492546514,
+      "description": "10x 3x Bamboo",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784141171,
+      "outcome": "loss",
+      "preRating": 1028,
+      "postRating": 1010,
+      "eloChange": -18,
+      "civ": "Malay",
+      "teamAvgElo": 1019,
+      "opponentAvgElo": 987,
+      "teammates": [
+        "Not a Wizard",
+        "Lozzer",
+        "Vader"
+      ],
+      "opponents": [
+        "Wololoo",
+        "bommietommie",
+        "Nain Patient",
+        "Prinz Kay1"
       ]
     }
   ]

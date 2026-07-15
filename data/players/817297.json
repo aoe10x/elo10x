@@ -1,12 +1,12 @@
 {
   "profile_id": 817297,
   "alias": "ChiH",
-  "rating": 966,
-  "wins": 22,
+  "rating": 984,
+  "wins": 23,
   "losses": 30,
-  "gamesCount": 52,
-  "winRate": 42,
-  "lastPlayedAt": 1784127261,
+  "gamesCount": 53,
+  "winRate": 43,
+  "lastPlayedAt": 1784138547,
   "country": "ru",
   "merged_ids": [],
   "ratingHistory": [
@@ -62,33 +62,10 @@
     938,
     961,
     980,
-    966
+    966,
+    984
   ],
   "recentMatches": [
-    {
-      "matchId": 479985316,
-      "description": "10x 3x BN",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1779597060,
-      "outcome": "loss",
-      "preRating": 1024,
-      "postRating": 1011,
-      "eloChange": -13,
-      "civ": "Berbers",
-      "teamAvgElo": 1087,
-      "opponentAvgElo": 1100,
-      "teammates": [
-        "ISwaZz",
-        "gamingtars",
-        "Vince"
-      ],
-      "opponents": [
-        "[CSGS]Runescape",
-        "liehuo22",
-        "pool_champ",
-        "Qtheitalian"
-      ]
-    },
     {
       "matchId": 480159607,
       "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
@@ -543,6 +520,30 @@
         "golhmogh",
         "476055690",
         "UndreamtBacon8"
+      ]
+    },
+    {
+      "matchId": 492537879,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784138547,
+      "outcome": "win",
+      "preRating": 966,
+      "postRating": 984,
+      "eloChange": 18,
+      "civ": "Portuguese",
+      "teamAvgElo": 989,
+      "opponentAvgElo": 999,
+      "teammates": [
+        "herelin0",
+        "Chirijiraden",
+        "Zak"
+      ],
+      "opponents": [
+        "Lykerya",
+        "Consume Product",
+        "Olive Oil",
+        "Flip Kun"
       ]
     }
   ]

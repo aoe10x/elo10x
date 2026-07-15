@@ -1,12 +1,12 @@
 {
   "profile_id": 19495420,
   "alias": "leandrod_c",
-  "rating": 934,
+  "rating": 922,
   "wins": 15,
-  "losses": 30,
-  "gamesCount": 45,
+  "losses": 31,
+  "gamesCount": 46,
   "winRate": 33,
-  "lastPlayedAt": 1783988579,
+  "lastPlayedAt": 1784136695,
   "country": "ar",
   "merged_ids": [
     12790969,
@@ -58,33 +58,10 @@
     904,
     895,
     916,
-    934
+    934,
+    922
   ],
   "recentMatches": [
-    {
-      "matchId": 414984539,
-      "description": "10x shared civ bonus Amazon Tunnel Water",
-      "mapname": "Amazon Tunnel Water",
-      "timestamp": 1756105380,
-      "outcome": "loss",
-      "preRating": 873,
-      "postRating": 863,
-      "eloChange": -10,
-      "civ": "Bohemians",
-      "teamAvgElo": 987,
-      "opponentAvgElo": 1001,
-      "teammates": [
-        "vikneT1",
-        "Orion",
-        "Preacher!"
-      ],
-      "opponents": [
-        "ArchiCraig",
-        "Wardy21",
-        "OOOOOOOOOOO",
-        "fxsound"
-      ]
-    },
     {
       "matchId": 416204919,
       "description": "10x 3x shared,random,up-up-up-research",
@@ -539,6 +516,30 @@
         "Consume Product",
         "Maxim Liann",
         "jacobfinck"
+      ]
+    },
+    {
+      "matchId": 492532116,
+      "description": "10x3x bamboo nothing",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784136695,
+      "outcome": "loss",
+      "preRating": 934,
+      "postRating": 922,
+      "eloChange": -12,
+      "civ": "Incas",
+      "teamAvgElo": 978,
+      "opponentAvgElo": 1031,
+      "teammates": [
+        "轻绘梨花泪满衣",
+        "XsupercopX",
+        "Gachoz"
+      ],
+      "opponents": [
+        "Mortak",
+        "wintre",
+        "iamatthe.hell",
+        "ElmoWithoutL"
       ]
     }
   ]

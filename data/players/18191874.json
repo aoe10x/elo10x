@@ -1,12 +1,12 @@
 {
   "profile_id": 18191874,
   "alias": "Vader",
-  "rating": 1081,
+  "rating": 1061,
   "wins": 46,
-  "losses": 32,
-  "gamesCount": 78,
-  "winRate": 59,
-  "lastPlayedAt": 1783774901,
+  "losses": 33,
+  "gamesCount": 79,
+  "winRate": 58,
+  "lastPlayedAt": 1784141171,
   "country": "pe",
   "merged_ids": [
     12628022,
@@ -91,33 +91,10 @@
     1101,
     1116,
     1101,
-    1081
+    1081,
+    1061
   ],
   "recentMatches": [
-    {
-      "matchId": 475904878,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1778137140,
-      "outcome": "loss",
-      "preRating": 1085,
-      "postRating": 1069,
-      "eloChange": -16,
-      "civ": "Unknown",
-      "teamAvgElo": 1029,
-      "opponentAvgElo": 1092,
-      "teammates": [
-        "feid_",
-        "Doormat",
-        "mrak"
-      ],
-      "opponents": [
-        "Kumad",
-        "Myriad",
-        "RedBullWOLOLO26",
-        "bommietommie"
-      ]
-    },
     {
       "matchId": 475907492,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -572,6 +549,30 @@
         "[CSGS]Runescape",
         "紫蝶黄蜂俱有情",
         "刘xx"
+      ]
+    },
+    {
+      "matchId": 492546514,
+      "description": "10x 3x Bamboo",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784141171,
+      "outcome": "loss",
+      "preRating": 1081,
+      "postRating": 1061,
+      "eloChange": -20,
+      "civ": "Vikings",
+      "teamAvgElo": 1019,
+      "opponentAvgElo": 987,
+      "teammates": [
+        "Not a Wizard",
+        "afranciscosa",
+        "Lozzer"
+      ],
+      "opponents": [
+        "Wololoo",
+        "bommietommie",
+        "Nain Patient",
+        "Prinz Kay1"
       ]
     }
   ]

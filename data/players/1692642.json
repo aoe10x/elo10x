@@ -1,12 +1,12 @@
 {
   "profile_id": 1692642,
   "alias": "F3R0Ci0U5XX88",
-  "rating": 964,
-  "wins": 7,
+  "rating": 986,
+  "wins": 8,
   "losses": 13,
-  "gamesCount": 20,
-  "winRate": 35,
-  "lastPlayedAt": 1784090654,
+  "gamesCount": 21,
+  "winRate": 38,
+  "lastPlayedAt": 1784140655,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -30,33 +30,10 @@
     927,
     954,
     977,
-    964
+    964,
+    986
   ],
   "recentMatches": [
-    {
-      "matchId": 193861537,
-      "description": "10x Shared Civ random civ 4v4",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1670142120,
-      "outcome": "loss",
-      "preRating": 1000,
-      "postRating": 955,
-      "eloChange": -45,
-      "civ": "Vikings",
-      "teamAvgElo": 1020,
-      "opponentAvgElo": 1022,
-      "teammates": [
-        "WhiteMonk",
-        "Missing2Sheep",
-        "Peking Chicken"
-      ],
-      "opponents": [
-        "Nikolov7",
-        "lime",
-        "One-cool-bean",
-        "SunBruh"
-      ]
-    },
     {
       "matchId": 197726356,
       "description": "10x Shared Civ Bonus 4v4",
@@ -511,6 +488,30 @@
         "aLEXt",
         "typ53b90",
         "LiquidDrive"
+      ]
+    },
+    {
+      "matchId": 492544621,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784140655,
+      "outcome": "win",
+      "preRating": 964,
+      "postRating": 986,
+      "eloChange": 22,
+      "civ": "Teutons",
+      "teamAvgElo": 1033,
+      "opponentAvgElo": 1093,
+      "teammates": [
+        "Maic",
+        "Ph03n1x",
+        "Lordetion"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "Parts",
+        "TheRiceMan",
+        "Consume Product"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 3093864,
   "alias": "NoLo",
-  "rating": 957,
-  "wins": 13,
+  "rating": 975,
+  "wins": 14,
   "losses": 22,
-  "gamesCount": 35,
-  "winRate": 37,
-  "lastPlayedAt": 1784069962,
+  "gamesCount": 36,
+  "winRate": 39,
+  "lastPlayedAt": 1784147589,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -45,33 +45,10 @@
     931,
     952,
     970,
-    957
+    957,
+    975
   ],
   "recentMatches": [
-    {
-      "matchId": 487149451,
-      "description": "10X RF",
-      "mapname": "Rage Forest 2026 Beta C",
-      "timestamp": 1782072418,
-      "outcome": "win",
-      "preRating": 937,
-      "postRating": 969,
-      "eloChange": 32,
-      "civ": "Persians",
-      "teamAvgElo": 1030,
-      "opponentAvgElo": 1049,
-      "teammates": [
-        "Fritz Fantom",
-        "Somero",
-        "Rgeadn"
-      ],
-      "opponents": [
-        "McKrakfejs",
-        "Zeriel",
-        "Tulendeena",
-        "Scadufax"
-      ]
-    },
     {
       "matchId": 487344085,
       "description": "BAMBOO 10x3xtech",
@@ -526,6 +503,30 @@
         "procrastination.exe",
         "Ellie91",
         "Prinz Kay1"
+      ]
+    },
+    {
+      "matchId": 492561038,
+      "description": "10x 3x Bamboo",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784147589,
+      "outcome": "win",
+      "preRating": 957,
+      "postRating": 975,
+      "eloChange": 18,
+      "civ": "Aztecs",
+      "teamAvgElo": 1069,
+      "opponentAvgElo": 1000,
+      "teammates": [
+        "matt",
+        "Cale94",
+        "La_Fratellanza"
+      ],
+      "opponents": [
+        "Not a Wizard",
+        "Consume Product",
+        "iamatthe.hell",
+        "MacBo"
       ]
     }
   ]

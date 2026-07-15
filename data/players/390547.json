@@ -1,12 +1,12 @@
 {
   "profile_id": 390547,
   "alias": "Chirijiraden",
-  "rating": 916,
-  "wins": 26,
+  "rating": 936,
+  "wins": 27,
   "losses": 38,
-  "gamesCount": 64,
-  "winRate": 41,
-  "lastPlayedAt": 1784070872,
+  "gamesCount": 65,
+  "winRate": 42,
+  "lastPlayedAt": 1784138547,
   "country": "ar",
   "merged_ids": [],
   "ratingHistory": [
@@ -74,33 +74,10 @@
     953,
     938,
     926,
-    916
+    916,
+    936
   ],
   "recentMatches": [
-    {
-      "matchId": 487852019,
-      "description": "bamboo nothing 10x",
-      "mapname": "Bamboo Nothing V3 (Bali)",
-      "timestamp": 1782370380,
-      "outcome": "loss",
-      "preRating": 961,
-      "postRating": 947,
-      "eloChange": -14,
-      "civ": "Mongols",
-      "teamAvgElo": 1017,
-      "opponentAvgElo": 1015,
-      "teammates": [
-        "[B] Zennith",
-        "Xinzzo",
-        "Tortrix"
-      ],
-      "opponents": [
-        "I LICK TRAINS",
-        "pkT^^",
-        "BaldAfro",
-        "ActualWizard"
-      ]
-    },
     {
       "matchId": 489193451,
       "description": "10x 3x Bamboo Nothing",
@@ -555,6 +532,30 @@
         "tonzo",
         "OhSheeep",
         "Parts"
+      ]
+    },
+    {
+      "matchId": 492537879,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784138547,
+      "outcome": "win",
+      "preRating": 916,
+      "postRating": 936,
+      "eloChange": 20,
+      "civ": "Lithuanians",
+      "teamAvgElo": 989,
+      "opponentAvgElo": 999,
+      "teammates": [
+        "ChiH",
+        "herelin0",
+        "Zak"
+      ],
+      "opponents": [
+        "Lykerya",
+        "Consume Product",
+        "Olive Oil",
+        "Flip Kun"
       ]
     }
   ]

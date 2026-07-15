@@ -1,12 +1,12 @@
 {
   "profile_id": 1143927,
   "alias": "ernestocorrea18",
-  "rating": 942,
+  "rating": 931,
   "wins": 28,
-  "losses": 42,
-  "gamesCount": 70,
-  "winRate": 40,
-  "lastPlayedAt": 1784082245,
+  "losses": 43,
+  "gamesCount": 71,
+  "winRate": 39,
+  "lastPlayedAt": 1784141486,
   "country": "co",
   "merged_ids": [],
   "ratingHistory": [
@@ -80,33 +80,10 @@
     948,
     934,
     955,
-    942
+    942,
+    931
   ],
   "recentMatches": [
-    {
-      "matchId": 435713788,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1764157440,
-      "outcome": "loss",
-      "preRating": 972,
-      "postRating": 958,
-      "eloChange": -14,
-      "civ": "Bulgarians",
-      "teamAvgElo": 1023,
-      "opponentAvgElo": 1013,
-      "teammates": [
-        "FPS Geo",
-        "CobraBubbles801",
-        "Bao Oninon"
-      ],
-      "opponents": [
-        "FEAR_ME",
-        "nooblet3300",
-        "Meursault005",
-        "BigPimpin"
-      ]
-    },
     {
       "matchId": 435903394,
       "description": "256x 10x Forest Nothing",
@@ -561,6 +538,30 @@
         "Shadow",
         "Mehandor",
         "Paing"
+      ]
+    },
+    {
+      "matchId": 492547627,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784141486,
+      "outcome": "loss",
+      "preRating": 942,
+      "postRating": 931,
+      "eloChange": -11,
+      "civ": "Malay",
+      "teamAvgElo": 941,
+      "opponentAvgElo": 1051,
+      "teammates": [
+        "Consume Product",
+        "Not a Wizard",
+        "Ph03n1x"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "Parts",
+        "PIEROGI",
+        "gemmascho"
       ]
     }
   ]
