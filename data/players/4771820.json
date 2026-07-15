@@ -1,12 +1,12 @@
 {
   "profile_id": 4771820,
   "alias": "Ortys",
-  "rating": 1051,
+  "rating": 1032,
   "wins": 29,
-  "losses": 34,
-  "gamesCount": 63,
-  "winRate": 46,
-  "lastPlayedAt": 1784026184,
+  "losses": 35,
+  "gamesCount": 64,
+  "winRate": 45,
+  "lastPlayedAt": 1784065488,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -73,33 +73,10 @@
     1003,
     1020,
     1035,
-    1051
+    1051,
+    1032
   ],
   "recentMatches": [
-    {
-      "matchId": 467591290,
-      "description": "10x 3x shared !!NO NOOBS!!",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1775244120,
-      "outcome": "loss",
-      "preRating": 1020,
-      "postRating": 1005,
-      "eloChange": -15,
-      "civ": "Vietnamese",
-      "teamAvgElo": 1052,
-      "opponentAvgElo": 1037,
-      "teammates": [
-        "NothingAtAll11",
-        "FastAttack",
-        "YUJIN"
-      ],
-      "opponents": [
-        "Age5464",
-        "UbaneMess",
-        "Vladimir Trump",
-        "KryZal"
-      ]
-    },
     {
       "matchId": 469651359,
       "description": "256x 10x Forest Nothing",
@@ -447,7 +424,7 @@
       "eloChange": -14,
       "civ": "Bengalis",
       "teamAvgElo": 1026,
-      "opponentAvgElo": 1038,
+      "opponentAvgElo": 1037,
       "teammates": [
         "Your Ego",
         "im slow",
@@ -554,6 +531,30 @@
         "Prinz Kay1",
         "SecondBest",
         "MadRussian"
+      ]
+    },
+    {
+      "matchId": 492366561,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784065488,
+      "outcome": "loss",
+      "preRating": 1051,
+      "postRating": 1032,
+      "eloChange": -19,
+      "civ": "Turks",
+      "teamAvgElo": 1045,
+      "opponentAvgElo": 982,
+      "teammates": [
+        "SpiniestTuna222",
+        "duckbuildperson",
+        "Chirijiraden"
+      ],
+      "opponents": [
+        "gemmascho",
+        "rob",
+        "Zak",
+        "Berberecho_Feroz"
       ]
     }
   ]

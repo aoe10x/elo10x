@@ -1,12 +1,12 @@
 {
   "profile_id": 15621955,
   "alias": "luisedgaco02",
-  "rating": 872,
-  "wins": 6,
+  "rating": 894,
+  "wins": 7,
   "losses": 16,
-  "gamesCount": 22,
-  "winRate": 27,
-  "lastPlayedAt": 1783036882,
+  "gamesCount": 23,
+  "winRate": 30,
+  "lastPlayedAt": 1784075763,
   "country": "mx",
   "merged_ids": [
     12346911,
@@ -35,33 +35,10 @@
     865,
     856,
     848,
-    872
+    872,
+    894
   ],
   "recentMatches": [
-    {
-      "matchId": 455987224,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1771060440,
-      "outcome": "win",
-      "preRating": 915,
-      "postRating": 976,
-      "eloChange": 61,
-      "civ": "Khmer",
-      "teamAvgElo": 952,
-      "opponentAvgElo": 1046,
-      "teammates": [
-        "TheZeos",
-        "D3v1l",
-        "nooblet3300"
-      ],
-      "opponents": [
-        "Donald J Trump - Pedo Protector",
-        "LJ23",
-        "Zeriel",
-        "Gadiatorking112"
-      ]
-    },
     {
       "matchId": 458382642,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -432,7 +409,7 @@
       "postRating": 865,
       "eloChange": -13,
       "civ": "Dravidians",
-      "teamAvgElo": 977,
+      "teamAvgElo": 978,
       "opponentAvgElo": 990,
       "teammates": [
         "Doormat",
@@ -516,6 +493,30 @@
         "Chuckyllo4417",
         "Ballack",
         "feid_"
+      ]
+    },
+    {
+      "matchId": 492394713,
+      "description": "10x 3x Bamboo - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784075763,
+      "outcome": "win",
+      "preRating": 872,
+      "postRating": 894,
+      "eloChange": 22,
+      "civ": "Berbers",
+      "teamAvgElo": 985,
+      "opponentAvgElo": 997,
+      "teammates": [
+        "Parts",
+        "ZaySol",
+        "Dylan Dog"
+      ],
+      "opponents": [
+        "AleRayado88",
+        "TR.elephantman",
+        "SpiniestTuna222",
+        "Lordbusiness"
       ]
     }
   ]

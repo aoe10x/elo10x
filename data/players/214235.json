@@ -1,12 +1,12 @@
 {
   "profile_id": 214235,
   "alias": "smol camel",
-  "rating": 927,
-  "wins": 5,
+  "rating": 960,
+  "wins": 6,
   "losses": 10,
-  "gamesCount": 15,
-  "winRate": 33,
-  "lastPlayedAt": 1778790053,
+  "gamesCount": 16,
+  "winRate": 38,
+  "lastPlayedAt": 1784067654,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -25,7 +25,8 @@
     873,
     854,
     896,
-    927
+    927,
+    960
   ],
   "recentMatches": [
     {
@@ -386,6 +387,30 @@
         "helianth",
         "adamc11",
         "GenP"
+      ]
+    },
+    {
+      "matchId": 492373119,
+      "description": "10x 3x Bamboo - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784067654,
+      "outcome": "win",
+      "preRating": 927,
+      "postRating": 960,
+      "eloChange": 33,
+      "civ": "Khmer",
+      "teamAvgElo": 958,
+      "opponentAvgElo": 1063,
+      "teammates": [
+        "Parts",
+        "Axila, el Turro",
+        "skoolied"
+      ],
+      "opponents": [
+        "Paris Hilton",
+        "duckbuildperson",
+        "crumpet",
+        "Stigel"
       ]
     }
   ]

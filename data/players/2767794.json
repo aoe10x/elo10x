@@ -1,12 +1,12 @@
 {
   "profile_id": 2767794,
   "alias": "AleRayado88",
-  "rating": 1014,
+  "rating": 982,
   "wins": 38,
-  "losses": 46,
-  "gamesCount": 84,
-  "winRate": 45,
-  "lastPlayedAt": 1784048939,
+  "losses": 48,
+  "gamesCount": 86,
+  "winRate": 44,
+  "lastPlayedAt": 1784075763,
   "country": "mx",
   "merged_ids": [],
   "ratingHistory": [
@@ -94,57 +94,11 @@
     1023,
     1008,
     995,
-    1014
+    1014,
+    999,
+    982
   ],
   "recentMatches": [
-    {
-      "matchId": 432889475,
-      "description": "10x 3x bamboo nothing ZOKANDUMB FREE",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1763107380,
-      "outcome": "win",
-      "preRating": 1032,
-      "postRating": 1049,
-      "eloChange": 17,
-      "civ": "Hindustanis",
-      "teamAvgElo": 1037,
-      "opponentAvgElo": 1059,
-      "teammates": [
-        "alexminho",
-        "adrian",
-        "ZTH"
-      ],
-      "opponents": [
-        "checkdis",
-        "For_The_King",
-        "procrastination.exe",
-        "VergaraRamirez"
-      ]
-    },
-    {
-      "matchId": 434276666,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Amazon Tunnel Twin Bays",
-      "timestamp": 1763626140,
-      "outcome": "win",
-      "preRating": 1049,
-      "postRating": 1063,
-      "eloChange": 14,
-      "civ": "Teutons",
-      "teamAvgElo": 1026,
-      "opponentAvgElo": 1011,
-      "teammates": [
-        "Meursault005",
-        "lalo shadowsong",
-        "Scadufax"
-      ],
-      "opponents": [
-        "Kumad",
-        "Myriad",
-        "Emotions are prohibited",
-        "Yuki"
-      ]
-    },
     {
       "matchId": 444445178,
       "description": "10x 3x bamboo nothing  turbo host here",
@@ -491,7 +445,7 @@
       "postRating": 1023,
       "eloChange": -18,
       "civ": "Tatars",
-      "teamAvgElo": 993,
+      "teamAvgElo": 990,
       "opponentAvgElo": 993,
       "teammates": [
         "Imperator Storm",
@@ -540,7 +494,7 @@
       "eloChange": -13,
       "civ": "Turks",
       "teamAvgElo": 1022,
-      "opponentAvgElo": 1080,
+      "opponentAvgElo": 1081,
       "teammates": [
         "NoAgendaPODCAST",
         "menorahjury",
@@ -575,6 +529,54 @@
         "Shadow",
         "ciblerIV",
         "Brotherman Bill"
+      ]
+    },
+    {
+      "matchId": 492376805,
+      "description": "10x3x Bamboo Nothing ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784069033,
+      "outcome": "loss",
+      "preRating": 1014,
+      "postRating": 999,
+      "eloChange": -15,
+      "civ": "Armenians",
+      "teamAvgElo": 1030,
+      "opponentAvgElo": 1044,
+      "teammates": [
+        "Stigel",
+        "Parts",
+        "skoolied"
+      ],
+      "opponents": [
+        "TJ",
+        "CoditZa",
+        "[CSGS]Runescape",
+        "Prinz Kay1"
+      ]
+    },
+    {
+      "matchId": 492394713,
+      "description": "10x 3x Bamboo - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784075763,
+      "outcome": "loss",
+      "preRating": 999,
+      "postRating": 982,
+      "eloChange": -17,
+      "civ": "Dravidians",
+      "teamAvgElo": 997,
+      "opponentAvgElo": 985,
+      "teammates": [
+        "TR.elephantman",
+        "SpiniestTuna222",
+        "Lordbusiness"
+      ],
+      "opponents": [
+        "Parts",
+        "luisedgaco02",
+        "ZaySol",
+        "Dylan Dog"
       ]
     }
   ]

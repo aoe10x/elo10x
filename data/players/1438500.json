@@ -1,12 +1,12 @@
 {
   "profile_id": 1438500,
   "alias": "Tootin B. Anthony",
-  "rating": 947,
+  "rating": 936,
   "wins": 13,
-  "losses": 24,
-  "gamesCount": 37,
-  "winRate": 35,
-  "lastPlayedAt": 1783984180,
+  "losses": 25,
+  "gamesCount": 38,
+  "winRate": 34,
+  "lastPlayedAt": 1784063255,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -47,33 +47,10 @@
     952,
     941,
     961,
-    947
+    947,
+    936
   ],
   "recentMatches": [
-    {
-      "matchId": 462386371,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1773308760,
-      "outcome": "loss",
-      "preRating": 947,
-      "postRating": 933,
-      "eloChange": -14,
-      "civ": "Koreans",
-      "teamAvgElo": 1064,
-      "opponentAvgElo": 1058,
-      "teammates": [
-        "Kumad",
-        "Myriad",
-        "Sam"
-      ],
-      "opponents": [
-        "Preacher!",
-        "PoonSlapper",
-        "BaloneyFrog",
-        "Bean goose"
-      ]
-    },
     {
       "matchId": 462787519,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -516,7 +493,7 @@
       "postRating": 947,
       "eloChange": -14,
       "civ": "Burgundians",
-      "teamAvgElo": 985,
+      "teamAvgElo": 984,
       "opponentAvgElo": 1000,
       "teammates": [
         "Parts",
@@ -528,6 +505,30 @@
         "Hoof",
         "CosteLoco",
         "Ode To  A Pineapple"
+      ]
+    },
+    {
+      "matchId": 492359937,
+      "description": "bamboo nothing 10x 3x",
+      "mapname": "Bamboo Nothing v1 [SCORPYON]",
+      "timestamp": 1784063255,
+      "outcome": "loss",
+      "preRating": 947,
+      "postRating": 936,
+      "eloChange": -11,
+      "civ": "Celts",
+      "teamAvgElo": 987,
+      "opponentAvgElo": 1051,
+      "teammates": [
+        "Müşkülpesend",
+        "Gasnápido",
+        "JaFu"
+      ],
+      "opponents": [
+        "AceTrooper",
+        "GarvSANGWAN",
+        "ElmoWithoutL",
+        "baianitro"
       ]
     }
   ]

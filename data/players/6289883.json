@@ -1,12 +1,12 @@
 {
   "profile_id": 6289883,
   "alias": "Nuke Toilet",
-  "rating": 1059,
+  "rating": 1044,
   "wins": 12,
-  "losses": 10,
-  "gamesCount": 22,
-  "winRate": 55,
-  "lastPlayedAt": 1783817212,
+  "losses": 11,
+  "gamesCount": 23,
+  "winRate": 52,
+  "lastPlayedAt": 1784065038,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -32,33 +32,10 @@
     1078,
     1094,
     1076,
-    1059
+    1059,
+    1044
   ],
   "recentMatches": [
-    {
-      "matchId": 334996382,
-      "description": "4vs4 10x FN 256 - random civ",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1724557440,
-      "outcome": "win",
-      "preRating": 1010,
-      "postRating": 1058,
-      "eloChange": 48,
-      "civ": "Unknown",
-      "teamAvgElo": 1027,
-      "opponentAvgElo": 1035,
-      "teammates": [
-        "gemmascho",
-        "Sensei",
-        "Tavik"
-      ],
-      "opponents": [
-        "virustg",
-        "procrastination.exe",
-        "Sicarius11",
-        "[TW] hushin0917"
-      ]
-    },
     {
       "matchId": 366780494,
       "description": "10x Shared",
@@ -477,7 +454,7 @@
       "postRating": 1076,
       "eloChange": -18,
       "civ": "Mongols",
-      "teamAvgElo": 1004,
+      "teamAvgElo": 1003,
       "opponentAvgElo": 1054,
       "teammates": [
         "AAA",
@@ -513,6 +490,30 @@
         "Myriad",
         "Nick123",
         "fredericomw"
+      ]
+    },
+    {
+      "matchId": 492365267,
+      "description": "10x shared and 3x tech | Bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784065038,
+      "outcome": "loss",
+      "preRating": 1059,
+      "postRating": 1044,
+      "eloChange": -15,
+      "civ": "Bohemians",
+      "teamAvgElo": 1046,
+      "opponentAvgElo": 1071,
+      "teammates": [
+        "Chikna Raavan",
+        "Jelly",
+        "Wozbo"
+      ],
+      "opponents": [
+        "Consume Product",
+        "procrastination.exe",
+        "kiggless",
+        "gamingtars"
       ]
     }
   ]

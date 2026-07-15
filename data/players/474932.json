@@ -1,12 +1,12 @@
 {
   "profile_id": 474932,
   "alias": "dazaetgb",
-  "rating": 941,
+  "rating": 931,
   "wins": 7,
-  "losses": 13,
-  "gamesCount": 20,
-  "winRate": 35,
-  "lastPlayedAt": 1784004818,
+  "losses": 14,
+  "gamesCount": 21,
+  "winRate": 33,
+  "lastPlayedAt": 1784076744,
   "country": "mx",
   "merged_ids": [],
   "ratingHistory": [
@@ -30,33 +30,10 @@
     946,
     927,
     951,
-    941
+    941,
+    931
   ],
   "recentMatches": [
-    {
-      "matchId": 360717927,
-      "description": "10x share bouns 3x tech",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1735218660,
-      "outcome": "loss",
-      "preRating": 1000,
-      "postRating": 959,
-      "eloChange": -41,
-      "civ": "Unknown",
-      "teamAvgElo": 1040,
-      "opponentAvgElo": 1050,
-      "teammates": [
-        "FcukCensorship",
-        "Alex",
-        "Nshaz"
-      ],
-      "opponents": [
-        "Frederick",
-        "ototomato",
-        "ToonooB",
-        "For_The_King"
-      ]
-    },
     {
       "matchId": 360735444,
       "description": "10x Shared Turbo Tunnel",
@@ -511,6 +488,30 @@
         "田瘾犯了",
         "hoderebus",
         "bigabyte"
+      ]
+    },
+    {
+      "matchId": 492397363,
+      "description": "10x3x Bamboo Nothing ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784076744,
+      "outcome": "loss",
+      "preRating": 941,
+      "postRating": 931,
+      "eloChange": -10,
+      "civ": "Malians",
+      "teamAvgElo": 992,
+      "opponentAvgElo": 1076,
+      "teammates": [
+        "TJ",
+        "Wololoo",
+        "LethalP59"
+      ],
+      "opponents": [
+        "Optimus",
+        "buyanjavyn",
+        "tedmed",
+        "kiggless"
       ]
     }
   ]

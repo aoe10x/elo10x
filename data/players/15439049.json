@@ -1,14 +1,17 @@
 {
-  "profile_id": 13105022,
+  "profile_id": 15439049,
   "alias": "Maverick29311",
-  "rating": 985,
+  "rating": 968,
   "wins": 8,
-  "losses": 11,
-  "gamesCount": 19,
-  "winRate": 42,
-  "lastPlayedAt": 1783161000,
-  "country": "Unknown",
-  "merged_ids": [],
+  "losses": 12,
+  "gamesCount": 20,
+  "winRate": 40,
+  "lastPlayedAt": 1784077299,
+  "country": "co",
+  "merged_ids": [
+    13105022,
+    15439049
+  ],
   "ratingHistory": [
     1000,
     963,
@@ -29,7 +32,8 @@
     958,
     943,
     964,
-    985
+    985,
+    968
   ],
   "recentMatches": [
     {
@@ -475,7 +479,7 @@
       "eloChange": 21,
       "civ": "Huns",
       "teamAvgElo": 1058,
-      "opponentAvgElo": 1003,
+      "opponentAvgElo": 1004,
       "teammates": [
         "{R} Parry",
         "Bao Oninon",
@@ -486,6 +490,30 @@
         "TheBloodyWall",
         "[B] pro.PHET",
         "468673564"
+      ]
+    },
+    {
+      "matchId": 492398308,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784077299,
+      "outcome": "loss",
+      "preRating": 985,
+      "postRating": 968,
+      "eloChange": -17,
+      "civ": "Romans",
+      "teamAvgElo": 965,
+      "opponentAvgElo": 997,
+      "teammates": [
+        "khouildi.tarek.tk",
+        "ernestocorrea18",
+        "Bifbatz"
+      ],
+      "opponents": [
+        "baianitro",
+        "SpiniestTuna222",
+        "BAKO",
+        "Not a Wizard"
       ]
     }
   ]

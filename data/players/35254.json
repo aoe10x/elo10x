@@ -1,12 +1,12 @@
 {
   "profile_id": 35254,
   "alias": "Berberecho_Feroz",
-  "rating": 945,
-  "wins": 14,
+  "rating": 965,
+  "wins": 15,
   "losses": 28,
-  "gamesCount": 42,
-  "winRate": 33,
-  "lastPlayedAt": 1783979891,
+  "gamesCount": 43,
+  "winRate": 35,
+  "lastPlayedAt": 1784065488,
   "country": "es",
   "merged_ids": [],
   "ratingHistory": [
@@ -52,33 +52,10 @@
     917,
     936,
     925,
-    945
+    945,
+    965
   ],
   "recentMatches": [
-    {
-      "matchId": 448068756,
-      "description": "4 vs 4 // 10x Shared Random Civ",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1768361280,
-      "outcome": "loss",
-      "preRating": 832,
-      "postRating": 824,
-      "eloChange": -8,
-      "civ": "Saracens",
-      "teamAvgElo": 983,
-      "opponentAvgElo": 1032,
-      "teammates": [
-        "makz",
-        "tonydf3",
-        "mecucyecuc"
-      ],
-      "opponents": [
-        "Juk3",
-        "Viriannn",
-        "NoLifeKing",
-        "G305"
-      ]
-    },
     {
       "matchId": 449060142,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -425,7 +402,7 @@
       "postRating": 928,
       "eloChange": 20,
       "civ": "Malay",
-      "teamAvgElo": 1016,
+      "teamAvgElo": 1015,
       "opponentAvgElo": 997,
       "teammates": [
         "VAPE NAYSH Y'ALL",
@@ -521,8 +498,8 @@
       "postRating": 945,
       "eloChange": 20,
       "civ": "Tatars",
-      "teamAvgElo": 1017,
-      "opponentAvgElo": 1010,
+      "teamAvgElo": 1018,
+      "opponentAvgElo": 1014,
       "teammates": [
         "Brotherman Bill",
         "Chuckyllo4417",
@@ -533,6 +510,30 @@
         "Chinicuila304",
         "Kaa Da Kaveman",
         "jair_silva"
+      ]
+    },
+    {
+      "matchId": 492366561,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784065488,
+      "outcome": "win",
+      "preRating": 945,
+      "postRating": 965,
+      "eloChange": 20,
+      "civ": "Chinese",
+      "teamAvgElo": 982,
+      "opponentAvgElo": 1045,
+      "teammates": [
+        "gemmascho",
+        "rob",
+        "Zak"
+      ],
+      "opponents": [
+        "SpiniestTuna222",
+        "duckbuildperson",
+        "Ortys",
+        "Chirijiraden"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 25674380,
   "alias": "Optimus",
-  "rating": 965,
-  "wins": 7,
+  "rating": 986,
+  "wins": 8,
   "losses": 11,
-  "gamesCount": 18,
-  "winRate": 39,
-  "lastPlayedAt": 1784053581,
+  "gamesCount": 19,
+  "winRate": 42,
+  "lastPlayedAt": 1784076744,
   "country": "us",
   "merged_ids": [
     13700923,
@@ -31,7 +31,8 @@
     980,
     958,
     981,
-    965
+    965,
+    986
   ],
   "recentMatches": [
     {
@@ -165,7 +166,7 @@
       "eloChange": -24,
       "civ": "Mongols",
       "teamAvgElo": 974,
-      "opponentAvgElo": 1136,
+      "opponentAvgElo": 1135,
       "teammates": [
         "bardad",
         "Wimac",
@@ -380,7 +381,7 @@
       "postRating": 980,
       "eloChange": -24,
       "civ": "Bohemians",
-      "teamAvgElo": 1042,
+      "teamAvgElo": 1043,
       "opponentAvgElo": 1022,
       "teammates": [
         "Meursault005",
@@ -464,6 +465,30 @@
         "Makinaskee",
         "Brotherman Bill",
         "La_Fratellanza"
+      ]
+    },
+    {
+      "matchId": 492397363,
+      "description": "10x3x Bamboo Nothing ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784076744,
+      "outcome": "win",
+      "preRating": 965,
+      "postRating": 986,
+      "eloChange": 21,
+      "civ": "Burmese",
+      "teamAvgElo": 1076,
+      "opponentAvgElo": 992,
+      "teammates": [
+        "buyanjavyn",
+        "tedmed",
+        "kiggless"
+      ],
+      "opponents": [
+        "TJ",
+        "Wololoo",
+        "dazaetgb",
+        "LethalP59"
       ]
     }
   ]

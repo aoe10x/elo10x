@@ -1,12 +1,12 @@
 {
   "profile_id": 3001085,
   "alias": "BAKO",
-  "rating": 979,
-  "wins": 19,
+  "rating": 1010,
+  "wins": 21,
   "losses": 22,
-  "gamesCount": 41,
-  "winRate": 46,
-  "lastPlayedAt": 1783043311,
+  "gamesCount": 43,
+  "winRate": 49,
+  "lastPlayedAt": 1784077299,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -51,57 +51,11 @@
     1025,
     1008,
     995,
-    979
+    979,
+    995,
+    1010
   ],
   "recentMatches": [
-    {
-      "matchId": 387668230,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1745487180,
-      "outcome": "win",
-      "preRating": 953,
-      "postRating": 972,
-      "eloChange": 19,
-      "civ": "Poles",
-      "teamAvgElo": 1043,
-      "opponentAvgElo": 1026,
-      "teammates": [
-        "Kumad",
-        "Myriad",
-        "Bifbatz"
-      ],
-      "opponents": [
-        "Teutonic_Huskarl",
-        "Preacher!",
-        "Limestic",
-        "dandan"
-      ]
-    },
-    {
-      "matchId": 414919208,
-      "description": "10x 3x Bamboo - 10xshared.com",
-      "mapname": "Bamboo Nothing_Paren_V2.3",
-      "timestamp": 1756085820,
-      "outcome": "win",
-      "preRating": 972,
-      "postRating": 990,
-      "eloChange": 18,
-      "civ": "Malay",
-      "teamAvgElo": 1033,
-      "opponentAvgElo": 1022,
-      "teammates": [
-        "Parts",
-        "konishika",
-        "SorryLongLogin"
-      ],
-      "opponents": [
-        "GRAGHACK",
-        "Temp",
-        "Koalakapitaen",
-        "Bifbatz"
-      ]
-    },
     {
       "matchId": 414924771,
       "description": "bamboo nothing 10x 3x",
@@ -496,7 +450,7 @@
       "postRating": 995,
       "eloChange": -13,
       "civ": "Turks",
-      "teamAvgElo": 1005,
+      "teamAvgElo": 1002,
       "opponentAvgElo": 1077,
       "teammates": [
         "Bifbatz",
@@ -520,7 +474,7 @@
       "postRating": 979,
       "eloChange": -16,
       "civ": "Gurjaras",
-      "teamAvgElo": 976,
+      "teamAvgElo": 975,
       "opponentAvgElo": 994,
       "teammates": [
         "juanmontes005",
@@ -532,6 +486,54 @@
         "Bifbatz",
         "Milk-Finger",
         "treehugger"
+      ]
+    },
+    {
+      "matchId": 492391982,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784075841,
+      "outcome": "win",
+      "preRating": 979,
+      "postRating": 995,
+      "eloChange": 16,
+      "civ": "Gurjaras",
+      "teamAvgElo": 1036,
+      "opponentAvgElo": 986,
+      "teammates": [
+        "Kumad",
+        "Myriad",
+        "Bifbatz"
+      ],
+      "opponents": [
+        "EL__PATRON",
+        "khouildi.tarek.tk",
+        "AssBurgers",
+        "Rooaary"
+      ]
+    },
+    {
+      "matchId": 492398308,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784077299,
+      "outcome": "win",
+      "preRating": 995,
+      "postRating": 1010,
+      "eloChange": 15,
+      "civ": "Byzantines",
+      "teamAvgElo": 997,
+      "opponentAvgElo": 965,
+      "teammates": [
+        "baianitro",
+        "SpiniestTuna222",
+        "Not a Wizard"
+      ],
+      "opponents": [
+        "khouildi.tarek.tk",
+        "ernestocorrea18",
+        "Bifbatz",
+        "Maverick29311"
       ]
     }
   ]

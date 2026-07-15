@@ -1,12 +1,12 @@
 {
   "profile_id": 4611608,
   "alias": "baianitro",
-  "rating": 993,
-  "wins": 48,
+  "rating": 1038,
+  "wins": 51,
   "losses": 45,
-  "gamesCount": 93,
-  "winRate": 52,
-  "lastPlayedAt": 1784055284,
+  "gamesCount": 96,
+  "winRate": 53,
+  "lastPlayedAt": 1784077299,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -103,81 +103,12 @@
     1011,
     995,
     1009,
-    993
+    993,
+    1009,
+    1025,
+    1038
   ],
   "recentMatches": [
-    {
-      "matchId": 491647879,
-      "description": "Bamboo 10x Shared 3x Tech",
-      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
-      "timestamp": 1783798608,
-      "outcome": "win",
-      "preRating": 1005,
-      "postRating": 1021,
-      "eloChange": 16,
-      "civ": "Burmese",
-      "teamAvgElo": 1048,
-      "opponentAvgElo": 1013,
-      "teammates": [
-        "Xinzzo",
-        "疯狂的电脑",
-        "Master Polo4905"
-      ],
-      "opponents": [
-        "DnD",
-        "Ivy",
-        "La_Fratellanza",
-        "pandasadnap"
-      ]
-    },
-    {
-      "matchId": 491654162,
-      "description": "Bamboo 10x Shared 3x Tech",
-      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
-      "timestamp": 1783800086,
-      "outcome": "win",
-      "preRating": 1021,
-      "postRating": 1038,
-      "eloChange": 17,
-      "civ": "Aztecs",
-      "teamAvgElo": 1069,
-      "opponentAvgElo": 1053,
-      "teammates": [
-        "疯狂的电脑",
-        "Manba Out",
-        "La_Fratellanza"
-      ],
-      "opponents": [
-        "Ellie91",
-        "Lumedge",
-        "Tdot",
-        "Tootin B. Anthony"
-      ]
-    },
-    {
-      "matchId": 491659122,
-      "description": "Bamboo 10x Shared 3x Tech",
-      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
-      "timestamp": 1783801241,
-      "outcome": "loss",
-      "preRating": 1038,
-      "postRating": 1022,
-      "eloChange": -16,
-      "civ": "Armenians",
-      "teamAvgElo": 1054,
-      "opponentAvgElo": 1048,
-      "teammates": [
-        "TheCobra",
-        "疯狂的电脑",
-        "HorstSan"
-      ],
-      "opponents": [
-        "Ghost_pt",
-        "RA",
-        "Ivy",
-        "RadioActiveMan"
-      ]
-    },
     {
       "matchId": 491692987,
       "description": "Bamboo 10x Shared 3x Tech",
@@ -188,7 +119,7 @@
       "postRating": 1036,
       "eloChange": 14,
       "civ": "Goths",
-      "teamAvgElo": 1057,
+      "teamAvgElo": 1061,
       "opponentAvgElo": 982,
       "teammates": [
         "Chinicuila304",
@@ -236,7 +167,7 @@
       "postRating": 1003,
       "eloChange": -17,
       "civ": "Bulgarians",
-      "teamAvgElo": 1053,
+      "teamAvgElo": 1052,
       "opponentAvgElo": 1001,
       "teammates": [
         "NoAgendaPODCAST",
@@ -285,7 +216,7 @@
       "eloChange": 18,
       "civ": "Wei",
       "teamAvgElo": 1000,
-      "opponentAvgElo": 1029,
+      "opponentAvgElo": 1028,
       "teammates": [
         "Candy Burglar",
         "treehugger",
@@ -429,7 +360,7 @@
       "eloChange": 18,
       "civ": "Unknown",
       "teamAvgElo": 1023,
-      "opponentAvgElo": 1049,
+      "opponentAvgElo": 1048,
       "teammates": [
         "Chirijiraden",
         "自闭男孩",
@@ -584,6 +515,78 @@
         "SpiniestTuna222",
         "NothingAtAll11",
         "Paris Hilton"
+      ]
+    },
+    {
+      "matchId": 492359937,
+      "description": "bamboo nothing 10x 3x",
+      "mapname": "Bamboo Nothing v1 [SCORPYON]",
+      "timestamp": 1784063255,
+      "outcome": "win",
+      "preRating": 993,
+      "postRating": 1009,
+      "eloChange": 16,
+      "civ": "Bulgarians",
+      "teamAvgElo": 1051,
+      "opponentAvgElo": 987,
+      "teammates": [
+        "AceTrooper",
+        "GarvSANGWAN",
+        "ElmoWithoutL"
+      ],
+      "opponents": [
+        "Müşkülpesend",
+        "Gasnápido",
+        "Tootin B. Anthony",
+        "JaFu"
+      ]
+    },
+    {
+      "matchId": 492363183,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784064289,
+      "outcome": "win",
+      "preRating": 1009,
+      "postRating": 1025,
+      "eloChange": 16,
+      "civ": "Slavs",
+      "teamAvgElo": 1058,
+      "opponentAvgElo": 1003,
+      "teammates": [
+        "Monkeymonk",
+        "Gasnápido",
+        "GarvSANGWAN"
+      ],
+      "opponents": [
+        "ElmoWithoutL",
+        "NothingAtAll11",
+        "Pogonophobia69",
+        "CristoTheRealCeisto"
+      ]
+    },
+    {
+      "matchId": 492398308,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784077299,
+      "outcome": "win",
+      "preRating": 1025,
+      "postRating": 1038,
+      "eloChange": 13,
+      "civ": "Ethiopians",
+      "teamAvgElo": 997,
+      "opponentAvgElo": 965,
+      "teammates": [
+        "SpiniestTuna222",
+        "BAKO",
+        "Not a Wizard"
+      ],
+      "opponents": [
+        "khouildi.tarek.tk",
+        "ernestocorrea18",
+        "Bifbatz",
+        "Maverick29311"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 3093864,
   "alias": "NoLo",
-  "rating": 970,
+  "rating": 957,
   "wins": 13,
-  "losses": 21,
-  "gamesCount": 34,
-  "winRate": 38,
-  "lastPlayedAt": 1783676979,
+  "losses": 22,
+  "gamesCount": 35,
+  "winRate": 37,
+  "lastPlayedAt": 1784069962,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -15,7 +15,7 @@
     1017,
     1062,
     1101,
-    1054,
+    1055,
     1015,
     979,
     951,
@@ -44,33 +44,10 @@
     944,
     931,
     952,
-    970
+    970,
+    957
   ],
   "recentMatches": [
-    {
-      "matchId": 487145103,
-      "description": "10X RF",
-      "mapname": "Rage Forest 2026 Beta C",
-      "timestamp": 1782071243,
-      "outcome": "win",
-      "preRating": 903,
-      "postRating": 937,
-      "eloChange": 34,
-      "civ": "Unknown",
-      "teamAvgElo": 1048,
-      "opponentAvgElo": 1026,
-      "teammates": [
-        "TheCobra",
-        "Rgeadn",
-        "Fritz Fantom"
-      ],
-      "opponents": [
-        "saps_",
-        "Mortak",
-        "Zeriel",
-        "Somero"
-      ]
-    },
     {
       "matchId": 487149451,
       "description": "10X RF",
@@ -490,7 +467,7 @@
       "eloChange": 21,
       "civ": "Slavs",
       "teamAvgElo": 1042,
-      "opponentAvgElo": 1033,
+      "opponentAvgElo": 1032,
       "teammates": [
         "GiGi",
         "dimon21_8",
@@ -525,6 +502,30 @@
         "highROLEX",
         "紫蝶黄蜂俱有情",
         "electronplus2008"
+      ]
+    },
+    {
+      "matchId": 492379580,
+      "description": "10x shared and 3x tech | Bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784069962,
+      "outcome": "loss",
+      "preRating": 970,
+      "postRating": 957,
+      "eloChange": -13,
+      "civ": "Magyars",
+      "teamAvgElo": 994,
+      "opponentAvgElo": 1030,
+      "teammates": [
+        "Chirijiraden",
+        "ElmoWithoutL",
+        "Parts"
+      ],
+      "opponents": [
+        "Chikna Raavan",
+        "procrastination.exe",
+        "Ellie91",
+        "Prinz Kay1"
       ]
     }
   ]

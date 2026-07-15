@@ -1,12 +1,12 @@
 {
   "profile_id": 10501826,
   "alias": "Apostate of Hate",
-  "rating": 949,
-  "wins": 16,
+  "rating": 968,
+  "wins": 17,
   "losses": 24,
-  "gamesCount": 40,
-  "winRate": 40,
-  "lastPlayedAt": 1782947634,
+  "gamesCount": 41,
+  "winRate": 41,
+  "lastPlayedAt": 1784072306,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -50,33 +50,10 @@
     921,
     908,
     929,
-    949
+    949,
+    968
   ],
   "recentMatches": [
-    {
-      "matchId": 454417232,
-      "description": "4 vs 4 // 10x Shared Random Civ",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1770507600,
-      "outcome": "loss",
-      "preRating": 1059,
-      "postRating": 1045,
-      "eloChange": -14,
-      "civ": "Poles",
-      "teamAvgElo": 1026,
-      "opponentAvgElo": 1107,
-      "teammates": [
-        "Dexter",
-        "Radek",
-        "mamrh135"
-      ],
-      "opponents": [
-        "Juk3",
-        "Donald J Trump - Pedo Protector",
-        "[BRE] Francis",
-        "DreamLegion"
-      ]
-    },
     {
       "matchId": 455736416,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -520,7 +497,7 @@
       "eloChange": 20,
       "civ": "Armenians",
       "teamAvgElo": 977,
-      "opponentAvgElo": 1016,
+      "opponentAvgElo": 1014,
       "teammates": [
         "pandasadnap",
         "Jeluk",
@@ -531,6 +508,30 @@
         "Gasnápido",
         "SpiniestTuna222",
         "lord evil"
+      ]
+    },
+    {
+      "matchId": 492385494,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784072306,
+      "outcome": "win",
+      "preRating": 949,
+      "postRating": 968,
+      "eloChange": 19,
+      "civ": "Aztecs",
+      "teamAvgElo": 1091,
+      "opponentAvgElo": 1009,
+      "teammates": [
+        "NoAgendaPODCAST",
+        "tonzo",
+        "Boarjack Boarsman"
+      ],
+      "opponents": [
+        "tacotoy",
+        "procrastination.exe",
+        "Vulkan",
+        "jorgeviveros3"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 2389202,
   "alias": "Rooaary",
-  "rating": 966,
-  "wins": 45,
-  "losses": 46,
-  "gamesCount": 91,
+  "rating": 971,
+  "wins": 46,
+  "losses": 47,
+  "gamesCount": 93,
   "winRate": 49,
-  "lastPlayedAt": 1783998804,
+  "lastPlayedAt": 1784077232,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -101,57 +101,11 @@
     978,
     964,
     980,
-    966
+    966,
+    953,
+    971
   ],
   "recentMatches": [
-    {
-      "matchId": 420257693,
-      "description": "turbo 10x 3x bamboo",
-      "mapname": "Bamboo Nothing_Paren_Vlocal_V2.5",
-      "timestamp": 1758377700,
-      "outcome": "loss",
-      "preRating": 1046,
-      "postRating": 1031,
-      "eloChange": -15,
-      "civ": "Huns",
-      "teamAvgElo": 1034,
-      "opponentAvgElo": 1074,
-      "teammates": [
-        "PIEROGI",
-        "Lykerya",
-        "FAOse7en"
-      ],
-      "opponents": [
-        "Clean",
-        "CrazyKaelby",
-        "Lord Grim",
-        "Frederick"
-      ]
-    },
-    {
-      "matchId": 420648979,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1758514140,
-      "outcome": "win",
-      "preRating": 1031,
-      "postRating": 1047,
-      "eloChange": 16,
-      "civ": "Unknown",
-      "teamAvgElo": 1096,
-      "opponentAvgElo": 1042,
-      "teammates": [
-        "ImOneWithTheTree",
-        "Bourne2Believe",
-        "Yeepers"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "Mehandor",
-        "[S33]ff",
-        "Selvaria"
-      ]
-    },
     {
       "matchId": 423407003,
       "description": "10x 3x shared,random, up-up-up,research",
@@ -330,7 +284,7 @@
       "postRating": 962,
       "eloChange": -11,
       "civ": "Vietnamese",
-      "teamAvgElo": 1032,
+      "teamAvgElo": 1030,
       "opponentAvgElo": 1079,
       "teammates": [
         "OhSheeep",
@@ -355,7 +309,7 @@
       "eloChange": -12,
       "civ": "Huns",
       "teamAvgElo": 1038,
-      "opponentAvgElo": 1039,
+      "opponentAvgElo": 1040,
       "teammates": [
         "Bobuler",
         "babeleo",
@@ -403,7 +357,7 @@
       "eloChange": 21,
       "civ": "Teutons",
       "teamAvgElo": 985,
-      "opponentAvgElo": 1064,
+      "opponentAvgElo": 1063,
       "teammates": [
         "Bobuler",
         "BaldAfro",
@@ -570,7 +524,7 @@
       "postRating": 966,
       "eloChange": -14,
       "civ": "Burmese",
-      "teamAvgElo": 974,
+      "teamAvgElo": 975,
       "opponentAvgElo": 1026,
       "teammates": [
         "irvizuett",
@@ -582,6 +536,54 @@
         "SpiniestTuna222",
         "侯傻傻ᔦఠఠᔨ shasha",
         "Makinaskee"
+      ]
+    },
+    {
+      "matchId": 492391982,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784075841,
+      "outcome": "loss",
+      "preRating": 966,
+      "postRating": 953,
+      "eloChange": -13,
+      "civ": "Vietnamese",
+      "teamAvgElo": 986,
+      "opponentAvgElo": 1036,
+      "teammates": [
+        "EL__PATRON",
+        "khouildi.tarek.tk",
+        "AssBurgers"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "BAKO",
+        "Bifbatz"
+      ]
+    },
+    {
+      "matchId": 492398687,
+      "description": "10x shared and 3x tech | Bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784077232,
+      "outcome": "win",
+      "preRating": 953,
+      "postRating": 971,
+      "eloChange": 18,
+      "civ": "Incas",
+      "teamAvgElo": 1004,
+      "opponentAvgElo": 1004,
+      "teammates": [
+        "Chikna Raavan",
+        "Horus",
+        "BarqBarq"
+      ],
+      "opponents": [
+        "Consume Product",
+        "Nigerian Farmer",
+        "Loki92sx",
+        "FirstRussianTzar"
       ]
     }
   ]

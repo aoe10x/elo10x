@@ -1,12 +1,12 @@
 {
   "profile_id": 3048078,
   "alias": "Angry Meow",
-  "rating": 1061,
-  "wins": 15,
+  "rating": 1077,
+  "wins": 16,
   "losses": 14,
-  "gamesCount": 29,
-  "winRate": 52,
-  "lastPlayedAt": 1783387251,
+  "gamesCount": 30,
+  "winRate": 53,
+  "lastPlayedAt": 1784069270,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -39,33 +39,10 @@
     1016,
     1032,
     1046,
-    1061
+    1061,
+    1077
   ],
   "recentMatches": [
-    {
-      "matchId": 343184957,
-      "description": "10x with 256x  Forest Nothing Fun",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1728028260,
-      "outcome": "loss",
-      "preRating": 964,
-      "postRating": 932,
-      "eloChange": -32,
-      "civ": "Persians",
-      "teamAvgElo": 1062,
-      "opponentAvgElo": 983,
-      "teammates": [
-        "Tortrix",
-        "ototomato",
-        "Open"
-      ],
-      "opponents": [
-        "hdygates",
-        "Holy Cheetos",
-        "vikneT1",
-        "ElmoWithoutL"
-      ]
-    },
     {
       "matchId": 343620513,
       "description": "10x shared",
@@ -508,7 +485,7 @@
       "postRating": 1061,
       "eloChange": 15,
       "civ": "Persians",
-      "teamAvgElo": 1080,
+      "teamAvgElo": 1081,
       "opponentAvgElo": 1022,
       "teammates": [
         "mothysime11",
@@ -520,6 +497,30 @@
         "menorahjury",
         "AleRayado88",
         "gerardoprado93"
+      ]
+    },
+    {
+      "matchId": 492377889,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784069270,
+      "outcome": "win",
+      "preRating": 1061,
+      "postRating": 1077,
+      "eloChange": 16,
+      "civ": "Maya",
+      "teamAvgElo": 1058,
+      "opponentAvgElo": 1067,
+      "teammates": [
+        "NoAgendaPODCAST",
+        "pierrick334455",
+        "tonzo"
+      ],
+      "opponents": [
+        "Consume Product",
+        "Harold806",
+        "Kuecken_das_Vollstrecker",
+        "Vulkan"
       ]
     }
   ]
