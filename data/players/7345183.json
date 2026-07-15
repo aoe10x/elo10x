@@ -1,12 +1,12 @@
 {
   "profile_id": 7345183,
   "alias": "Eemeli",
-  "rating": 848,
+  "rating": 839,
   "wins": 3,
-  "losses": 12,
-  "gamesCount": 15,
-  "winRate": 20,
-  "lastPlayedAt": 1783936091,
+  "losses": 13,
+  "gamesCount": 16,
+  "winRate": 19,
+  "lastPlayedAt": 1784119740,
   "country": "fi",
   "merged_ids": [],
   "ratingHistory": [
@@ -25,7 +25,8 @@
     894,
     877,
     861,
-    848
+    848,
+    839
   ],
   "recentMatches": [
     {
@@ -386,6 +387,30 @@
         "鱼浆",
         "平生不修善果 只爱石油军火",
         "Scipio"
+      ]
+    },
+    {
+      "matchId": 492481427,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784119740,
+      "outcome": "loss",
+      "preRating": 848,
+      "postRating": 839,
+      "eloChange": -9,
+      "civ": "Dravidians",
+      "teamAvgElo": 995,
+      "opponentAvgElo": 1108,
+      "teammates": [
+        "maddymsg",
+        "Zavgor",
+        "babeleo"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "pandalam",
+        "Grimmie",
+        "mgmanager"
       ]
     }
   ]

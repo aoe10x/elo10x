@@ -1,12 +1,12 @@
 {
   "profile_id": 8928830,
   "alias": "Given Sens",
-  "rating": 1018,
+  "rating": 1004,
   "wins": 29,
-  "losses": 35,
-  "gamesCount": 64,
+  "losses": 36,
+  "gamesCount": 65,
   "winRate": 45,
-  "lastPlayedAt": 1783951175,
+  "lastPlayedAt": 1784118330,
   "country": "nl",
   "merged_ids": [],
   "ratingHistory": [
@@ -74,33 +74,10 @@
     1062,
     1044,
     1031,
-    1018
+    1018,
+    1004
   ],
   "recentMatches": [
-    {
-      "matchId": 448857470,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1768639140,
-      "outcome": "win",
-      "preRating": 1027,
-      "postRating": 1040,
-      "eloChange": 13,
-      "civ": "Berbers",
-      "teamAvgElo": 1095,
-      "opponentAvgElo": 955,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "TheRiceMan",
-        "Imperator Storm"
-      ],
-      "opponents": [
-        "MartiniBR",
-        "Rubens",
-        "XleOn",
-        "Monkeymonk"
-      ]
-    },
     {
       "matchId": 450066381,
       "description": "10x 3x - bamboo",
@@ -555,6 +532,30 @@
         "Lumedge",
         "GOJO",
         "kekekeya"
+      ]
+    },
+    {
+      "matchId": 492479125,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784118330,
+      "outcome": "loss",
+      "preRating": 1018,
+      "postRating": 1004,
+      "eloChange": -14,
+      "civ": "Malians",
+      "teamAvgElo": 1005,
+      "opponentAvgElo": 1062,
+      "teammates": [
+        "i kun 2.5",
+        "kaka52pk",
+        "abatyse6533"
+      ],
+      "opponents": [
+        "tonkatumura",
+        "刘xx",
+        "Dr.Ao",
+        "TUF | DUKE_NUKEM"
       ]
     }
   ]

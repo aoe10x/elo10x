@@ -1,12 +1,12 @@
 {
   "profile_id": 2330261,
   "alias": "davidll_5",
-  "rating": 921,
+  "rating": 909,
   "wins": 30,
-  "losses": 53,
-  "gamesCount": 83,
+  "losses": 54,
+  "gamesCount": 84,
   "winRate": 36,
-  "lastPlayedAt": 1783958770,
+  "lastPlayedAt": 1784115274,
   "country": "es",
   "merged_ids": [],
   "ratingHistory": [
@@ -93,33 +93,10 @@
     926,
     912,
     899,
-    921
+    921,
+    909
   ],
   "recentMatches": [
-    {
-      "matchId": 453493505,
-      "description": "10x 3x bamboo random  CIV",
-      "mapname": "Bamboo Nothing_Paren_V3.0",
-      "timestamp": 1770171420,
-      "outcome": "loss",
-      "preRating": 913,
-      "postRating": 902,
-      "eloChange": -11,
-      "civ": "Franks",
-      "teamAvgElo": 987,
-      "opponentAvgElo": 1018,
-      "teammates": [
-        "JuanMalote",
-        "^1Butcher_^4Mars",
-        "jones"
-      ],
-      "opponents": [
-        "bijiyumo",
-        "BALA",
-        "pommfrittensohn",
-        "bischofl"
-      ]
-    },
     {
       "matchId": 455365420,
       "description": "10x shared 3x tech bamboo nothing",
@@ -574,6 +551,30 @@
         "^gOsO^",
         "Paolo Carrosel",
         "Arakli61"
+      ]
+    },
+    {
+      "matchId": 492472004,
+      "description": "bamboo nothing 10x",
+      "mapname": "Bamboo Nothing v3 (BaLi)",
+      "timestamp": 1784115274,
+      "outcome": "loss",
+      "preRating": 921,
+      "postRating": 909,
+      "eloChange": -12,
+      "civ": "Vietnamese",
+      "teamAvgElo": 999,
+      "opponentAvgElo": 1018,
+      "teammates": [
+        "Consume Product",
+        "margolumen",
+        "Waryahay"
+      ],
+      "opponents": [
+        "[B] Zennith",
+        "476055690",
+        "Tiny Hands",
+        "@lex"
       ]
     }
   ]
