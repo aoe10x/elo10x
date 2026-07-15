@@ -1,12 +1,12 @@
 {
   "profile_id": 817297,
   "alias": "ChiH",
-  "rating": 980,
+  "rating": 966,
   "wins": 22,
-  "losses": 29,
-  "gamesCount": 51,
-  "winRate": 43,
-  "lastPlayedAt": 1783984637,
+  "losses": 30,
+  "gamesCount": 52,
+  "winRate": 42,
+  "lastPlayedAt": 1784127261,
   "country": "ru",
   "merged_ids": [],
   "ratingHistory": [
@@ -61,33 +61,10 @@
     949,
     938,
     961,
-    980
+    980,
+    966
   ],
   "recentMatches": [
-    {
-      "matchId": 479219281,
-      "description": "+10x+3xtech   no noob",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1779315120,
-      "outcome": "loss",
-      "preRating": 1042,
-      "postRating": 1024,
-      "eloChange": -18,
-      "civ": "Ethiopians",
-      "teamAvgElo": 1042,
-      "opponentAvgElo": 1001,
-      "teammates": [
-        "Emusan",
-        "Not a Wizard",
-        "fxsound"
-      ],
-      "opponents": [
-        "拍车面前人人平等",
-        "疯狂的电脑",
-        "kekekeya",
-        "KingOfTheNorth"
-      ]
-    },
     {
       "matchId": 479985316,
       "description": "10x 3x BN",
@@ -542,6 +519,30 @@
         "TheZeos",
         "Your Ego",
         "Manba Out"
+      ]
+    },
+    {
+      "matchId": 492503799,
+      "description": "Bamboo nothing 10X3X",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784127261,
+      "outcome": "loss",
+      "preRating": 980,
+      "postRating": 966,
+      "eloChange": -14,
+      "civ": "Bohemians",
+      "teamAvgElo": 1015,
+      "opponentAvgElo": 1016,
+      "teammates": [
+        "Memberwise",
+        "Ghandi",
+        "M¤l₫"
+      ],
+      "opponents": [
+        "yxsko93",
+        "golhmogh",
+        "476055690",
+        "UndreamtBacon8"
       ]
     }
   ]

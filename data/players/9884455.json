@@ -1,12 +1,12 @@
 {
   "profile_id": 9884455,
   "alias": "fuec",
-  "rating": 957,
+  "rating": 946,
   "wins": 9,
-  "losses": 15,
-  "gamesCount": 24,
-  "winRate": 38,
-  "lastPlayedAt": 1747599000,
+  "losses": 16,
+  "gamesCount": 25,
+  "winRate": 36,
+  "lastPlayedAt": 1784129170,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -34,33 +34,10 @@
     958,
     947,
     933,
-    957
+    957,
+    946
   ],
   "recentMatches": [
-    {
-      "matchId": 381716029,
-      "description": "10x shared 4v4",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1743271740,
-      "outcome": "loss",
-      "preRating": 929,
-      "postRating": 895,
-      "eloChange": -34,
-      "civ": "Unknown",
-      "teamAvgElo": 979,
-      "opponentAvgElo": 997,
-      "teammates": [
-        "desi",
-        "SorryLongLogin",
-        "Mortak"
-      ],
-      "opponents": [
-        "2EZ.trombone",
-        "kunyi",
-        "TW",
-        "Ali-B"
-      ]
-    },
     {
       "matchId": 381822360,
       "description": "10x/X3/x10 shared BAMBOO NOTHING",
@@ -515,6 +492,30 @@
         "MegaMyth86",
         "Zni.无殇",
         "capybara"
+      ]
+    },
+    {
+      "matchId": 492509281,
+      "description": "10x Shared Civ Bonus (everything nothing)",
+      "mapname": "Bush Nothing",
+      "timestamp": 1784129170,
+      "outcome": "loss",
+      "preRating": 957,
+      "postRating": 946,
+      "eloChange": -11,
+      "civ": "Chinese",
+      "teamAvgElo": 972,
+      "opponentAvgElo": 1073,
+      "teammates": [
+        "WhiteMonk",
+        "^gOsO^",
+        "luischg"
+      ],
+      "opponents": [
+        "kekekeya",
+        "[Liiit] Zbyszek",
+        "margolumen",
+        "TioMg100"
       ]
     }
   ]

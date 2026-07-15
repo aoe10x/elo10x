@@ -1,12 +1,12 @@
 {
   "profile_id": 3456680,
   "alias": "GenP",
-  "rating": 945,
+  "rating": 930,
   "wins": 36,
-  "losses": 53,
-  "gamesCount": 89,
+  "losses": 54,
+  "gamesCount": 90,
   "winRate": 40,
-  "lastPlayedAt": 1783948273,
+  "lastPlayedAt": 1784120558,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -99,33 +99,10 @@
     944,
     963,
     955,
-    945
+    945,
+    930
   ],
   "recentMatches": [
-    {
-      "matchId": 489141502,
-      "description": "i kun 10x3x 4v4s qun729084973",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1782822198,
-      "outcome": "loss",
-      "preRating": 1032,
-      "postRating": 1017,
-      "eloChange": -15,
-      "civ": "Britons",
-      "teamAvgElo": 1056,
-      "opponentAvgElo": 1053,
-      "teammates": [
-        "i kun 2.5",
-        "鱼浆",
-        "The Wet Bandit"
-      ],
-      "opponents": [
-        "matt",
-        "Denno037",
-        "iamatthe.hell",
-        "TUF | DUKE_NUKEM"
-      ]
-    },
     {
       "matchId": 489524584,
       "description": "10x 3x bamboo",
@@ -580,6 +557,30 @@
         "我是ikun",
         "majorleyendo",
         "ototomato"
+      ]
+    },
+    {
+      "matchId": 492484108,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784120558,
+      "outcome": "loss",
+      "preRating": 945,
+      "postRating": 930,
+      "eloChange": -15,
+      "civ": "Teutons",
+      "teamAvgElo": 1005,
+      "opponentAvgElo": 977,
+      "teammates": [
+        "Monk",
+        "komatti",
+        "apolizer"
+      ],
+      "opponents": [
+        "i kun 2.5",
+        "kaka52pk",
+        "金菜",
+        "DnD"
       ]
     }
   ]

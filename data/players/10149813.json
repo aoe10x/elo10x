@@ -1,12 +1,12 @@
 {
   "profile_id": 10149813,
   "alias": "UndreamtBacon8",
-  "rating": 1080,
-  "wins": 44,
+  "rating": 1093,
+  "wins": 45,
   "losses": 57,
-  "gamesCount": 101,
+  "gamesCount": 102,
   "winRate": 44,
-  "lastPlayedAt": 1782099255,
+  "lastPlayedAt": 1784127261,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,6 @@
     773,
     764,
     801,
-    836,
     827,
     819,
     846,
@@ -35,6 +34,7 @@
     893,
     916,
     939,
+    956,
     976,
     961,
     949,
@@ -60,7 +60,6 @@
     953,
     971,
     957,
-    977,
     995,
     979,
     998,
@@ -84,6 +83,7 @@
     992,
     1013,
     996,
+    1012,
     995,
     983,
     1004,
@@ -92,7 +92,6 @@
     966,
     953,
     938,
-    928,
     949,
     970,
     992,
@@ -109,33 +108,10 @@
     1032,
     1050,
     1065,
-    1080
+    1080,
+    1093
   ],
   "recentMatches": [
-    {
-      "matchId": 482536157,
-      "description": "10x Shared random civ bamboo",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1780484957,
-      "outcome": "loss",
-      "preRating": 966,
-      "postRating": 953,
-      "eloChange": -13,
-      "civ": "Slavs",
-      "teamAvgElo": 958,
-      "opponentAvgElo": 1037,
-      "teammates": [
-        "Monk",
-        "Godofsinner",
-        "Jackbrick"
-      ],
-      "opponents": [
-        "half sucked mango",
-        "mgmanager",
-        "beat",
-        "Lietuva_"
-      ]
-    },
     {
       "matchId": 482559350,
       "description": "i kun 10x3x 4v4s ",
@@ -590,6 +566,30 @@
         "edalmavuz",
         "panzercolt",
         "Preacher!"
+      ]
+    },
+    {
+      "matchId": 492503799,
+      "description": "Bamboo nothing 10X3X",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784127261,
+      "outcome": "win",
+      "preRating": 1080,
+      "postRating": 1093,
+      "eloChange": 13,
+      "civ": "Berbers",
+      "teamAvgElo": 1016,
+      "opponentAvgElo": 1015,
+      "teammates": [
+        "yxsko93",
+        "golhmogh",
+        "476055690"
+      ],
+      "opponents": [
+        "ChiH",
+        "Memberwise",
+        "Ghandi",
+        "M¤l₫"
       ]
     }
   ]
