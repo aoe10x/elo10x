@@ -1,11 +1,11 @@
 {
   "profile_id": 4117493,
   "alias": "LiquidDrive",
-  "rating": 1006,
+  "rating": 993,
   "wins": 14,
-  "losses": 15,
-  "gamesCount": 29,
-  "winRate": 48,
+  "losses": 16,
+  "gamesCount": 30,
+  "winRate": 47,
   "lastPlayedAt": 1784090654,
   "country": "be",
   "merged_ids": [],
@@ -39,33 +39,10 @@
     1018,
     1004,
     990,
-    1006
+    976,
+    993
   ],
   "recentMatches": [
-    {
-      "matchId": 379347136,
-      "description": "10x shared all random",
-      "mapname": "Albero@Arenaamazontunnel",
-      "timestamp": 1742359380,
-      "outcome": "win",
-      "preRating": 1114,
-      "postRating": 1137,
-      "eloChange": 23,
-      "civ": "Chinese",
-      "teamAvgElo": 1032,
-      "opponentAvgElo": 995,
-      "teammates": [
-        "afrolumpa",
-        "Raggamuffin'",
-        "RagedTugboat493"
-      ],
-      "opponents": [
-        "Mark Rutte",
-        "OBE",
-        "bijiyumo",
-        "xa4"
-      ]
-    },
     {
       "matchId": 390471361,
       "description": "10x Tech Amazon FAST/TURBO",
@@ -499,17 +476,41 @@
       ]
     },
     {
+      "matchId": 471465567,
+      "description": "10x 3x Bamboo Nothing ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1776562905,
+      "outcome": "loss",
+      "preRating": 990,
+      "postRating": 976,
+      "eloChange": -14,
+      "civ": "Cumans",
+      "teamAvgElo": 1072,
+      "opponentAvgElo": 1037,
+      "teammates": [
+        "SeeYouTomorrow",
+        "THE THING",
+        "ZTH"
+      ],
+      "opponents": [
+        "EzraSkywalker96",
+        "GoOverlay.com | AwE",
+        "RawChicken",
+        "Shadow"
+      ]
+    },
+    {
       "matchId": 492432573,
       "description": "10x shared and 3x tech | Bamboo nothing",
       "mapname": "BAMBOO NOTHING - SCORPYON DE",
       "timestamp": 1784090654,
       "outcome": "win",
-      "preRating": 990,
-      "postRating": 1006,
-      "eloChange": 16,
+      "preRating": 976,
+      "postRating": 993,
+      "eloChange": 17,
       "civ": "Saracens",
-      "teamAvgElo": 1071,
-      "opponentAvgElo": 1000,
+      "teamAvgElo": 1068,
+      "opponentAvgElo": 1001,
       "teammates": [
         "Chikna Raavan",
         "aLEXt",

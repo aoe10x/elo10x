@@ -1,11 +1,11 @@
 {
   "profile_id": 1143927,
   "alias": "ernestocorrea18",
-  "rating": 922,
-  "wins": 27,
+  "rating": 942,
+  "wins": 28,
   "losses": 42,
-  "gamesCount": 69,
-  "winRate": 39,
+  "gamesCount": 70,
+  "winRate": 40,
   "lastPlayedAt": 1784082245,
   "country": "co",
   "merged_ids": [],
@@ -79,33 +79,10 @@
     962,
     948,
     934,
-    922
+    955,
+    942
   ],
   "recentMatches": [
-    {
-      "matchId": 435709710,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1764156540,
-      "outcome": "loss",
-      "preRating": 990,
-      "postRating": 972,
-      "eloChange": -18,
-      "civ": "Franks",
-      "teamAvgElo": 1083,
-      "opponentAvgElo": 954,
-      "teammates": [
-        "spits",
-        "Bao Oninon",
-        "Evil  Destroyer"
-      ],
-      "opponents": [
-        "FPS Geo",
-        "CobraBubbles801",
-        "nooblet3300",
-        "FEAR_ME"
-      ]
-    },
     {
       "matchId": 435713788,
       "description": "256x 10x Forest Nothing",
@@ -333,7 +310,7 @@
       "eloChange": -13,
       "civ": "Persians",
       "teamAvgElo": 979,
-      "opponentAvgElo": 1019,
+      "opponentAvgElo": 1020,
       "teammates": [
         "Arosive",
         "Master Polo4905",
@@ -380,7 +357,7 @@
       "postRating": 942,
       "eloChange": -14,
       "civ": "Cumans",
-      "teamAvgElo": 1016,
+      "teamAvgElo": 1015,
       "opponentAvgElo": 995,
       "teammates": [
         "ODOBrodo",
@@ -500,8 +477,8 @@
       "postRating": 948,
       "eloChange": -14,
       "civ": "Mongols",
-      "teamAvgElo": 1038,
-      "opponentAvgElo": 1000,
+      "teamAvgElo": 1039,
+      "opponentAvgElo": 1001,
       "teammates": [
         "iamatthe.hell",
         "Trekkspell",
@@ -539,17 +516,41 @@
       ]
     },
     {
+      "matchId": 492399757,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784078063,
+      "outcome": "win",
+      "preRating": 934,
+      "postRating": 955,
+      "eloChange": 21,
+      "civ": "Incas",
+      "teamAvgElo": 1000,
+      "opponentAvgElo": 1053,
+      "teammates": [
+        "pandasadnap",
+        "Dylan Dog",
+        "Paladin"
+      ],
+      "opponents": [
+        "Parenquima",
+        "Ozyroth",
+        "Parts",
+        "Moose"
+      ]
+    },
+    {
       "matchId": 492412021,
       "description": "10x 3x Bamboo Donut - 10xshared.com",
       "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
       "timestamp": 1784082245,
       "outcome": "loss",
-      "preRating": 934,
-      "postRating": 922,
-      "eloChange": -12,
+      "preRating": 955,
+      "postRating": 942,
+      "eloChange": -13,
       "civ": "Poles",
-      "teamAvgElo": 999,
-      "opponentAvgElo": 1021,
+      "teamAvgElo": 1004,
+      "opponentAvgElo": 1017,
       "teammates": [
         "Hamburglar2647",
         "-[RDU]- Gorda America Forever",

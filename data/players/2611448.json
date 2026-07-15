@@ -1,11 +1,11 @@
 {
   "profile_id": 2611448,
   "alias": "Ozyroth",
-  "rating": 966,
+  "rating": 949,
   "wins": 7,
-  "losses": 11,
-  "gamesCount": 18,
-  "winRate": 39,
+  "losses": 12,
+  "gamesCount": 19,
+  "winRate": 37,
   "lastPlayedAt": 1784079068,
   "country": "mx",
   "merged_ids": [],
@@ -27,8 +27,9 @@
     989,
     1020,
     999,
-    980,
-    966
+    981,
+    961,
+    949
   ],
   "recentMatches": [
     {
@@ -210,7 +211,7 @@
       "eloChange": -42,
       "civ": "Gurjaras",
       "teamAvgElo": 1028,
-      "opponentAvgElo": 1034,
+      "opponentAvgElo": 1035,
       "teammates": [
         "bigjames",
         "Ghost_pt",
@@ -422,8 +423,8 @@
       "timestamp": 1783915636,
       "outcome": "loss",
       "preRating": 999,
-      "postRating": 980,
-      "eloChange": -19,
+      "postRating": 981,
+      "eloChange": -18,
       "civ": "Malians",
       "teamAvgElo": 1044,
       "opponentAvgElo": 1061,
@@ -440,16 +441,40 @@
       ]
     },
     {
+      "matchId": 492399757,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784078063,
+      "outcome": "loss",
+      "preRating": 981,
+      "postRating": 961,
+      "eloChange": -20,
+      "civ": "Magyars",
+      "teamAvgElo": 1053,
+      "opponentAvgElo": 1000,
+      "teammates": [
+        "Parenquima",
+        "Parts",
+        "Moose"
+      ],
+      "opponents": [
+        "pandasadnap",
+        "Dylan Dog",
+        "ernestocorrea18",
+        "Paladin"
+      ]
+    },
+    {
       "matchId": 492403575,
       "description": "10x Shared Civ Bonus 4v4 Random ",
       "mapname": "Wet Woods v3.0.3",
       "timestamp": 1784079068,
       "outcome": "loss",
-      "preRating": 980,
-      "postRating": 966,
-      "eloChange": -14,
+      "preRating": 961,
+      "postRating": 949,
+      "eloChange": -12,
       "civ": "Ethiopians",
-      "teamAvgElo": 1024,
+      "teamAvgElo": 1016,
       "opponentAvgElo": 1094,
       "teammates": [
         "JoeyTribianni69",
