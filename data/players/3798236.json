@@ -1,12 +1,12 @@
 {
   "profile_id": 3798236,
   "alias": "Taurus ♠",
-  "rating": 1138,
+  "rating": 1118,
   "wins": 47,
-  "losses": 27,
-  "gamesCount": 74,
-  "winRate": 64,
-  "lastPlayedAt": 1783640589,
+  "losses": 28,
+  "gamesCount": 75,
+  "winRate": 63,
+  "lastPlayedAt": 1784071589,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -84,33 +84,10 @@
     1137,
     1119,
     1128,
-    1138
+    1138,
+    1118
   ],
   "recentMatches": [
-    {
-      "matchId": 422877399,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1759473720,
-      "outcome": "win",
-      "preRating": 1101,
-      "postRating": 1114,
-      "eloChange": 13,
-      "civ": "Hindustanis",
-      "teamAvgElo": 1015,
-      "opponentAvgElo": 1034,
-      "teammates": [
-        "janhartmann",
-        "Josh",
-        "[LWS] Mandatum"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "KnightofSaintJohn",
-        "El Barto",
-        "berserk"
-      ]
-    },
     {
       "matchId": 437723751,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -565,6 +542,30 @@
         "Mehandor",
         "Emusan",
         "MarieBrutale"
+      ]
+    },
+    {
+      "matchId": 492382738,
+      "description": "10x shared and 3x tech | Bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784071589,
+      "outcome": "loss",
+      "preRating": 1138,
+      "postRating": 1118,
+      "eloChange": -20,
+      "civ": "Saracens",
+      "teamAvgElo": 984,
+      "opponentAvgElo": 1055,
+      "teammates": [
+        "dinapal",
+        "Makinaskee",
+        "♥DraganBorn♥"
+      ],
+      "opponents": [
+        "Chikna Raavan",
+        "Panda314",
+        "疯狂的电脑",
+        "jacobhoaglun"
       ]
     }
   ]

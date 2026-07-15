@@ -1,12 +1,12 @@
 {
   "profile_id": 864352,
   "alias": "Nigerian Farmer",
-  "rating": 953,
+  "rating": 940,
   "wins": 14,
-  "losses": 19,
-  "gamesCount": 33,
-  "winRate": 42,
-  "lastPlayedAt": 1784077232,
+  "losses": 20,
+  "gamesCount": 34,
+  "winRate": 41,
+  "lastPlayedAt": 1784082245,
   "country": "se",
   "merged_ids": [],
   "ratingHistory": [
@@ -43,33 +43,10 @@
     956,
     947,
     967,
-    953
+    953,
+    940
   ],
   "recentMatches": [
-    {
-      "matchId": 487212114,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1782117360,
-      "outcome": "loss",
-      "preRating": 981,
-      "postRating": 956,
-      "eloChange": -25,
-      "civ": "Tatars",
-      "teamAvgElo": 999,
-      "opponentAvgElo": 1006,
-      "teammates": [
-        "Bifbatz",
-        "nooblet3300",
-        "Infiniti G35"
-      ],
-      "opponents": [
-        "BAKO",
-        "madmarc90",
-        "whobro123",
-        "BaldAfro"
-      ]
-    },
     {
       "matchId": 488568256,
       "description": "3x10x Bamboo",
@@ -416,8 +393,8 @@
       "postRating": 968,
       "eloChange": -13,
       "civ": "Koreans",
-      "teamAvgElo": 1003,
-      "opponentAvgElo": 1036,
+      "teamAvgElo": 1005,
+      "opponentAvgElo": 1037,
       "teammates": [
         "derailer9",
         "Parts",
@@ -441,7 +418,7 @@
       "eloChange": -12,
       "civ": "Mongols",
       "teamAvgElo": 994,
-      "opponentAvgElo": 1058,
+      "opponentAvgElo": 1060,
       "teammates": [
         "Tiny Hands",
         "Tortrix",
@@ -489,7 +466,7 @@
       "eloChange": 20,
       "civ": "Vietnamese",
       "teamAvgElo": 1011,
-      "opponentAvgElo": 1044,
+      "opponentAvgElo": 1047,
       "teammates": [
         "Consume Product",
         "NothingAtAll11",
@@ -513,7 +490,7 @@
       "eloChange": -14,
       "civ": "Vietnamese",
       "teamAvgElo": 1004,
-      "opponentAvgElo": 1004,
+      "opponentAvgElo": 1006,
       "teammates": [
         "Consume Product",
         "Loki92sx",
@@ -524,6 +501,30 @@
         "Horus",
         "BarqBarq",
         "Rooaary"
+      ]
+    },
+    {
+      "matchId": 492412021,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784082245,
+      "outcome": "loss",
+      "preRating": 953,
+      "postRating": 940,
+      "eloChange": -13,
+      "civ": "Hindustanis",
+      "teamAvgElo": 999,
+      "opponentAvgElo": 1021,
+      "teammates": [
+        "Hamburglar2647",
+        "-[RDU]- Gorda America Forever",
+        "ernestocorrea18"
+      ],
+      "opponents": [
+        "Parts",
+        "Shadow",
+        "Mehandor",
+        "Paing"
       ]
     }
   ]

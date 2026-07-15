@@ -1,12 +1,12 @@
 {
   "profile_id": 12286121,
   "alias": "Ti-tooaoo",
-  "rating": 940,
-  "wins": 18,
+  "rating": 960,
+  "wins": 19,
   "losses": 27,
-  "gamesCount": 45,
-  "winRate": 40,
-  "lastPlayedAt": 1784030798,
+  "gamesCount": 46,
+  "winRate": 41,
+  "lastPlayedAt": 1784079832,
   "country": "tw",
   "merged_ids": [
     12286121,
@@ -58,33 +58,10 @@
     968,
     956,
     948,
-    940
+    940,
+    960
   ],
   "recentMatches": [
-    {
-      "matchId": 477686969,
-      "description": "bamboo nothing 10x",
-      "mapname": "Bamboo Nothing V3 (Bali)",
-      "timestamp": 1778778660,
-      "outcome": "win",
-      "preRating": 982,
-      "postRating": 1000,
-      "eloChange": 18,
-      "civ": "Goths",
-      "teamAvgElo": 1006,
-      "opponentAvgElo": 1017,
-      "teammates": [
-        "[B] Zennith",
-        "Lozzer",
-        "468673564"
-      ],
-      "opponents": [
-        "Railbuilder",
-        "davidll_5",
-        "Elia",
-        "Boocer"
-      ]
-    },
     {
       "matchId": 477709281,
       "description": "10x3x Bamboo Nothing",
@@ -539,6 +516,30 @@
         "pandalam",
         "Jormungand",
         "Prinz Kay1"
+      ]
+    },
+    {
+      "matchId": 492405614,
+      "description": "10x shared and 3x tech | Bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784079832,
+      "outcome": "win",
+      "preRating": 940,
+      "postRating": 960,
+      "eloChange": 20,
+      "civ": "Aztecs",
+      "teamAvgElo": 1006,
+      "opponentAvgElo": 1024,
+      "teammates": [
+        "Chikna Raavan",
+        "Wololo",
+        "vincentc95"
+      ],
+      "opponents": [
+        "Not a Wizard",
+        "Waryahay",
+        "momo",
+        "Consume Product"
       ]
     }
   ]

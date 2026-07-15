@@ -1,12 +1,12 @@
 {
   "profile_id": 2611448,
   "alias": "Ozyroth",
-  "rating": 980,
+  "rating": 966,
   "wins": 7,
-  "losses": 10,
-  "gamesCount": 17,
-  "winRate": 41,
-  "lastPlayedAt": 1783915636,
+  "losses": 11,
+  "gamesCount": 18,
+  "winRate": 39,
+  "lastPlayedAt": 1784079068,
   "country": "mx",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,8 @@
     989,
     1020,
     999,
-    980
+    980,
+    966
   ],
   "recentMatches": [
     {
@@ -436,6 +437,30 @@
         "-[RDU]- Gorda America Forever",
         "beat",
         "Tiny Hands"
+      ]
+    },
+    {
+      "matchId": 492403575,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784079068,
+      "outcome": "loss",
+      "preRating": 980,
+      "postRating": 966,
+      "eloChange": -14,
+      "civ": "Ethiopians",
+      "teamAvgElo": 1024,
+      "opponentAvgElo": 1094,
+      "teammates": [
+        "JoeyTribianni69",
+        "EL__PATRON",
+        "Moose"
+      ],
+      "opponents": [
+        "Kumad",
+        "feid_",
+        "Myriad",
+        "Megatron"
       ]
     }
   ]

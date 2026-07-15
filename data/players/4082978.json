@@ -1,12 +1,12 @@
 {
   "profile_id": 4082978,
   "alias": "Megatron",
-  "rating": 1036,
-  "wins": 9,
+  "rating": 1093,
+  "wins": 12,
   "losses": 8,
-  "gamesCount": 17,
-  "winRate": 53,
-  "lastPlayedAt": 1783817212,
+  "gamesCount": 20,
+  "winRate": 60,
+  "lastPlayedAt": 1784080548,
   "country": "in",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,10 @@
     1054,
     1032,
     1059,
-    1036
+    1036,
+    1057,
+    1074,
+    1093
   ],
   "recentMatches": [
     {
@@ -436,6 +439,78 @@
         "Myriad",
         "Nick123",
         "fredericomw"
+      ]
+    },
+    {
+      "matchId": 492398994,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784077974,
+      "outcome": "win",
+      "preRating": 1036,
+      "postRating": 1057,
+      "eloChange": 21,
+      "civ": "Turks",
+      "teamAvgElo": 1080,
+      "opponentAvgElo": 1039,
+      "teammates": [
+        "Kumad",
+        "Myriad",
+        "ζ |  SaintPΞpsi94"
+      ],
+      "opponents": [
+        "JoeyTribianni69",
+        "feid_",
+        "EL__PATRON",
+        "Dark"
+      ]
+    },
+    {
+      "matchId": 492403575,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784079068,
+      "outcome": "win",
+      "preRating": 1057,
+      "postRating": 1074,
+      "eloChange": 17,
+      "civ": "Vikings",
+      "teamAvgElo": 1094,
+      "opponentAvgElo": 1024,
+      "teammates": [
+        "Kumad",
+        "feid_",
+        "Myriad"
+      ],
+      "opponents": [
+        "JoeyTribianni69",
+        "EL__PATRON",
+        "Moose",
+        "Ozyroth"
+      ]
+    },
+    {
+      "matchId": 492406812,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784080548,
+      "outcome": "win",
+      "preRating": 1074,
+      "postRating": 1093,
+      "eloChange": 19,
+      "civ": "Burgundians",
+      "teamAvgElo": 1036,
+      "opponentAvgElo": 1096,
+      "teammates": [
+        "feid_",
+        "nayman",
+        "Passion AGE"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "EL__PATRON",
+        "JoeyTribianni69"
       ]
     }
   ]

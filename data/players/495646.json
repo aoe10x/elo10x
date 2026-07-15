@@ -1,12 +1,12 @@
 {
   "profile_id": 495646,
   "alias": "Bifbatz",
-  "rating": 954,
-  "wins": 25,
+  "rating": 973,
+  "wins": 26,
   "losses": 35,
-  "gamesCount": 60,
-  "winRate": 42,
-  "lastPlayedAt": 1784077299,
+  "gamesCount": 61,
+  "winRate": 43,
+  "lastPlayedAt": 1784078797,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -70,33 +70,10 @@
     933,
     951,
     969,
-    954
+    954,
+    973
   ],
   "recentMatches": [
-    {
-      "matchId": 478915625,
-      "description": "x3x10x Shared (PQ3.2 Qualty daycare)",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1779185760,
-      "outcome": "loss",
-      "preRating": 940,
-      "postRating": 929,
-      "eloChange": -11,
-      "civ": "Britons",
-      "teamAvgElo": 1019,
-      "opponentAvgElo": 1058,
-      "teammates": [
-        "Parenquima",
-        "Apostate of Hate",
-        "Karthusxx"
-      ],
-      "opponents": [
-        "aLEXt",
-        "edalmavuz",
-        "helianth",
-        "sniper-123"
-      ]
-    },
     {
       "matchId": 479111718,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -348,7 +325,7 @@
       "eloChange": 21,
       "civ": "Cumans",
       "teamAvgElo": 1060,
-      "opponentAvgElo": 1013,
+      "opponentAvgElo": 1014,
       "teammates": [
         "BAKO",
         "Fringnut",
@@ -444,7 +421,7 @@
       "eloChange": 22,
       "civ": "Poles",
       "teamAvgElo": 1000,
-      "opponentAvgElo": 1062,
+      "opponentAvgElo": 1065,
       "teammates": [
         "NoAgendaPODCAST",
         "Imperator Storm",
@@ -551,6 +528,30 @@
         "SpiniestTuna222",
         "BAKO",
         "Not a Wizard"
+      ]
+    },
+    {
+      "matchId": 492402724,
+      "description": "10x3x Mangrove Jungle",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784078797,
+      "outcome": "win",
+      "preRating": 954,
+      "postRating": 973,
+      "eloChange": 19,
+      "civ": "Turks",
+      "teamAvgElo": 997,
+      "opponentAvgElo": 1011,
+      "teammates": [
+        "M¤l₫",
+        "BAKO",
+        "Belisarius"
+      ],
+      "opponents": [
+        "TJ",
+        "X",
+        "nooblet3300",
+        "Keishi"
       ]
     }
   ]

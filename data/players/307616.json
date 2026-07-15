@@ -1,12 +1,12 @@
 {
   "profile_id": 307616,
   "alias": "Moose",
-  "rating": 983,
+  "rating": 972,
   "wins": 36,
-  "losses": 40,
-  "gamesCount": 76,
+  "losses": 41,
+  "gamesCount": 77,
   "winRate": 47,
-  "lastPlayedAt": 1783910872,
+  "lastPlayedAt": 1784079068,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -86,33 +86,10 @@
     958,
     980,
     966,
-    983
+    983,
+    972
   ],
   "recentMatches": [
-    {
-      "matchId": 488603471,
-      "description": "10x Shared 3xTech Bamboo Nothing",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1782619985,
-      "outcome": "loss",
-      "preRating": 1062,
-      "postRating": 1048,
-      "eloChange": -14,
-      "civ": "Incas",
-      "teamAvgElo": 1035,
-      "opponentAvgElo": 1111,
-      "teammates": [
-        "{R} Parry",
-        "FPS Geo",
-        "Sanpan丶Lu"
-      ],
-      "opponents": [
-        "鱼浆",
-        "田瘾犯了",
-        "Rita De Valencia",
-        "nooblet3300"
-      ]
-    },
     {
       "matchId": 488608833,
       "description": "10x Shared 3xTech Bamboo Nothing",
@@ -244,7 +221,7 @@
       "eloChange": -13,
       "civ": "Tupi",
       "teamAvgElo": 986,
-      "opponentAvgElo": 1088,
+      "opponentAvgElo": 1089,
       "teammates": [
         "yimacs_yoyoyo",
         "iamatthe.hell",
@@ -567,6 +544,30 @@
         "Wololoo",
         "Paolo Carrosel",
         "mozu5"
+      ]
+    },
+    {
+      "matchId": 492403575,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784079068,
+      "outcome": "loss",
+      "preRating": 983,
+      "postRating": 972,
+      "eloChange": -11,
+      "civ": "Cumans",
+      "teamAvgElo": 1024,
+      "opponentAvgElo": 1094,
+      "teammates": [
+        "JoeyTribianni69",
+        "EL__PATRON",
+        "Ozyroth"
+      ],
+      "opponents": [
+        "Kumad",
+        "feid_",
+        "Myriad",
+        "Megatron"
       ]
     }
   ]

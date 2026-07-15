@@ -1,12 +1,12 @@
 {
   "profile_id": 3001085,
   "alias": "BAKO",
-  "rating": 1010,
-  "wins": 21,
+  "rating": 1026,
+  "wins": 22,
   "losses": 22,
-  "gamesCount": 43,
-  "winRate": 49,
-  "lastPlayedAt": 1784077299,
+  "gamesCount": 44,
+  "winRate": 50,
+  "lastPlayedAt": 1784078797,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -53,33 +53,10 @@
     995,
     979,
     995,
-    1010
+    1010,
+    1026
   ],
   "recentMatches": [
-    {
-      "matchId": 414924771,
-      "description": "bamboo nothing 10x 3x",
-      "mapname": "Bamboo Nothing V1 [Scorpyon]",
-      "timestamp": 1756087380,
-      "outcome": "win",
-      "preRating": 990,
-      "postRating": 1008,
-      "eloChange": 18,
-      "civ": "Goths",
-      "teamAvgElo": 1006,
-      "opponentAvgElo": 1037,
-      "teammates": [
-        "lu_zypher",
-        "Lucky",
-        "Parts"
-      ],
-      "opponents": [
-        "AceTrooper",
-        "Temp",
-        "Bifbatz",
-        "Echrand"
-      ]
-    },
     {
       "matchId": 414930312,
       "description": "10x 3x",
@@ -331,7 +308,7 @@
       "eloChange": 15,
       "civ": "Ethiopians",
       "teamAvgElo": 1060,
-      "opponentAvgElo": 1013,
+      "opponentAvgElo": 1014,
       "teammates": [
         "Fringnut",
         "babeleo",
@@ -426,7 +403,7 @@
       "postRating": 1008,
       "eloChange": -17,
       "civ": "Khmer",
-      "teamAvgElo": 1062,
+      "teamAvgElo": 1065,
       "opponentAvgElo": 1000,
       "teammates": [
         "TheRiceMan",
@@ -534,6 +511,30 @@
         "ernestocorrea18",
         "Bifbatz",
         "Maverick29311"
+      ]
+    },
+    {
+      "matchId": 492402724,
+      "description": "10x3x Mangrove Jungle",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784078797,
+      "outcome": "win",
+      "preRating": 1010,
+      "postRating": 1026,
+      "eloChange": 16,
+      "civ": "Goths",
+      "teamAvgElo": 997,
+      "opponentAvgElo": 1011,
+      "teammates": [
+        "M¤l₫",
+        "Bifbatz",
+        "Belisarius"
+      ],
+      "opponents": [
+        "TJ",
+        "X",
+        "nooblet3300",
+        "Keishi"
       ]
     }
   ]

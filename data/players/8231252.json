@@ -1,12 +1,12 @@
 {
   "profile_id": 8231252,
   "alias": "tedmed",
-  "rating": 991,
-  "wins": 27,
+  "rating": 1007,
+  "wins": 28,
   "losses": 29,
-  "gamesCount": 56,
-  "winRate": 48,
-  "lastPlayedAt": 1784076744,
+  "gamesCount": 57,
+  "winRate": 49,
+  "lastPlayedAt": 1784080570,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -66,33 +66,10 @@
     969,
     989,
     974,
-    991
+    991,
+    1007
   ],
   "recentMatches": [
-    {
-      "matchId": 451785762,
-      "description": "Bamboo 10x 3x 4v4",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1769600460,
-      "outcome": "loss",
-      "preRating": 1010,
-      "postRating": 996,
-      "eloChange": -14,
-      "civ": "Unknown",
-      "teamAvgElo": 974,
-      "opponentAvgElo": 1048,
-      "teammates": [
-        "[B]Dr. Catanabico",
-        "mack",
-        "MCC"
-      ],
-      "opponents": [
-        "PapusPopus",
-        "alexw",
-        "Haer Wei Who",
-        "El Buolas"
-      ]
-    },
     {
       "matchId": 460779399,
       "description": "10x 3x - bamboo - 3.1",
@@ -547,6 +524,30 @@
         "Wololoo",
         "dazaetgb",
         "LethalP59"
+      ]
+    },
+    {
+      "matchId": 492407522,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784080570,
+      "outcome": "win",
+      "preRating": 991,
+      "postRating": 1007,
+      "eloChange": 16,
+      "civ": "Gurjaras",
+      "teamAvgElo": 1057,
+      "opponentAvgElo": 991,
+      "teammates": [
+        "Parenquima",
+        "Waryahay",
+        "momo"
+      ],
+      "opponents": [
+        "Parts",
+        "SpiniestTuna222",
+        "Tiny Hands",
+        "khouildi.tarek.tk"
       ]
     }
   ]

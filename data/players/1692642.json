@@ -1,12 +1,12 @@
 {
   "profile_id": 1692642,
   "alias": "F3R0Ci0U5XX88",
-  "rating": 977,
+  "rating": 964,
   "wins": 7,
-  "losses": 12,
-  "gamesCount": 19,
-  "winRate": 37,
-  "lastPlayedAt": 1782706079,
+  "losses": 13,
+  "gamesCount": 20,
+  "winRate": 35,
+  "lastPlayedAt": 1784090654,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -29,7 +29,8 @@
     896,
     927,
     954,
-    977
+    977,
+    964
   ],
   "recentMatches": [
     {
@@ -486,6 +487,30 @@
         "typ53b90",
         "Meursault005",
         "勇敢的叉叉"
+      ]
+    },
+    {
+      "matchId": 492432573,
+      "description": "10x shared and 3x tech | Bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784090654,
+      "outcome": "loss",
+      "preRating": 977,
+      "postRating": 964,
+      "eloChange": -13,
+      "civ": "Chinese",
+      "teamAvgElo": 1000,
+      "opponentAvgElo": 1071,
+      "teammates": [
+        "The Cobra Brothers",
+        "mateoobo00",
+        "BALD BAGS"
+      ],
+      "opponents": [
+        "Chikna Raavan",
+        "aLEXt",
+        "typ53b90",
+        "LiquidDrive"
       ]
     }
   ]

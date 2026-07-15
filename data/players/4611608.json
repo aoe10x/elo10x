@@ -1,12 +1,12 @@
 {
   "profile_id": 4611608,
   "alias": "baianitro",
-  "rating": 1038,
-  "wins": 51,
-  "losses": 45,
-  "gamesCount": 96,
+  "rating": 1024,
+  "wins": 52,
+  "losses": 47,
+  "gamesCount": 99,
   "winRate": 53,
-  "lastPlayedAt": 1784077299,
+  "lastPlayedAt": 1784088942,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -106,81 +106,12 @@
     993,
     1009,
     1025,
-    1038
+    1038,
+    1023,
+    1039,
+    1024
   ],
   "recentMatches": [
-    {
-      "matchId": 491692987,
-      "description": "Bamboo 10x Shared 3x Tech",
-      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
-      "timestamp": 1783814446,
-      "outcome": "win",
-      "preRating": 1022,
-      "postRating": 1036,
-      "eloChange": 14,
-      "civ": "Goths",
-      "teamAvgElo": 1061,
-      "opponentAvgElo": 982,
-      "teammates": [
-        "Chinicuila304",
-        "EastDanielNowhere",
-        "El Barto"
-      ],
-      "opponents": [
-        "Maxim Liann",
-        "Chuckyllo4417",
-        "Mehandor",
-        "ConiglioBianco"
-      ]
-    },
-    {
-      "matchId": 491704095,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256xForestNothing",
-      "timestamp": 1783818880,
-      "outcome": "loss",
-      "preRating": 1036,
-      "postRating": 1020,
-      "eloChange": -16,
-      "civ": "Lithuanians",
-      "teamAvgElo": 1035,
-      "opponentAvgElo": 1042,
-      "teammates": [
-        "nooblet3300",
-        "Collllin",
-        "skoolied"
-      ],
-      "opponents": [
-        "疯狂的电脑",
-        "Paris Hilton",
-        "LB Trice",
-        "Brotherman Bill"
-      ]
-    },
-    {
-      "matchId": 491706319,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
-      "timestamp": 1783819785,
-      "outcome": "loss",
-      "preRating": 1020,
-      "postRating": 1003,
-      "eloChange": -17,
-      "civ": "Bulgarians",
-      "teamAvgElo": 1052,
-      "opponentAvgElo": 1001,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "Bryce Coolguy",
-        "疯狂的电脑"
-      ],
-      "opponents": [
-        "Scipio",
-        "399 the Grizzly Bear - RIP <3",
-        "skoolied",
-        "nooblet3300"
-      ]
-    },
     {
       "matchId": 491712546,
       "description": "Bamboo 10x Shared 3x Tech",
@@ -264,7 +195,7 @@
       "eloChange": -15,
       "civ": "Khmer",
       "teamAvgElo": 1014,
-      "opponentAvgElo": 1054,
+      "opponentAvgElo": 1055,
       "teammates": [
         "im slow",
         "Monkeymonk",
@@ -587,6 +518,78 @@
         "ernestocorrea18",
         "Bifbatz",
         "Maverick29311"
+      ]
+    },
+    {
+      "matchId": 492423982,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784086339,
+      "outcome": "loss",
+      "preRating": 1038,
+      "postRating": 1023,
+      "eloChange": -15,
+      "civ": "Unknown",
+      "teamAvgElo": 1042,
+      "opponentAvgElo": 1059,
+      "teammates": [
+        "-[RDU]- Gorda America Forever",
+        "SpiniestTuna222",
+        "nooblet3300"
+      ],
+      "opponents": [
+        "Al Ghouti",
+        "TresTilo",
+        "Belisarius",
+        "Jaguar Shotel Karambit Samurai"
+      ]
+    },
+    {
+      "matchId": 492426286,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784087365,
+      "outcome": "win",
+      "preRating": 1023,
+      "postRating": 1039,
+      "eloChange": 16,
+      "civ": "Malians",
+      "teamAvgElo": 1001,
+      "opponentAvgElo": 1013,
+      "teammates": [
+        "Imperator Storm",
+        "Bob's Uncle",
+        "ch33tah"
+      ],
+      "opponents": [
+        "Sundev",
+        "Consume Product",
+        "Passion AGE",
+        "aLEXt"
+      ]
+    },
+    {
+      "matchId": 492429827,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784088942,
+      "outcome": "loss",
+      "preRating": 1039,
+      "postRating": 1024,
+      "eloChange": -15,
+      "civ": "Saracens",
+      "teamAvgElo": 1070,
+      "opponentAvgElo": 1060,
+      "teammates": [
+        "TJ",
+        "Sundev",
+        "typ53b90"
+      ],
+      "opponents": [
+        "Ye",
+        "FrostByte",
+        "aLEXt",
+        "DnD"
       ]
     }
   ]

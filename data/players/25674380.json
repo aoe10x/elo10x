@@ -1,12 +1,12 @@
 {
   "profile_id": 25674380,
   "alias": "Optimus",
-  "rating": 986,
+  "rating": 970,
   "wins": 8,
-  "losses": 11,
-  "gamesCount": 19,
-  "winRate": 42,
-  "lastPlayedAt": 1784076744,
+  "losses": 12,
+  "gamesCount": 20,
+  "winRate": 40,
+  "lastPlayedAt": 1784085686,
   "country": "us",
   "merged_ids": [
     13700923,
@@ -32,7 +32,8 @@
     958,
     981,
     965,
-    986
+    986,
+    970
   ],
   "recentMatches": [
     {
@@ -382,7 +383,7 @@
       "eloChange": -24,
       "civ": "Bohemians",
       "teamAvgElo": 1043,
-      "opponentAvgElo": 1022,
+      "opponentAvgElo": 1025,
       "teammates": [
         "Meursault005",
         "procrastination.exe",
@@ -489,6 +490,30 @@
         "Wololoo",
         "dazaetgb",
         "LethalP59"
+      ]
+    },
+    {
+      "matchId": 492421445,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784085686,
+      "outcome": "loss",
+      "preRating": 986,
+      "postRating": 970,
+      "eloChange": -16,
+      "civ": "Bengalis",
+      "teamAvgElo": 990,
+      "opponentAvgElo": 1010,
+      "teammates": [
+        "Bob's Uncle",
+        "Paris Hilton",
+        "XxTzILacAtZInxX"
+      ],
+      "opponents": [
+        "TJ",
+        "Meursault005",
+        "Imperator Storm",
+        "Consume Product"
       ]
     }
   ]

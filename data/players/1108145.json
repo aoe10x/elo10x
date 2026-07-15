@@ -1,12 +1,12 @@
 {
   "profile_id": 1108145,
   "alias": "[ ARKI ! ]",
-  "rating": 1010,
-  "wins": 24,
+  "rating": 1027,
+  "wins": 25,
   "losses": 33,
-  "gamesCount": 57,
-  "winRate": 42,
-  "lastPlayedAt": 1783899912,
+  "gamesCount": 58,
+  "winRate": 43,
+  "lastPlayedAt": 1784084554,
   "country": "ar",
   "merged_ids": [],
   "ratingHistory": [
@@ -67,33 +67,10 @@
     1026,
     1007,
     992,
-    1010
+    1010,
+    1027
   ],
   "recentMatches": [
-    {
-      "matchId": 462389752,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1773310500,
-      "outcome": "loss",
-      "preRating": 961,
-      "postRating": 949,
-      "eloChange": -12,
-      "civ": "Hindustanis",
-      "teamAvgElo": 1014,
-      "opponentAvgElo": 1048,
-      "teammates": [
-        "Preacher!",
-        "River Plate 09-12-18",
-        "PoonSlapper"
-      ],
-      "opponents": [
-        "Kumad",
-        "Myriad",
-        "Flux",
-        "pimentbd"
-      ]
-    },
     {
       "matchId": 462466647,
       "description": "10x 3x shared !!NO NOOBS!!",
@@ -548,6 +525,30 @@
         "ZingyArrow36932",
         "Consume Product",
         "63e pears"
+      ]
+    },
+    {
+      "matchId": 492418221,
+      "description": "10x 3x Bamboo (fair and balanced)",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784084554,
+      "outcome": "win",
+      "preRating": 1010,
+      "postRating": 1027,
+      "eloChange": 17,
+      "civ": "Bengalis",
+      "teamAvgElo": 1049,
+      "opponentAvgElo": 1042,
+      "teammates": [
+        "Scipio",
+        "Parenquima",
+        "{German}Kaese"
+      ],
+      "opponents": [
+        "G",
+        "duckbuildperson",
+        "Your Ego",
+        "Master Polo4905"
       ]
     }
   ]

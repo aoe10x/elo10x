@@ -1,12 +1,12 @@
 {
   "profile_id": 25407903,
   "alias": "dinapal",
-  "rating": 905,
+  "rating": 891,
   "wins": 5,
-  "losses": 10,
-  "gamesCount": 15,
-  "winRate": 33,
-  "lastPlayedAt": 1784066532,
+  "losses": 11,
+  "gamesCount": 16,
+  "winRate": 31,
+  "lastPlayedAt": 1784071589,
   "country": "ar",
   "merged_ids": [
     13655498,
@@ -28,7 +28,8 @@
     970,
     941,
     922,
-    905
+    905,
+    891
   ],
   "recentMatches": [
     {
@@ -389,6 +390,30 @@
         "Voskarius",
         "wintre",
         "kacperowski"
+      ]
+    },
+    {
+      "matchId": 492382738,
+      "description": "10x shared and 3x tech | Bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784071589,
+      "outcome": "loss",
+      "preRating": 905,
+      "postRating": 891,
+      "eloChange": -14,
+      "civ": "Cumans",
+      "teamAvgElo": 984,
+      "opponentAvgElo": 1055,
+      "teammates": [
+        "Makinaskee",
+        "Taurus ♠",
+        "♥DraganBorn♥"
+      ],
+      "opponents": [
+        "Chikna Raavan",
+        "Panda314",
+        "疯狂的电脑",
+        "jacobhoaglun"
       ]
     }
   ]

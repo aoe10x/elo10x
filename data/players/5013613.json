@@ -1,12 +1,12 @@
 {
   "profile_id": 5013613,
   "alias": "Makinaskee",
-  "rating": 940,
+  "rating": 929,
   "wins": 16,
-  "losses": 25,
-  "gamesCount": 41,
-  "winRate": 39,
-  "lastPlayedAt": 1784055881,
+  "losses": 26,
+  "gamesCount": 42,
+  "winRate": 38,
+  "lastPlayedAt": 1784071589,
   "country": "ar",
   "merged_ids": [],
   "ratingHistory": [
@@ -51,33 +51,10 @@
     945,
     934,
     954,
-    940
+    940,
+    929
   ],
   "recentMatches": [
-    {
-      "matchId": 491927854,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
-      "timestamp": 1783891351,
-      "outcome": "win",
-      "preRating": 989,
-      "postRating": 1007,
-      "eloChange": 18,
-      "civ": "Bengalis",
-      "teamAvgElo": 1054,
-      "opponentAvgElo": 1041,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "疯狂的电脑",
-        "{R} Parry"
-      ],
-      "opponents": [
-        "MadRussian",
-        "Candy Burglar",
-        "Brotherman Bill",
-        "BarqBarq"
-      ]
-    },
     {
       "matchId": 491932454,
       "description": "10x 3x bamboo",
@@ -400,7 +377,7 @@
       "postRating": 973,
       "eloChange": -15,
       "civ": "Italians",
-      "teamAvgElo": 995,
+      "teamAvgElo": 996,
       "opponentAvgElo": 1021,
       "teammates": [
         "Rita De Valencia",
@@ -473,7 +450,7 @@
       "eloChange": -11,
       "civ": "Ethiopians",
       "teamAvgElo": 1025,
-      "opponentAvgElo": 1054,
+      "opponentAvgElo": 1053,
       "teammates": [
         "Consume Product",
         "CNZS_TheZero",
@@ -532,6 +509,30 @@
         "Armyofme_",
         "JaFu",
         "MnK Ultra"
+      ]
+    },
+    {
+      "matchId": 492382738,
+      "description": "10x shared and 3x tech | Bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784071589,
+      "outcome": "loss",
+      "preRating": 940,
+      "postRating": 929,
+      "eloChange": -11,
+      "civ": "Cumans",
+      "teamAvgElo": 984,
+      "opponentAvgElo": 1055,
+      "teammates": [
+        "dinapal",
+        "Taurus ♠",
+        "♥DraganBorn♥"
+      ],
+      "opponents": [
+        "Chikna Raavan",
+        "Panda314",
+        "疯狂的电脑",
+        "jacobhoaglun"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 1143927,
   "alias": "ernestocorrea18",
-  "rating": 934,
+  "rating": 922,
   "wins": 27,
-  "losses": 41,
-  "gamesCount": 68,
-  "winRate": 40,
-  "lastPlayedAt": 1784077299,
+  "losses": 42,
+  "gamesCount": 69,
+  "winRate": 39,
+  "lastPlayedAt": 1784082245,
   "country": "co",
   "merged_ids": [],
   "ratingHistory": [
@@ -78,33 +78,10 @@
     943,
     962,
     948,
-    934
+    934,
+    922
   ],
   "recentMatches": [
-    {
-      "matchId": 435501958,
-      "description": "256x 10x FN HOST HERE",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1764071040,
-      "outcome": "win",
-      "preRating": 974,
-      "postRating": 990,
-      "eloChange": 16,
-      "civ": "Persians",
-      "teamAvgElo": 1018,
-      "opponentAvgElo": 982,
-      "teammates": [
-        "Mr.Awesome",
-        "BaZ Daddy3409",
-        "evelyncc"
-      ],
-      "opponents": [
-        "nooblet3300",
-        "dazaetgb",
-        "km_wp",
-        "MarkLauten"
-      ]
-    },
     {
       "matchId": 435709710,
       "description": "256x 10x Forest Nothing",
@@ -356,7 +333,7 @@
       "eloChange": -13,
       "civ": "Persians",
       "teamAvgElo": 979,
-      "opponentAvgElo": 1016,
+      "opponentAvgElo": 1019,
       "teammates": [
         "Arosive",
         "Master Polo4905",
@@ -559,6 +536,30 @@
         "SpiniestTuna222",
         "BAKO",
         "Not a Wizard"
+      ]
+    },
+    {
+      "matchId": 492412021,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784082245,
+      "outcome": "loss",
+      "preRating": 934,
+      "postRating": 922,
+      "eloChange": -12,
+      "civ": "Poles",
+      "teamAvgElo": 999,
+      "opponentAvgElo": 1021,
+      "teammates": [
+        "Hamburglar2647",
+        "-[RDU]- Gorda America Forever",
+        "Nigerian Farmer"
+      ],
+      "opponents": [
+        "Parts",
+        "Shadow",
+        "Mehandor",
+        "Paing"
       ]
     }
   ]
