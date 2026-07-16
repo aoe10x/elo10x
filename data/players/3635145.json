@@ -1,12 +1,12 @@
 {
   "profile_id": 3635145,
   "alias": "Prinz Kay1",
-  "rating": 1078,
+  "rating": 1059,
   "wins": 38,
-  "losses": 33,
-  "gamesCount": 71,
-  "winRate": 54,
-  "lastPlayedAt": 1784141171,
+  "losses": 34,
+  "gamesCount": 72,
+  "winRate": 53,
+  "lastPlayedAt": 1784204431,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -81,33 +81,10 @@
     1035,
     1051,
     1064,
-    1078
+    1078,
+    1059
   ],
   "recentMatches": [
-    {
-      "matchId": 490502443,
-      "description": "Bamboo nothing 10X3X",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783349891,
-      "outcome": "loss",
-      "preRating": 1079,
-      "postRating": 1061,
-      "eloChange": -18,
-      "civ": "Magyars",
-      "teamAvgElo": 1057,
-      "opponentAvgElo": 1041,
-      "teammates": [
-        "Mehandor",
-        "ElmoWithoutL",
-        "LonelyKnight"
-      ],
-      "opponents": [
-        "yxsko93",
-        "Filtz",
-        "Bao Oninon",
-        "Boocer"
-      ]
-    },
     {
       "matchId": 490779007,
       "description": "10x 3x bamboo",
@@ -562,6 +539,30 @@
         "afranciscosa",
         "Lozzer",
         "Vader"
+      ]
+    },
+    {
+      "matchId": 492677050,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784204431,
+      "outcome": "loss",
+      "preRating": 1078,
+      "postRating": 1059,
+      "eloChange": -19,
+      "civ": "Lithuanians",
+      "teamAvgElo": 1023,
+      "opponentAvgElo": 1016,
+      "teammates": [
+        "i kun 2.5",
+        "kaka52pk",
+        "babeleo"
+      ],
+      "opponents": [
+        "Consume Product",
+        "majorleyendo",
+        "veeeeker",
+        "doraemon"
       ]
     }
   ]

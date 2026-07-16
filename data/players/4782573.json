@@ -1,12 +1,12 @@
 {
   "profile_id": 4782573,
   "alias": "Lama Kužel",
-  "rating": 1079,
-  "wins": 26,
-  "losses": 22,
-  "gamesCount": 48,
+  "rating": 1074,
+  "wins": 27,
+  "losses": 23,
+  "gamesCount": 50,
   "winRate": 54,
-  "lastPlayedAt": 1783861529,
+  "lastPlayedAt": 1784202605,
   "country": "sk",
   "merged_ids": [
     4782573,
@@ -61,57 +61,11 @@
     1100,
     1079,
     1064,
-    1079
+    1079,
+    1092,
+    1074
   ],
   "recentMatches": [
-    {
-      "matchId": 479581255,
-      "description": "bamboo nothing 10x",
-      "mapname": "Bamboo Nothing V3 (Bali)",
-      "timestamp": 1779466560,
-      "outcome": "loss",
-      "preRating": 1061,
-      "postRating": 1044,
-      "eloChange": -17,
-      "civ": "Goths",
-      "teamAvgElo": 1054,
-      "opponentAvgElo": 1044,
-      "teammates": [
-        "H0LLy2610",
-        "Teutonic_Huskarl",
-        "Pilot in training"
-      ],
-      "opponents": [
-        "[B] Zennith",
-        "疯狂的电脑",
-        "Honey badger",
-        "ioi"
-      ]
-    },
-    {
-      "matchId": 482544289,
-      "description": "Bamboo nothing 10X3X",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1780513860,
-      "outcome": "loss",
-      "preRating": 1044,
-      "postRating": 1027,
-      "eloChange": -17,
-      "civ": "Dravidians",
-      "teamAvgElo": 1071,
-      "opponentAvgElo": 1024,
-      "teammates": [
-        "wintre",
-        "matt",
-        "dertli"
-      ],
-      "opponents": [
-        "yxsko93",
-        "Russie",
-        "Dellox",
-        "Antimier"
-      ]
-    },
     {
       "matchId": 483257486,
       "description": "bamboo nothing 10x",
@@ -542,6 +496,54 @@
         "Lumedge",
         "KingOfTheNorth",
         "mark0112"
+      ]
+    },
+    {
+      "matchId": 492671490,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784201662,
+      "outcome": "win",
+      "preRating": 1079,
+      "postRating": 1092,
+      "eloChange": 13,
+      "civ": "Spartans",
+      "teamAvgElo": 1063,
+      "opponentAvgElo": 1015,
+      "teammates": [
+        "Dellox",
+        "Waryahay",
+        "Wendysocute"
+      ],
+      "opponents": [
+        "i kun 2.5",
+        "majorleyendo",
+        "Consume Product",
+        "唐小柏DanteR"
+      ]
+    },
+    {
+      "matchId": 492673500,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784202605,
+      "outcome": "loss",
+      "preRating": 1092,
+      "postRating": 1074,
+      "eloChange": -18,
+      "civ": "Bulgarians",
+      "teamAvgElo": 1024,
+      "opponentAvgElo": 1048,
+      "teammates": [
+        "kaka52pk",
+        "Wendysocute",
+        "Lumedge"
+      ],
+      "opponents": [
+        "i kun 2.5",
+        "Consume Product",
+        "Dellox",
+        "Tho315"
       ]
     }
   ]

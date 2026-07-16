@@ -1,12 +1,12 @@
 {
   "profile_id": 454980,
   "alias": "Dad",
-  "rating": 982,
+  "rating": 965,
   "wins": 9,
-  "losses": 12,
-  "gamesCount": 21,
-  "winRate": 43,
-  "lastPlayedAt": 1780993740,
+  "losses": 13,
+  "gamesCount": 22,
+  "winRate": 41,
+  "lastPlayedAt": 1784205839,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -31,33 +31,10 @@
     996,
     1014,
     995,
-    982
+    982,
+    965
   ],
   "recentMatches": [
-    {
-      "matchId": 319864793,
-      "description": "10x BambooNothing | 4v4 | Random Civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1718411880,
-      "outcome": "loss",
-      "preRating": 949,
-      "postRating": 907,
-      "eloChange": -42,
-      "civ": "Goths",
-      "teamAvgElo": 988,
-      "opponentAvgElo": 984,
-      "teammates": [
-        "取款机ATM",
-        "猛踹瘸子好腿",
-        "raven9337"
-      ],
-      "opponents": [
-        "alstrcr",
-        "AlmostBlindo",
-        "julien.nicolai",
-        "僵尸"
-      ]
-    },
     {
       "matchId": 320718488,
       "description": "10x bamboo",
@@ -512,6 +489,30 @@
         "EL__PATRON",
         "Myriad",
         "JacobR"
+      ]
+    },
+    {
+      "matchId": 492679311,
+      "description": "10x Shared Civ Bonus (everything nothing)",
+      "mapname": "Bush Nothing",
+      "timestamp": 1784205839,
+      "outcome": "loss",
+      "preRating": 982,
+      "postRating": 965,
+      "eloChange": -17,
+      "civ": "Japanese",
+      "teamAvgElo": 956,
+      "opponentAvgElo": 952,
+      "teammates": [
+        "WhiteMonk",
+        "naponeng",
+        "Grandespecter"
+      ],
+      "opponents": [
+        "Lozzer",
+        "AAA",
+        "马磊",
+        "[Liiit] Zbyszek"
       ]
     }
   ]
