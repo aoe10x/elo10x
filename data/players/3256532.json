@@ -1,12 +1,12 @@
 {
   "profile_id": 3256532,
   "alias": "CristoTheRealCeisto",
-  "rating": 983,
-  "wins": 33,
-  "losses": 53,
-  "gamesCount": 86,
-  "winRate": 38,
-  "lastPlayedAt": 1784151981,
+  "rating": 989,
+  "wins": 34,
+  "losses": 54,
+  "gamesCount": 88,
+  "winRate": 39,
+  "lastPlayedAt": 1784190519,
   "country": "ro",
   "merged_ids": [],
   "ratingHistory": [
@@ -96,57 +96,11 @@
     1030,
     1014,
     1000,
-    983
+    983,
+    972,
+    989
   ],
   "recentMatches": [
-    {
-      "matchId": 460303406,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1772520120,
-      "outcome": "win",
-      "preRating": 925,
-      "postRating": 944,
-      "eloChange": 19,
-      "civ": "Bulgarians",
-      "teamAvgElo": 1044,
-      "opponentAvgElo": 988,
-      "teammates": [
-        "LeosMind",
-        "omega",
-        "mothysime11"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "Scadufax",
-        "rob",
-        "adrian"
-      ]
-    },
-    {
-      "matchId": 460510639,
-      "description": "BAMBOO 10x - 3x  **NO BEGINNER",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1772605260,
-      "outcome": "loss",
-      "preRating": 944,
-      "postRating": 933,
-      "eloChange": -11,
-      "civ": "Chinese",
-      "teamAvgElo": 1029,
-      "opponentAvgElo": 1053,
-      "teammates": [
-        "fxsound",
-        "Gasior",
-        "dRea"
-      ],
-      "opponents": [
-        "CaptainBarbossa",
-        "TheRiceMan",
-        "Chuckyllo4417",
-        "ZaySol"
-      ]
-    },
     {
       "matchId": 463725873,
       "description": "10x 3x Bamboo Nothing",
@@ -577,6 +531,54 @@
         "BeatsNArt",
         "Paolo Carrosel",
         "Deckhead"
+      ]
+    },
+    {
+      "matchId": 492651411,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784189362,
+      "outcome": "loss",
+      "preRating": 983,
+      "postRating": 972,
+      "eloChange": -11,
+      "civ": "Bohemians",
+      "teamAvgElo": 975,
+      "opponentAvgElo": 1086,
+      "teammates": [
+        "DnD",
+        "468673564",
+        "boroinbishop"
+      ],
+      "opponents": [
+        "Lykerya",
+        "Lordetion",
+        "OldManofStorr",
+        "tonkatumura"
+      ]
+    },
+    {
+      "matchId": 492653851,
+      "description": "Bamboo 10x 3x",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784190519,
+      "outcome": "win",
+      "preRating": 972,
+      "postRating": 989,
+      "eloChange": 17,
+      "civ": "Koreans",
+      "teamAvgElo": 1047,
+      "opponentAvgElo": 997,
+      "teammates": [
+        "OldManofStorr",
+        "-[RDU]- Gorda America Forever",
+        "Eraniss"
+      ],
+      "opponents": [
+        "DnD",
+        "Lykerya",
+        "Silent Annihilation",
+        "GrandUni"
       ]
     }
   ]
