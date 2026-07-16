@@ -1,12 +1,12 @@
 {
   "profile_id": 1143927,
   "alias": "ernestocorrea18",
-  "rating": 931,
+  "rating": 919,
   "wins": 28,
-  "losses": 43,
-  "gamesCount": 71,
+  "losses": 44,
+  "gamesCount": 72,
   "winRate": 39,
-  "lastPlayedAt": 1784141486,
+  "lastPlayedAt": 1784170592,
   "country": "co",
   "merged_ids": [],
   "ratingHistory": [
@@ -81,33 +81,10 @@
     934,
     955,
     942,
-    931
+    931,
+    919
   ],
   "recentMatches": [
-    {
-      "matchId": 435903394,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1764236160,
-      "outcome": "win",
-      "preRating": 958,
-      "postRating": 975,
-      "eloChange": 17,
-      "civ": "Chinese",
-      "teamAvgElo": 1027,
-      "opponentAvgElo": 987,
-      "teammates": [
-        "nooblet3300",
-        "NothingAtAll11",
-        "icantbeatdota"
-      ],
-      "opponents": [
-        "serdaroglu",
-        "ezequieltatu_1",
-        "Phantom_",
-        "STEVEN_SLAYS"
-      ]
-    },
     {
       "matchId": 436132307,
       "description": "4V4 ===10x shared 3Xtech  4V4 random",
@@ -562,6 +539,30 @@
         "Parts",
         "PIEROGI",
         "gemmascho"
+      ]
+    },
+    {
+      "matchId": 492618969,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784170592,
+      "outcome": "loss",
+      "preRating": 931,
+      "postRating": 919,
+      "eloChange": -12,
+      "civ": "Gurjaras",
+      "teamAvgElo": 957,
+      "opponentAvgElo": 1025,
+      "teammates": [
+        "Parts",
+        "Maxim Liann",
+        "{German}Kaese"
+      ],
+      "opponents": [
+        "G",
+        "侯傻傻ᔦఠఠᔨ shasha",
+        "Moose",
+        "Jdodi"
       ]
     }
   ]

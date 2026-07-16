@@ -1,12 +1,12 @@
 {
   "profile_id": 12097971,
   "alias": "Jeluk",
-  "rating": 959,
-  "wins": 11,
+  "rating": 977,
+  "wins": 12,
   "losses": 18,
-  "gamesCount": 29,
-  "winRate": 38,
-  "lastPlayedAt": 1784000127,
+  "gamesCount": 30,
+  "winRate": 40,
+  "lastPlayedAt": 1784164634,
   "country": "co",
   "merged_ids": [
     12097971,
@@ -42,33 +42,10 @@
     931,
     919,
     940,
-    959
+    959,
+    977
   ],
   "recentMatches": [
-    {
-      "matchId": 472428211,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1776929340,
-      "outcome": "loss",
-      "preRating": 868,
-      "postRating": 849,
-      "eloChange": -19,
-      "civ": "Romans",
-      "teamAvgElo": 1004,
-      "opponentAvgElo": 1027,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "Wimac",
-        "Andres372"
-      ],
-      "opponents": [
-        "rlarosaarevalo",
-        "Sensei [DGK]",
-        "goldinggunsandparts",
-        "SantiSinXBOX"
-      ]
-    },
     {
       "matchId": 472545754,
       "description": "10x 3x bamboo nothing  turbo host here",
@@ -523,6 +500,30 @@
         "Monster_HK",
         "Imperator Storm",
         "Optimus"
+      ]
+    },
+    {
+      "matchId": 492603468,
+      "description": "10x_3x_Bamboo_Nothing_Random",
+      "mapname": "Bamboo Nothing v4 (BaLi)",
+      "timestamp": 1784164634,
+      "outcome": "win",
+      "preRating": 959,
+      "postRating": 977,
+      "eloChange": 18,
+      "civ": "Vikings",
+      "teamAvgElo": 1023,
+      "opponentAvgElo": 1000,
+      "teammates": [
+        "Contry",
+        "Waryahay",
+        "Trajano"
+      ],
+      "opponents": [
+        "DPK75",
+        "GuguBot",
+        "MRmoreto",
+        "The_DonMiguel"
       ]
     }
   ]

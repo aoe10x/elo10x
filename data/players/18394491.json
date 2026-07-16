@@ -1,12 +1,12 @@
 {
   "profile_id": 18394491,
   "alias": "Trajano",
-  "rating": 991,
-  "wins": 28,
+  "rating": 1007,
+  "wins": 29,
   "losses": 43,
-  "gamesCount": 71,
-  "winRate": 39,
-  "lastPlayedAt": 1784163472,
+  "gamesCount": 72,
+  "winRate": 40,
+  "lastPlayedAt": 1784164634,
   "country": "cl",
   "merged_ids": [
     12637095,
@@ -84,33 +84,10 @@
     935,
     956,
     974,
-    991
+    991,
+    1007
   ],
   "recentMatches": [
-    {
-      "matchId": 408205600,
-      "description": "10x 3x tech shared civ bamboo nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1753349340,
-      "outcome": "loss",
-      "preRating": 937,
-      "postRating": 925,
-      "eloChange": -12,
-      "civ": "Teutons",
-      "teamAvgElo": 1010,
-      "opponentAvgElo": 1028,
-      "teammates": [
-        "AngelPaniwater",
-        "EFN.xKitty03",
-        "DnD"
-      ],
-      "opponents": [
-        "Duffy",
-        "Nimu.-",
-        "mack",
-        "JackWU"
-      ]
-    },
     {
       "matchId": 409719337,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -565,6 +542,30 @@
         "DRAX",
         "DPK75",
         "[B] Cannino"
+      ]
+    },
+    {
+      "matchId": 492603468,
+      "description": "10x_3x_Bamboo_Nothing_Random",
+      "mapname": "Bamboo Nothing v4 (BaLi)",
+      "timestamp": 1784164634,
+      "outcome": "win",
+      "preRating": 991,
+      "postRating": 1007,
+      "eloChange": 16,
+      "civ": "Byzantines",
+      "teamAvgElo": 1023,
+      "opponentAvgElo": 1000,
+      "teammates": [
+        "Contry",
+        "Waryahay",
+        "Jeluk"
+      ],
+      "opponents": [
+        "DPK75",
+        "GuguBot",
+        "MRmoreto",
+        "The_DonMiguel"
       ]
     }
   ]
