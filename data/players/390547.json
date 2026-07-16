@@ -1,12 +1,12 @@
 {
   "profile_id": 390547,
   "alias": "Chirijiraden",
-  "rating": 936,
+  "rating": 922,
   "wins": 27,
-  "losses": 38,
-  "gamesCount": 65,
-  "winRate": 42,
-  "lastPlayedAt": 1784138547,
+  "losses": 39,
+  "gamesCount": 66,
+  "winRate": 41,
+  "lastPlayedAt": 1784159958,
   "country": "ar",
   "merged_ids": [],
   "ratingHistory": [
@@ -75,33 +75,10 @@
     938,
     926,
     916,
-    936
+    936,
+    922
   ],
   "recentMatches": [
-    {
-      "matchId": 489193451,
-      "description": "10x 3x Bamboo Nothing",
-      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
-      "timestamp": 1782840230,
-      "outcome": "loss",
-      "preRating": 947,
-      "postRating": 935,
-      "eloChange": -12,
-      "civ": "Bulgarians",
-      "teamAvgElo": 1034,
-      "opponentAvgElo": 1027,
-      "teammates": [
-        "pandalam",
-        "Chinicuila304",
-        "SlimeJesse"
-      ],
-      "opponents": [
-        "Keishi",
-        "Emusan",
-        "CosteLoco",
-        "Lykerya"
-      ]
-    },
     {
       "matchId": 489282646,
       "description": "10x Shared 3 x tech Bamboo",
@@ -556,6 +533,30 @@
         "Consume Product",
         "Olive Oil",
         "Flip Kun"
+      ]
+    },
+    {
+      "matchId": 492592616,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784159958,
+      "outcome": "loss",
+      "preRating": 936,
+      "postRating": 922,
+      "eloChange": -14,
+      "civ": "Unknown",
+      "teamAvgElo": 1012,
+      "opponentAvgElo": 971,
+      "teammates": [
+        "Parts",
+        "Not a Wizard",
+        "GuguBot"
+      ],
+      "opponents": [
+        "bigjames",
+        "gmc inspector",
+        "MarieBrutale",
+        "[B] Cannino"
       ]
     }
   ]

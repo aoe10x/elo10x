@@ -1,12 +1,12 @@
 {
   "profile_id": 864352,
   "alias": "Nigerian Farmer",
-  "rating": 940,
+  "rating": 928,
   "wins": 14,
-  "losses": 20,
-  "gamesCount": 34,
-  "winRate": 41,
-  "lastPlayedAt": 1784082245,
+  "losses": 21,
+  "gamesCount": 35,
+  "winRate": 40,
+  "lastPlayedAt": 1784158824,
   "country": "se",
   "merged_ids": [],
   "ratingHistory": [
@@ -44,33 +44,10 @@
     947,
     967,
     953,
-    940
+    940,
+    928
   ],
   "recentMatches": [
-    {
-      "matchId": 488568256,
-      "description": "3x10x Bamboo",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1782606797,
-      "outcome": "win",
-      "preRating": 956,
-      "postRating": 985,
-      "eloChange": 29,
-      "civ": "Vikings",
-      "teamAvgElo": 993,
-      "opponentAvgElo": 1003,
-      "teammates": [
-        "[TodEs] MnTartara",
-        "Terry",
-        "Sundev"
-      ],
-      "opponents": [
-        "SimCity3000",
-        "TheRizzler",
-        "maddymsg",
-        "HighPriestCaco"
-      ]
-    },
     {
       "matchId": 489064346,
       "description": "Bamboo nothing 10x 3x",
@@ -525,6 +502,30 @@
         "Shadow",
         "Mehandor",
         "Paing"
+      ]
+    },
+    {
+      "matchId": 492589785,
+      "description": "PQ 10x 3x bamboo 4vs4",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784158824,
+      "outcome": "loss",
+      "preRating": 940,
+      "postRating": 928,
+      "eloChange": -12,
+      "civ": "Malians",
+      "teamAvgElo": 973,
+      "opponentAvgElo": 1029,
+      "teammates": [
+        "bigjames",
+        "Consume Product",
+        "Nuke Toilet"
+      ],
+      "opponents": [
+        "Al Ghouti",
+        "Tlatoani",
+        "Monkeymonk",
+        "Master Polo4905"
       ]
     }
   ]

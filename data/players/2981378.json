@@ -1,12 +1,12 @@
 {
   "profile_id": 2981378,
   "alias": "TioMg100",
-  "rating": 1014,
-  "wins": 41,
+  "rating": 1030,
+  "wins": 42,
   "losses": 57,
-  "gamesCount": 98,
+  "gamesCount": 99,
   "winRate": 42,
-  "lastPlayedAt": 1784133136,
+  "lastPlayedAt": 1784133952,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -108,33 +108,10 @@
     995,
     980,
     996,
-    1014
+    1014,
+    1030
   ],
   "recentMatches": [
-    {
-      "matchId": 470854277,
-      "description": "Bamboo 10x 3x 4v4",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1776386580,
-      "outcome": "loss",
-      "preRating": 974,
-      "postRating": 964,
-      "eloChange": -10,
-      "civ": "Maya",
-      "teamAvgElo": 1070,
-      "opponentAvgElo": 1103,
-      "teammates": [
-        "alexw",
-        "TR.elephantman",
-        "tony.li"
-      ],
-      "opponents": [
-        "iamatthe.hell",
-        "420_Bl4Z3_It_69",
-        "dRea",
-        "Fajny Człowiek"
-      ]
-    },
     {
       "matchId": 472748519,
       "description": "BAMBOO 10x - 3x  **NO NOOB",
@@ -589,6 +566,30 @@
         "OK",
         "Not a Wizard",
         "maddymsg"
+      ]
+    },
+    {
+      "matchId": 492522984,
+      "description": "10x3x bamboo nothing",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784133952,
+      "outcome": "win",
+      "preRating": 1014,
+      "postRating": 1030,
+      "eloChange": 16,
+      "civ": "Ethiopians",
+      "teamAvgElo": 1018,
+      "opponentAvgElo": 1021,
+      "teammates": [
+        "轻绘梨花泪满衣",
+        "Your Ego",
+        "schrubber"
+      ],
+      "opponents": [
+        "Dr.Ao",
+        "KingOfTheNorth",
+        "Kuecken_das_Vollstrecker",
+        "jpllops"
       ]
     }
   ]

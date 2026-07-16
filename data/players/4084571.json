@@ -1,12 +1,12 @@
 {
   "profile_id": 4084571,
   "alias": "Mahmut",
-  "rating": 951,
+  "rating": 930,
   "wins": 6,
-  "losses": 10,
-  "gamesCount": 16,
-  "winRate": 38,
-  "lastPlayedAt": 1783995552,
+  "losses": 11,
+  "gamesCount": 17,
+  "winRate": 35,
+  "lastPlayedAt": 1784159374,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -26,7 +26,8 @@
     1021,
     994,
     973,
-    951
+    951,
+    930
   ],
   "recentMatches": [
     {
@@ -411,6 +412,30 @@
         "Not a Wizard",
         "brycedevore22",
         "Me_Ha_Ha"
+      ]
+    },
+    {
+      "matchId": 492590139,
+      "description": "10x 3x bamboo",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784159374,
+      "outcome": "loss",
+      "preRating": 951,
+      "postRating": 930,
+      "eloChange": -21,
+      "civ": "Bohemians",
+      "teamAvgElo": 990,
+      "opponentAvgElo": 973,
+      "teammates": [
+        "RTMaxwell",
+        "a7730039424",
+        "******MMMMMMMM*****"
+      ],
+      "opponents": [
+        "SimCity3000",
+        "[TodEs] MnTartara",
+        "Pogonophobia69",
+        "procrastination.exe"
       ]
     }
   ]

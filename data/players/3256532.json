@@ -1,12 +1,12 @@
 {
   "profile_id": 3256532,
   "alias": "CristoTheRealCeisto",
-  "rating": 1000,
+  "rating": 983,
   "wins": 33,
-  "losses": 52,
-  "gamesCount": 85,
-  "winRate": 39,
-  "lastPlayedAt": 1784064289,
+  "losses": 53,
+  "gamesCount": 86,
+  "winRate": 38,
+  "lastPlayedAt": 1784151981,
   "country": "ro",
   "merged_ids": [],
   "ratingHistory": [
@@ -95,33 +95,10 @@
     1014,
     1030,
     1014,
-    1000
+    1000,
+    983
   ],
   "recentMatches": [
-    {
-      "matchId": 454768865,
-      "description": "Bamboo 10x 3x",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1770605640,
-      "outcome": "loss",
-      "preRating": 935,
-      "postRating": 925,
-      "eloChange": -10,
-      "civ": "Shu",
-      "teamAvgElo": 989,
-      "opponentAvgElo": 1061,
-      "teammates": [
-        "OldManofStorr",
-        "Wozbo",
-        "El Broseph"
-      ],
-      "opponents": [
-        "golhmogh",
-        "flaviozera",
-        "Grimmie",
-        "johnnyboy"
-      ]
-    },
     {
       "matchId": 460303406,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -576,6 +553,30 @@
         "Monkeymonk",
         "Gasnápido",
         "GarvSANGWAN"
+      ]
+    },
+    {
+      "matchId": 492572291,
+      "description": "10x 3x Bamboo (rank.10xshared.com)",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784151981,
+      "outcome": "loss",
+      "preRating": 1000,
+      "postRating": 983,
+      "eloChange": -17,
+      "civ": "Malay",
+      "teamAvgElo": 989,
+      "opponentAvgElo": 981,
+      "teammates": [
+        "SPECIALWEAK",
+        "ElmoWithoutL",
+        "Ellie91"
+      ],
+      "opponents": [
+        "Scipio",
+        "BeatsNArt",
+        "Paolo Carrosel",
+        "Deckhead"
       ]
     }
   ]

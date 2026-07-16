@@ -1,12 +1,12 @@
 {
   "profile_id": 434838,
   "alias": "jpllops",
-  "rating": 1011,
+  "rating": 991,
   "wins": 8,
-  "losses": 9,
-  "gamesCount": 17,
-  "winRate": 47,
-  "lastPlayedAt": 1783875853,
+  "losses": 10,
+  "gamesCount": 18,
+  "winRate": 44,
+  "lastPlayedAt": 1784133952,
   "country": "se",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,8 @@
     1037,
     1010,
     988,
-    1011
+    1011,
+    991
   ],
   "recentMatches": [
     {
@@ -436,6 +437,30 @@
         "Parts",
         "SlimeJesse",
         "bigjames"
+      ]
+    },
+    {
+      "matchId": 492522984,
+      "description": "10x3x bamboo nothing",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784133952,
+      "outcome": "loss",
+      "preRating": 1011,
+      "postRating": 991,
+      "eloChange": -20,
+      "civ": "Huns",
+      "teamAvgElo": 1021,
+      "opponentAvgElo": 1018,
+      "teammates": [
+        "Dr.Ao",
+        "KingOfTheNorth",
+        "Kuecken_das_Vollstrecker"
+      ],
+      "opponents": [
+        "轻绘梨花泪满衣",
+        "Your Ego",
+        "schrubber",
+        "TioMg100"
       ]
     }
   ]

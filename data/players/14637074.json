@@ -1,12 +1,12 @@
 {
   "profile_id": 14637074,
   "alias": "ArchiCraig",
-  "rating": 969,
-  "wins": 31,
+  "rating": 988,
+  "wins": 32,
   "losses": 47,
-  "gamesCount": 78,
-  "winRate": 40,
-  "lastPlayedAt": 1783735301,
+  "gamesCount": 79,
+  "winRate": 41,
+  "lastPlayedAt": 1784161173,
   "country": "ca",
   "merged_ids": [
     12165758,
@@ -91,33 +91,10 @@
     968,
     958,
     948,
-    969
+    969,
+    988
   ],
   "recentMatches": [
-    {
-      "matchId": 483161473,
-      "description": "10x Shared Civ Bonus 4v4 Random ",
-      "mapname": "Wet Woods v3.0.3",
-      "timestamp": 1780705685,
-      "outcome": "loss",
-      "preRating": 995,
-      "postRating": 981,
-      "eloChange": -14,
-      "civ": "Persians",
-      "teamAvgElo": 1045,
-      "opponentAvgElo": 1040,
-      "teammates": [
-        "EL__PATRON",
-        "feid_",
-        "hackapell123"
-      ],
-      "opponents": [
-        "Kumad",
-        "Myriad",
-        "Yee",
-        "Lezec"
-      ]
-    },
     {
       "matchId": 484221151,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -572,6 +549,30 @@
         "Myriad",
         "PoonSlapper",
         "Not a Wizard"
+      ]
+    },
+    {
+      "matchId": 492595386,
+      "description": "10x_3x_Bamboo_Nothing_Random",
+      "mapname": "Bamboo Nothing v4 (BaLi)",
+      "timestamp": 1784161173,
+      "outcome": "win",
+      "preRating": 969,
+      "postRating": 988,
+      "eloChange": 19,
+      "civ": "Berbers",
+      "teamAvgElo": 1036,
+      "opponentAvgElo": 1025,
+      "teammates": [
+        "Tortrix",
+        "Brotherman Bill",
+        "Shadow"
+      ],
+      "opponents": [
+        "Contry",
+        "Paolo Carrosel",
+        "Master Polo4905",
+        "SpiniestTuna222"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 10986957,
   "alias": "Magnificent",
-  "rating": 1036,
+  "rating": 1020,
   "wins": 31,
-  "losses": 33,
-  "gamesCount": 64,
+  "losses": 34,
+  "gamesCount": 65,
   "winRate": 48,
-  "lastPlayedAt": 1782304380,
+  "lastPlayedAt": 1784156148,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -74,33 +74,10 @@
     1051,
     1033,
     1020,
-    1036
+    1036,
+    1020
   ],
   "recentMatches": [
-    {
-      "matchId": 409802046,
-      "description": "10x 3x BAMBOO *NO NOOB*",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1753996740,
-      "outcome": "loss",
-      "preRating": 1069,
-      "postRating": 1051,
-      "eloChange": -18,
-      "civ": "Unknown",
-      "teamAvgElo": 1038,
-      "opponentAvgElo": 1026,
-      "teammates": [
-        "dRea",
-        "TabA_ausitin",
-        "bhasudi--"
-      ],
-      "opponents": [
-        "seaguls",
-        "awdsxq",
-        "maddymsg",
-        "tonkatumura"
-      ]
-    },
     {
       "matchId": 409858343,
       "description": "10x 3x BAMBOO *NO NOOB*",
@@ -555,6 +532,30 @@
         "FcukCensorship",
         "STD",
         "babeleo"
+      ]
+    },
+    {
+      "matchId": 492583082,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784156148,
+      "outcome": "loss",
+      "preRating": 1036,
+      "postRating": 1020,
+      "eloChange": -16,
+      "civ": "Vietnamese",
+      "teamAvgElo": 1065,
+      "opponentAvgElo": 1046,
+      "teammates": [
+        "procrastination.exe",
+        "yimacs_yoyoyo",
+        "[LWS] Mandatum"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "Brotherman Bill",
+        "Agrakat",
+        "Wozbo"
       ]
     }
   ]

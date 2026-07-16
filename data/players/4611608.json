@@ -1,12 +1,12 @@
 {
   "profile_id": 4611608,
   "alias": "baianitro",
-  "rating": 1012,
+  "rating": 965,
   "wins": 52,
-  "losses": 48,
-  "gamesCount": 100,
-  "winRate": 52,
-  "lastPlayedAt": 1784131574,
+  "losses": 51,
+  "gamesCount": 103,
+  "winRate": 50,
+  "lastPlayedAt": 1784163472,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -23,7 +23,6 @@
     1050,
     1019,
     988,
-    1025,
     1001,
     1026,
     1045,
@@ -48,7 +47,6 @@
     1134,
     1111,
     1125,
-    1105,
     1087,
     1100,
     1082,
@@ -60,6 +58,7 @@
     1071,
     1087,
     1099,
+    1108,
     1119,
     1129,
     1108,
@@ -73,7 +72,6 @@
     1032,
     1013,
     1030,
-    1047,
     1031,
     1048,
     1031,
@@ -98,7 +96,6 @@
     998,
     1016,
     1001,
-    1023,
     1011,
     995,
     1009,
@@ -109,81 +106,12 @@
     1023,
     1039,
     1024,
-    1012
+    1012,
+    996,
+    981,
+    965
   ],
   "recentMatches": [
-    {
-      "matchId": 491727082,
-      "description": "10x Shared 3 x tech Bamboo",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783828804,
-      "outcome": "win",
-      "preRating": 990,
-      "postRating": 1008,
-      "eloChange": 18,
-      "civ": "Wei",
-      "teamAvgElo": 1000,
-      "opponentAvgElo": 1029,
-      "teammates": [
-        "Candy Burglar",
-        "treehugger",
-        "Scipio"
-      ],
-      "opponents": [
-        "Captain Stripes",
-        "vincentc95",
-        "pool_champ",
-        "Tiny Hands"
-      ]
-    },
-    {
-      "matchId": 491732124,
-      "description": "10x Shared 3 x tech Bamboo",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783830650,
-      "outcome": "win",
-      "preRating": 1008,
-      "postRating": 1024,
-      "eloChange": 16,
-      "civ": "Spartans",
-      "teamAvgElo": 1022,
-      "opponentAvgElo": 1009,
-      "teammates": [
-        "Chuckyllo4417",
-        "Candy Burglar",
-        "babeleo"
-      ],
-      "opponents": [
-        "Captain Stripes",
-        "pool_champ",
-        "vincentc95",
-        "紫蝶黄蜂俱有情"
-      ]
-    },
-    {
-      "matchId": 491879850,
-      "description": "Bamboo 10x Shared 3x Tech",
-      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
-      "timestamp": 1783879923,
-      "outcome": "loss",
-      "preRating": 1024,
-      "postRating": 1009,
-      "eloChange": -15,
-      "civ": "Khmer",
-      "teamAvgElo": 1014,
-      "opponentAvgElo": 1055,
-      "teammates": [
-        "im slow",
-        "Monkeymonk",
-        "Wikzor"
-      ],
-      "opponents": [
-        "Scadufax",
-        "matt",
-        "pool_champ",
-        "Ravenlost"
-      ]
-    },
     {
       "matchId": 491889070,
       "description": "Bamboo 10x Shared 3x Tech",
@@ -590,6 +518,78 @@
         "sppd3181",
         "ISwaZz",
         "iamatthe.hell"
+      ]
+    },
+    {
+      "matchId": 492596522,
+      "description": "10x3x Deforest Nothing",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784161780,
+      "outcome": "loss",
+      "preRating": 1012,
+      "postRating": 996,
+      "eloChange": -16,
+      "civ": "Burmese",
+      "teamAvgElo": 1025,
+      "opponentAvgElo": 1007,
+      "teammates": [
+        "[B] Cannino",
+        "SimCity3000",
+        "吕布"
+      ],
+      "opponents": [
+        "Imperator Storm",
+        "WipiWi",
+        "Not a Wizard",
+        "侯傻傻ᔦఠఠᔨ shasha"
+      ]
+    },
+    {
+      "matchId": 492597583,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784162214,
+      "outcome": "loss",
+      "preRating": 996,
+      "postRating": 981,
+      "eloChange": -15,
+      "civ": "Hindustanis",
+      "teamAvgElo": 992,
+      "opponentAvgElo": 1021,
+      "teammates": [
+        "Not a Wizard",
+        "SimCity3000",
+        "gmc inspector"
+      ],
+      "opponents": [
+        "Consume Product",
+        "WipiWi",
+        "[B] Cannino",
+        "Parts"
+      ]
+    },
+    {
+      "matchId": 492598668,
+      "description": "10x_3x_Bamboo_Nothing_Random",
+      "mapname": "Bamboo Nothing v4 (BaLi)",
+      "timestamp": 1784163472,
+      "outcome": "loss",
+      "preRating": 981,
+      "postRating": 965,
+      "eloChange": -16,
+      "civ": "Malay",
+      "teamAvgElo": 1006,
+      "opponentAvgElo": 992,
+      "teammates": [
+        "DRAX",
+        "DPK75",
+        "[B] Cannino"
+      ],
+      "opponents": [
+        "Contry",
+        "MRmoreto",
+        "Superjabster",
+        "Trajano"
       ]
     }
   ]

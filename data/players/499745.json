@@ -1,12 +1,12 @@
 {
   "profile_id": 499745,
   "alias": "DRAX",
-  "rating": 999,
+  "rating": 983,
   "wins": 10,
-  "losses": 12,
-  "gamesCount": 22,
-  "winRate": 45,
-  "lastPlayedAt": 1783968818,
+  "losses": 13,
+  "gamesCount": 23,
+  "winRate": 43,
+  "lastPlayedAt": 1784163472,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -32,33 +32,10 @@
     1013,
     998,
     982,
-    999
+    999,
+    983
   ],
   "recentMatches": [
-    {
-      "matchId": 485031064,
-      "description": "10x3x Bamboo Nothing",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1781346165,
-      "outcome": "loss",
-      "preRating": 1100,
-      "postRating": 1046,
-      "eloChange": -54,
-      "civ": "Chinese",
-      "teamAvgElo": 1032,
-      "opponentAvgElo": 1033,
-      "teammates": [
-        "476055690",
-        "Emusan",
-        "doraemon"
-      ],
-      "opponents": [
-        "東亞窪地",
-        "okfkg173",
-        "PaddyWon",
-        "Lumedge"
-      ]
-    },
     {
       "matchId": 485062385,
       "description": "BAMBOO 10x3xtech",
@@ -513,6 +490,30 @@
         "Kalervo Jankko",
         "Parts",
         "Chuckyllo4417"
+      ]
+    },
+    {
+      "matchId": 492598668,
+      "description": "10x_3x_Bamboo_Nothing_Random",
+      "mapname": "Bamboo Nothing v4 (BaLi)",
+      "timestamp": 1784163472,
+      "outcome": "loss",
+      "preRating": 999,
+      "postRating": 983,
+      "eloChange": -16,
+      "civ": "Gurjaras",
+      "teamAvgElo": 1006,
+      "opponentAvgElo": 992,
+      "teammates": [
+        "baianitro",
+        "DPK75",
+        "[B] Cannino"
+      ],
+      "opponents": [
+        "Contry",
+        "MRmoreto",
+        "Superjabster",
+        "Trajano"
       ]
     }
   ]

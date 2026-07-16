@@ -1,12 +1,12 @@
 {
   "profile_id": 15621955,
   "alias": "luisedgaco02",
-  "rating": 894,
+  "rating": 886,
   "wins": 7,
-  "losses": 16,
-  "gamesCount": 23,
-  "winRate": 30,
-  "lastPlayedAt": 1784075763,
+  "losses": 17,
+  "gamesCount": 24,
+  "winRate": 29,
+  "lastPlayedAt": 1784160675,
   "country": "mx",
   "merged_ids": [
     12346911,
@@ -36,33 +36,10 @@
     856,
     848,
     872,
-    894
+    894,
+    886
   ],
   "recentMatches": [
-    {
-      "matchId": 458382642,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1771834140,
-      "outcome": "loss",
-      "preRating": 976,
-      "postRating": 941,
-      "eloChange": -35,
-      "civ": "Unknown",
-      "teamAvgElo": 1011,
-      "opponentAvgElo": 1047,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "Wozbo",
-        "vzjkfsa"
-      ],
-      "opponents": [
-        "__VK__",
-        "vice_man",
-        "mozu5",
-        "Tortrix"
-      ]
-    },
     {
       "matchId": 459284829,
       "description": "10x 3x Bamboo Random",
@@ -517,6 +494,30 @@
         "TR.elephantman",
         "SpiniestTuna222",
         "Lordbusiness"
+      ]
+    },
+    {
+      "matchId": 492593626,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784160675,
+      "outcome": "loss",
+      "preRating": 894,
+      "postRating": 886,
+      "eloChange": -8,
+      "civ": "Maya",
+      "teamAvgElo": 1036,
+      "opponentAvgElo": 1072,
+      "teammates": [
+        "procrastination.exe",
+        "RTMaxwell",
+        "feid_"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "Ellie91",
+        "Dunimus"
       ]
     }
   ]
