@@ -1,12 +1,12 @@
 {
   "profile_id": 25325007,
   "alias": "Master.Ji.ro.714",
-  "rating": 948,
+  "rating": 938,
   "wins": 9,
-  "losses": 15,
-  "gamesCount": 24,
-  "winRate": 38,
-  "lastPlayedAt": 1783996551,
+  "losses": 16,
+  "gamesCount": 25,
+  "winRate": 36,
+  "lastPlayedAt": 1784211899,
   "country": "co",
   "merged_ids": [
     13640611,
@@ -37,33 +37,10 @@
     955,
     942,
     960,
-    948
+    948,
+    938
   ],
   "recentMatches": [
-    {
-      "matchId": 475611959,
-      "description": "BAMBOO 10x3xtech",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1778027040,
-      "outcome": "loss",
-      "preRating": 913,
-      "postRating": 891,
-      "eloChange": -22,
-      "civ": "Vietnamese",
-      "teamAvgElo": 967,
-      "opponentAvgElo": 1093,
-      "teammates": [
-        "gvv.vadim",
-        "Goose",
-        "BaldAfro"
-      ],
-      "opponents": [
-        "Lumedge",
-        "iamatthe.hell",
-        "Manba Out",
-        "TheRiceMan"
-      ]
-    },
     {
       "matchId": 475898636,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -518,6 +495,30 @@
         "Monkeymonk",
         "adrian",
         "duckbuildperson"
+      ]
+    },
+    {
+      "matchId": 492696535,
+      "description": "Bamboo 10x 3x",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784211899,
+      "outcome": "loss",
+      "preRating": 948,
+      "postRating": 938,
+      "eloChange": -10,
+      "civ": "Dravidians",
+      "teamAvgElo": 1024,
+      "opponentAvgElo": 1097,
+      "teammates": [
+        "Consume Product",
+        "konishika",
+        "Tho315"
+      ],
+      "opponents": [
+        "OldManofStorr",
+        "iamatthe.hell",
+        "Lordetion",
+        "^gOsO^"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 3456680,
   "alias": "GenP",
-  "rating": 930,
+  "rating": 923,
   "wins": 36,
-  "losses": 54,
-  "gamesCount": 90,
+  "losses": 55,
+  "gamesCount": 91,
   "winRate": 40,
-  "lastPlayedAt": 1784120558,
+  "lastPlayedAt": 1784207781,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -100,33 +100,10 @@
     963,
     955,
     945,
-    930
+    930,
+    923
   ],
   "recentMatches": [
-    {
-      "matchId": 489524584,
-      "description": "10x 3x bamboo",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1782979560,
-      "outcome": "win",
-      "preRating": 1017,
-      "postRating": 1031,
-      "eloChange": 14,
-      "civ": "Ethiopians",
-      "teamAvgElo": 1020,
-      "opponentAvgElo": 976,
-      "teammates": [
-        "Hughmungus Chungus",
-        "builttospill",
-        "Silent Annihilation"
-      ],
-      "opponents": [
-        "Lykerya",
-        "majorleyendo",
-        "dimon21_8",
-        "Pikachu"
-      ]
-    },
     {
       "matchId": 489528684,
       "description": "10x 3x bamboo",
@@ -581,6 +558,30 @@
         "kaka52pk",
         "金菜",
         "DnD"
+      ]
+    },
+    {
+      "matchId": 492685007,
+      "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784207781,
+      "outcome": "loss",
+      "preRating": 930,
+      "postRating": 923,
+      "eloChange": -7,
+      "civ": "Ethiopians",
+      "teamAvgElo": 981,
+      "opponentAvgElo": 1136,
+      "teammates": [
+        "[S33]ff",
+        "MnK Ultra",
+        "naponeng"
+      ],
+      "opponents": [
+        "老K",
+        "pandalam",
+        "janhartmann",
+        "Prinz Kay1"
       ]
     }
   ]

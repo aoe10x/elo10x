@@ -1,12 +1,12 @@
 {
   "profile_id": 1274833,
   "alias": "FinishedMyBurger",
-  "rating": 870,
+  "rating": 853,
   "wins": 4,
-  "losses": 11,
-  "gamesCount": 15,
-  "winRate": 27,
-  "lastPlayedAt": 1780686840,
+  "losses": 12,
+  "gamesCount": 16,
+  "winRate": 25,
+  "lastPlayedAt": 1784210706,
   "country": "dk",
   "merged_ids": [],
   "ratingHistory": [
@@ -25,7 +25,8 @@
     923,
     905,
     886,
-    870
+    870,
+    853
   ],
   "recentMatches": [
     {
@@ -386,6 +387,30 @@
         "majorleyendo",
         "[S33]ff",
         "Pilot in training"
+      ]
+    },
+    {
+      "matchId": 492691972,
+      "description": "10x Shared Civ Bonus (everything nothing)",
+      "mapname": "Bush Nothing",
+      "timestamp": 1784210706,
+      "outcome": "loss",
+      "preRating": 870,
+      "postRating": 853,
+      "eloChange": -17,
+      "civ": "Magyars",
+      "teamAvgElo": 921,
+      "opponentAvgElo": 980,
+      "teammates": [
+        "WhiteMonk",
+        "juanmontes005",
+        "只玩老钟abc"
+      ],
+      "opponents": [
+        "_Zeruch_",
+        "[Liiit] Zbyszek",
+        "malth",
+        "Orinoco"
       ]
     }
   ]

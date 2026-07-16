@@ -1,12 +1,12 @@
 {
   "profile_id": 5648280,
   "alias": "Rito",
-  "rating": 1076,
+  "rating": 1061,
   "wins": 25,
-  "losses": 18,
-  "gamesCount": 43,
-  "winRate": 58,
-  "lastPlayedAt": 1783877842,
+  "losses": 19,
+  "gamesCount": 44,
+  "winRate": 57,
+  "lastPlayedAt": 1784214206,
   "country": "jp",
   "merged_ids": [],
   "ratingHistory": [
@@ -53,33 +53,10 @@
     1059,
     1076,
     1093,
-    1076
+    1076,
+    1061
   ],
   "recentMatches": [
-    {
-      "matchId": 350078277,
-      "description": "shared10x tech3x amazon",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1730851380,
-      "outcome": "win",
-      "preRating": 1139,
-      "postRating": 1150,
-      "eloChange": 11,
-      "civ": "Dravidians",
-      "teamAvgElo": 1067,
-      "opponentAvgElo": 1034,
-      "teammates": [
-        "Papillon",
-        "tonkatumura",
-        "mr.ming"
-      ],
-      "opponents": [
-        "Keishi",
-        "komatti",
-        "Shadow",
-        "The Cobra Brothers"
-      ]
-    },
     {
       "matchId": 350080114,
       "description": "shared10x tech3x amazon",
@@ -534,6 +511,30 @@
         "konishika",
         "FPS Geo",
         "frank13.gomez"
+      ]
+    },
+    {
+      "matchId": 492703891,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784214206,
+      "outcome": "loss",
+      "preRating": 1076,
+      "postRating": 1061,
+      "eloChange": -15,
+      "civ": "Bulgarians",
+      "teamAvgElo": 1052,
+      "opponentAvgElo": 1095,
+      "teammates": [
+        "Dr.Ao",
+        "Papillon",
+        "Memberwise"
+      ],
+      "opponents": [
+        "iamatthe.hell",
+        "Lozzer",
+        "kekekeya",
+        "漫山哒哒哒"
       ]
     }
   ]

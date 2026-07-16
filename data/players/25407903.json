@@ -1,12 +1,12 @@
 {
   "profile_id": 25407903,
   "alias": "dinapal",
-  "rating": 891,
+  "rating": 878,
   "wins": 5,
-  "losses": 11,
-  "gamesCount": 16,
-  "winRate": 31,
-  "lastPlayedAt": 1784071589,
+  "losses": 12,
+  "gamesCount": 17,
+  "winRate": 29,
+  "lastPlayedAt": 1784215795,
   "country": "ar",
   "merged_ids": [
     13655498,
@@ -29,7 +29,8 @@
     941,
     922,
     905,
-    891
+    891,
+    878
   ],
   "recentMatches": [
     {
@@ -414,6 +415,30 @@
         "Panda314",
         "疯狂的电脑",
         "jacobhoaglun"
+      ]
+    },
+    {
+      "matchId": 492708156,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784215795,
+      "outcome": "loss",
+      "preRating": 891,
+      "postRating": 878,
+      "eloChange": -13,
+      "civ": "Mongols",
+      "teamAvgElo": 1033,
+      "opponentAvgElo": 1053,
+      "teammates": [
+        "Heklort",
+        "tonkatumura",
+        "kekekeya"
+      ],
+      "opponents": [
+        "iamatthe.hell",
+        "BaldAfro",
+        "Apostate of Hate",
+        "紫蝶黄蜂俱有情"
       ]
     }
   ]

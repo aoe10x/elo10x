@@ -1,12 +1,12 @@
 {
   "profile_id": 10986957,
   "alias": "Magnificent",
-  "rating": 1020,
+  "rating": 1006,
   "wins": 31,
-  "losses": 34,
-  "gamesCount": 65,
-  "winRate": 48,
-  "lastPlayedAt": 1784156148,
+  "losses": 35,
+  "gamesCount": 66,
+  "winRate": 47,
+  "lastPlayedAt": 1784219101,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -75,33 +75,10 @@
     1033,
     1020,
     1036,
-    1020
+    1020,
+    1006
   ],
   "recentMatches": [
-    {
-      "matchId": 409858343,
-      "description": "10x 3x BAMBOO *NO NOOB*",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1754015760,
-      "outcome": "loss",
-      "preRating": 1051,
-      "postRating": 1037,
-      "eloChange": -14,
-      "civ": "Unknown",
-      "teamAvgElo": 1012,
-      "opponentAvgElo": 1086,
-      "teammates": [
-        "dRea",
-        "ohrmel",
-        "30Wololo"
-      ],
-      "opponents": [
-        "iamatthe.hell",
-        "duckbuildperson",
-        "AAA",
-        "NothingAtAll11"
-      ]
-    },
     {
       "matchId": 409890078,
       "description": "10x 3x BAMBOO *NO NOOB*",
@@ -556,6 +533,30 @@
         "Brotherman Bill",
         "Agrakat",
         "Wozbo"
+      ]
+    },
+    {
+      "matchId": 492717987,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784219101,
+      "outcome": "loss",
+      "preRating": 1020,
+      "postRating": 1006,
+      "eloChange": -14,
+      "civ": "Armenians",
+      "teamAvgElo": 1041,
+      "opponentAvgElo": 1073,
+      "teammates": [
+        "gemmascho",
+        "Trekkspell",
+        "yimacs_yoyoyo"
+      ],
+      "opponents": [
+        "bommietommie",
+        "Dr.Ao",
+        "mgmanager",
+        "轻绘梨花泪满衣"
       ]
     }
   ]

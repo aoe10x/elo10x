@@ -1,12 +1,12 @@
 {
   "profile_id": 483648,
   "alias": "Willoloh!!!",
-  "rating": 950,
-  "wins": 6,
+  "rating": 980,
+  "wins": 7,
   "losses": 9,
-  "gamesCount": 15,
-  "winRate": 40,
-  "lastPlayedAt": 1784206146,
+  "gamesCount": 16,
+  "winRate": 44,
+  "lastPlayedAt": 1784208757,
   "country": "au",
   "merged_ids": [],
   "ratingHistory": [
@@ -25,7 +25,8 @@
     959,
     997,
     971,
-    950
+    950,
+    980
   ],
   "recentMatches": [
     {
@@ -386,6 +387,30 @@
         "Dr.Ao",
         "kekekeya",
         "blankedgamerz"
+      ]
+    },
+    {
+      "matchId": 492685457,
+      "description": "10x Shared Civ Bonus (everything nothing)",
+      "mapname": "Bush Nothing",
+      "timestamp": 1784208757,
+      "outcome": "win",
+      "preRating": 950,
+      "postRating": 980,
+      "eloChange": 30,
+      "civ": "Gurjaras",
+      "teamAvgElo": 940,
+      "opponentAvgElo": 1033,
+      "teammates": [
+        "WhiteMonk",
+        "juanmontes005",
+        "BeatsNArt"
+      ],
+      "opponents": [
+        "[Liiit] Zbyszek",
+        "Lozzer",
+        "_Zeruch_",
+        "Hughmungus Chungus"
       ]
     }
   ]

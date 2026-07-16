@@ -1,12 +1,12 @@
 {
   "profile_id": 2079771,
   "alias": "Tho315",
-  "rating": 1087,
+  "rating": 1064,
   "wins": 9,
-  "losses": 6,
-  "gamesCount": 15,
-  "winRate": 60,
-  "lastPlayedAt": 1784202605,
+  "losses": 7,
+  "gamesCount": 16,
+  "winRate": 56,
+  "lastPlayedAt": 1784211899,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -25,7 +25,8 @@
     1072,
     1041,
     1064,
-    1087
+    1087,
+    1064
   ],
   "recentMatches": [
     {
@@ -386,6 +387,30 @@
         "Lama Kužel",
         "Wendysocute",
         "Lumedge"
+      ]
+    },
+    {
+      "matchId": 492696535,
+      "description": "Bamboo 10x 3x",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784211899,
+      "outcome": "loss",
+      "preRating": 1087,
+      "postRating": 1064,
+      "eloChange": -23,
+      "civ": "Mongols",
+      "teamAvgElo": 1024,
+      "opponentAvgElo": 1097,
+      "teammates": [
+        "Consume Product",
+        "konishika",
+        "Master.Ji.ro.714"
+      ],
+      "opponents": [
+        "OldManofStorr",
+        "iamatthe.hell",
+        "Lordetion",
+        "^gOsO^"
       ]
     }
   ]

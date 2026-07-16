@@ -1,12 +1,12 @@
 {
   "profile_id": 2981378,
   "alias": "TioMg100",
-  "rating": 1030,
+  "rating": 1016,
   "wins": 42,
-  "losses": 57,
-  "gamesCount": 99,
+  "losses": 58,
+  "gamesCount": 100,
   "winRate": 42,
-  "lastPlayedAt": 1784133952,
+  "lastPlayedAt": 1784219651,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -60,7 +60,6 @@
     999,
     1016,
     1001,
-    1015,
     1032,
     1013,
     998,
@@ -109,33 +108,10 @@
     980,
     996,
     1014,
-    1030
+    1030,
+    1016
   ],
   "recentMatches": [
-    {
-      "matchId": 472748519,
-      "description": "BAMBOO 10x - 3x  **NO NOOB",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1777059180,
-      "outcome": "loss",
-      "preRating": 964,
-      "postRating": 953,
-      "eloChange": -11,
-      "civ": "Byzantines",
-      "teamAvgElo": 1038,
-      "opponentAvgElo": 1086,
-      "teammates": [
-        "kaka52pk",
-        "The Wet Bandit",
-        "yimacs_yoyoyo"
-      ],
-      "opponents": [
-        "tonzo",
-        "ototomato",
-        "master",
-        "dRea"
-      ]
-    },
     {
       "matchId": 472753579,
       "description": "BAMBOO 10x - 3x  **NO NOOB",
@@ -590,6 +566,30 @@
         "KingOfTheNorth",
         "Kuecken_das_Vollstrecker",
         "jpllops"
+      ]
+    },
+    {
+      "matchId": 492719111,
+      "description": "+10x+3xtech   no noob ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784219651,
+      "outcome": "loss",
+      "preRating": 1030,
+      "postRating": 1016,
+      "eloChange": -14,
+      "civ": "Japanese",
+      "teamAvgElo": 981,
+      "opponentAvgElo": 1065,
+      "teammates": [
+        "pandasadnap",
+        "TR.elephantman",
+        "Nigerian Farmer"
+      ],
+      "opponents": [
+        "拍车面前人人平等",
+        "OK",
+        "[Liiit] Zbyszek",
+        "WDWKid3"
       ]
     }
   ]

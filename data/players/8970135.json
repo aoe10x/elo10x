@@ -1,12 +1,12 @@
 {
   "profile_id": 8970135,
   "alias": "Papillon",
-  "rating": 1066,
+  "rating": 1051,
   "wins": 58,
-  "losses": 47,
-  "gamesCount": 105,
+  "losses": 48,
+  "gamesCount": 106,
   "winRate": 55,
-  "lastPlayedAt": 1783877842,
+  "lastPlayedAt": 1784214206,
   "country": "jp",
   "merged_ids": [],
   "ratingHistory": [
@@ -17,8 +17,8 @@
     933,
     899,
     873,
-    918,
     960,
+    922,
     891,
     865,
     841,
@@ -31,10 +31,10 @@
     970,
     988,
     1005,
-    988,
     1003,
     984,
     968,
+    955,
     945,
     964,
     951,
@@ -45,12 +45,12 @@
     965,
     950,
     936,
-    960,
     946,
     965,
     952,
     973,
     989,
+    972,
     989,
     1006,
     1021,
@@ -59,7 +59,6 @@
     978,
     961,
     981,
-    998,
     1016,
     1032,
     1046,
@@ -68,12 +67,12 @@
     997,
     1013,
     1030,
+    1046,
     1062,
     1079,
     1092,
     1105,
     1116,
-    1130,
     1141,
     1151,
     1128,
@@ -84,10 +83,10 @@
     1125,
     1138,
     1150,
+    1161,
     1141,
     1154,
     1166,
-    1145,
     1125,
     1138,
     1150,
@@ -100,8 +99,8 @@
     1162,
     1172,
     1181,
+    1160,
     1139,
-    1117,
     1129,
     1139,
     1119,
@@ -109,33 +108,10 @@
     1081,
     1066,
     1050,
-    1066
+    1066,
+    1051
   ],
   "recentMatches": [
-    {
-      "matchId": 388754751,
-      "description": "10xshared_3xtech_BambooNothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1745885820,
-      "outcome": "loss",
-      "preRating": 1150,
-      "postRating": 1128,
-      "eloChange": -22,
-      "civ": "Romans",
-      "teamAvgElo": 1080,
-      "opponentAvgElo": 1017,
-      "teammates": [
-        "konishika",
-        "Rito",
-        "Flying Penguin"
-      ],
-      "opponents": [
-        "komatti",
-        "tonkatumura",
-        "martin",
-        "Pacific Ocean"
-      ]
-    },
     {
       "matchId": 433269356,
       "description": "BambooNothing_3x_10xshared",
@@ -590,6 +566,30 @@
         "Rito",
         "BeatsNArt",
         "feid_"
+      ]
+    },
+    {
+      "matchId": 492703891,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784214206,
+      "outcome": "loss",
+      "preRating": 1066,
+      "postRating": 1051,
+      "eloChange": -15,
+      "civ": "Italians",
+      "teamAvgElo": 1052,
+      "opponentAvgElo": 1095,
+      "teammates": [
+        "Dr.Ao",
+        "Rito",
+        "Memberwise"
+      ],
+      "opponents": [
+        "iamatthe.hell",
+        "Lozzer",
+        "kekekeya",
+        "漫山哒哒哒"
       ]
     }
   ]
