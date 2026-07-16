@@ -1,12 +1,12 @@
 {
   "profile_id": 6873814,
   "alias": "yrr",
-  "rating": 940,
-  "wins": 30,
+  "rating": 958,
+  "wins": 31,
   "losses": 42,
-  "gamesCount": 72,
+  "gamesCount": 73,
   "winRate": 42,
-  "lastPlayedAt": 1780796640,
+  "lastPlayedAt": 1784230798,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -82,33 +82,10 @@
     942,
     929,
     951,
-    940
+    940,
+    958
   ],
   "recentMatches": [
-    {
-      "matchId": 419967304,
-      "description": "10x 3x Bamboo host here 4vs4",
-      "mapname": "Bamboo Nothing_Paren_Vlocal_V2.5",
-      "timestamp": 1758250920,
-      "outcome": "loss",
-      "preRating": 968,
-      "postRating": 956,
-      "eloChange": -12,
-      "civ": "Armenians",
-      "teamAvgElo": 1070,
-      "opponentAvgElo": 1055,
-      "teammates": [
-        "Al Ghouti",
-        "Lykerya",
-        "imato"
-      ],
-      "opponents": [
-        "Boocer",
-        "JaFu",
-        "abood",
-        "Mehandor"
-      ]
-    },
     {
       "matchId": 419970206,
       "description": "turbo 10x 3x bamboo",
@@ -563,6 +540,30 @@
         "flaviozera",
         "abatyse6533",
         "Sensei"
+      ]
+    },
+    {
+      "matchId": 492755781,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784230798,
+      "outcome": "win",
+      "preRating": 940,
+      "postRating": 958,
+      "eloChange": 18,
+      "civ": "Dravidians",
+      "teamAvgElo": 937,
+      "opponentAvgElo": 989,
+      "teammates": [
+        "GluGGsel",
+        "Wololoo",
+        "JCalculator"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "KingOfTheNorth",
+        "iamatthe.hell",
+        "Heklort"
       ]
     }
   ]

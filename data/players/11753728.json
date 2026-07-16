@@ -1,12 +1,12 @@
 {
   "profile_id": 11753728,
   "alias": "JuanCaPe",
-  "rating": 991,
-  "wins": 19,
+  "rating": 1007,
+  "wins": 20,
   "losses": 25,
-  "gamesCount": 44,
-  "winRate": 43,
-  "lastPlayedAt": 1783972354,
+  "gamesCount": 45,
+  "winRate": 44,
+  "lastPlayedAt": 1784225058,
   "country": "pe",
   "merged_ids": [
     11668514,
@@ -57,33 +57,10 @@
     932,
     952,
     972,
-    991
+    991,
+    1007
   ],
   "recentMatches": [
-    {
-      "matchId": 408028293,
-      "description": "10x 3x bn",
-      "mapname": "Bamboo Nothing_Paren_V2",
-      "timestamp": 1753262280,
-      "outcome": "loss",
-      "preRating": 965,
-      "postRating": 952,
-      "eloChange": -13,
-      "civ": "Tatars",
-      "teamAvgElo": 993,
-      "opponentAvgElo": 1037,
-      "teammates": [
-        "Wraith King y Chen Y",
-        "Canoobso",
-        "FREESTYLE SCiENTiST"
-      ],
-      "opponents": [
-        "Wikzor",
-        "Mr.YaYo",
-        "Scipio Africanus",
-        "399 the Grizzly Bear - RIP <3"
-      ]
-    },
     {
       "matchId": 412660563,
       "description": "10x 3x Shared Bamboo",
@@ -538,6 +515,30 @@
         "Not a Wizard",
         "king_doge",
         "moabishere"
+      ]
+    },
+    {
+      "matchId": 492735472,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784225058,
+      "outcome": "win",
+      "preRating": 991,
+      "postRating": 1007,
+      "eloChange": 16,
+      "civ": "Bulgarians",
+      "teamAvgElo": 1057,
+      "opponentAvgElo": 999,
+      "teammates": [
+        "iamatthe.hell",
+        "SlimeJesse",
+        "Shadow"
+      ],
+      "opponents": [
+        "Trekkspell",
+        "Spiz.101",
+        "og1kanooby",
+        "Lozzer"
       ]
     }
   ]

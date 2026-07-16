@@ -1,12 +1,12 @@
 {
   "profile_id": 548891,
   "alias": "GluGGsel",
-  "rating": 974,
-  "wins": 11,
+  "rating": 1007,
+  "wins": 13,
   "losses": 14,
-  "gamesCount": 25,
-  "winRate": 44,
-  "lastPlayedAt": 1783132200,
+  "gamesCount": 27,
+  "winRate": 48,
+  "lastPlayedAt": 1784230798,
   "country": "ch",
   "merged_ids": [],
   "ratingHistory": [
@@ -35,57 +35,11 @@
     946,
     965,
     955,
-    974
+    974,
+    991,
+    1007
   ],
   "recentMatches": [
-    {
-      "matchId": 349223966,
-      "description": "FN 10x shared",
-      "mapname": "Zn@Forestnothingteams",
-      "timestamp": 1730516460,
-      "outcome": "win",
-      "preRating": 1027,
-      "postRating": 1063,
-      "eloChange": 36,
-      "civ": "Unknown",
-      "teamAvgElo": 1038,
-      "opponentAvgElo": 993,
-      "teammates": [
-        "ISwaZz",
-        "RaptorX",
-        "prinsesje4470"
-      ],
-      "opponents": [
-        "Ferdinand I of Naples",
-        "[BÜN] Steelbread69",
-        "GUDERMES",
-        "Varondil"
-      ]
-    },
-    {
-      "matchId": 404316681,
-      "description": "10x 3x bamboo nothing  turbo",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1751771340,
-      "outcome": "loss",
-      "preRating": 1063,
-      "postRating": 1020,
-      "eloChange": -43,
-      "civ": "Saracens",
-      "teamAvgElo": 1052,
-      "opponentAvgElo": 1028,
-      "teammates": [
-        "PIEROGI",
-        "DEVILZ",
-        "Luukascch"
-      ],
-      "opponents": [
-        "gmc inspector",
-        "EvilP1xels",
-        "Keishi",
-        "Shidoki"
-      ]
-    },
     {
       "matchId": 404320169,
       "description": "10x 3x bamboo nothing  turbo",
@@ -516,6 +470,54 @@
         "Parts",
         "Paolo Carrosel",
         "YUJIN"
+      ]
+    },
+    {
+      "matchId": 492746435,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784228117,
+      "outcome": "win",
+      "preRating": 974,
+      "postRating": 991,
+      "eloChange": 17,
+      "civ": "Malay",
+      "teamAvgElo": 1036,
+      "opponentAvgElo": 1000,
+      "teammates": [
+        "Gregory",
+        "Age5464",
+        "Grimmie"
+      ],
+      "opponents": [
+        "Lykerya",
+        "Lozzer",
+        "matt",
+        "Zak"
+      ]
+    },
+    {
+      "matchId": 492755781,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784230798,
+      "outcome": "win",
+      "preRating": 991,
+      "postRating": 1007,
+      "eloChange": 16,
+      "civ": "Mongols",
+      "teamAvgElo": 937,
+      "opponentAvgElo": 989,
+      "teammates": [
+        "yrr",
+        "Wololoo",
+        "JCalculator"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "KingOfTheNorth",
+        "iamatthe.hell",
+        "Heklort"
       ]
     }
   ]

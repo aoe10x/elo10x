@@ -1,12 +1,12 @@
 {
   "profile_id": 434838,
   "alias": "jpllops",
-  "rating": 991,
+  "rating": 974,
   "wins": 8,
-  "losses": 10,
-  "gamesCount": 18,
-  "winRate": 44,
-  "lastPlayedAt": 1784133952,
+  "losses": 11,
+  "gamesCount": 19,
+  "winRate": 42,
+  "lastPlayedAt": 1784221898,
   "country": "se",
   "merged_ids": [],
   "ratingHistory": [
@@ -28,7 +28,8 @@
     1010,
     988,
     1011,
-    991
+    991,
+    974
   ],
   "recentMatches": [
     {
@@ -461,6 +462,30 @@
         "Your Ego",
         "schrubber",
         "TioMg100"
+      ]
+    },
+    {
+      "matchId": 492726487,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784221898,
+      "outcome": "loss",
+      "preRating": 991,
+      "postRating": 974,
+      "eloChange": -17,
+      "civ": "Aztecs",
+      "teamAvgElo": 997,
+      "opponentAvgElo": 1025,
+      "teammates": [
+        "MadRussian",
+        "ChristopheG1970.Fr",
+        "afranciscosa"
+      ],
+      "opponents": [
+        "gemmascho",
+        "yimacs_yoyoyo",
+        "herelin0",
+        "DnD"
       ]
     }
   ]

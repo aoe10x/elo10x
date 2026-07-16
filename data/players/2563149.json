@@ -1,12 +1,12 @@
 {
   "profile_id": 2563149,
   "alias": "Heklort",
-  "rating": 909,
+  "rating": 894,
   "wins": 13,
-  "losses": 24,
-  "gamesCount": 37,
-  "winRate": 35,
-  "lastPlayedAt": 1784215795,
+  "losses": 25,
+  "gamesCount": 38,
+  "winRate": 34,
+  "lastPlayedAt": 1784230798,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -47,33 +47,10 @@
     942,
     931,
     919,
-    909
+    909,
+    894
   ],
   "recentMatches": [
-    {
-      "matchId": 408085489,
-      "description": "10x 3x Bamboo",
-      "mapname": "Bamboo_Nothing_V3_Nowater",
-      "timestamp": 1753296720,
-      "outcome": "loss",
-      "preRating": 986,
-      "postRating": 969,
-      "eloChange": -17,
-      "civ": "Koreans",
-      "teamAvgElo": 956,
-      "opponentAvgElo": 1048,
-      "teammates": [
-        "kutaskutas234",
-        "ilovesushi12",
-        "jamoats"
-      ],
-      "opponents": [
-        "[B] Zennith",
-        "RRadeon96",
-        "babeleo",
-        "Nimreh"
-      ]
-    },
     {
       "matchId": 408088719,
       "description": "bamboo nothing 10x 3x",
@@ -528,6 +505,30 @@
         "BaldAfro",
         "Apostate of Hate",
         "紫蝶黄蜂俱有情"
+      ]
+    },
+    {
+      "matchId": 492755781,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784230798,
+      "outcome": "loss",
+      "preRating": 909,
+      "postRating": 894,
+      "eloChange": -15,
+      "civ": "Magyars",
+      "teamAvgElo": 989,
+      "opponentAvgElo": 937,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "KingOfTheNorth",
+        "iamatthe.hell"
+      ],
+      "opponents": [
+        "GluGGsel",
+        "yrr",
+        "Wololoo",
+        "JCalculator"
       ]
     }
   ]

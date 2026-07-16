@@ -1,12 +1,12 @@
 {
   "profile_id": 19326075,
   "alias": "afranciscosa",
-  "rating": 1010,
+  "rating": 995,
   "wins": 27,
-  "losses": 35,
-  "gamesCount": 62,
-  "winRate": 44,
-  "lastPlayedAt": 1784141171,
+  "losses": 36,
+  "gamesCount": 63,
+  "winRate": 43,
+  "lastPlayedAt": 1784221898,
   "country": "pt",
   "merged_ids": [
     12766131,
@@ -75,33 +75,10 @@
     1034,
     1046,
     1028,
-    1010
+    1010,
+    995
   ],
   "recentMatches": [
-    {
-      "matchId": 477063958,
-      "description": "BAMBOO 10x - 3x  **NO NOOB",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1778541000,
-      "outcome": "win",
-      "preRating": 999,
-      "postRating": 1015,
-      "eloChange": 16,
-      "civ": "Italians",
-      "teamAvgElo": 1017,
-      "opponentAvgElo": 1004,
-      "teammates": [
-        "Paris Hilton",
-        "Lego =]",
-        "NothingAtAll11"
-      ],
-      "opponents": [
-        "Refur",
-        "dRea",
-        "UlissePigro",
-        "Wucky the Plucky Ducky"
-      ]
-    },
     {
       "matchId": 477554911,
       "description": "256x 10x Forest Nothing",
@@ -556,6 +533,30 @@
         "bommietommie",
         "Nain Patient",
         "Prinz Kay1"
+      ]
+    },
+    {
+      "matchId": 492726487,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784221898,
+      "outcome": "loss",
+      "preRating": 1010,
+      "postRating": 995,
+      "eloChange": -15,
+      "civ": "Saracens",
+      "teamAvgElo": 997,
+      "opponentAvgElo": 1025,
+      "teammates": [
+        "jpllops",
+        "MadRussian",
+        "ChristopheG1970.Fr"
+      ],
+      "opponents": [
+        "gemmascho",
+        "yimacs_yoyoyo",
+        "herelin0",
+        "DnD"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 25061238,
   "alias": "og1kanooby",
-  "rating": 951,
+  "rating": 934,
   "wins": 5,
-  "losses": 10,
-  "gamesCount": 15,
-  "winRate": 33,
-  "lastPlayedAt": 1784216651,
+  "losses": 11,
+  "gamesCount": 16,
+  "winRate": 31,
+  "lastPlayedAt": 1784225058,
   "country": "ca",
   "merged_ids": [
     13594576,
@@ -28,7 +28,8 @@
     949,
     931,
     913,
-    951
+    951,
+    934
   ],
   "recentMatches": [
     {
@@ -377,8 +378,8 @@
       "postRating": 951,
       "eloChange": 38,
       "civ": "Poles",
-      "teamAvgElo": 1037,
-      "opponentAvgElo": 1101,
+      "teamAvgElo": 1027,
+      "opponentAvgElo": 1096,
       "teammates": [
         "BaldAfro",
         "Megahaufen",
@@ -389,6 +390,30 @@
         "Paladin",
         "tonkatumura",
         "pandasadnap"
+      ]
+    },
+    {
+      "matchId": 492735472,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784225058,
+      "outcome": "loss",
+      "preRating": 951,
+      "postRating": 934,
+      "eloChange": -17,
+      "civ": "Vikings",
+      "teamAvgElo": 999,
+      "opponentAvgElo": 1057,
+      "teammates": [
+        "Trekkspell",
+        "Spiz.101",
+        "Lozzer"
+      ],
+      "opponents": [
+        "iamatthe.hell",
+        "SlimeJesse",
+        "JuanCaPe",
+        "Shadow"
       ]
     }
   ]

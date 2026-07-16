@@ -1,12 +1,12 @@
 {
   "profile_id": 5648280,
   "alias": "Rito",
-  "rating": 1061,
+  "rating": 1043,
   "wins": 25,
-  "losses": 19,
-  "gamesCount": 44,
-  "winRate": 57,
-  "lastPlayedAt": 1784214206,
+  "losses": 20,
+  "gamesCount": 45,
+  "winRate": 56,
+  "lastPlayedAt": 1784221878,
   "country": "jp",
   "merged_ids": [],
   "ratingHistory": [
@@ -54,33 +54,10 @@
     1076,
     1093,
     1076,
-    1061
+    1061,
+    1043
   ],
   "recentMatches": [
-    {
-      "matchId": 350080114,
-      "description": "shared10x tech3x amazon",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1730851980,
-      "outcome": "loss",
-      "preRating": 1150,
-      "postRating": 1127,
-      "eloChange": -23,
-      "civ": "Burmese",
-      "teamAvgElo": 1026,
-      "opponentAvgElo": 974,
-      "teammates": [
-        "Keishi",
-        "Emusan",
-        "Open"
-      ],
-      "opponents": [
-        "Papillon",
-        "komatti",
-        "dorayan",
-        "Zackuuu"
-      ]
-    },
     {
       "matchId": 350916534,
       "description": "Shared10x tech3x amazon",
@@ -535,6 +512,30 @@
         "Lozzer",
         "kekekeya",
         "漫山哒哒哒"
+      ]
+    },
+    {
+      "matchId": 492726458,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784221878,
+      "outcome": "loss",
+      "preRating": 1061,
+      "postRating": 1043,
+      "eloChange": -18,
+      "civ": "Slavs",
+      "teamAvgElo": 1012,
+      "opponentAvgElo": 1017,
+      "teammates": [
+        "Papillon",
+        "dorayan",
+        "abatyse6533"
+      ],
+      "opponents": [
+        "konishika",
+        "Parts",
+        "Trekkspell",
+        "KarlLagerfeuer"
       ]
     }
   ]

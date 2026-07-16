@@ -1,12 +1,12 @@
 {
   "profile_id": 244800,
   "alias": "JCalculator",
-  "rating": 905,
-  "wins": 9,
+  "rating": 925,
+  "wins": 10,
   "losses": 20,
-  "gamesCount": 29,
-  "winRate": 31,
-  "lastPlayedAt": 1783708812,
+  "gamesCount": 30,
+  "winRate": 33,
+  "lastPlayedAt": 1784230798,
   "country": "do",
   "merged_ids": [],
   "ratingHistory": [
@@ -39,33 +39,10 @@
     900,
     890,
     882,
-    905
+    905,
+    925
   ],
   "recentMatches": [
-    {
-      "matchId": 472450860,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1776938040,
-      "outcome": "loss",
-      "preRating": 951,
-      "postRating": 931,
-      "eloChange": -20,
-      "civ": "Cumans",
-      "teamAvgElo": 981,
-      "opponentAvgElo": 1098,
-      "teammates": [
-        "average hobo",
-        "PoonSlapper",
-        "gipsyking"
-      ],
-      "opponents": [
-        "Kumad",
-        "EL__PATRON",
-        "Myriad",
-        "juanpacuevas99"
-      ]
-    },
     {
       "matchId": 472468412,
       "description": "10x shared Civ bonus Twin Bays",
@@ -520,6 +497,30 @@
         "KingOfTheNorth",
         "NothingAtAll11",
         "TheRiceMan"
+      ]
+    },
+    {
+      "matchId": 492755781,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784230798,
+      "outcome": "win",
+      "preRating": 905,
+      "postRating": 925,
+      "eloChange": 20,
+      "civ": "Vietnamese",
+      "teamAvgElo": 937,
+      "opponentAvgElo": 989,
+      "teammates": [
+        "GluGGsel",
+        "yrr",
+        "Wololoo"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "KingOfTheNorth",
+        "iamatthe.hell",
+        "Heklort"
       ]
     }
   ]

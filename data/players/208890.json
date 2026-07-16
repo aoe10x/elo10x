@@ -1,12 +1,12 @@
 {
   "profile_id": 208890,
   "alias": "[Liiit] Zbyszek",
-  "rating": 1087,
+  "rating": 1071,
   "wins": 38,
-  "losses": 32,
-  "gamesCount": 70,
+  "losses": 33,
+  "gamesCount": 71,
   "winRate": 54,
-  "lastPlayedAt": 1784219651,
+  "lastPlayedAt": 1784221646,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -80,33 +80,10 @@
     1084,
     1093,
     1075,
-    1087
+    1087,
+    1071
   ],
   "recentMatches": [
-    {
-      "matchId": 412212595,
-      "description": "10x 3x",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1754969520,
-      "outcome": "loss",
-      "preRating": 1075,
-      "postRating": 1058,
-      "eloChange": -17,
-      "civ": "Dravidians",
-      "teamAvgElo": 1061,
-      "opponentAvgElo": 1052,
-      "teammates": [
-        "GandalfGG",
-        "mark",
-        "Cheesewheel24"
-      ],
-      "opponents": [
-        "WDWKid3",
-        "Legit",
-        "Mr.Awesome",
-        "Zinzin"
-      ]
-    },
     {
       "matchId": 412775173,
       "description": "bamboo nothing 10x 3x",
@@ -525,7 +502,7 @@
       "postRating": 1075,
       "eloChange": -18,
       "civ": "Byzantines",
-      "teamAvgElo": 1029,
+      "teamAvgElo": 1035,
       "opponentAvgElo": 1046,
       "teammates": [
         "WhiteMonk",
@@ -561,6 +538,30 @@
         "TioMg100",
         "TR.elephantman",
         "Nigerian Farmer"
+      ]
+    },
+    {
+      "matchId": 492725000,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784221646,
+      "outcome": "loss",
+      "preRating": 1087,
+      "postRating": 1071,
+      "eloChange": -16,
+      "civ": "Malians",
+      "teamAvgElo": 1038,
+      "opponentAvgElo": 1080,
+      "teammates": [
+        "baianitro",
+        "gamingtars",
+        "im slow"
+      ],
+      "opponents": [
+        "Lumedge",
+        "Grimmie",
+        "Spiz.101",
+        "Cale94"
       ]
     }
   ]
