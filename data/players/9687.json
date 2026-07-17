@@ -1,12 +1,12 @@
 {
   "profile_id": 9687,
   "alias": "kared117",
-  "rating": 1035,
+  "rating": 1021,
   "wins": 23,
-  "losses": 26,
-  "gamesCount": 49,
-  "winRate": 47,
-  "lastPlayedAt": 1784235159,
+  "losses": 27,
+  "gamesCount": 50,
+  "winRate": 46,
+  "lastPlayedAt": 1784305192,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -59,33 +59,10 @@
     1020,
     1037,
     1052,
-    1035
+    1035,
+    1021
   ],
   "recentMatches": [
-    {
-      "matchId": 457735454,
-      "description": "bamboo nothing 10x 3x",
-      "mapname": "Bamboo Nothing V1 [Scorpyon]",
-      "timestamp": 1771652400,
-      "outcome": "loss",
-      "preRating": 1038,
-      "postRating": 1022,
-      "eloChange": -16,
-      "civ": "Vietnamese",
-      "teamAvgElo": 1054,
-      "opponentAvgElo": 1034,
-      "teammates": [
-        "AceTrooper",
-        "Rin Tin Tin",
-        "gmc inspector"
-      ],
-      "opponents": [
-        "Rice Monger (SoullessMZD)",
-        "Ferdinand I of Naples",
-        "KingOfTheNorth",
-        "JuanMalote"
-      ]
-    },
     {
       "matchId": 458643081,
       "description": "Bamboo 10x",
@@ -540,6 +517,30 @@
         "gemmascho",
         "Your Ego",
         "Vader"
+      ]
+    },
+    {
+      "matchId": 492936383,
+      "description": "10x3x Mangrove Nothing",
+      "mapname": "Mangrove FN",
+      "timestamp": 1784305192,
+      "outcome": "loss",
+      "preRating": 1035,
+      "postRating": 1021,
+      "eloChange": -14,
+      "civ": "Dravidians",
+      "teamAvgElo": 1058,
+      "opponentAvgElo": 1082,
+      "teammates": [
+        "Imperator Storm",
+        "Frederick",
+        "BarqBarq"
+      ],
+      "opponents": [
+        "_Zeruch_",
+        "pandalam",
+        "Shadow",
+        "RA"
       ]
     }
   ]

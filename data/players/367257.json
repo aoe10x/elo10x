@@ -1,12 +1,12 @@
 {
   "profile_id": 367257,
   "alias": "Bambamdumm",
-  "rating": 1096,
+  "rating": 1078,
   "wins": 25,
-  "losses": 22,
-  "gamesCount": 47,
-  "winRate": 53,
-  "lastPlayedAt": 1784263625,
+  "losses": 23,
+  "gamesCount": 48,
+  "winRate": 52,
+  "lastPlayedAt": 1784303630,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -57,33 +57,10 @@
     1083,
     1065,
     1081,
-    1096
+    1096,
+    1078
   ],
   "recentMatches": [
-    {
-      "matchId": 447829833,
-      "description": "10x shared 3x tech bamboo nothing",
-      "mapname": "Bamboo Nothing_Paren_V3.0",
-      "timestamp": 1768274400,
-      "outcome": "loss",
-      "preRating": 1067,
-      "postRating": 1049,
-      "eloChange": -18,
-      "civ": "Jurchens",
-      "teamAvgElo": 1039,
-      "opponentAvgElo": 1015,
-      "teammates": [
-        "Texas Red",
-        "Mandriao",
-        "Gohanckz"
-      ],
-      "opponents": [
-        "abatyse6533",
-        "Bachter",
-        "Paolo Carrosel",
-        "Lozzer"
-      ]
-    },
     {
       "matchId": 449234844,
       "description": "10x+3xtech no noob",
@@ -538,6 +515,30 @@
         "WorldsFastestTurtle",
         "NoxMortus",
         "Emusan"
+      ]
+    },
+    {
+      "matchId": 492930904,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784303630,
+      "outcome": "loss",
+      "preRating": 1096,
+      "postRating": 1078,
+      "eloChange": -18,
+      "civ": "Cumans",
+      "teamAvgElo": 1045,
+      "opponentAvgElo": 1047,
+      "teammates": [
+        "Goodsoup",
+        "Unblanked",
+        "dertli"
+      ],
+      "opponents": [
+        "gemmascho",
+        "jpllops",
+        "Frederick",
+        "Prinz Kay1"
       ]
     }
   ]

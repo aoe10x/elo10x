@@ -1,12 +1,12 @@
 {
   "profile_id": 4084571,
   "alias": "Mahmut",
-  "rating": 930,
-  "wins": 6,
+  "rating": 954,
+  "wins": 7,
   "losses": 11,
-  "gamesCount": 17,
-  "winRate": 35,
-  "lastPlayedAt": 1784159374,
+  "gamesCount": 18,
+  "winRate": 39,
+  "lastPlayedAt": 1784294831,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,8 @@
     994,
     973,
     951,
-    930
+    930,
+    954
   ],
   "recentMatches": [
     {
@@ -436,6 +437,30 @@
         "[TodEs] MnTartara",
         "Pogonophobia69",
         "procrastination.exe"
+      ]
+    },
+    {
+      "matchId": 492901799,
+      "description": "10x 3x bamboo",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784294831,
+      "outcome": "win",
+      "preRating": 930,
+      "postRating": 954,
+      "eloChange": 24,
+      "civ": "Burmese",
+      "teamAvgElo": 1038,
+      "opponentAvgElo": 978,
+      "teammates": [
+        "OldManofStorr",
+        "Waryahay",
+        "Teoman the hun"
+      ],
+      "opponents": [
+        "勇战到抵",
+        "MaxLort",
+        "Lumedge",
+        "jonathahyoga"
       ]
     }
   ]

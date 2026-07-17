@@ -1,12 +1,12 @@
 {
   "profile_id": 2962172,
   "alias": "_Zeruch_",
-  "rating": 975,
-  "wins": 8,
+  "rating": 999,
+  "wins": 9,
   "losses": 10,
-  "gamesCount": 18,
-  "winRate": 44,
-  "lastPlayedAt": 1784288072,
+  "gamesCount": 19,
+  "winRate": 47,
+  "lastPlayedAt": 1784305192,
   "country": "ua",
   "merged_ids": [],
   "ratingHistory": [
@@ -28,7 +28,8 @@
     996,
     1021,
     997,
-    975
+    975,
+    999
   ],
   "recentMatches": [
     {
@@ -461,6 +462,30 @@
         "Antimier",
         "yiban",
         "Cubayop"
+      ]
+    },
+    {
+      "matchId": 492936383,
+      "description": "10x3x Mangrove Nothing",
+      "mapname": "Mangrove FN",
+      "timestamp": 1784305192,
+      "outcome": "win",
+      "preRating": 975,
+      "postRating": 999,
+      "eloChange": 24,
+      "civ": "Incas",
+      "teamAvgElo": 1082,
+      "opponentAvgElo": 1058,
+      "teammates": [
+        "pandalam",
+        "Shadow",
+        "RA"
+      ],
+      "opponents": [
+        "Imperator Storm",
+        "Frederick",
+        "kared117",
+        "BarqBarq"
       ]
     }
   ]

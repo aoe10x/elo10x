@@ -1,12 +1,12 @@
 {
   "profile_id": 1905194,
   "alias": "menschlicheflagge",
-  "rating": 1125,
+  "rating": 1103,
   "wins": 11,
-  "losses": 7,
-  "gamesCount": 18,
-  "winRate": 61,
-  "lastPlayedAt": 1775508780,
+  "losses": 8,
+  "gamesCount": 19,
+  "winRate": 58,
+  "lastPlayedAt": 1784296433,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -28,7 +28,8 @@
     1066,
     1092,
     1107,
-    1125
+    1125,
+    1103
   ],
   "recentMatches": [
     {
@@ -461,6 +462,30 @@
         "BigAl",
         "NoxMortus",
         "VforKickAss"
+      ]
+    },
+    {
+      "matchId": 492907691,
+      "description": "10x Shared Civ Bonus (everything nothing)",
+      "mapname": "Bush Nothing",
+      "timestamp": 1784296433,
+      "outcome": "loss",
+      "preRating": 1125,
+      "postRating": 1103,
+      "eloChange": -22,
+      "civ": "Huns",
+      "teamAvgElo": 1043,
+      "opponentAvgElo": 1074,
+      "teammates": [
+        "WhiteMonk",
+        "bhasudi--",
+        "Max"
+      ],
+      "opponents": [
+        "Vader",
+        "长岛热茶",
+        "紫蝶黄蜂俱有情",
+        "SimCity3000"
       ]
     }
   ]

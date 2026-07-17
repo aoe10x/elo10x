@@ -1,12 +1,12 @@
 {
   "profile_id": 7345183,
   "alias": "Eemeli",
-  "rating": 839,
-  "wins": 3,
+  "rating": 872,
+  "wins": 4,
   "losses": 13,
-  "gamesCount": 16,
-  "winRate": 19,
-  "lastPlayedAt": 1784119740,
+  "gamesCount": 17,
+  "winRate": 24,
+  "lastPlayedAt": 1784282980,
   "country": "fi",
   "merged_ids": [],
   "ratingHistory": [
@@ -26,7 +26,8 @@
     877,
     861,
     848,
-    839
+    839,
+    872
   ],
   "recentMatches": [
     {
@@ -411,6 +412,30 @@
         "pandalam",
         "Grimmie",
         "mgmanager"
+      ]
+    },
+    {
+      "matchId": 492877830,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784282980,
+      "outcome": "win",
+      "preRating": 839,
+      "postRating": 872,
+      "eloChange": 33,
+      "civ": "Portuguese",
+      "teamAvgElo": 957,
+      "opponentAvgElo": 1011,
+      "teammates": [
+        "sppd3181",
+        "雲",
+        "FinishedMyBurger"
+      ],
+      "opponents": [
+        "Emusan",
+        "[S33]ff",
+        "Captain Stripes",
+        "SickFishh"
       ]
     }
   ]
