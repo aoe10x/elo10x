@@ -1,12 +1,12 @@
 {
   "profile_id": 864352,
   "alias": "Nigerian Farmer",
-  "rating": 903,
+  "rating": 894,
   "wins": 16,
-  "losses": 27,
-  "gamesCount": 43,
-  "winRate": 37,
-  "lastPlayedAt": 1784229161,
+  "losses": 28,
+  "gamesCount": 44,
+  "winRate": 36,
+  "lastPlayedAt": 1784242387,
   "country": "se",
   "merged_ids": [],
   "ratingHistory": [
@@ -53,33 +53,10 @@
     903,
     891,
     915,
-    903
+    903,
+    894
   ],
   "recentMatches": [
-    {
-      "matchId": 490705997,
-      "description": "Bamboo 10x 3x",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1783434995,
-      "outcome": "win",
-      "preRating": 1030,
-      "postRating": 1043,
-      "eloChange": 13,
-      "civ": "Saracens",
-      "teamAvgElo": 1033,
-      "opponentAvgElo": 958,
-      "teammates": [
-        "OldManofStorr",
-        "The Cobra Brothers",
-        "紫蝶黄蜂俱有情"
-      ],
-      "opponents": [
-        "NothingAtAll11",
-        "KhasminC",
-        "Consume Product",
-        "Soba"
-      ]
-    },
     {
       "matchId": 490881839,
       "description": "i kun 10x3x 4v4s qun729084973",
@@ -534,6 +511,30 @@
         "gemmascho",
         "KingOfTheNorth",
         "yimacs_yoyoyo"
+      ]
+    },
+    {
+      "matchId": 492792942,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784242387,
+      "outcome": "loss",
+      "preRating": 903,
+      "postRating": 894,
+      "eloChange": -9,
+      "civ": "Celts",
+      "teamAvgElo": 950,
+      "opponentAvgElo": 1077,
+      "teammates": [
+        "procrastination.exe",
+        "468673564",
+        "Burt"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "Nimu.-",
+        "Ghost_pt",
+        "develement"
       ]
     }
   ]

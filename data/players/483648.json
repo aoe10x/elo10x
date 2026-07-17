@@ -1,12 +1,12 @@
 {
   "profile_id": 483648,
   "alias": "Willoloh!!!",
-  "rating": 980,
+  "rating": 961,
   "wins": 7,
-  "losses": 9,
-  "gamesCount": 16,
-  "winRate": 44,
-  "lastPlayedAt": 1784208757,
+  "losses": 10,
+  "gamesCount": 17,
+  "winRate": 41,
+  "lastPlayedAt": 1784248116,
   "country": "au",
   "merged_ids": [],
   "ratingHistory": [
@@ -26,7 +26,8 @@
     997,
     971,
     950,
-    980
+    980,
+    961
   ],
   "recentMatches": [
     {
@@ -411,6 +412,30 @@
         "Lozzer",
         "_Zeruch_",
         "Hughmungus Chungus"
+      ]
+    },
+    {
+      "matchId": 492806248,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784248116,
+      "outcome": "loss",
+      "preRating": 980,
+      "postRating": 961,
+      "eloChange": -19,
+      "civ": "Sicilians",
+      "teamAvgElo": 1051,
+      "opponentAvgElo": 1037,
+      "teammates": [
+        "alexw",
+        "Parts",
+        "LethalP59"
+      ],
+      "opponents": [
+        "TJ",
+        "Waryahay",
+        "Mehandor",
+        "Blegh"
       ]
     }
   ]

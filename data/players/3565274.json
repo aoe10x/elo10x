@@ -1,12 +1,12 @@
 {
   "profile_id": 3565274,
   "alias": "Ricardo V",
-  "rating": 1020,
+  "rating": 991,
   "wins": 21,
-  "losses": 27,
-  "gamesCount": 48,
-  "winRate": 44,
-  "lastPlayedAt": 1783962138,
+  "losses": 29,
+  "gamesCount": 50,
+  "winRate": 42,
+  "lastPlayedAt": 1784239612,
   "country": "pe",
   "merged_ids": [
     3565274,
@@ -61,57 +61,11 @@
     968,
     986,
     1003,
-    1020
+    1020,
+    1006,
+    991
   ],
   "recentMatches": [
-    {
-      "matchId": 407633280,
-      "description": "256x 10x FN",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1753091340,
-      "outcome": "loss",
-      "preRating": 971,
-      "postRating": 957,
-      "eloChange": -14,
-      "civ": "Burgundians",
-      "teamAvgElo": 1011,
-      "opponentAvgElo": 1015,
-      "teammates": [
-        "nooblet3300",
-        "jose_david1508",
-        "JackWU"
-      ],
-      "opponents": [
-        "<johnny>bravo",
-        "Battlegoose",
-        "ζ |  SaintPΞpsi94",
-        "tacotoy"
-      ]
-    },
-    {
-      "matchId": 408031659,
-      "description": "10x 3x bn",
-      "mapname": "Bamboo Nothing_Paren_V2",
-      "timestamp": 1753264140,
-      "outcome": "loss",
-      "preRating": 957,
-      "postRating": 942,
-      "eloChange": -15,
-      "civ": "Persians",
-      "teamAvgElo": 1003,
-      "opponentAvgElo": 973,
-      "teammates": [
-        "Wikzor",
-        "Balili",
-        "ol guv"
-      ],
-      "opponents": [
-        "dertli",
-        "H-H",
-        "Winddd",
-        "jona!"
-      ]
-    },
     {
       "matchId": 409708862,
       "description": "10x 3x BAMBOO *NO NOOB*",
@@ -542,6 +496,54 @@
         "tonzo",
         "PereCastor",
         "GarvSANGWAN"
+      ]
+    },
+    {
+      "matchId": 492783410,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784238810,
+      "outcome": "loss",
+      "preRating": 1020,
+      "postRating": 1006,
+      "eloChange": -14,
+      "civ": "Malians",
+      "teamAvgElo": 1082,
+      "opponentAvgElo": 1058,
+      "teammates": [
+        "CristoTheRealCeisto",
+        "Prinz Kay1",
+        "TheRiceMan"
+      ],
+      "opponents": [
+        "iamatthe.hell",
+        "Jaguar Shotel Karambit Samurai",
+        "Ye",
+        "Mikenico95"
+      ]
+    },
+    {
+      "matchId": 492786374,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784239612,
+      "outcome": "loss",
+      "preRating": 1006,
+      "postRating": 991,
+      "eloChange": -15,
+      "civ": "Gurjaras",
+      "teamAvgElo": 1043,
+      "opponentAvgElo": 1037,
+      "teammates": [
+        "Trekkspell",
+        "Voskarius",
+        "jair_silva"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "Consume Product",
+        "pool_champ",
+        "Apocalypto"
       ]
     }
   ]

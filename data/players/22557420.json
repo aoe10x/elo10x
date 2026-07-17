@@ -1,12 +1,12 @@
 {
   "profile_id": 22557420,
   "alias": "ZaySol",
-  "rating": 1076,
+  "rating": 1058,
   "wins": 54,
-  "losses": 35,
-  "gamesCount": 89,
-  "winRate": 61,
-  "lastPlayedAt": 1784075763,
+  "losses": 36,
+  "gamesCount": 90,
+  "winRate": 60,
+  "lastPlayedAt": 1784244942,
   "country": "us",
   "merged_ids": [
     13213207,
@@ -102,33 +102,10 @@
     1033,
     1047,
     1063,
-    1076
+    1076,
+    1058
   ],
   "recentMatches": [
-    {
-      "matchId": 481983789,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1780289460,
-      "outcome": "win",
-      "preRating": 1130,
-      "postRating": 1142,
-      "eloChange": 12,
-      "civ": "Portuguese",
-      "teamAvgElo": 1085,
-      "opponentAvgElo": 1045,
-      "teammates": [
-        "Bionerd92",
-        "Tiny Hands",
-        "OhSheeep"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "duckbuildperson",
-        "cyberocioso",
-        "goldinggunsandparts"
-      ]
-    },
     {
       "matchId": 482016400,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -583,6 +560,30 @@
         "TR.elephantman",
         "SpiniestTuna222",
         "Lordbusiness"
+      ]
+    },
+    {
+      "matchId": 492800029,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784244942,
+      "outcome": "loss",
+      "preRating": 1076,
+      "postRating": 1058,
+      "eloChange": -18,
+      "civ": "Incas",
+      "teamAvgElo": 1077,
+      "opponentAvgElo": 1041,
+      "teammates": [
+        "NoAgendaPODCAST",
+        "RA",
+        "ImmaBeBeast2"
+      ],
+      "opponents": [
+        "Given Sens",
+        "Mehandor",
+        "herelin0",
+        "Parts"
       ]
     }
   ]

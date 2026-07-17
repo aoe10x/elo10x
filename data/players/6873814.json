@@ -1,12 +1,12 @@
 {
   "profile_id": 6873814,
   "alias": "yrr",
-  "rating": 958,
-  "wins": 31,
-  "losses": 42,
-  "gamesCount": 73,
-  "winRate": 42,
-  "lastPlayedAt": 1784230798,
+  "rating": 966,
+  "wins": 32,
+  "losses": 43,
+  "gamesCount": 75,
+  "winRate": 43,
+  "lastPlayedAt": 1784237687,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -83,57 +83,11 @@
     929,
     951,
     940,
-    958
+    958,
+    946,
+    966
   ],
   "recentMatches": [
-    {
-      "matchId": 419970206,
-      "description": "turbo 10x 3x bamboo",
-      "mapname": "Bamboo Nothing_Paren_Vlocal_V2.5",
-      "timestamp": 1758252060,
-      "outcome": "loss",
-      "preRating": 956,
-      "postRating": 946,
-      "eloChange": -10,
-      "civ": "Teutons",
-      "teamAvgElo": 1021,
-      "opponentAvgElo": 1092,
-      "teammates": [
-        "[BÜN] Steelbread69",
-        "AleRayado88",
-        "tH_cept"
-      ],
-      "opponents": [
-        "Cale94",
-        "Mimi",
-        "Regina Ip",
-        "Lykerya"
-      ]
-    },
-    {
-      "matchId": 426259186,
-      "description": "bamboo nothing 10x 3x",
-      "mapname": "Bamboo Nothing V1 [Scorpyon]",
-      "timestamp": 1760667420,
-      "outcome": "win",
-      "preRating": 946,
-      "postRating": 967,
-      "eloChange": 21,
-      "civ": "Vikings",
-      "teamAvgElo": 1046,
-      "opponentAvgElo": 1054,
-      "teammates": [
-        "AceTrooper",
-        "BigPimpin",
-        "TheCobra"
-      ],
-      "opponents": [
-        "Your Ego",
-        "LeosMind",
-        "checkdis",
-        "Devotus"
-      ]
-    },
     {
       "matchId": 426264522,
       "description": "bamboo nothing 10x 3x",
@@ -564,6 +518,54 @@
         "KingOfTheNorth",
         "iamatthe.hell",
         "Heklort"
+      ]
+    },
+    {
+      "matchId": 492776258,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784236453,
+      "outcome": "loss",
+      "preRating": 958,
+      "postRating": 946,
+      "eloChange": -12,
+      "civ": "Chinese",
+      "teamAvgElo": 975,
+      "opponentAvgElo": 1046,
+      "teammates": [
+        "Madness",
+        "ElmoWithoutL",
+        "Jelly"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "gemmascho",
+        "Voskarius",
+        "Your Ego"
+      ]
+    },
+    {
+      "matchId": 492780109,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784237687,
+      "outcome": "win",
+      "preRating": 946,
+      "postRating": 966,
+      "eloChange": 20,
+      "civ": "Bengalis",
+      "teamAvgElo": 1025,
+      "opponentAvgElo": 1029,
+      "teammates": [
+        "Llama",
+        "Tiny Hands",
+        "bommietommie"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "gemmascho",
+        "Mikenico95",
+        "Apocalypto"
       ]
     }
   ]

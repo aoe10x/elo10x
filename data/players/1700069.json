@@ -1,12 +1,12 @@
 {
   "profile_id": 1700069,
   "alias": "Madness",
-  "rating": 1017,
+  "rating": 1002,
   "wins": 35,
-  "losses": 34,
-  "gamesCount": 69,
-  "winRate": 51,
-  "lastPlayedAt": 1783977891,
+  "losses": 35,
+  "gamesCount": 70,
+  "winRate": 50,
+  "lastPlayedAt": 1784236453,
   "country": "ch",
   "merged_ids": [
     1700069,
@@ -82,33 +82,10 @@
     1031,
     1016,
     1031,
-    1017
+    1017,
+    1002
   ],
   "recentMatches": [
-    {
-      "matchId": 463210293,
-      "description": "BN 10x 3x no shitty players",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1773615300,
-      "outcome": "loss",
-      "preRating": 1113,
-      "postRating": 1096,
-      "eloChange": -17,
-      "civ": "Unknown",
-      "teamAvgElo": 1029,
-      "opponentAvgElo": 1101,
-      "teammates": [
-        "TM AndresgP",
-        "gemmascho",
-        "dummglücklich"
-      ],
-      "opponents": [
-        "duckbuildperson",
-        "znifer",
-        "[CSGS]Runescape",
-        "JuanMalote"
-      ]
-    },
     {
       "matchId": 463717985,
       "description": "10x 3x bamboo random civ",
@@ -563,6 +540,30 @@
         "NothingAtAll11",
         "tonzo",
         "kiggless"
+      ]
+    },
+    {
+      "matchId": 492776258,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784236453,
+      "outcome": "loss",
+      "preRating": 1017,
+      "postRating": 1002,
+      "eloChange": -15,
+      "civ": "Teutons",
+      "teamAvgElo": 975,
+      "opponentAvgElo": 1046,
+      "teammates": [
+        "ElmoWithoutL",
+        "yrr",
+        "Jelly"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "gemmascho",
+        "Voskarius",
+        "Your Ego"
       ]
     }
   ]

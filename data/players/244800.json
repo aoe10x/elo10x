@@ -1,12 +1,12 @@
 {
   "profile_id": 244800,
   "alias": "JCalculator",
-  "rating": 925,
+  "rating": 915,
   "wins": 10,
-  "losses": 20,
-  "gamesCount": 30,
-  "winRate": 33,
-  "lastPlayedAt": 1784230798,
+  "losses": 21,
+  "gamesCount": 31,
+  "winRate": 32,
+  "lastPlayedAt": 1784234249,
   "country": "do",
   "merged_ids": [],
   "ratingHistory": [
@@ -40,33 +40,10 @@
     890,
     882,
     905,
-    925
+    925,
+    915
   ],
   "recentMatches": [
-    {
-      "matchId": 472468412,
-      "description": "10x shared Civ bonus Twin Bays",
-      "mapname": "Twin Bays_2",
-      "timestamp": 1776945360,
-      "outcome": "win",
-      "preRating": 931,
-      "postRating": 969,
-      "eloChange": 38,
-      "civ": "Mapuche",
-      "teamAvgElo": 1017,
-      "opponentAvgElo": 997,
-      "teammates": [
-        "Wardy21",
-        "VergaraRamirez",
-        "tbird"
-      ],
-      "opponents": [
-        "SitzKrieg",
-        "Winston Smokehill",
-        "CobraBubbles801",
-        "Ig"
-      ]
-    },
     {
       "matchId": 472472517,
       "description": "10x shared Civ bonus Twin Bays",
@@ -521,6 +498,30 @@
         "KingOfTheNorth",
         "iamatthe.hell",
         "Heklort"
+      ]
+    },
+    {
+      "matchId": 492769035,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784234249,
+      "outcome": "loss",
+      "preRating": 925,
+      "postRating": 915,
+      "eloChange": -10,
+      "civ": "Cumans",
+      "teamAvgElo": 970,
+      "opponentAvgElo": 1064,
+      "teammates": [
+        "Apocalypto",
+        "Texas Red",
+        "Heklort"
+      ],
+      "opponents": [
+        "iamatthe.hell",
+        "TheRiceMan",
+        "gamingtars",
+        "Paolo Carrosel"
       ]
     }
   ]

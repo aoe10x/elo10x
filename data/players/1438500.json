@@ -1,12 +1,12 @@
 {
   "profile_id": 1438500,
   "alias": "Tootin B. Anthony",
-  "rating": 936,
+  "rating": 922,
   "wins": 13,
-  "losses": 25,
-  "gamesCount": 38,
-  "winRate": 34,
-  "lastPlayedAt": 1784063255,
+  "losses": 26,
+  "gamesCount": 39,
+  "winRate": 33,
+  "lastPlayedAt": 1784244280,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -48,33 +48,10 @@
     941,
     961,
     947,
-    936
+    936,
+    922
   ],
   "recentMatches": [
-    {
-      "matchId": 462787519,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1773475500,
-      "outcome": "loss",
-      "preRating": 933,
-      "postRating": 920,
-      "eloChange": -13,
-      "civ": "Armenians",
-      "teamAvgElo": 1016,
-      "opponentAvgElo": 1048,
-      "teammates": [
-        "EL__PATRON",
-        "c.dargaville00",
-        "[LWS] Mandatum"
-      ],
-      "opponents": [
-        "Kumad",
-        "Myriad",
-        "seantairs",
-        "GoOverlay.com | AwE"
-      ]
-    },
     {
       "matchId": 462793047,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -529,6 +506,30 @@
         "GarvSANGWAN",
         "ElmoWithoutL",
         "baianitro"
+      ]
+    },
+    {
+      "matchId": 492798069,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784244280,
+      "outcome": "loss",
+      "preRating": 936,
+      "postRating": 922,
+      "eloChange": -14,
+      "civ": "Hindustanis",
+      "teamAvgElo": 1008,
+      "opponentAvgElo": 989,
+      "teammates": [
+        "Your Ego",
+        "Sam",
+        "FirstRussianTzar"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "gemmascho",
+        "Borkan",
+        "Goodsoup"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 23719467,
   "alias": "MARKVILEX",
-  "rating": 1000,
+  "rating": 986,
   "wins": 54,
-  "losses": 48,
-  "gamesCount": 102,
-  "winRate": 53,
-  "lastPlayedAt": 1783974096,
+  "losses": 49,
+  "gamesCount": 103,
+  "winRate": 52,
+  "lastPlayedAt": 1784242528,
   "country": "es",
   "merged_ids": [
     13388218,
@@ -26,10 +26,10 @@
     1086,
     1114,
     1139,
-    1153,
     1170,
     1185,
     1153,
+    1168,
     1181,
     1194,
     1169,
@@ -50,7 +50,6 @@
     1070,
     1054,
     1067,
-    1051,
     1067,
     1079,
     1061,
@@ -63,6 +62,7 @@
     1101,
     1115,
     1127,
+    1106,
     1084,
     1072,
     1088,
@@ -75,7 +75,6 @@
     1066,
     1079,
     1061,
-    1046,
     1029,
     1013,
     1001,
@@ -95,11 +94,11 @@
     1050,
     1067,
     1053,
+    1037,
     1052,
     1039,
     1059,
     1074,
-    1090,
     1072,
     1087,
     1069,
@@ -112,33 +111,10 @@
     1046,
     1031,
     1014,
-    1000
+    1000,
+    986
   ],
   "recentMatches": [
-    {
-      "matchId": 489419640,
-      "description": "10x 3x Bamboo - 10xshared.com",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1782933752,
-      "outcome": "loss",
-      "preRating": 1067,
-      "postRating": 1053,
-      "eloChange": -14,
-      "civ": "Incas",
-      "teamAvgElo": 1054,
-      "opponentAvgElo": 1108,
-      "teammates": [
-        "Parts",
-        "DnD",
-        "Emusan"
-      ],
-      "opponents": [
-        "LonelyKnight",
-        "TheCobra",
-        "pandasadnap",
-        "Armyofme_"
-      ]
-    },
     {
       "matchId": 489452886,
       "description": "10X 3X BAMBOO NHTING  ESCOLHE CIV\r 天天开黑",
@@ -593,6 +569,30 @@
         "Not a Wizard",
         "[CSGS]Runescape",
         "Hughmungus Chungus"
+      ]
+    },
+    {
+      "matchId": 492793852,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784242528,
+      "outcome": "loss",
+      "preRating": 1000,
+      "postRating": 986,
+      "eloChange": -14,
+      "civ": "Huns",
+      "teamAvgElo": 1016,
+      "opponentAvgElo": 1039,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "gemmascho",
+        "Apocalypto"
+      ],
+      "opponents": [
+        "RA",
+        "Goodsoup",
+        "Your Ego",
+        "GoldenBear"
       ]
     }
   ]

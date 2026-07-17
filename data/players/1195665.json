@@ -1,12 +1,12 @@
 {
   "profile_id": 1195665,
   "alias": "StreamerOffline",
-  "rating": 905,
+  "rating": 894,
   "wins": 33,
-  "losses": 55,
-  "gamesCount": 88,
-  "winRate": 38,
-  "lastPlayedAt": 1783470344,
+  "losses": 56,
+  "gamesCount": 89,
+  "winRate": 37,
+  "lastPlayedAt": 1784246704,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -98,33 +98,10 @@
     905,
     927,
     917,
-    905
+    905,
+    894
   ],
   "recentMatches": [
-    {
-      "matchId": 453074559,
-      "description": "BAMBOO 10x - 3x  **NO BEGINNER",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1770013800,
-      "outcome": "loss",
-      "preRating": 996,
-      "postRating": 984,
-      "eloChange": -12,
-      "civ": "Ethiopians",
-      "teamAvgElo": 1010,
-      "opponentAvgElo": 1076,
-      "teammates": [
-        "RDJ",
-        "Kukuro",
-        "dRea"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "[S33]ff",
-        "GoOverlay.com | AwE",
-        "gmc inspector"
-      ]
-    },
     {
       "matchId": 455593165,
       "description": "10x 3x Bamboo Nothing",
@@ -579,6 +556,30 @@
         "Apocalypto",
         "Chuckyllo4417",
         "tonzo"
+      ]
+    },
+    {
+      "matchId": 492804168,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784246704,
+      "outcome": "loss",
+      "preRating": 905,
+      "postRating": 894,
+      "eloChange": -11,
+      "civ": "Koreans",
+      "teamAvgElo": 971,
+      "opponentAvgElo": 1021,
+      "teammates": [
+        "Parts",
+        "AleRayado88",
+        "f1kr"
+      ],
+      "opponents": [
+        "Monkeymonk",
+        "Brotherman Bill",
+        "Borkan",
+        "Hughmungus Chungus"
       ]
     }
   ]

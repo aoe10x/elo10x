@@ -1,12 +1,12 @@
 {
   "profile_id": 3001085,
   "alias": "BAKO",
-  "rating": 1026,
+  "rating": 985,
   "wins": 22,
-  "losses": 22,
-  "gamesCount": 44,
-  "winRate": 50,
-  "lastPlayedAt": 1784078797,
+  "losses": 25,
+  "gamesCount": 47,
+  "winRate": 47,
+  "lastPlayedAt": 1784251390,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -54,81 +54,12 @@
     979,
     995,
     1010,
-    1026
+    1026,
+    1013,
+    999,
+    985
   ],
   "recentMatches": [
-    {
-      "matchId": 414930312,
-      "description": "10x 3x",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1756088760,
-      "outcome": "win",
-      "preRating": 1008,
-      "postRating": 1023,
-      "eloChange": 15,
-      "civ": "Romans",
-      "teamAvgElo": 1026,
-      "opponentAvgElo": 993,
-      "teammates": [
-        "GiGi",
-        "BarqBarq",
-        "Vladimir Trump"
-      ],
-      "opponents": [
-        "mgmanager",
-        "Bifbatz",
-        "gitb930504",
-        "JaFu"
-      ]
-    },
-    {
-      "matchId": 415173528,
-      "description": "3x 10x bamboo - random civ",
-      "mapname": "Bamboo Nothing_Paren_V2",
-      "timestamp": 1756188360,
-      "outcome": "loss",
-      "preRating": 1023,
-      "postRating": 1009,
-      "eloChange": -14,
-      "civ": "Burgundians",
-      "teamAvgElo": 1021,
-      "opponentAvgElo": 1066,
-      "teammates": [
-        "Gasnápido",
-        "Nimu.-",
-        "Bifbatz"
-      ],
-      "opponents": [
-        "gemmascho",
-        "Duffy",
-        "BarqBarq",
-        "Bourne2Believe"
-      ]
-    },
-    {
-      "matchId": 418078997,
-      "description": "10x 3x bamboo",
-      "mapname": "Bamboo Nothing_Paren_Vlocal",
-      "timestamp": 1757414460,
-      "outcome": "win",
-      "preRating": 1009,
-      "postRating": 1026,
-      "eloChange": 17,
-      "civ": "Burmese",
-      "teamAvgElo": 1034,
-      "opponentAvgElo": 1027,
-      "teammates": [
-        "John",
-        "omega",
-        "Dragonlord Freya"
-      ],
-      "opponents": [
-        "Parenquima",
-        "evelyncc",
-        "ActualWizard",
-        "Bifbatz"
-      ]
-    },
     {
       "matchId": 425075408,
       "description": "bamboo nothing 10x 3x",
@@ -535,6 +466,78 @@
         "X",
         "nooblet3300",
         "Keishi"
+      ]
+    },
+    {
+      "matchId": 492808989,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784248407,
+      "outcome": "loss",
+      "preRating": 1026,
+      "postRating": 1013,
+      "eloChange": -13,
+      "civ": "Italians",
+      "teamAvgElo": 998,
+      "opponentAvgElo": 1083,
+      "teammates": [
+        "feid_",
+        "Bifbatz",
+        "Maxim Liann"
+      ],
+      "opponents": [
+        "Kumad",
+        "EL__PATRON",
+        "Myriad",
+        "Lockhart"
+      ]
+    },
+    {
+      "matchId": 492813011,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784249848,
+      "outcome": "loss",
+      "preRating": 1013,
+      "postRating": 999,
+      "eloChange": -14,
+      "civ": "Persians",
+      "teamAvgElo": 1035,
+      "opponentAvgElo": 1067,
+      "teammates": [
+        "feid_",
+        "PoonSlapper",
+        "Brotherman Bill"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "EL__PATRON",
+        "Bifbatz"
+      ]
+    },
+    {
+      "matchId": 492817424,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784251390,
+      "outcome": "loss",
+      "preRating": 999,
+      "postRating": 985,
+      "eloChange": -14,
+      "civ": "Cumans",
+      "teamAvgElo": 1088,
+      "opponentAvgElo": 1041,
+      "teammates": [
+        "Kumad",
+        "EL__PATRON",
+        "Myriad"
+      ],
+      "opponents": [
+        "feid_",
+        "nayman",
+        "Brotherman Bill",
+        "Bifbatz"
       ]
     }
   ]

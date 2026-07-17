@@ -1,12 +1,12 @@
 {
   "profile_id": 6144035,
   "alias": "Wendysocute",
-  "rating": 941,
+  "rating": 930,
   "wins": 10,
-  "losses": 18,
-  "gamesCount": 28,
-  "winRate": 36,
-  "lastPlayedAt": 1784202605,
+  "losses": 19,
+  "gamesCount": 29,
+  "winRate": 34,
+  "lastPlayedAt": 1784240511,
   "country": "it",
   "merged_ids": [
     6144035,
@@ -41,33 +41,10 @@
     945,
     933,
     953,
-    941
+    941,
+    930
   ],
   "recentMatches": [
-    {
-      "matchId": 422654982,
-      "description": "turbo 10x 3x bamboo",
-      "mapname": "Bamboo Nothing_Paren_Vlocal_V2.5",
-      "timestamp": 1759375500,
-      "outcome": "loss",
-      "preRating": 918,
-      "postRating": 891,
-      "eloChange": -27,
-      "civ": "Portuguese",
-      "teamAvgElo": 1025,
-      "opponentAvgElo": 1000,
-      "teammates": [
-        "RaketenRonni",
-        "Cale94",
-        "Lykerya"
-      ],
-      "opponents": [
-        "FPS Geo",
-        "amir0friday",
-        "Phantom_",
-        "Yeepers"
-      ]
-    },
     {
       "matchId": 422660179,
       "description": "4 vs 4 // 10x Shared Random Civ// 2.4 fresh from the oven",
@@ -522,6 +499,30 @@
         "Consume Product",
         "Dellox",
         "Tho315"
+      ]
+    },
+    {
+      "matchId": 492788917,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784240511,
+      "outcome": "loss",
+      "preRating": 941,
+      "postRating": 930,
+      "eloChange": -11,
+      "civ": "Goths",
+      "teamAvgElo": 1014,
+      "opponentAvgElo": 1049,
+      "teammates": [
+        "399 the Grizzly Bear - RIP <3",
+        "Wozbo",
+        "Prinz Kay1"
+      ],
+      "opponents": [
+        "baianitro",
+        "RA",
+        "DPK75",
+        "TheRiceMan"
       ]
     }
   ]

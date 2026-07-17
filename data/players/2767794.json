@@ -1,12 +1,12 @@
 {
   "profile_id": 2767794,
   "alias": "AleRayado88",
-  "rating": 982,
+  "rating": 968,
   "wins": 38,
-  "losses": 48,
-  "gamesCount": 86,
+  "losses": 49,
+  "gamesCount": 87,
   "winRate": 44,
-  "lastPlayedAt": 1784075763,
+  "lastPlayedAt": 1784246704,
   "country": "mx",
   "merged_ids": [],
   "ratingHistory": [
@@ -96,33 +96,10 @@
     995,
     1014,
     999,
-    982
+    982,
+    968
   ],
   "recentMatches": [
-    {
-      "matchId": 444445178,
-      "description": "10x 3x bamboo nothing  turbo host here",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1767251100,
-      "outcome": "loss",
-      "preRating": 1063,
-      "postRating": 1046,
-      "eloChange": -17,
-      "civ": "Britons",
-      "teamAvgElo": 1076,
-      "opponentAvgElo": 1050,
-      "teammates": [
-        "gmc inspector",
-        "ISwaZz",
-        "bozkurt_06"
-      ],
-      "opponents": [
-        "cptjuicbox",
-        "TJ",
-        "Ferdinand I of Naples",
-        "SquirrelBoi"
-      ]
-    },
     {
       "matchId": 451652621,
       "description": "4 vs 4 // 10x Shared Random Civ",
@@ -577,6 +554,30 @@
         "luisedgaco02",
         "ZaySol",
         "Dylan Dog"
+      ]
+    },
+    {
+      "matchId": 492804168,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784246704,
+      "outcome": "loss",
+      "preRating": 982,
+      "postRating": 968,
+      "eloChange": -14,
+      "civ": "Italians",
+      "teamAvgElo": 971,
+      "opponentAvgElo": 1021,
+      "teammates": [
+        "Parts",
+        "StreamerOffline",
+        "f1kr"
+      ],
+      "opponents": [
+        "Monkeymonk",
+        "Brotherman Bill",
+        "Borkan",
+        "Hughmungus Chungus"
       ]
     }
   ]

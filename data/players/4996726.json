@@ -1,12 +1,12 @@
 {
   "profile_id": 4996726,
   "alias": "Rotbart",
-  "rating": 962,
-  "wins": 13,
+  "rating": 983,
+  "wins": 14,
   "losses": 20,
-  "gamesCount": 33,
-  "winRate": 39,
-  "lastPlayedAt": 1783464046,
+  "gamesCount": 34,
+  "winRate": 41,
+  "lastPlayedAt": 1784243687,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -43,33 +43,10 @@
     965,
     953,
     975,
-    962
+    962,
+    983
   ],
   "recentMatches": [
-    {
-      "matchId": 373683016,
-      "description": "10x shared 3x tech",
-      "mapname": "Bamboo Nothing - +Wild ##############",
-      "timestamp": 1740177660,
-      "outcome": "win",
-      "preRating": 945,
-      "postRating": 974,
-      "eloChange": 29,
-      "civ": "Burmese",
-      "teamAvgElo": 1014,
-      "opponentAvgElo": 968,
-      "teammates": [
-        "makz",
-        "Clean",
-        "Koltira"
-      ],
-      "opponents": [
-        "Texas Red",
-        "Eat MY Sprouts",
-        "siruis6266",
-        "Chlorfisch"
-      ]
-    },
     {
       "matchId": 434952269,
       "description": "4V4 ===10x shared 3Xtech  4V4 random",
@@ -524,6 +501,30 @@
         "TheRiceMan",
         "Chuckyllo4417",
         "BarqBarq"
+      ]
+    },
+    {
+      "matchId": 492796629,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784243687,
+      "outcome": "win",
+      "preRating": 962,
+      "postRating": 983,
+      "eloChange": 21,
+      "civ": "Malay",
+      "teamAvgElo": 1015,
+      "opponentAvgElo": 1074,
+      "teammates": [
+        "NoAgendaPODCAST",
+        "Mehandor",
+        "Pogonophobia69"
+      ],
+      "opponents": [
+        "ζ |  SaintPΞpsi94",
+        "Parts",
+        "Dutchigander",
+        "Brotherman Bill"
       ]
     }
   ]

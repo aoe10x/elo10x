@@ -1,12 +1,12 @@
 {
   "profile_id": 495646,
   "alias": "Bifbatz",
-  "rating": 973,
-  "wins": 26,
-  "losses": 35,
-  "gamesCount": 61,
+  "rating": 992,
+  "wins": 28,
+  "losses": 37,
+  "gamesCount": 65,
   "winRate": 43,
-  "lastPlayedAt": 1784078797,
+  "lastPlayedAt": 1784251390,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -71,105 +71,13 @@
     951,
     969,
     954,
-    973
+    973,
+    962,
+    951,
+    971,
+    992
   ],
   "recentMatches": [
-    {
-      "matchId": 479111718,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1779263220,
-      "outcome": "loss",
-      "preRating": 929,
-      "postRating": 919,
-      "eloChange": -10,
-      "civ": "Bohemians",
-      "teamAvgElo": 996,
-      "opponentAvgElo": 1062,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "gtrodriguez",
-        "tantron"
-      ],
-      "opponents": [
-        "Parts",
-        "janhartmann",
-        "nooblet3300",
-        "The_DonMiguel"
-      ]
-    },
-    {
-      "matchId": 479115547,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1779264660,
-      "outcome": "loss",
-      "preRating": 919,
-      "postRating": 911,
-      "eloChange": -8,
-      "civ": "Gurjaras",
-      "teamAvgElo": 1029,
-      "opponentAvgElo": 1112,
-      "teammates": [
-        "SpiniestTuna222",
-        "nooblet3300",
-        "FlyingSheep"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "MadRussian",
-        "Vince",
-        "flaviozera"
-      ]
-    },
-    {
-      "matchId": 479122379,
-      "description": "10x 3x 10x3xBamboo Nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1779267240,
-      "outcome": "win",
-      "preRating": 911,
-      "postRating": 933,
-      "eloChange": 22,
-      "civ": "Bengalis",
-      "teamAvgElo": 1029,
-      "opponentAvgElo": 1045,
-      "teammates": [
-        "i kun 2.5",
-        "Semisky",
-        "DMenisDenisTTV"
-      ],
-      "opponents": [
-        "Phantom_",
-        "MarieBrutale",
-        "theop17",
-        "Coolman916"
-      ]
-    },
-    {
-      "matchId": 479126749,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1779268680,
-      "outcome": "loss",
-      "preRating": 933,
-      "postRating": 925,
-      "eloChange": -8,
-      "civ": "Koreans",
-      "teamAvgElo": 1027,
-      "opponentAvgElo": 1110,
-      "teammates": [
-        "helianth",
-        "PoonSlapper",
-        "BAKO"
-      ],
-      "opponents": [
-        "Kumad",
-        "feid_",
-        "EL__PATRON",
-        "Myriad"
-      ]
-    },
     {
       "matchId": 479138938,
       "description": "256x 10x Forest Nothing",
@@ -552,6 +460,102 @@
         "X",
         "nooblet3300",
         "Keishi"
+      ]
+    },
+    {
+      "matchId": 492806657,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784247439,
+      "outcome": "loss",
+      "preRating": 973,
+      "postRating": 962,
+      "eloChange": -11,
+      "civ": "Japanese",
+      "teamAvgElo": 990,
+      "opponentAvgElo": 1086,
+      "teammates": [
+        "EL__PATRON",
+        "Auto Horse",
+        "Maxim Liann"
+      ],
+      "opponents": [
+        "Kumad",
+        "feid_",
+        "Myriad",
+        "byronnnnn"
+      ]
+    },
+    {
+      "matchId": 492808989,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784248407,
+      "outcome": "loss",
+      "preRating": 962,
+      "postRating": 951,
+      "eloChange": -11,
+      "civ": "Mapuche",
+      "teamAvgElo": 998,
+      "opponentAvgElo": 1083,
+      "teammates": [
+        "feid_",
+        "BAKO",
+        "Maxim Liann"
+      ],
+      "opponents": [
+        "Kumad",
+        "EL__PATRON",
+        "Myriad",
+        "Lockhart"
+      ]
+    },
+    {
+      "matchId": 492813011,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784249848,
+      "outcome": "win",
+      "preRating": 951,
+      "postRating": 971,
+      "eloChange": 20,
+      "civ": "Slavs",
+      "teamAvgElo": 1067,
+      "opponentAvgElo": 1035,
+      "teammates": [
+        "Kumad",
+        "Myriad",
+        "EL__PATRON"
+      ],
+      "opponents": [
+        "feid_",
+        "BAKO",
+        "PoonSlapper",
+        "Brotherman Bill"
+      ]
+    },
+    {
+      "matchId": 492817424,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784251390,
+      "outcome": "win",
+      "preRating": 971,
+      "postRating": 992,
+      "eloChange": 21,
+      "civ": "Italians",
+      "teamAvgElo": 1041,
+      "opponentAvgElo": 1088,
+      "teammates": [
+        "feid_",
+        "nayman",
+        "Brotherman Bill"
+      ],
+      "opponents": [
+        "Kumad",
+        "EL__PATRON",
+        "Myriad",
+        "BAKO"
       ]
     }
   ]
