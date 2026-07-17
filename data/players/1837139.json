@@ -1,11 +1,11 @@
 {
   "profile_id": 1837139,
   "alias": "MaxLort",
-  "rating": 991,
-  "wins": 13,
+  "rating": 1022,
+  "wins": 15,
   "losses": 16,
-  "gamesCount": 29,
-  "winRate": 45,
+  "gamesCount": 31,
+  "winRate": 48,
   "lastPlayedAt": 1784294831,
   "country": "fr",
   "merged_ids": [],
@@ -39,57 +39,11 @@
     1036,
     1021,
     1006,
-    991
+    1022,
+    1038,
+    1022
   ],
   "recentMatches": [
-    {
-      "matchId": 410928882,
-      "description": "10x 3x BAMBOO *NO NOOB*",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1754435820,
-      "outcome": "loss",
-      "preRating": 981,
-      "postRating": 952,
-      "eloChange": -29,
-      "civ": "Cumans",
-      "teamAvgElo": 1030,
-      "opponentAvgElo": 1035,
-      "teammates": [
-        "dRea",
-        "seaguls",
-        "Paris Hilton"
-      ],
-      "opponents": [
-        "Shadow",
-        "sppd3181",
-        "The Scientist",
-        "Teun"
-      ]
-    },
-    {
-      "matchId": 413799320,
-      "description": "10x 3x Bamboo",
-      "mapname": "Bamboo Nothing_Paren_V2.3",
-      "timestamp": 1755642900,
-      "outcome": "loss",
-      "preRating": 952,
-      "postRating": 928,
-      "eloChange": -24,
-      "civ": "Unknown",
-      "teamAvgElo": 1003,
-      "opponentAvgElo": 1038,
-      "teammates": [
-        "tony.li",
-        "bijiyumo",
-        "McKrakfejs"
-      ],
-      "opponents": [
-        "PIEROGI",
-        "TopazSkate37557",
-        "fxsound",
-        "konishika"
-      ]
-    },
     {
       "matchId": 415541059,
       "description": "4x4 3x 10x Bamboo",
@@ -499,16 +453,64 @@
       ]
     },
     {
+      "matchId": 482647324,
+      "description": "4v4 shared civ, full random, bamboo nothing, all welcome",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1780520309,
+      "outcome": "win",
+      "preRating": 1006,
+      "postRating": 1022,
+      "eloChange": 16,
+      "civ": "Japanese",
+      "teamAvgElo": 1011,
+      "opponentAvgElo": 1006,
+      "teammates": [
+        "RussianVolk",
+        "[CSGS]Runescape",
+        "Sucio"
+      ],
+      "opponents": [
+        "chiken",
+        "DPK75",
+        "moabishere",
+        "Ferdinand I of Naples"
+      ]
+    },
+    {
+      "matchId": 482653331,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1780521792,
+      "outcome": "win",
+      "preRating": 1022,
+      "postRating": 1038,
+      "eloChange": 16,
+      "civ": "Celts",
+      "teamAvgElo": 1053,
+      "opponentAvgElo": 1014,
+      "teammates": [
+        "NoAgendaPODCAST",
+        "herelin0",
+        "LonelyKnight"
+      ],
+      "opponents": [
+        "McKrakfejs",
+        "LeG",
+        "399 the Grizzly Bear - RIP <3",
+        "moabishere"
+      ]
+    },
+    {
       "matchId": 492901799,
       "description": "10x 3x bamboo",
       "mapname": "Bamboo_Nothing_v2_NoWater DE",
       "timestamp": 1784294831,
       "outcome": "loss",
-      "preRating": 1006,
-      "postRating": 991,
-      "eloChange": -15,
+      "preRating": 1038,
+      "postRating": 1022,
+      "eloChange": -16,
       "civ": "Italians",
-      "teamAvgElo": 978,
+      "teamAvgElo": 986,
       "opponentAvgElo": 1038,
       "teammates": [
         "勇战到抵",

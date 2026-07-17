@@ -1,12 +1,12 @@
 {
   "profile_id": 208890,
   "alias": "[Liiit] Zbyszek",
-  "rating": 1071,
+  "rating": 1057,
   "wins": 38,
-  "losses": 33,
-  "gamesCount": 71,
-  "winRate": 54,
-  "lastPlayedAt": 1784221646,
+  "losses": 34,
+  "gamesCount": 72,
+  "winRate": 53,
+  "lastPlayedAt": 1784313296,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -81,33 +81,10 @@
     1093,
     1075,
     1087,
-    1071
+    1071,
+    1057
   ],
   "recentMatches": [
-    {
-      "matchId": 412775173,
-      "description": "bamboo nothing 10x 3x",
-      "mapname": "Bamboo Nothing V1 [Scorpyon]",
-      "timestamp": 1755224340,
-      "outcome": "win",
-      "preRating": 1058,
-      "postRating": 1071,
-      "eloChange": 13,
-      "civ": "Unknown",
-      "teamAvgElo": 1008,
-      "opponentAvgElo": 981,
-      "teammates": [
-        "ty",
-        "TinWizz",
-        "Cale94"
-      ],
-      "opponents": [
-        "AceTrooper",
-        "KcSaBa",
-        "Spaceman Rob",
-        "zellote"
-      ]
-    },
     {
       "matchId": 480141314,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -190,8 +167,8 @@
       "postRating": 1037,
       "eloChange": -18,
       "civ": "Lithuanians",
-      "teamAvgElo": 1027,
-      "opponentAvgElo": 1016,
+      "teamAvgElo": 1028,
+      "opponentAvgElo": 1017,
       "teammates": [
         "Emusan",
         "Consume Product",
@@ -239,7 +216,7 @@
       "eloChange": -16,
       "civ": "Bulgarians",
       "teamAvgElo": 1010,
-      "opponentAvgElo": 1059,
+      "opponentAvgElo": 1060,
       "teammates": [
         "_Zeruch_",
         "Zavgor",
@@ -310,7 +287,7 @@
       "postRating": 1080,
       "eloChange": 17,
       "civ": "Hindustanis",
-      "teamAvgElo": 1040,
+      "teamAvgElo": 1041,
       "opponentAvgElo": 1075,
       "teammates": [
         "轻绘梨花泪满衣",
@@ -454,7 +431,7 @@
       "postRating": 1084,
       "eloChange": -23,
       "civ": "Britons",
-      "teamAvgElo": 1033,
+      "teamAvgElo": 1032,
       "opponentAvgElo": 940,
       "teammates": [
         "Lozzer",
@@ -526,7 +503,7 @@
       "postRating": 1087,
       "eloChange": 12,
       "civ": "Vikings",
-      "teamAvgElo": 1065,
+      "teamAvgElo": 1066,
       "opponentAvgElo": 981,
       "teammates": [
         "拍车面前人人平等",
@@ -562,6 +539,30 @@
         "Grimmie",
         "Spiz.101",
         "Cale94"
+      ]
+    },
+    {
+      "matchId": 492963332,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784313296,
+      "outcome": "loss",
+      "preRating": 1071,
+      "postRating": 1057,
+      "eloChange": -14,
+      "civ": "Burgundians",
+      "teamAvgElo": 1027,
+      "opponentAvgElo": 1106,
+      "teammates": [
+        "im slow",
+        "wintre",
+        "RadioActiveMan"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "Vader",
+        "GiGi",
+        "PIEROGI"
       ]
     }
   ]

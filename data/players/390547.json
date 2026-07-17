@@ -1,12 +1,12 @@
 {
   "profile_id": 390547,
   "alias": "Chirijiraden",
-  "rating": 931,
+  "rating": 920,
   "wins": 28,
-  "losses": 40,
-  "gamesCount": 68,
+  "losses": 41,
+  "gamesCount": 69,
   "winRate": 41,
-  "lastPlayedAt": 1784239518,
+  "lastPlayedAt": 1784314847,
   "country": "ar",
   "merged_ids": [],
   "ratingHistory": [
@@ -78,33 +78,10 @@
     936,
     922,
     909,
-    931
+    931,
+    920
   ],
   "recentMatches": [
-    {
-      "matchId": 489444324,
-      "description": "3x10x Bamboo",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1782941445,
-      "outcome": "loss",
-      "preRating": 940,
-      "postRating": 925,
-      "eloChange": -15,
-      "civ": "Goths",
-      "teamAvgElo": 951,
-      "opponentAvgElo": 972,
-      "teammates": [
-        "Pogonophobia69",
-        "vincentc95",
-        "Eduardo_AoE"
-      ],
-      "opponents": [
-        "SimCity3000",
-        "Gladiator",
-        "IPuNiSh3llz",
-        "Leonidas"
-      ]
-    },
     {
       "matchId": 489450185,
       "description": "BAMBOO 10x3xtech",
@@ -116,7 +93,7 @@
       "eloChange": -10,
       "civ": "Vikings",
       "teamAvgElo": 1047,
-      "opponentAvgElo": 1055,
+      "opponentAvgElo": 1052,
       "teammates": [
         "[S33]ff",
         "LUIS123456E",
@@ -163,7 +140,7 @@
       "postRating": 923,
       "eloChange": -13,
       "civ": "Bulgarians",
-      "teamAvgElo": 1002,
+      "teamAvgElo": 1001,
       "opponentAvgElo": 1009,
       "teammates": [
         "Gasnápido",
@@ -308,7 +285,7 @@
       "eloChange": -11,
       "civ": "Britons",
       "teamAvgElo": 983,
-      "opponentAvgElo": 1018,
+      "opponentAvgElo": 1011,
       "teammates": [
         "Parts",
         "Not a Wizard",
@@ -475,7 +452,7 @@
       "postRating": 936,
       "eloChange": 20,
       "civ": "Lithuanians",
-      "teamAvgElo": 989,
+      "teamAvgElo": 990,
       "opponentAvgElo": 999,
       "teammates": [
         "ChiH",
@@ -559,6 +536,30 @@
         "RA",
         "Wozbo",
         "Ketchup"
+      ]
+    },
+    {
+      "matchId": 492968800,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784314847,
+      "outcome": "loss",
+      "preRating": 931,
+      "postRating": 920,
+      "eloChange": -11,
+      "civ": "Sicilians",
+      "teamAvgElo": 979,
+      "opponentAvgElo": 1032,
+      "teammates": [
+        "TheCobra",
+        "Lykerya",
+        "Brotherman Bill"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "Sensei",
+        "Shadow",
+        "Nigerian Farmer"
       ]
     }
   ]

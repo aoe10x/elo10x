@@ -1,12 +1,12 @@
 {
   "profile_id": 864352,
   "alias": "Nigerian Farmer",
-  "rating": 894,
-  "wins": 16,
+  "rating": 914,
+  "wins": 17,
   "losses": 28,
-  "gamesCount": 44,
-  "winRate": 36,
-  "lastPlayedAt": 1784242387,
+  "gamesCount": 45,
+  "winRate": 38,
+  "lastPlayedAt": 1784314847,
   "country": "se",
   "merged_ids": [],
   "ratingHistory": [
@@ -54,33 +54,10 @@
     891,
     915,
     903,
-    894
+    894,
+    914
   ],
   "recentMatches": [
-    {
-      "matchId": 490881839,
-      "description": "i kun 10x3x 4v4s qun729084973",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1783510419,
-      "outcome": "loss",
-      "preRating": 1043,
-      "postRating": 1026,
-      "eloChange": -17,
-      "civ": "Hindustanis",
-      "teamAvgElo": 1006,
-      "opponentAvgElo": 1028,
-      "teammates": [
-        "i kun 2.5",
-        "马磊",
-        "MR. GREEN"
-      ],
-      "opponents": [
-        "PIEROGI",
-        "abatyse6533",
-        "Consume Product",
-        "bommietommie"
-      ]
-    },
     {
       "matchId": 491085132,
       "description": "3X 10X",
@@ -139,7 +116,7 @@
       "postRating": 981,
       "eloChange": -18,
       "civ": "Saracens",
-      "teamAvgElo": 1028,
+      "teamAvgElo": 1029,
       "opponentAvgElo": 956,
       "teammates": [
         "gemmascho",
@@ -404,7 +381,7 @@
       "eloChange": -11,
       "civ": "Portuguese",
       "teamAvgElo": 1043,
-      "opponentAvgElo": 1029,
+      "opponentAvgElo": 1030,
       "teammates": [
         "Consume Product",
         "[CSGS]Runescape",
@@ -428,7 +405,7 @@
       "eloChange": -9,
       "civ": "Khmer",
       "teamAvgElo": 981,
-      "opponentAvgElo": 1065,
+      "opponentAvgElo": 1066,
       "teammates": [
         "pandasadnap",
         "TioMg100",
@@ -535,6 +512,30 @@
         "Nimu.-",
         "Ghost_pt",
         "develement"
+      ]
+    },
+    {
+      "matchId": 492968800,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784314847,
+      "outcome": "win",
+      "preRating": 894,
+      "postRating": 914,
+      "eloChange": 20,
+      "civ": "Burgundians",
+      "teamAvgElo": 1032,
+      "opponentAvgElo": 979,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "Sensei",
+        "Shadow"
+      ],
+      "opponents": [
+        "TheCobra",
+        "Chirijiraden",
+        "Lykerya",
+        "Brotherman Bill"
       ]
     }
   ]

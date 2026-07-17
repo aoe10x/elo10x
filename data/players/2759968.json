@@ -1,12 +1,12 @@
 {
   "profile_id": 2759968,
   "alias": "cr717",
-  "rating": 1022,
-  "wins": 32,
+  "rating": 1040,
+  "wins": 33,
   "losses": 34,
-  "gamesCount": 66,
-  "winRate": 48,
-  "lastPlayedAt": 1783195592,
+  "gamesCount": 67,
+  "winRate": 49,
+  "lastPlayedAt": 1784308493,
   "country": "in",
   "merged_ids": [],
   "ratingHistory": [
@@ -76,33 +76,10 @@
     1001,
     986,
     1004,
-    1022
+    1022,
+    1040
   ],
   "recentMatches": [
-    {
-      "matchId": 406791676,
-      "description": "+10x+3xtcch   no noob",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1752776700,
-      "outcome": "loss",
-      "preRating": 1021,
-      "postRating": 1007,
-      "eloChange": -14,
-      "civ": "Turks",
-      "teamAvgElo": 1024,
-      "opponentAvgElo": 1061,
-      "teammates": [
-        "loco wytboy46",
-        "afrenkel",
-        "PaPowwn"
-      ],
-      "opponents": [
-        "拍车面前人人平等",
-        "Maic",
-        "dRea",
-        "kaka52pk"
-      ]
-    },
     {
       "matchId": 410216414,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -473,7 +450,7 @@
       "postRating": 1001,
       "eloChange": 16,
       "civ": "Ethiopians",
-      "teamAvgElo": 1086,
+      "teamAvgElo": 1078,
       "opponentAvgElo": 990,
       "teammates": [
         "yimacs_yoyoyo",
@@ -557,6 +534,30 @@
         "YUJIN",
         "FastAttack",
         "schrubber"
+      ]
+    },
+    {
+      "matchId": 492947054,
+      "description": "10x3x bamboo nothing NO NOOB",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784308493,
+      "outcome": "win",
+      "preRating": 1022,
+      "postRating": 1040,
+      "eloChange": 18,
+      "civ": "Aztecs",
+      "teamAvgElo": 1062,
+      "opponentAvgElo": 1062,
+      "teammates": [
+        "RA",
+        "Spaceman Rob",
+        "Frederick"
+      ],
+      "opponents": [
+        "轻绘梨花泪满衣",
+        "im slow",
+        "Dr.Ao",
+        "kared117"
       ]
     }
   ]

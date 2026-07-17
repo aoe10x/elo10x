@@ -1,12 +1,12 @@
 {
   "profile_id": 10986957,
   "alias": "Magnificent",
-  "rating": 1006,
-  "wins": 31,
+  "rating": 1026,
+  "wins": 32,
   "losses": 35,
-  "gamesCount": 66,
-  "winRate": 47,
-  "lastPlayedAt": 1784219101,
+  "gamesCount": 67,
+  "winRate": 48,
+  "lastPlayedAt": 1784309050,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -76,33 +76,10 @@
     1020,
     1036,
     1020,
-    1006
+    1006,
+    1026
   ],
   "recentMatches": [
-    {
-      "matchId": 409890078,
-      "description": "10x 3x BAMBOO *NO NOOB*",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1754026440,
-      "outcome": "loss",
-      "preRating": 1037,
-      "postRating": 1022,
-      "eloChange": -15,
-      "civ": "Unknown",
-      "teamAvgElo": 1032,
-      "opponentAvgElo": 1055,
-      "teammates": [
-        "duckbuildperson",
-        "dRea",
-        "Phantom_"
-      ],
-      "opponents": [
-        "Mr.YaYo",
-        "brunopt99",
-        "ROGGAN",
-        "GandalfGG"
-      ]
-    },
     {
       "matchId": 409966468,
       "description": "10x 3x bamboo nothing",
@@ -497,7 +474,7 @@
       "postRating": 1036,
       "eloChange": 16,
       "civ": "Slavs",
-      "teamAvgElo": 1059,
+      "teamAvgElo": 1058,
       "opponentAvgElo": 1024,
       "teammates": [
         "TheRiceMan",
@@ -557,6 +534,30 @@
         "Dr.Ao",
         "mgmanager",
         "轻绘梨花泪满衣"
+      ]
+    },
+    {
+      "matchId": 492948690,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784309050,
+      "outcome": "win",
+      "preRating": 1006,
+      "postRating": 1026,
+      "eloChange": 20,
+      "civ": "Burmese",
+      "teamAvgElo": 1108,
+      "opponentAvgElo": 1084,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "pandalam",
+        "GiGi"
+      ],
+      "opponents": [
+        "FuFu (^o^) /¯",
+        "[CSGS]Runescape",
+        "BearBrown",
+        "baianitro"
       ]
     }
   ]

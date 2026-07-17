@@ -1,12 +1,12 @@
 {
   "profile_id": 283205,
   "alias": "r9maximus",
-  "rating": 1028,
-  "wins": 20,
+  "rating": 1043,
+  "wins": 21,
   "losses": 19,
-  "gamesCount": 39,
-  "winRate": 51,
-  "lastPlayedAt": 1784137976,
+  "gamesCount": 40,
+  "winRate": 53,
+  "lastPlayedAt": 1784307963,
   "country": "nl",
   "merged_ids": [],
   "ratingHistory": [
@@ -49,33 +49,10 @@
     1047,
     1059,
     1044,
-    1028
+    1028,
+    1043
   ],
   "recentMatches": [
-    {
-      "matchId": 414627071,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1755988020,
-      "outcome": "loss",
-      "preRating": 1063,
-      "postRating": 1043,
-      "eloChange": -20,
-      "civ": "Magyars",
-      "teamAvgElo": 1001,
-      "opponentAvgElo": 1011,
-      "teammates": [
-        "Empiio der Boss",
-        "Phoenix",
-        "Minorities_In_My_WaterPark"
-      ],
-      "opponents": [
-        "nooblet3300",
-        "k0rnm@yer",
-        "Zeriel",
-        "Blvck"
-      ]
-    },
     {
       "matchId": 420345704,
       "description": "256x 10x Forest Nothing",
@@ -326,7 +303,7 @@
       "postRating": 1026,
       "eloChange": 15,
       "civ": "Aztecs",
-      "teamAvgElo": 1015,
+      "teamAvgElo": 1014,
       "opponentAvgElo": 993,
       "teammates": [
         "[RUS-F] Lastman",
@@ -423,7 +400,7 @@
       "eloChange": 20,
       "civ": "Spanish",
       "teamAvgElo": 1040,
-      "opponentAvgElo": 1101,
+      "opponentAvgElo": 1102,
       "teammates": [
         "Al Ghouti",
         "golhmogh",
@@ -530,6 +507,30 @@
         "DnD",
         "ElmoWithoutL",
         "iamatthe.hell"
+      ]
+    },
+    {
+      "matchId": 492946344,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784307963,
+      "outcome": "win",
+      "preRating": 1028,
+      "postRating": 1043,
+      "eloChange": 15,
+      "civ": "Bohemians",
+      "teamAvgElo": 1105,
+      "opponentAvgElo": 1000,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "pandalam",
+        "GiGi"
+      ],
+      "opponents": [
+        "Dr.Ao",
+        "ChristopheG1970.Fr",
+        "abatyse6533",
+        "omega"
       ]
     }
   ]

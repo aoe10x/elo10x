@@ -1,12 +1,12 @@
 {
   "profile_id": 3565274,
   "alias": "Ricardo V",
-  "rating": 991,
+  "rating": 979,
   "wins": 21,
-  "losses": 29,
-  "gamesCount": 50,
-  "winRate": 42,
-  "lastPlayedAt": 1784239612,
+  "losses": 30,
+  "gamesCount": 51,
+  "winRate": 41,
+  "lastPlayedAt": 1784318258,
   "country": "pe",
   "merged_ids": [
     3565274,
@@ -63,33 +63,10 @@
     1003,
     1020,
     1006,
-    991
+    991,
+    979
   ],
   "recentMatches": [
-    {
-      "matchId": 409708862,
-      "description": "10x 3x BAMBOO *NO NOOB*",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1753947420,
-      "outcome": "win",
-      "preRating": 942,
-      "postRating": 960,
-      "eloChange": 18,
-      "civ": "Unknown",
-      "teamAvgElo": 1033,
-      "opponentAvgElo": 984,
-      "teammates": [
-        "dRea",
-        "Scipio Africanus",
-        "Putain Zebi"
-      ],
-      "opponents": [
-        "noob",
-        "Mac",
-        "[B] pro.PHET",
-        "FREESTYLE SCiENTiST"
-      ]
-    },
     {
       "matchId": 409722983,
       "description": "10x3x Diff map  shared bonus random civ  no noob",
@@ -461,7 +438,7 @@
       "eloChange": 17,
       "civ": "Shu",
       "teamAvgElo": 1013,
-      "opponentAvgElo": 1001,
+      "opponentAvgElo": 1002,
       "teammates": [
         "Moose",
         "[UNem] Toreto",
@@ -544,6 +521,30 @@
         "Consume Product",
         "pool_champ",
         "Apocalypto"
+      ]
+    },
+    {
+      "matchId": 492981723,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784318258,
+      "outcome": "loss",
+      "preRating": 991,
+      "postRating": 979,
+      "eloChange": -12,
+      "civ": "Tatars",
+      "teamAvgElo": 984,
+      "opponentAvgElo": 1071,
+      "teammates": [
+        "Your Ego",
+        "yimacs_yoyoyo",
+        "Thí Chủ Chết Chưa"
+      ],
+      "opponents": [
+        "iamatthe.hell",
+        "Brotherman Bill",
+        "Emusan",
+        "Supreme Lord 'Kim Xi Trump'"
       ]
     }
   ]

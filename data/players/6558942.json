@@ -1,12 +1,12 @@
 {
   "profile_id": 6558942,
   "alias": "Dr.Ao",
-  "rating": 1049,
+  "rating": 1006,
   "wins": 25,
-  "losses": 23,
-  "gamesCount": 48,
-  "winRate": 52,
-  "lastPlayedAt": 1784301262,
+  "losses": 26,
+  "gamesCount": 51,
+  "winRate": 49,
+  "lastPlayedAt": 1784309865,
   "country": "cn",
   "merged_ids": [],
   "ratingHistory": [
@@ -19,24 +19,24 @@
     1012,
     976,
     938,
-    908,
-    952,
-    989,
-    1024,
-    1056,
-    1029,
-    1010,
+    909,
+    953,
     990,
-    971,
-    993,
-    975,
-    997,
-    1015,
-    1034,
-    1019,
-    1036,
-    1054,
-    1066,
+    1025,
+    1057,
+    1030,
+    1011,
+    991,
+    972,
+    994,
+    976,
+    998,
+    1016,
+    1035,
+    1020,
+    1037,
+    1055,
+    1067,
     1084,
     1096,
     1107,
@@ -58,81 +58,12 @@
     1063,
     1078,
     1062,
-    1049
+    1049,
+    1036,
+    1021,
+    1006
   ],
   "recentMatches": [
-    {
-      "matchId": 491625449,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1783817880,
-      "outcome": "win",
-      "preRating": 1096,
-      "postRating": 1107,
-      "eloChange": 11,
-      "civ": "Berbers",
-      "teamAvgElo": 1085,
-      "opponentAvgElo": 993,
-      "teammates": [
-        "Maic",
-        "jair_silva",
-        "Max"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "AAA",
-        "Chikna Raavan",
-        "Satanus9001"
-      ]
-    },
-    {
-      "matchId": 491848569,
-      "description": "PQ 10x 3x bamboo 4vs4",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1783871608,
-      "outcome": "loss",
-      "preRating": 1107,
-      "postRating": 1088,
-      "eloChange": -19,
-      "civ": "Ethiopians",
-      "teamAvgElo": 1101,
-      "opponentAvgElo": 1040,
-      "teammates": [
-        "Brotherman Bill",
-        "Bao Oninon",
-        "sppd3181"
-      ],
-      "opponents": [
-        "Al Ghouti",
-        "golhmogh",
-        "Sal",
-        "r9maximus"
-      ]
-    },
-    {
-      "matchId": 491854706,
-      "description": "10x 3x BN ",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783873024,
-      "outcome": "loss",
-      "preRating": 1088,
-      "postRating": 1068,
-      "eloChange": -20,
-      "civ": "Poles",
-      "teamAvgElo": 1046,
-      "opponentAvgElo": 996,
-      "teammates": [
-        "pool_champ",
-        "Yeepers",
-        "rob"
-      ],
-      "opponents": [
-        "wintre",
-        "apolizer",
-        "DnD",
-        "FPS Geo"
-      ]
-    },
     {
       "matchId": 492049818,
       "description": "10x 3x bamboo",
@@ -239,7 +170,7 @@
       "postRating": 1080,
       "eloChange": -21,
       "civ": "Sicilians",
-      "teamAvgElo": 1086,
+      "teamAvgElo": 1087,
       "opponentAvgElo": 986,
       "teammates": [
         "Grimmie",
@@ -311,7 +242,7 @@
       "postRating": 1061,
       "eloChange": -15,
       "civ": "Franks",
-      "teamAvgElo": 1015,
+      "teamAvgElo": 1016,
       "opponentAvgElo": 1098,
       "teammates": [
         "iamatthe.hell",
@@ -336,7 +267,7 @@
       "eloChange": -14,
       "civ": "Japanese",
       "teamAvgElo": 1039,
-      "opponentAvgElo": 1115,
+      "opponentAvgElo": 1116,
       "teammates": [
         "baianitro",
         "HorstSan",
@@ -431,7 +362,7 @@
       "postRating": 1049,
       "eloChange": 16,
       "civ": "Mongols",
-      "teamAvgElo": 1029,
+      "teamAvgElo": 1030,
       "opponentAvgElo": 1043,
       "teammates": [
         "拍车面前人人平等",
@@ -539,6 +470,78 @@
         "取款机ATM",
         "kekekeya",
         "YUJIN"
+      ]
+    },
+    {
+      "matchId": 492946344,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784307963,
+      "outcome": "loss",
+      "preRating": 1049,
+      "postRating": 1036,
+      "eloChange": -13,
+      "civ": "Saracens",
+      "teamAvgElo": 1000,
+      "opponentAvgElo": 1105,
+      "teammates": [
+        "ChristopheG1970.Fr",
+        "abatyse6533",
+        "omega"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "pandalam",
+        "GiGi",
+        "r9maximus"
+      ]
+    },
+    {
+      "matchId": 492947054,
+      "description": "10x3x bamboo nothing NO NOOB",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784308493,
+      "outcome": "loss",
+      "preRating": 1036,
+      "postRating": 1021,
+      "eloChange": -15,
+      "civ": "Huns",
+      "teamAvgElo": 1062,
+      "opponentAvgElo": 1062,
+      "teammates": [
+        "轻绘梨花泪满衣",
+        "im slow",
+        "kared117"
+      ],
+      "opponents": [
+        "RA",
+        "Spaceman Rob",
+        "Frederick",
+        "cr717"
+      ]
+    },
+    {
+      "matchId": 492952136,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784309865,
+      "outcome": "loss",
+      "preRating": 1021,
+      "postRating": 1006,
+      "eloChange": -15,
+      "civ": "Mongols",
+      "teamAvgElo": 1032,
+      "opponentAvgElo": 1052,
+      "teammates": [
+        "TJ",
+        "im slow",
+        "Papillon"
+      ],
+      "opponents": [
+        "TheCobra",
+        "RA",
+        "wintre",
+        "Lumedge"
       ]
     }
   ]
