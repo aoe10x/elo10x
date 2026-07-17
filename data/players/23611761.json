@@ -1,12 +1,12 @@
 {
   "profile_id": 23611761,
   "alias": "TheRizzler",
-  "rating": 902,
-  "wins": 24,
+  "rating": 924,
+  "wins": 25,
   "losses": 46,
-  "gamesCount": 70,
-  "winRate": 34,
-  "lastPlayedAt": 1783248374,
+  "gamesCount": 71,
+  "winRate": 35,
+  "lastPlayedAt": 1784264891,
   "country": "us",
   "merged_ids": [
     13372827,
@@ -83,33 +83,10 @@
     902,
     893,
     914,
-    902
+    902,
+    924
   ],
   "recentMatches": [
-    {
-      "matchId": 469016192,
-      "description": "the BN 10x 3x \"Full Random\" shit show",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1775707110,
-      "outcome": "win",
-      "preRating": 869,
-      "postRating": 893,
-      "eloChange": 24,
-      "civ": "Incas",
-      "teamAvgElo": 1039,
-      "opponentAvgElo": 1070,
-      "teammates": [
-        "duckbuildperson",
-        "babeleo",
-        "漫山哒哒哒"
-      ],
-      "opponents": [
-        "G",
-        "helianth",
-        "TheRiceMan",
-        "ReBeL_MotHoD"
-      ]
-    },
     {
       "matchId": 472982892,
       "description": "4vs4 10x 3x shared civ bonus, random civ",
@@ -564,6 +541,30 @@
         "schrubber",
         "k0rnm@yer",
         "youtube.com/@Korea™"
+      ]
+    },
+    {
+      "matchId": 492849498,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784264891,
+      "outcome": "win",
+      "preRating": 902,
+      "postRating": 924,
+      "eloChange": 22,
+      "civ": "Burmese",
+      "teamAvgElo": 1048,
+      "opponentAvgElo": 1044,
+      "teammates": [
+        "Thí Chủ Chết Chưa",
+        "田瘾犯了",
+        "Mr.YaYo"
+      ],
+      "opponents": [
+        "baianitro",
+        "雲",
+        "aLEXt",
+        "jonathahyoga"
       ]
     }
   ]

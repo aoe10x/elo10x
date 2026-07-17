@@ -1,12 +1,12 @@
 {
   "profile_id": 12286121,
   "alias": "Ti-tooaoo",
-  "rating": 960,
+  "rating": 948,
   "wins": 19,
-  "losses": 27,
-  "gamesCount": 46,
-  "winRate": 41,
-  "lastPlayedAt": 1784079832,
+  "losses": 28,
+  "gamesCount": 47,
+  "winRate": 40,
+  "lastPlayedAt": 1784265843,
   "country": "tw",
   "merged_ids": [
     12286121,
@@ -59,33 +59,10 @@
     957,
     949,
     940,
-    960
+    960,
+    948
   ],
   "recentMatches": [
-    {
-      "matchId": 477709281,
-      "description": "10x3x Bamboo Nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1778788020,
-      "outcome": "win",
-      "preRating": 1001,
-      "postRating": 1019,
-      "eloChange": 18,
-      "civ": "Chinese",
-      "teamAvgElo": 1049,
-      "opponentAvgElo": 1037,
-      "teammates": [
-        "東亞窪地",
-        "Clean",
-        "Eddie"
-      ],
-      "opponents": [
-        "[CSGS]Runescape",
-        "鱼浆",
-        "Max",
-        "veeeeker"
-      ]
-    },
     {
       "matchId": 477713073,
       "description": "10x3x Bamboo Nothing",
@@ -540,6 +517,30 @@
         "Waryahay",
         "momo",
         "Consume Product"
+      ]
+    },
+    {
+      "matchId": 492850853,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784265843,
+      "outcome": "loss",
+      "preRating": 960,
+      "postRating": 948,
+      "eloChange": -12,
+      "civ": "Ethiopians",
+      "teamAvgElo": 1018,
+      "opponentAvgElo": 1052,
+      "teammates": [
+        "I Love Clean Coal",
+        "Sadek",
+        "aLEXt"
+      ],
+      "opponents": [
+        "Emusan",
+        "Sundev",
+        "[S33]ff",
+        "Abused but whole"
       ]
     }
   ]

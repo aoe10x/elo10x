@@ -1,12 +1,12 @@
 {
   "profile_id": 367257,
   "alias": "Bambamdumm",
-  "rating": 1081,
-  "wins": 24,
+  "rating": 1096,
+  "wins": 25,
   "losses": 22,
-  "gamesCount": 46,
-  "winRate": 52,
-  "lastPlayedAt": 1784222976,
+  "gamesCount": 47,
+  "winRate": 53,
+  "lastPlayedAt": 1784263625,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -56,33 +56,10 @@
     1070,
     1083,
     1065,
-    1081
+    1081,
+    1096
   ],
   "recentMatches": [
-    {
-      "matchId": 441166866,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1766182860,
-      "outcome": "loss",
-      "preRating": 1087,
-      "postRating": 1067,
-      "eloChange": -20,
-      "civ": "Magyars",
-      "teamAvgElo": 1082,
-      "opponentAvgElo": 997,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "schrubber",
-        "blankedgamerz"
-      ],
-      "opponents": [
-        "moocatmoo",
-        "NothingAtAll11",
-        "tonzo",
-        "onir"
-      ]
-    },
     {
       "matchId": 447829833,
       "description": "10x shared 3x tech bamboo nothing",
@@ -537,6 +514,30 @@
         "mgmanager",
         "Nigerian Farmer",
         "Al Ghouti"
+      ]
+    },
+    {
+      "matchId": 492846607,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784263625,
+      "outcome": "win",
+      "preRating": 1081,
+      "postRating": 1096,
+      "eloChange": 15,
+      "civ": "Franks",
+      "teamAvgElo": 1118,
+      "opponentAvgElo": 1056,
+      "teammates": [
+        "baianitro",
+        "田瘾犯了",
+        "雲"
+      ],
+      "opponents": [
+        "Sundev",
+        "WorldsFastestTurtle",
+        "NoxMortus",
+        "Emusan"
       ]
     }
   ]

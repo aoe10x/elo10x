@@ -1,12 +1,12 @@
 {
   "profile_id": 25674380,
   "alias": "Optimus",
-  "rating": 1022,
-  "wins": 11,
-  "losses": 12,
-  "gamesCount": 23,
-  "winRate": 48,
-  "lastPlayedAt": 1784250534,
+  "rating": 1008,
+  "wins": 12,
+  "losses": 14,
+  "gamesCount": 26,
+  "winRate": 46,
+  "lastPlayedAt": 1784259322,
   "country": "us",
   "merged_ids": [
     13700923,
@@ -36,81 +36,12 @@
     970,
     987,
     1005,
-    1022
+    1022,
+    1006,
+    991,
+    1008
   ],
   "recentMatches": [
-    {
-      "matchId": 490416797,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1783330380,
-      "outcome": "win",
-      "preRating": 974,
-      "postRating": 1021,
-      "eloChange": 47,
-      "civ": "Armenians",
-      "teamAvgElo": 1018,
-      "opponentAvgElo": 1005,
-      "teammates": [
-        "nooblet3300",
-        "serdaroglu",
-        "Craster"
-      ],
-      "opponents": [
-        "勇战到抵",
-        "Jeluk",
-        "FrostByte",
-        "Arteik"
-      ]
-    },
-    {
-      "matchId": 490520917,
-      "description": "10x 3x BN ",
-      "mapname": "my map",
-      "timestamp": 1783355747,
-      "outcome": "loss",
-      "preRating": 1021,
-      "postRating": 991,
-      "eloChange": -30,
-      "civ": "Malay",
-      "teamAvgElo": 1007,
-      "opponentAvgElo": 1126,
-      "teammates": [
-        "pool_champ",
-        "RA",
-        "adrian668"
-      ],
-      "opponents": [
-        "[CSGS]Runescape",
-        "TheRiceMan",
-        "Not a Wizard",
-        "hussein"
-      ]
-    },
-    {
-      "matchId": 492094256,
-      "description": "10x 3x Bamboo Nothing Turbo",
-      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
-      "timestamp": 1783960528,
-      "outcome": "loss",
-      "preRating": 991,
-      "postRating": 967,
-      "eloChange": -24,
-      "civ": "Mongols",
-      "teamAvgElo": 974,
-      "opponentAvgElo": 1136,
-      "teammates": [
-        "bardad",
-        "Wimac",
-        "Blin4ik"
-      ],
-      "opponents": [
-        "Ian",
-        "Dr.Ao",
-        "Lumedge",
-        "TheRiceMan"
-      ]
-    },
     {
       "matchId": 492095598,
       "description": "10x 3x bamboo nothing  turbo host here",
@@ -517,6 +448,78 @@
         "[LWS] Mandatum",
         "Parts",
         "NoLo"
+      ]
+    },
+    {
+      "matchId": 492824512,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784254325,
+      "outcome": "loss",
+      "preRating": 1022,
+      "postRating": 1006,
+      "eloChange": -16,
+      "civ": "Slavs",
+      "teamAvgElo": 1023,
+      "opponentAvgElo": 1014,
+      "teammates": [
+        "Consume Product",
+        "Mc Katrina",
+        "sniper-123"
+      ],
+      "opponents": [
+        "baianitro",
+        "LeosMind",
+        "pandasadnap",
+        "bigjames"
+      ]
+    },
+    {
+      "matchId": 492828091,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784255844,
+      "outcome": "loss",
+      "preRating": 1006,
+      "postRating": 991,
+      "eloChange": -15,
+      "civ": "Goths",
+      "teamAvgElo": 1013,
+      "opponentAvgElo": 1036,
+      "teammates": [
+        "pool_champ",
+        "z e o H",
+        "BugKaShok"
+      ],
+      "opponents": [
+        "Parenquima",
+        "Monkeymonk",
+        "468673564",
+        "Peresoso"
+      ]
+    },
+    {
+      "matchId": 492837453,
+      "description": "PQ 10x 3x bamboo 4vs4",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784259322,
+      "outcome": "win",
+      "preRating": 991,
+      "postRating": 1008,
+      "eloChange": 17,
+      "civ": "Bohemians",
+      "teamAvgElo": 1046,
+      "opponentAvgElo": 1021,
+      "teammates": [
+        "Al Ghouti",
+        "399 the Grizzly Bear - RIP <3",
+        "adrian"
+      ],
+      "opponents": [
+        "Emusan",
+        "Hexicero",
+        "Gr00vi3",
+        "z e o H"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 495646,
   "alias": "Bifbatz",
-  "rating": 992,
+  "rating": 980,
   "wins": 28,
-  "losses": 37,
-  "gamesCount": 65,
-  "winRate": 43,
-  "lastPlayedAt": 1784251390,
+  "losses": 38,
+  "gamesCount": 66,
+  "winRate": 42,
+  "lastPlayedAt": 1784252861,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -75,33 +75,10 @@
     962,
     951,
     971,
-    992
+    992,
+    980
   ],
   "recentMatches": [
-    {
-      "matchId": 479138938,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1779273540,
-      "outcome": "loss",
-      "preRating": 925,
-      "postRating": 915,
-      "eloChange": -10,
-      "civ": "Malay",
-      "teamAvgElo": 994,
-      "opponentAvgElo": 1065,
-      "teammates": [
-        "mack",
-        "Qtheitalian",
-        "DanJose"
-      ],
-      "opponents": [
-        "Paris Hilton",
-        "nooblet3300",
-        "Vince",
-        "Monster_HK"
-      ]
-    },
     {
       "matchId": 479521139,
       "description": "10x 3x - BF",
@@ -556,6 +533,30 @@
         "EL__PATRON",
         "Myriad",
         "BAKO"
+      ]
+    },
+    {
+      "matchId": 492820055,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784252861,
+      "outcome": "loss",
+      "preRating": 992,
+      "postRating": 980,
+      "eloChange": -12,
+      "civ": "Spartans",
+      "teamAvgElo": 1025,
+      "opponentAvgElo": 1076,
+      "teammates": [
+        "TJ",
+        "LeosMind",
+        "tedmed"
+      ],
+      "opponents": [
+        "BAKO",
+        "buyanjavyn",
+        "Parenquima",
+        "baianitro"
       ]
     }
   ]

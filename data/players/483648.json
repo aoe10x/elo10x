@@ -1,12 +1,12 @@
 {
   "profile_id": 483648,
   "alias": "Willoloh!!!",
-  "rating": 961,
-  "wins": 7,
-  "losses": 10,
-  "gamesCount": 17,
-  "winRate": 41,
-  "lastPlayedAt": 1784248116,
+  "rating": 971,
+  "wins": 8,
+  "losses": 11,
+  "gamesCount": 19,
+  "winRate": 42,
+  "lastPlayedAt": 1784257396,
   "country": "au",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,9 @@
     971,
     950,
     980,
-    961
+    961,
+    947,
+    971
   ],
   "recentMatches": [
     {
@@ -436,6 +438,54 @@
         "Waryahay",
         "Mehandor",
         "Blegh"
+      ]
+    },
+    {
+      "matchId": 492823113,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784253583,
+      "outcome": "loss",
+      "preRating": 961,
+      "postRating": 947,
+      "eloChange": -14,
+      "civ": "Armenians",
+      "teamAvgElo": 1052,
+      "opponentAvgElo": 1080,
+      "teammates": [
+        "Brotherman Bill",
+        "EL__PATRON",
+        "nayman"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "JoeyTribianni69",
+        "feid_"
+      ]
+    },
+    {
+      "matchId": 492830542,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784257396,
+      "outcome": "win",
+      "preRating": 947,
+      "postRating": 971,
+      "eloChange": 24,
+      "civ": "Koreans",
+      "teamAvgElo": 997,
+      "opponentAvgElo": 1029,
+      "teammates": [
+        "FPS Geo",
+        "Waryahay",
+        "no good"
+      ],
+      "opponents": [
+        "TJ",
+        "Brotherman Bill",
+        "Evil  Destroyer",
+        "LiquidDrive"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 4117493,
   "alias": "LiquidDrive",
-  "rating": 993,
+  "rating": 977,
   "wins": 14,
-  "losses": 16,
-  "gamesCount": 30,
-  "winRate": 47,
-  "lastPlayedAt": 1784090654,
+  "losses": 17,
+  "gamesCount": 31,
+  "winRate": 45,
+  "lastPlayedAt": 1784257396,
   "country": "be",
   "merged_ids": [],
   "ratingHistory": [
@@ -40,33 +40,10 @@
     1004,
     990,
     976,
-    993
+    993,
+    977
   ],
   "recentMatches": [
-    {
-      "matchId": 390471361,
-      "description": "10x Tech Amazon FAST/TURBO",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1746496860,
-      "outcome": "loss",
-      "preRating": 1137,
-      "postRating": 1093,
-      "eloChange": -44,
-      "civ": "Unknown",
-      "teamAvgElo": 1070,
-      "opponentAvgElo": 1007,
-      "teammates": [
-        "bhasudi--",
-        "liehuo22",
-        "The Reesy"
-      ],
-      "opponents": [
-        "Bechti420",
-        "PIEROGI",
-        "BuMeRSs",
-        "Antimier"
-      ]
-    },
     {
       "matchId": 390496350,
       "description": "bamboo nothing 10x 3x",
@@ -521,6 +498,30 @@
         "The Cobra Brothers",
         "mateoobo00",
         "BALD BAGS"
+      ]
+    },
+    {
+      "matchId": 492830542,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784257396,
+      "outcome": "loss",
+      "preRating": 993,
+      "postRating": 977,
+      "eloChange": -16,
+      "civ": "Japanese",
+      "teamAvgElo": 1029,
+      "opponentAvgElo": 997,
+      "teammates": [
+        "TJ",
+        "Brotherman Bill",
+        "Evil  Destroyer"
+      ],
+      "opponents": [
+        "FPS Geo",
+        "Willoloh!!!",
+        "Waryahay",
+        "no good"
       ]
     }
   ]

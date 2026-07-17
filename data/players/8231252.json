@@ -1,12 +1,12 @@
 {
   "profile_id": 8231252,
   "alias": "tedmed",
-  "rating": 1007,
+  "rating": 994,
   "wins": 28,
-  "losses": 29,
-  "gamesCount": 57,
-  "winRate": 49,
-  "lastPlayedAt": 1784080570,
+  "losses": 30,
+  "gamesCount": 58,
+  "winRate": 48,
+  "lastPlayedAt": 1784252861,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -67,33 +67,10 @@
     989,
     974,
     991,
-    1007
+    1007,
+    994
   ],
   "recentMatches": [
-    {
-      "matchId": 460779399,
-      "description": "10x 3x - bamboo - 3.1",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1772713500,
-      "outcome": "loss",
-      "preRating": 996,
-      "postRating": 982,
-      "eloChange": -14,
-      "civ": "Sicilians",
-      "teamAvgElo": 1026,
-      "opponentAvgElo": 1044,
-      "teammates": [
-        "duckbuildperson",
-        "Parenquima",
-        "benji"
-      ],
-      "opponents": [
-        "AMI",
-        "realDonaldTrump",
-        "ak4741a",
-        "TheRiceMan"
-      ]
-    },
     {
       "matchId": 461219659,
       "description": "Bamboo 10x 3x 4v4",
@@ -548,6 +525,30 @@
         "SpiniestTuna222",
         "Tiny Hands",
         "khouildi.tarek.tk"
+      ]
+    },
+    {
+      "matchId": 492820055,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784252861,
+      "outcome": "loss",
+      "preRating": 1007,
+      "postRating": 994,
+      "eloChange": -13,
+      "civ": "Incas",
+      "teamAvgElo": 1025,
+      "opponentAvgElo": 1076,
+      "teammates": [
+        "TJ",
+        "Bifbatz",
+        "LeosMind"
+      ],
+      "opponents": [
+        "BAKO",
+        "buyanjavyn",
+        "Parenquima",
+        "baianitro"
       ]
     }
   ]

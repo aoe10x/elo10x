@@ -1,12 +1,12 @@
 {
   "profile_id": 19902528,
   "alias": "TheZeos",
-  "rating": 869,
+  "rating": 859,
   "wins": 10,
-  "losses": 22,
-  "gamesCount": 32,
-  "winRate": 31,
-  "lastPlayedAt": 1783984637,
+  "losses": 23,
+  "gamesCount": 33,
+  "winRate": 30,
+  "lastPlayedAt": 1784261432,
   "country": "cl",
   "merged_ids": [
     12851136,
@@ -45,33 +45,10 @@
     898,
     889,
     879,
-    869
+    869,
+    859
   ],
   "recentMatches": [
-    {
-      "matchId": 392692586,
-      "description": "10x 3x - bambo - 10xshared.com",
-      "mapname": "Bamboo Nothing_Paren_V2.3",
-      "timestamp": 1747302000,
-      "outcome": "loss",
-      "preRating": 997,
-      "postRating": 968,
-      "eloChange": -29,
-      "civ": "Dravidians",
-      "teamAvgElo": 1035,
-      "opponentAvgElo": 996,
-      "teammates": [
-        "Parenquima",
-        "Ansaldi V",
-        "NothingAtAll11"
-      ],
-      "opponents": [
-        "ReBeL_MotHoD",
-        "dertli",
-        "jona!",
-        "Jelly"
-      ]
-    },
     {
       "matchId": 406708002,
       "description": "10x Holy line",
@@ -526,6 +503,30 @@
         "ChiH",
         "PNAL | CaligariClown",
         "RAOV"
+      ]
+    },
+    {
+      "matchId": 492841975,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784261432,
+      "outcome": "loss",
+      "preRating": 869,
+      "postRating": 859,
+      "eloChange": -10,
+      "civ": "Khmer",
+      "teamAvgElo": 997,
+      "opponentAvgElo": 1007,
+      "teammates": [
+        "Brotherman Bill",
+        "Tiny Hands",
+        "RedBullWOLOLO26"
+      ],
+      "opponents": [
+        "TJ",
+        "Meursault005",
+        "63e pears",
+        "Orinoco"
       ]
     }
   ]

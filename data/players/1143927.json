@@ -1,12 +1,12 @@
 {
   "profile_id": 1143927,
   "alias": "ernestocorrea18",
-  "rating": 919,
-  "wins": 28,
-  "losses": 44,
-  "gamesCount": 72,
+  "rating": 926,
+  "wins": 29,
+  "losses": 45,
+  "gamesCount": 74,
   "winRate": 39,
-  "lastPlayedAt": 1784170592,
+  "lastPlayedAt": 1784262375,
   "country": "co",
   "merged_ids": [],
   "ratingHistory": [
@@ -82,57 +82,11 @@
     955,
     942,
     931,
-    919
+    919,
+    939,
+    926
   ],
   "recentMatches": [
-    {
-      "matchId": 436132307,
-      "description": "4V4 ===10x shared 3Xtech  4V4 random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1764329460,
-      "outcome": "loss",
-      "preRating": 975,
-      "postRating": 963,
-      "eloChange": -12,
-      "civ": "Sicilians",
-      "teamAvgElo": 1000,
-      "opponentAvgElo": 1061,
-      "teammates": [
-        "田瘾犯了",
-        "derailer9",
-        "OmniWraith"
-      ],
-      "opponents": [
-        "choolkkkk",
-        "Dream Squisher",
-        "勇战到抵",
-        "[LWS] Mandatum"
-      ]
-    },
-    {
-      "matchId": 442492364,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1766624700,
-      "outcome": "win",
-      "preRating": 963,
-      "postRating": 982,
-      "eloChange": 19,
-      "civ": "Teutons",
-      "teamAvgElo": 1027,
-      "opponentAvgElo": 1020,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "Lumedge",
-        "RICH MILIONAIRE"
-      ],
-      "opponents": [
-        "iamatthe.hell",
-        "sniper-123",
-        "dimon21_8",
-        "tzutzu91"
-      ]
-    },
     {
       "matchId": 487884306,
       "description": "bamboo nothing 10x",
@@ -563,6 +517,54 @@
         "侯傻傻ᔦఠఠᔨ shasha",
         "Moose",
         "Jdodi"
+      ]
+    },
+    {
+      "matchId": 492839583,
+      "description": "10x 3x Bamboo best lobby",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784260219,
+      "outcome": "win",
+      "preRating": 919,
+      "postRating": 939,
+      "eloChange": 20,
+      "civ": "Malay",
+      "teamAvgElo": 1049,
+      "opponentAvgElo": 1002,
+      "teammates": [
+        "typ53b90",
+        "Monkeymonk",
+        "Tiny Hands"
+      ],
+      "opponents": [
+        "Brotherman Bill",
+        "The Cobra Brothers",
+        "63e pears",
+        "jorgeviveros3"
+      ]
+    },
+    {
+      "matchId": 492843370,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784262375,
+      "outcome": "loss",
+      "preRating": 939,
+      "postRating": 926,
+      "eloChange": -13,
+      "civ": "Bulgarians",
+      "teamAvgElo": 1075,
+      "opponentAvgElo": 1004,
+      "teammates": [
+        "Parenquima",
+        "bigabyte",
+        "RedBullWOLOLO26"
+      ],
+      "opponents": [
+        "NoxMortus",
+        "Thí Chủ Chết Chưa",
+        "aLEXt",
+        "Brotherman Bill"
       ]
     }
   ]
