@@ -1,12 +1,12 @@
 {
   "profile_id": 2962172,
   "alias": "_Zeruch_",
-  "rating": 997,
+  "rating": 975,
   "wins": 8,
-  "losses": 9,
-  "gamesCount": 17,
-  "winRate": 47,
-  "lastPlayedAt": 1784215931,
+  "losses": 10,
+  "gamesCount": 18,
+  "winRate": 44,
+  "lastPlayedAt": 1784288072,
   "country": "ua",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,8 @@
     967,
     996,
     1021,
-    997
+    997,
+    975
   ],
   "recentMatches": [
     {
@@ -436,6 +437,30 @@
         "^gOsO^",
         "Vader",
         "bhasudi--"
+      ]
+    },
+    {
+      "matchId": 492887062,
+      "description": "10x Shared Civ Bonus (everything nothing) no goths",
+      "mapname": "Bush Nothing",
+      "timestamp": 1784288072,
+      "outcome": "loss",
+      "preRating": 997,
+      "postRating": 975,
+      "eloChange": -22,
+      "civ": "Celts",
+      "teamAvgElo": 991,
+      "opponentAvgElo": 976,
+      "teammates": [
+        "WhiteMonk",
+        "Lozzer",
+        "GOJO"
+      ],
+      "opponents": [
+        "漫山哒哒哒",
+        "Antimier",
+        "yiban",
+        "Cubayop"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 434838,
   "alias": "jpllops",
-  "rating": 974,
+  "rating": 963,
   "wins": 8,
-  "losses": 11,
-  "gamesCount": 19,
-  "winRate": 42,
-  "lastPlayedAt": 1784221898,
+  "losses": 12,
+  "gamesCount": 20,
+  "winRate": 40,
+  "lastPlayedAt": 1784284673,
   "country": "se",
   "merged_ids": [],
   "ratingHistory": [
@@ -29,7 +29,8 @@
     988,
     1011,
     991,
-    974
+    974,
+    963
   ],
   "recentMatches": [
     {
@@ -486,6 +487,30 @@
         "yimacs_yoyoyo",
         "herelin0",
         "DnD"
+      ]
+    },
+    {
+      "matchId": 492880757,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784284673,
+      "outcome": "loss",
+      "preRating": 974,
+      "postRating": 963,
+      "eloChange": -11,
+      "civ": "Persians",
+      "teamAvgElo": 1015,
+      "opponentAvgElo": 1103,
+      "teammates": [
+        "[S33]ff",
+        "UbaneMess",
+        "yiban"
+      ],
+      "opponents": [
+        "Emusan",
+        "鱼浆",
+        "[CSGS]Runescape",
+        "雲"
       ]
     }
   ]
