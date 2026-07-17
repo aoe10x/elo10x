@@ -1,12 +1,12 @@
 {
   "profile_id": 18394491,
   "alias": "Trajano",
-  "rating": 1007,
+  "rating": 993,
   "wins": 29,
-  "losses": 43,
-  "gamesCount": 72,
+  "losses": 44,
+  "gamesCount": 73,
   "winRate": 40,
-  "lastPlayedAt": 1784164634,
+  "lastPlayedAt": 1784271855,
   "country": "cl",
   "merged_ids": [
     12637095,
@@ -85,33 +85,10 @@
     956,
     974,
     991,
-    1007
+    1007,
+    993
   ],
   "recentMatches": [
-    {
-      "matchId": 409719337,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing - Mba",
-      "timestamp": 1753951980,
-      "outcome": "loss",
-      "preRating": 925,
-      "postRating": 915,
-      "eloChange": -10,
-      "civ": "Dravidians",
-      "teamAvgElo": 976,
-      "opponentAvgElo": 1058,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "MartiniBR",
-        "Raduky"
-      ],
-      "opponents": [
-        "TresTilo",
-        "xTOXIC TROOPERx",
-        "勇战到抵",
-        "jona!"
-      ]
-    },
     {
       "matchId": 412270905,
       "description": "10x3x Diff map  shared bonus random civ  no noob",
@@ -566,6 +543,30 @@
         "GuguBot",
         "MRmoreto",
         "The_DonMiguel"
+      ]
+    },
+    {
+      "matchId": 492860506,
+      "description": "x3x10x Shared (PQ3.5 Qualty daycare)",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784271855,
+      "outcome": "loss",
+      "preRating": 1007,
+      "postRating": 993,
+      "eloChange": -14,
+      "civ": "Chinese",
+      "teamAvgElo": 999,
+      "opponentAvgElo": 1059,
+      "teammates": [
+        "Maxim Liann",
+        "Evil  Destroyer",
+        "-[RDU]- Gorda America Forever"
+      ],
+      "opponents": [
+        "aLEXt",
+        "FrostByte",
+        "476055690",
+        "The Cobra Brothers"
       ]
     }
   ]
