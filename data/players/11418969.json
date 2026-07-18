@@ -1,12 +1,12 @@
 {
   "profile_id": 11418969,
   "alias": "肥仔",
-  "rating": 1015,
+  "rating": 1002,
   "wins": 14,
-  "losses": 18,
-  "gamesCount": 32,
-  "winRate": 44,
-  "lastPlayedAt": 1784293151,
+  "losses": 19,
+  "gamesCount": 33,
+  "winRate": 42,
+  "lastPlayedAt": 1784377655,
   "country": "hk",
   "merged_ids": [],
   "ratingHistory": [
@@ -42,33 +42,10 @@
     1024,
     1011,
     997,
-    1015
+    1015,
+    1002
   ],
   "recentMatches": [
-    {
-      "matchId": 486699341,
-      "description": "bamboo nothing 10x",
-      "mapname": "my map",
-      "timestamp": 1781929978,
-      "outcome": "win",
-      "preRating": 1052,
-      "postRating": 1079,
-      "eloChange": 27,
-      "civ": "Turks",
-      "teamAvgElo": 1032,
-      "opponentAvgElo": 1034,
-      "teammates": [
-        "FAOse7en",
-        "Clean",
-        "[B] pro.PHET"
-      ],
-      "opponents": [
-        "[B] Zennith",
-        "[B] Richard",
-        "Xinzzo",
-        "NoxMortus"
-      ]
-    },
     {
       "matchId": 486773963,
       "description": "10x 3x bamboo",
@@ -523,6 +500,30 @@
         "476055690",
         "Spaceman Rob",
         "Zeriel"
+      ]
+    },
+    {
+      "matchId": 493145762,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784377655,
+      "outcome": "loss",
+      "preRating": 1015,
+      "postRating": 1002,
+      "eloChange": -13,
+      "civ": "Slavs",
+      "teamAvgElo": 1108,
+      "opponentAvgElo": 1075,
+      "teammates": [
+        "Trekkspell",
+        "ISwaZz",
+        "Grimmie"
+      ],
+      "opponents": [
+        "gemmascho",
+        "Lumedge",
+        "Bourne2Believe",
+        "Goodsoup"
       ]
     }
   ]

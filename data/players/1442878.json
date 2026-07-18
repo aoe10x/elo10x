@@ -1,12 +1,12 @@
 {
   "profile_id": 1442878,
   "alias": "Goose",
-  "rating": 995,
-  "wins": 44,
-  "losses": 40,
-  "gamesCount": 84,
+  "rating": 1002,
+  "wins": 45,
+  "losses": 41,
+  "gamesCount": 86,
   "winRate": 52,
-  "lastPlayedAt": 1783941423,
+  "lastPlayedAt": 1784371710,
   "country": "nl",
   "merged_ids": [
     1442878,
@@ -97,57 +97,11 @@
     1036,
     1021,
     1008,
-    995
+    995,
+    1013,
+    1002
   ],
   "recentMatches": [
-    {
-      "matchId": 476293141,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1778288220,
-      "outcome": "win",
-      "preRating": 1029,
-      "postRating": 1046,
-      "eloChange": 17,
-      "civ": "Persians",
-      "teamAvgElo": 992,
-      "opponentAvgElo": 1049,
-      "teammates": [
-        "SchneckeLuchs25",
-        "Lietuva_",
-        "25chai"
-      ],
-      "opponents": [
-        "Kukuro",
-        "Ömerahrz",
-        "nooblet3300",
-        "Tamra Robinson"
-      ]
-    },
-    {
-      "matchId": 477049213,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1778536440,
-      "outcome": "win",
-      "preRating": 1046,
-      "postRating": 1063,
-      "eloChange": 17,
-      "civ": "Portuguese",
-      "teamAvgElo": 1107,
-      "opponentAvgElo": 1060,
-      "teammates": [
-        "FrostByte",
-        "Test66",
-        "Zeriel"
-      ],
-      "opponents": [
-        "Ti-tooaoo",
-        "nooblet3300",
-        "ASLAN",
-        "萌萌"
-      ]
-    },
     {
       "matchId": 477974377,
       "description": "+10x+3xtech   no noob",
@@ -578,6 +532,54 @@
         "Lumedge",
         "[S33]ff",
         "ChristopheG1970.Fr"
+      ]
+    },
+    {
+      "matchId": 493128710,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784371054,
+      "outcome": "win",
+      "preRating": 995,
+      "postRating": 1013,
+      "eloChange": 18,
+      "civ": "Vikings",
+      "teamAvgElo": 1023,
+      "opponentAvgElo": 1033,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "Eraniss",
+        "idefixyeee"
+      ],
+      "opponents": [
+        "golhmogh",
+        "Lumedge",
+        "DnD",
+        "ebonzhang"
+      ]
+    },
+    {
+      "matchId": 493130533,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784371710,
+      "outcome": "loss",
+      "preRating": 1013,
+      "postRating": 1002,
+      "eloChange": -11,
+      "civ": "Huns",
+      "teamAvgElo": 1034,
+      "opponentAvgElo": 1118,
+      "teammates": [
+        "levvafire",
+        "Lumedge",
+        "青松"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "ISwaZz",
+        "golhmogh",
+        "kekekeya"
       ]
     }
   ]

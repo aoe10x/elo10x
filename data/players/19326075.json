@@ -1,12 +1,12 @@
 {
   "profile_id": 19326075,
   "alias": "afranciscosa",
-  "rating": 995,
+  "rating": 983,
   "wins": 27,
-  "losses": 36,
-  "gamesCount": 63,
-  "winRate": 43,
-  "lastPlayedAt": 1784221898,
+  "losses": 37,
+  "gamesCount": 64,
+  "winRate": 42,
+  "lastPlayedAt": 1784373309,
   "country": "pt",
   "merged_ids": [
     12766131,
@@ -76,33 +76,10 @@
     1046,
     1028,
     1010,
-    995
+    995,
+    983
   ],
   "recentMatches": [
-    {
-      "matchId": 477554911,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1778726040,
-      "outcome": "win",
-      "preRating": 1015,
-      "postRating": 1030,
-      "eloChange": 15,
-      "civ": "Chinese",
-      "teamAvgElo": 1060,
-      "opponentAvgElo": 993,
-      "teammates": [
-        "PIEROGI",
-        "nooblet3300",
-        "helianth"
-      ],
-      "opponents": [
-        "herelin0",
-        "mack",
-        "Standing Alone!",
-        "dwalte011"
-      ]
-    },
     {
       "matchId": 477816050,
       "description": "10x 3x Bamboo - 10xshared.com",
@@ -557,6 +534,30 @@
         "yimacs_yoyoyo",
         "herelin0",
         "DnD"
+      ]
+    },
+    {
+      "matchId": 493134235,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784373309,
+      "outcome": "loss",
+      "preRating": 995,
+      "postRating": 983,
+      "eloChange": -12,
+      "civ": "Britons",
+      "teamAvgElo": 1040,
+      "opponentAvgElo": 1078,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "golhmogh",
+        "Honey badger"
+      ],
+      "opponents": [
+        "青松",
+        "kaka52pk",
+        "levvafire",
+        "ISwaZz"
       ]
     }
   ]

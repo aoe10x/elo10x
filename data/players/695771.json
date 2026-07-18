@@ -1,12 +1,12 @@
 {
   "profile_id": 695771,
   "alias": "Delf",
-  "rating": 1033,
+  "rating": 1016,
   "wins": 11,
-  "losses": 10,
-  "gamesCount": 21,
-  "winRate": 52,
-  "lastPlayedAt": 1784048939,
+  "losses": 11,
+  "gamesCount": 22,
+  "winRate": 50,
+  "lastPlayedAt": 1784375750,
   "country": "at",
   "merged_ids": [],
   "ratingHistory": [
@@ -31,33 +31,10 @@
     1006,
     993,
     1015,
-    1033
+    1033,
+    1016
   ],
   "recentMatches": [
-    {
-      "matchId": 193122576,
-      "description": "4V4 10x shared bonuses",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1669778280,
-      "outcome": "win",
-      "preRating": 1047,
-      "postRating": 1081,
-      "eloChange": 34,
-      "civ": "Malians",
-      "teamAvgElo": 965,
-      "opponentAvgElo": 952,
-      "teammates": [
-        "Mikesh",
-        "david",
-        "neno"
-      ],
-      "opponents": [
-        "Drancerpy",
-        "Lozzer",
-        "daandekkinga",
-        "xxMrDillxx"
-      ]
-    },
     {
       "matchId": 197810791,
       "description": "10x civ shared bonus NEW FOREST PRISON",
@@ -512,6 +489,30 @@
         "Shadow",
         "ciblerIV",
         "Brotherman Bill"
+      ]
+    },
+    {
+      "matchId": 493140432,
+      "description": "Bamboo nothing 10X3X",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784375750,
+      "outcome": "loss",
+      "preRating": 1033,
+      "postRating": 1016,
+      "eloChange": -17,
+      "civ": "Dravidians",
+      "teamAvgElo": 1042,
+      "opponentAvgElo": 1005,
+      "teammates": [
+        "紫蝶黄蜂俱有情",
+        "doraemon",
+        "dragoesazuis"
+      ],
+      "opponents": [
+        "yxsko93",
+        "apolizer",
+        "wintre",
+        "Goodsoup"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 3635145,
   "alias": "Prinz Kay1",
-  "rating": 1068,
+  "rating": 1054,
   "wins": 41,
-  "losses": 36,
-  "gamesCount": 77,
+  "losses": 37,
+  "gamesCount": 78,
   "winRate": 53,
-  "lastPlayedAt": 1784303630,
+  "lastPlayedAt": 1784377911,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -87,33 +87,10 @@
     1054,
     1069,
     1052,
-    1068
+    1068,
+    1054
   ],
   "recentMatches": [
-    {
-      "matchId": 491392795,
-      "description": "10x 3x Bamboo - 10xshared.com",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1783715664,
-      "outcome": "win",
-      "preRating": 1007,
-      "postRating": 1027,
-      "eloChange": 20,
-      "civ": "Berbers",
-      "teamAvgElo": 1038,
-      "opponentAvgElo": 1098,
-      "teammates": [
-        "La_Fratellanza",
-        "veeeeker",
-        "Saloon_F_F"
-      ],
-      "opponents": [
-        "Parts",
-        "pandasadnap",
-        "liehuo22",
-        "Manba Out"
-      ]
-    },
     {
       "matchId": 491394915,
       "description": "10x 3x Bamboo (Inshallah)",
@@ -568,6 +545,30 @@
         "Unblanked",
         "dertli",
         "Bambamdumm"
+      ]
+    },
+    {
+      "matchId": 493146186,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784377911,
+      "outcome": "loss",
+      "preRating": 1068,
+      "postRating": 1054,
+      "eloChange": -14,
+      "civ": "Cumans",
+      "teamAvgElo": 1044,
+      "opponentAvgElo": 1108,
+      "teammates": [
+        "鱼浆",
+        "Scipio",
+        "yxsko93"
+      ],
+      "opponents": [
+        "iamatthe.hell",
+        "fclem",
+        "pandalam",
+        "老K"
       ]
     }
   ]

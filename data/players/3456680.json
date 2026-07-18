@@ -1,12 +1,12 @@
 {
   "profile_id": 3456680,
   "alias": "GenP",
-  "rating": 923,
+  "rating": 914,
   "wins": 36,
-  "losses": 55,
-  "gamesCount": 91,
-  "winRate": 40,
-  "lastPlayedAt": 1784207781,
+  "losses": 56,
+  "gamesCount": 92,
+  "winRate": 39,
+  "lastPlayedAt": 1784376341,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -101,33 +101,10 @@
     955,
     945,
     930,
-    923
+    923,
+    914
   ],
   "recentMatches": [
-    {
-      "matchId": 489528684,
-      "description": "10x 3x bamboo",
-      "mapname": "my map",
-      "timestamp": 1782982087,
-      "outcome": "loss",
-      "preRating": 1031,
-      "postRating": 1012,
-      "eloChange": -19,
-      "civ": "Italians",
-      "teamAvgElo": 1033,
-      "opponentAvgElo": 965,
-      "teammates": [
-        "-[RDU]- Gorda America Forever",
-        "Nigerian Farmer",
-        "平生不修善果 只爱石油军火"
-      ],
-      "opponents": [
-        "Lykerya",
-        "Evil  Destroyer",
-        "samseryd",
-        "levvafire"
-      ]
-    },
     {
       "matchId": 490212545,
       "description": "10x Shared 3 x tech Bamboo",
@@ -582,6 +559,30 @@
         "pandalam",
         "janhartmann",
         "Prinz Kay1"
+      ]
+    },
+    {
+      "matchId": 493142483,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784376341,
+      "outcome": "loss",
+      "preRating": 923,
+      "postRating": 914,
+      "eloChange": -9,
+      "civ": "Magyars",
+      "teamAvgElo": 1054,
+      "opponentAvgElo": 1089,
+      "teammates": [
+        "ISwaZz",
+        "kaka52pk",
+        "S3dated"
+      ],
+      "opponents": [
+        "iamatthe.hell",
+        "Bourne2Believe",
+        "Lumedge",
+        "YUJIN"
       ]
     }
   ]

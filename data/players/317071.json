@@ -1,12 +1,12 @@
 {
   "profile_id": 317071,
   "alias": "ebonzhang",
-  "rating": 997,
+  "rating": 982,
   "wins": 37,
-  "losses": 45,
-  "gamesCount": 82,
+  "losses": 46,
+  "gamesCount": 83,
   "winRate": 45,
-  "lastPlayedAt": 1784341254,
+  "lastPlayedAt": 1784371054,
   "country": "cn",
   "merged_ids": [],
   "ratingHistory": [
@@ -92,33 +92,10 @@
     1011,
     1024,
     1011,
-    997
+    997,
+    982
   ],
   "recentMatches": [
-    {
-      "matchId": 483004310,
-      "description": "+10x+3xtech   no noob ",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1780660275,
-      "outcome": "loss",
-      "preRating": 1028,
-      "postRating": 1011,
-      "eloChange": -17,
-      "civ": "Franks",
-      "teamAvgElo": 1056,
-      "opponentAvgElo": 1007,
-      "teammates": [
-        "拍车面前人人平等",
-        "Asur",
-        "RA"
-      ],
-      "opponents": [
-        "Jackbrick",
-        "majorleyendo",
-        "UndreamtBacon8",
-        "sppd3181"
-      ]
-    },
     {
       "matchId": 484563891,
       "description": "10x 3x bamboo random civ ",
@@ -573,6 +550,30 @@
         "Myriad",
         "EL__PATRON",
         "Meursault005"
+      ]
+    },
+    {
+      "matchId": 493128710,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784371054,
+      "outcome": "loss",
+      "preRating": 997,
+      "postRating": 982,
+      "eloChange": -15,
+      "civ": "Japanese",
+      "teamAvgElo": 1033,
+      "opponentAvgElo": 1023,
+      "teammates": [
+        "golhmogh",
+        "Lumedge",
+        "DnD"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "Eraniss",
+        "idefixyeee",
+        "Goose"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 2843438,
   "alias": "Scipio",
-  "rating": 1053,
+  "rating": 1040,
   "wins": 26,
-  "losses": 26,
-  "gamesCount": 52,
-  "winRate": 50,
-  "lastPlayedAt": 1784346327,
+  "losses": 27,
+  "gamesCount": 53,
+  "winRate": 49,
+  "lastPlayedAt": 1784377911,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -62,33 +62,10 @@
     1040,
     1056,
     1069,
-    1053
+    1053,
+    1040
   ],
   "recentMatches": [
-    {
-      "matchId": 491742325,
-      "description": "10x 3x Bamboo (Fair & Balanced)",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1783834844,
-      "outcome": "win",
-      "preRating": 1065,
-      "postRating": 1078,
-      "eloChange": 13,
-      "civ": "Goths",
-      "teamAvgElo": 1065,
-      "opponentAvgElo": 1001,
-      "teammates": [
-        "Xinzzo",
-        "Nimu.-",
-        "aLEXt"
-      ],
-      "opponents": [
-        "RIchard_Uy",
-        "476055690",
-        "Chikna Raavan",
-        "Perxeus"
-      ]
-    },
     {
       "matchId": 491746465,
       "description": "10x 3x Bamboo (ungo bunga)",
@@ -543,6 +520,30 @@
         "紫蝶黄蜂俱有情",
         "UndreamtBacon8",
         "Your Ego"
+      ]
+    },
+    {
+      "matchId": 493146186,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784377911,
+      "outcome": "loss",
+      "preRating": 1053,
+      "postRating": 1040,
+      "eloChange": -13,
+      "civ": "Burmese",
+      "teamAvgElo": 1044,
+      "opponentAvgElo": 1108,
+      "teammates": [
+        "Prinz Kay1",
+        "鱼浆",
+        "yxsko93"
+      ],
+      "opponents": [
+        "iamatthe.hell",
+        "fclem",
+        "pandalam",
+        "老K"
       ]
     }
   ]
