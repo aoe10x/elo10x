@@ -1,12 +1,12 @@
 {
   "profile_id": 4307791,
   "alias": "KyrThanos",
-  "rating": 980,
+  "rating": 965,
   "wins": 16,
-  "losses": 22,
-  "gamesCount": 38,
-  "winRate": 42,
-  "lastPlayedAt": 1783527203,
+  "losses": 23,
+  "gamesCount": 39,
+  "winRate": 41,
+  "lastPlayedAt": 1784322313,
   "country": "gr",
   "merged_ids": [],
   "ratingHistory": [
@@ -48,33 +48,10 @@
     997,
     981,
     998,
-    980
+    980,
+    965
   ],
   "recentMatches": [
-    {
-      "matchId": 401823772,
-      "description": "10x 3x",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1750747080,
-      "outcome": "win",
-      "preRating": 919,
-      "postRating": 945,
-      "eloChange": 26,
-      "civ": "Berbers",
-      "teamAvgElo": 982,
-      "opponentAvgElo": 1049,
-      "teammates": [
-        "GandalfGG",
-        "FREESTYLE72",
-        "stinkyweld"
-      ],
-      "opponents": [
-        "For_The_King",
-        "develement",
-        "LiquidDrive",
-        "Emotions are prohibited"
-      ]
-    },
     {
       "matchId": 402007399,
       "description": "4vs4 10x 3x shared civ bonus, random civ",
@@ -529,6 +506,30 @@
         "sppd3181",
         "Dr.Ao",
         "SlimeJesse"
+      ]
+    },
+    {
+      "matchId": 492996977,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784322313,
+      "outcome": "loss",
+      "preRating": 980,
+      "postRating": 965,
+      "eloChange": -15,
+      "civ": "Lithuanians",
+      "teamAvgElo": 995,
+      "opponentAvgElo": 1012,
+      "teammates": [
+        "iamatthe.hell",
+        "skoolied",
+        "MarieBrutale"
+      ],
+      "opponents": [
+        "Honey badger",
+        "Chirijiraden",
+        "golhmogh",
+        "Jelly"
       ]
     }
   ]

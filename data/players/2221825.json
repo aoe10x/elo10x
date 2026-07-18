@@ -1,12 +1,12 @@
 {
   "profile_id": 2221825,
   "alias": "CrazyFoxMan",
-  "rating": 966,
-  "wins": 44,
+  "rating": 985,
+  "wins": 45,
   "losses": 55,
-  "gamesCount": 99,
-  "winRate": 44,
-  "lastPlayedAt": 1783817212,
+  "gamesCount": 100,
+  "winRate": 45,
+  "lastPlayedAt": 1784321232,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -60,7 +60,6 @@
     1056,
     1038,
     1022,
-    1039,
     1024,
     1040,
     1057,
@@ -109,33 +108,10 @@
     967,
     954,
     979,
-    966
+    966,
+    985
   ],
   "recentMatches": [
-    {
-      "matchId": 458875079,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1772014560,
-      "outcome": "loss",
-      "preRating": 994,
-      "postRating": 983,
-      "eloChange": -11,
-      "civ": "Maya",
-      "teamAvgElo": 1039,
-      "opponentAvgElo": 1102,
-      "teammates": [
-        "EL__PATRON",
-        "Wardy21",
-        "Reysherong"
-      ],
-      "opponents": [
-        "Kumad",
-        "Myriad",
-        "Echrand",
-        "gowow"
-      ]
-    },
     {
       "matchId": 459821228,
       "description": "256x 10x Forest Nothing",
@@ -590,6 +566,30 @@
         "Myriad",
         "Nick123",
         "fredericomw"
+      ]
+    },
+    {
+      "matchId": 492992724,
+      "description": "10x 3x Bamboo Nothing random civ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784321232,
+      "outcome": "win",
+      "preRating": 966,
+      "postRating": 985,
+      "eloChange": 19,
+      "civ": "Cumans",
+      "teamAvgElo": 996,
+      "opponentAvgElo": 1023,
+      "teammates": [
+        "Sal",
+        "Optimus",
+        "Voskarius"
+      ],
+      "opponents": [
+        "skoolied",
+        "yimacs_yoyoyo",
+        "iamatthe.hell",
+        "Nigerian Farmer"
       ]
     }
   ]

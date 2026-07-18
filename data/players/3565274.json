@@ -1,12 +1,12 @@
 {
   "profile_id": 3565274,
   "alias": "Ricardo V",
-  "rating": 979,
-  "wins": 21,
+  "rating": 998,
+  "wins": 22,
   "losses": 30,
-  "gamesCount": 51,
-  "winRate": 41,
-  "lastPlayedAt": 1784318258,
+  "gamesCount": 52,
+  "winRate": 42,
+  "lastPlayedAt": 1784321585,
   "country": "pe",
   "merged_ids": [
     3565274,
@@ -64,33 +64,10 @@
     1020,
     1006,
     991,
-    979
+    979,
+    998
   ],
   "recentMatches": [
-    {
-      "matchId": 409722983,
-      "description": "10x3x Diff map  shared bonus random civ  no noob",
-      "mapname": "Bamboo Nothing_Paren_V2.3",
-      "timestamp": 1753953300,
-      "outcome": "win",
-      "preRating": 960,
-      "postRating": 980,
-      "eloChange": 20,
-      "civ": "Unknown",
-      "teamAvgElo": 1005,
-      "opponentAvgElo": 1041,
-      "teammates": [
-        "SeeYouTomorrow",
-        "ZaySol",
-        "Daddy"
-      ],
-      "opponents": [
-        "Your Ego",
-        "[atkHOBO]",
-        "TJ",
-        "omega"
-      ]
-    },
     {
       "matchId": 411374857,
       "description": "bamboo nothing 10x3x turbo",
@@ -545,6 +522,30 @@
         "Brotherman Bill",
         "Emusan",
         "Supreme Lord 'Kim Xi Trump'"
+      ]
+    },
+    {
+      "matchId": 492994250,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784321585,
+      "outcome": "win",
+      "preRating": 979,
+      "postRating": 998,
+      "eloChange": 19,
+      "civ": "Jurchens",
+      "teamAvgElo": 1015,
+      "opponentAvgElo": 1056,
+      "teammates": [
+        "Lykerya",
+        "JaFu",
+        "田瘾犯了"
+      ],
+      "opponents": [
+        "Megahaufen",
+        "Dayman",
+        "Monkeymonk",
+        "gamingtars"
       ]
     }
   ]

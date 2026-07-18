@@ -1,12 +1,12 @@
 {
   "profile_id": 25228163,
   "alias": "Maxim Liann",
-  "rating": 973,
+  "rating": 948,
   "wins": 19,
-  "losses": 38,
-  "gamesCount": 57,
-  "winRate": 33,
-  "lastPlayedAt": 1784317454,
+  "losses": 40,
+  "gamesCount": 59,
+  "winRate": 32,
+  "lastPlayedAt": 1784330494,
   "country": "br",
   "merged_ids": [
     13623515,
@@ -70,57 +70,11 @@
     914,
     934,
     953,
-    973
+    973,
+    961,
+    948
   ],
   "recentMatches": [
-    {
-      "matchId": 492204268,
-      "description": "Bamboo 10x Shared 3x Tech",
-      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
-      "timestamp": 1783995973,
-      "outcome": "win",
-      "preRating": 852,
-      "postRating": 879,
-      "eloChange": 27,
-      "civ": "Poles",
-      "teamAvgElo": 993,
-      "opponentAvgElo": 1131,
-      "teammates": [
-        "baianitro",
-        "pandasadnap",
-        "{R} Parry"
-      ],
-      "opponents": [
-        "nooblet3300",
-        "田瘾犯了",
-        "SpiniestTuna222",
-        "G"
-      ]
-    },
-    {
-      "matchId": 492206605,
-      "description": "10x 3x - bamboo donut",
-      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
-      "timestamp": 1783996795,
-      "outcome": "win",
-      "preRating": 879,
-      "postRating": 904,
-      "eloChange": 25,
-      "civ": "Shu",
-      "teamAvgElo": 1105,
-      "opponentAvgElo": 1090,
-      "teammates": [
-        "Parenquima",
-        "田瘾犯了",
-        "{R} Parry"
-      ],
-      "opponents": [
-        "[TodEs] MnTartara",
-        "Waryahay",
-        "nooblet3300",
-        "G"
-      ]
-    },
     {
       "matchId": 492217801,
       "description": "Bamboo 10x Shared 3x Tech",
@@ -551,6 +505,54 @@
         "Brotherman Bill",
         "yimacs_yoyoyo",
         "Thí Chủ Chết Chưa"
+      ]
+    },
+    {
+      "matchId": 492998140,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784322759,
+      "outcome": "loss",
+      "preRating": 973,
+      "postRating": 961,
+      "eloChange": -12,
+      "civ": "Vietnamese",
+      "teamAvgElo": 1007,
+      "opponentAvgElo": 1061,
+      "teammates": [
+        "skoolied",
+        "Monkeymonk",
+        "Megahaufen"
+      ],
+      "opponents": [
+        "iamatthe.hell",
+        "RA",
+        "Honey badger",
+        "CristoTheRealCeisto"
+      ]
+    },
+    {
+      "matchId": 493023844,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784330494,
+      "outcome": "loss",
+      "preRating": 961,
+      "postRating": 948,
+      "eloChange": -13,
+      "civ": "Italians",
+      "teamAvgElo": 1055,
+      "opponentAvgElo": 1026,
+      "teammates": [
+        "NoAgendaPODCAST",
+        "RAOV",
+        "Apocalypto"
+      ],
+      "opponents": [
+        "Your Ego",
+        "FPS Geo",
+        "OhSheeep",
+        "nooblet3300"
       ]
     }
   ]

@@ -1,14 +1,17 @@
 {
-  "profile_id": 12499107,
+  "profile_id": 16936656,
   "alias": "TheAdriRyu",
-  "rating": 922,
-  "wins": 7,
+  "rating": 943,
+  "wins": 8,
   "losses": 13,
-  "gamesCount": 20,
-  "winRate": 35,
-  "lastPlayedAt": 1778845920,
-  "country": "Unknown",
-  "merged_ids": [],
+  "gamesCount": 21,
+  "winRate": 38,
+  "lastPlayedAt": 1784326423,
+  "country": "mx",
+  "merged_ids": [
+    12499107,
+    16936656
+  ],
   "ratingHistory": [
     1000,
     957,
@@ -30,33 +33,10 @@
     886,
     913,
     899,
-    922
+    922,
+    943
   ],
   "recentMatches": [
-    {
-      "matchId": 320665016,
-      "description": "10x Forest Nothing 4v4",
-      "mapname": "Forest Nothing De",
-      "timestamp": 1718704200,
-      "outcome": "loss",
-      "preRating": 1000,
-      "postRating": 957,
-      "eloChange": -43,
-      "civ": "Chinese",
-      "teamAvgElo": 993,
-      "opponentAvgElo": 1038,
-      "teammates": [
-        "Betoxcc",
-        "JR_Nero",
-        "Hurtex"
-      ],
-      "opponents": [
-        "Bun_Length_Hotdog",
-        "The_OfishelJew",
-        "Lacoste",
-        "efer.05"
-      ]
-    },
     {
       "matchId": 325066453,
       "description": "Amazon tunnel 10x shared civ bonus",
@@ -511,6 +491,30 @@
         "Roy",
         "pitschr",
         "maddymsg"
+      ]
+    },
+    {
+      "matchId": 493010911,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784326423,
+      "outcome": "win",
+      "preRating": 922,
+      "postRating": 943,
+      "eloChange": 21,
+      "civ": "Spanish",
+      "teamAvgElo": 1055,
+      "opponentAvgElo": 1028,
+      "teammates": [
+        "iamatthe.hell",
+        "develement",
+        "Ghost_pt"
+      ],
+      "opponents": [
+        "Ian",
+        "khouildi.tarek.tk",
+        "Apocalypto",
+        "Monkeymonk"
       ]
     }
   ]
