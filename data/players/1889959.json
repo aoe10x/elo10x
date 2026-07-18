@@ -1,12 +1,12 @@
 {
   "profile_id": 1889959,
   "alias": "Ruuder",
-  "rating": 952,
+  "rating": 939,
   "wins": 51,
-  "losses": 49,
-  "gamesCount": 100,
-  "winRate": 51,
-  "lastPlayedAt": 1783539272,
+  "losses": 50,
+  "gamesCount": 101,
+  "winRate": 50,
+  "lastPlayedAt": 1784387372,
   "country": "ie",
   "merged_ids": [],
   "ratingHistory": [
@@ -35,7 +35,6 @@
     1110,
     1094,
     1105,
-    1116,
     1099,
     1113,
     1096,
@@ -60,6 +59,7 @@
     1084,
     1066,
     1079,
+    1098,
     1079,
     1095,
     1077,
@@ -84,7 +84,6 @@
     1011,
     1030,
     1014,
-    1030,
     1014,
     1027,
     1044,
@@ -109,33 +108,10 @@
     993,
     980,
     966,
-    952
+    952,
+    939
   ],
   "recentMatches": [
-    {
-      "matchId": 486155726,
-      "description": "10x 3x bamboo no noob q群729084973",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1781730779,
-      "outcome": "win",
-      "preRating": 1013,
-      "postRating": 1032,
-      "eloChange": 19,
-      "civ": "Aztecs",
-      "teamAvgElo": 1017,
-      "opponentAvgElo": 1078,
-      "teammates": [
-        "KingOfTheNorth",
-        "Sam",
-        "alexw"
-      ],
-      "opponents": [
-        "Semisky",
-        "摸鱼",
-        "herelin0",
-        "calebw704"
-      ]
-    },
     {
       "matchId": 487604299,
       "description": "10x 3x bamboo NO IDIOT",
@@ -590,6 +566,30 @@
         "[CSGS]Runescape",
         "[Liiit] Zbyszek",
         "NothingAtAll11"
+      ]
+    },
+    {
+      "matchId": 493178309,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784387372,
+      "outcome": "loss",
+      "preRating": 952,
+      "postRating": 939,
+      "eloChange": -13,
+      "civ": "Italians",
+      "teamAvgElo": 993,
+      "opponentAvgElo": 1022,
+      "teammates": [
+        "gemmascho",
+        "DnD",
+        "malth"
+      ],
+      "opponents": [
+        "Wozbo",
+        "Texas Red",
+        "Lumedge",
+        "Ravenlost"
       ]
     }
   ]

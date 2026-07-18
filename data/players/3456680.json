@@ -1,12 +1,12 @@
 {
   "profile_id": 3456680,
   "alias": "GenP",
-  "rating": 914,
+  "rating": 905,
   "wins": 36,
-  "losses": 56,
-  "gamesCount": 92,
+  "losses": 57,
+  "gamesCount": 93,
   "winRate": 39,
-  "lastPlayedAt": 1784376341,
+  "lastPlayedAt": 1784378954,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -102,33 +102,10 @@
     945,
     930,
     923,
-    914
+    914,
+    905
   ],
   "recentMatches": [
-    {
-      "matchId": 490212545,
-      "description": "10x Shared 3 x tech Bamboo",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1783238907,
-      "outcome": "win",
-      "preRating": 1012,
-      "postRating": 1028,
-      "eloChange": 16,
-      "civ": "Unknown",
-      "teamAvgElo": 975,
-      "opponentAvgElo": 1020,
-      "teammates": [
-        "Captain Stripes",
-        "EzraSkywalker96",
-        "Wikzor"
-      ],
-      "opponents": [
-        "kutaskutas234",
-        "Monkeymonk",
-        "田瘾犯了",
-        "漫山哒哒哒"
-      ]
-    },
     {
       "matchId": 490245567,
       "description": "4vs4 10x 3x shared civ bonus, random civ",
@@ -583,6 +560,30 @@
         "Bourne2Believe",
         "Lumedge",
         "YUJIN"
+      ]
+    },
+    {
+      "matchId": 493149847,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784378954,
+      "outcome": "loss",
+      "preRating": 914,
+      "postRating": 905,
+      "eloChange": -9,
+      "civ": "Vietnamese",
+      "teamAvgElo": 1019,
+      "opponentAvgElo": 1085,
+      "teammates": [
+        "BeatsNArt",
+        "kekekeya",
+        "kaka52pk"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "NoxMortus",
+        "iamatthe.hell",
+        "G"
       ]
     }
   ]

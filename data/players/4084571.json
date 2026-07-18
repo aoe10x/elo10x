@@ -1,12 +1,12 @@
 {
   "profile_id": 4084571,
   "alias": "Mahmut",
-  "rating": 979,
-  "wins": 8,
+  "rating": 1002,
+  "wins": 9,
   "losses": 11,
-  "gamesCount": 19,
-  "winRate": 42,
-  "lastPlayedAt": 1784339482,
+  "gamesCount": 20,
+  "winRate": 45,
+  "lastPlayedAt": 1784380387,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -29,7 +29,8 @@
     951,
     930,
     954,
-    979
+    979,
+    1002
   ],
   "recentMatches": [
     {
@@ -486,6 +487,30 @@
         "nice",
         "{R} Parry",
         "Pogonophobia69"
+      ]
+    },
+    {
+      "matchId": 493154633,
+      "description": "10x 3x bamboo",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784380387,
+      "outcome": "win",
+      "preRating": 979,
+      "postRating": 1002,
+      "eloChange": 23,
+      "civ": "Spanish",
+      "teamAvgElo": 1058,
+      "opponentAvgElo": 1082,
+      "teammates": [
+        "476055690",
+        "Honey badger",
+        "ISwaZz"
+      ],
+      "opponents": [
+        "肥仔",
+        "Frederick",
+        "NoxMortus",
+        "konishika"
       ]
     }
   ]

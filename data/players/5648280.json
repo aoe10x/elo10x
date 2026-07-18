@@ -1,12 +1,12 @@
 {
   "profile_id": 5648280,
   "alias": "Rito",
-  "rating": 1043,
+  "rating": 1026,
   "wins": 25,
-  "losses": 20,
-  "gamesCount": 45,
-  "winRate": 56,
-  "lastPlayedAt": 1784221878,
+  "losses": 21,
+  "gamesCount": 46,
+  "winRate": 54,
+  "lastPlayedAt": 1784391324,
   "country": "jp",
   "merged_ids": [],
   "ratingHistory": [
@@ -55,33 +55,10 @@
     1093,
     1076,
     1061,
-    1043
+    1043,
+    1026
   ],
   "recentMatches": [
-    {
-      "matchId": 350916534,
-      "description": "Shared10x tech3x amazon",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1731204240,
-      "outcome": "loss",
-      "preRating": 1127,
-      "postRating": 1108,
-      "eloChange": -19,
-      "civ": "Bohemians",
-      "teamAvgElo": 1032,
-      "opponentAvgElo": 1052,
-      "teammates": [
-        "Papillon",
-        "dorayan",
-        "konishika"
-      ],
-      "opponents": [
-        "komatti",
-        "buyanjavyn",
-        "gstone",
-        "Beef Noodle - Huang"
-      ]
-    },
     {
       "matchId": 357069006,
       "description": "shared10x amazon",
@@ -536,6 +513,30 @@
         "Parts",
         "Trekkspell",
         "KarlLagerfeuer"
+      ]
+    },
+    {
+      "matchId": 493195046,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784391324,
+      "outcome": "loss",
+      "preRating": 1043,
+      "postRating": 1026,
+      "eloChange": -17,
+      "civ": "Shu",
+      "teamAvgElo": 1047,
+      "opponentAvgElo": 1027,
+      "teammates": [
+        "komatti",
+        "Optimus",
+        "YUJIN"
+      ],
+      "opponents": [
+        "Papillon",
+        "konishika",
+        "tonkatumura",
+        "Wololo"
       ]
     }
   ]

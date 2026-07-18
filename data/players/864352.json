@@ -1,12 +1,12 @@
 {
   "profile_id": 864352,
   "alias": "Nigerian Farmer",
-  "rating": 967,
+  "rating": 953,
   "wins": 20,
-  "losses": 29,
-  "gamesCount": 49,
-  "winRate": 41,
-  "lastPlayedAt": 1784334989,
+  "losses": 30,
+  "gamesCount": 50,
+  "winRate": 40,
+  "lastPlayedAt": 1784383564,
   "country": "se",
   "merged_ids": [],
   "ratingHistory": [
@@ -59,33 +59,10 @@
     902,
     924,
     946,
-    967
+    967,
+    953
   ],
   "recentMatches": [
-    {
-      "matchId": 492182010,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
-      "timestamp": 1783988102,
-      "outcome": "loss",
-      "preRating": 968,
-      "postRating": 956,
-      "eloChange": -12,
-      "civ": "Mongols",
-      "teamAvgElo": 994,
-      "opponentAvgElo": 1060,
-      "teammates": [
-        "Tiny Hands",
-        "Tortrix",
-        "THE VIPER PERUANO"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "Brotherman Bill",
-        "Terry",
-        "Ode To  A Pineapple"
-      ]
-    },
     {
       "matchId": 492381514,
       "description": "10x3x Bamboo Nothing ",
@@ -540,6 +517,30 @@
         "Wololo",
         "mothysime11",
         "baianitro"
+      ]
+    },
+    {
+      "matchId": 493163891,
+      "description": "Bamboo nothing 10X3X",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784383564,
+      "outcome": "loss",
+      "preRating": 967,
+      "postRating": 953,
+      "eloChange": -14,
+      "civ": "Tatars",
+      "teamAvgElo": 992,
+      "opponentAvgElo": 1008,
+      "teammates": [
+        "gemmascho",
+        "sppd3181",
+        "Lykerya"
+      ],
+      "opponents": [
+        "yxsko93",
+        "Lumedge",
+        "adrian",
+        "TR.elephantman"
       ]
     }
   ]

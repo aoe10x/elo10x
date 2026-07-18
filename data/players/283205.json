@@ -1,12 +1,12 @@
 {
   "profile_id": 283205,
   "alias": "r9maximus",
-  "rating": 1059,
+  "rating": 1040,
   "wins": 22,
-  "losses": 19,
-  "gamesCount": 41,
-  "winRate": 54,
-  "lastPlayedAt": 1784320982,
+  "losses": 20,
+  "gamesCount": 42,
+  "winRate": 52,
+  "lastPlayedAt": 1784380972,
   "country": "nl",
   "merged_ids": [],
   "ratingHistory": [
@@ -51,33 +51,10 @@
     1044,
     1028,
     1043,
-    1059
+    1059,
+    1040
   ],
   "recentMatches": [
-    {
-      "matchId": 423513509,
-      "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1759712460,
-      "outcome": "win",
-      "preRating": 1059,
-      "postRating": 1079,
-      "eloChange": 20,
-      "civ": "Goths",
-      "teamAvgElo": 1054,
-      "opponentAvgElo": 1139,
-      "teammates": [
-        "Glasg0w",
-        "OldManofStorr",
-        "Feitoria"
-      ],
-      "opponents": [
-        "老K",
-        "checkdis",
-        "Jormungand",
-        "Max"
-      ]
-    },
     {
       "matchId": 425528822,
       "description": "10x 3x shared,random, up-up-up,research",
@@ -532,6 +509,30 @@
         "TR.elephantman",
         "La_Fratellanza",
         "HighPriestCaco"
+      ]
+    },
+    {
+      "matchId": 493156542,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784380972,
+      "outcome": "loss",
+      "preRating": 1059,
+      "postRating": 1040,
+      "eloChange": -19,
+      "civ": "Poles",
+      "teamAvgElo": 1061,
+      "opponentAvgElo": 1004,
+      "teammates": [
+        "Zak",
+        "wintre",
+        "青松"
+      ],
+      "opponents": [
+        "gemmascho",
+        "...",
+        "Trekkspell",
+        "漫山哒哒哒"
       ]
     }
   ]

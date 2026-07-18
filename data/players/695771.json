@@ -1,12 +1,12 @@
 {
   "profile_id": 695771,
   "alias": "Delf",
-  "rating": 1016,
+  "rating": 1005,
   "wins": 11,
-  "losses": 11,
-  "gamesCount": 22,
-  "winRate": 50,
-  "lastPlayedAt": 1784375750,
+  "losses": 12,
+  "gamesCount": 23,
+  "winRate": 48,
+  "lastPlayedAt": 1784382250,
   "country": "at",
   "merged_ids": [],
   "ratingHistory": [
@@ -32,33 +32,10 @@
     993,
     1015,
     1033,
-    1016
+    1016,
+    1005
   ],
   "recentMatches": [
-    {
-      "matchId": 197810791,
-      "description": "10x civ shared bonus NEW FOREST PRISON",
-      "mapname": "Unknown",
-      "timestamp": 1672077960,
-      "outcome": "loss",
-      "preRating": 1081,
-      "postRating": 1026,
-      "eloChange": -55,
-      "civ": "Chinese",
-      "teamAvgElo": 987,
-      "opponentAvgElo": 1000,
-      "teammates": [
-        "AOC_Snake",
-        "赵日天",
-        "filtercoffee"
-      ],
-      "opponents": [
-        "Koalakapitaen",
-        "rizmon",
-        "CoditZa",
-        "UlissePigro"
-      ]
-    },
     {
       "matchId": 290221967,
       "description": "10x shared, 4v4, random civs, michi",
@@ -513,6 +490,30 @@
         "apolizer",
         "wintre",
         "Goodsoup"
+      ]
+    },
+    {
+      "matchId": 493160578,
+      "description": "Bamboo nothing 10X3X",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784382250,
+      "outcome": "loss",
+      "preRating": 1016,
+      "postRating": 1005,
+      "eloChange": -11,
+      "civ": "Britons",
+      "teamAvgElo": 1033,
+      "opponentAvgElo": 1130,
+      "teammates": [
+        "yxsko93",
+        "漫山哒哒哒",
+        "青松"
+      ],
+      "opponents": [
+        "Lumedge",
+        "pandalam",
+        "老K",
+        "yimacs_yoyoyo"
       ]
     }
   ]

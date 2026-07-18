@@ -1,12 +1,12 @@
 {
   "profile_id": 25228163,
   "alias": "Maxim Liann",
-  "rating": 998,
+  "rating": 984,
   "wins": 22,
-  "losses": 41,
-  "gamesCount": 63,
-  "winRate": 35,
-  "lastPlayedAt": 1784343923,
+  "losses": 42,
+  "gamesCount": 64,
+  "winRate": 34,
+  "lastPlayedAt": 1784389875,
   "country": "br",
   "merged_ids": [
     13623515,
@@ -76,33 +76,10 @@
     969,
     991,
     1012,
-    998
+    998,
+    984
   ],
   "recentMatches": [
-    {
-      "matchId": 492621812,
-      "description": "Bamboo 10x Shared 3x Tech",
-      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
-      "timestamp": 1784171702,
-      "outcome": "loss",
-      "preRating": 898,
-      "postRating": 886,
-      "eloChange": -12,
-      "civ": "Celts",
-      "teamAvgElo": 995,
-      "opponentAvgElo": 976,
-      "teammates": [
-        "Parts",
-        "Moose",
-        "Meursault005"
-      ],
-      "opponents": [
-        "baianitro",
-        "Tiny Hands",
-        "Wozbo",
-        "Consume Product"
-      ]
-    },
     {
       "matchId": 492800010,
       "description": "10x3x ",
@@ -557,6 +534,30 @@
         "bigjames",
         "紫蝶黄蜂俱有情",
         "konishika"
+      ]
+    },
+    {
+      "matchId": 493189231,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784389875,
+      "outcome": "loss",
+      "preRating": 998,
+      "postRating": 984,
+      "eloChange": -14,
+      "civ": "Byzantines",
+      "teamAvgElo": 1020,
+      "opponentAvgElo": 1050,
+      "teammates": [
+        "...",
+        "Voskarius",
+        "La_Fratellanza"
+      ],
+      "opponents": [
+        "gemmascho",
+        "kekekeya",
+        "LonelyKnight",
+        "universeagle"
       ]
     }
   ]

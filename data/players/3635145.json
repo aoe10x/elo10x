@@ -1,12 +1,12 @@
 {
   "profile_id": 3635145,
   "alias": "Prinz Kay1",
-  "rating": 1054,
-  "wins": 41,
+  "rating": 1069,
+  "wins": 42,
   "losses": 37,
-  "gamesCount": 78,
+  "gamesCount": 79,
   "winRate": 53,
-  "lastPlayedAt": 1784377911,
+  "lastPlayedAt": 1784385683,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -88,33 +88,10 @@
     1069,
     1052,
     1068,
-    1054
+    1054,
+    1069
   ],
   "recentMatches": [
-    {
-      "matchId": 491394915,
-      "description": "10x 3x Bamboo (Inshallah)",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783716742,
-      "outcome": "win",
-      "preRating": 1027,
-      "postRating": 1043,
-      "eloChange": 16,
-      "civ": "Dravidians",
-      "teamAvgElo": 1068,
-      "opponentAvgElo": 1029,
-      "teammates": [
-        "Scipio",
-        "Zak",
-        "ISwaZz"
-      ],
-      "opponents": [
-        "BigAl",
-        "Borkan",
-        "Lordetion",
-        "Sensei"
-      ]
-    },
     {
       "matchId": 491397795,
       "description": "10x 3x bamboo",
@@ -569,6 +546,30 @@
         "fclem",
         "pandalam",
         "老K"
+      ]
+    },
+    {
+      "matchId": 493172970,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784385683,
+      "outcome": "win",
+      "preRating": 1054,
+      "postRating": 1069,
+      "eloChange": 15,
+      "civ": "Mongols",
+      "teamAvgElo": 1011,
+      "opponentAvgElo": 1028,
+      "teammates": [
+        "gamingtars",
+        "Silent Annihilation",
+        "[S33]ff"
+      ],
+      "opponents": [
+        "iamatthe.hell",
+        "Papillon",
+        "tonkatumura",
+        "Lykerya"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 632840,
   "alias": "malth",
-  "rating": 943,
+  "rating": 931,
   "wins": 8,
-  "losses": 15,
-  "gamesCount": 23,
-  "winRate": 35,
-  "lastPlayedAt": 1784210706,
+  "losses": 16,
+  "gamesCount": 24,
+  "winRate": 33,
+  "lastPlayedAt": 1784387372,
   "country": "jp",
   "merged_ids": [],
   "ratingHistory": [
@@ -33,33 +33,10 @@
     948,
     937,
     927,
-    943
+    943,
+    931
   ],
   "recentMatches": [
-    {
-      "matchId": 365268152,
-      "description": "10x civ 3x tech Bamboo nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1736885520,
-      "outcome": "loss",
-      "preRating": 976,
-      "postRating": 940,
-      "eloChange": -36,
-      "civ": "Unknown",
-      "teamAvgElo": 1034,
-      "opponentAvgElo": 1041,
-      "teammates": [
-        "badidakchum",
-        "vikneT1",
-        "Mr.Awesome"
-      ],
-      "opponents": [
-        "S1xZ3r0",
-        "软饭硬吃",
-        "NoxMortus",
-        "BladeY"
-      ]
-    },
     {
       "matchId": 366109086,
       "description": "BAMBOO 3X10X",
@@ -514,6 +491,30 @@
         "FinishedMyBurger",
         "juanmontes005",
         "只玩老钟abc"
+      ]
+    },
+    {
+      "matchId": 493178309,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784387372,
+      "outcome": "loss",
+      "preRating": 943,
+      "postRating": 931,
+      "eloChange": -12,
+      "civ": "Incas",
+      "teamAvgElo": 993,
+      "opponentAvgElo": 1022,
+      "teammates": [
+        "gemmascho",
+        "DnD",
+        "Ruuder"
+      ],
+      "opponents": [
+        "Wozbo",
+        "Texas Red",
+        "Lumedge",
+        "Ravenlost"
       ]
     }
   ]

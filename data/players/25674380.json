@@ -1,12 +1,12 @@
 {
   "profile_id": 25674380,
   "alias": "Optimus",
-  "rating": 1010,
-  "wins": 13,
-  "losses": 15,
-  "gamesCount": 28,
-  "winRate": 46,
-  "lastPlayedAt": 1784321232,
+  "rating": 1011,
+  "wins": 14,
+  "losses": 16,
+  "gamesCount": 30,
+  "winRate": 47,
+  "lastPlayedAt": 1784391324,
   "country": "us",
   "merged_ids": [
     13700923,
@@ -41,57 +41,11 @@
     991,
     1008,
     993,
-    1010
+    1010,
+    1027,
+    1011
   ],
   "recentMatches": [
-    {
-      "matchId": 492106233,
-      "description": "10x 3x bamboo NO IDIOT",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1783964251,
-      "outcome": "loss",
-      "preRating": 983,
-      "postRating": 957,
-      "eloChange": -26,
-      "civ": "Persians",
-      "teamAvgElo": 1056,
-      "opponentAvgElo": 1075,
-      "teammates": [
-        "Chikna Raavan",
-        "YUJIN",
-        "Consume Product"
-      ],
-      "opponents": [
-        "Emusan",
-        "Dellox",
-        "Shadow",
-        "wintre"
-      ]
-    },
-    {
-      "matchId": 492112879,
-      "description": "10x 3x bamboo",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1783966332,
-      "outcome": "win",
-      "preRating": 957,
-      "postRating": 1001,
-      "eloChange": 44,
-      "civ": "Magyars",
-      "teamAvgElo": 1050,
-      "opponentAvgElo": 1066,
-      "teammates": [
-        "Eat MY Sprouts",
-        "YUJIN",
-        "Emusan"
-      ],
-      "opponents": [
-        "Lykerya",
-        "RA",
-        "Pope Leo I.",
-        "NothingAtAll11"
-      ]
-    },
     {
       "matchId": 492188593,
       "description": "10x 3x BaMbOo NoThInG",
@@ -522,6 +476,54 @@
         "yimacs_yoyoyo",
         "iamatthe.hell",
         "Nigerian Farmer"
+      ]
+    },
+    {
+      "matchId": 493169775,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784385284,
+      "outcome": "win",
+      "preRating": 1010,
+      "postRating": 1027,
+      "eloChange": 17,
+      "civ": "Spanish",
+      "teamAvgElo": 1080,
+      "opponentAvgElo": 1030,
+      "teammates": [
+        "wintre",
+        "Voskarius",
+        "Mehandor"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "kaka52pk",
+        "Miwa",
+        "fuec"
+      ]
+    },
+    {
+      "matchId": 493195046,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784391324,
+      "outcome": "loss",
+      "preRating": 1027,
+      "postRating": 1011,
+      "eloChange": -16,
+      "civ": "Romans",
+      "teamAvgElo": 1047,
+      "opponentAvgElo": 1027,
+      "teammates": [
+        "Rito",
+        "komatti",
+        "YUJIN"
+      ],
+      "opponents": [
+        "Papillon",
+        "konishika",
+        "tonkatumura",
+        "Wololo"
       ]
     }
   ]
