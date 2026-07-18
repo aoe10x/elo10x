@@ -1,12 +1,12 @@
 {
   "profile_id": 6398900,
   "alias": "Llucky Llama",
-  "rating": 968,
+  "rating": 954,
   "wins": 40,
-  "losses": 41,
-  "gamesCount": 81,
+  "losses": 42,
+  "gamesCount": 82,
   "winRate": 49,
-  "lastPlayedAt": 1781921091,
+  "lastPlayedAt": 1784404806,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -91,33 +91,10 @@
     941,
     960,
     980,
-    968
+    968,
+    954
   ],
   "recentMatches": [
-    {
-      "matchId": 439177205,
-      "description": "…:::|||||||    10x  3x    |||||||:::…",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1765440540,
-      "outcome": "loss",
-      "preRating": 1020,
-      "postRating": 1003,
-      "eloChange": -17,
-      "civ": "Dravidians",
-      "teamAvgElo": 1037,
-      "opponentAvgElo": 1009,
-      "teammates": [
-        "cliff",
-        "Lucifer",
-        "pandasadnap"
-      ],
-      "opponents": [
-        "TheRiceMan",
-        "roosfort",
-        "FlyingSheep",
-        "Beerdman"
-      ]
-    },
     {
       "matchId": 439284833,
       "description": "4V4 ===10x shared 3Xtech  4V4 random",
@@ -572,6 +549,30 @@
         "WeaponizedAutism",
         "Wimac",
         "goldinggunsandparts"
+      ]
+    },
+    {
+      "matchId": 493246223,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784404806,
+      "outcome": "loss",
+      "preRating": 968,
+      "postRating": 954,
+      "eloChange": -14,
+      "civ": "Persians",
+      "teamAvgElo": 1008,
+      "opponentAvgElo": 1017,
+      "teammates": [
+        "Parts",
+        "Maxim Liann",
+        "PITON | Shepy"
+      ],
+      "opponents": [
+        "LonelyKnight",
+        "abatyse6533",
+        "[B] Cannino",
+        "jair_silva"
       ]
     }
   ]

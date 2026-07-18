@@ -1,12 +1,12 @@
 {
   "profile_id": 3456680,
   "alias": "GenP",
-  "rating": 905,
+  "rating": 896,
   "wins": 36,
-  "losses": 57,
-  "gamesCount": 93,
-  "winRate": 39,
-  "lastPlayedAt": 1784378954,
+  "losses": 58,
+  "gamesCount": 94,
+  "winRate": 38,
+  "lastPlayedAt": 1784396949,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -103,33 +103,10 @@
     930,
     923,
     914,
-    905
+    905,
+    896
   ],
   "recentMatches": [
-    {
-      "matchId": 490245567,
-      "description": "4vs4 10x 3x shared civ bonus, random civ",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1783252439,
-      "outcome": "loss",
-      "preRating": 1028,
-      "postRating": 1018,
-      "eloChange": -10,
-      "civ": "Armenians",
-      "teamAvgElo": 1073,
-      "opponentAvgElo": 1161,
-      "teammates": [
-        "kekekeya",
-        "Maic",
-        "VArbitV"
-      ],
-      "opponents": [
-        "yimacs_yoyoyo",
-        "pandalam",
-        "gemmascho",
-        "ISwaZz"
-      ]
-    },
     {
       "matchId": 490253489,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -584,6 +561,30 @@
         "NoxMortus",
         "iamatthe.hell",
         "G"
+      ]
+    },
+    {
+      "matchId": 493213999,
+      "description": "+10x+3xtech   no noob ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784396949,
+      "outcome": "loss",
+      "preRating": 905,
+      "postRating": 896,
+      "eloChange": -9,
+      "civ": "Persians",
+      "teamAvgElo": 1023,
+      "opponentAvgElo": 1056,
+      "teammates": [
+        "拍车面前人人平等",
+        "DnD",
+        "hingamp"
+      ],
+      "opponents": [
+        "beat",
+        "Frz",
+        "pool_champ",
+        "The Naked Gothman"
       ]
     }
   ]

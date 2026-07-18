@@ -1,12 +1,12 @@
 {
   "profile_id": 2072005,
   "alias": "Costco1.50HotDog",
-  "rating": 942,
-  "wins": 10,
+  "rating": 979,
+  "wins": 12,
   "losses": 19,
-  "gamesCount": 29,
-  "winRate": 34,
-  "lastPlayedAt": 1782027780,
+  "gamesCount": 31,
+  "winRate": 39,
+  "lastPlayedAt": 1784400796,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -39,57 +39,11 @@
     944,
     932,
     951,
-    942
+    942,
+    961,
+    979
   ],
   "recentMatches": [
-    {
-      "matchId": 336500774,
-      "description": "4vs4 10x shared civ amazon tunnel",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1725180120,
-      "outcome": "loss",
-      "preRating": 960,
-      "postRating": 929,
-      "eloChange": -31,
-      "civ": "Unknown",
-      "teamAvgElo": 985,
-      "opponentAvgElo": 987,
-      "teammates": [
-        "luap4him",
-        "noahstealssheep",
-        "WildBoar"
-      ],
-      "opponents": [
-        "p0nzzz",
-        "Mr. Gergin",
-        "adrian",
-        "no good"
-      ]
-    },
-    {
-      "matchId": 386461407,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1745049720,
-      "outcome": "loss",
-      "preRating": 929,
-      "postRating": 907,
-      "eloChange": -22,
-      "civ": "Mongols",
-      "teamAvgElo": 1038,
-      "opponentAvgElo": 1046,
-      "teammates": [
-        "Kumad",
-        "Caba da Muleste da Paçoca",
-        "Myriad"
-      ],
-      "opponents": [
-        "RedPanda",
-        "Paulichromatic",
-        "Cheesewheel24",
-        "Captain Falcon"
-      ]
-    },
     {
       "matchId": 386632150,
       "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
@@ -520,6 +474,54 @@
         "EL__PATRON",
         "Myriad",
         "PoonSlapper"
+      ]
+    },
+    {
+      "matchId": 493224300,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784399305,
+      "outcome": "win",
+      "preRating": 942,
+      "postRating": 961,
+      "eloChange": 19,
+      "civ": "Bulgarians",
+      "teamAvgElo": 1072,
+      "opponentAvgElo": 1001,
+      "teammates": [
+        "Lumedge",
+        "Baz1337",
+        "田瘾犯了"
+      ],
+      "opponents": [
+        "iamatthe.hell",
+        "golhmogh",
+        "universeagle",
+        "Ruuder"
+      ]
+    },
+    {
+      "matchId": 493229423,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784400796,
+      "outcome": "win",
+      "preRating": 961,
+      "postRating": 979,
+      "eloChange": 18,
+      "civ": "Malay",
+      "teamAvgElo": 1017,
+      "opponentAvgElo": 1005,
+      "teammates": [
+        "iamatthe.hell",
+        "The Naked Gothman",
+        "golhmogh"
+      ],
+      "opponents": [
+        "Ellie91",
+        "goldinggunsandparts",
+        "VAPE NAYSH Y'ALL",
+        "Shidoki"
       ]
     }
   ]

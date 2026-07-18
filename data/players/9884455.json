@@ -1,12 +1,12 @@
 {
   "profile_id": 9884455,
   "alias": "fuec",
-  "rating": 902,
+  "rating": 892,
   "wins": 9,
-  "losses": 20,
-  "gamesCount": 29,
-  "winRate": 31,
-  "lastPlayedAt": 1784385284,
+  "losses": 21,
+  "gamesCount": 30,
+  "winRate": 30,
+  "lastPlayedAt": 1784394840,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -39,33 +39,10 @@
     935,
     924,
     911,
-    902
+    902,
+    892
   ],
   "recentMatches": [
-    {
-      "matchId": 383063215,
-      "description": "10x civ 3x techs | random civ",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1743798060,
-      "outcome": "win",
-      "preRating": 941,
-      "postRating": 976,
-      "eloChange": 35,
-      "civ": "Unknown",
-      "teamAvgElo": 1023,
-      "opponentAvgElo": 955,
-      "teammates": [
-        "okie dokie",
-        "Lykerya",
-        "ckdenn"
-      ],
-      "opponents": [
-        "orielavr10",
-        "SY_陀舍古帝",
-        "jlk156",
-        "Mr.Awesome"
-      ]
-    },
     {
       "matchId": 383156408,
       "description": "no beginner bamboo 10x shared civ 3x tech",
@@ -520,6 +497,30 @@
         "Voskarius",
         "Optimus",
         "Mehandor"
+      ]
+    },
+    {
+      "matchId": 493207006,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784394840,
+      "outcome": "loss",
+      "preRating": 902,
+      "postRating": 892,
+      "eloChange": -10,
+      "civ": "Dravidians",
+      "teamAvgElo": 1027,
+      "opponentAvgElo": 1051,
+      "teammates": [
+        "Parts",
+        "universeagle",
+        "romeadd"
+      ],
+      "opponents": [
+        "PITON | Shepy",
+        "schrubber",
+        "👨‍🦯‍➡️🫃",
+        "wintre"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 1983767,
   "alias": "MK",
-  "rating": 1026,
+  "rating": 1006,
   "wins": 9,
-  "losses": 8,
-  "gamesCount": 17,
-  "winRate": 53,
-  "lastPlayedAt": 1780038840,
+  "losses": 9,
+  "gamesCount": 18,
+  "winRate": 50,
+  "lastPlayedAt": 1784401099,
   "country": "sa",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,8 @@
     999,
     1028,
     1051,
-    1026
+    1026,
+    1006
   ],
   "recentMatches": [
     {
@@ -436,6 +437,30 @@
         "Ferdinand I of Naples",
         "BALDWIN IV",
         "WipiWi"
+      ]
+    },
+    {
+      "matchId": 493231227,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784401099,
+      "outcome": "loss",
+      "preRating": 1026,
+      "postRating": 1006,
+      "eloChange": -20,
+      "civ": "Italians",
+      "teamAvgElo": 1018,
+      "opponentAvgElo": 1037,
+      "teammates": [
+        "YUJIN",
+        "Maxim Liann",
+        "schrubber"
+      ],
+      "opponents": [
+        "Lykerya",
+        "-[RDU]- Gorda America Forever",
+        "wintre",
+        "LonelyKnight"
       ]
     }
   ]

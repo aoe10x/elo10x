@@ -1,12 +1,12 @@
 {
   "profile_id": 1889959,
   "alias": "Ruuder",
-  "rating": 939,
+  "rating": 929,
   "wins": 51,
-  "losses": 50,
-  "gamesCount": 101,
+  "losses": 51,
+  "gamesCount": 102,
   "winRate": 50,
-  "lastPlayedAt": 1784387372,
+  "lastPlayedAt": 1784399305,
   "country": "ie",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,6 @@
     1161,
     1126,
     1144,
-    1113,
     1129,
     1105,
     1085,
@@ -35,6 +34,7 @@
     1110,
     1094,
     1105,
+    1116,
     1099,
     1113,
     1096,
@@ -60,7 +60,6 @@
     1066,
     1079,
     1098,
-    1079,
     1095,
     1077,
     1092,
@@ -84,6 +83,7 @@
     1011,
     1030,
     1014,
+    1030,
     1014,
     1027,
     1044,
@@ -92,7 +92,6 @@
     1032,
     1047,
     1032,
-    1051,
     1033,
     1015,
     1001,
@@ -109,33 +108,10 @@
     980,
     966,
     952,
-    939
+    939,
+    929
   ],
   "recentMatches": [
-    {
-      "matchId": 487604299,
-      "description": "10x 3x bamboo NO IDIOT",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1782248446,
-      "outcome": "win",
-      "preRating": 1032,
-      "postRating": 1047,
-      "eloChange": 15,
-      "civ": "Lithuanians",
-      "teamAvgElo": 1037,
-      "opponentAvgElo": 1016,
-      "teammates": [
-        "Emusan",
-        "Manba Out",
-        "AwoLl"
-      ],
-      "opponents": [
-        "PITON | Shepy",
-        "Paladin",
-        "Parts",
-        "matt"
-      ]
-    },
     {
       "matchId": 487625637,
       "description": "10x 3x bamboo NO IDIOT",
@@ -590,6 +566,30 @@
         "Texas Red",
         "Lumedge",
         "Ravenlost"
+      ]
+    },
+    {
+      "matchId": 493224300,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784399305,
+      "outcome": "loss",
+      "preRating": 939,
+      "postRating": 929,
+      "eloChange": -10,
+      "civ": "Chinese",
+      "teamAvgElo": 1001,
+      "opponentAvgElo": 1072,
+      "teammates": [
+        "iamatthe.hell",
+        "golhmogh",
+        "universeagle"
+      ],
+      "opponents": [
+        "Lumedge",
+        "Baz1337",
+        "田瘾犯了",
+        "Costco1.50HotDog"
       ]
     }
   ]

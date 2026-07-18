@@ -1,12 +1,12 @@
 {
   "profile_id": 11873535,
   "alias": "romeadd",
-  "rating": 1224,
+  "rating": 1196,
   "wins": 14,
-  "losses": 4,
-  "gamesCount": 18,
-  "winRate": 78,
-  "lastPlayedAt": 1783949926,
+  "losses": 5,
+  "gamesCount": 19,
+  "winRate": 74,
+  "lastPlayedAt": 1784394840,
   "country": "gb",
   "merged_ids": [
     11690840,
@@ -31,7 +31,8 @@
     1177,
     1190,
     1207,
-    1224
+    1224,
+    1196
   ],
   "recentMatches": [
     {
@@ -464,6 +465,30 @@
         "pandalam",
         "dimon21_8",
         "balbers08"
+      ]
+    },
+    {
+      "matchId": 493207006,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784394840,
+      "outcome": "loss",
+      "preRating": 1224,
+      "postRating": 1196,
+      "eloChange": -28,
+      "civ": "Bengalis",
+      "teamAvgElo": 1027,
+      "opponentAvgElo": 1051,
+      "teammates": [
+        "Parts",
+        "universeagle",
+        "fuec"
+      ],
+      "opponents": [
+        "PITON | Shepy",
+        "schrubber",
+        "👨‍🦯‍➡️🫃",
+        "wintre"
       ]
     }
   ]
