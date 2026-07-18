@@ -1,12 +1,12 @@
 {
   "profile_id": 10149813,
   "alias": "UndreamtBacon8",
-  "rating": 1093,
-  "wins": 45,
+  "rating": 1108,
+  "wins": 46,
   "losses": 57,
-  "gamesCount": 102,
-  "winRate": 44,
-  "lastPlayedAt": 1784127261,
+  "gamesCount": 103,
+  "winRate": 45,
+  "lastPlayedAt": 1784346327,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -23,10 +23,10 @@
     817,
     803,
     791,
-    783,
     773,
     764,
     801,
+    836,
     827,
     819,
     846,
@@ -47,7 +47,6 @@
     960,
     980,
     999,
-    988,
     977,
     967,
     983,
@@ -60,6 +59,7 @@
     953,
     971,
     957,
+    977,
     995,
     979,
     998,
@@ -72,7 +72,6 @@
     938,
     927,
     945,
-    965,
     953,
     974,
     962,
@@ -92,11 +91,11 @@
     966,
     953,
     938,
+    928,
     949,
     970,
     992,
     978,
-    998,
     1018,
     1034,
     1022,
@@ -109,33 +108,10 @@
     1050,
     1065,
     1080,
-    1093
+    1093,
+    1108
   ],
   "recentMatches": [
-    {
-      "matchId": 482559350,
-      "description": "i kun 10x3x 4v4s ",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1780494584,
-      "outcome": "loss",
-      "preRating": 953,
-      "postRating": 938,
-      "eloChange": -15,
-      "civ": "Burmese",
-      "teamAvgElo": 997,
-      "opponentAvgElo": 977,
-      "teammates": [
-        "i kun 2.5",
-        "lul",
-        "勇战到抵"
-      ],
-      "opponents": [
-        "Not a Wizard",
-        "Railbuilder",
-        "half sucked mango",
-        "Jormungand"
-      ]
-    },
     {
       "matchId": 482722642,
       "description": "10x 3x Bamboo best lobby",
@@ -590,6 +566,30 @@
         "Memberwise",
         "Ghandi",
         "M¤l₫"
+      ]
+    },
+    {
+      "matchId": 493068823,
+      "description": "10x 3x Bamboo (fair and balanced)",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784346327,
+      "outcome": "win",
+      "preRating": 1093,
+      "postRating": 1108,
+      "eloChange": 15,
+      "civ": "Berbers",
+      "teamAvgElo": 1062,
+      "opponentAvgElo": 1071,
+      "teammates": [
+        "Contry",
+        "紫蝶黄蜂俱有情",
+        "Your Ego"
+      ],
+      "opponents": [
+        "Scipio",
+        "nooblet3300",
+        "juanzenonverdun",
+        "typ53b90"
       ]
     }
   ]

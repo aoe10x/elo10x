@@ -1,12 +1,12 @@
 {
   "profile_id": 367257,
   "alias": "Bambamdumm",
-  "rating": 1078,
+  "rating": 1058,
   "wins": 25,
-  "losses": 23,
-  "gamesCount": 48,
-  "winRate": 52,
-  "lastPlayedAt": 1784303630,
+  "losses": 24,
+  "gamesCount": 49,
+  "winRate": 51,
+  "lastPlayedAt": 1784347872,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -58,33 +58,10 @@
     1065,
     1081,
     1096,
-    1078
+    1078,
+    1058
   ],
   "recentMatches": [
-    {
-      "matchId": 449234844,
-      "description": "10x+3xtech no noob",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1768750740,
-      "outcome": "loss",
-      "preRating": 1049,
-      "postRating": 1034,
-      "eloChange": -15,
-      "civ": "Unknown",
-      "teamAvgElo": 1050,
-      "opponentAvgElo": 1063,
-      "teammates": [
-        "紫蝶黄蜂俱有情",
-        "SeeYouTomorrow",
-        "Clean"
-      ],
-      "opponents": [
-        "OK",
-        "Lumedge",
-        "萌萌",
-        "田瘾犯了"
-      ]
-    },
     {
       "matchId": 449237064,
       "description": "Bamboo nothing 10X3X",
@@ -539,6 +516,30 @@
         "jpllops",
         "Frederick",
         "Prinz Kay1"
+      ]
+    },
+    {
+      "matchId": 493073685,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784347872,
+      "outcome": "loss",
+      "preRating": 1078,
+      "postRating": 1058,
+      "eloChange": -20,
+      "civ": "Khmer",
+      "teamAvgElo": 1046,
+      "opponentAvgElo": 986,
+      "teammates": [
+        "jiasenguo1993",
+        "derailer9",
+        "Contry"
+      ],
+      "opponents": [
+        "baianitro",
+        "Monster_HK",
+        "ttv dontHYRTme",
+        "TheRizzler"
       ]
     }
   ]

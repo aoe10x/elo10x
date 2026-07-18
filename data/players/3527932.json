@@ -1,12 +1,12 @@
 {
   "profile_id": 3527932,
   "alias": "Dildo Swaggens",
-  "rating": 921,
+  "rating": 908,
   "wins": 10,
-  "losses": 20,
-  "gamesCount": 30,
-  "winRate": 33,
-  "lastPlayedAt": 1783038337,
+  "losses": 21,
+  "gamesCount": 31,
+  "winRate": 32,
+  "lastPlayedAt": 1784335618,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -40,33 +40,10 @@
     922,
     912,
     932,
-    921
+    921,
+    908
   ],
   "recentMatches": [
-    {
-      "matchId": 475445813,
-      "description": "4vs4 10x 3x shared civ bonus, random civ",
-      "mapname": "Yin Yang",
-      "timestamp": 1777957500,
-      "outcome": "win",
-      "preRating": 900,
-      "postRating": 947,
-      "eloChange": 47,
-      "civ": "Britons",
-      "teamAvgElo": 1007,
-      "opponentAvgElo": 1068,
-      "teammates": [
-        "yimacs_yoyoyo",
-        "Fajny Człowiek",
-        "|Line~"
-      ],
-      "opponents": [
-        "Maic",
-        "GuguBot",
-        "NothingAtAll11",
-        "tH_cept"
-      ]
-    },
     {
       "matchId": 475465051,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -521,6 +498,30 @@
         "feid_",
         "rcmccallum",
         "Cale94"
+      ]
+    },
+    {
+      "matchId": 493036161,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784335618,
+      "outcome": "loss",
+      "preRating": 921,
+      "postRating": 908,
+      "eloChange": -13,
+      "civ": "Cumans",
+      "teamAvgElo": 1032,
+      "opponentAvgElo": 995,
+      "teammates": [
+        "NoAgendaPODCAST",
+        "Paulichromatic",
+        "Vulkan"
+      ],
+      "opponents": [
+        "Your Ego",
+        "BXGS_BXNNY",
+        "Apostate of Hate",
+        "GrandUni"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 18191874,
   "alias": "Vader",
-  "rating": 1143,
+  "rating": 1122,
   "wins": 54,
-  "losses": 34,
-  "gamesCount": 88,
+  "losses": 35,
+  "gamesCount": 89,
   "winRate": 61,
-  "lastPlayedAt": 1784315388,
+  "lastPlayedAt": 1784332082,
   "country": "pe",
   "merged_ids": [
     12628022,
@@ -101,33 +101,10 @@
     1107,
     1120,
     1132,
-    1143
+    1143,
+    1122
   ],
   "recentMatches": [
-    {
-      "matchId": 478584012,
-      "description": "Bamboo 10x 3x",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1779044217,
-      "outcome": "win",
-      "preRating": 1076,
-      "postRating": 1091,
-      "eloChange": 15,
-      "civ": "Burgundians",
-      "teamAvgElo": 1068,
-      "opponentAvgElo": 1056,
-      "teammates": [
-        "OldManofStorr",
-        "LonelyKnight",
-        "Nimreh"
-      ],
-      "opponents": [
-        "Max",
-        "Kalervo Jankko",
-        "highROLEX",
-        "gamingtars"
-      ]
-    },
     {
       "matchId": 479000072,
       "description": "i kun 10x3x 4v4s ",
@@ -582,6 +559,30 @@
         "apolizer",
         "RadioActiveMan",
         "ISwaZz"
+      ]
+    },
+    {
+      "matchId": 493027340,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784332082,
+      "outcome": "loss",
+      "preRating": 1143,
+      "postRating": 1122,
+      "eloChange": -21,
+      "civ": "Celts",
+      "teamAvgElo": 1037,
+      "opponentAvgElo": 1021,
+      "teammates": [
+        "baianitro",
+        "Paris Hilton",
+        "Ode To  A Pineapple"
+      ],
+      "opponents": [
+        "squeegee",
+        "drdecwho",
+        "NothingAtAll11",
+        "Ghost_pt"
       ]
     }
   ]

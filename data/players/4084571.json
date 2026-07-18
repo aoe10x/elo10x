@@ -1,12 +1,12 @@
 {
   "profile_id": 4084571,
   "alias": "Mahmut",
-  "rating": 954,
-  "wins": 7,
+  "rating": 979,
+  "wins": 8,
   "losses": 11,
-  "gamesCount": 18,
-  "winRate": 39,
-  "lastPlayedAt": 1784294831,
+  "gamesCount": 19,
+  "winRate": 42,
+  "lastPlayedAt": 1784339482,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -28,7 +28,8 @@
     973,
     951,
     930,
-    954
+    954,
+    979
   ],
   "recentMatches": [
     {
@@ -461,6 +462,30 @@
         "MaxLort",
         "Lumedge",
         "jonathahyoga"
+      ]
+    },
+    {
+      "matchId": 493047808,
+      "description": "10x 3x Bamboo",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784339482,
+      "outcome": "win",
+      "preRating": 954,
+      "postRating": 979,
+      "eloChange": 25,
+      "civ": "Ethiopians",
+      "teamAvgElo": 974,
+      "opponentAvgElo": 1061,
+      "teammates": [
+        "Not a Wizard",
+        "Haer Wei Who",
+        "Maxim Liann"
+      ],
+      "opponents": [
+        "Ghost_pt",
+        "nice",
+        "{R} Parry",
+        "Pogonophobia69"
       ]
     }
   ]

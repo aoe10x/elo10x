@@ -1,12 +1,12 @@
 {
   "profile_id": 25563315,
   "alias": "nice",
-  "rating": 932,
+  "rating": 912,
   "wins": 5,
-  "losses": 11,
-  "gamesCount": 16,
-  "winRate": 31,
-  "lastPlayedAt": 1784274438,
+  "losses": 12,
+  "gamesCount": 17,
+  "winRate": 29,
+  "lastPlayedAt": 1784339482,
   "country": "au",
   "merged_ids": [
     13683386,
@@ -29,7 +29,8 @@
     938,
     919,
     902,
-    932
+    932,
+    912
   ],
   "recentMatches": [
     {
@@ -414,6 +415,30 @@
         "babeleo",
         "Evil  Destroyer",
         "Maxim Liann"
+      ]
+    },
+    {
+      "matchId": 493047808,
+      "description": "10x 3x Bamboo",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784339482,
+      "outcome": "loss",
+      "preRating": 932,
+      "postRating": 912,
+      "eloChange": -20,
+      "civ": "Vietnamese",
+      "teamAvgElo": 1061,
+      "opponentAvgElo": 974,
+      "teammates": [
+        "Ghost_pt",
+        "{R} Parry",
+        "Pogonophobia69"
+      ],
+      "opponents": [
+        "Not a Wizard",
+        "Haer Wei Who",
+        "Maxim Liann",
+        "Mahmut"
       ]
     }
   ]

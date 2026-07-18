@@ -1,12 +1,12 @@
 {
   "profile_id": 2843438,
   "alias": "Scipio",
-  "rating": 1069,
+  "rating": 1053,
   "wins": 26,
-  "losses": 25,
-  "gamesCount": 51,
-  "winRate": 51,
-  "lastPlayedAt": 1784151981,
+  "losses": 26,
+  "gamesCount": 52,
+  "winRate": 50,
+  "lastPlayedAt": 1784346327,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -61,33 +61,10 @@
     1053,
     1040,
     1056,
-    1069
+    1069,
+    1053
   ],
   "recentMatches": [
-    {
-      "matchId": 491727082,
-      "description": "10x Shared 3 x tech Bamboo",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783828804,
-      "outcome": "win",
-      "preRating": 1050,
-      "postRating": 1065,
-      "eloChange": 15,
-      "civ": "Gurjaras",
-      "teamAvgElo": 1000,
-      "opponentAvgElo": 1029,
-      "teammates": [
-        "Candy Burglar",
-        "treehugger",
-        "baianitro"
-      ],
-      "opponents": [
-        "Captain Stripes",
-        "vincentc95",
-        "pool_champ",
-        "Tiny Hands"
-      ]
-    },
     {
       "matchId": 491742325,
       "description": "10x 3x Bamboo (Fair & Balanced)",
@@ -542,6 +519,30 @@
         "CristoTheRealCeisto",
         "ElmoWithoutL",
         "Ellie91"
+      ]
+    },
+    {
+      "matchId": 493068823,
+      "description": "10x 3x Bamboo (fair and balanced)",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784346327,
+      "outcome": "loss",
+      "preRating": 1069,
+      "postRating": 1053,
+      "eloChange": -16,
+      "civ": "Persians",
+      "teamAvgElo": 1071,
+      "opponentAvgElo": 1062,
+      "teammates": [
+        "nooblet3300",
+        "juanzenonverdun",
+        "typ53b90"
+      ],
+      "opponents": [
+        "Contry",
+        "紫蝶黄蜂俱有情",
+        "UndreamtBacon8",
+        "Your Ego"
       ]
     }
   ]

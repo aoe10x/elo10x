@@ -1,12 +1,12 @@
 {
   "profile_id": 2531875,
   "alias": "Yee",
-  "rating": 998,
-  "wins": 26,
+  "rating": 1015,
+  "wins": 27,
   "losses": 34,
-  "gamesCount": 60,
-  "winRate": 43,
-  "lastPlayedAt": 1781993337,
+  "gamesCount": 61,
+  "winRate": 44,
+  "lastPlayedAt": 1784342519,
   "country": "ch",
   "merged_ids": [
     2531875,
@@ -73,33 +73,10 @@
     975,
     961,
     981,
-    998
+    998,
+    1015
   ],
   "recentMatches": [
-    {
-      "matchId": 398493944,
-      "description": "4vs4 10x 3x shared civ bonus, random civ",
-      "mapname": "Bamboo Nothing_Paren_V2.3",
-      "timestamp": 1749438540,
-      "outcome": "loss",
-      "preRating": 939,
-      "postRating": 930,
-      "eloChange": -9,
-      "civ": "Unknown",
-      "teamAvgElo": 1009,
-      "opponentAvgElo": 1099,
-      "teammates": [
-        "yimacs_yoyoyo",
-        "gemmascho",
-        "__VK__"
-      ],
-      "opponents": [
-        "iamatthe.hell",
-        "Grimmie",
-        "gstone",
-        "TabA_ausitin"
-      ]
-    },
     {
       "matchId": 399744185,
       "description": "10x civ bonus 4v4",
@@ -554,6 +531,30 @@
         "hayyork",
         "tacotoy",
         "Barosanu512"
+      ]
+    },
+    {
+      "matchId": 493055472,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784342519,
+      "outcome": "win",
+      "preRating": 998,
+      "postRating": 1015,
+      "eloChange": 17,
+      "civ": "Armenians",
+      "teamAvgElo": 1122,
+      "opponentAvgElo": 1029,
+      "teammates": [
+        "Ghost_pt",
+        "侯傻傻ᔦఠఠᔨ shasha",
+        "mothysime11"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "Moose",
+        "WipiWi",
+        "Not a Wizard"
       ]
     }
   ]
