@@ -1,12 +1,12 @@
 {
   "profile_id": 18394491,
   "alias": "Trajano",
-  "rating": 993,
-  "wins": 29,
+  "rating": 1011,
+  "wins": 30,
   "losses": 44,
-  "gamesCount": 73,
-  "winRate": 40,
-  "lastPlayedAt": 1784271855,
+  "gamesCount": 74,
+  "winRate": 41,
+  "lastPlayedAt": 1784356152,
   "country": "cl",
   "merged_ids": [
     12637095,
@@ -86,33 +86,10 @@
     974,
     991,
     1007,
-    993
+    993,
+    1011
   ],
   "recentMatches": [
-    {
-      "matchId": 412270905,
-      "description": "10x3x Diff map  shared bonus random civ  no noob",
-      "mapname": "Bamboo Nothing_Paren_V2.3",
-      "timestamp": 1754993460,
-      "outcome": "loss",
-      "preRating": 915,
-      "postRating": 906,
-      "eloChange": -9,
-      "civ": "Berbers",
-      "teamAvgElo": 955,
-      "opponentAvgElo": 1089,
-      "teammates": [
-        "63e pears",
-        "lockemisc",
-        "Glasg0w"
-      ],
-      "opponents": [
-        "Your Ego",
-        "Semisky",
-        "Scipio Africanus",
-        "Mehandor"
-      ]
-    },
     {
       "matchId": 413058613,
       "description": "+10x+3xtcch   no noob",
@@ -567,6 +544,30 @@
         "FrostByte",
         "476055690",
         "The Cobra Brothers"
+      ]
+    },
+    {
+      "matchId": 493095547,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784356152,
+      "outcome": "win",
+      "preRating": 993,
+      "postRating": 1011,
+      "eloChange": 18,
+      "civ": "Vietnamese",
+      "teamAvgElo": 958,
+      "opponentAvgElo": 1037,
+      "teammates": [
+        "Pikachu",
+        "Rapacious Bean",
+        "{German}Kaese"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "Emusan",
+        "Captain Stripes",
+        "UbaneMess"
       ]
     }
   ]

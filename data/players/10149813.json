@@ -1,12 +1,12 @@
 {
   "profile_id": 10149813,
   "alias": "UndreamtBacon8",
-  "rating": 1108,
+  "rating": 1092,
   "wins": 46,
-  "losses": 57,
-  "gamesCount": 103,
-  "winRate": 45,
-  "lastPlayedAt": 1784346327,
+  "losses": 58,
+  "gamesCount": 104,
+  "winRate": 44,
+  "lastPlayedAt": 1784358535,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -20,9 +20,9 @@
     869,
     849,
     832,
-    817,
     803,
     791,
+    783,
     773,
     764,
     801,
@@ -40,13 +40,13 @@
     949,
     937,
     956,
-    944,
     933,
     954,
     974,
     960,
     980,
     999,
+    988,
     977,
     967,
     983,
@@ -59,7 +59,6 @@
     953,
     971,
     957,
-    977,
     995,
     979,
     998,
@@ -72,6 +71,7 @@
     938,
     927,
     945,
+    965,
     953,
     974,
     962,
@@ -79,7 +79,6 @@
     966,
     987,
     1005,
-    992,
     1013,
     996,
     1012,
@@ -96,10 +95,10 @@
     970,
     992,
     978,
+    998,
     1018,
     1034,
     1022,
-    1006,
     995,
     1014,
     1031,
@@ -109,33 +108,10 @@
     1065,
     1080,
     1093,
-    1108
+    1108,
+    1092
   ],
   "recentMatches": [
-    {
-      "matchId": 482722642,
-      "description": "10x 3x Bamboo best lobby",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1780573080,
-      "outcome": "loss",
-      "preRating": 938,
-      "postRating": 928,
-      "eloChange": -10,
-      "civ": "Persians",
-      "teamAvgElo": 986,
-      "opponentAvgElo": 1082,
-      "teammates": [
-        "typ53b90",
-        "hoderebus",
-        "hhh"
-      ],
-      "opponents": [
-        "procrastination.exe",
-        "Wololo",
-        "yonahan.08",
-        "salchipapas"
-      ]
-    },
     {
       "matchId": 482804550,
       "description": "10x shared 3x tech bamboo nothing",
@@ -590,6 +566,30 @@
         "nooblet3300",
         "juanzenonverdun",
         "typ53b90"
+      ]
+    },
+    {
+      "matchId": 493101161,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784358535,
+      "outcome": "loss",
+      "preRating": 1108,
+      "postRating": 1092,
+      "eloChange": -16,
+      "civ": "Sicilians",
+      "teamAvgElo": 1090,
+      "opponentAvgElo": 1106,
+      "teammates": [
+        "{R} Parry",
+        "Lumedge",
+        "beat"
+      ],
+      "opponents": [
+        "Emusan",
+        "Ye",
+        "nice",
+        "田瘾犯了"
       ]
     }
   ]

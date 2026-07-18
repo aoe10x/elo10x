@@ -1,12 +1,12 @@
 {
   "profile_id": 9437092,
   "alias": "Belisarius",
-  "rating": 1068,
+  "rating": 1051,
   "wins": 16,
-  "losses": 12,
-  "gamesCount": 28,
-  "winRate": 57,
-  "lastPlayedAt": 1784087717,
+  "losses": 13,
+  "gamesCount": 29,
+  "winRate": 55,
+  "lastPlayedAt": 1784353541,
   "country": "tr",
   "merged_ids": [
     9437092,
@@ -41,33 +41,10 @@
     1024,
     1039,
     1055,
-    1068
+    1068,
+    1051
   ],
   "recentMatches": [
-    {
-      "matchId": 489779930,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1783113000,
-      "outcome": "loss",
-      "preRating": 1123,
-      "postRating": 1073,
-      "eloChange": -50,
-      "civ": "Vietnamese",
-      "teamAvgElo": 1050,
-      "opponentAvgElo": 974,
-      "teammates": [
-        "Bryce Coolguy",
-        "Paolo Carrosel",
-        "Llama"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "king_doge",
-        "TR.elephantman",
-        "The Cobra Brothers"
-      ]
-    },
     {
       "matchId": 490581188,
       "description": "10X 3X BAMBOO NHTING  Choose  Civ\r 天天开黑",
@@ -522,6 +499,30 @@
         "dazaetgb",
         "z e o H",
         "Nimu.-"
+      ]
+    },
+    {
+      "matchId": 493088204,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784353541,
+      "outcome": "loss",
+      "preRating": 1068,
+      "postRating": 1051,
+      "eloChange": -17,
+      "civ": "Ethiopians",
+      "teamAvgElo": 954,
+      "opponentAvgElo": 1041,
+      "teammates": [
+        "Wololoo",
+        "Roy G Biv",
+        "MrGuler"
+      ],
+      "opponents": [
+        "Emusan",
+        "ch33tah",
+        "RedBullWOLOLO26",
+        "DapperArtist381"
       ]
     }
   ]

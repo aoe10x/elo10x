@@ -1,12 +1,12 @@
 {
   "profile_id": 4782573,
   "alias": "Lama Kužel",
-  "rating": 1074,
+  "rating": 1059,
   "wins": 27,
-  "losses": 23,
-  "gamesCount": 50,
-  "winRate": 54,
-  "lastPlayedAt": 1784202605,
+  "losses": 24,
+  "gamesCount": 51,
+  "winRate": 53,
+  "lastPlayedAt": 1784361502,
   "country": "sk",
   "merged_ids": [
     4782573,
@@ -63,33 +63,10 @@
     1064,
     1079,
     1092,
-    1074
+    1074,
+    1059
   ],
   "recentMatches": [
-    {
-      "matchId": 483257486,
-      "description": "bamboo nothing 10x",
-      "mapname": "Bamboo Nothing V3 (Bali)",
-      "timestamp": 1780765080,
-      "outcome": "win",
-      "preRating": 1027,
-      "postRating": 1044,
-      "eloChange": 17,
-      "civ": "Persians",
-      "teamAvgElo": 1046,
-      "opponentAvgElo": 1041,
-      "teammates": [
-        "Pilot in training",
-        "Fathrilocram",
-        "Lumedge"
-      ],
-      "opponents": [
-        "[B] Zennith",
-        "[CSGS]Runescape",
-        "-[RDU]- Gorda America Forever",
-        "axiuluo"
-      ]
-    },
     {
       "matchId": 483614737,
       "description": "10x 3x Bamboo - 10xshared.com",
@@ -544,6 +521,30 @@
         "Consume Product",
         "Dellox",
         "Tho315"
+      ]
+    },
+    {
+      "matchId": 493107349,
+      "description": "bamboo nothing 10x",
+      "mapname": "Bamboo Nothing v3 (BaLi)",
+      "timestamp": 1784361502,
+      "outcome": "loss",
+      "preRating": 1074,
+      "postRating": 1059,
+      "eloChange": -15,
+      "civ": "Cumans",
+      "teamAvgElo": 1087,
+      "opponentAvgElo": 1092,
+      "teammates": [
+        "[B] Zennith",
+        "紫蝶黄蜂俱有情",
+        "Megahaufen"
+      ],
+      "opponents": [
+        "青松",
+        "雲",
+        "GrandUni",
+        "kekekeya"
       ]
     }
   ]

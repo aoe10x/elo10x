@@ -1,12 +1,12 @@
 {
   "profile_id": 6558942,
   "alias": "Dr.Ao",
-  "rating": 1006,
+  "rating": 990,
   "wins": 25,
-  "losses": 26,
-  "gamesCount": 51,
-  "winRate": 49,
-  "lastPlayedAt": 1784309865,
+  "losses": 27,
+  "gamesCount": 52,
+  "winRate": 48,
+  "lastPlayedAt": 1784357116,
   "country": "cn",
   "merged_ids": [],
   "ratingHistory": [
@@ -61,33 +61,10 @@
     1049,
     1036,
     1021,
-    1006
+    1006,
+    990
   ],
   "recentMatches": [
-    {
-      "matchId": 492049818,
-      "description": "10x 3x bamboo",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1783945364,
-      "outcome": "loss",
-      "preRating": 1068,
-      "postRating": 1053,
-      "eloChange": -15,
-      "civ": "Malians",
-      "teamAvgElo": 1055,
-      "opponentAvgElo": 1082,
-      "teammates": [
-        "majorleyendo",
-        "Consume Product",
-        "bhasudi--"
-      ],
-      "opponents": [
-        "Lykerya",
-        "sppd3181",
-        "[S33]ff",
-        "Bourne2Believe"
-      ]
-    },
     {
       "matchId": 492060186,
       "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
@@ -542,6 +519,30 @@
         "RA",
         "wintre",
         "Lumedge"
+      ]
+    },
+    {
+      "matchId": 493098056,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784357116,
+      "outcome": "loss",
+      "preRating": 1006,
+      "postRating": 990,
+      "eloChange": -16,
+      "civ": "Wei",
+      "teamAvgElo": 1058,
+      "opponentAvgElo": 998,
+      "teammates": [
+        "青松",
+        "beat",
+        "YUJIN"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "[B] Cannino",
+        "468673564",
+        "nice"
       ]
     }
   ]

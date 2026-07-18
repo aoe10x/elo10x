@@ -1,12 +1,12 @@
 {
   "profile_id": 5868182,
   "alias": "mark0112",
-  "rating": 986,
+  "rating": 970,
   "wins": 20,
-  "losses": 26,
-  "gamesCount": 46,
+  "losses": 27,
+  "gamesCount": 47,
   "winRate": 43,
-  "lastPlayedAt": 1783864163,
+  "lastPlayedAt": 1784354544,
   "country": "tw",
   "merged_ids": [],
   "ratingHistory": [
@@ -56,33 +56,10 @@
     989,
     1011,
     1001,
-    986
+    986,
+    970
   ],
   "recentMatches": [
-    {
-      "matchId": 403596688,
-      "description": "Bamboo Nothing 10x 3x PRO'S ONLY!",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1751481120,
-      "outcome": "win",
-      "preRating": 1054,
-      "postRating": 1068,
-      "eloChange": 14,
-      "civ": "Gurjaras",
-      "teamAvgElo": 1055,
-      "opponentAvgElo": 1021,
-      "teammates": [
-        "Mr.Awesome",
-        "kaka52pk",
-        "Big Joey"
-      ],
-      "opponents": [
-        "PaddyWon",
-        "Megahaufen",
-        "Sps.dc",
-        "GHGGG"
-      ]
-    },
     {
       "matchId": 403793199,
       "description": "10x shared civ 3x",
@@ -537,6 +514,30 @@
         "levvafire",
         "MadRussian",
         "ebonzhang"
+      ]
+    },
+    {
+      "matchId": 493091747,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784354544,
+      "outcome": "loss",
+      "preRating": 986,
+      "postRating": 970,
+      "eloChange": -16,
+      "civ": "Malay",
+      "teamAvgElo": 1034,
+      "opponentAvgElo": 980,
+      "teammates": [
+        "sppd3181",
+        "fxsound",
+        "无法逃离的背叛"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "Captain Stripes",
+        "Wololoo",
+        "master"
       ]
     }
   ]

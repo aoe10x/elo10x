@@ -1,12 +1,12 @@
 {
   "profile_id": 1753972,
   "alias": "Pikachu",
-  "rating": 948,
-  "wins": 23,
-  "losses": 37,
-  "gamesCount": 60,
-  "winRate": 38,
-  "lastPlayedAt": 1784278518,
+  "rating": 959,
+  "wins": 24,
+  "losses": 38,
+  "gamesCount": 62,
+  "winRate": 39,
+  "lastPlayedAt": 1784356152,
   "country": "au",
   "merged_ids": [
     1753972,
@@ -73,57 +73,11 @@
     957,
     943,
     963,
-    948
+    948,
+    939,
+    959
   ],
   "recentMatches": [
-    {
-      "matchId": 478399290,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1779013500,
-      "outcome": "win",
-      "preRating": 960,
-      "postRating": 977,
-      "eloChange": 17,
-      "civ": "Khmer",
-      "teamAvgElo": 988,
-      "opponentAvgElo": 985,
-      "teammates": [
-        "Paris Hilton",
-        "nooblet3300",
-        "FriCla"
-      ],
-      "opponents": [
-        "Bob",
-        "Donald J Trump - Pedo Protector",
-        "[LWS] Mandatum",
-        "Sunnydae"
-      ]
-    },
-    {
-      "matchId": 478953578,
-      "description": "10x bamboo nothing",
-      "mapname": "Bamboo Nothing V3 (Bali)",
-      "timestamp": 1779207780,
-      "outcome": "loss",
-      "preRating": 977,
-      "postRating": 964,
-      "eloChange": -13,
-      "civ": "Portuguese",
-      "teamAvgElo": 1024,
-      "opponentAvgElo": 1042,
-      "teammates": [
-        "[B] Zennith",
-        "Terry",
-        "FAOse7en"
-      ],
-      "opponents": [
-        "^gOsO^",
-        "TR.elephantman",
-        "NoxMortus",
-        "babeleo"
-      ]
-    },
     {
       "matchId": 478954590,
       "description": "10x bamboo nothing",
@@ -554,6 +508,54 @@
         "Maxim Liann",
         "Evil  Destroyer",
         "-[RDU]- Gorda America Forever"
+      ]
+    },
+    {
+      "matchId": 493092572,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784355030,
+      "outcome": "loss",
+      "preRating": 948,
+      "postRating": 939,
+      "eloChange": -9,
+      "civ": "Italians",
+      "teamAvgElo": 993,
+      "opponentAvgElo": 1102,
+      "teammates": [
+        "QI",
+        "AVS20201381",
+        "cesara.serpam"
+      ],
+      "opponents": [
+        "Emusan",
+        "ch33tah",
+        "Jormungand",
+        "Abelardo4tojr"
+      ]
+    },
+    {
+      "matchId": 493095547,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784356152,
+      "outcome": "win",
+      "preRating": 939,
+      "postRating": 959,
+      "eloChange": 20,
+      "civ": "Bohemians",
+      "teamAvgElo": 958,
+      "opponentAvgElo": 1037,
+      "teammates": [
+        "Trajano",
+        "Rapacious Bean",
+        "{German}Kaese"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "Emusan",
+        "Captain Stripes",
+        "UbaneMess"
       ]
     }
   ]
