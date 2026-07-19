@@ -1,12 +1,12 @@
 {
   "profile_id": 2531875,
   "alias": "Yee",
-  "rating": 1015,
+  "rating": 999,
   "wins": 27,
-  "losses": 34,
-  "gamesCount": 61,
+  "losses": 35,
+  "gamesCount": 62,
   "winRate": 44,
-  "lastPlayedAt": 1784342519,
+  "lastPlayedAt": 1784425909,
   "country": "ch",
   "merged_ids": [
     2531875,
@@ -74,33 +74,10 @@
     961,
     981,
     998,
-    1015
+    1015,
+    999
   ],
   "recentMatches": [
-    {
-      "matchId": 399744185,
-      "description": "10x civ bonus 4v4",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1749942960,
-      "outcome": "win",
-      "preRating": 930,
-      "postRating": 951,
-      "eloChange": 21,
-      "civ": "Unknown",
-      "teamAvgElo": 1010,
-      "opponentAvgElo": 1053,
-      "teammates": [
-        "PITON | Lansok007",
-        "Elophant",
-        "Big_Bearded_Beerdrinking_Bear"
-      ],
-      "opponents": [
-        "PitlerCHU",
-        "VergaraRamirez",
-        "Lozzer",
-        "El Barto"
-      ]
-    },
     {
       "matchId": 407044167,
       "description": "10x 3x Bamboo - 10xshared.com",
@@ -555,6 +532,30 @@
         "Moose",
         "WipiWi",
         "Not a Wizard"
+      ]
+    },
+    {
+      "matchId": 493314049,
+      "description": "x3x10x Shared (PQ3.5 Qualty learing)",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784425909,
+      "outcome": "loss",
+      "preRating": 1015,
+      "postRating": 999,
+      "eloChange": -16,
+      "civ": "Incas",
+      "teamAvgElo": 1058,
+      "opponentAvgElo": 1012,
+      "teammates": [
+        "-[RDU]- Gorda America Forever",
+        "Gasnápido",
+        "Mehandor"
+      ],
+      "opponents": [
+        "aLEXt",
+        "sniper-123",
+        "maddymsg",
+        "random_dude"
       ]
     }
   ]

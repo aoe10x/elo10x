@@ -1,12 +1,12 @@
 {
   "profile_id": 405729,
   "alias": "Bambuchagt",
-  "rating": 998,
+  "rating": 988,
   "wins": 18,
-  "losses": 25,
-  "gamesCount": 43,
-  "winRate": 42,
-  "lastPlayedAt": 1783893318,
+  "losses": 26,
+  "gamesCount": 44,
+  "winRate": 41,
+  "lastPlayedAt": 1784432499,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -53,33 +53,10 @@
     1008,
     1025,
     1010,
-    998
+    998,
+    988
   ],
   "recentMatches": [
-    {
-      "matchId": 482335806,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1780432620,
-      "outcome": "win",
-      "preRating": 938,
-      "postRating": 957,
-      "eloChange": 19,
-      "civ": "Huns",
-      "teamAvgElo": 1014,
-      "opponentAvgElo": 1000,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "TUF | DUKE_NUKEM",
-        "Frederick"
-      ],
-      "opponents": [
-        "Kaeften",
-        "Monk",
-        "PITON | Shepy",
-        "StreamerOffline"
-      ]
-    },
     {
       "matchId": 482371078,
       "description": "Bamboo nothing 10X3X",
@@ -534,6 +511,30 @@
         "Regina Ip",
         "田瘾犯了",
         "Kuecken_das_Vollstrecker"
+      ]
+    },
+    {
+      "matchId": 493334851,
+      "description": "PQ 10x 3x bamboo 4vs4",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784432499,
+      "outcome": "loss",
+      "preRating": 998,
+      "postRating": 988,
+      "eloChange": -10,
+      "civ": "Byzantines",
+      "teamAvgElo": 1031,
+      "opponentAvgElo": 1143,
+      "teammates": [
+        "duckbuildperson",
+        "Tiny Hands",
+        "mothysime11"
+      ],
+      "opponents": [
+        "Al Ghouti",
+        "田瘾犯了",
+        "pool_champ",
+        "Dylan Dog"
       ]
     }
   ]

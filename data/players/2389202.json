@@ -1,12 +1,12 @@
 {
   "profile_id": 2389202,
   "alias": "Rooaary",
-  "rating": 972,
+  "rating": 948,
   "wins": 46,
-  "losses": 47,
-  "gamesCount": 93,
-  "winRate": 49,
-  "lastPlayedAt": 1784077232,
+  "losses": 49,
+  "gamesCount": 95,
+  "winRate": 48,
+  "lastPlayedAt": 1784433303,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -103,57 +103,11 @@
     981,
     967,
     954,
-    972
+    972,
+    961,
+    948
   ],
   "recentMatches": [
-    {
-      "matchId": 423407003,
-      "description": "10x 3x shared,random, up-up-up,research",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1759680300,
-      "outcome": "loss",
-      "preRating": 1047,
-      "postRating": 1031,
-      "eloChange": -16,
-      "civ": "Italians",
-      "teamAvgElo": 1038,
-      "opponentAvgElo": 1045,
-      "teammates": [
-        "aggromechanic",
-        "荒ww",
-        "shining star"
-      ],
-      "opponents": [
-        "dimon21_8",
-        "wimble_king",
-        "Memberwise",
-        "beta_player"
-      ]
-    },
-    {
-      "matchId": 427223006,
-      "description": "10x 3x team island",
-      "mapname": "Team Islands",
-      "timestamp": 1760956560,
-      "outcome": "loss",
-      "preRating": 1031,
-      "postRating": 1014,
-      "eloChange": -17,
-      "civ": "Khmer",
-      "teamAvgElo": 1023,
-      "opponentAvgElo": 1006,
-      "teammates": [
-        "typ53b90",
-        "cyberocioso",
-        "DrGooseBaby"
-      ],
-      "opponents": [
-        "Emotions are prohibited",
-        "Rata",
-        "Mr. PUTIN my President",
-        "señor de la noche"
-      ]
-    },
     {
       "matchId": 447679267,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -584,6 +538,54 @@
         "Nigerian Farmer",
         "Loki92sx",
         "FirstRussianTzar"
+      ]
+    },
+    {
+      "matchId": 493257423,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784407560,
+      "outcome": "loss",
+      "preRating": 972,
+      "postRating": 961,
+      "eloChange": -11,
+      "civ": "Cumans",
+      "teamAvgElo": 964,
+      "opponentAvgElo": 1073,
+      "teammates": [
+        "Bobuler",
+        "RadioActiveMan",
+        "fadul2105"
+      ],
+      "opponents": [
+        "Lykerya",
+        "Goodsoup",
+        "Bourne2Believe",
+        "shark_12"
+      ]
+    },
+    {
+      "matchId": 493337212,
+      "description": "BN 10x 3x good players only",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784433303,
+      "outcome": "loss",
+      "preRating": 961,
+      "postRating": 948,
+      "eloChange": -13,
+      "civ": "Bulgarians",
+      "teamAvgElo": 995,
+      "opponentAvgElo": 1030,
+      "teammates": [
+        "duckbuildperson",
+        "nooblet3300",
+        "checkdis"
+      ],
+      "opponents": [
+        "Ricardo V",
+        "Lumedge",
+        "SickFishh",
+        "byronnnnn"
       ]
     }
   ]

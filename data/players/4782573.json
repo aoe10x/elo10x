@@ -1,12 +1,12 @@
 {
   "profile_id": 4782573,
   "alias": "Lama Kužel",
-  "rating": 1059,
+  "rating": 1044,
   "wins": 27,
-  "losses": 24,
-  "gamesCount": 51,
-  "winRate": 53,
-  "lastPlayedAt": 1784361502,
+  "losses": 25,
+  "gamesCount": 52,
+  "winRate": 52,
+  "lastPlayedAt": 1784439996,
   "country": "sk",
   "merged_ids": [
     4782573,
@@ -64,33 +64,10 @@
     1079,
     1092,
     1074,
-    1059
+    1059,
+    1044
   ],
   "recentMatches": [
-    {
-      "matchId": 483614737,
-      "description": "10x 3x Bamboo - 10xshared.com",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1780870320,
-      "outcome": "win",
-      "preRating": 1044,
-      "postRating": 1057,
-      "eloChange": 13,
-      "civ": "Saracens",
-      "teamAvgElo": 1028,
-      "opponentAvgElo": 987,
-      "teammates": [
-        "mgmanager",
-        "Boocer",
-        "tonkatumura"
-      ],
-      "opponents": [
-        "Parts",
-        "R301",
-        "RawChicken",
-        "jonathahyoga"
-      ]
-    },
     {
       "matchId": 485834355,
       "description": "i kun 10x3x 4v4s",
@@ -545,6 +522,30 @@
         "雲",
         "GrandUni",
         "kekekeya"
+      ]
+    },
+    {
+      "matchId": 493354946,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784439996,
+      "outcome": "loss",
+      "preRating": 1059,
+      "postRating": 1044,
+      "eloChange": -15,
+      "civ": "Malians",
+      "teamAvgElo": 1037,
+      "opponentAvgElo": 1071,
+      "teammates": [
+        "Chuckyllo4417",
+        "YUJIN",
+        "aLEXt"
+      ],
+      "opponents": [
+        "Emusan",
+        "typ53b90",
+        "Frederick",
+        "青松"
       ]
     }
   ]

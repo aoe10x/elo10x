@@ -1,12 +1,12 @@
 {
   "profile_id": 15470558,
   "alias": "mitchell_bombers",
-  "rating": 995,
-  "wins": 15,
+  "rating": 1014,
+  "wins": 16,
   "losses": 19,
-  "gamesCount": 34,
-  "winRate": 44,
-  "lastPlayedAt": 1783488676,
+  "gamesCount": 35,
+  "winRate": 46,
+  "lastPlayedAt": 1784434832,
   "country": "au",
   "merged_ids": [
     12318486,
@@ -47,33 +47,10 @@
     973,
     990,
     1009,
-    995
+    995,
+    1014
   ],
   "recentMatches": [
-    {
-      "matchId": 470103406,
-      "description": "…::||||    10x  3x    ||||::…",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1776089160,
-      "outcome": "win",
-      "preRating": 969,
-      "postRating": 999,
-      "eloChange": 30,
-      "civ": "Lithuanians",
-      "teamAvgElo": 1019,
-      "opponentAvgElo": 1033,
-      "teammates": [
-        "Ye",
-        "trogfield4",
-        "FlyingSheep"
-      ],
-      "opponents": [
-        "CrazyKaelby",
-        "Wardy21",
-        "Emotions are prohibited",
-        "Wimac"
-      ]
-    },
     {
       "matchId": 470105078,
       "description": "10x 3x shared bn",
@@ -528,6 +505,30 @@
         "👨‍🦯‍➡️🫃",
         "Abelardo4tojr",
         "babeleo"
+      ]
+    },
+    {
+      "matchId": 493341712,
+      "description": "BN 10x 3x good players only",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784434832,
+      "outcome": "win",
+      "preRating": 995,
+      "postRating": 1014,
+      "eloChange": 19,
+      "civ": "Celts",
+      "teamAvgElo": 1091,
+      "opponentAvgElo": 1059,
+      "teammates": [
+        "[B] Cannino",
+        "Lumedge",
+        "田瘾犯了"
+      ],
+      "opponents": [
+        "duckbuildperson",
+        "nooblet3300",
+        "Ricardo V",
+        "Al Ghouti"
       ]
     }
   ]

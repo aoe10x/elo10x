@@ -1,12 +1,12 @@
 {
   "profile_id": 1403494,
   "alias": "byronnnnn",
-  "rating": 1071,
-  "wins": 12,
+  "rating": 1084,
+  "wins": 13,
   "losses": 12,
-  "gamesCount": 24,
-  "winRate": 50,
-  "lastPlayedAt": 1784247439,
+  "gamesCount": 25,
+  "winRate": 52,
+  "lastPlayedAt": 1784433303,
   "country": "gb",
   "merged_ids": [],
   "ratingHistory": [
@@ -34,33 +34,10 @@
     1057,
     1041,
     1058,
-    1071
+    1071,
+    1084
   ],
   "recentMatches": [
-    {
-      "matchId": 440897470,
-      "description": "10x Shared 3xTech Bamboo Nothing",
-      "mapname": "Bamboo Nothing_Paren_Vlocal_V2.5",
-      "timestamp": 1766070900,
-      "outcome": "loss",
-      "preRating": 849,
-      "postRating": 828,
-      "eloChange": -21,
-      "civ": "Vietnamese",
-      "teamAvgElo": 1012,
-      "opponentAvgElo": 1038,
-      "teammates": [
-        "Mr. PUTIN my President",
-        "Ye",
-        "Terry"
-      ],
-      "opponents": [
-        "{R} Parry",
-        "田瘾犯了",
-        "mannutipu",
-        "Stigel"
-      ]
-    },
     {
       "matchId": 449170465,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -515,6 +492,30 @@
         "Auto Horse",
         "Bifbatz",
         "Maxim Liann"
+      ]
+    },
+    {
+      "matchId": 493337212,
+      "description": "BN 10x 3x good players only",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784433303,
+      "outcome": "win",
+      "preRating": 1071,
+      "postRating": 1084,
+      "eloChange": 13,
+      "civ": "Spartans",
+      "teamAvgElo": 1030,
+      "opponentAvgElo": 995,
+      "teammates": [
+        "Ricardo V",
+        "Lumedge",
+        "SickFishh"
+      ],
+      "opponents": [
+        "duckbuildperson",
+        "nooblet3300",
+        "checkdis",
+        "Rooaary"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 9278772,
   "alias": "dandan",
-  "rating": 1004,
+  "rating": 988,
   "wins": 28,
-  "losses": 25,
-  "gamesCount": 53,
-  "winRate": 53,
-  "lastPlayedAt": 1784423471,
+  "losses": 26,
+  "gamesCount": 54,
+  "winRate": 52,
+  "lastPlayedAt": 1784426710,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -63,33 +63,10 @@
     1047,
     1033,
     1018,
-    1004
+    1004,
+    988
   ],
   "recentMatches": [
-    {
-      "matchId": 382186196,
-      "description": "10x 3x Bamboo  Random",
-      "mapname": "Bamboo Nothing - +Wild ##############",
-      "timestamp": 1743417060,
-      "outcome": "win",
-      "preRating": 1102,
-      "postRating": 1115,
-      "eloChange": 13,
-      "civ": "Poles",
-      "teamAvgElo": 1066,
-      "opponentAvgElo": 1030,
-      "teammates": [
-        "katonce77",
-        "ZMC007",
-        "Regina Ip"
-      ],
-      "opponents": [
-        "Keishi",
-        "MancoNoMicro",
-        "evelyncc",
-        "Sadek"
-      ]
-    },
     {
       "matchId": 383210505,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -544,6 +521,30 @@
         "EL__PATRON",
         "Myriad",
         "JoeyTribianni69"
+      ]
+    },
+    {
+      "matchId": 493316088,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784426710,
+      "outcome": "loss",
+      "preRating": 1004,
+      "postRating": 988,
+      "eloChange": -16,
+      "civ": "Spanish",
+      "teamAvgElo": 1010,
+      "opponentAvgElo": 999,
+      "teammates": [
+        "R301",
+        "Emusan",
+        "juanzenonverdun"
+      ],
+      "opponents": [
+        "Parts",
+        "Moose",
+        "mckirds",
+        "WipiWi"
       ]
     }
   ]

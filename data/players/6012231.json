@@ -1,12 +1,12 @@
 {
   "profile_id": 6012231,
   "alias": "random_dude",
-  "rating": 1022,
-  "wins": 36,
+  "rating": 1055,
+  "wins": 38,
   "losses": 36,
-  "gamesCount": 72,
-  "winRate": 50,
-  "lastPlayedAt": 1784423242,
+  "gamesCount": 74,
+  "winRate": 51,
+  "lastPlayedAt": 1784425909,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -82,57 +82,11 @@
     1007,
     1024,
     1039,
-    1022
+    1022,
+    1038,
+    1055
   ],
   "recentMatches": [
-    {
-      "matchId": 356072790,
-      "description": "10x bamboo nothing 3x",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1733272980,
-      "outcome": "win",
-      "preRating": 975,
-      "postRating": 995,
-      "eloChange": 20,
-      "civ": "Unknown",
-      "teamAvgElo": 993,
-      "opponentAvgElo": 1072,
-      "teammates": [
-        "Meandor",
-        "El Barto",
-        "Bluestorm"
-      ],
-      "opponents": [
-        "gmc inspector",
-        "TopazSkate37557",
-        "JuanMalote",
-        "La Brege"
-      ]
-    },
-    {
-      "matchId": 356093713,
-      "description": "10x 3x shared - bamboo",
-      "mapname": "Bamboo Nothing - +Wild ##############",
-      "timestamp": 1733280540,
-      "outcome": "win",
-      "preRating": 995,
-      "postRating": 1012,
-      "eloChange": 17,
-      "civ": "Unknown",
-      "teamAvgElo": 1044,
-      "opponentAvgElo": 1025,
-      "teammates": [
-        "Parenquima",
-        "JuanMalote",
-        "Phantom_"
-      ],
-      "opponents": [
-        "im slow",
-        "Berry Grover",
-        "DnD",
-        "Branoc"
-      ]
-    },
     {
       "matchId": 356256210,
       "description": "4v4 10x AMAZON TUNNEL",
@@ -563,6 +517,54 @@
         "Ketchup",
         "Waryahay",
         "momo"
+      ]
+    },
+    {
+      "matchId": 493310246,
+      "description": "x3x10x Shared (PQ3.5 Qualty learing)",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784424768,
+      "outcome": "win",
+      "preRating": 1022,
+      "postRating": 1038,
+      "eloChange": 16,
+      "civ": "Teutons",
+      "teamAvgElo": 1061,
+      "opponentAvgElo": 1027,
+      "teammates": [
+        "Mehandor",
+        "Waryahay",
+        "momo"
+      ],
+      "opponents": [
+        "aLEXt",
+        "PITON | Shepy",
+        "maddymsg",
+        "sniper-123"
+      ]
+    },
+    {
+      "matchId": 493314049,
+      "description": "x3x10x Shared (PQ3.5 Qualty learing)",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784425909,
+      "outcome": "win",
+      "preRating": 1038,
+      "postRating": 1055,
+      "eloChange": 17,
+      "civ": "Tatars",
+      "teamAvgElo": 1012,
+      "opponentAvgElo": 1058,
+      "teammates": [
+        "aLEXt",
+        "sniper-123",
+        "maddymsg"
+      ],
+      "opponents": [
+        "-[RDU]- Gorda America Forever",
+        "Gasnápido",
+        "Mehandor",
+        "Yee"
       ]
     }
   ]
