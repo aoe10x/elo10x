@@ -1,11 +1,11 @@
 {
   "profile_id": 657806,
   "alias": "LyrikKap2",
-  "rating": 968,
+  "rating": 955,
   "wins": 19,
-  "losses": 31,
-  "gamesCount": 50,
-  "winRate": 38,
+  "losses": 32,
+  "gamesCount": 51,
+  "winRate": 37,
   "lastPlayedAt": 1782415106,
   "country": "de",
   "merged_ids": [],
@@ -58,35 +58,12 @@
     930,
     919,
     938,
-    927,
-    948,
-    968
+    924,
+    914,
+    935,
+    955
   ],
   "recentMatches": [
-    {
-      "matchId": 429985995,
-      "description": "10x 3x bamboo nothing  turbo host here",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1762014360,
-      "outcome": "loss",
-      "preRating": 946,
-      "postRating": 935,
-      "eloChange": -11,
-      "civ": "Unknown",
-      "teamAvgElo": 1003,
-      "opponentAvgElo": 1067,
-      "teammates": [
-        "gmc inspector",
-        "Evil  Destroyer",
-        "QTJ钱塘江客"
-      ],
-      "opponents": [
-        "UbaneMess",
-        "Shidoki",
-        "ChristopheG1970.Fr",
-        "LECIO"
-      ]
-    },
     {
       "matchId": 429989266,
       "description": "10x 3x bamboo nothing  turbo host here",
@@ -472,16 +449,40 @@
       ]
     },
     {
+      "matchId": 486838163,
+      "description": "bamboo nothing 10x",
+      "mapname": "Bamboo Nothing v3 (BaLi)",
+      "timestamp": 1781977017,
+      "outcome": "loss",
+      "preRating": 938,
+      "postRating": 924,
+      "eloChange": -14,
+      "civ": "Chinese",
+      "teamAvgElo": 1058,
+      "opponentAvgElo": 992,
+      "teammates": [
+        "Lumedge",
+        "Ghost_pt",
+        "DEVILZ"
+      ],
+      "opponents": [
+        "[B] Zennith",
+        "PITON | Shepy",
+        "witchking",
+        "Derppester"
+      ]
+    },
+    {
       "matchId": 487045408,
       "description": "Bamboo 10x 3x Welcome",
       "mapname": "Bamboo Nothing - Scorpyon De",
       "timestamp": 1782045640,
       "outcome": "loss",
-      "preRating": 938,
-      "postRating": 927,
-      "eloChange": -11,
+      "preRating": 924,
+      "postRating": 914,
+      "eloChange": -10,
       "civ": "Poles",
-      "teamAvgElo": 991,
+      "teamAvgElo": 987,
       "opponentAvgElo": 1058,
       "teammates": [
         "im slow",
@@ -501,8 +502,8 @@
       "mapname": "Highland",
       "timestamp": 1782086340,
       "outcome": "win",
-      "preRating": 927,
-      "postRating": 948,
+      "preRating": 914,
+      "postRating": 935,
       "eloChange": 21,
       "civ": "Dravidians",
       "teamAvgElo": 980,
@@ -525,11 +526,11 @@
       "mapname": "Bamboo Nothing - Scorpyon De",
       "timestamp": 1782415106,
       "outcome": "win",
-      "preRating": 948,
-      "postRating": 968,
+      "preRating": 935,
+      "postRating": 955,
       "eloChange": 20,
       "civ": "Hindustanis",
-      "teamAvgElo": 1000,
+      "teamAvgElo": 996,
       "opponentAvgElo": 1027,
       "teammates": [
         "iamatthe.hell",

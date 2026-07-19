@@ -1,12 +1,12 @@
 {
   "profile_id": 23719467,
   "alias": "MARKVILEX",
-  "rating": 1002,
+  "rating": 987,
   "wins": 55,
-  "losses": 49,
-  "gamesCount": 104,
-  "winRate": 53,
-  "lastPlayedAt": 1784414079,
+  "losses": 50,
+  "gamesCount": 105,
+  "winRate": 52,
+  "lastPlayedAt": 1784418454,
   "country": "es",
   "merged_ids": [
     13388218,
@@ -22,7 +22,7 @@
     1057,
     1083,
     1106,
-    1128,
+    1086,
     1114,
     1139,
     1153,
@@ -38,11 +38,11 @@
     1165,
     1176,
     1186,
-    1165,
     1175,
     1151,
     1126,
     1136,
+    1149,
     1128,
     1107,
     1086,
@@ -54,7 +54,6 @@
     1079,
     1061,
     1047,
-    1065,
     1080,
     1093,
     1104,
@@ -62,6 +61,7 @@
     1101,
     1115,
     1127,
+    1106,
     1084,
     1072,
     1088,
@@ -71,7 +71,6 @@
     1051,
     1035,
     1053,
-    1066,
     1079,
     1061,
     1046,
@@ -82,12 +81,12 @@
     1004,
     989,
     1008,
+    1025,
     1041,
     1026,
     1014,
     1003,
     1020,
-    1033,
     1048,
     1033,
     1050,
@@ -102,8 +101,8 @@
     1072,
     1087,
     1069,
+    1050,
     1064,
-    1047,
     1031,
     1015,
     1031,
@@ -112,33 +111,10 @@
     1014,
     1000,
     986,
-    1002
+    1002,
+    987
   ],
   "recentMatches": [
-    {
-      "matchId": 490116150,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1783227360,
-      "outcome": "win",
-      "preRating": 1037,
-      "postRating": 1052,
-      "eloChange": 15,
-      "civ": "Aztecs",
-      "teamAvgElo": 1080,
-      "opponentAvgElo": 1026,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "[B] Cannino",
-        "Ghost_pt"
-      ],
-      "opponents": [
-        "NoLo",
-        "Paladin",
-        "Tiny Hands",
-        "HorstSan"
-      ]
-    },
     {
       "matchId": 490250753,
       "description": "4vs4 10x 3x shared civ bonus, random civ",
@@ -246,7 +222,7 @@
       "eloChange": -18,
       "civ": "Portuguese",
       "teamAvgElo": 1071,
-      "opponentAvgElo": 1040,
+      "opponentAvgElo": 1041,
       "teammates": [
         "BigAl",
         "Ode To  A Pineapple",
@@ -342,7 +318,7 @@
       "eloChange": 14,
       "civ": "Sicilians",
       "teamAvgElo": 1047,
-      "opponentAvgElo": 1010,
+      "opponentAvgElo": 1009,
       "teammates": [
         "Zortopos",
         "田瘾犯了",
@@ -414,7 +390,7 @@
       "eloChange": -16,
       "civ": "Burmese",
       "teamAvgElo": 1044,
-      "opponentAvgElo": 1037,
+      "opponentAvgElo": 1038,
       "teammates": [
         "skoolied",
         "Contry",
@@ -557,8 +533,8 @@
       "postRating": 986,
       "eloChange": -14,
       "civ": "Huns",
-      "teamAvgElo": 1017,
-      "opponentAvgElo": 1038,
+      "teamAvgElo": 1016,
+      "opponentAvgElo": 1039,
       "teammates": [
         "yimacs_yoyoyo",
         "gemmascho",
@@ -593,6 +569,30 @@
         "Wozbo",
         "Paolo Carrosel",
         "Yeepers"
+      ]
+    },
+    {
+      "matchId": 493291245,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784418454,
+      "outcome": "loss",
+      "preRating": 1002,
+      "postRating": 987,
+      "eloChange": -15,
+      "civ": "Sicilians",
+      "teamAvgElo": 1013,
+      "opponentAvgElo": 1022,
+      "teammates": [
+        "Emusan",
+        "F3R0Ci0U5XX88",
+        "Melody2030"
+      ],
+      "opponents": [
+        "Terry",
+        "calebw704",
+        "Battery-acid",
+        "Sal"
       ]
     }
   ]

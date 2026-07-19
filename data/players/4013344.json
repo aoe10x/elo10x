@@ -1,12 +1,12 @@
 {
   "profile_id": 4013344,
   "alias": "RedHotPenguin",
-  "rating": 1058,
+  "rating": 1039,
   "wins": 31,
-  "losses": 20,
-  "gamesCount": 51,
-  "winRate": 61,
-  "lastPlayedAt": 1783237155,
+  "losses": 21,
+  "gamesCount": 52,
+  "winRate": 60,
+  "lastPlayedAt": 1784441868,
   "country": "au",
   "merged_ids": [],
   "ratingHistory": [
@@ -61,33 +61,10 @@
     1081,
     1062,
     1045,
-    1058
+    1058,
+    1039
   ],
   "recentMatches": [
-    {
-      "matchId": 380358339,
-      "description": "10xshared_3xtech_BambooNothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1742745660,
-      "outcome": "loss",
-      "preRating": 1136,
-      "postRating": 1116,
-      "eloChange": -20,
-      "civ": "Byzantines",
-      "teamAvgElo": 1038,
-      "opponentAvgElo": 1052,
-      "teammates": [
-        "_S_",
-        "yosef.mardini",
-        "CrazyKaelby"
-      ],
-      "opponents": [
-        "komatti",
-        "tonkatumura",
-        "DomBrown",
-        "Zinzin"
-      ]
-    },
     {
       "matchId": 401488028,
       "description": "10x 3x share",
@@ -506,7 +483,7 @@
       "postRating": 1045,
       "eloChange": -17,
       "civ": "Armenians",
-      "teamAvgElo": 1054,
+      "teamAvgElo": 1057,
       "opponentAvgElo": 1031,
       "teammates": [
         "NoAgendaPODCAST",
@@ -531,7 +508,7 @@
       "eloChange": 13,
       "civ": "Malay",
       "teamAvgElo": 946,
-      "opponentAvgElo": 982,
+      "opponentAvgElo": 981,
       "teammates": [
         "东方臣",
         "Pelopincho",
@@ -542,6 +519,30 @@
         "冰凝",
         "sppd3181",
         "祝我好梦"
+      ]
+    },
+    {
+      "matchId": 493359135,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784441868,
+      "outcome": "loss",
+      "preRating": 1058,
+      "postRating": 1039,
+      "eloChange": -19,
+      "civ": "Berbers",
+      "teamAvgElo": 1021,
+      "opponentAvgElo": 999,
+      "teammates": [
+        "漫山哒哒哒",
+        "procrastination.exe",
+        "Stancati9796"
+      ],
+      "opponents": [
+        "Lykerya",
+        "青松",
+        "[B] Cannino",
+        "Sundev"
       ]
     }
   ]

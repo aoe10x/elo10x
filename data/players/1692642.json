@@ -1,11 +1,11 @@
 {
   "profile_id": 1692642,
   "alias": "F3R0Ci0U5XX88",
-  "rating": 972,
+  "rating": 958,
   "wins": 8,
-  "losses": 14,
-  "gamesCount": 22,
-  "winRate": 36,
+  "losses": 15,
+  "gamesCount": 23,
+  "winRate": 35,
   "lastPlayedAt": 1784421360,
   "country": "ca",
   "merged_ids": [],
@@ -32,33 +32,10 @@
     977,
     964,
     986,
-    972
+    972,
+    958
   ],
   "recentMatches": [
-    {
-      "matchId": 231057555,
-      "description": "10x civ bonus mod",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1683186960,
-      "outcome": "loss",
-      "preRating": 912,
-      "postRating": 873,
-      "eloChange": -39,
-      "civ": "Aztecs",
-      "teamAvgElo": 993,
-      "opponentAvgElo": 962,
-      "teammates": [
-        "Nane",
-        "Minimalism",
-        "STO"
-      ],
-      "opponents": [
-        "Crow",
-        "OOOOOOOOOOO",
-        "Tekrax",
-        "flaviozera"
-      ]
-    },
     {
       "matchId": 261718510,
       "description": "10x Shared Civ",
@@ -429,7 +406,7 @@
       "postRating": 977,
       "eloChange": 23,
       "civ": "Aztecs",
-      "teamAvgElo": 987,
+      "teamAvgElo": 989,
       "opponentAvgElo": 1026,
       "teammates": [
         "[B] Zennith",
@@ -492,16 +469,40 @@
       ]
     },
     {
+      "matchId": 493291245,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784418454,
+      "outcome": "loss",
+      "preRating": 986,
+      "postRating": 972,
+      "eloChange": -14,
+      "civ": "Bulgarians",
+      "teamAvgElo": 1013,
+      "opponentAvgElo": 1022,
+      "teammates": [
+        "Emusan",
+        "MARKVILEX",
+        "Melody2030"
+      ],
+      "opponents": [
+        "Terry",
+        "calebw704",
+        "Battery-acid",
+        "Sal"
+      ]
+    },
+    {
       "matchId": 493296974,
       "description": "10x Shared Civ Bonus 4v4 Random ",
       "mapname": "Wet Woods v3.0.3",
       "timestamp": 1784421360,
       "outcome": "loss",
-      "preRating": 986,
-      "postRating": 972,
+      "preRating": 972,
+      "postRating": 958,
       "eloChange": -14,
       "civ": "Dravidians",
-      "teamAvgElo": 1026,
+      "teamAvgElo": 1023,
       "opponentAvgElo": 1020,
       "teammates": [
         "feid_",
