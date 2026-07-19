@@ -1,12 +1,12 @@
 {
   "profile_id": 21757001,
   "alias": "jonnywins100",
-  "rating": 888,
+  "rating": 879,
   "wins": 7,
-  "losses": 16,
-  "gamesCount": 23,
-  "winRate": 30,
-  "lastPlayedAt": 1784131141,
+  "losses": 17,
+  "gamesCount": 24,
+  "winRate": 29,
+  "lastPlayedAt": 1784477234,
   "country": "us",
   "merged_ids": [
     13100723,
@@ -36,33 +36,10 @@
     922,
     909,
     899,
-    888
+    888,
+    879
   ],
   "recentMatches": [
-    {
-      "matchId": 364754966,
-      "description": "10x 3x Bamboo http://10xshared.com",
-      "mapname": "Bamboo Nothing - +Wild ##############",
-      "timestamp": 1736682480,
-      "outcome": "win",
-      "preRating": 973,
-      "postRating": 1028,
-      "eloChange": 55,
-      "civ": "Unknown",
-      "teamAvgElo": 1024,
-      "opponentAvgElo": 1068,
-      "teammates": [
-        "duckbuildperson",
-        "Parts",
-        "ThrillerKillah17"
-      ],
-      "opponents": [
-        "bigjames",
-        "Parenquima",
-        "菜神",
-        "trogfield4"
-      ]
-    },
     {
       "matchId": 365423503,
       "description": "BAMBOO 10x 3x Shared Turbo",
@@ -517,6 +494,30 @@
         "[Liiit] Zbyszek",
         "wintre",
         "dimon21_8"
+      ]
+    },
+    {
+      "matchId": 493464732,
+      "description": "10x 3x Bamboo (fair and balanced)",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784477234,
+      "outcome": "loss",
+      "preRating": 888,
+      "postRating": 879,
+      "eloChange": -9,
+      "civ": "Armenians",
+      "teamAvgElo": 981,
+      "opponentAvgElo": 1064,
+      "teammates": [
+        "LethalP59",
+        "RedBullWOLOLO26",
+        "Pogonophobia69"
+      ],
+      "opponents": [
+        "Scipio",
+        "Grimmie",
+        "Bryce Coolguy",
+        "Llama"
       ]
     }
   ]

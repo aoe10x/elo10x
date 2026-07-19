@@ -1,12 +1,12 @@
 {
   "profile_id": 3712821,
   "alias": "irvizuett",
-  "rating": 909,
+  "rating": 898,
   "wins": 27,
-  "losses": 50,
-  "gamesCount": 77,
+  "losses": 51,
+  "gamesCount": 78,
   "winRate": 35,
-  "lastPlayedAt": 1784391611,
+  "lastPlayedAt": 1784471300,
   "country": "mx",
   "merged_ids": [],
   "ratingHistory": [
@@ -87,33 +87,10 @@
     907,
     896,
     918,
-    909
+    909,
+    898
   ],
   "recentMatches": [
-    {
-      "matchId": 477406729,
-      "description": "…::||||    10x  3x    ||||::…",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1778665080,
-      "outcome": "loss",
-      "preRating": 957,
-      "postRating": 946,
-      "eloChange": -11,
-      "civ": "Khmer",
-      "teamAvgElo": 978,
-      "opponentAvgElo": 1067,
-      "teammates": [
-        "菜神",
-        "Sal",
-        "FlyingSheep"
-      ],
-      "opponents": [
-        "G",
-        "Bob's Uncle",
-        "怪人",
-        "mack"
-      ]
-    },
     {
       "matchId": 478097372,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -568,6 +545,30 @@
         "wintre",
         "tonzo",
         "Silent Annihilation"
+      ]
+    },
+    {
+      "matchId": 493440885,
+      "description": "+10x+3xtech   no noob ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784471300,
+      "outcome": "loss",
+      "preRating": 909,
+      "postRating": 898,
+      "eloChange": -11,
+      "civ": "Chinese",
+      "teamAvgElo": 1037,
+      "opponentAvgElo": 1023,
+      "teammates": [
+        "Lumedge",
+        "_Zeruch_",
+        "Scipio"
+      ],
+      "opponents": [
+        "拍车面前人人平等",
+        "Consume Product",
+        "Heklort",
+        "0urSneakyBoi"
       ]
     }
   ]

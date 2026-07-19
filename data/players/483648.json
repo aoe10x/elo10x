@@ -1,12 +1,12 @@
 {
   "profile_id": 483648,
   "alias": "Willoloh!!!",
-  "rating": 971,
-  "wins": 8,
+  "rating": 986,
+  "wins": 9,
   "losses": 11,
-  "gamesCount": 19,
-  "winRate": 42,
-  "lastPlayedAt": 1784257396,
+  "gamesCount": 20,
+  "winRate": 45,
+  "lastPlayedAt": 1784454068,
   "country": "au",
   "merged_ids": [],
   "ratingHistory": [
@@ -29,7 +29,8 @@
     980,
     961,
     947,
-    971
+    971,
+    986
   ],
   "recentMatches": [
     {
@@ -486,6 +487,30 @@
         "Brotherman Bill",
         "Evil  Destroyer",
         "LiquidDrive"
+      ]
+    },
+    {
+      "matchId": 493387992,
+      "description": "10x Shared 3 x tech Bamboo",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784454068,
+      "outcome": "win",
+      "preRating": 971,
+      "postRating": 986,
+      "eloChange": 15,
+      "civ": "Vietnamese",
+      "teamAvgElo": 990,
+      "opponentAvgElo": 921,
+      "teammates": [
+        "Captain Stripes",
+        "Shidoki",
+        "babeleo"
+      ],
+      "opponents": [
+        "...",
+        "Passion AGE",
+        "GenP",
+        "SickFishh"
       ]
     }
   ]

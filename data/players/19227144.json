@@ -1,12 +1,12 @@
 {
   "profile_id": 19227144,
   "alias": "universeagle",
-  "rating": 912,
-  "wins": 6,
-  "losses": 13,
-  "gamesCount": 19,
-  "winRate": 32,
-  "lastPlayedAt": 1784419126,
+  "rating": 924,
+  "wins": 7,
+  "losses": 14,
+  "gamesCount": 21,
+  "winRate": 33,
+  "lastPlayedAt": 1784472116,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -29,33 +29,11 @@
     960,
     941,
     926,
-    912
+    912,
+    901,
+    924
   ],
   "recentMatches": [
-    {
-      "matchId": 487322041,
-      "description": "10x 3x bamboo no noob q群729084973",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1782142758,
-      "outcome": "win",
-      "preRating": 1000,
-      "postRating": 1058,
-      "eloChange": 58,
-      "civ": "Hindustanis",
-      "teamAvgElo": 1036,
-      "opponentAvgElo": 1071,
-      "teammates": [
-        "Eat MY Sprouts",
-        "侯傻傻ᔦఠఠᔨ shasha",
-        "Ian"
-      ],
-      "opponents": [
-        "Semisky",
-        "Boocer",
-        "Not a Wizard",
-        "yxsko93"
-      ]
-    },
     {
       "matchId": 490248624,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -486,6 +464,54 @@
         "-[RDU]- Gorda America Forever",
         "gamingtars",
         "Wozbo"
+      ]
+    },
+    {
+      "matchId": 493418938,
+      "description": "+10x+3xtech   no noob ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784464951,
+      "outcome": "loss",
+      "preRating": 912,
+      "postRating": 901,
+      "eloChange": -11,
+      "civ": "Poles",
+      "teamAvgElo": 984,
+      "opponentAvgElo": 1059,
+      "teammates": [
+        "KingOfTheNorth",
+        "kekekeya",
+        "oklema"
+      ],
+      "opponents": [
+        "拍车面前人人平等",
+        "紫蝶黄蜂俱有情",
+        "Lumedge",
+        "Mrchris"
+      ]
+    },
+    {
+      "matchId": 493443221,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784472116,
+      "outcome": "win",
+      "preRating": 901,
+      "postRating": 924,
+      "eloChange": 23,
+      "civ": "Dravidians",
+      "teamAvgElo": 976,
+      "opponentAvgElo": 1077,
+      "teammates": [
+        "Chuckyllo4417",
+        "紫蝶黄蜂俱有情",
+        "KingOfTheNorth"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "Texas Red",
+        "Bryce Coolguy",
+        "Supreme Lord 'Kim Xi Trump'"
       ]
     }
   ]

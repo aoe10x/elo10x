@@ -1,12 +1,12 @@
 {
   "profile_id": 217165,
   "alias": "Llama",
-  "rating": 1055,
-  "wins": 34,
+  "rating": 1068,
+  "wins": 35,
   "losses": 28,
-  "gamesCount": 62,
-  "winRate": 55,
-  "lastPlayedAt": 1784237687,
+  "gamesCount": 63,
+  "winRate": 56,
+  "lastPlayedAt": 1784477234,
   "country": "es",
   "merged_ids": [
     217165,
@@ -77,33 +77,10 @@
     1067,
     1052,
     1039,
-    1055
+    1055,
+    1068
   ],
   "recentMatches": [
-    {
-      "matchId": 483683640,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "my map",
-      "timestamp": 1780860549,
-      "outcome": "win",
-      "preRating": 1045,
-      "postRating": 1061,
-      "eloChange": 16,
-      "civ": "Persians",
-      "teamAvgElo": 1051,
-      "opponentAvgElo": 1043,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "Goodsoup",
-        "[B] Cannino"
-      ],
-      "opponents": [
-        "weakest man in bayader",
-        "Larry Kaverga",
-        "30Wololo",
-        "Yanik Polo"
-      ]
-    },
     {
       "matchId": 485162294,
       "description": "Bamboo 10x 3x",
@@ -558,6 +535,30 @@
         "gemmascho",
         "Mikenico95",
         "Apocalypto"
+      ]
+    },
+    {
+      "matchId": 493464732,
+      "description": "10x 3x Bamboo (fair and balanced)",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784477234,
+      "outcome": "win",
+      "preRating": 1055,
+      "postRating": 1068,
+      "eloChange": 13,
+      "civ": "Vikings",
+      "teamAvgElo": 1064,
+      "opponentAvgElo": 981,
+      "teammates": [
+        "Scipio",
+        "Grimmie",
+        "Bryce Coolguy"
+      ],
+      "opponents": [
+        "LethalP59",
+        "RedBullWOLOLO26",
+        "Pogonophobia69",
+        "jonnywins100"
       ]
     }
   ]

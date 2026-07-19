@@ -1,12 +1,12 @@
 {
   "profile_id": 2962172,
   "alias": "_Zeruch_",
-  "rating": 1037,
-  "wins": 11,
-  "losses": 10,
-  "gamesCount": 21,
-  "winRate": 52,
-  "lastPlayedAt": 1784453024,
+  "rating": 1051,
+  "wins": 13,
+  "losses": 11,
+  "gamesCount": 24,
+  "winRate": 54,
+  "lastPlayedAt": 1784474344,
   "country": "ua",
   "merged_ids": [],
   "ratingHistory": [
@@ -31,81 +31,12 @@
     975,
     999,
     1021,
-    1037
+    1037,
+    1020,
+    1036,
+    1051
   ],
   "recentMatches": [
-    {
-      "matchId": 261165935,
-      "description": "10x shared random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1695487980,
-      "outcome": "loss",
-      "preRating": 954,
-      "postRating": 911,
-      "eloChange": -43,
-      "civ": "Franks",
-      "teamAvgElo": 969,
-      "opponentAvgElo": 984,
-      "teammates": [
-        "123412343421431",
-        "紫蝶黄蜂俱有情",
-        "RRadeon96"
-      ],
-      "opponents": [
-        "makz",
-        "jasperwaeckens",
-        "1774278010",
-        "My little Pony"
-      ]
-    },
-    {
-      "matchId": 262604904,
-      "description": "10X SHARED CIV BONUS 4v4",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1696117920,
-      "outcome": "loss",
-      "preRating": 911,
-      "postRating": 876,
-      "eloChange": -35,
-      "civ": "Burmese",
-      "teamAvgElo": 968,
-      "opponentAvgElo": 990,
-      "teammates": [
-        "PapusPopus",
-        "Hacker75",
-        "Ravenlost"
-      ],
-      "opponents": [
-        "FREESTYLE72",
-        "TaipeiShrimp",
-        "GlobalWarning",
-        "Morovun"
-      ]
-    },
-    {
-      "matchId": 263229223,
-      "description": "10x  civ shared",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1696383300,
-      "outcome": "win",
-      "preRating": 876,
-      "postRating": 930,
-      "eloChange": 54,
-      "civ": "Lithuanians",
-      "teamAvgElo": 974,
-      "opponentAvgElo": 963,
-      "teammates": [
-        "Dr. Ore",
-        "davidloomc",
-        "rosquitocanton"
-      ],
-      "opponents": [
-        "1䨻e̵̝͂ ̵͔̐c뷁क्ष",
-        "[KoBHV] venivero",
-        "Dj FlucyuS",
-        "Пожиратель"
-      ]
-    },
     {
       "matchId": 263582975,
       "description": "10x shared random civ",
@@ -512,6 +443,78 @@
         "Kaze",
         "三贤湖巨齿鲨",
         "Dexter"
+      ]
+    },
+    {
+      "matchId": 493440885,
+      "description": "+10x+3xtech   no noob ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784471300,
+      "outcome": "loss",
+      "preRating": 1037,
+      "postRating": 1020,
+      "eloChange": -17,
+      "civ": "Britons",
+      "teamAvgElo": 1037,
+      "opponentAvgElo": 1023,
+      "teammates": [
+        "Lumedge",
+        "Scipio",
+        "irvizuett"
+      ],
+      "opponents": [
+        "拍车面前人人平等",
+        "Consume Product",
+        "Heklort",
+        "0urSneakyBoi"
+      ]
+    },
+    {
+      "matchId": 493447913,
+      "description": "+10x+3xtech   no noob ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784472919,
+      "outcome": "win",
+      "preRating": 1020,
+      "postRating": 1036,
+      "eloChange": 16,
+      "civ": "Tatars",
+      "teamAvgElo": 1072,
+      "opponentAvgElo": 1017,
+      "teammates": [
+        "Consume Product",
+        "R301",
+        "Max"
+      ],
+      "opponents": [
+        "拍车面前人人平等",
+        "mgmanager",
+        "nooblet3300",
+        "abatyse6533"
+      ]
+    },
+    {
+      "matchId": 493453576,
+      "description": "10x 3x Bamboo (cursed) rank.10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784474344,
+      "outcome": "win",
+      "preRating": 1036,
+      "postRating": 1051,
+      "eloChange": 15,
+      "civ": "Sicilians",
+      "teamAvgElo": 1031,
+      "opponentAvgElo": 1012,
+      "teammates": [
+        "PITON | Shepy",
+        "konishika",
+        "fxsound"
+      ],
+      "opponents": [
+        "Scipio",
+        "Ghost_pt",
+        "abatyse6533",
+        "Cubayop"
       ]
     }
   ]
