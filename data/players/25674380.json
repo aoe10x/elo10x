@@ -1,12 +1,12 @@
 {
   "profile_id": 25674380,
   "alias": "Optimus",
-  "rating": 1030,
-  "wins": 15,
-  "losses": 16,
-  "gamesCount": 31,
+  "rating": 1033,
+  "wins": 16,
+  "losses": 17,
+  "gamesCount": 33,
   "winRate": 48,
-  "lastPlayedAt": 1784404966,
+  "lastPlayedAt": 1784407903,
   "country": "us",
   "merged_ids": [
     13700923,
@@ -44,57 +44,11 @@
     1010,
     1027,
     1011,
-    1030
+    1030,
+    1015,
+    1033
   ],
   "recentMatches": [
-    {
-      "matchId": 492193377,
-      "description": "10x 3x bamboo nothing  turbo host here",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783992676,
-      "outcome": "win",
-      "preRating": 970,
-      "postRating": 1000,
-      "eloChange": 30,
-      "civ": "Burmese",
-      "teamAvgElo": 1010,
-      "opponentAvgElo": 967,
-      "teammates": [
-        "gmc inspector",
-        "WipiWi",
-        "乐平"
-      ],
-      "opponents": [
-        "Tortrix",
-        "The_DonMiguel",
-        "megusta",
-        "Makinaskee"
-      ]
-    },
-    {
-      "matchId": 492198686,
-      "description": "10x 3x bamboo nothing  turbo host here",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783994102,
-      "outcome": "loss",
-      "preRating": 1000,
-      "postRating": 971,
-      "eloChange": -29,
-      "civ": "Byzantines",
-      "teamAvgElo": 1017,
-      "opponentAvgElo": 999,
-      "teammates": [
-        "gmc inspector",
-        "Not a Wizard",
-        "HaDs"
-      ],
-      "opponents": [
-        "Makinaskee",
-        "Parts",
-        "adrian",
-        "Monkeymonk"
-      ]
-    },
     {
       "matchId": 492202351,
       "description": "10x 3x Bamboo (bad dragon)",
@@ -514,7 +468,7 @@
       "eloChange": 19,
       "civ": "Malians",
       "teamAvgElo": 1050,
-      "opponentAvgElo": 1079,
+      "opponentAvgElo": 1081,
       "teammates": [
         "The_Only_Koala",
         "-[RDU]- Gorda America Forever",
@@ -525,6 +479,54 @@
         "Abused but whole",
         "treehugger",
         "iamatthe.hell"
+      ]
+    },
+    {
+      "matchId": 493252006,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784406214,
+      "outcome": "loss",
+      "preRating": 1030,
+      "postRating": 1015,
+      "eloChange": -15,
+      "civ": "Bulgarians",
+      "teamAvgElo": 976,
+      "opponentAvgElo": 1059,
+      "teammates": [
+        "ch33tah",
+        "...",
+        "RadioActiveMan"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "Shadow",
+        "VAPE NAYSH Y'ALL",
+        "-[RDU]- Gorda America Forever"
+      ]
+    },
+    {
+      "matchId": 493258841,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784407903,
+      "outcome": "win",
+      "preRating": 1015,
+      "postRating": 1033,
+      "eloChange": 18,
+      "civ": "Teutons",
+      "teamAvgElo": 1052,
+      "opponentAvgElo": 1049,
+      "teammates": [
+        "iamatthe.hell",
+        "Nadie",
+        "{R} Parry"
+      ],
+      "opponents": [
+        "ch33tah",
+        "Honey badger",
+        "nooblet3300",
+        "Rita De Valencia"
       ]
     }
   ]

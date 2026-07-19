@@ -1,12 +1,12 @@
 {
   "profile_id": 390547,
   "alias": "Chirijiraden",
-  "rating": 962,
+  "rating": 949,
   "wins": 30,
-  "losses": 41,
-  "gamesCount": 71,
+  "losses": 42,
+  "gamesCount": 72,
   "winRate": 42,
-  "lastPlayedAt": 1784324001,
+  "lastPlayedAt": 1784412982,
   "country": "ar",
   "merged_ids": [],
   "ratingHistory": [
@@ -81,33 +81,10 @@
     931,
     920,
     939,
-    962
+    962,
+    949
   ],
   "recentMatches": [
-    {
-      "matchId": 489668622,
-      "description": "10x 3x BN ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1783035048,
-      "outcome": "loss",
-      "preRating": 936,
-      "postRating": 923,
-      "eloChange": -13,
-      "civ": "Bulgarians",
-      "teamAvgElo": 1001,
-      "opponentAvgElo": 1009,
-      "teammates": [
-        "Gasnápido",
-        "MRmoreto",
-        "Doormat"
-      ],
-      "opponents": [
-        "pool_champ",
-        "mothysime11",
-        "WDWKid3",
-        "feid_"
-      ]
-    },
     {
       "matchId": 490390845,
       "description": "10x 3x Bamboo - 10xshared.com",
@@ -562,6 +539,30 @@
         "Voskarius",
         "herelin0",
         "golhmogh"
+      ]
+    },
+    {
+      "matchId": 493276433,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784412982,
+      "outcome": "loss",
+      "preRating": 962,
+      "postRating": 949,
+      "eloChange": -13,
+      "civ": "Gurjaras",
+      "teamAvgElo": 983,
+      "opponentAvgElo": 1030,
+      "teammates": [
+        "Maxim Liann",
+        "Honey badger",
+        "JR_Nero"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "gamingtars",
+        "疯狂的电脑",
+        "MarieBrutale"
       ]
     }
   ]

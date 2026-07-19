@@ -1,12 +1,12 @@
 {
   "profile_id": 25228163,
   "alias": "Maxim Liann",
-  "rating": 962,
+  "rating": 909,
   "wins": 23,
-  "losses": 45,
-  "gamesCount": 68,
-  "winRate": 34,
-  "lastPlayedAt": 1784404806,
+  "losses": 50,
+  "gamesCount": 73,
+  "winRate": 32,
+  "lastPlayedAt": 1784423471,
   "country": "br",
   "merged_ids": [
     13623515,
@@ -78,132 +78,17 @@
     1012,
     998,
     984,
-    971,
-    958,
-    976,
-    962
+    969,
+    956,
+    943,
+    962,
+    949,
+    940,
+    928,
+    918,
+    909
   ],
   "recentMatches": [
-    {
-      "matchId": 492848781,
-      "description": "10x 3x bamboo NO IDIOT",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1784264725,
-      "outcome": "win",
-      "preRating": 915,
-      "postRating": 938,
-      "eloChange": 23,
-      "civ": "Cumans",
-      "teamAvgElo": 1035,
-      "opponentAvgElo": 1077,
-      "teammates": [
-        "ch33tah",
-        "侯傻傻ᔦఠఠᔨ shasha",
-        "Brotherman Bill"
-      ],
-      "opponents": [
-        "Emusan",
-        "漫山哒哒哒",
-        "O(∩_∩)O哈哈~",
-        "Stigel"
-      ]
-    },
-    {
-      "matchId": 492852984,
-      "description": "i kun 10x3x 4v4s qun729084973",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1784267123,
-      "outcome": "loss",
-      "preRating": 938,
-      "postRating": 926,
-      "eloChange": -12,
-      "civ": "Aztecs",
-      "teamAvgElo": 1017,
-      "opponentAvgElo": 1022,
-      "teammates": [
-        "i kun 2.5",
-        "aLEXt",
-        "[S33]ff"
-      ],
-      "opponents": [
-        "O(∩_∩)O哈哈~",
-        "亭亭 阿古腔丝侬伐",
-        "Fringnut",
-        "Keishi"
-      ]
-    },
-    {
-      "matchId": 492855180,
-      "description": "i kun 10x3x 4v4s qun729084973",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1784268501,
-      "outcome": "loss",
-      "preRating": 926,
-      "postRating": 914,
-      "eloChange": -12,
-      "civ": "Goths",
-      "teamAvgElo": 1031,
-      "opponentAvgElo": 1008,
-      "teammates": [
-        "[S33]ff",
-        "亭亭 阿古腔丝侬伐",
-        "Ye"
-      ],
-      "opponents": [
-        "i kun 2.5",
-        "漫山哒哒哒",
-        "Silent Annihilation",
-        "Keishi"
-      ]
-    },
-    {
-      "matchId": 492860506,
-      "description": "x3x10x Shared (PQ3.5 Qualty daycare)",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1784271855,
-      "outcome": "loss",
-      "preRating": 914,
-      "postRating": 904,
-      "eloChange": -10,
-      "civ": "Franks",
-      "teamAvgElo": 999,
-      "opponentAvgElo": 1059,
-      "teammates": [
-        "Evil  Destroyer",
-        "-[RDU]- Gorda America Forever",
-        "Trajano"
-      ],
-      "opponents": [
-        "aLEXt",
-        "FrostByte",
-        "476055690",
-        "The Cobra Brothers"
-      ]
-    },
-    {
-      "matchId": 492864506,
-      "description": "x3x10x Shared (PQ3.5 Qualty daycare)",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1784274438,
-      "outcome": "loss",
-      "preRating": 904,
-      "postRating": 893,
-      "eloChange": -11,
-      "civ": "Bengalis",
-      "teamAvgElo": 987,
-      "opponentAvgElo": 1013,
-      "teammates": [
-        "aLEXt",
-        "babeleo",
-        "Evil  Destroyer"
-      ],
-      "opponents": [
-        "nice",
-        "476055690",
-        "boroinbishop",
-        "mothysime11"
-      ]
-    },
     {
       "matchId": 492866633,
       "description": "x3x10x Shared (PQ3.5 Qualty daycare)",
@@ -469,17 +354,41 @@
       ]
     },
     {
+      "matchId": 493193704,
+      "description": "3x 10x bamboo - random civ - no noobs  ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784391132,
+      "outcome": "loss",
+      "preRating": 984,
+      "postRating": 969,
+      "eloChange": -15,
+      "civ": "Vikings",
+      "teamAvgElo": 1039,
+      "opponentAvgElo": 997,
+      "teammates": [
+        "gemmascho",
+        "LonelyKnight",
+        "WipiWi"
+      ],
+      "opponents": [
+        "jair_silva",
+        "oklema",
+        "MarieBrutale",
+        "Mehandor"
+      ]
+    },
+    {
       "matchId": 493204984,
       "description": "+10x+3xtech   no noob ",
       "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1784394134,
       "outcome": "loss",
-      "preRating": 984,
-      "postRating": 971,
+      "preRating": 969,
+      "postRating": 956,
       "eloChange": -13,
       "civ": "Portuguese",
-      "teamAvgElo": 1033,
-      "opponentAvgElo": 1041,
+      "teamAvgElo": 1029,
+      "opponentAvgElo": 1046,
       "teammates": [
         "拍车面前人人平等",
         "Nimreh",
@@ -498,12 +407,12 @@
       "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1784401099,
       "outcome": "loss",
-      "preRating": 971,
-      "postRating": 958,
+      "preRating": 956,
+      "postRating": 943,
       "eloChange": -13,
       "civ": "Shu",
-      "teamAvgElo": 1018,
-      "opponentAvgElo": 1037,
+      "teamAvgElo": 1014,
+      "opponentAvgElo": 1028,
       "teammates": [
         "YUJIN",
         "MK",
@@ -522,12 +431,12 @@
       "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
       "timestamp": 1784403528,
       "outcome": "win",
-      "preRating": 958,
-      "postRating": 976,
-      "eloChange": 18,
+      "preRating": 943,
+      "postRating": 962,
+      "eloChange": 19,
       "civ": "Maya",
-      "teamAvgElo": 1048,
-      "opponentAvgElo": 995,
+      "teamAvgElo": 1040,
+      "opponentAvgElo": 999,
       "teammates": [
         "NoAgendaPODCAST",
         "LonelyKnight",
@@ -546,11 +455,11 @@
       "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
       "timestamp": 1784404806,
       "outcome": "loss",
-      "preRating": 976,
-      "postRating": 962,
-      "eloChange": -14,
+      "preRating": 962,
+      "postRating": 949,
+      "eloChange": -13,
       "civ": "Italians",
-      "teamAvgElo": 1008,
+      "teamAvgElo": 1000,
       "opponentAvgElo": 1017,
       "teammates": [
         "Parts",
@@ -562,6 +471,102 @@
         "abatyse6533",
         "[B] Cannino",
         "jair_silva"
+      ]
+    },
+    {
+      "matchId": 493272388,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784411997,
+      "outcome": "loss",
+      "preRating": 949,
+      "postRating": 940,
+      "eloChange": -9,
+      "civ": "Burmese",
+      "teamAvgElo": 994,
+      "opponentAvgElo": 1122,
+      "teammates": [
+        "疯狂的电脑",
+        "rcmccallum",
+        "RadioActiveMan"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "Honey badger",
+        "Wozbo",
+        "Ghost_pt"
+      ]
+    },
+    {
+      "matchId": 493276433,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784412982,
+      "outcome": "loss",
+      "preRating": 940,
+      "postRating": 928,
+      "eloChange": -12,
+      "civ": "Vietnamese",
+      "teamAvgElo": 983,
+      "opponentAvgElo": 1030,
+      "teammates": [
+        "Chirijiraden",
+        "Honey badger",
+        "JR_Nero"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "gamingtars",
+        "疯狂的电脑",
+        "MarieBrutale"
+      ]
+    },
+    {
+      "matchId": 493302250,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784422371,
+      "outcome": "loss",
+      "preRating": 928,
+      "postRating": 918,
+      "eloChange": -10,
+      "civ": "Shu",
+      "teamAvgElo": 979,
+      "opponentAvgElo": 1054,
+      "teammates": [
+        "Waryahay",
+        "Magical Taylor",
+        "dandan"
+      ],
+      "opponents": [
+        "Emusan",
+        "Shadow",
+        "Millsoir",
+        "PNAL | CaligariClown"
+      ]
+    },
+    {
+      "matchId": 493306041,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784423471,
+      "outcome": "loss",
+      "preRating": 918,
+      "postRating": 909,
+      "eloChange": -9,
+      "civ": "Ethiopians",
+      "teamAvgElo": 1000,
+      "opponentAvgElo": 1069,
+      "teammates": [
+        "feid_",
+        "PoonSlapper",
+        "dandan"
+      ],
+      "opponents": [
+        "Kumad",
+        "EL__PATRON",
+        "Myriad",
+        "JoeyTribianni69"
       ]
     }
   ]

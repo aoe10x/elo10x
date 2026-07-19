@@ -1,12 +1,12 @@
 {
   "profile_id": 1889959,
   "alias": "Ruuder",
-  "rating": 929,
+  "rating": 920,
   "wins": 51,
-  "losses": 51,
-  "gamesCount": 102,
+  "losses": 52,
+  "gamesCount": 103,
   "winRate": 50,
-  "lastPlayedAt": 1784399305,
+  "lastPlayedAt": 1784414406,
   "country": "ie",
   "merged_ids": [],
   "ratingHistory": [
@@ -23,10 +23,10 @@
     1207,
     1161,
     1185,
-    1203,
     1161,
     1126,
     1144,
+    1113,
     1129,
     1105,
     1085,
@@ -47,7 +47,6 @@
     1090,
     1104,
     1116,
-    1100,
     1110,
     1088,
     1070,
@@ -60,6 +59,7 @@
     1066,
     1079,
     1098,
+    1079,
     1095,
     1077,
     1092,
@@ -72,7 +72,6 @@
     1066,
     1045,
     1064,
-    1078,
     1061,
     1041,
     1021,
@@ -92,11 +91,11 @@
     1032,
     1047,
     1032,
+    1051,
     1033,
     1015,
     1001,
     987,
-    973,
     994,
     1015,
     1001,
@@ -109,33 +108,10 @@
     966,
     952,
     939,
-    929
+    929,
+    920
   ],
   "recentMatches": [
-    {
-      "matchId": 487625637,
-      "description": "10x 3x bamboo NO IDIOT",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1782255404,
-      "outcome": "loss",
-      "preRating": 1047,
-      "postRating": 1032,
-      "eloChange": -15,
-      "civ": "Teutons",
-      "teamAvgElo": 1056,
-      "opponentAvgElo": 1076,
-      "teammates": [
-        "Emusan",
-        "Chuckyllo4417",
-        "MRmoreto"
-      ],
-      "opponents": [
-        "liehuo22",
-        "Sensei",
-        "Manba Out",
-        "ArchiCraig"
-      ]
-    },
     {
       "matchId": 487646600,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -578,7 +554,7 @@
       "postRating": 929,
       "eloChange": -10,
       "civ": "Chinese",
-      "teamAvgElo": 1001,
+      "teamAvgElo": 1004,
       "opponentAvgElo": 1072,
       "teammates": [
         "iamatthe.hell",
@@ -590,6 +566,30 @@
         "Baz1337",
         "田瘾犯了",
         "Costco1.50HotDog"
+      ]
+    },
+    {
+      "matchId": 493279488,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784414406,
+      "outcome": "loss",
+      "preRating": 929,
+      "postRating": 920,
+      "eloChange": -9,
+      "civ": "Teutons",
+      "teamAvgElo": 982,
+      "opponentAvgElo": 1080,
+      "teammates": [
+        "DEGJ2495",
+        "LUZBELINDIO6060",
+        "sojodavid500"
+      ],
+      "opponents": [
+        "TJ",
+        "-[RDU]- Gorda America Forever",
+        "Ghost_pt",
+        "Terry"
       ]
     }
   ]

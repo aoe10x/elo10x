@@ -1,12 +1,12 @@
 {
   "profile_id": 3501059,
   "alias": "Russie",
-  "rating": 967,
+  "rating": 954,
   "wins": 19,
-  "losses": 36,
-  "gamesCount": 55,
-  "winRate": 35,
-  "lastPlayedAt": 1783166777,
+  "losses": 37,
+  "gamesCount": 56,
+  "winRate": 34,
+  "lastPlayedAt": 1784420125,
   "country": "ie",
   "merged_ids": [],
   "ratingHistory": [
@@ -65,33 +65,10 @@
     938,
     959,
     947,
-    967
+    967,
+    954
   ],
   "recentMatches": [
-    {
-      "matchId": 475344086,
-      "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1777928340,
-      "outcome": "loss",
-      "preRating": 939,
-      "postRating": 931,
-      "eloChange": -8,
-      "civ": "Byzantines",
-      "teamAvgElo": 986,
-      "opponentAvgElo": 1142,
-      "teammates": [
-        "Pogonophobia69",
-        "Mudi Sakica",
-        "我是ikun"
-      ],
-      "opponents": [
-        "pandalam",
-        "老K",
-        "orhk9138",
-        "Old_two"
-      ]
-    },
     {
       "matchId": 475350466,
       "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
@@ -546,6 +523,30 @@
         "mannutipu",
         "jeevacation@gmail.com",
         "Kuecken_das_Vollstrecker"
+      ]
+    },
+    {
+      "matchId": 493296344,
+      "description": "10x shared 3x tech 4v4 random",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784420125,
+      "outcome": "loss",
+      "preRating": 967,
+      "postRating": 954,
+      "eloChange": -13,
+      "civ": "Turks",
+      "teamAvgElo": 1032,
+      "opponentAvgElo": 1022,
+      "teammates": [
+        "pandasadnap",
+        "rcmccallum",
+        "Emusan"
+      ],
+      "opponents": [
+        "bigjames",
+        "erik",
+        "nooblet3300",
+        "1"
       ]
     }
   ]

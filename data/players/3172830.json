@@ -1,12 +1,12 @@
 {
   "profile_id": 3172830,
   "alias": "Craster",
-  "rating": 1030,
+  "rating": 1013,
   "wins": 10,
-  "losses": 11,
-  "gamesCount": 21,
-  "winRate": 48,
-  "lastPlayedAt": 1783987409,
+  "losses": 12,
+  "gamesCount": 22,
+  "winRate": 45,
+  "lastPlayedAt": 1784411436,
   "country": "ve",
   "merged_ids": [],
   "ratingHistory": [
@@ -31,33 +31,10 @@
     1047,
     1028,
     1010,
-    1030
+    1030,
+    1013
   ],
   "recentMatches": [
-    {
-      "matchId": 231066438,
-      "description": "Amazon 10x random civ 4v4",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1683190200,
-      "outcome": "loss",
-      "preRating": 950,
-      "postRating": 914,
-      "eloChange": -36,
-      "civ": "Bohemians",
-      "teamAvgElo": 969,
-      "opponentAvgElo": 1033,
-      "teammates": [
-        "Astro Hawk",
-        "HarHar2800",
-        "PhoenixExplorer777"
-      ],
-      "opponents": [
-        "eban",
-        "MarieBrutale",
-        "The Scientist",
-        "Kene"
-      ]
-    },
     {
       "matchId": 231740404,
       "description": "10x Shared Civ Bonus Random Civ",
@@ -512,6 +489,30 @@
         "feid_",
         "Contry",
         "Abelardo4tojr"
+      ]
+    },
+    {
+      "matchId": 493269866,
+      "description": "x3x10x Shared (PQ3.5 Qualty learing)",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784411436,
+      "outcome": "loss",
+      "preRating": 1030,
+      "postRating": 1013,
+      "eloChange": -17,
+      "civ": "Armenians",
+      "teamAvgElo": 996,
+      "opponentAvgElo": 1015,
+      "teammates": [
+        "Parts",
+        "Paolo Carrosel",
+        "..."
+      ],
+      "opponents": [
+        "aLEXt",
+        "Megahaufen",
+        "Blegh",
+        "-[RDU]- Gorda America Forever"
       ]
     }
   ]

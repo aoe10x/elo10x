@@ -1,12 +1,12 @@
 {
   "profile_id": 10400746,
   "alias": "PNAL | CaligariClown",
-  "rating": 1032,
-  "wins": 17,
+  "rating": 1046,
+  "wins": 18,
   "losses": 15,
-  "gamesCount": 32,
-  "winRate": 53,
-  "lastPlayedAt": 1783984637,
+  "gamesCount": 33,
+  "winRate": 55,
+  "lastPlayedAt": 1784422371,
   "country": "ar",
   "merged_ids": [],
   "ratingHistory": [
@@ -42,33 +42,10 @@
     1015,
     1032,
     1016,
-    1032
+    1032,
+    1046
   ],
   "recentMatches": [
-    {
-      "matchId": 416177098,
-      "description": "4 vs 4 // 10x Shared Random Civ// 2.4 fresh from the oven",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1756618560,
-      "outcome": "loss",
-      "preRating": 1090,
-      "postRating": 1061,
-      "eloChange": -29,
-      "civ": "Wu",
-      "teamAvgElo": 1053,
-      "opponentAvgElo": 1088,
-      "teammates": [
-        "Juk3",
-        "Vandal",
-        "ernestocorrea18"
-      ],
-      "opponents": [
-        "guerrillero33",
-        "漫山哒哒哒",
-        "Cayden",
-        "crumpet"
-      ]
-    },
     {
       "matchId": 416912985,
       "description": "10x civ shared",
@@ -523,6 +500,30 @@
         "TheZeos",
         "Your Ego",
         "Manba Out"
+      ]
+    },
+    {
+      "matchId": 493302250,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784422371,
+      "outcome": "win",
+      "preRating": 1032,
+      "postRating": 1046,
+      "eloChange": 14,
+      "civ": "Maya",
+      "teamAvgElo": 1054,
+      "opponentAvgElo": 979,
+      "teammates": [
+        "Emusan",
+        "Shadow",
+        "Millsoir"
+      ],
+      "opponents": [
+        "Waryahay",
+        "Magical Taylor",
+        "dandan",
+        "Maxim Liann"
       ]
     }
   ]

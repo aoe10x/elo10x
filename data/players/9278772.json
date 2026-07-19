@@ -1,12 +1,12 @@
 {
   "profile_id": 9278772,
   "alias": "dandan",
-  "rating": 1033,
+  "rating": 1004,
   "wins": 28,
-  "losses": 23,
-  "gamesCount": 51,
-  "winRate": 55,
-  "lastPlayedAt": 1783211730,
+  "losses": 25,
+  "gamesCount": 53,
+  "winRate": 53,
+  "lastPlayedAt": 1784423471,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -61,57 +61,11 @@
     1083,
     1064,
     1047,
-    1033
+    1033,
+    1018,
+    1004
   ],
   "recentMatches": [
-    {
-      "matchId": 379933799,
-      "description": "10x civ shared 4V4",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1742607240,
-      "outcome": "win",
-      "preRating": 1072,
-      "postRating": 1088,
-      "eloChange": 16,
-      "civ": "Gurjaras",
-      "teamAvgElo": 1048,
-      "opponentAvgElo": 1074,
-      "teammates": [
-        "ChristopheG1970.Fr",
-        "angelggh95",
-        "Bulzer"
-      ],
-      "opponents": [
-        "pandalam",
-        "老K",
-        "Dellox",
-        "Donkey Conq"
-      ]
-    },
-    {
-      "matchId": 380002785,
-      "description": "10x 3x Bamboo Nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1742625840,
-      "outcome": "win",
-      "preRating": 1088,
-      "postRating": 1102,
-      "eloChange": 14,
-      "civ": "Romans",
-      "teamAvgElo": 1062,
-      "opponentAvgElo": 1043,
-      "teammates": [
-        "Your Ego",
-        "dertli",
-        "shark_12"
-      ],
-      "opponents": [
-        "iamatthe.hell",
-        "EzraSkywalker96",
-        "Ajdne",
-        "cubennets"
-      ]
-    },
     {
       "matchId": 382186196,
       "description": "10x 3x Bamboo  Random",
@@ -542,6 +496,54 @@
         "Myriad",
         "EL__PATRON",
         "PoonSlapper"
+      ]
+    },
+    {
+      "matchId": 493302250,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784422371,
+      "outcome": "loss",
+      "preRating": 1033,
+      "postRating": 1018,
+      "eloChange": -15,
+      "civ": "Celts",
+      "teamAvgElo": 979,
+      "opponentAvgElo": 1054,
+      "teammates": [
+        "Waryahay",
+        "Magical Taylor",
+        "Maxim Liann"
+      ],
+      "opponents": [
+        "Emusan",
+        "Shadow",
+        "Millsoir",
+        "PNAL | CaligariClown"
+      ]
+    },
+    {
+      "matchId": 493306041,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784423471,
+      "outcome": "loss",
+      "preRating": 1018,
+      "postRating": 1004,
+      "eloChange": -14,
+      "civ": "Shu",
+      "teamAvgElo": 1000,
+      "opponentAvgElo": 1069,
+      "teammates": [
+        "feid_",
+        "PoonSlapper",
+        "Maxim Liann"
+      ],
+      "opponents": [
+        "Kumad",
+        "EL__PATRON",
+        "Myriad",
+        "JoeyTribianni69"
       ]
     }
   ]

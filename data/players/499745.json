@@ -1,12 +1,12 @@
 {
   "profile_id": 499745,
   "alias": "DRAX",
-  "rating": 983,
+  "rating": 958,
   "wins": 10,
-  "losses": 13,
-  "gamesCount": 23,
-  "winRate": 43,
-  "lastPlayedAt": 1784163472,
+  "losses": 15,
+  "gamesCount": 25,
+  "winRate": 40,
+  "lastPlayedAt": 1784424250,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -33,57 +33,11 @@
     998,
     982,
     999,
-    983
+    983,
+    968,
+    958
   ],
   "recentMatches": [
-    {
-      "matchId": 485062385,
-      "description": "BAMBOO 10x3xtech",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1781356534,
-      "outcome": "loss",
-      "preRating": 1046,
-      "postRating": 1005,
-      "eloChange": -41,
-      "civ": "Cumans",
-      "teamAvgElo": 1067,
-      "opponentAvgElo": 1062,
-      "teammates": [
-        "herelin0",
-        "Rin Tin Tin",
-        "tonkatumura"
-      ],
-      "opponents": [
-        "iamatthe.hell",
-        "GHGGG",
-        "sppd3181",
-        "Shidoki"
-      ]
-    },
-    {
-      "matchId": 485023838,
-      "description": "10x 3x bamboo no idiot",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1781368860,
-      "outcome": "loss",
-      "preRating": 1005,
-      "postRating": 968,
-      "eloChange": -37,
-      "civ": "Incas",
-      "teamAvgElo": 1025,
-      "opponentAvgElo": 1050,
-      "teammates": [
-        "yiban",
-        "Emusan",
-        "FREESTYLE72"
-      ],
-      "opponents": [
-        "kekekeya",
-        "gamingtars",
-        "fRy0ne",
-        "ChristopheG1970.Fr"
-      ]
-    },
     {
       "matchId": 485047544,
       "description": "10x 3x bamboo random civ",
@@ -514,6 +468,54 @@
         "MRmoreto",
         "Superjabster",
         "Trajano"
+      ]
+    },
+    {
+      "matchId": 493300612,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784421550,
+      "outcome": "loss",
+      "preRating": 983,
+      "postRating": 968,
+      "eloChange": -15,
+      "civ": "Byzantines",
+      "teamAvgElo": 997,
+      "opponentAvgElo": 1006,
+      "teammates": [
+        "TJ",
+        "aLEXt",
+        "PITON | Shepy"
+      ],
+      "opponents": [
+        "-[RDU]- Gorda America Forever",
+        "DPK75",
+        "dogra.hitansh",
+        "KiFQiT - Joseph Vissarionovitch"
+      ]
+    },
+    {
+      "matchId": 493307273,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784424250,
+      "outcome": "loss",
+      "preRating": 968,
+      "postRating": 958,
+      "eloChange": -10,
+      "civ": "Vikings",
+      "teamAvgElo": 1044,
+      "opponentAvgElo": 1104,
+      "teammates": [
+        "Emusan",
+        "This is Kawaii",
+        "Shadow"
+      ],
+      "opponents": [
+        "Ghost_pt",
+        "M¤l₫",
+        "pool_champ",
+        "Mattila_the_Hunt"
       ]
     }
   ]

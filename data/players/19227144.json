@@ -1,12 +1,12 @@
 {
   "profile_id": 19227144,
   "alias": "universeagle",
-  "rating": 942,
+  "rating": 913,
   "wins": 6,
-  "losses": 11,
-  "gamesCount": 17,
-  "winRate": 35,
-  "lastPlayedAt": 1784401959,
+  "losses": 13,
+  "gamesCount": 19,
+  "winRate": 32,
+  "lastPlayedAt": 1784419126,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -22,12 +22,14 @@
     937,
     979,
     1012,
-    985,
+    984,
     967,
     946,
     929,
     961,
-    942
+    942,
+    927,
+    913
   ],
   "recentMatches": [
     {
@@ -280,8 +282,8 @@
       "postRating": 1012,
       "eloChange": 33,
       "civ": "Dravidians",
-      "teamAvgElo": 1058,
-      "opponentAvgElo": 989,
+      "teamAvgElo": 1053,
+      "opponentAvgElo": 985,
       "teammates": [
         "PITON | Shepy",
         "Ghost_pt",
@@ -301,11 +303,11 @@
       "timestamp": 1784394840,
       "outcome": "loss",
       "preRating": 1012,
-      "postRating": 985,
-      "eloChange": -27,
+      "postRating": 984,
+      "eloChange": -28,
       "civ": "Magyars",
-      "teamAvgElo": 1027,
-      "opponentAvgElo": 1051,
+      "teamAvgElo": 1026,
+      "opponentAvgElo": 1043,
       "teammates": [
         "Parts",
         "fuec",
@@ -324,12 +326,12 @@
       "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
       "timestamp": 1784395947,
       "outcome": "loss",
-      "preRating": 985,
+      "preRating": 984,
       "postRating": 967,
-      "eloChange": -18,
+      "eloChange": -17,
       "civ": "Malians",
-      "teamAvgElo": 1034,
-      "opponentAvgElo": 1129,
+      "teamAvgElo": 1029,
+      "opponentAvgElo": 1131,
       "teammates": [
         "schrubber",
         "wintre",
@@ -352,7 +354,7 @@
       "postRating": 946,
       "eloChange": -21,
       "civ": "Gurjaras",
-      "teamAvgElo": 1056,
+      "teamAvgElo": 1058,
       "opponentAvgElo": 1046,
       "teammates": [
         "iamatthe.hell",
@@ -376,7 +378,7 @@
       "postRating": 929,
       "eloChange": -17,
       "civ": "Poles",
-      "teamAvgElo": 1001,
+      "teamAvgElo": 1004,
       "opponentAvgElo": 1072,
       "teammates": [
         "iamatthe.hell",
@@ -400,7 +402,7 @@
       "postRating": 961,
       "eloChange": 32,
       "civ": "Vietnamese",
-      "teamAvgElo": 988,
+      "teamAvgElo": 984,
       "opponentAvgElo": 1045,
       "teammates": [
         "NoAgendaPODCAST",
@@ -424,7 +426,7 @@
       "postRating": 942,
       "eloChange": -19,
       "civ": "Berbers",
-      "teamAvgElo": 1042,
+      "teamAvgElo": 1038,
       "opponentAvgElo": 1016,
       "teammates": [
         "WipiWi",
@@ -436,6 +438,54 @@
         "Filtz",
         "...",
         "YUJIN"
+      ]
+    },
+    {
+      "matchId": 493284495,
+      "description": "10x 3x bamboo",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784416417,
+      "outcome": "loss",
+      "preRating": 942,
+      "postRating": 927,
+      "eloChange": -15,
+      "civ": "Tatars",
+      "teamAvgElo": 960,
+      "opponentAvgElo": 1044,
+      "teammates": [
+        "Mahmut",
+        "468673564",
+        "TJ"
+      ],
+      "opponents": [
+        "bigjames",
+        "Chuckyllo4417",
+        "RoR | Benanji",
+        "LethalP59"
+      ]
+    },
+    {
+      "matchId": 493294105,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784419126,
+      "outcome": "loss",
+      "preRating": 927,
+      "postRating": 913,
+      "eloChange": -14,
+      "civ": "Khmer",
+      "teamAvgElo": 992,
+      "opponentAvgElo": 1029,
+      "teammates": [
+        "Parts",
+        "aLEXt",
+        "ch33tah"
+      ],
+      "opponents": [
+        "Honey badger",
+        "-[RDU]- Gorda America Forever",
+        "gamingtars",
+        "Wozbo"
       ]
     }
   ]

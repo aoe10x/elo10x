@@ -1,12 +1,12 @@
 {
   "profile_id": 2463959,
   "alias": "RoR | Benanji",
-  "rating": 1020,
-  "wins": 20,
+  "rating": 1033,
+  "wins": 21,
   "losses": 18,
-  "gamesCount": 38,
-  "winRate": 53,
-  "lastPlayedAt": 1782538740,
+  "gamesCount": 39,
+  "winRate": 54,
+  "lastPlayedAt": 1784416417,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -48,33 +48,10 @@
     1071,
     1054,
     1036,
-    1020
+    1020,
+    1033
   ],
   "recentMatches": [
-    {
-      "matchId": 434074211,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1763539260,
-      "outcome": "win",
-      "preRating": 1020,
-      "postRating": 1035,
-      "eloChange": 15,
-      "civ": "Vietnamese",
-      "teamAvgElo": 1058,
-      "opponentAvgElo": 940,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "[doGs] Charlie the Bird.",
-        "侯傻傻ᔦఠఠᔨ shasha"
-      ],
-      "opponents": [
-        "<johnny>bravo",
-        "5",
-        "BarqBarq",
-        "bluebitsq78"
-      ]
-    },
     {
       "matchId": 434690187,
       "description": "256x 10x Forest Nothing",
@@ -529,6 +506,30 @@
         "LonelyKnight",
         "MarieBrutale",
         "PITON | Shepy"
+      ]
+    },
+    {
+      "matchId": 493284495,
+      "description": "10x 3x bamboo",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784416417,
+      "outcome": "win",
+      "preRating": 1020,
+      "postRating": 1033,
+      "eloChange": 13,
+      "civ": "Slavs",
+      "teamAvgElo": 1044,
+      "opponentAvgElo": 960,
+      "teammates": [
+        "bigjames",
+        "Chuckyllo4417",
+        "LethalP59"
+      ],
+      "opponents": [
+        "Mahmut",
+        "468673564",
+        "universeagle",
+        "TJ"
       ]
     }
   ]
