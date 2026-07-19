@@ -1,12 +1,12 @@
 {
   "profile_id": 25674284,
   "alias": "...",
-  "rating": 904,
-  "wins": 4,
-  "losses": 11,
-  "gamesCount": 15,
-  "winRate": 27,
-  "lastPlayedAt": 1784450413,
+  "rating": 916,
+  "wins": 5,
+  "losses": 12,
+  "gamesCount": 17,
+  "winRate": 29,
+  "lastPlayedAt": 1784459545,
   "country": "hu",
   "merged_ids": [],
   "ratingHistory": [
@@ -25,7 +25,9 @@
     902,
     882,
     867,
-    904
+    904,
+    933,
+    916
   ],
   "recentMatches": [
     {
@@ -386,6 +388,54 @@
         "lucati123",
         "edmundleung0814",
         "mozu5"
+      ]
+    },
+    {
+      "matchId": 493396901,
+      "description": "10x3x bamboo nothing NO NOOB",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784457536,
+      "outcome": "win",
+      "preRating": 904,
+      "postRating": 933,
+      "eloChange": 29,
+      "civ": "Japanese",
+      "teamAvgElo": 1031,
+      "opponentAvgElo": 982,
+      "teammates": [
+        "轻绘梨花泪满衣",
+        "lucati123",
+        "鱼浆"
+      ],
+      "opponents": [
+        "BeatsNArt",
+        "GenP",
+        "Baz1337",
+        "schrubber"
+      ]
+    },
+    {
+      "matchId": 493402005,
+      "description": "10x Mod Amazon Tunnel Random 4v4 All Welcome!",
+      "mapname": "my map",
+      "timestamp": 1784459545,
+      "outcome": "loss",
+      "preRating": 933,
+      "postRating": 916,
+      "eloChange": -17,
+      "civ": "Magyars",
+      "teamAvgElo": 1002,
+      "opponentAvgElo": 1027,
+      "teammates": [
+        "Leopard",
+        "Janez",
+        "babeleo"
+      ],
+      "opponents": [
+        "Baz1337",
+        "S3dated",
+        "oulouvator",
+        "Personalizado"
       ]
     }
   ]

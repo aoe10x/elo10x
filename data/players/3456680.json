@@ -1,12 +1,12 @@
 {
   "profile_id": 3456680,
   "alias": "GenP",
-  "rating": 895,
+  "rating": 885,
   "wins": 36,
-  "losses": 58,
-  "gamesCount": 94,
+  "losses": 59,
+  "gamesCount": 95,
   "winRate": 38,
-  "lastPlayedAt": 1784396949,
+  "lastPlayedAt": 1784457536,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -104,33 +104,10 @@
     922,
     913,
     904,
-    895
+    895,
+    885
   ],
   "recentMatches": [
-    {
-      "matchId": 490253489,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "my map",
-      "timestamp": 1783254997,
-      "outcome": "loss",
-      "preRating": 1018,
-      "postRating": 1001,
-      "eloChange": -17,
-      "civ": "Wei",
-      "teamAvgElo": 1008,
-      "opponentAvgElo": 1002,
-      "teammates": [
-        "schrubber",
-        "yxsko93",
-        "komatti"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "Consume Product",
-        "Zavgor",
-        "golhmogh"
-      ]
-    },
     {
       "matchId": 490670969,
       "description": "bamboo nothing 10x",
@@ -585,6 +562,30 @@
         "Frz",
         "pool_champ",
         "The Naked Gothman"
+      ]
+    },
+    {
+      "matchId": 493396901,
+      "description": "10x3x bamboo nothing NO NOOB",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784457536,
+      "outcome": "loss",
+      "preRating": 895,
+      "postRating": 885,
+      "eloChange": -10,
+      "civ": "Armenians",
+      "teamAvgElo": 982,
+      "opponentAvgElo": 1031,
+      "teammates": [
+        "BeatsNArt",
+        "Baz1337",
+        "schrubber"
+      ],
+      "opponents": [
+        "轻绘梨花泪满衣",
+        "lucati123",
+        "鱼浆",
+        "..."
       ]
     }
   ]

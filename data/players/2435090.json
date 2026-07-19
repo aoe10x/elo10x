@@ -1,12 +1,12 @@
 {
   "profile_id": 2435090,
   "alias": "oulouvator",
-  "rating": 1005,
-  "wins": 7,
+  "rating": 1026,
+  "wins": 8,
   "losses": 10,
-  "gamesCount": 17,
-  "winRate": 41,
-  "lastPlayedAt": 1783817160,
+  "gamesCount": 18,
+  "winRate": 44,
+  "lastPlayedAt": 1784459545,
   "country": "fr",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,8 @@
     965,
     998,
     977,
-    1005
+    1005,
+    1026
   ],
   "recentMatches": [
     {
@@ -436,6 +437,30 @@
         "Ghost_pt",
         "fxsound",
         "Sal"
+      ]
+    },
+    {
+      "matchId": 493402005,
+      "description": "10x Mod Amazon Tunnel Random 4v4 All Welcome!",
+      "mapname": "my map",
+      "timestamp": 1784459545,
+      "outcome": "win",
+      "preRating": 1005,
+      "postRating": 1026,
+      "eloChange": 21,
+      "civ": "Bohemians",
+      "teamAvgElo": 1027,
+      "opponentAvgElo": 1002,
+      "teammates": [
+        "Baz1337",
+        "S3dated",
+        "Personalizado"
+      ],
+      "opponents": [
+        "Leopard",
+        "...",
+        "Janez",
+        "babeleo"
       ]
     }
   ]

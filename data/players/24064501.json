@@ -1,12 +1,12 @@
 {
   "profile_id": 24064501,
   "alias": "MatzeAoE",
-  "rating": 1052,
+  "rating": 1038,
   "wins": 40,
-  "losses": 48,
-  "gamesCount": 88,
+  "losses": 49,
+  "gamesCount": 89,
   "winRate": 45,
-  "lastPlayedAt": 1782655335,
+  "lastPlayedAt": 1784462849,
   "country": "de",
   "merged_ids": [
     13123606,
@@ -102,33 +102,10 @@
     1030,
     1015,
     1034,
-    1052
+    1052,
+    1038
   ],
   "recentMatches": [
-    {
-      "matchId": 437825909,
-      "description": "10x 3x shared !!NO NOOBS!!",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1764972780,
-      "outcome": "win",
-      "preRating": 964,
-      "postRating": 981,
-      "eloChange": 17,
-      "civ": "Unknown",
-      "teamAvgElo": 1052,
-      "opponentAvgElo": 995,
-      "teammates": [
-        "Age5464",
-        "Delta",
-        "Gearben"
-      ],
-      "opponents": [
-        "Xablau",
-        "Chuckyllo4417",
-        "Memberwise",
-        "gstone"
-      ]
-    },
     {
       "matchId": 438360201,
       "description": "4 vs 4 // 10x Shared Random Civ",
@@ -583,6 +560,30 @@
         "Lama Kužel",
         "ImOneWithTheTree",
         "GiGi"
+      ]
+    },
+    {
+      "matchId": 493411728,
+      "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784462849,
+      "outcome": "loss",
+      "preRating": 1052,
+      "postRating": 1038,
+      "eloChange": -14,
+      "civ": "Wu",
+      "teamAvgElo": 1020,
+      "opponentAvgElo": 1085,
+      "teammates": [
+        "鱼浆",
+        "naponeng",
+        "YUJIN"
+      ],
+      "opponents": [
+        "老K",
+        "pandalam",
+        "ChristopheG1970.Fr",
+        "WalsuG"
       ]
     }
   ]
