@@ -1,12 +1,12 @@
 {
   "profile_id": 548891,
   "alias": "GluGGsel",
-  "rating": 1007,
-  "wins": 13,
+  "rating": 1025,
+  "wins": 14,
   "losses": 14,
-  "gamesCount": 27,
-  "winRate": 48,
-  "lastPlayedAt": 1784230798,
+  "gamesCount": 28,
+  "winRate": 50,
+  "lastPlayedAt": 1784486064,
   "country": "ch",
   "merged_ids": [],
   "ratingHistory": [
@@ -37,33 +37,10 @@
     955,
     974,
     991,
-    1007
+    1007,
+    1025
   ],
   "recentMatches": [
-    {
-      "matchId": 404320169,
-      "description": "10x 3x bamboo nothing  turbo",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1751772180,
-      "outcome": "loss",
-      "preRating": 1020,
-      "postRating": 981,
-      "eloChange": -39,
-      "civ": "Unknown",
-      "teamAvgElo": 1048,
-      "opponentAvgElo": 998,
-      "teammates": [
-        "The Scientist",
-        "MoshMeHarder",
-        "DEVILZ"
-      ],
-      "opponents": [
-        "gmc inspector",
-        "FREESTYLE72",
-        "Mortak",
-        "Scipio Africanus"
-      ]
-    },
     {
       "matchId": 404324942,
       "description": "10x 3x techs Bamboo nothing Random Civs",
@@ -518,6 +495,30 @@
         "KingOfTheNorth",
         "iamatthe.hell",
         "Heklort"
+      ]
+    },
+    {
+      "matchId": 493499387,
+      "description": "10x_3x_Bamboo_Nothing_Random",
+      "mapname": "Bamboo Nothing v4 (BaLi)",
+      "timestamp": 1784486064,
+      "outcome": "win",
+      "preRating": 1007,
+      "postRating": 1025,
+      "eloChange": 18,
+      "civ": "Armenians",
+      "teamAvgElo": 1085,
+      "opponentAvgElo": 1045,
+      "teammates": [
+        "pool_champ",
+        "Lumedge",
+        "gamingtars"
+      ],
+      "opponents": [
+        "Contry",
+        "WalsuG",
+        "SpiniestTuna222",
+        "SlimeJesse"
       ]
     }
   ]

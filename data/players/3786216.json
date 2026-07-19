@@ -1,12 +1,12 @@
 {
   "profile_id": 3786216,
   "alias": "Barosanu512",
-  "rating": 1020,
-  "wins": 55,
+  "rating": 1037,
+  "wins": 56,
   "losses": 49,
-  "gamesCount": 104,
+  "gamesCount": 105,
   "winRate": 53,
-  "lastPlayedAt": 1784060722,
+  "lastPlayedAt": 1784489820,
   "country": "ro",
   "merged_ids": [],
   "ratingHistory": [
@@ -19,7 +19,7 @@
     1011,
     973,
     935,
-    972,
+    1015,
     1046,
     1069,
     1032,
@@ -35,11 +35,11 @@
     1064,
     1046,
     1059,
-    1041,
     1054,
     1038,
     1019,
     1004,
+    1021,
     1036,
     1051,
     1065,
@@ -51,7 +51,6 @@
     1086,
     1101,
     1110,
-    1123,
     1135,
     1146,
     1156,
@@ -59,6 +58,7 @@
     1115,
     1101,
     1115,
+    1093,
     1106,
     1120,
     1104,
@@ -68,7 +68,6 @@
     1068,
     1082,
     1061,
-    1075,
     1089,
     1102,
     1113,
@@ -79,12 +78,12 @@
     1088,
     1067,
     1080,
+    1091,
     1103,
     1090,
     1073,
     1054,
     1039,
-    1056,
     1071,
     1088,
     1072,
@@ -99,8 +98,8 @@
     986,
     972,
     991,
+    1010,
     1027,
-    1012,
     1032,
     1017,
     1002,
@@ -109,33 +108,10 @@
     1025,
     1014,
     1002,
-    1020
+    1020,
+    1037
   ],
   "recentMatches": [
-    {
-      "matchId": 466443436,
-      "description": "10x 256x forest nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1774814880,
-      "outcome": "win",
-      "preRating": 1053,
-      "postRating": 1068,
-      "eloChange": 15,
-      "civ": "Burgundians",
-      "teamAvgElo": 1101,
-      "opponentAvgElo": 1026,
-      "teammates": [
-        "AwesomeCool",
-        "cubennets",
-        "ChristopheG1970.Fr"
-      ],
-      "opponents": [
-        "Donald J Trump - Pedo Protector",
-        "TR.elephantman",
-        "Paladin",
-        "Orinoco"
-      ]
-    },
     {
       "matchId": 469547638,
       "description": "4vs4 10x 3x shared civ bonus, random civ",
@@ -590,6 +566,30 @@
         "iamatthe.hell",
         "wintre",
         "SACALA QUE ME CAGO"
+      ]
+    },
+    {
+      "matchId": 493508902,
+      "description": "10x 3x Bamboo Nothing Turbo",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784489820,
+      "outcome": "win",
+      "preRating": 1020,
+      "postRating": 1037,
+      "eloChange": 17,
+      "civ": "Teutons",
+      "teamAvgElo": 1061,
+      "opponentAvgElo": 1037,
+      "teammates": [
+        "Vince",
+        "DrompferFTW",
+        "Borkan"
+      ],
+      "opponents": [
+        "Ian",
+        "Shidoki",
+        "Josh",
+        "Magnificent"
       ]
     }
   ]

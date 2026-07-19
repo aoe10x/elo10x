@@ -1,12 +1,12 @@
 {
   "profile_id": 3936276,
   "alias": "lul",
-  "rating": 957,
+  "rating": 945,
   "wins": 10,
-  "losses": 18,
-  "gamesCount": 28,
-  "winRate": 36,
-  "lastPlayedAt": 1784222976,
+  "losses": 19,
+  "gamesCount": 29,
+  "winRate": 34,
+  "lastPlayedAt": 1784484523,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -38,33 +38,10 @@
     956,
     946,
     935,
-    957
+    957,
+    945
   ],
   "recentMatches": [
-    {
-      "matchId": 426762603,
-      "description": "PQ  10x 3x Bn Full Random",
-      "mapname": "Bamboo Nothing_Paren_V2",
-      "timestamp": 1760830800,
-      "outcome": "win",
-      "preRating": 916,
-      "postRating": 960,
-      "eloChange": 44,
-      "civ": "Unknown",
-      "teamAvgElo": 1020,
-      "opponentAvgElo": 1001,
-      "teammates": [
-        "Fyrst",
-        "oklema",
-        "Honey badger"
-      ],
-      "opponents": [
-        "Al Ghouti",
-        "Mr.Awesome",
-        "fxsound",
-        "YUJIN"
-      ]
-    },
     {
       "matchId": 427082771,
       "description": "10x 3x shared,random, up-up-up,research",
@@ -519,6 +496,30 @@
         "mgmanager",
         "Nigerian Farmer",
         "Al Ghouti"
+      ]
+    },
+    {
+      "matchId": 493492030,
+      "description": "10x 3x BN ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784484523,
+      "outcome": "loss",
+      "preRating": 957,
+      "postRating": 945,
+      "eloChange": -12,
+      "civ": "Hindustanis",
+      "teamAvgElo": 1022,
+      "opponentAvgElo": 1055,
+      "teammates": [
+        "Consume Product",
+        "Lama Kužel",
+        "Kalervo Jankko"
+      ],
+      "opponents": [
+        "pool_champ",
+        "StreamerOffline",
+        "Contry",
+        "RA"
       ]
     }
   ]

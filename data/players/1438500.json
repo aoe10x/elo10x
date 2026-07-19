@@ -1,12 +1,12 @@
 {
   "profile_id": 1438500,
   "alias": "Tootin B. Anthony",
-  "rating": 922,
+  "rating": 912,
   "wins": 13,
-  "losses": 26,
-  "gamesCount": 39,
+  "losses": 27,
+  "gamesCount": 40,
   "winRate": 33,
-  "lastPlayedAt": 1784244280,
+  "lastPlayedAt": 1784492064,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -49,33 +49,10 @@
     961,
     947,
     936,
-    922
+    922,
+    912
   ],
   "recentMatches": [
-    {
-      "matchId": 462793047,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1773477120,
-      "outcome": "loss",
-      "preRating": 920,
-      "postRating": 909,
-      "eloChange": -11,
-      "civ": "Bohemians",
-      "teamAvgElo": 1015,
-      "opponentAvgElo": 1052,
-      "teammates": [
-        "[LWS] Mandatum",
-        "PoonSlapper",
-        "estudioadmx"
-      ],
-      "opponents": [
-        "Kumad",
-        "EL__PATRON",
-        "Myriad",
-        "DGHIR | NICOGP11"
-      ]
-    },
     {
       "matchId": 465439757,
       "description": "10x Shared Civ",
@@ -530,6 +507,30 @@
         "gemmascho",
         "Borkan",
         "Goodsoup"
+      ]
+    },
+    {
+      "matchId": 493514491,
+      "description": "bamboo nothing 10x 3x",
+      "mapname": "Bamboo Nothing v1 [SCORPYON]",
+      "timestamp": 1784492064,
+      "outcome": "loss",
+      "preRating": 922,
+      "postRating": 912,
+      "eloChange": -10,
+      "civ": "Mongols",
+      "teamAvgElo": 1025,
+      "opponentAvgElo": 1068,
+      "teammates": [
+        "thasl",
+        "Mehandor",
+        "wintre"
+      ],
+      "opponents": [
+        "AceTrooper",
+        "golhmogh",
+        "Llama",
+        "Prinz Kay1"
       ]
     }
   ]

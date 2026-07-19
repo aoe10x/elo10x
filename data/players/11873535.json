@@ -1,12 +1,12 @@
 {
   "profile_id": 11873535,
   "alias": "romeadd",
-  "rating": 1196,
-  "wins": 14,
+  "rating": 1205,
+  "wins": 15,
   "losses": 5,
-  "gamesCount": 19,
-  "winRate": 74,
-  "lastPlayedAt": 1784394840,
+  "gamesCount": 20,
+  "winRate": 75,
+  "lastPlayedAt": 1784490275,
   "country": "gb",
   "merged_ids": [
     11690840,
@@ -32,7 +32,8 @@
     1190,
     1207,
     1224,
-    1196
+    1196,
+    1205
   ],
   "recentMatches": [
     {
@@ -489,6 +490,30 @@
         "schrubber",
         "👨‍🦯‍➡️🫃",
         "wintre"
+      ]
+    },
+    {
+      "matchId": 493510287,
+      "description": "10x 3x Bamboo (unfair and balanced)",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784490275,
+      "outcome": "win",
+      "preRating": 1196,
+      "postRating": 1205,
+      "eloChange": 9,
+      "civ": "Saracens",
+      "teamAvgElo": 1053,
+      "opponentAvgElo": 1016,
+      "teammates": [
+        "CristoTheRealCeisto",
+        "PIEROGI",
+        "Rüdiger"
+      ],
+      "opponents": [
+        "Scipio",
+        "yimacs_yoyoyo",
+        "Yeepers",
+        "Prinz Kay1"
       ]
     }
   ]

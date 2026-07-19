@@ -1,12 +1,12 @@
 {
   "profile_id": 476237,
   "alias": "Dutchigander",
-  "rating": 1149,
+  "rating": 1128,
   "wins": 65,
-  "losses": 36,
-  "gamesCount": 101,
+  "losses": 37,
+  "gamesCount": 102,
   "winRate": 64,
-  "lastPlayedAt": 1784243687,
+  "lastPlayedAt": 1784481541,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,6 @@
     1087,
     1110,
     1079,
-    1052,
     1067,
     1084,
     1099,
@@ -35,6 +34,7 @@
     1123,
     1137,
     1149,
+    1159,
     1167,
     1178,
     1158,
@@ -60,7 +60,6 @@
     1091,
     1076,
     1090,
-    1103,
     1116,
     1127,
     1110,
@@ -84,6 +83,7 @@
     1185,
     1162,
     1173,
+    1151,
     1130,
     1110,
     1124,
@@ -92,7 +92,6 @@
     1130,
     1143,
     1154,
-    1132,
     1112,
     1093,
     1073,
@@ -109,33 +108,10 @@
     1151,
     1163,
     1172,
-    1149
+    1149,
+    1128
   ],
   "recentMatches": [
-    {
-      "matchId": 475890140,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1778131560,
-      "outcome": "win",
-      "preRating": 1130,
-      "postRating": 1143,
-      "eloChange": 13,
-      "civ": "Unknown",
-      "teamAvgElo": 1037,
-      "opponentAvgElo": 1061,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "MadRussian",
-        "Nyetochka"
-      ],
-      "opponents": [
-        "LonelyKnight",
-        "Scadufax",
-        "Gasior",
-        "Yeepers"
-      ]
-    },
     {
       "matchId": 475894127,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -590,6 +566,30 @@
         "Mehandor",
         "Rotbart",
         "Pogonophobia69"
+      ]
+    },
+    {
+      "matchId": 493482054,
+      "description": "10x 3x Bamboo (unfair and balanced)",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784481541,
+      "outcome": "loss",
+      "preRating": 1149,
+      "postRating": 1128,
+      "eloChange": -21,
+      "civ": "Malians",
+      "teamAvgElo": 1094,
+      "opponentAvgElo": 1039,
+      "teammates": [
+        "Scipio",
+        "Boocer",
+        "bommietommie"
+      ],
+      "opponents": [
+        "Zak",
+        "RA",
+        "golhmogh",
+        "HighPriestCaco"
       ]
     }
   ]

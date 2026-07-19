@@ -1,12 +1,12 @@
 {
   "profile_id": 992885,
   "alias": "witchking",
-  "rating": 1031,
+  "rating": 1014,
   "wins": 14,
-  "losses": 14,
-  "gamesCount": 28,
-  "winRate": 50,
-  "lastPlayedAt": 1784460929,
+  "losses": 15,
+  "gamesCount": 29,
+  "winRate": 48,
+  "lastPlayedAt": 1784479431,
   "country": "nl",
   "merged_ids": [],
   "ratingHistory": [
@@ -38,33 +38,10 @@
     1009,
     1027,
     1014,
-    1031
+    1031,
+    1014
   ],
   "recentMatches": [
-    {
-      "matchId": 355381596,
-      "description": "10x shared (brand-new mod)",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1732998540,
-      "outcome": "loss",
-      "preRating": 908,
-      "postRating": 888,
-      "eloChange": -20,
-      "civ": "Unknown",
-      "teamAvgElo": 949,
-      "opponentAvgElo": 1070,
-      "teammates": [
-        "Derppester",
-        "enclavesaga",
-        "S"
-      ],
-      "opponents": [
-        "asuky",
-        "侯傻傻ᔦఠఠᔨ shasha",
-        "JuleAaa",
-        "Desperado"
-      ]
-    },
     {
       "matchId": 355471193,
       "description": "10x shared 3x tech Bamboo nothing random civ",
@@ -519,6 +496,30 @@
         "Scipio",
         "紫蝶黄蜂俱有情",
         "momo"
+      ]
+    },
+    {
+      "matchId": 493474032,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784479431,
+      "outcome": "loss",
+      "preRating": 1031,
+      "postRating": 1014,
+      "eloChange": -17,
+      "civ": "Romans",
+      "teamAvgElo": 1045,
+      "opponentAvgElo": 1020,
+      "teammates": [
+        "Derppester",
+        "gamingtars",
+        "RA"
+      ],
+      "opponents": [
+        "Parts",
+        "Bryce Coolguy",
+        "yimacs_yoyoyo",
+        "nooblet3300"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 4782573,
   "alias": "Lama Kužel",
-  "rating": 1061,
+  "rating": 1045,
   "wins": 28,
-  "losses": 25,
-  "gamesCount": 53,
-  "winRate": 53,
-  "lastPlayedAt": 1784443104,
+  "losses": 26,
+  "gamesCount": 54,
+  "winRate": 52,
+  "lastPlayedAt": 1784484523,
   "country": "sk",
   "merged_ids": [
     4782573,
@@ -66,33 +66,10 @@
     1074,
     1059,
     1043,
-    1061
+    1061,
+    1045
   ],
   "recentMatches": [
-    {
-      "matchId": 486125151,
-      "description": "10x 3x bamboo no noob q群729084973",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1781721972,
-      "outcome": "loss",
-      "preRating": 1072,
-      "postRating": 1057,
-      "eloChange": -15,
-      "civ": "Persians",
-      "teamAvgElo": 1046,
-      "opponentAvgElo": 1091,
-      "teammates": [
-        "PIEROGI",
-        "BearBrown",
-        "Keny"
-      ],
-      "opponents": [
-        "Semisky",
-        "摸鱼",
-        "mgmanager",
-        "Abelardo4tojr"
-      ]
-    },
     {
       "matchId": 486994718,
       "description": "10x Shared 3xTech Bamboo Nothing",
@@ -547,6 +524,30 @@
         "RIchard_Uy",
         "kekekeya",
         "Lumedge"
+      ]
+    },
+    {
+      "matchId": 493492030,
+      "description": "10x 3x BN ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784484523,
+      "outcome": "loss",
+      "preRating": 1061,
+      "postRating": 1045,
+      "eloChange": -16,
+      "civ": "Slavs",
+      "teamAvgElo": 1022,
+      "opponentAvgElo": 1055,
+      "teammates": [
+        "Consume Product",
+        "Kalervo Jankko",
+        "lul"
+      ],
+      "opponents": [
+        "pool_champ",
+        "StreamerOffline",
+        "Contry",
+        "RA"
       ]
     }
   ]

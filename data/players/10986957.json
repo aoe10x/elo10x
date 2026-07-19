@@ -1,12 +1,12 @@
 {
   "profile_id": 10986957,
   "alias": "Magnificent",
-  "rating": 1026,
+  "rating": 1012,
   "wins": 32,
-  "losses": 35,
-  "gamesCount": 67,
-  "winRate": 48,
-  "lastPlayedAt": 1784309050,
+  "losses": 36,
+  "gamesCount": 68,
+  "winRate": 47,
+  "lastPlayedAt": 1784489820,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -77,33 +77,10 @@
     1036,
     1020,
     1006,
-    1026
+    1026,
+    1012
   ],
   "recentMatches": [
-    {
-      "matchId": 409966468,
-      "description": "10x 3x bamboo nothing",
-      "mapname": "Bamboo_Nothing_V3.0.7_No_Water___Edge_Fix",
-      "timestamp": 1754065620,
-      "outcome": "loss",
-      "preRating": 1022,
-      "postRating": 1006,
-      "eloChange": -16,
-      "civ": "Dravidians",
-      "teamAvgElo": 1032,
-      "opponentAvgElo": 1015,
-      "teammates": [
-        "Mr. PUTIN my President",
-        "紫蝶黄蜂俱有情",
-        "Bean goose"
-      ],
-      "opponents": [
-        "[B] Zennith",
-        "Kinna fresh",
-        "FAOse7en",
-        "KyrThanos"
-      ]
-    },
     {
       "matchId": 410002184,
       "description": "10x 3x bamboo nothing",
@@ -558,6 +535,30 @@
         "[CSGS]Runescape",
         "BearBrown",
         "baianitro"
+      ]
+    },
+    {
+      "matchId": 493508902,
+      "description": "10x 3x Bamboo Nothing Turbo",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784489820,
+      "outcome": "loss",
+      "preRating": 1026,
+      "postRating": 1012,
+      "eloChange": -14,
+      "civ": "Turks",
+      "teamAvgElo": 1037,
+      "opponentAvgElo": 1061,
+      "teammates": [
+        "Ian",
+        "Shidoki",
+        "Josh"
+      ],
+      "opponents": [
+        "Vince",
+        "DrompferFTW",
+        "Borkan",
+        "Barosanu512"
       ]
     }
   ]

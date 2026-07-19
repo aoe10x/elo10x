@@ -1,12 +1,12 @@
 {
   "profile_id": 2843438,
   "alias": "Scipio",
-  "rating": 1004,
-  "wins": 29,
-  "losses": 33,
-  "gamesCount": 62,
-  "winRate": 47,
-  "lastPlayedAt": 1784477234,
+  "rating": 983,
+  "wins": 30,
+  "losses": 36,
+  "gamesCount": 66,
+  "winRate": 45,
+  "lastPlayedAt": 1784490275,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -72,105 +72,13 @@
     1014,
     999,
     988,
-    1004
+    1004,
+    1023,
+    1008,
+    996,
+    983
   ],
   "recentMatches": [
-    {
-      "matchId": 492030505,
-      "description": "bamboo nothing  10x",
-      "mapname": "Bamboo Nothing v3 (BaLi)",
-      "timestamp": 1783934859,
-      "outcome": "loss",
-      "preRating": 1018,
-      "postRating": 1002,
-      "eloChange": -16,
-      "civ": "Slavs",
-      "teamAvgElo": 1059,
-      "opponentAvgElo": 1010,
-      "teammates": [
-        "[B] Zennith",
-        "cyberocioso",
-        "Catwomim"
-      ],
-      "opponents": [
-        "平生不修善果 只爱石油军火",
-        "ActualWizard",
-        "468673564",
-        "Zavgor"
-      ]
-    },
-    {
-      "matchId": 492032798,
-      "description": "bamboo nothing  10x",
-      "mapname": "Bamboo Nothing v3 (BaLi)",
-      "timestamp": 1783936091,
-      "outcome": "win",
-      "preRating": 1002,
-      "postRating": 1017,
-      "eloChange": 15,
-      "civ": "Britons",
-      "teamAvgElo": 1057,
-      "opponentAvgElo": 988,
-      "teammates": [
-        "[B] Zennith",
-        "鱼浆",
-        "平生不修善果 只爱石油军火"
-      ],
-      "opponents": [
-        "ActualWizard",
-        "Consume Product",
-        "Eemeli",
-        "468673564"
-      ]
-    },
-    {
-      "matchId": 492202351,
-      "description": "10x 3x Bamboo (bad dragon)",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1783995200,
-      "outcome": "win",
-      "preRating": 1017,
-      "postRating": 1034,
-      "eloChange": 17,
-      "civ": "Vikings",
-      "teamAvgElo": 994,
-      "opponentAvgElo": 1042,
-      "teammates": [
-        "Optimus",
-        "Parts",
-        "[TodEs] MnTartara"
-      ],
-      "opponents": [
-        "Monkeymonk",
-        "gmc inspector",
-        "Makinaskee",
-        "adrian"
-      ]
-    },
-    {
-      "matchId": 492205946,
-      "description": "10x 3x Bamboo (no laggers)",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1783996551,
-      "outcome": "loss",
-      "preRating": 1034,
-      "postRating": 1018,
-      "eloChange": -16,
-      "civ": "Khmer",
-      "teamAvgElo": 996,
-      "opponentAvgElo": 1042,
-      "teammates": [
-        "Not a Wizard",
-        "Master.Ji.ro.714",
-        "[B] Cannino"
-      ],
-      "opponents": [
-        "Makinaskee",
-        "Monkeymonk",
-        "adrian",
-        "duckbuildperson"
-      ]
-    },
     {
       "matchId": 492274203,
       "description": "i kun 10x3x 4v4s qun729084973",
@@ -553,6 +461,102 @@
         "RedBullWOLOLO26",
         "Pogonophobia69",
         "jonnywins100"
+      ]
+    },
+    {
+      "matchId": 493475351,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784479956,
+      "outcome": "win",
+      "preRating": 1004,
+      "postRating": 1023,
+      "eloChange": 19,
+      "civ": "Vikings",
+      "teamAvgElo": 1097,
+      "opponentAvgElo": 1069,
+      "teammates": [
+        "田瘾犯了",
+        "Max",
+        "-EL_JUEZ-"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "DnD",
+        "[CSGS]Runescape",
+        "a clump of cells"
+      ]
+    },
+    {
+      "matchId": 493482054,
+      "description": "10x 3x Bamboo (unfair and balanced)",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784481541,
+      "outcome": "loss",
+      "preRating": 1023,
+      "postRating": 1008,
+      "eloChange": -15,
+      "civ": "Vietnamese",
+      "teamAvgElo": 1094,
+      "opponentAvgElo": 1039,
+      "teammates": [
+        "Dutchigander",
+        "Boocer",
+        "bommietommie"
+      ],
+      "opponents": [
+        "Zak",
+        "RA",
+        "golhmogh",
+        "HighPriestCaco"
+      ]
+    },
+    {
+      "matchId": 493490259,
+      "description": "10x 3x Bamboo (unfair and balanced)",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784483425,
+      "outcome": "loss",
+      "preRating": 1008,
+      "postRating": 996,
+      "eloChange": -12,
+      "civ": "Poles",
+      "teamAvgElo": 1041,
+      "opponentAvgElo": 1088,
+      "teammates": [
+        "PITON | Shepy",
+        "golhmogh",
+        "Bryce Coolguy"
+      ],
+      "opponents": [
+        "TheCobra",
+        "Vince",
+        "Boocer",
+        "bommietommie"
+      ]
+    },
+    {
+      "matchId": 493510287,
+      "description": "10x 3x Bamboo (unfair and balanced)",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784490275,
+      "outcome": "loss",
+      "preRating": 996,
+      "postRating": 983,
+      "eloChange": -13,
+      "civ": "Gurjaras",
+      "teamAvgElo": 1016,
+      "opponentAvgElo": 1053,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "Yeepers",
+        "Prinz Kay1"
+      ],
+      "opponents": [
+        "CristoTheRealCeisto",
+        "PIEROGI",
+        "romeadd",
+        "Rüdiger"
       ]
     }
   ]

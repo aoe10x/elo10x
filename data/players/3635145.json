@@ -1,12 +1,12 @@
 {
   "profile_id": 3635145,
   "alias": "Prinz Kay1",
-  "rating": 1069,
-  "wins": 42,
-  "losses": 37,
-  "gamesCount": 79,
+  "rating": 1067,
+  "wins": 43,
+  "losses": 38,
+  "gamesCount": 81,
   "winRate": 53,
-  "lastPlayedAt": 1784385683,
+  "lastPlayedAt": 1784492064,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -89,57 +89,11 @@
     1052,
     1068,
     1054,
-    1069
+    1069,
+    1052,
+    1067
   ],
   "recentMatches": [
-    {
-      "matchId": 491397795,
-      "description": "10x 3x bamboo",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1783717396,
-      "outcome": "win",
-      "preRating": 1043,
-      "postRating": 1059,
-      "eloChange": 16,
-      "civ": "Wei",
-      "teamAvgElo": 1088,
-      "opponentAvgElo": 1043,
-      "teammates": [
-        "Saloon_F_F",
-        "Sensei",
-        "ISwaZz"
-      ],
-      "opponents": [
-        "Lykerya",
-        "checkdis",
-        "Lordetion",
-        "Honey badger"
-      ]
-    },
-    {
-      "matchId": 491534848,
-      "description": "4vs4 10x 3x shared civ bonus, random civ",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1783766568,
-      "outcome": "loss",
-      "preRating": 1059,
-      "postRating": 1047,
-      "eloChange": -12,
-      "civ": "Gurjaras",
-      "teamAvgElo": 1009,
-      "opponentAvgElo": 1139,
-      "teammates": [
-        "k0rnm@yer",
-        "fafounet",
-        "Barosanu512"
-      ],
-      "opponents": [
-        "yimacs_yoyoyo",
-        "pandalam",
-        "shining star",
-        "fxsound"
-      ]
-    },
     {
       "matchId": 491583989,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -570,6 +524,54 @@
         "Papillon",
         "tonkatumura",
         "Lykerya"
+      ]
+    },
+    {
+      "matchId": 493510287,
+      "description": "10x 3x Bamboo (unfair and balanced)",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784490275,
+      "outcome": "loss",
+      "preRating": 1069,
+      "postRating": 1052,
+      "eloChange": -17,
+      "civ": "Wu",
+      "teamAvgElo": 1016,
+      "opponentAvgElo": 1053,
+      "teammates": [
+        "Scipio",
+        "yimacs_yoyoyo",
+        "Yeepers"
+      ],
+      "opponents": [
+        "CristoTheRealCeisto",
+        "PIEROGI",
+        "romeadd",
+        "Rüdiger"
+      ]
+    },
+    {
+      "matchId": 493514491,
+      "description": "bamboo nothing 10x 3x",
+      "mapname": "Bamboo Nothing v1 [SCORPYON]",
+      "timestamp": 1784492064,
+      "outcome": "win",
+      "preRating": 1052,
+      "postRating": 1067,
+      "eloChange": 15,
+      "civ": "Incas",
+      "teamAvgElo": 1068,
+      "opponentAvgElo": 1025,
+      "teammates": [
+        "AceTrooper",
+        "golhmogh",
+        "Llama"
+      ],
+      "opponents": [
+        "thasl",
+        "Mehandor",
+        "Tootin B. Anthony",
+        "wintre"
       ]
     }
   ]
