@@ -1,12 +1,12 @@
 {
   "profile_id": 14547533,
   "alias": "Tanaxha",
-  "rating": 997,
+  "rating": 984,
   "wins": 14,
-  "losses": 17,
-  "gamesCount": 31,
-  "winRate": 45,
-  "lastPlayedAt": 1782584011,
+  "losses": 18,
+  "gamesCount": 32,
+  "winRate": 44,
+  "lastPlayedAt": 1784517532,
   "country": "ca",
   "merged_ids": [
     12148782,
@@ -44,33 +44,10 @@
     1045,
     1027,
     1013,
-    997
+    997,
+    984
   ],
   "recentMatches": [
-    {
-      "matchId": 414732283,
-      "description": "10x shared bonus 3x tech fast",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1756019340,
-      "outcome": "win",
-      "preRating": 1069,
-      "postRating": 1094,
-      "eloChange": 25,
-      "civ": "Teutons",
-      "teamAvgElo": 1035,
-      "opponentAvgElo": 1005,
-      "teammates": [
-        "Clean",
-        "levvafire",
-        "OOOOOOOOOOO"
-      ],
-      "opponents": [
-        "Bryce Coolguy",
-        "Paulichromatic",
-        "Glasg0w",
-        "Nate-#1"
-      ]
-    },
     {
       "matchId": 416082114,
       "description": "10x 3x shared,random,up-up-up-research",
@@ -525,6 +502,30 @@
         "Paris Hilton",
         "Tentslet",
         "Фиксоед"
+      ]
+    },
+    {
+      "matchId": 493578484,
+      "description": "10x 3x Bamboo (unfair and unbalanced)",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784517532,
+      "outcome": "loss",
+      "preRating": 997,
+      "postRating": 984,
+      "eloChange": -13,
+      "civ": "Japanese",
+      "teamAvgElo": 989,
+      "opponentAvgElo": 1057,
+      "teammates": [
+        "Sundev",
+        "OPPA",
+        "RIchard_Uy"
+      ],
+      "opponents": [
+        "Scipio",
+        "Maxim Liann",
+        "TomAquinas",
+        "田瘾犯了"
       ]
     }
   ]

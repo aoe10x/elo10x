@@ -1,12 +1,12 @@
 {
   "profile_id": 3565274,
   "alias": "Ricardo V",
-  "rating": 1020,
-  "wins": 24,
+  "rating": 1035,
+  "wins": 25,
   "losses": 31,
-  "gamesCount": 55,
-  "winRate": 44,
-  "lastPlayedAt": 1784434832,
+  "gamesCount": 56,
+  "winRate": 45,
+  "lastPlayedAt": 1784522156,
   "country": "pe",
   "merged_ids": [
     3565274,
@@ -68,33 +68,10 @@
     998,
     1018,
     1033,
-    1020
+    1020,
+    1035
   ],
   "recentMatches": [
-    {
-      "matchId": 454275808,
-      "description": "10x 3x - bamboo",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1770457860,
-      "outcome": "loss",
-      "preRating": 975,
-      "postRating": 964,
-      "eloChange": -11,
-      "civ": "Romans",
-      "teamAvgElo": 1017,
-      "opponentAvgElo": 1084,
-      "teammates": [
-        "Breast Milk",
-        "skretik",
-        "Fringnut"
-      ],
-      "opponents": [
-        "Parenquima",
-        "Rice Monger (SoullessMZD)",
-        "LonelyKnight",
-        "Spiz.101"
-      ]
-    },
     {
       "matchId": 454533918,
       "description": "10x 256x Forest Nothing",
@@ -549,6 +526,30 @@
         "[B] Cannino",
         "Lumedge",
         "田瘾犯了"
+      ]
+    },
+    {
+      "matchId": 493587842,
+      "description": "10x 3x bamboo",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784522156,
+      "outcome": "win",
+      "preRating": 1020,
+      "postRating": 1035,
+      "eloChange": 15,
+      "civ": "Malians",
+      "teamAvgElo": 1006,
+      "opponentAvgElo": 1003,
+      "teammates": [
+        "Mahmut",
+        "476055690",
+        "Maxim Liann"
+      ],
+      "opponents": [
+        "Willoloh!!!",
+        "jonathahyoga",
+        "GrandUni",
+        "adrian"
       ]
     }
   ]

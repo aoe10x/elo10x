@@ -1,12 +1,12 @@
 {
   "profile_id": 13938878,
   "alias": "SoyLaMuerte",
-  "rating": 984,
+  "rating": 971,
   "wins": 11,
-  "losses": 16,
-  "gamesCount": 27,
-  "winRate": 41,
-  "lastPlayedAt": 1782832550,
+  "losses": 17,
+  "gamesCount": 28,
+  "winRate": 39,
+  "lastPlayedAt": 1784522426,
   "country": "co",
   "merged_ids": [
     13075245,
@@ -40,33 +40,10 @@
     991,
     975,
     965,
-    984
+    984,
+    971
   ],
   "recentMatches": [
-    {
-      "matchId": 457020752,
-      "description": "3x 10x bamboo - random civ - no noobs",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1771399680,
-      "outcome": "loss",
-      "preRating": 1021,
-      "postRating": 982,
-      "eloChange": -39,
-      "civ": "Incas",
-      "teamAvgElo": 978,
-      "opponentAvgElo": 1007,
-      "teammates": [
-        "__VK__",
-        "Nixx",
-        "Genesiy"
-      ],
-      "opponents": [
-        "gemmascho",
-        "yimacs_yoyoyo",
-        "checkdis",
-        "Glasg0w"
-      ]
-    },
     {
       "matchId": 457074690,
       "description": "10x_3x_Bamboo_Nothing_Random",
@@ -521,6 +498,30 @@
         "tonkatumura",
         "calebw704",
         "Consume Product"
+      ]
+    },
+    {
+      "matchId": 493587849,
+      "description": "x3x10x Shared (PQ3.5 Qualty learing)",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784522426,
+      "outcome": "loss",
+      "preRating": 984,
+      "postRating": 971,
+      "eloChange": -13,
+      "civ": "Italians",
+      "teamAvgElo": 1007,
+      "opponentAvgElo": 1055,
+      "teammates": [
+        "aLEXt",
+        "-[RDU]- Gorda America Forever",
+        "edalmavuz"
+      ],
+      "opponents": [
+        "typ53b90",
+        "紫蝶黄蜂俱有情",
+        "Sal",
+        "Parts"
       ]
     }
   ]

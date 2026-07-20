@@ -1,12 +1,12 @@
 {
   "profile_id": 25067300,
   "alias": "Frz",
-  "rating": 1046,
+  "rating": 1027,
   "wins": 9,
-  "losses": 9,
-  "gamesCount": 18,
-  "winRate": 50,
-  "lastPlayedAt": 1784492707,
+  "losses": 10,
+  "gamesCount": 19,
+  "winRate": 47,
+  "lastPlayedAt": 1784518644,
   "country": "us",
   "merged_ids": [
     13595490,
@@ -31,7 +31,8 @@
     1063,
     1043,
     1064,
-    1046
+    1046,
+    1027
   ],
   "recentMatches": [
     {
@@ -464,6 +465,30 @@
         "Vince",
         "Ye",
         "Mehandor"
+      ]
+    },
+    {
+      "matchId": 493580489,
+      "description": "x3x10x Shared (PQ3.5 Qualty learing)",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784518644,
+      "outcome": "loss",
+      "preRating": 1046,
+      "postRating": 1027,
+      "eloChange": -19,
+      "civ": "Chinese",
+      "teamAvgElo": 998,
+      "opponentAvgElo": 1047,
+      "teammates": [
+        "aLEXt",
+        "nooblet3300",
+        "Willoloh!!!"
+      ],
+      "opponents": [
+        "mothysime11",
+        "Bridge",
+        "babeleo",
+        "EastDanielNowhere"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 4084571,
   "alias": "Mahmut",
-  "rating": 975,
-  "wins": 9,
+  "rating": 992,
+  "wins": 10,
   "losses": 13,
-  "gamesCount": 22,
-  "winRate": 41,
-  "lastPlayedAt": 1784416417,
+  "gamesCount": 23,
+  "winRate": 43,
+  "lastPlayedAt": 1784522156,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -32,33 +32,10 @@
     979,
     1002,
     988,
-    975
+    975,
+    992
   ],
   "recentMatches": [
-    {
-      "matchId": 229747967,
-      "description": "10x civ bonus 4v4 random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1682741340,
-      "outcome": "loss",
-      "preRating": 1014,
-      "postRating": 972,
-      "eloChange": -42,
-      "civ": "Mongols",
-      "teamAvgElo": 1029,
-      "opponentAvgElo": 1038,
-      "teammates": [
-        "Orange Goblin",
-        "FebruaryJP",
-        "Mr. H."
-      ],
-      "opponents": [
-        "Tupachoque",
-        "1337",
-        "kylemingo",
-        "Sensei"
-      ]
-    },
     {
       "matchId": 233073407,
       "description": "10x shared Civ 4v4 Bamboo nothing",
@@ -513,6 +490,30 @@
         "Chuckyllo4417",
         "RoR | Benanji",
         "LethalP59"
+      ]
+    },
+    {
+      "matchId": 493587842,
+      "description": "10x 3x bamboo",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784522156,
+      "outcome": "win",
+      "preRating": 975,
+      "postRating": 992,
+      "eloChange": 17,
+      "civ": "Burgundians",
+      "teamAvgElo": 1006,
+      "opponentAvgElo": 1003,
+      "teammates": [
+        "476055690",
+        "Maxim Liann",
+        "Ricardo V"
+      ],
+      "opponents": [
+        "Willoloh!!!",
+        "jonathahyoga",
+        "GrandUni",
+        "adrian"
       ]
     }
   ]

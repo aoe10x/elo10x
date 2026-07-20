@@ -1,12 +1,12 @@
 {
   "profile_id": 4958857,
   "alias": "OPPA",
-  "rating": 1019,
+  "rating": 990,
   "wins": 11,
-  "losses": 12,
-  "gamesCount": 23,
-  "winRate": 48,
-  "lastPlayedAt": 1781694900,
+  "losses": 14,
+  "gamesCount": 25,
+  "winRate": 44,
+  "lastPlayedAt": 1784517532,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -33,57 +33,11 @@
     1031,
     1049,
     1035,
-    1019
+    1019,
+    1004,
+    990
   ],
   "recentMatches": [
-    {
-      "matchId": 336643185,
-      "description": "4vs4 10x 3x shared civ bonus, random civ",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1725234780,
-      "outcome": "win",
-      "preRating": 1048,
-      "postRating": 1092,
-      "eloChange": 44,
-      "civ": "Unknown",
-      "teamAvgElo": 1067,
-      "opponentAvgElo": 1051,
-      "teammates": [
-        "pandalam",
-        "yimacs_yoyoyo",
-        "Pope Leo I."
-      ],
-      "opponents": [
-        "Temp",
-        "helianth",
-        "伊地知 虹夏",
-        "胡英俊"
-      ]
-    },
-    {
-      "matchId": 355287086,
-      "description": "3x 10x Random",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1732955700,
-      "outcome": "loss",
-      "preRating": 1092,
-      "postRating": 1044,
-      "eloChange": -48,
-      "civ": "Unknown",
-      "teamAvgElo": 1093,
-      "opponentAvgElo": 1037,
-      "teammates": [
-        "Mr. PUTIN my President",
-        "[doGs] Charlie the Bird.",
-        "YE"
-      ],
-      "opponents": [
-        "MadRussian",
-        "aLEXt",
-        "michall",
-        "LB Trice"
-      ]
-    },
     {
       "matchId": 405044131,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -514,6 +468,54 @@
         "Sundev",
         "Keishi",
         "Nixx"
+      ]
+    },
+    {
+      "matchId": 493575408,
+      "description": "10x 3x Bamboo (unfair and balanced)",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784516544,
+      "outcome": "loss",
+      "preRating": 1019,
+      "postRating": 1004,
+      "eloChange": -15,
+      "civ": "Magyars",
+      "teamAvgElo": 995,
+      "opponentAvgElo": 1032,
+      "teammates": [
+        "Scipio",
+        "Thí Chủ Chết Chưa",
+        "Maxim Liann"
+      ],
+      "opponents": [
+        "TomAquinas",
+        "WDWKid3",
+        "Jormungand",
+        "Sundev"
+      ]
+    },
+    {
+      "matchId": 493578484,
+      "description": "10x 3x Bamboo (unfair and unbalanced)",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784517532,
+      "outcome": "loss",
+      "preRating": 1004,
+      "postRating": 990,
+      "eloChange": -14,
+      "civ": "Romans",
+      "teamAvgElo": 989,
+      "opponentAvgElo": 1057,
+      "teammates": [
+        "Tanaxha",
+        "Sundev",
+        "RIchard_Uy"
+      ],
+      "opponents": [
+        "Scipio",
+        "Maxim Liann",
+        "TomAquinas",
+        "田瘾犯了"
       ]
     }
   ]

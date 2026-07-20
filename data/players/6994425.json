@@ -1,12 +1,12 @@
 {
   "profile_id": 6994425,
   "alias": "Master Polo4905",
-  "rating": 991,
+  "rating": 978,
   "wins": 38,
-  "losses": 49,
-  "gamesCount": 87,
-  "winRate": 44,
-  "lastPlayedAt": 1784335768,
+  "losses": 50,
+  "gamesCount": 88,
+  "winRate": 43,
+  "lastPlayedAt": 1784520623,
   "country": "mx",
   "merged_ids": [],
   "ratingHistory": [
@@ -97,33 +97,10 @@
     1004,
     989,
     1006,
-    991
+    991,
+    978
   ],
   "recentMatches": [
-    {
-      "matchId": 471948427,
-      "description": "10x 3x bamboo nothing  turbo host here",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1776745140,
-      "outcome": "win",
-      "preRating": 957,
-      "postRating": 976,
-      "eloChange": 19,
-      "civ": "Poles",
-      "teamAvgElo": 1014,
-      "opponentAvgElo": 1016,
-      "teammates": [
-        "gmc inspector",
-        "TJ",
-        "ThrillerKillah17"
-      ],
-      "opponents": [
-        "Berberecho_Feroz",
-        "Chirijiraden",
-        "JMB",
-        "Fajny Człowiek"
-      ]
-    },
     {
       "matchId": 471985147,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -578,6 +555,30 @@
         "WipiWi",
         "FirstRussianTzar",
         "Surnrnoner"
+      ]
+    },
+    {
+      "matchId": 493584485,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784520623,
+      "outcome": "loss",
+      "preRating": 991,
+      "postRating": 978,
+      "eloChange": -13,
+      "civ": "Gurjaras",
+      "teamAvgElo": 997,
+      "opponentAvgElo": 1068,
+      "teammates": [
+        "RIchard_Uy",
+        "漫山哒哒哒",
+        "ak4741a"
+      ],
+      "opponents": [
+        "Parenquima",
+        "Bridge",
+        "Willoloh!!!",
+        "edalmavuz"
       ]
     }
   ]

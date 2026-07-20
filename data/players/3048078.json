@@ -1,12 +1,12 @@
 {
   "profile_id": 3048078,
   "alias": "Angry Meow",
-  "rating": 1077,
-  "wins": 16,
+  "rating": 1091,
+  "wins": 17,
   "losses": 14,
-  "gamesCount": 30,
-  "winRate": 53,
-  "lastPlayedAt": 1784069270,
+  "gamesCount": 31,
+  "winRate": 55,
+  "lastPlayedAt": 1784513853,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -40,33 +40,10 @@
     1032,
     1046,
     1061,
-    1077
+    1077,
+    1091
   ],
   "recentMatches": [
-    {
-      "matchId": 343620513,
-      "description": "10x shared",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1728209940,
-      "outcome": "loss",
-      "preRating": 932,
-      "postRating": 905,
-      "eloChange": -27,
-      "civ": "Maya",
-      "teamAvgElo": 959,
-      "opponentAvgElo": 985,
-      "teammates": [
-        "UU",
-        "Ikumo",
-        "930562692"
-      ],
-      "opponents": [
-        "Hexicero",
-        "BaldAfro",
-        "politician",
-        "-[RDU]- Gorda America Forever"
-      ]
-    },
     {
       "matchId": 366016571,
       "description": "10x Shared - 3x Tech BAMBOO 4V4",
@@ -521,6 +498,30 @@
         "Harold806",
         "Kuecken_das_Vollstrecker",
         "Vulkan"
+      ]
+    },
+    {
+      "matchId": 493568597,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784513853,
+      "outcome": "win",
+      "preRating": 1077,
+      "postRating": 1091,
+      "eloChange": 14,
+      "civ": "Celts",
+      "teamAvgElo": 1049,
+      "opponentAvgElo": 1037,
+      "teammates": [
+        "TJ",
+        "Vince",
+        "Thí Chủ Chết Chưa"
+      ],
+      "opponents": [
+        "Nimu.-",
+        "Meursault005",
+        "mozu5",
+        "399 the Grizzly Bear - RIP <3"
       ]
     }
   ]
