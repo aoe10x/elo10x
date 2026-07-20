@@ -1,12 +1,12 @@
 {
   "profile_id": 589142,
   "alias": "Armyofme_",
-  "rating": 1087,
+  "rating": 1075,
   "wins": 43,
-  "losses": 41,
-  "gamesCount": 84,
+  "losses": 42,
+  "gamesCount": 85,
   "winRate": 51,
-  "lastPlayedAt": 1784220618,
+  "lastPlayedAt": 1784503600,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -94,33 +94,10 @@
     1109,
     1090,
     1073,
-    1087
+    1087,
+    1075
   ],
   "recentMatches": [
-    {
-      "matchId": 461205255,
-      "description": "BN 10x 3x garbage = BAN",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1772878440,
-      "outcome": "win",
-      "preRating": 1032,
-      "postRating": 1049,
-      "eloChange": 17,
-      "civ": "Romans",
-      "teamAvgElo": 1050,
-      "opponentAvgElo": 1049,
-      "teammates": [
-        "duckbuildperson",
-        "DomBrown",
-        "Tortrix"
-      ],
-      "opponents": [
-        "Sundev",
-        "fxsound",
-        "Imperator Storm",
-        "jelliebean11"
-      ]
-    },
     {
       "matchId": 461208851,
       "description": "BN 10x 3x garbage = BAN",
@@ -575,6 +552,30 @@
         "yimacs_yoyoyo",
         "ChristopheG1970.Fr",
         "TheCobra"
+      ]
+    },
+    {
+      "matchId": 493540124,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784503600,
+      "outcome": "loss",
+      "preRating": 1087,
+      "postRating": 1075,
+      "eloChange": -12,
+      "civ": "Slavs",
+      "teamAvgElo": 1101,
+      "opponentAvgElo": 1177,
+      "teammates": [
+        "疯狂的电脑",
+        "[CSGS]Runescape",
+        "vikneT1"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "TheRiceMan",
+        "Vince",
+        "Bourne2Believe"
       ]
     }
   ]

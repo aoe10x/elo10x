@@ -1,12 +1,12 @@
 {
   "profile_id": 3256532,
   "alias": "CristoTheRealCeisto",
-  "rating": 1045,
+  "rating": 1032,
   "wins": 38,
-  "losses": 55,
-  "gamesCount": 93,
-  "winRate": 41,
-  "lastPlayedAt": 1784490275,
+  "losses": 56,
+  "gamesCount": 94,
+  "winRate": 40,
+  "lastPlayedAt": 1784492707,
   "country": "ro",
   "merged_ids": [],
   "ratingHistory": [
@@ -103,33 +103,10 @@
     994,
     1011,
     1030,
-    1045
+    1045,
+    1032
   ],
   "recentMatches": [
-    {
-      "matchId": 473161076,
-      "description": "x3x10x Shared (PQ3.1x11 Qualty daycare)",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1777178880,
-      "outcome": "win",
-      "preRating": 935,
-      "postRating": 955,
-      "eloChange": 20,
-      "civ": "Bohemians",
-      "teamAvgElo": 959,
-      "opponentAvgElo": 1013,
-      "teammates": [
-        "Composite Bowman",
-        "Ye",
-        "rafuk89"
-      ],
-      "opponents": [
-        "aLEXt",
-        "Chianti | AwE",
-        "Ghost_pt",
-        "♥DraganBorn♥"
-      ]
-    },
     {
       "matchId": 480220842,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -584,6 +561,30 @@
         "yimacs_yoyoyo",
         "Yeepers",
         "Prinz Kay1"
+      ]
+    },
+    {
+      "matchId": 493516186,
+      "description": "10x 3x Bamboo (unfair and balanced)",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784492707,
+      "outcome": "loss",
+      "preRating": 1045,
+      "postRating": 1032,
+      "eloChange": -13,
+      "civ": "Japanese",
+      "teamAvgElo": 1042,
+      "opponentAvgElo": 1104,
+      "teammates": [
+        "nooblet3300",
+        "La_Fratellanza",
+        "Frz"
+      ],
+      "opponents": [
+        "Scipio",
+        "Vince",
+        "Ye",
+        "Mehandor"
       ]
     }
   ]

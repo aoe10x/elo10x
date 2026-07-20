@@ -1,12 +1,12 @@
 {
   "profile_id": 2843438,
   "alias": "Scipio",
-  "rating": 983,
-  "wins": 30,
+  "rating": 1021,
+  "wins": 32,
   "losses": 36,
-  "gamesCount": 66,
-  "winRate": 45,
-  "lastPlayedAt": 1784490275,
+  "gamesCount": 68,
+  "winRate": 47,
+  "lastPlayedAt": 1784493691,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -76,57 +76,11 @@
     1023,
     1008,
     996,
-    983
+    983,
+    1002,
+    1021
   ],
   "recentMatches": [
-    {
-      "matchId": 492274203,
-      "description": "i kun 10x3x 4v4s qun729084973",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1784033591,
-      "outcome": "win",
-      "preRating": 1018,
-      "postRating": 1036,
-      "eloChange": 18,
-      "civ": "Koreans",
-      "teamAvgElo": 1078,
-      "opponentAvgElo": 1052,
-      "teammates": [
-        "FAOse7en",
-        "我是ikun",
-        "ototomato"
-      ],
-      "opponents": [
-        "i kun 2.5",
-        "kaka52pk",
-        "Grimmie",
-        "476055690"
-      ]
-    },
-    {
-      "matchId": 492284215,
-      "description": "i kun 10x3x 4v4s qun729084973",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1784037366,
-      "outcome": "win",
-      "preRating": 1036,
-      "postRating": 1054,
-      "eloChange": 18,
-      "civ": "Malay",
-      "teamAvgElo": 1049,
-      "opponentAvgElo": 1069,
-      "teammates": [
-        "iamatthe.hell",
-        "FAOse7en",
-        "pierrick334455"
-      ],
-      "opponents": [
-        "i kun 2.5",
-        "tonkatumura",
-        "kaka52pk",
-        "我是ikun"
-      ]
-    },
     {
       "matchId": 492284855,
       "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
@@ -557,6 +511,54 @@
         "PIEROGI",
         "romeadd",
         "Rüdiger"
+      ]
+    },
+    {
+      "matchId": 493516186,
+      "description": "10x 3x Bamboo (unfair and balanced)",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784492707,
+      "outcome": "win",
+      "preRating": 983,
+      "postRating": 1002,
+      "eloChange": 19,
+      "civ": "Magyars",
+      "teamAvgElo": 1104,
+      "opponentAvgElo": 1042,
+      "teammates": [
+        "Vince",
+        "Ye",
+        "Mehandor"
+      ],
+      "opponents": [
+        "nooblet3300",
+        "La_Fratellanza",
+        "Frz",
+        "CristoTheRealCeisto"
+      ]
+    },
+    {
+      "matchId": 493518313,
+      "description": "BAMBOOLA 10x 3x",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784493691,
+      "outcome": "win",
+      "preRating": 1002,
+      "postRating": 1021,
+      "eloChange": 19,
+      "civ": "Teutons",
+      "teamAvgElo": 1067,
+      "opponentAvgElo": 1059,
+      "teammates": [
+        "Consume Product",
+        "nooblet3300",
+        "Vince"
+      ],
+      "opponents": [
+        "golhmogh",
+        "Mehandor",
+        "BeatsNArt",
+        "[TodEs] MnTartara"
       ]
     }
   ]

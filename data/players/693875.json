@@ -1,12 +1,12 @@
 {
   "profile_id": 693875,
   "alias": "DrompferFTW",
-  "rating": 1127,
+  "rating": 1106,
   "wins": 25,
-  "losses": 15,
-  "gamesCount": 40,
-  "winRate": 63,
-  "lastPlayedAt": 1784489820,
+  "losses": 16,
+  "gamesCount": 41,
+  "winRate": 61,
+  "lastPlayedAt": 1784498870,
   "country": "at",
   "merged_ids": [],
   "ratingHistory": [
@@ -50,33 +50,10 @@
     1090,
     1102,
     1114,
-    1127
+    1127,
+    1106
   ],
   "recentMatches": [
-    {
-      "matchId": 388055720,
-      "description": "Forest Nothing  10x Shared 3x Tech random civ",
-      "mapname": "Forest Nothing De",
-      "timestamp": 1745640420,
-      "outcome": "win",
-      "preRating": 1162,
-      "postRating": 1171,
-      "eloChange": 9,
-      "civ": "Poles",
-      "teamAvgElo": 1028,
-      "opponentAvgElo": 995,
-      "teammates": [
-        "[Ms] HokusPokus",
-        "Tavo",
-        "skoolied"
-      ],
-      "opponents": [
-        "shtojm",
-        "PITON | Shepy",
-        "VL Arcenick",
-        "leandrod_c"
-      ]
-    },
     {
       "matchId": 391338916,
       "description": "bamboo nothing 10x 3x",
@@ -531,6 +508,30 @@
         "Shidoki",
         "Josh",
         "Magnificent"
+      ]
+    },
+    {
+      "matchId": 493526820,
+      "description": "BAMBOOLA 10x 3x",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784498870,
+      "outcome": "loss",
+      "preRating": 1127,
+      "postRating": 1106,
+      "eloChange": -21,
+      "civ": "Mongols",
+      "teamAvgElo": 1135,
+      "opponentAvgElo": 1014,
+      "teammates": [
+        "Consume Product",
+        "田瘾犯了",
+        "Nuke Toilet"
+      ],
+      "opponents": [
+        "FPS Geo",
+        "PITON | Shepy",
+        "iamatthe.hell",
+        "Pogonophobia69"
       ]
     }
   ]

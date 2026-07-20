@@ -1,12 +1,12 @@
 {
   "profile_id": 25438174,
   "alias": "SimCity3000",
-  "rating": 999,
+  "rating": 986,
   "wins": 17,
-  "losses": 24,
-  "gamesCount": 41,
-  "winRate": 41,
-  "lastPlayedAt": 1784296433,
+  "losses": 25,
+  "gamesCount": 42,
+  "winRate": 40,
+  "lastPlayedAt": 1784499253,
   "country": "gb",
   "merged_ids": [
     13661469,
@@ -54,33 +54,10 @@
     971,
     991,
     980,
-    999
+    999,
+    986
   ],
   "recentMatches": [
-    {
-      "matchId": 490372344,
-      "description": "10x 3x BN ",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783287853,
-      "outcome": "win",
-      "preRating": 974,
-      "postRating": 993,
-      "eloChange": 19,
-      "civ": "Lithuanians",
-      "teamAvgElo": 1046,
-      "opponentAvgElo": 1041,
-      "teammates": [
-        "Paulichromatic",
-        "yimacs_yoyoyo",
-        "gemmascho"
-      ],
-      "opponents": [
-        "pool_champ",
-        "Paladin",
-        "universeagle",
-        "Moose"
-      ]
-    },
     {
       "matchId": 490373234,
       "description": "10X 3X BAMBOO NOTHING | KING OF THE HILL",
@@ -535,6 +512,30 @@
         "bhasudi--",
         "Max",
         "menschlicheflagge"
+      ]
+    },
+    {
+      "matchId": 493527313,
+      "description": "10x 3x Bamboo Nothing Turbo",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784499253,
+      "outcome": "loss",
+      "preRating": 999,
+      "postRating": 986,
+      "eloChange": -13,
+      "civ": "Ethiopians",
+      "teamAvgElo": 1058,
+      "opponentAvgElo": 1068,
+      "teammates": [
+        "McKrakfejs",
+        "Vince",
+        "Janez"
+      ],
+      "opponents": [
+        "Ian",
+        "Bourne2Believe",
+        "Wozbo",
+        "҉ ЄӀ ẓȏɦǟŋ ҉☣"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 12572758,
   "alias": "LethalP59",
-  "rating": 1079,
+  "rating": 1064,
   "wins": 41,
-  "losses": 36,
-  "gamesCount": 77,
+  "losses": 37,
+  "gamesCount": 78,
   "winRate": 53,
-  "lastPlayedAt": 1784477234,
+  "lastPlayedAt": 1784508074,
   "country": "us",
   "merged_ids": [
     11817519,
@@ -90,33 +90,10 @@
     1101,
     1084,
     1097,
-    1079
+    1079,
+    1064
   ],
   "recentMatches": [
-    {
-      "matchId": 471403427,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1776570060,
-      "outcome": "win",
-      "preRating": 1053,
-      "postRating": 1065,
-      "eloChange": 12,
-      "civ": "Spanish",
-      "teamAvgElo": 1064,
-      "opponentAvgElo": 961,
-      "teammates": [
-        "nooblet3300",
-        "apolizer",
-        "Bryce Coolguy"
-      ],
-      "opponents": [
-        "Paris Hilton",
-        "tacotoy",
-        "AxD | Vozinha",
-        "Emusan"
-      ]
-    },
     {
       "matchId": 471412362,
       "description": "256x 10x Forest Nothing",
@@ -571,6 +548,30 @@
         "Grimmie",
         "Bryce Coolguy",
         "Llama"
+      ]
+    },
+    {
+      "matchId": 493552805,
+      "description": "10x 3x BN ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784508074,
+      "outcome": "loss",
+      "preRating": 1079,
+      "postRating": 1064,
+      "eloChange": -15,
+      "civ": "Ethiopians",
+      "teamAvgElo": 1101,
+      "opponentAvgElo": 1107,
+      "teammates": [
+        "Dylan Dog",
+        "Cheesewheel24",
+        "{R} Parry"
+      ],
+      "opponents": [
+        "pool_champ",
+        "nooblet3300",
+        "mothysime11",
+        "NothingAtAll11"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 6289883,
   "alias": "Nuke Toilet",
-  "rating": 1027,
+  "rating": 1010,
   "wins": 12,
-  "losses": 12,
-  "gamesCount": 24,
-  "winRate": 50,
-  "lastPlayedAt": 1784158824,
+  "losses": 13,
+  "gamesCount": 25,
+  "winRate": 48,
+  "lastPlayedAt": 1784498870,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -34,33 +34,10 @@
     1076,
     1059,
     1044,
-    1027
+    1027,
+    1010
   ],
   "recentMatches": [
-    {
-      "matchId": 405215740,
-      "description": "10x 3x Bamboo nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1752127620,
-      "outcome": "win",
-      "preRating": 1014,
-      "postRating": 1060,
-      "eloChange": 46,
-      "civ": "Unknown",
-      "teamAvgElo": 1019,
-      "opponentAvgElo": 1045,
-      "teammates": [
-        "GandalfGG",
-        "CTM | Crawly94",
-        "FREESTYLE SCiENTiST"
-      ],
-      "opponents": [
-        "bijiyumo",
-        "Paris Hilton",
-        "NothingAtAll11",
-        "BeatsNArt"
-      ]
-    },
     {
       "matchId": 407315383,
       "description": "256x 10x FN",
@@ -515,6 +492,30 @@
         "Tlatoani",
         "Monkeymonk",
         "Master Polo4905"
+      ]
+    },
+    {
+      "matchId": 493526820,
+      "description": "BAMBOOLA 10x 3x",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784498870,
+      "outcome": "loss",
+      "preRating": 1027,
+      "postRating": 1010,
+      "eloChange": -17,
+      "civ": "Dravidians",
+      "teamAvgElo": 1135,
+      "opponentAvgElo": 1014,
+      "teammates": [
+        "Consume Product",
+        "DrompferFTW",
+        "田瘾犯了"
+      ],
+      "opponents": [
+        "FPS Geo",
+        "PITON | Shepy",
+        "iamatthe.hell",
+        "Pogonophobia69"
       ]
     }
   ]

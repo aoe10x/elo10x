@@ -1,12 +1,12 @@
 {
   "profile_id": 576686,
   "alias": "Daddy",
-  "rating": 926,
+  "rating": 916,
   "wins": 6,
-  "losses": 14,
-  "gamesCount": 20,
-  "winRate": 30,
-  "lastPlayedAt": 1764921540,
+  "losses": 15,
+  "gamesCount": 21,
+  "winRate": 29,
+  "lastPlayedAt": 1784507059,
   "country": "nl",
   "merged_ids": [],
   "ratingHistory": [
@@ -30,33 +30,10 @@
     971,
     955,
     939,
-    926
+    926,
+    916
   ],
   "recentMatches": [
-    {
-      "matchId": 345261668,
-      "description": "10x shared 3x tech Bamboo nothing",
-      "mapname": "Bamboo_Nothing_V2_Nowater De",
-      "timestamp": 1728879600,
-      "outcome": "loss",
-      "preRating": 1000,
-      "postRating": 956,
-      "eloChange": -44,
-      "civ": "Unknown",
-      "teamAvgElo": 1026,
-      "opponentAvgElo": 1035,
-      "teammates": [
-        "Bechti420",
-        "derailer9",
-        "[xXx]WarmongeR"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "JuanMalote",
-        "MancoNoMicro",
-        "EagleNebula6473"
-      ]
-    },
     {
       "matchId": 408037583,
       "description": "10x 3x Shared Bamboo",
@@ -511,6 +488,30 @@
         "Preacher!",
         "RoR | Benanji",
         "Ye"
+      ]
+    },
+    {
+      "matchId": 493549871,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784507059,
+      "outcome": "loss",
+      "preRating": 926,
+      "postRating": 916,
+      "eloChange": -10,
+      "civ": "Poles",
+      "teamAvgElo": 1038,
+      "opponentAvgElo": 1066,
+      "teammates": [
+        "{R} Parry",
+        "Mehandor",
+        "Maxim Liann"
+      ],
+      "opponents": [
+        "NothingAtAll11",
+        "Cheesewheel24",
+        "RvneR",
+        "mothysime11"
       ]
     }
   ]

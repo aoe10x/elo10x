@@ -1,12 +1,12 @@
 {
   "profile_id": 862813,
   "alias": "Janez",
-  "rating": 1018,
+  "rating": 1004,
   "wins": 35,
-  "losses": 42,
-  "gamesCount": 77,
+  "losses": 43,
+  "gamesCount": 78,
   "winRate": 45,
-  "lastPlayedAt": 1784459545,
+  "lastPlayedAt": 1784499253,
   "country": "it",
   "merged_ids": [],
   "ratingHistory": [
@@ -87,33 +87,10 @@
     1034,
     1053,
     1034,
-    1018
+    1018,
+    1004
   ],
   "recentMatches": [
-    {
-      "matchId": 455992649,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1771062060,
-      "outcome": "loss",
-      "preRating": 983,
-      "postRating": 967,
-      "eloChange": -16,
-      "civ": "Vietnamese",
-      "teamAvgElo": 1010,
-      "opponentAvgElo": 979,
-      "teammates": [
-        "alexw",
-        "WipiWi",
-        "Chuckyllo4417"
-      ],
-      "opponents": [
-        "axiuluo",
-        "R301",
-        "Wozbo",
-        "nooblet3300"
-      ]
-    },
     {
       "matchId": 456608654,
       "description": "10x 3x Bamboo Random",
@@ -568,6 +545,30 @@
         "S3dated",
         "oulouvator",
         "Personalizado"
+      ]
+    },
+    {
+      "matchId": 493527313,
+      "description": "10x 3x Bamboo Nothing Turbo",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784499253,
+      "outcome": "loss",
+      "preRating": 1018,
+      "postRating": 1004,
+      "eloChange": -14,
+      "civ": "Romans",
+      "teamAvgElo": 1058,
+      "opponentAvgElo": 1068,
+      "teammates": [
+        "McKrakfejs",
+        "Vince",
+        "SimCity3000"
+      ],
+      "opponents": [
+        "Ian",
+        "Bourne2Believe",
+        "Wozbo",
+        "҉ ЄӀ ẓȏɦǟŋ ҉☣"
       ]
     }
   ]

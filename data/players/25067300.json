@@ -1,12 +1,12 @@
 {
   "profile_id": 25067300,
   "alias": "Frz",
-  "rating": 1064,
+  "rating": 1046,
   "wins": 9,
-  "losses": 8,
-  "gamesCount": 17,
-  "winRate": 53,
-  "lastPlayedAt": 1784396949,
+  "losses": 9,
+  "gamesCount": 18,
+  "winRate": 50,
+  "lastPlayedAt": 1784492707,
   "country": "us",
   "merged_ids": [
     13595490,
@@ -30,7 +30,8 @@
     1038,
     1063,
     1043,
-    1064
+    1064,
+    1046
   ],
   "recentMatches": [
     {
@@ -439,6 +440,30 @@
         "DnD",
         "GenP",
         "hingamp"
+      ]
+    },
+    {
+      "matchId": 493516186,
+      "description": "10x 3x Bamboo (unfair and balanced)",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784492707,
+      "outcome": "loss",
+      "preRating": 1064,
+      "postRating": 1046,
+      "eloChange": -18,
+      "civ": "Burgundians",
+      "teamAvgElo": 1042,
+      "opponentAvgElo": 1104,
+      "teammates": [
+        "nooblet3300",
+        "La_Fratellanza",
+        "CristoTheRealCeisto"
+      ],
+      "opponents": [
+        "Scipio",
+        "Vince",
+        "Ye",
+        "Mehandor"
       ]
     }
   ]

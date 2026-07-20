@@ -1,12 +1,12 @@
 {
   "profile_id": 25228163,
   "alias": "Maxim Liann",
-  "rating": 917,
+  "rating": 900,
   "wins": 24,
-  "losses": 52,
-  "gamesCount": 76,
-  "winRate": 32,
-  "lastPlayedAt": 1784427910,
+  "losses": 54,
+  "gamesCount": 78,
+  "winRate": 31,
+  "lastPlayedAt": 1784507059,
   "country": "br",
   "merged_ids": [
     13623515,
@@ -89,57 +89,11 @@
     908,
     900,
     892,
-    917
+    917,
+    909,
+    900
   ],
   "recentMatches": [
-    {
-      "matchId": 492977944,
-      "description": "10x 3x bamboo NO IDIOT",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1784317454,
-      "outcome": "win",
-      "preRating": 953,
-      "postRating": 973,
-      "eloChange": 20,
-      "civ": "Malians",
-      "teamAvgElo": 1055,
-      "opponentAvgElo": 1033,
-      "teammates": [
-        "PIEROGI",
-        "YUJIN",
-        "Bachter"
-      ],
-      "opponents": [
-        "Emusan",
-        "Brotherman Bill",
-        "yimacs_yoyoyo",
-        "Thí Chủ Chết Chưa"
-      ]
-    },
-    {
-      "matchId": 492998140,
-      "description": "BAMBOO 10x3xtech",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1784322759,
-      "outcome": "loss",
-      "preRating": 973,
-      "postRating": 961,
-      "eloChange": -12,
-      "civ": "Vietnamese",
-      "teamAvgElo": 1007,
-      "opponentAvgElo": 1061,
-      "teammates": [
-        "skoolied",
-        "Monkeymonk",
-        "Megahaufen"
-      ],
-      "opponents": [
-        "iamatthe.hell",
-        "RA",
-        "Honey badger",
-        "CristoTheRealCeisto"
-      ]
-    },
     {
       "matchId": 493023844,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -570,6 +524,54 @@
         "Vader",
         "Waryahay",
         "momo"
+      ]
+    },
+    {
+      "matchId": 493546662,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784505964,
+      "outcome": "loss",
+      "preRating": 917,
+      "postRating": 909,
+      "eloChange": -8,
+      "civ": "Persians",
+      "teamAvgElo": 1012,
+      "opponentAvgElo": 1106,
+      "teammates": [
+        "399 the Grizzly Bear - RIP <3",
+        "mothysime11",
+        "Amphetamine"
+      ],
+      "opponents": [
+        "Parenquima",
+        "vincentc95",
+        "Vince",
+        "Dylan Dog"
+      ]
+    },
+    {
+      "matchId": 493549871,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784507059,
+      "outcome": "loss",
+      "preRating": 909,
+      "postRating": 900,
+      "eloChange": -9,
+      "civ": "Mapuche",
+      "teamAvgElo": 1038,
+      "opponentAvgElo": 1066,
+      "teammates": [
+        "{R} Parry",
+        "Mehandor",
+        "Daddy"
+      ],
+      "opponents": [
+        "NothingAtAll11",
+        "Cheesewheel24",
+        "RvneR",
+        "mothysime11"
       ]
     }
   ]

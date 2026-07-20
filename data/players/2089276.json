@@ -1,12 +1,12 @@
 {
   "profile_id": 2089276,
   "alias": "DJ",
-  "rating": 939,
+  "rating": 927,
   "wins": 14,
-  "losses": 22,
-  "gamesCount": 36,
-  "winRate": 39,
-  "lastPlayedAt": 1784153364,
+  "losses": 23,
+  "gamesCount": 37,
+  "winRate": 38,
+  "lastPlayedAt": 1784506236,
   "country": "cl",
   "merged_ids": [],
   "ratingHistory": [
@@ -46,33 +46,10 @@
     943,
     930,
     921,
-    939
+    939,
+    927
   ],
   "recentMatches": [
-    {
-      "matchId": 480004414,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1779602880,
-      "outcome": "win",
-      "preRating": 1019,
-      "postRating": 1045,
-      "eloChange": 26,
-      "civ": "Maya",
-      "teamAvgElo": 1055,
-      "opponentAvgElo": 1076,
-      "teammates": [
-        "pool_champ",
-        "rcmccallum",
-        "Sensei"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "PowerBeast51461",
-        "Xinzzo",
-        "fxsound"
-      ]
-    },
     {
       "matchId": 482250642,
       "description": "10X 3X MIGRATION, NO NOOBS",
@@ -527,6 +504,30 @@
         "[TodEs] MnTartara",
         "jose.cortes.adm",
         "Rüdiger"
+      ]
+    },
+    {
+      "matchId": 493547262,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784506236,
+      "outcome": "loss",
+      "preRating": 939,
+      "postRating": 927,
+      "eloChange": -12,
+      "civ": "Huns",
+      "teamAvgElo": 1084,
+      "opponentAvgElo": 1029,
+      "teammates": [
+        "{R} Parry",
+        "Consume Product",
+        "S´korpi0n_43"
+      ],
+      "opponents": [
+        "Mehandor",
+        "DPK75",
+        "NothingAtAll11",
+        "leandrod_c"
       ]
     }
   ]

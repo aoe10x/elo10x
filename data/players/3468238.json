@@ -1,12 +1,12 @@
 {
   "profile_id": 3468238,
   "alias": "RvneR",
-  "rating": 952,
-  "wins": 41,
+  "rating": 972,
+  "wins": 42,
   "losses": 60,
-  "gamesCount": 101,
+  "gamesCount": 102,
   "winRate": 41,
-  "lastPlayedAt": 1783077284,
+  "lastPlayedAt": 1784507059,
   "country": "au",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,6 @@
     994,
     1027,
     1007,
-    987,
     1011,
     992,
     1012,
@@ -35,6 +34,7 @@
     1010,
     1026,
     1041,
+    1024,
     1043,
     1028,
     1014,
@@ -60,7 +60,6 @@
     959,
     947,
     932,
-    954,
     940,
     927,
     944,
@@ -84,6 +83,7 @@
     967,
     953,
     939,
+    928,
     919,
     941,
     962,
@@ -92,7 +92,6 @@
     988,
     974,
     963,
-    982,
     970,
     960,
     978,
@@ -109,33 +108,10 @@
     959,
     943,
     964,
-    952
+    952,
+    972
   ],
   "recentMatches": [
-    {
-      "matchId": 450610516,
-      "description": "10x 3x bamboo, random, shared",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1769233200,
-      "outcome": "loss",
-      "preRating": 988,
-      "postRating": 974,
-      "eloChange": -14,
-      "civ": "Byzantines",
-      "teamAvgElo": 1008,
-      "opponentAvgElo": 1032,
-      "teammates": [
-        "Ferdinand I of Naples",
-        "fxsound",
-        "Bob's Uncle"
-      ],
-      "opponents": [
-        "LAGuERRE",
-        "BeatsNArt",
-        "Petrosilius Tintoretto Vecchio",
-        "hingamp 2.0"
-      ]
-    },
     {
       "matchId": 450756377,
       "description": "bamboo nothing 10x 3x",
@@ -590,6 +566,30 @@
         "Lama Kužel",
         "Eat MY Sprouts",
         "King_Love"
+      ]
+    },
+    {
+      "matchId": 493549871,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784507059,
+      "outcome": "win",
+      "preRating": 952,
+      "postRating": 972,
+      "eloChange": 20,
+      "civ": "Bengalis",
+      "teamAvgElo": 1066,
+      "opponentAvgElo": 1038,
+      "teammates": [
+        "NothingAtAll11",
+        "Cheesewheel24",
+        "mothysime11"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "Mehandor",
+        "Daddy",
+        "Maxim Liann"
       ]
     }
   ]

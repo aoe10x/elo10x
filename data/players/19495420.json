@@ -1,12 +1,12 @@
 {
   "profile_id": 19495420,
   "alias": "leandrod_c",
-  "rating": 922,
-  "wins": 15,
+  "rating": 945,
+  "wins": 16,
   "losses": 31,
-  "gamesCount": 46,
-  "winRate": 33,
-  "lastPlayedAt": 1784136695,
+  "gamesCount": 47,
+  "winRate": 34,
+  "lastPlayedAt": 1784506236,
   "country": "ar",
   "merged_ids": [
     12790969,
@@ -59,33 +59,10 @@
     895,
     916,
     934,
-    922
+    922,
+    945
   ],
   "recentMatches": [
-    {
-      "matchId": 416204919,
-      "description": "10x 3x shared,random,up-up-up-research",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1756629540,
-      "outcome": "loss",
-      "preRating": 863,
-      "postRating": 856,
-      "eloChange": -7,
-      "civ": "Sicilians",
-      "teamAvgElo": 980,
-      "opponentAvgElo": 1082,
-      "teammates": [
-        "Regina Ip",
-        "Glasg0w",
-        "Patata"
-      ],
-      "opponents": [
-        "田瘾犯了",
-        "eban",
-        "鱼浆",
-        "beta_player"
-      ]
-    },
     {
       "matchId": 423287751,
       "description": "256x 10x Forest Nothing",
@@ -540,6 +517,30 @@
         "wintre",
         "iamatthe.hell",
         "ElmoWithoutL"
+      ]
+    },
+    {
+      "matchId": 493547262,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784506236,
+      "outcome": "win",
+      "preRating": 922,
+      "postRating": 945,
+      "eloChange": 23,
+      "civ": "Khmer",
+      "teamAvgElo": 1029,
+      "opponentAvgElo": 1084,
+      "teammates": [
+        "Mehandor",
+        "DPK75",
+        "NothingAtAll11"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "Consume Product",
+        "DJ",
+        "S´korpi0n_43"
       ]
     }
   ]
