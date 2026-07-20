@@ -1,12 +1,12 @@
 {
   "profile_id": 3022324,
   "alias": "可爱小奇犽",
-  "rating": 991,
+  "rating": 979,
   "wins": 16,
-  "losses": 20,
-  "gamesCount": 36,
-  "winRate": 44,
-  "lastPlayedAt": 1784032958,
+  "losses": 21,
+  "gamesCount": 37,
+  "winRate": 43,
+  "lastPlayedAt": 1784558307,
   "country": "cn",
   "merged_ids": [],
   "ratingHistory": [
@@ -46,33 +46,10 @@
     969,
     956,
     975,
-    991
+    991,
+    979
   ],
   "recentMatches": [
-    {
-      "matchId": 418506541,
-      "description": "turbo 10x 3x bamboo",
-      "mapname": "Bamboo Nothing_Paren_Vlocal_V2.5",
-      "timestamp": 1757625960,
-      "outcome": "win",
-      "preRating": 836,
-      "postRating": 871,
-      "eloChange": 35,
-      "civ": "Maya",
-      "teamAvgElo": 996,
-      "opponentAvgElo": 1044,
-      "teammates": [
-        "漫山哒哒哒",
-        "取款机ATM",
-        "83208898"
-      ],
-      "opponents": [
-        "VexusGames",
-        "Lord Lee So Cacti",
-        "帝国时代二决定版",
-        "Lykerya"
-      ]
-    },
     {
       "matchId": 418519496,
       "description": "10x Civ / 3x Tec BAMBOO",
@@ -527,6 +504,30 @@
         "Pogonophobia69",
         "KhasminC",
         "boroinbishop"
+      ]
+    },
+    {
+      "matchId": 493654347,
+      "description": "10x3x bamboo nothing NO NOOB",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784558307,
+      "outcome": "loss",
+      "preRating": 991,
+      "postRating": 979,
+      "eloChange": -12,
+      "civ": "Koreans",
+      "teamAvgElo": 1105,
+      "opponentAvgElo": 1069,
+      "teammates": [
+        "_T",
+        "Frederick",
+        "Grimmie"
+      ],
+      "opponents": [
+        "轻绘梨花泪满衣",
+        "iamatthe.hell",
+        "Consume Product",
+        "Lumedge"
       ]
     }
   ]

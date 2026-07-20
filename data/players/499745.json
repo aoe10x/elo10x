@@ -1,12 +1,12 @@
 {
   "profile_id": 499745,
   "alias": "DRAX",
-  "rating": 958,
+  "rating": 946,
   "wins": 10,
-  "losses": 15,
-  "gamesCount": 25,
-  "winRate": 40,
-  "lastPlayedAt": 1784424250,
+  "losses": 16,
+  "gamesCount": 26,
+  "winRate": 38,
+  "lastPlayedAt": 1784567380,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -35,33 +35,10 @@
     999,
     983,
     968,
-    958
+    958,
+    946
   ],
   "recentMatches": [
-    {
-      "matchId": 485047544,
-      "description": "10x 3x bamboo random civ",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1781377320,
-      "outcome": "win",
-      "preRating": 968,
-      "postRating": 1017,
-      "eloChange": 49,
-      "civ": "Chinese",
-      "teamAvgElo": 1038,
-      "opponentAvgElo": 1048,
-      "teammates": [
-        "riversyde",
-        "Xenomorph",
-        "ISwaZz"
-      ],
-      "opponents": [
-        "iamatthe.hell",
-        "bijiyumo",
-        "侯傻傻ᔦఠఠᔨ shasha",
-        "Maxim Liann"
-      ]
-    },
     {
       "matchId": 485152598,
       "description": "10x civ  3x tech Forest nothing",
@@ -516,6 +493,30 @@
         "M¤l₫",
         "pool_champ",
         "Mattila_the_Hunt"
+      ]
+    },
+    {
+      "matchId": 493681836,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784567380,
+      "outcome": "loss",
+      "preRating": 958,
+      "postRating": 946,
+      "eloChange": -12,
+      "civ": "Cumans",
+      "teamAvgElo": 1028,
+      "opponentAvgElo": 1036,
+      "teammates": [
+        "LeosMind",
+        "Al Ghouti",
+        "Ignaqcio"
+      ],
+      "opponents": [
+        "baianitro",
+        "jair_silva",
+        "Manba Out",
+        "KhasminC"
       ]
     }
   ]

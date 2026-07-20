@@ -1,12 +1,12 @@
 {
   "profile_id": 2430977,
   "alias": "kfcman5566",
-  "rating": 933,
+  "rating": 917,
   "wins": 6,
-  "losses": 11,
-  "gamesCount": 17,
-  "winRate": 35,
-  "lastPlayedAt": 1777758120,
+  "losses": 12,
+  "gamesCount": 18,
+  "winRate": 33,
+  "lastPlayedAt": 1784561983,
   "country": "tw",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,8 @@
     936,
     919,
     902,
-    933
+    933,
+    917
   ],
   "recentMatches": [
     {
@@ -436,6 +437,30 @@
         "Skawawa",
         "[CSGS]Runescape",
         "oklema"
+      ]
+    },
+    {
+      "matchId": 493665344,
+      "description": "10x 3x Bamboo Nothing Turbo",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784561983,
+      "outcome": "loss",
+      "preRating": 933,
+      "postRating": 917,
+      "eloChange": -16,
+      "civ": "Mapuche",
+      "teamAvgElo": 1082,
+      "opponentAvgElo": 1019,
+      "teammates": [
+        "Ian",
+        "紫蝶黄蜂俱有情",
+        "kekekeya"
+      ],
+      "opponents": [
+        "tonzo",
+        "abatyse6533",
+        "Shadow",
+        "Arktik"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 14667287,
   "alias": "KhasminC",
-  "rating": 1067,
-  "wins": 39,
-  "losses": 47,
-  "gamesCount": 86,
+  "rating": 1053,
+  "wins": 40,
+  "losses": 49,
+  "gamesCount": 89,
   "winRate": 45,
-  "lastPlayedAt": 1784554092,
+  "lastPlayedAt": 1784567380,
   "country": "ro",
   "merged_ids": [
     12171150,
@@ -99,81 +99,12 @@
     1046,
     1064,
     1050,
-    1067
+    1067,
+    1051,
+    1037,
+    1053
   ],
   "recentMatches": [
-    {
-      "matchId": 489135392,
-      "description": "i kun 10x3x 4v4s qun729084973",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1782819052,
-      "outcome": "win",
-      "preRating": 979,
-      "postRating": 996,
-      "eloChange": 17,
-      "civ": "Unknown",
-      "teamAvgElo": 1080,
-      "opponentAvgElo": 995,
-      "teammates": [
-        "i kun 2.5",
-        "星际小菜",
-        "Lumedge"
-      ],
-      "opponents": [
-        "鱼浆",
-        "Consume Product",
-        "EGOIST",
-        "beat"
-      ]
-    },
-    {
-      "matchId": 489156771,
-      "description": "i kun 10x3x 4v4s qun729084973",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1782828103,
-      "outcome": "win",
-      "preRating": 996,
-      "postRating": 1016,
-      "eloChange": 20,
-      "civ": "Spanish",
-      "teamAvgElo": 1024,
-      "opponentAvgElo": 1094,
-      "teammates": [
-        "Unblanked",
-        "Lumedge",
-        "鱼浆"
-      ],
-      "opponents": [
-        "i kun 2.5",
-        "我是ikun",
-        "紫蝶黄蜂俱有情",
-        "tonkatumura"
-      ]
-    },
-    {
-      "matchId": 489160092,
-      "description": "i kun 10x3x 4v4s qun729084973",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1782828999,
-      "outcome": "win",
-      "preRating": 1016,
-      "postRating": 1036,
-      "eloChange": 20,
-      "civ": "Tupi",
-      "teamAvgElo": 1053,
-      "opponentAvgElo": 1104,
-      "teammates": [
-        "鱼浆",
-        "紫蝶黄蜂俱有情",
-        "Max"
-      ],
-      "opponents": [
-        "i kun 2.5",
-        "Lumedge",
-        "我是ikun",
-        "tonkatumura"
-      ]
-    },
     {
       "matchId": 489162934,
       "description": "i kun 10x3x 4v4s qun729084973",
@@ -580,6 +511,78 @@
         "kaka52pk",
         "我是ikun",
         "Lumedge"
+      ]
+    },
+    {
+      "matchId": 493645313,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784555233,
+      "outcome": "loss",
+      "preRating": 1067,
+      "postRating": 1051,
+      "eloChange": -16,
+      "civ": "Saracens",
+      "teamAvgElo": 1081,
+      "opponentAvgElo": 1075,
+      "teammates": [
+        "i kun 2.5",
+        "紫蝶黄蜂俱有情",
+        "Lumedge"
+      ],
+      "opponents": [
+        "我是ikun",
+        "鱼浆",
+        "wurst456",
+        "kekekeya"
+      ]
+    },
+    {
+      "matchId": 493652262,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784557524,
+      "outcome": "loss",
+      "preRating": 1051,
+      "postRating": 1037,
+      "eloChange": -14,
+      "civ": "Chinese",
+      "teamAvgElo": 1062,
+      "opponentAvgElo": 1084,
+      "teammates": [
+        "鱼浆",
+        "McKrakfejs",
+        "Wozbo"
+      ],
+      "opponents": [
+        "i kun 2.5",
+        "tonzo",
+        "kekekeya",
+        "^gOsO^"
+      ]
+    },
+    {
+      "matchId": 493681836,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784567380,
+      "outcome": "win",
+      "preRating": 1037,
+      "postRating": 1053,
+      "eloChange": 16,
+      "civ": "Tatars",
+      "teamAvgElo": 1036,
+      "opponentAvgElo": 1028,
+      "teammates": [
+        "baianitro",
+        "jair_silva",
+        "Manba Out"
+      ],
+      "opponents": [
+        "LeosMind",
+        "DRAX",
+        "Al Ghouti",
+        "Ignaqcio"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 772327,
   "alias": "wurst456",
-  "rating": 956,
-  "wins": 14,
+  "rating": 978,
+  "wins": 15,
   "losses": 22,
-  "gamesCount": 36,
-  "winRate": 39,
-  "lastPlayedAt": 1784398849,
+  "gamesCount": 37,
+  "winRate": 41,
+  "lastPlayedAt": 1784555233,
   "country": "at",
   "merged_ids": [],
   "ratingHistory": [
@@ -46,33 +46,10 @@
     923,
     915,
     937,
-    956
+    956,
+    978
   ],
   "recentMatches": [
-    {
-      "matchId": 489863965,
-      "description": "10X 3X BN NO NOOBS",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1783113098,
-      "outcome": "loss",
-      "preRating": 1023,
-      "postRating": 1003,
-      "eloChange": -20,
-      "civ": "Turks",
-      "teamAvgElo": 1036,
-      "opponentAvgElo": 1065,
-      "teammates": [
-        "PITON | Shepy",
-        "yimacs_yoyoyo",
-        "maxymczech"
-      ],
-      "opponents": [
-        "duckbuildperson",
-        "NothingAtAll11",
-        "田瘾犯了",
-        "Dylan Dog"
-      ]
-    },
     {
       "matchId": 489869087,
       "description": "BAMBOO 10x - 3x  **NO NOOB",
@@ -527,6 +504,30 @@
         "RIchard_Uy",
         "The Naked Gothman",
         "Borkan"
+      ]
+    },
+    {
+      "matchId": 493645313,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784555233,
+      "outcome": "win",
+      "preRating": 956,
+      "postRating": 978,
+      "eloChange": 22,
+      "civ": "Berbers",
+      "teamAvgElo": 1075,
+      "opponentAvgElo": 1081,
+      "teammates": [
+        "我是ikun",
+        "鱼浆",
+        "kekekeya"
+      ],
+      "opponents": [
+        "i kun 2.5",
+        "KhasminC",
+        "紫蝶黄蜂俱有情",
+        "Lumedge"
       ]
     }
   ]

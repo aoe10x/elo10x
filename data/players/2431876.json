@@ -1,12 +1,12 @@
 {
   "profile_id": 2431876,
   "alias": "Ignaqcio",
-  "rating": 896,
+  "rating": 886,
   "wins": 40,
-  "losses": 62,
-  "gamesCount": 102,
+  "losses": 63,
+  "gamesCount": 103,
   "winRate": 39,
-  "lastPlayedAt": 1783743071,
+  "lastPlayedAt": 1784567380,
   "country": "cl",
   "merged_ids": [],
   "ratingHistory": [
@@ -23,10 +23,10 @@
     899,
     877,
     918,
-    900,
     932,
     912,
     945,
+    970,
     999,
     981,
     965,
@@ -47,7 +47,6 @@
     1001,
     1016,
     1036,
-    1051,
     1035,
     1048,
     1028,
@@ -60,6 +59,7 @@
     1059,
     1040,
     1057,
+    1041,
     1059,
     1043,
     1028,
@@ -72,7 +72,6 @@
     1066,
     1045,
     1032,
-    1048,
     1031,
     1016,
     1000,
@@ -92,11 +91,11 @@
     938,
     927,
     916,
+    938,
     927,
     913,
     906,
     928,
-    918,
     910,
     903,
     893,
@@ -109,33 +108,10 @@
     892,
     914,
     905,
-    896
+    896,
+    886
   ],
   "recentMatches": [
-    {
-      "matchId": 456279790,
-      "description": "bamboo nothing 10x 3x PQ",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1771154460,
-      "outcome": "loss",
-      "preRating": 927,
-      "postRating": 916,
-      "eloChange": -11,
-      "civ": "Teutons",
-      "teamAvgElo": 959,
-      "opponentAvgElo": 1041,
-      "teammates": [
-        "Al Ghouti",
-        "Tlatoani",
-        "Ricardo V"
-      ],
-      "opponents": [
-        "OhSheeep",
-        "ACV",
-        "koshkka69",
-        "maddymsg"
-      ]
-    },
     {
       "matchId": 456546687,
       "description": "bamboo nothing 10x 3x PQ",
@@ -590,6 +566,30 @@
         "mark0112",
         "田瘾犯了",
         "476055690"
+      ]
+    },
+    {
+      "matchId": 493681836,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784567380,
+      "outcome": "loss",
+      "preRating": 896,
+      "postRating": 886,
+      "eloChange": -10,
+      "civ": "Ethiopians",
+      "teamAvgElo": 1028,
+      "opponentAvgElo": 1036,
+      "teammates": [
+        "LeosMind",
+        "DRAX",
+        "Al Ghouti"
+      ],
+      "opponents": [
+        "baianitro",
+        "jair_silva",
+        "Manba Out",
+        "KhasminC"
       ]
     }
   ]

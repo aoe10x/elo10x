@@ -1,12 +1,12 @@
 {
   "profile_id": 5648280,
   "alias": "Rito",
-  "rating": 1026,
+  "rating": 1010,
   "wins": 25,
-  "losses": 21,
-  "gamesCount": 46,
-  "winRate": 54,
-  "lastPlayedAt": 1784391324,
+  "losses": 22,
+  "gamesCount": 47,
+  "winRate": 53,
+  "lastPlayedAt": 1784561177,
   "country": "jp",
   "merged_ids": [],
   "ratingHistory": [
@@ -56,33 +56,10 @@
     1076,
     1061,
     1043,
-    1026
+    1026,
+    1010
   ],
   "recentMatches": [
-    {
-      "matchId": 357069006,
-      "description": "shared10x amazon",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1733694960,
-      "outcome": "win",
-      "preRating": 1108,
-      "postRating": 1122,
-      "eloChange": 14,
-      "civ": "Huns",
-      "teamAvgElo": 1111,
-      "opponentAvgElo": 1072,
-      "teammates": [
-        "tonkatumura",
-        "紫蝶黄蜂俱有情",
-        "JuanMalote"
-      ],
-      "opponents": [
-        "Papillon",
-        "JW",
-        "The Naked Gothman",
-        "LaMamaSion"
-      ]
-    },
     {
       "matchId": 357071994,
       "description": "shared10x amazon",
@@ -537,6 +514,30 @@
         "konishika",
         "tonkatumura",
         "Wololo"
+      ]
+    },
+    {
+      "matchId": 493663561,
+      "description": "10x 3x bamboo",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784561177,
+      "outcome": "loss",
+      "preRating": 1026,
+      "postRating": 1010,
+      "eloChange": -16,
+      "civ": "Berbers",
+      "teamAvgElo": 1065,
+      "opponentAvgElo": 1015,
+      "teammates": [
+        "うすたつっくったおま",
+        "komatti",
+        "Lumedge"
+      ],
+      "opponents": [
+        "Papillon",
+        "konishika",
+        "Prinz Kay1",
+        "beat"
       ]
     }
   ]

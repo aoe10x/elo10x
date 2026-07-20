@@ -1,12 +1,12 @@
 {
   "profile_id": 24434911,
   "alias": "Thí Chủ Chết Chưa",
-  "rating": 984,
-  "wins": 6,
+  "rating": 1009,
+  "wins": 7,
   "losses": 10,
-  "gamesCount": 16,
-  "winRate": 38,
-  "lastPlayedAt": 1784528555,
+  "gamesCount": 17,
+  "winRate": 41,
+  "lastPlayedAt": 1784563434,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -26,7 +26,8 @@
     939,
     974,
     953,
-    984
+    984,
+    1009
   ],
   "recentMatches": [
     {
@@ -411,6 +412,30 @@
         "mothysime11",
         "-[RDU]- Gorda America Forever",
         "Hughmungus Chungus"
+      ]
+    },
+    {
+      "matchId": 493669872,
+      "description": "10x 3x Bamboo Nothing Turbo",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784563434,
+      "outcome": "win",
+      "preRating": 984,
+      "postRating": 1009,
+      "eloChange": 25,
+      "civ": "Mongols",
+      "teamAvgElo": 1049,
+      "opponentAvgElo": 1026,
+      "teammates": [
+        "caonimashabi",
+        "Lumedge",
+        "DerAdler"
+      ],
+      "opponents": [
+        "Ian",
+        "Dellox",
+        "大秦帝国",
+        "naponeng"
       ]
     }
   ]
