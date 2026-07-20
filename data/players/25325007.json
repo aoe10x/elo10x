@@ -1,12 +1,12 @@
 {
   "profile_id": 25325007,
   "alias": "Master.Ji.ro.714",
-  "rating": 938,
+  "rating": 929,
   "wins": 9,
-  "losses": 16,
-  "gamesCount": 25,
-  "winRate": 36,
-  "lastPlayedAt": 1784211899,
+  "losses": 17,
+  "gamesCount": 26,
+  "winRate": 35,
+  "lastPlayedAt": 1784575611,
   "country": "co",
   "merged_ids": [
     13640611,
@@ -38,33 +38,10 @@
     942,
     960,
     948,
-    938
+    938,
+    929
   ],
   "recentMatches": [
-    {
-      "matchId": 475898636,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1778135220,
-      "outcome": "win",
-      "preRating": 891,
-      "postRating": 949,
-      "eloChange": 58,
-      "civ": "Burgundians",
-      "teamAvgElo": 965,
-      "opponentAvgElo": 1057,
-      "teammates": [
-        "feid_",
-        "mrak",
-        "idefixyeee"
-      ],
-      "opponents": [
-        "Kumad",
-        "Myriad",
-        "SelffingDwggo",
-        "Doormat"
-      ]
-    },
     {
       "matchId": 476373197,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -519,6 +496,30 @@
         "iamatthe.hell",
         "Lordetion",
         "^gOsO^"
+      ]
+    },
+    {
+      "matchId": 493710034,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784575611,
+      "outcome": "loss",
+      "preRating": 938,
+      "postRating": 929,
+      "eloChange": -9,
+      "civ": "Berbers",
+      "teamAvgElo": 997,
+      "opponentAvgElo": 1108,
+      "teammates": [
+        "Ian",
+        "Jelly",
+        "Stephen Curry"
+      ],
+      "opponents": [
+        "Parenquima",
+        "TheRiceMan",
+        "gamingtars",
+        "LetCarton233702"
       ]
     }
   ]

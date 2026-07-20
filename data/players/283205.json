@@ -1,12 +1,12 @@
 {
   "profile_id": 283205,
   "alias": "r9maximus",
-  "rating": 1040,
+  "rating": 1023,
   "wins": 22,
-  "losses": 20,
-  "gamesCount": 42,
-  "winRate": 52,
-  "lastPlayedAt": 1784380972,
+  "losses": 21,
+  "gamesCount": 43,
+  "winRate": 51,
+  "lastPlayedAt": 1784576945,
   "country": "nl",
   "merged_ids": [],
   "ratingHistory": [
@@ -52,33 +52,10 @@
     1028,
     1043,
     1059,
-    1040
+    1040,
+    1023
   ],
   "recentMatches": [
-    {
-      "matchId": 425528822,
-      "description": "10x 3x shared,random, up-up-up,research",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1760402640,
-      "outcome": "win",
-      "preRating": 1079,
-      "postRating": 1093,
-      "eloChange": 14,
-      "civ": "Franks",
-      "teamAvgElo": 1012,
-      "opponentAvgElo": 1032,
-      "teammates": [
-        "KebabierDu96",
-        "yimacs_yoyoyo",
-        "El Barto"
-      ],
-      "opponents": [
-        "Emotions are prohibited",
-        "fcureklibatur",
-        "TinyKing079",
-        "beta_player"
-      ]
-    },
     {
       "matchId": 426001915,
       "description": "3x 10x bamboo - random civ",
@@ -533,6 +510,30 @@
         "...",
         "Trekkspell",
         "漫山哒哒哒"
+      ]
+    },
+    {
+      "matchId": 493714266,
+      "description": "new 10x shared civ with hero",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784576945,
+      "outcome": "loss",
+      "preRating": 1040,
+      "postRating": 1023,
+      "eloChange": -17,
+      "civ": "Bohemians",
+      "teamAvgElo": 1044,
+      "opponentAvgElo": 1014,
+      "teammates": [
+        "Manba Out",
+        "J.Try88",
+        "(1) unnamed"
+      ],
+      "opponents": [
+        "dorayan",
+        "LetCarton233702",
+        "Jelly",
+        "NothingAtAll11"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 2431876,
   "alias": "Ignaqcio",
-  "rating": 886,
+  "rating": 877,
   "wins": 40,
-  "losses": 63,
-  "gamesCount": 103,
-  "winRate": 39,
-  "lastPlayedAt": 1784567380,
+  "losses": 64,
+  "gamesCount": 104,
+  "winRate": 38,
+  "lastPlayedAt": 1784573115,
   "country": "cl",
   "merged_ids": [],
   "ratingHistory": [
@@ -20,9 +20,9 @@
     890,
     943,
     920,
-    899,
     877,
     918,
+    900,
     932,
     912,
     945,
@@ -40,13 +40,13 @@
     936,
     957,
     977,
-    963,
     980,
     1000,
     986,
     1001,
     1016,
     1036,
+    1051,
     1035,
     1048,
     1028,
@@ -59,7 +59,6 @@
     1059,
     1040,
     1057,
-    1041,
     1059,
     1043,
     1028,
@@ -72,6 +71,7 @@
     1066,
     1045,
     1032,
+    1048,
     1031,
     1016,
     1000,
@@ -79,7 +79,6 @@
     1005,
     990,
     978,
-    993,
     980,
     970,
     955,
@@ -96,10 +95,10 @@
     913,
     906,
     928,
+    918,
     910,
     903,
     893,
-    885,
     909,
     899,
     889,
@@ -109,33 +108,10 @@
     914,
     905,
     896,
-    886
+    886,
+    877
   ],
   "recentMatches": [
-    {
-      "matchId": 456546687,
-      "description": "bamboo nothing 10x 3x PQ",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1771233660,
-      "outcome": "win",
-      "preRating": 916,
-      "postRating": 938,
-      "eloChange": 22,
-      "civ": "Byzantines",
-      "teamAvgElo": 966,
-      "opponentAvgElo": 1050,
-      "teammates": [
-        "Tlatoani",
-        "Al Ghouti",
-        "Vince"
-      ],
-      "opponents": [
-        "LonelyKnight",
-        "GG",
-        "Wozbo",
-        "Krizao"
-      ]
-    },
     {
       "matchId": 456548874,
       "description": "bamboo nothing 10x 3x PQ",
@@ -590,6 +566,30 @@
         "jair_silva",
         "Manba Out",
         "KhasminC"
+      ]
+    },
+    {
+      "matchId": 493701484,
+      "description": "PQ 10x 3x bamboo 4vs4",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784573115,
+      "outcome": "loss",
+      "preRating": 886,
+      "postRating": 877,
+      "eloChange": -9,
+      "civ": "Poles",
+      "teamAvgElo": 1077,
+      "opponentAvgElo": 1061,
+      "teammates": [
+        "Al Ghouti",
+        "Vince",
+        "LeosMind"
+      ],
+      "opponents": [
+        "CountryLunatic",
+        "Spiz.101",
+        "bommietommie",
+        "Bourne2Believe"
       ]
     }
   ]

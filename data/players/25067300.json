@@ -1,12 +1,12 @@
 {
   "profile_id": 25067300,
   "alias": "Frz",
-  "rating": 1027,
+  "rating": 1011,
   "wins": 9,
-  "losses": 10,
-  "gamesCount": 19,
-  "winRate": 47,
-  "lastPlayedAt": 1784518644,
+  "losses": 11,
+  "gamesCount": 20,
+  "winRate": 45,
+  "lastPlayedAt": 1784579787,
   "country": "us",
   "merged_ids": [
     13595490,
@@ -32,7 +32,8 @@
     1043,
     1064,
     1046,
-    1027
+    1027,
+    1011
   ],
   "recentMatches": [
     {
@@ -489,6 +490,30 @@
         "Bridge",
         "babeleo",
         "EastDanielNowhere"
+      ]
+    },
+    {
+      "matchId": 493726218,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784579787,
+      "outcome": "loss",
+      "preRating": 1027,
+      "postRating": 1011,
+      "eloChange": -16,
+      "civ": "Dravidians",
+      "teamAvgElo": 1028,
+      "opponentAvgElo": 1063,
+      "teammates": [
+        "baianitro",
+        "herelin0",
+        "Sal"
+      ],
+      "opponents": [
+        "maialen_zubi",
+        "[CSGS]Runescape",
+        "WDWKid3",
+        "Consume Product"
       ]
     }
   ]

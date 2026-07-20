@@ -1,12 +1,12 @@
 {
   "profile_id": 21757001,
   "alias": "jonnywins100",
-  "rating": 879,
-  "wins": 7,
+  "rating": 901,
+  "wins": 8,
   "losses": 17,
-  "gamesCount": 24,
-  "winRate": 29,
-  "lastPlayedAt": 1784477234,
+  "gamesCount": 25,
+  "winRate": 32,
+  "lastPlayedAt": 1784578488,
   "country": "us",
   "merged_ids": [
     13100723,
@@ -37,33 +37,10 @@
     909,
     899,
     888,
-    879
+    879,
+    901
   ],
   "recentMatches": [
-    {
-      "matchId": 365423503,
-      "description": "BAMBOO 10x 3x Shared Turbo",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1736942700,
-      "outcome": "win",
-      "preRating": 1028,
-      "postRating": 1070,
-      "eloChange": 42,
-      "civ": "Franks",
-      "teamAvgElo": 1000,
-      "opponentAvgElo": 1029,
-      "teammates": [
-        "typ53b90",
-        "procrastination.exe",
-        "Ray"
-      ],
-      "opponents": [
-        "mozu5",
-        "bigjames",
-        "blankedgamerz",
-        "Nimu.-"
-      ]
-    },
     {
       "matchId": 365796829,
       "description": "10x Shared - 3x Tech BAMBOO 4V4",
@@ -518,6 +495,30 @@
         "Grimmie",
         "Bryce Coolguy",
         "Llama"
+      ]
+    },
+    {
+      "matchId": 493720607,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784578488,
+      "outcome": "win",
+      "preRating": 879,
+      "postRating": 901,
+      "eloChange": 22,
+      "civ": "Bengalis",
+      "teamAvgElo": 992,
+      "opponentAvgElo": 1005,
+      "teammates": [
+        "Paolo Carrosel",
+        "[B] Cannino",
+        "maxymczech"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "Magnificent",
+        "Not a Wizard",
+        "DPK75"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 10986957,
   "alias": "Magnificent",
-  "rating": 1012,
+  "rating": 984,
   "wins": 32,
-  "losses": 36,
-  "gamesCount": 68,
-  "winRate": 47,
-  "lastPlayedAt": 1784489820,
+  "losses": 38,
+  "gamesCount": 70,
+  "winRate": 46,
+  "lastPlayedAt": 1784578488,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -78,57 +78,11 @@
     1020,
     1006,
     1026,
-    1012
+    1012,
+    1000,
+    984
   ],
   "recentMatches": [
-    {
-      "matchId": 410002184,
-      "description": "10x 3x bamboo nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1754082660,
-      "outcome": "win",
-      "preRating": 1006,
-      "postRating": 1022,
-      "eloChange": 16,
-      "civ": "Ethiopians",
-      "teamAvgElo": 1042,
-      "opponentAvgElo": 1003,
-      "teammates": [
-        "30Wololo",
-        "UweTellkamp",
-        "Scipio Africanus"
-      ],
-      "opponents": [
-        "hoderebus",
-        "Railbuilder",
-        "勇战到抵",
-        "Keroro Gunso"
-      ]
-    },
-    {
-      "matchId": 410010789,
-      "description": "10x 3x bamboo nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1754085120,
-      "outcome": "win",
-      "preRating": 1022,
-      "postRating": 1039,
-      "eloChange": 17,
-      "civ": "Spanish",
-      "teamAvgElo": 1007,
-      "opponentAvgElo": 1046,
-      "teammates": [
-        "hoderebus",
-        "Stubenrocker",
-        "kekekeya"
-      ],
-      "opponents": [
-        "jorcia",
-        "kaosune",
-        "聚焦山农",
-        "tonzo"
-      ]
-    },
     {
       "matchId": 410240220,
       "description": "10x 3x BAMBOO *NO NOOB*",
@@ -559,6 +513,54 @@
         "DrompferFTW",
         "Borkan",
         "Barosanu512"
+      ]
+    },
+    {
+      "matchId": 493705417,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784574198,
+      "outcome": "loss",
+      "preRating": 1012,
+      "postRating": 1000,
+      "eloChange": -12,
+      "civ": "Byzantines",
+      "teamAvgElo": 1047,
+      "opponentAvgElo": 1096,
+      "teammates": [
+        "CountryLunatic",
+        "pool_champ",
+        "ChristopheG1970.Fr"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "BigAl",
+        "Maic",
+        "_Zeruch_"
+      ]
+    },
+    {
+      "matchId": 493720607,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784578488,
+      "outcome": "loss",
+      "preRating": 1000,
+      "postRating": 984,
+      "eloChange": -16,
+      "civ": "Gurjaras",
+      "teamAvgElo": 1005,
+      "opponentAvgElo": 992,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "Not a Wizard",
+        "DPK75"
+      ],
+      "opponents": [
+        "Paolo Carrosel",
+        "[B] Cannino",
+        "jonnywins100",
+        "maxymczech"
       ]
     }
   ]
