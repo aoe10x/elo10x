@@ -1,12 +1,12 @@
 {
   "profile_id": 2330261,
   "alias": "davidll_5",
-  "rating": 909,
+  "rating": 898,
   "wins": 30,
-  "losses": 54,
-  "gamesCount": 84,
-  "winRate": 36,
-  "lastPlayedAt": 1784115274,
+  "losses": 55,
+  "gamesCount": 85,
+  "winRate": 35,
+  "lastPlayedAt": 1784541626,
   "country": "es",
   "merged_ids": [],
   "ratingHistory": [
@@ -94,33 +94,10 @@
     912,
     899,
     921,
-    909
+    909,
+    898
   ],
   "recentMatches": [
-    {
-      "matchId": 455365420,
-      "description": "10x shared 3x tech bamboo nothing",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1770833460,
-      "outcome": "loss",
-      "preRating": 902,
-      "postRating": 890,
-      "eloChange": -12,
-      "civ": "Spanish",
-      "teamAvgElo": 1038,
-      "opponentAvgElo": 1002,
-      "teammates": [
-        "Texas Red",
-        "axiuluo",
-        "Lumedge"
-      ],
-      "opponents": [
-        "f.wenzelburger",
-        "yosef.mardini",
-        "z e o h",
-        "UbaneMess"
-      ]
-    },
     {
       "matchId": 457207609,
       "description": "10x 3x bamboo nothing  turbo host here",
@@ -575,6 +552,30 @@
         "476055690",
         "Tiny Hands",
         "@lex"
+      ]
+    },
+    {
+      "matchId": 493616210,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784541626,
+      "outcome": "loss",
+      "preRating": 909,
+      "postRating": 898,
+      "eloChange": -11,
+      "civ": "Portuguese",
+      "teamAvgElo": 997,
+      "opponentAvgElo": 1030,
+      "teammates": [
+        "iamatthe.hell",
+        "axiuluo",
+        "konishika"
+      ],
+      "opponents": [
+        "fuec",
+        "鱼浆",
+        "Koalakapitaen",
+        "雲"
       ]
     }
   ]

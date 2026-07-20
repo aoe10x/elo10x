@@ -1,12 +1,12 @@
 {
   "profile_id": 24434911,
   "alias": "Thí Chủ Chết Chưa",
-  "rating": 953,
-  "wins": 5,
+  "rating": 984,
+  "wins": 6,
   "losses": 10,
-  "gamesCount": 15,
-  "winRate": 33,
-  "lastPlayedAt": 1784516544,
+  "gamesCount": 16,
+  "winRate": 38,
+  "lastPlayedAt": 1784528555,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -25,7 +25,8 @@
     898,
     939,
     974,
-    953
+    953,
+    984
   ],
   "recentMatches": [
     {
@@ -386,6 +387,30 @@
         "WDWKid3",
         "Jormungand",
         "Sundev"
+      ]
+    },
+    {
+      "matchId": 493596709,
+      "description": "bamboo nothing 10x",
+      "mapname": "Bamboo Nothing v3 (BaLi)",
+      "timestamp": 1784528555,
+      "outcome": "win",
+      "preRating": 953,
+      "postRating": 984,
+      "eloChange": 31,
+      "civ": "Goths",
+      "teamAvgElo": 980,
+      "opponentAvgElo": 1058,
+      "teammates": [
+        "Willoloh!!!",
+        "edalmavuz",
+        "Avexaon"
+      ],
+      "opponents": [
+        "[B] Zennith",
+        "mothysime11",
+        "-[RDU]- Gorda America Forever",
+        "Hughmungus Chungus"
       ]
     }
   ]

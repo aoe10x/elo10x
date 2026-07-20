@@ -1,12 +1,12 @@
 {
   "profile_id": 25563315,
   "alias": "nice",
-  "rating": 968,
-  "wins": 7,
+  "rating": 990,
+  "wins": 8,
   "losses": 12,
-  "gamesCount": 19,
-  "winRate": 37,
-  "lastPlayedAt": 1784358535,
+  "gamesCount": 20,
+  "winRate": 40,
+  "lastPlayedAt": 1784532854,
   "country": "au",
   "merged_ids": [
     13683386,
@@ -32,7 +32,8 @@
     932,
     912,
     941,
-    968
+    968,
+    990
   ],
   "recentMatches": [
     {
@@ -489,6 +490,30 @@
         "Lumedge",
         "beat",
         "UndreamtBacon8"
+      ]
+    },
+    {
+      "matchId": 493603498,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784532854,
+      "outcome": "win",
+      "preRating": 968,
+      "postRating": 990,
+      "eloChange": 22,
+      "civ": "Vikings",
+      "teamAvgElo": 969,
+      "opponentAvgElo": 1061,
+      "teammates": [
+        "Emusan",
+        "Willoloh!!!",
+        "aLEXt"
+      ],
+      "opponents": [
+        "TUF | DUKE_NUKEM",
+        "Old_two",
+        "dimon21_8",
+        "Maxim Liann"
       ]
     }
   ]

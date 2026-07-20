@@ -1,12 +1,12 @@
 {
   "profile_id": 1753972,
   "alias": "Pikachu",
-  "rating": 959,
-  "wins": 24,
+  "rating": 976,
+  "wins": 25,
   "losses": 38,
-  "gamesCount": 62,
-  "winRate": 39,
-  "lastPlayedAt": 1784356152,
+  "gamesCount": 63,
+  "winRate": 40,
+  "lastPlayedAt": 1784536290,
   "country": "au",
   "merged_ids": [
     1753972,
@@ -75,33 +75,10 @@
     963,
     948,
     939,
-    959
+    959,
+    976
   ],
   "recentMatches": [
-    {
-      "matchId": 478954590,
-      "description": "10x bamboo nothing",
-      "mapname": "Bamboo Nothing V3 (Bali)",
-      "timestamp": 1779208860,
-      "outcome": "loss",
-      "preRating": 964,
-      "postRating": 950,
-      "eloChange": -14,
-      "civ": "Huns",
-      "teamAvgElo": 1031,
-      "opponentAvgElo": 1016,
-      "teammates": [
-        "[B] Zennith",
-        "FAOse7en",
-        "yiban"
-      ],
-      "opponents": [
-        "Terry",
-        "McKrakfejs",
-        "matt",
-        "TR.elephantman"
-      ]
-    },
     {
       "matchId": 478958633,
       "description": "10x Shared Random bamboo",
@@ -556,6 +533,30 @@
         "Emusan",
         "Captain Stripes",
         "UbaneMess"
+      ]
+    },
+    {
+      "matchId": 493608151,
+      "description": "x3x10x Shared (PQ3.5 Qualty learing)",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784536290,
+      "outcome": "win",
+      "preRating": 959,
+      "postRating": 976,
+      "eloChange": 17,
+      "civ": "Tatars",
+      "teamAvgElo": 980,
+      "opponentAvgElo": 983,
+      "teammates": [
+        "aLEXt",
+        "Maxim Liann",
+        "TUF | DUKE_NUKEM"
+      ],
+      "opponents": [
+        "Mad08jojo",
+        "[S33]ff",
+        "naponeng",
+        "konishika"
       ]
     }
   ]

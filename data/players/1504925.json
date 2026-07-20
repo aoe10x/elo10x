@@ -1,12 +1,12 @@
 {
   "profile_id": 1504925,
   "alias": "Old_two",
-  "rating": 1128,
+  "rating": 1105,
   "wins": 38,
-  "losses": 24,
-  "gamesCount": 62,
-  "winRate": 61,
-  "lastPlayedAt": 1784476547,
+  "losses": 25,
+  "gamesCount": 63,
+  "winRate": 60,
+  "lastPlayedAt": 1784532854,
   "country": "tw",
   "merged_ids": [],
   "ratingHistory": [
@@ -72,33 +72,10 @@
     1091,
     1101,
     1116,
-    1128
+    1128,
+    1105
   ],
   "recentMatches": [
-    {
-      "matchId": 473366217,
-      "description": "10x 3x shared !!NO NOOBS!!",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1777243620,
-      "outcome": "win",
-      "preRating": 1125,
-      "postRating": 1134,
-      "eloChange": 9,
-      "civ": "Spanish",
-      "teamAvgElo": 1077,
-      "opponentAvgElo": 974,
-      "teammates": [
-        "fxsound",
-        "irvizuett",
-        "Max"
-      ],
-      "opponents": [
-        "Age5464",
-        "La_Fratellanza",
-        "Officer i cant breath",
-        "ElmoWithoutL"
-      ]
-    },
     {
       "matchId": 473763912,
       "description": "10x 3x \"Full Random\" Migration shit show",
@@ -553,6 +530,30 @@
         "MarieBrutale",
         "Sundev",
         "konishika"
+      ]
+    },
+    {
+      "matchId": 493603498,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784532854,
+      "outcome": "loss",
+      "preRating": 1128,
+      "postRating": 1105,
+      "eloChange": -23,
+      "civ": "Slavs",
+      "teamAvgElo": 1061,
+      "opponentAvgElo": 969,
+      "teammates": [
+        "TUF | DUKE_NUKEM",
+        "dimon21_8",
+        "Maxim Liann"
+      ],
+      "opponents": [
+        "Emusan",
+        "Willoloh!!!",
+        "nice",
+        "aLEXt"
       ]
     }
   ]

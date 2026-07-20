@@ -1,12 +1,12 @@
 {
   "profile_id": 307616,
   "alias": "Moose",
-  "rating": 1035,
+  "rating": 1018,
   "wins": 45,
-  "losses": 48,
-  "gamesCount": 93,
+  "losses": 49,
+  "gamesCount": 94,
   "winRate": 48,
-  "lastPlayedAt": 1784514336,
+  "lastPlayedAt": 1784529531,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -103,33 +103,10 @@
     1045,
     1028,
     1017,
-    1035
+    1035,
+    1018
   ],
   "recentMatches": [
-    {
-      "matchId": 491745201,
-      "description": "3X 10X",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783835510,
-      "outcome": "win",
-      "preRating": 958,
-      "postRating": 980,
-      "eloChange": 22,
-      "civ": "Incas",
-      "teamAvgElo": 1081,
-      "opponentAvgElo": 1086,
-      "teammates": [
-        "GrandUni",
-        "typ53b90",
-        "tonkatumura"
-      ],
-      "opponents": [
-        "GiGi",
-        "ch33tah",
-        "FPS Geo",
-        "kekekeya"
-      ]
-    },
     {
       "matchId": 491984447,
       "description": "10x3x Bamboo Nothing ",
@@ -584,6 +561,30 @@
         "feid_",
         "Monkeymonk",
         "PoonSlapper"
+      ]
+    },
+    {
+      "matchId": 493598912,
+      "description": "x3x10x Shared (PQ3.5 Qualty learing)",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784529531,
+      "outcome": "loss",
+      "preRating": 1035,
+      "postRating": 1018,
+      "eloChange": -17,
+      "civ": "Teutons",
+      "teamAvgElo": 986,
+      "opponentAvgElo": 1015,
+      "teammates": [
+        "aLEXt",
+        "Maxim Liann",
+        "[SDJ]tiberiumlord"
+      ],
+      "opponents": [
+        "紫蝶黄蜂俱有情",
+        "TR.elephantman",
+        "dimon21_8",
+        "Syncopath"
       ]
     }
   ]

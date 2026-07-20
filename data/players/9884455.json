@@ -1,12 +1,12 @@
 {
   "profile_id": 9884455,
   "alias": "fuec",
-  "rating": 892,
-  "wins": 9,
+  "rating": 913,
+  "wins": 10,
   "losses": 21,
-  "gamesCount": 30,
-  "winRate": 30,
-  "lastPlayedAt": 1784394840,
+  "gamesCount": 31,
+  "winRate": 32,
+  "lastPlayedAt": 1784541626,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -40,33 +40,10 @@
     924,
     911,
     902,
-    892
+    892,
+    913
   ],
   "recentMatches": [
-    {
-      "matchId": 383156408,
-      "description": "no beginner bamboo 10x shared civ 3x tech",
-      "mapname": "Bamboo Nothing - +Wild ##############",
-      "timestamp": 1743826260,
-      "outcome": "loss",
-      "preRating": 976,
-      "postRating": 948,
-      "eloChange": -28,
-      "civ": "Chinese",
-      "teamAvgElo": 1006,
-      "opponentAvgElo": 1019,
-      "teammates": [
-        "Bourne2Believe",
-        "Emusan",
-        "Shidoki"
-      ],
-      "opponents": [
-        "Gladiator",
-        "LUIS123456E",
-        "ThrillerKillah17",
-        "Jelly"
-      ]
-    },
     {
       "matchId": 383502258,
       "description": "10x 3x Bamboo  Random",
@@ -521,6 +498,30 @@
         "schrubber",
         "👨‍🦯‍➡️🫃",
         "wintre"
+      ]
+    },
+    {
+      "matchId": 493616210,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784541626,
+      "outcome": "win",
+      "preRating": 892,
+      "postRating": 913,
+      "eloChange": 21,
+      "civ": "Mongols",
+      "teamAvgElo": 1030,
+      "opponentAvgElo": 997,
+      "teammates": [
+        "鱼浆",
+        "Koalakapitaen",
+        "雲"
+      ],
+      "opponents": [
+        "iamatthe.hell",
+        "davidll_5",
+        "axiuluo",
+        "konishika"
       ]
     }
   ]
