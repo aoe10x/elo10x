@@ -1,12 +1,12 @@
 {
   "profile_id": 16964564,
   "alias": "ilovesushi12",
-  "rating": 1063,
+  "rating": 1047,
   "wins": 29,
-  "losses": 38,
-  "gamesCount": 67,
+  "losses": 39,
+  "gamesCount": 68,
   "winRate": 43,
-  "lastPlayedAt": 1783622000,
+  "lastPlayedAt": 1784582179,
   "country": "ca",
   "merged_ids": [
     12074571,
@@ -80,33 +80,10 @@
     1044,
     1065,
     1048,
-    1063
+    1063,
+    1047
   ],
   "recentMatches": [
-    {
-      "matchId": 440721820,
-      "description": "4V4 ===10x shared 3Xtech  4V4 random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1766006700,
-      "outcome": "win",
-      "preRating": 939,
-      "postRating": 960,
-      "eloChange": 21,
-      "civ": "Maya",
-      "teamAvgElo": 1027,
-      "opponentAvgElo": 1062,
-      "teammates": [
-        "choolkkkk",
-        "WildBoar",
-        "VforKickAss"
-      ],
-      "opponents": [
-        "Rin Tin Tin",
-        "tony.li",
-        "mozu5",
-        "ototomato"
-      ]
-    },
     {
       "matchId": 440828518,
       "description": "10x 3x BAMBOO NOTHING",
@@ -561,6 +538,30 @@
         "wintre",
         "Ozyroth",
         "Lozzer"
+      ]
+    },
+    {
+      "matchId": 493733156,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784582179,
+      "outcome": "loss",
+      "preRating": 1063,
+      "postRating": 1047,
+      "eloChange": -16,
+      "civ": "Dravidians",
+      "teamAvgElo": 1031,
+      "opponentAvgElo": 1073,
+      "teammates": [
+        "lr",
+        "Goodsoup",
+        "gato"
+      ],
+      "opponents": [
+        "Parenquima",
+        "[CSGS]Runescape",
+        "Lego =]",
+        "Bibz"
       ]
     }
   ]

@@ -1,11 +1,11 @@
 {
   "profile_id": 24300464,
   "alias": "Manba Out",
-  "rating": 1085,
+  "rating": 1068,
   "wins": 36,
-  "losses": 25,
-  "gamesCount": 61,
-  "winRate": 59,
+  "losses": 26,
+  "gamesCount": 62,
+  "winRate": 58,
   "lastPlayedAt": 1784576945,
   "country": "cn",
   "merged_ids": [
@@ -73,34 +73,11 @@
     1062,
     1078,
     1092,
-    1105,
-    1085
+    1073,
+    1087,
+    1068
   ],
   "recentMatches": [
-    {
-      "matchId": 491351394,
-      "description": "10x 3x - bamboo donut",
-      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
-      "timestamp": 1783703137,
-      "outcome": "loss",
-      "preRating": 1133,
-      "postRating": 1114,
-      "eloChange": -19,
-      "civ": "Malians",
-      "teamAvgElo": 1094,
-      "opponentAvgElo": 1058,
-      "teammates": [
-        "Not a Wizard",
-        "BearBrown",
-        "Papillon"
-      ],
-      "opponents": [
-        "Parenquima",
-        "matt",
-        "duusker",
-        "tanoboe"
-      ]
-    },
     {
       "matchId": 491361854,
       "description": "4vs4 10x 3x shared civ bonus, random civ",
@@ -510,17 +487,41 @@
       ]
     },
     {
+      "matchId": 493684067,
+      "description": "PQ 10x 3x bamboo 4vs4",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784567962,
+      "outcome": "loss",
+      "preRating": 1092,
+      "postRating": 1073,
+      "eloChange": -19,
+      "civ": "Incas",
+      "teamAvgElo": 1065,
+      "opponentAvgElo": 1032,
+      "teammates": [
+        "baianitro",
+        "KhasminC",
+        "Armyofme_"
+      ],
+      "opponents": [
+        "Al Ghouti",
+        "jair_silva",
+        "Ignaqcio",
+        "LeosMind"
+      ]
+    },
+    {
       "matchId": 493697870,
       "description": "10x3x   shared bonus random civ  no noob",
       "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1784572285,
       "outcome": "win",
-      "preRating": 1092,
-      "postRating": 1105,
-      "eloChange": 13,
+      "preRating": 1073,
+      "postRating": 1087,
+      "eloChange": 14,
       "civ": "Aztecs",
-      "teamAvgElo": 1068,
-      "opponentAvgElo": 1035,
+      "teamAvgElo": 1063,
+      "opponentAvgElo": 1039,
       "teammates": [
         "Your Ego",
         "gamingtars",
@@ -539,11 +540,11 @@
       "mapname": "BAMBOO NOTHING - SCORPYON DE",
       "timestamp": 1784576945,
       "outcome": "loss",
-      "preRating": 1105,
-      "postRating": 1085,
-      "eloChange": -20,
+      "preRating": 1087,
+      "postRating": 1068,
+      "eloChange": -19,
       "civ": "Italians",
-      "teamAvgElo": 1044,
+      "teamAvgElo": 1039,
       "opponentAvgElo": 1014,
       "teammates": [
         "r9maximus",

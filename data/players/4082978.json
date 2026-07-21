@@ -1,12 +1,12 @@
 {
   "profile_id": 4082978,
   "alias": "Megatron",
-  "rating": 1094,
+  "rating": 1076,
   "wins": 12,
-  "losses": 8,
-  "gamesCount": 20,
-  "winRate": 60,
-  "lastPlayedAt": 1784080548,
+  "losses": 9,
+  "gamesCount": 21,
+  "winRate": 57,
+  "lastPlayedAt": 1784587438,
   "country": "in",
   "merged_ids": [],
   "ratingHistory": [
@@ -30,33 +30,10 @@
     1037,
     1058,
     1075,
-    1094
+    1094,
+    1076
   ],
   "recentMatches": [
-    {
-      "matchId": 275733992,
-      "description": "10x Shared Civ Bonus",
-      "mapname": "Michi",
-      "timestamp": 1701554940,
-      "outcome": "win",
-      "preRating": 1000,
-      "postRating": 1047,
-      "eloChange": 47,
-      "civ": "Spanish",
-      "teamAvgElo": 1000,
-      "opponentAvgElo": 989,
-      "teammates": [
-        "HYPNOS",
-        "MUQofficial",
-        "gamer_365"
-      ],
-      "opponents": [
-        "Nice",
-        "mack",
-        "Spongo",
-        "旺旺"
-      ]
-    },
     {
       "matchId": 287412518,
       "description": "10x Shared",
@@ -511,6 +488,30 @@
         "Myriad",
         "EL__PATRON",
         "JoeyTribianni69"
+      ]
+    },
+    {
+      "matchId": 493749379,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784587438,
+      "outcome": "loss",
+      "preRating": 1094,
+      "postRating": 1076,
+      "eloChange": -18,
+      "civ": "Aztecs",
+      "teamAvgElo": 1059,
+      "opponentAvgElo": 1046,
+      "teammates": [
+        "TheRiceMan",
+        "OhSheeep",
+        "Rotbart"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "The Naked Gothman",
+        "Logicos123",
+        "Baboo"
       ]
     }
   ]

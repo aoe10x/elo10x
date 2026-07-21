@@ -1,12 +1,12 @@
 {
   "profile_id": 589142,
   "alias": "Armyofme_",
-  "rating": 1075,
+  "rating": 1057,
   "wins": 43,
-  "losses": 42,
-  "gamesCount": 85,
-  "winRate": 51,
-  "lastPlayedAt": 1784503600,
+  "losses": 43,
+  "gamesCount": 86,
+  "winRate": 50,
+  "lastPlayedAt": 1784567962,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -95,33 +95,10 @@
     1090,
     1073,
     1087,
-    1075
+    1075,
+    1057
   ],
   "recentMatches": [
-    {
-      "matchId": 461208851,
-      "description": "BN 10x 3x garbage = BAN",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1772879880,
-      "outcome": "win",
-      "preRating": 1049,
-      "postRating": 1063,
-      "eloChange": 14,
-      "civ": "Saracens",
-      "teamAvgElo": 1072,
-      "opponentAvgElo": 1002,
-      "teammates": [
-        "duckbuildperson",
-        "fxsound",
-        "Shadow"
-      ],
-      "opponents": [
-        "Glasg0w",
-        "ThrillerKillah17",
-        "helianth",
-        "procrastination.exe"
-      ]
-    },
     {
       "matchId": 461478575,
       "description": "x3x10x Shared (PQ3.1x11 Qualty daycare)",
@@ -576,6 +553,30 @@
         "TheRiceMan",
         "Vince",
         "Bourne2Believe"
+      ]
+    },
+    {
+      "matchId": 493684067,
+      "description": "PQ 10x 3x bamboo 4vs4",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784567962,
+      "outcome": "loss",
+      "preRating": 1075,
+      "postRating": 1057,
+      "eloChange": -18,
+      "civ": "Goths",
+      "teamAvgElo": 1065,
+      "opponentAvgElo": 1032,
+      "teammates": [
+        "baianitro",
+        "KhasminC",
+        "Manba Out"
+      ],
+      "opponents": [
+        "Al Ghouti",
+        "jair_silva",
+        "Ignaqcio",
+        "LeosMind"
       ]
     }
   ]

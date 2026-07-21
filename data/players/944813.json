@@ -1,12 +1,12 @@
 {
   "profile_id": 944813,
   "alias": "faux",
-  "rating": 1097,
-  "wins": 32,
-  "losses": 35,
-  "gamesCount": 67,
+  "rating": 1094,
+  "wins": 33,
+  "losses": 36,
+  "gamesCount": 69,
   "winRate": 48,
-  "lastPlayedAt": 1783819775,
+  "lastPlayedAt": 1784597067,
   "country": "gb",
   "merged_ids": [],
   "ratingHistory": [
@@ -77,57 +77,11 @@
     1083,
     1099,
     1115,
-    1097
+    1097,
+    1112,
+    1094
   ],
   "recentMatches": [
-    {
-      "matchId": 450956142,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Amazon Tunnel Twin Bays",
-      "timestamp": 1769329920,
-      "outcome": "win",
-      "preRating": 996,
-      "postRating": 1014,
-      "eloChange": 18,
-      "civ": "Bengalis",
-      "teamAvgElo": 1053,
-      "opponentAvgElo": 1040,
-      "teammates": [
-        "Kumad",
-        "Myriad",
-        "RTMaxwell"
-      ],
-      "opponents": [
-        "CallMeMeatloaf",
-        "EL__PATRON",
-        "RadioActiveMan",
-        "jmm"
-      ]
-    },
-    {
-      "matchId": 451980645,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Amazon Tunnel Twin Bays",
-      "timestamp": 1769674320,
-      "outcome": "win",
-      "preRating": 1014,
-      "postRating": 1030,
-      "eloChange": 16,
-      "civ": "Maya",
-      "teamAvgElo": 972,
-      "opponentAvgElo": 1012,
-      "teammates": [
-        "SpiniestTuna222",
-        "SoulCatcher",
-        "[ ARKI ! ]"
-      ],
-      "opponents": [
-        "Kumad",
-        "Myriad",
-        "Chefcito",
-        "LeosMind"
-      ]
-    },
     {
       "matchId": 456276427,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -558,6 +512,54 @@
         "Myriad",
         "Jelly",
         "Brotherman Bill"
+      ]
+    },
+    {
+      "matchId": 493772379,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784596088,
+      "outcome": "win",
+      "preRating": 1097,
+      "postRating": 1112,
+      "eloChange": 15,
+      "civ": "Bulgarians",
+      "teamAvgElo": 1071,
+      "opponentAvgElo": 1075,
+      "teammates": [
+        "EL__PATRON",
+        "[TodEs] MnTartara",
+        "ZONIX"
+      ],
+      "opponents": [
+        "Kumad",
+        "feid_",
+        "Myriad",
+        "Asuna"
+      ]
+    },
+    {
+      "matchId": 493775296,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784597067,
+      "outcome": "loss",
+      "preRating": 1112,
+      "postRating": 1094,
+      "eloChange": -18,
+      "civ": "Celts",
+      "teamAvgElo": 1057,
+      "opponentAvgElo": 1069,
+      "teammates": [
+        "feid_",
+        "WDWKid3",
+        "Asuna"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "EL__PATRON",
+        "Willoloh!!!"
       ]
     }
   ]

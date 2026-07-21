@@ -1,12 +1,12 @@
 {
   "profile_id": 650599,
   "alias": "Dogberto",
-  "rating": 1164,
+  "rating": 1136,
   "wins": 13,
-  "losses": 4,
-  "gamesCount": 17,
-  "winRate": 76,
-  "lastPlayedAt": 1783310926,
+  "losses": 5,
+  "gamesCount": 18,
+  "winRate": 72,
+  "lastPlayedAt": 1784595739,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,8 @@
     1162,
     1180,
     1194,
-    1164
+    1164,
+    1136
   ],
   "recentMatches": [
     {
@@ -436,6 +437,30 @@
         "typ53b90",
         "derailer9",
         "OhSheeep"
+      ]
+    },
+    {
+      "matchId": 493771280,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784595739,
+      "outcome": "loss",
+      "preRating": 1164,
+      "postRating": 1136,
+      "eloChange": -28,
+      "civ": "Poles",
+      "teamAvgElo": 1062,
+      "opponentAvgElo": 1048,
+      "teammates": [
+        "Parts",
+        "Optimus",
+        "Willoloh!!!"
+      ],
+      "opponents": [
+        "nooblet3300",
+        "MarieBrutale",
+        "Bourne2Believe",
+        "SpiniestTuna222"
       ]
     }
   ]

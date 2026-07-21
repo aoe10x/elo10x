@@ -1,12 +1,12 @@
 {
   "profile_id": 24588553,
   "alias": "CosteLoco",
-  "rating": 993,
-  "wins": 22,
-  "losses": 33,
-  "gamesCount": 55,
+  "rating": 983,
+  "wins": 23,
+  "losses": 35,
+  "gamesCount": 58,
   "winRate": 40,
-  "lastPlayedAt": 1783993776,
+  "lastPlayedAt": 1784594257,
   "country": "co",
   "merged_ids": [
     13513930,
@@ -68,81 +68,12 @@
     978,
     994,
     1008,
-    993
+    993,
+    980,
+    999,
+    983
   ],
   "recentMatches": [
-    {
-      "matchId": 486855643,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
-      "timestamp": 1781981875,
-      "outcome": "loss",
-      "preRating": 958,
-      "postRating": 948,
-      "eloChange": -10,
-      "civ": "Lithuanians",
-      "teamAvgElo": 1016,
-      "opponentAvgElo": 1084,
-      "teammates": [
-        "YUJIN",
-        "mack",
-        "Fathrilocram"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "Mortak",
-        "golhmogh",
-        "wintre"
-      ]
-    },
-    {
-      "matchId": 486866587,
-      "description": "4vs4 10x 3x shared civ bonus, random civ",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1781984471,
-      "outcome": "loss",
-      "preRating": 948,
-      "postRating": 936,
-      "eloChange": -12,
-      "civ": "Armenians",
-      "teamAvgElo": 1026,
-      "opponentAvgElo": 1034,
-      "teammates": [
-        "yimacs_yoyoyo",
-        "Ivy",
-        "Kalervo Jankko"
-      ],
-      "opponents": [
-        "liehuo22",
-        "PAIN",
-        "WipiWi",
-        "Lumedge"
-      ]
-    },
-    {
-      "matchId": 486875247,
-      "description": "10x 3x bamboo random civ ",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1781986823,
-      "outcome": "loss",
-      "preRating": 936,
-      "postRating": 925,
-      "eloChange": -11,
-      "civ": "Sicilians",
-      "teamAvgElo": 1018,
-      "opponentAvgElo": 1039,
-      "teammates": [
-        "Mimi",
-        "ChiH",
-        "Ivy"
-      ],
-      "opponents": [
-        "bijiyumo",
-        "Flip Kun",
-        "NothingAtAll11",
-        "La_Fratellanza"
-      ]
-    },
     {
       "matchId": 486891476,
       "description": "4vs4 10x 3x shared civ bonus, random civ",
@@ -549,6 +480,78 @@
         "RAOV",
         "Rooaary",
         "NothingAtAll11"
+      ]
+    },
+    {
+      "matchId": 493751949,
+      "description": "10X3X BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784588288,
+      "outcome": "loss",
+      "preRating": 993,
+      "postRating": 980,
+      "eloChange": -13,
+      "civ": "Britons",
+      "teamAvgElo": 1045,
+      "opponentAvgElo": 1062,
+      "teammates": [
+        "Brotherman Bill",
+        "Monkeymonk",
+        "Mehandor"
+      ],
+      "opponents": [
+        "SimCity3000",
+        "NothingAtAll11",
+        "-[RDU]- Gorda America Forever",
+        "DerAdler"
+      ]
+    },
+    {
+      "matchId": 493758520,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784590882,
+      "outcome": "win",
+      "preRating": 980,
+      "postRating": 999,
+      "eloChange": 19,
+      "civ": "Koreans",
+      "teamAvgElo": 1084,
+      "opponentAvgElo": 1037,
+      "teammates": [
+        "田瘾犯了",
+        "Mehandor",
+        "mothysime11"
+      ],
+      "opponents": [
+        "TJ",
+        "Dinger",
+        "Wololo",
+        "Paolo Carrosel"
+      ]
+    },
+    {
+      "matchId": 493767633,
+      "description": "10x 3x Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784594257,
+      "outcome": "loss",
+      "preRating": 999,
+      "postRating": 983,
+      "eloChange": -16,
+      "civ": "Berbers",
+      "teamAvgElo": 1018,
+      "opponentAvgElo": 996,
+      "teammates": [
+        "tacotoy",
+        "Optimus",
+        "Wololo"
+      ],
+      "opponents": [
+        "nooblet3300",
+        "Emusan",
+        "Tiny Hands",
+        "Ode To  A Pineapple"
       ]
     }
   ]

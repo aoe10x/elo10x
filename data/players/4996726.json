@@ -1,12 +1,12 @@
 {
   "profile_id": 4996726,
   "alias": "Rotbart",
-  "rating": 983,
+  "rating": 970,
   "wins": 14,
-  "losses": 20,
-  "gamesCount": 34,
-  "winRate": 41,
-  "lastPlayedAt": 1784243687,
+  "losses": 21,
+  "gamesCount": 35,
+  "winRate": 40,
+  "lastPlayedAt": 1784587438,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -44,33 +44,10 @@
     953,
     975,
     962,
-    983
+    983,
+    970
   ],
   "recentMatches": [
-    {
-      "matchId": 434952269,
-      "description": "4V4 ===10x shared 3Xtech  4V4 random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1763878560,
-      "outcome": "win",
-      "preRating": 974,
-      "postRating": 1000,
-      "eloChange": 26,
-      "civ": "Franks",
-      "teamAvgElo": 990,
-      "opponentAvgElo": 980,
-      "teammates": [
-        "choolkkkk",
-        "Maselia",
-        "no good"
-      ],
-      "opponents": [
-        "Fuzsah",
-        "SeaPig",
-        "Ru3en",
-        "ExZeCo"
-      ]
-    },
     {
       "matchId": 434958719,
       "description": "4V4 ===10x shared 3Xtech  4V4 random",
@@ -525,6 +502,30 @@
         "Parts",
         "Dutchigander",
         "Brotherman Bill"
+      ]
+    },
+    {
+      "matchId": 493749379,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784587438,
+      "outcome": "loss",
+      "preRating": 983,
+      "postRating": 970,
+      "eloChange": -13,
+      "civ": "Franks",
+      "teamAvgElo": 1059,
+      "opponentAvgElo": 1046,
+      "teammates": [
+        "TheRiceMan",
+        "OhSheeep",
+        "Megatron"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "The Naked Gothman",
+        "Logicos123",
+        "Baboo"
       ]
     }
   ]

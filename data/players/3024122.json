@@ -1,12 +1,12 @@
 {
   "profile_id": 3024122,
   "alias": "Baboo",
-  "rating": 1055,
-  "wins": 9,
+  "rating": 1079,
+  "wins": 10,
   "losses": 6,
-  "gamesCount": 15,
-  "winRate": 60,
-  "lastPlayedAt": 1783816093,
+  "gamesCount": 16,
+  "winRate": 63,
+  "lastPlayedAt": 1784587438,
   "country": "gb",
   "merged_ids": [],
   "ratingHistory": [
@@ -25,7 +25,8 @@
     1097,
     1060,
     1030,
-    1055
+    1055,
+    1079
   ],
   "recentMatches": [
     {
@@ -386,6 +387,30 @@
         "Jelly",
         "MRmoreto",
         "meathman31"
+      ]
+    },
+    {
+      "matchId": 493749379,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784587438,
+      "outcome": "win",
+      "preRating": 1055,
+      "postRating": 1079,
+      "eloChange": 24,
+      "civ": "Burmese",
+      "teamAvgElo": 1046,
+      "opponentAvgElo": 1059,
+      "teammates": [
+        "NoAgendaPODCAST",
+        "The Naked Gothman",
+        "Logicos123"
+      ],
+      "opponents": [
+        "TheRiceMan",
+        "OhSheeep",
+        "Rotbart",
+        "Megatron"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 25674380,
   "alias": "Optimus",
-  "rating": 1033,
+  "rating": 1001,
   "wins": 16,
-  "losses": 17,
-  "gamesCount": 33,
-  "winRate": 48,
-  "lastPlayedAt": 1784407903,
+  "losses": 19,
+  "gamesCount": 35,
+  "winRate": 46,
+  "lastPlayedAt": 1784595739,
   "country": "us",
   "merged_ids": [
     13700923,
@@ -46,57 +46,11 @@
     1011,
     1030,
     1015,
-    1033
+    1033,
+    1015,
+    1001
   ],
   "recentMatches": [
-    {
-      "matchId": 492202351,
-      "description": "10x 3x Bamboo (bad dragon)",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1783995200,
-      "outcome": "win",
-      "preRating": 971,
-      "postRating": 1004,
-      "eloChange": 33,
-      "civ": "Goths",
-      "teamAvgElo": 994,
-      "opponentAvgElo": 1042,
-      "teammates": [
-        "Scipio",
-        "Parts",
-        "[TodEs] MnTartara"
-      ],
-      "opponents": [
-        "Monkeymonk",
-        "gmc inspector",
-        "Makinaskee",
-        "adrian"
-      ]
-    },
-    {
-      "matchId": 492211465,
-      "description": "BN 10x 3x good players only",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1783998550,
-      "outcome": "loss",
-      "preRating": 1004,
-      "postRating": 980,
-      "eloChange": -24,
-      "civ": "Bohemians",
-      "teamAvgElo": 1043,
-      "opponentAvgElo": 1025,
-      "teammates": [
-        "Meursault005",
-        "procrastination.exe",
-        "ch33tah"
-      ],
-      "opponents": [
-        "duckbuildperson",
-        "bigjames",
-        "Raggamuffin'",
-        "pandasadnap"
-      ]
-    },
     {
       "matchId": 492214299,
       "description": "10x3x Bamboo Nothing ",
@@ -527,6 +481,54 @@
         "Honey badger",
         "nooblet3300",
         "Rita De Valencia"
+      ]
+    },
+    {
+      "matchId": 493767633,
+      "description": "10x 3x Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784594257,
+      "outcome": "loss",
+      "preRating": 1033,
+      "postRating": 1015,
+      "eloChange": -18,
+      "civ": "Britons",
+      "teamAvgElo": 1018,
+      "opponentAvgElo": 996,
+      "teammates": [
+        "tacotoy",
+        "CosteLoco",
+        "Wololo"
+      ],
+      "opponents": [
+        "nooblet3300",
+        "Emusan",
+        "Tiny Hands",
+        "Ode To  A Pineapple"
+      ]
+    },
+    {
+      "matchId": 493771280,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784595739,
+      "outcome": "loss",
+      "preRating": 1015,
+      "postRating": 1001,
+      "eloChange": -14,
+      "civ": "Vietnamese",
+      "teamAvgElo": 1062,
+      "opponentAvgElo": 1048,
+      "teammates": [
+        "Parts",
+        "Dogberto",
+        "Willoloh!!!"
+      ],
+      "opponents": [
+        "nooblet3300",
+        "MarieBrutale",
+        "Bourne2Believe",
+        "SpiniestTuna222"
       ]
     }
   ]

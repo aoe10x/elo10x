@@ -1,12 +1,12 @@
 {
   "profile_id": 1175691,
   "alias": "balbers08",
-  "rating": 985,
+  "rating": 973,
   "wins": 17,
-  "losses": 22,
-  "gamesCount": 39,
-  "winRate": 44,
-  "lastPlayedAt": 1783951175,
+  "losses": 23,
+  "gamesCount": 40,
+  "winRate": 43,
+  "lastPlayedAt": 1784569432,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -49,33 +49,10 @@
     1025,
     1009,
     996,
-    985
+    985,
+    973
   ],
   "recentMatches": [
-    {
-      "matchId": 458809076,
-      "description": "10x 3x bamboo RANDOM  CIV",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1771993680,
-      "outcome": "loss",
-      "preRating": 1023,
-      "postRating": 1008,
-      "eloChange": -15,
-      "civ": "Unknown",
-      "teamAvgElo": 1035,
-      "opponentAvgElo": 1078,
-      "teammates": [
-        "CraftyFrogy",
-        "bijiyumo",
-        "trogfield4"
-      ],
-      "opponents": [
-        "Yakult",
-        "Mimi",
-        "McKrakfejs",
-        "Blueye"
-      ]
-    },
     {
       "matchId": 459023891,
       "description": "10x3x(THE BETTER LOBBY that the host won't ban better players)tm",
@@ -530,6 +507,30 @@
         "Lumedge",
         "GOJO",
         "kekekeya"
+      ]
+    },
+    {
+      "matchId": 493688135,
+      "description": "PQ 10x 3x bamboo 4vs4",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784569432,
+      "outcome": "loss",
+      "preRating": 985,
+      "postRating": 973,
+      "eloChange": -12,
+      "civ": "Turks",
+      "teamAvgElo": 1058,
+      "opponentAvgElo": 1069,
+      "teammates": [
+        "Al Ghouti",
+        "Haku",
+        "LeosMind"
+      ],
+      "opponents": [
+        "jair_silva",
+        "[TSU] Red Cansky",
+        "PIEROGI",
+        "Texas Red"
       ]
     }
   ]
