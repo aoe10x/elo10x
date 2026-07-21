@@ -1,12 +1,12 @@
 {
   "profile_id": 1523130,
   "alias": "Wimac",
-  "rating": 996,
-  "wins": 31,
+  "rating": 1011,
+  "wins": 32,
   "losses": 34,
-  "gamesCount": 65,
+  "gamesCount": 66,
   "winRate": 48,
-  "lastPlayedAt": 1783983269,
+  "lastPlayedAt": 1784602844,
   "country": "co",
   "merged_ids": [],
   "ratingHistory": [
@@ -75,33 +75,10 @@
     972,
     991,
     1011,
-    996
+    996,
+    1011
   ],
   "recentMatches": [
-    {
-      "matchId": 478679579,
-      "description": "10x Shared 3xTech Bamboo Nothing",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1779096360,
-      "outcome": "loss",
-      "preRating": 1048,
-      "postRating": 1032,
-      "eloChange": -16,
-      "civ": "Turks",
-      "teamAvgElo": 1054,
-      "opponentAvgElo": 1049,
-      "teammates": [
-        "RIchard_Uy",
-        "ZTH",
-        "ACZINO"
-      ],
-      "opponents": [
-        "{R} Parry",
-        "Scootyplz",
-        "Me_Ha_Ha",
-        "dantesitoalbo"
-      ]
-    },
     {
       "matchId": 479139997,
       "description": "10x3x Bamboo Nothing",
@@ -161,7 +138,7 @@
       "eloChange": 16,
       "civ": "Tatars",
       "teamAvgElo": 1058,
-      "opponentAvgElo": 1030,
+      "opponentAvgElo": 1028,
       "teammates": [
         "nooblet3300",
         "WeaponizedAutism",
@@ -208,7 +185,7 @@
       "postRating": 1081,
       "eloChange": 15,
       "civ": "Franks",
-      "teamAvgElo": 1101,
+      "teamAvgElo": 1102,
       "opponentAvgElo": 1042,
       "teammates": [
         "edalmavuz",
@@ -305,7 +282,7 @@
       "eloChange": -15,
       "civ": "Tupi",
       "teamAvgElo": 1094,
-      "opponentAvgElo": 1072,
+      "opponentAvgElo": 1073,
       "teammates": [
         "dRea",
         "Cale94",
@@ -497,7 +474,7 @@
       "eloChange": 19,
       "civ": "Slavs",
       "teamAvgElo": 1043,
-      "opponentAvgElo": 1035,
+      "opponentAvgElo": 1034,
       "teammates": [
         "TheRiceMan",
         "Not a Wizard",
@@ -521,7 +498,7 @@
       "eloChange": 20,
       "civ": "Wei",
       "teamAvgElo": 1061,
-      "opponentAvgElo": 1079,
+      "opponentAvgElo": 1080,
       "teammates": [
         "TheRiceMan",
         "Wozbo",
@@ -556,6 +533,30 @@
         "Chirijiraden",
         "Manba Out",
         "Brotherman Bill"
+      ]
+    },
+    {
+      "matchId": 493790849,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784602844,
+      "outcome": "win",
+      "preRating": 996,
+      "postRating": 1011,
+      "eloChange": 15,
+      "civ": "Incas",
+      "teamAvgElo": 1085,
+      "opponentAvgElo": 973,
+      "teammates": [
+        "Parenquima",
+        "adrian",
+        "Your Ego"
+      ],
+      "opponents": [
+        "bigjames",
+        "WipiWi",
+        "AMMO2000",
+        "Magical Taylor"
       ]
     }
   ]

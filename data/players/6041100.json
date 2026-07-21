@@ -1,12 +1,12 @@
 {
   "profile_id": 6041100,
   "alias": "ilyfk ♡",
-  "rating": 910,
+  "rating": 898,
   "wins": 19,
-  "losses": 32,
-  "gamesCount": 51,
+  "losses": 33,
+  "gamesCount": 52,
   "winRate": 37,
-  "lastPlayedAt": 1782952132,
+  "lastPlayedAt": 1784601432,
   "country": "cl",
   "merged_ids": [],
   "ratingHistory": [
@@ -61,33 +61,10 @@
     943,
     933,
     924,
-    910
+    910,
+    898
   ],
   "recentMatches": [
-    {
-      "matchId": 393065405,
-      "description": "10x civ 3x tech Bamboo nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1747450980,
-      "outcome": "win",
-      "preRating": 977,
-      "postRating": 997,
-      "eloChange": 20,
-      "civ": "Spanish",
-      "teamAvgElo": 1012,
-      "opponentAvgElo": 1070,
-      "teammates": [
-        "Semisky",
-        "Spaceman Rob",
-        "UlissePigro"
-      ],
-      "opponents": [
-        "S1xZ3r0",
-        "iamatthe.hell",
-        "Keishi",
-        "RDJ"
-      ]
-    },
     {
       "matchId": 393117612,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -542,6 +519,30 @@
         "Test66",
         "AnacletoElit",
         "kevingreese"
+      ]
+    },
+    {
+      "matchId": 493787115,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784601432,
+      "outcome": "loss",
+      "preRating": 910,
+      "postRating": 898,
+      "eloChange": -12,
+      "civ": "Mongols",
+      "teamAvgElo": 1025,
+      "opponentAvgElo": 993,
+      "teammates": [
+        "{R} Parry",
+        "ch33tah",
+        "maddymsg"
+      ],
+      "opponents": [
+        "nooblet3300",
+        "Tiny Hands",
+        "Maxim Liann",
+        "vincentc95"
       ]
     }
   ]

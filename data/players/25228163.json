@@ -1,12 +1,12 @@
 {
   "profile_id": 25228163,
   "alias": "Maxim Liann",
-  "rating": 953,
-  "wins": 31,
+  "rating": 972,
+  "wins": 32,
   "losses": 60,
-  "gamesCount": 91,
-  "winRate": 34,
-  "lastPlayedAt": 1784536290,
+  "gamesCount": 92,
+  "winRate": 35,
+  "lastPlayedAt": 1784601432,
   "country": "br",
   "merged_ids": [
     13623515,
@@ -23,11 +23,11 @@
     1027,
     992,
     963,
-    936,
-    974,
-    954,
-    992,
-    974,
+    937,
+    975,
+    955,
+    993,
+    975,
     950,
     979,
     1007,
@@ -104,33 +104,10 @@
     964,
     950,
     935,
-    953
+    953,
+    972
   ],
   "recentMatches": [
-    {
-      "matchId": 493302250,
-      "description": "10x 3x bamboo NO IDIOT",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1784422371,
-      "outcome": "loss",
-      "preRating": 928,
-      "postRating": 917,
-      "eloChange": -11,
-      "civ": "Shu",
-      "teamAvgElo": 979,
-      "opponentAvgElo": 1050,
-      "teammates": [
-        "Waryahay",
-        "Magical Taylor",
-        "dandan"
-      ],
-      "opponents": [
-        "Emusan",
-        "Shadow",
-        "Millsoir",
-        "PNAL | CaligariClown"
-      ]
-    },
     {
       "matchId": 493306041,
       "description": "10x Shared Civ Bonus 4v4 Random ",
@@ -285,7 +262,7 @@
       "postRating": 922,
       "eloChange": 22,
       "civ": "Japanese",
-      "teamAvgElo": 1022,
+      "teamAvgElo": 1021,
       "opponentAvgElo": 1036,
       "teammates": [
         "Kumad",
@@ -309,7 +286,7 @@
       "postRating": 944,
       "eloChange": 22,
       "civ": "Chinese",
-      "teamAvgElo": 1020,
+      "teamAvgElo": 1019,
       "opponentAvgElo": 1067,
       "teammates": [
         "Kumad",
@@ -585,6 +562,30 @@
         "[S33]ff",
         "naponeng",
         "konishika"
+      ]
+    },
+    {
+      "matchId": 493787115,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784601432,
+      "outcome": "win",
+      "preRating": 953,
+      "postRating": 972,
+      "eloChange": 19,
+      "civ": "Wei",
+      "teamAvgElo": 993,
+      "opponentAvgElo": 1025,
+      "teammates": [
+        "nooblet3300",
+        "Tiny Hands",
+        "vincentc95"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "ch33tah",
+        "maddymsg",
+        "ilyfk ♡"
       ]
     }
   ]
