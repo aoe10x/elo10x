@@ -1,12 +1,12 @@
 {
   "profile_id": 589142,
   "alias": "Armyofme_",
-  "rating": 1057,
-  "wins": 43,
+  "rating": 1075,
+  "wins": 44,
   "losses": 43,
-  "gamesCount": 86,
-  "winRate": 50,
-  "lastPlayedAt": 1784567962,
+  "gamesCount": 87,
+  "winRate": 51,
+  "lastPlayedAt": 1784649103,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -96,33 +96,10 @@
     1073,
     1087,
     1075,
-    1057
+    1057,
+    1075
   ],
   "recentMatches": [
-    {
-      "matchId": 461478575,
-      "description": "x3x10x Shared (PQ3.1x11 Qualty daycare)",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1772963820,
-      "outcome": "win",
-      "preRating": 1063,
-      "postRating": 1077,
-      "eloChange": 14,
-      "civ": "Bohemians",
-      "teamAvgElo": 1096,
-      "opponentAvgElo": 1027,
-      "teammates": [
-        "Chuckyllo4417",
-        "aLEXt",
-        "fxsound"
-      ],
-      "opponents": [
-        "Xinzzo",
-        "Phantom_",
-        "benji",
-        "Borkan"
-      ]
-    },
     {
       "matchId": 461962177,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -577,6 +554,30 @@
         "jair_silva",
         "Ignaqcio",
         "LeosMind"
+      ]
+    },
+    {
+      "matchId": 493885101,
+      "description": "10x 3x Bamboo (very fun) rank.10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784649103,
+      "outcome": "win",
+      "preRating": 1057,
+      "postRating": 1075,
+      "eloChange": 18,
+      "civ": "Italians",
+      "teamAvgElo": 1036,
+      "opponentAvgElo": 1093,
+      "teammates": [
+        "Spiz.101",
+        "RedBullWOLOLO26",
+        "SmilesBetray"
+      ],
+      "opponents": [
+        "Scipio",
+        "Fringnut",
+        "XsupercopX",
+        "Grimmie"
       ]
     }
   ]

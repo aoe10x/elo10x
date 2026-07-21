@@ -1,12 +1,12 @@
 {
   "profile_id": 316872,
   "alias": "shemirage",
-  "rating": 962,
+  "rating": 947,
   "wins": 7,
-  "losses": 10,
-  "gamesCount": 17,
-  "winRate": 41,
-  "lastPlayedAt": 1784001480,
+  "losses": 11,
+  "gamesCount": 18,
+  "winRate": 39,
+  "lastPlayedAt": 1784645155,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,8 @@
     973,
     950,
     977,
-    962
+    962,
+    947
   ],
   "recentMatches": [
     {
@@ -436,6 +437,30 @@
         "侯傻傻ᔦఠఠᔨ shasha",
         "田瘾犯了",
         "Keishi"
+      ]
+    },
+    {
+      "matchId": 493873363,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784645155,
+      "outcome": "loss",
+      "preRating": 962,
+      "postRating": 947,
+      "eloChange": -15,
+      "civ": "Saracens",
+      "teamAvgElo": 987,
+      "opponentAvgElo": 1068,
+      "teammates": [
+        "TJ",
+        "Orinoco",
+        "Wozbo"
+      ],
+      "opponents": [
+        "取款机ATM",
+        "yxsko93",
+        "Paladin",
+        "romeadd"
       ]
     }
   ]

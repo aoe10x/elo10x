@@ -1,12 +1,12 @@
 {
   "profile_id": 345347,
   "alias": "Soba",
-  "rating": 784,
+  "rating": 778,
   "wins": 3,
-  "losses": 23,
-  "gamesCount": 26,
-  "winRate": 12,
-  "lastPlayedAt": 1783435725,
+  "losses": 24,
+  "gamesCount": 27,
+  "winRate": 11,
+  "lastPlayedAt": 1784639889,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -36,33 +36,10 @@
     803,
     797,
     790,
-    784
+    784,
+    778
   ],
   "recentMatches": [
-    {
-      "matchId": 449842538,
-      "description": "10x 3x shared !!NO NOOBS!!",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1768956060,
-      "outcome": "win",
-      "preRating": 823,
-      "postRating": 882,
-      "eloChange": 59,
-      "civ": "Koreans",
-      "teamAvgElo": 1021,
-      "opponentAvgElo": 1031,
-      "teammates": [
-        "DnD",
-        "Cale94",
-        "Maic"
-      ],
-      "opponents": [
-        "Age5464",
-        "BigAl",
-        "Tr33Man",
-        "Lumedge"
-      ]
-    },
     {
       "matchId": 453479011,
       "description": "BAMBOO 10x - 3x  **NO BEGINNER",
@@ -517,6 +494,30 @@
         "The Naked Gothman",
         "Llama",
         "Lumedge"
+      ]
+    },
+    {
+      "matchId": 493858108,
+      "description": "10x 3x Bamboo (very fun) rank.10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784639889,
+      "outcome": "loss",
+      "preRating": 784,
+      "postRating": 778,
+      "eloChange": -6,
+      "civ": "Vikings",
+      "teamAvgElo": 922,
+      "opponentAvgElo": 1048,
+      "teammates": [
+        "abatyse6533",
+        "jose.cortes.adm",
+        "Doormat"
+      ],
+      "opponents": [
+        "Scipio",
+        "FleeingCarrot",
+        "Saloon_F_F",
+        "deniz"
       ]
     }
   ]

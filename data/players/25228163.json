@@ -1,12 +1,12 @@
 {
   "profile_id": 25228163,
   "alias": "Maxim Liann",
-  "rating": 1020,
-  "wins": 38,
-  "losses": 64,
-  "gamesCount": 102,
-  "winRate": 37,
-  "lastPlayedAt": 1784637416,
+  "rating": 1046,
+  "wins": 40,
+  "losses": 65,
+  "gamesCount": 105,
+  "winRate": 38,
+  "lastPlayedAt": 1784641418,
   "country": "br",
   "merged_ids": [
     13623515,
@@ -22,7 +22,6 @@
     978,
     1027,
     992,
-    963,
     936,
     974,
     954,
@@ -30,6 +29,7 @@
     974,
     950,
     979,
+    1007,
     984,
     969,
     957,
@@ -38,7 +38,6 @@
     922,
     911,
     899,
-    891,
     883,
     907,
     895,
@@ -55,7 +54,6 @@
     896,
     919,
     909,
-    898,
     886,
     909,
     901,
@@ -63,6 +61,7 @@
     915,
     938,
     926,
+    914,
     904,
     893,
     914,
@@ -72,7 +71,6 @@
     961,
     948,
     969,
-    991,
     1012,
     998,
     984,
@@ -89,12 +87,12 @@
     891,
     916,
     908,
-    899,
     921,
     943,
     963,
     950,
     968,
+    955,
     973,
     959,
     944,
@@ -105,88 +103,18 @@
     971,
     988,
     973,
-    959,
     946,
     968,
     985,
     1002,
     1016,
     1035,
-    1020
+    1020,
+    1040,
+    1059,
+    1046
   ],
   "recentMatches": [
-    {
-      "matchId": 493578484,
-      "description": "10x 3x Bamboo (unfair and unbalanced)",
-      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
-      "timestamp": 1784517532,
-      "outcome": "win",
-      "preRating": 950,
-      "postRating": 968,
-      "eloChange": 18,
-      "civ": "Aztecs",
-      "teamAvgElo": 1056,
-      "opponentAvgElo": 989,
-      "teammates": [
-        "Scipio",
-        "TomAquinas",
-        "田瘾犯了"
-      ],
-      "opponents": [
-        "Tanaxha",
-        "Sundev",
-        "OPPA",
-        "RIchard_Uy"
-      ]
-    },
-    {
-      "matchId": 493585447,
-      "description": "x3x10x Shared (PQ3.5 Qualty learing)",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1784521037,
-      "outcome": "loss",
-      "preRating": 968,
-      "postRating": 955,
-      "eloChange": -13,
-      "civ": "Portuguese",
-      "teamAvgElo": 1002,
-      "opponentAvgElo": 1035,
-      "teammates": [
-        "aLEXt",
-        "nooblet3300",
-        "476055690"
-      ],
-      "opponents": [
-        "adrian",
-        "Keishi",
-        "EastDanielNowhere",
-        "konishika"
-      ]
-    },
-    {
-      "matchId": 493587842,
-      "description": "10x 3x bamboo",
-      "mapname": "Bamboo_Nothing_v2_NoWater DE",
-      "timestamp": 1784522156,
-      "outcome": "win",
-      "preRating": 955,
-      "postRating": 973,
-      "eloChange": 18,
-      "civ": "Spartans",
-      "teamAvgElo": 1006,
-      "opponentAvgElo": 1003,
-      "teammates": [
-        "Mahmut",
-        "476055690",
-        "Ricardo V"
-      ],
-      "opponents": [
-        "Willoloh!!!",
-        "jonathahyoga",
-        "GrandUni",
-        "adrian"
-      ]
-    },
     {
       "matchId": 493592067,
       "description": "x3x10x Shared (PQ3.5 Qualty learing)",
@@ -593,6 +521,78 @@
         "pandalam",
         "McKrakfejs",
         "Pogonophobia69"
+      ]
+    },
+    {
+      "matchId": 493855448,
+      "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784638712,
+      "outcome": "win",
+      "preRating": 1020,
+      "postRating": 1040,
+      "eloChange": 20,
+      "civ": "Ethiopians",
+      "teamAvgElo": 1064,
+      "opponentAvgElo": 1116,
+      "teammates": [
+        "LonelyKnight",
+        "Consume Product",
+        "konishika"
+      ],
+      "opponents": [
+        "老K",
+        "pandalam",
+        "NoxMortus",
+        "紫蝶黄蜂俱有情"
+      ]
+    },
+    {
+      "matchId": 493859559,
+      "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784640417,
+      "outcome": "win",
+      "preRating": 1040,
+      "postRating": 1059,
+      "eloChange": 19,
+      "civ": "Turks",
+      "teamAvgElo": 1081,
+      "opponentAvgElo": 1095,
+      "teammates": [
+        "老K",
+        "pandalam",
+        "肥仔"
+      ],
+      "opponents": [
+        "tonkatumura",
+        "Grimmie",
+        "konishika",
+        "476055690"
+      ]
+    },
+    {
+      "matchId": 493862989,
+      "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784641418,
+      "outcome": "loss",
+      "preRating": 1059,
+      "postRating": 1046,
+      "eloChange": -13,
+      "civ": "Huns",
+      "teamAvgElo": 1091,
+      "opponentAvgElo": 1115,
+      "teammates": [
+        "476055690",
+        "G",
+        "kekekeya"
+      ],
+      "opponents": [
+        "老K",
+        "紫蝶黄蜂俱有情",
+        "pandalam",
+        "tonkatumura"
       ]
     }
   ]

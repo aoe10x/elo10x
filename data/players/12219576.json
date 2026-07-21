@@ -1,12 +1,12 @@
 {
   "profile_id": 12219576,
   "alias": "naponeng",
-  "rating": 794,
+  "rating": 785,
   "wins": 2,
-  "losses": 13,
-  "gamesCount": 15,
+  "losses": 14,
+  "gamesCount": 16,
   "winRate": 13,
-  "lastPlayedAt": 1784563434,
+  "lastPlayedAt": 1784649480,
   "country": "cn",
   "merged_ids": [
     11750033,
@@ -28,7 +28,8 @@
     831,
     814,
     804,
-    794
+    794,
+    785
   ],
   "recentMatches": [
     {
@@ -389,6 +390,30 @@
         "Lumedge",
         "DerAdler",
         "Thí Chủ Chết Chưa"
+      ]
+    },
+    {
+      "matchId": 493886884,
+      "description": "10x3x   shared bonus random civ  no noob",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784649480,
+      "outcome": "loss",
+      "preRating": 794,
+      "postRating": 785,
+      "eloChange": -9,
+      "civ": "Maya",
+      "teamAvgElo": 1035,
+      "opponentAvgElo": 1043,
+      "teammates": [
+        "Your Ego",
+        "Lumedge",
+        "Bao Oninon"
+      ],
+      "opponents": [
+        "G",
+        "alexw",
+        "SimCity3000",
+        "KingOfTheNorth"
       ]
     }
   ]
