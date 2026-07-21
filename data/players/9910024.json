@@ -1,13 +1,13 @@
 {
   "profile_id": 9910024,
   "alias": "Mozenrath",
-  "rating": 1036,
+  "rating": 1022,
   "wins": 18,
-  "losses": 16,
-  "gamesCount": 34,
-  "winRate": 53,
-  "lastPlayedAt": 1776031860,
-  "country": "Unknown",
+  "losses": 17,
+  "gamesCount": 35,
+  "winRate": 51,
+  "lastPlayedAt": 1784638220,
+  "country": "in",
   "merged_ids": [],
   "ratingHistory": [
     1000,
@@ -44,33 +44,10 @@
     1089,
     1072,
     1054,
-    1036
+    1036,
+    1022
   ],
   "recentMatches": [
-    {
-      "matchId": 380904278,
-      "description": "10x 3x tech shared civ bamboo nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1742947260,
-      "outcome": "loss",
-      "preRating": 1028,
-      "postRating": 996,
-      "eloChange": -32,
-      "civ": "Unknown",
-      "teamAvgElo": 994,
-      "opponentAvgElo": 936,
-      "teammates": [
-        "Jak.V",
-        "Broadwing",
-        "memeboy420"
-      ],
-      "opponents": [
-        "AngelPaniwater",
-        "ElmoWithoutL",
-        "rockcat32",
-        "romanmartos87"
-      ]
-    },
     {
       "matchId": 427968949,
       "description": "10x 3x bamboo random  TURBO",
@@ -525,6 +502,30 @@
         "La_Fratellanza",
         "Personalizado",
         "Vicryth"
+      ]
+    },
+    {
+      "matchId": 493853799,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784638220,
+      "outcome": "loss",
+      "preRating": 1036,
+      "postRating": 1022,
+      "eloChange": -14,
+      "civ": "Magyars",
+      "teamAvgElo": 1070,
+      "opponentAvgElo": 1089,
+      "teammates": [
+        "i kun 2.5",
+        "kaka52pk",
+        "YUJIN"
+      ],
+      "opponents": [
+        "鱼浆",
+        "Grimmie",
+        "Mad08jojo",
+        "KhasminC"
       ]
     }
   ]

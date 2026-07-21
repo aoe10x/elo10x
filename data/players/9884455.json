@@ -1,12 +1,12 @@
 {
   "profile_id": 9884455,
   "alias": "fuec",
-  "rating": 913,
+  "rating": 902,
   "wins": 10,
-  "losses": 21,
-  "gamesCount": 31,
-  "winRate": 32,
-  "lastPlayedAt": 1784541626,
+  "losses": 22,
+  "gamesCount": 32,
+  "winRate": 31,
+  "lastPlayedAt": 1784628416,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -41,33 +41,10 @@
     911,
     902,
     892,
-    913
+    913,
+    902
   ],
   "recentMatches": [
-    {
-      "matchId": 383502258,
-      "description": "10x 3x Bamboo  Random",
-      "mapname": "Bamboo Nothing - +Wild ##############",
-      "timestamp": 1743945120,
-      "outcome": "win",
-      "preRating": 948,
-      "postRating": 988,
-      "eloChange": 40,
-      "civ": "Unknown",
-      "teamAvgElo": 1013,
-      "opponentAvgElo": 1058,
-      "teammates": [
-        "i kun 2.5",
-        "[Ms] HokusPokus",
-        "realDonaldTrump"
-      ],
-      "opponents": [
-        "Keishi",
-        "紫蝶黄蜂俱有情",
-        "rono",
-        "Rita De Valencia"
-      ]
-    },
     {
       "matchId": 383751432,
       "description": "10x 3x Bamboo  Random",
@@ -414,7 +391,7 @@
       "postRating": 924,
       "eloChange": -11,
       "civ": "Bengalis",
-      "teamAvgElo": 969,
+      "teamAvgElo": 968,
       "opponentAvgElo": 1039,
       "teammates": [
         "aLEXt",
@@ -522,6 +499,30 @@
         "davidll_5",
         "axiuluo",
         "konishika"
+      ]
+    },
+    {
+      "matchId": 493834486,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784628416,
+      "outcome": "loss",
+      "preRating": 913,
+      "postRating": 902,
+      "eloChange": -11,
+      "civ": "Magyars",
+      "teamAvgElo": 998,
+      "opponentAvgElo": 1027,
+      "teammates": [
+        "Koalakapitaen",
+        "Vader",
+        "billy131119"
+      ],
+      "opponents": [
+        "TUF | DUKE_NUKEM",
+        "紫蝶黄蜂俱有情",
+        "Maxim Liann",
+        "Tiny Hands"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 2503303,
   "alias": "neno",
-  "rating": 979,
+  "rating": 967,
   "wins": 29,
-  "losses": 43,
-  "gamesCount": 72,
+  "losses": 44,
+  "gamesCount": 73,
   "winRate": 40,
-  "lastPlayedAt": 1784114608,
+  "lastPlayedAt": 1784630085,
   "country": "it",
   "merged_ids": [],
   "ratingHistory": [
@@ -82,33 +82,10 @@
     922,
     943,
     962,
-    979
+    979,
+    967
   ],
   "recentMatches": [
-    {
-      "matchId": 223781412,
-      "description": "10x shared civ",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1680621660,
-      "outcome": "win",
-      "preRating": 924,
-      "postRating": 945,
-      "eloChange": 21,
-      "civ": "Spanish",
-      "teamAvgElo": 993,
-      "opponentAvgElo": 1042,
-      "teammates": [
-        "DnD",
-        "BubbaBaelor",
-        "Joseph"
-      ],
-      "opponents": [
-        "Cow",
-        "Neebs",
-        "LaPichila97",
-        "My little Pony"
-      ]
-    },
     {
       "matchId": 226082407,
       "description": "4v4 - 10x Shared Civ Bonus",
@@ -503,7 +480,7 @@
       "postRating": 943,
       "eloChange": 21,
       "civ": "Burmese",
-      "teamAvgElo": 987,
+      "teamAvgElo": 986,
       "opponentAvgElo": 1030,
       "teammates": [
         "afranciscosa",
@@ -563,6 +540,30 @@
         "majorleyendo",
         "Lykerya",
         "dertli"
+      ]
+    },
+    {
+      "matchId": 493837625,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784630085,
+      "outcome": "loss",
+      "preRating": 979,
+      "postRating": 967,
+      "eloChange": -12,
+      "civ": "Incas",
+      "teamAvgElo": 999,
+      "opponentAvgElo": 1071,
+      "teammates": [
+        "Willoloh!!!",
+        "紫蝶黄蜂俱有情",
+        "SickFishh"
+      ],
+      "opponents": [
+        "TUF | DUKE_NUKEM",
+        "Maxim Liann",
+        "Vader",
+        "Grimmie"
       ]
     }
   ]
