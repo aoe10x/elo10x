@@ -1,12 +1,12 @@
 {
   "profile_id": 434838,
   "alias": "jpllops",
-  "rating": 968,
-  "wins": 9,
+  "rating": 998,
+  "wins": 11,
   "losses": 13,
-  "gamesCount": 22,
-  "winRate": 41,
-  "lastPlayedAt": 1784651788,
+  "gamesCount": 24,
+  "winRate": 46,
+  "lastPlayedAt": 1784656302,
   "country": "se",
   "merged_ids": [],
   "ratingHistory": [
@@ -32,57 +32,11 @@
     974,
     963,
     983,
-    968
+    1000,
+    984,
+    998
   ],
   "recentMatches": [
-    {
-      "matchId": 412577248,
-      "description": "4 vs 4 // 10x Shared Random Civ// 2.4 fresh from the oven",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1755136920,
-      "outcome": "win",
-      "preRating": 934,
-      "postRating": 994,
-      "eloChange": 60,
-      "civ": "Vikings",
-      "teamAvgElo": 1030,
-      "opponentAvgElo": 1052,
-      "teammates": [
-        "Juk3",
-        "Madness",
-        "McKrakfejs"
-      ],
-      "opponents": [
-        "DnD",
-        "redbuzzards",
-        "Abused but whole",
-        "Argentum"
-      ]
-    },
-    {
-      "matchId": 431695004,
-      "description": "4V4 ===10x shared 3Xtech  4V4 random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1762657020,
-      "outcome": "win",
-      "preRating": 994,
-      "postRating": 1044,
-      "eloChange": 50,
-      "civ": "Lithuanians",
-      "teamAvgElo": 1026,
-      "opponentAvgElo": 1046,
-      "teammates": [
-        "asuky",
-        "crumpet",
-        "Totra"
-      ],
-      "opponents": [
-        "Emusan",
-        "choolkkkk",
-        "506355782",
-        "yimacs_yoyoyo"
-      ]
-    },
     {
       "matchId": 431732120,
       "description": "4V4 ===10x shared 3Xtech  4V4 random",
@@ -492,17 +446,41 @@
       ]
     },
     {
+      "matchId": 493890696,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784650531,
+      "outcome": "win",
+      "preRating": 983,
+      "postRating": 1000,
+      "eloChange": 17,
+      "civ": "Tatars",
+      "teamAvgElo": 1022,
+      "opponentAvgElo": 1014,
+      "teammates": [
+        "Parenquima",
+        "Your Ego",
+        "Roy G Biv"
+      ],
+      "opponents": [
+        "Mortak",
+        "alexw",
+        "SimCity3000",
+        "naponeng"
+      ]
+    },
+    {
       "matchId": 493894715,
       "description": "10x3x   shared bonus random civ  no noob",
       "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1784651788,
       "outcome": "loss",
-      "preRating": 983,
-      "postRating": 968,
-      "eloChange": -15,
+      "preRating": 1000,
+      "postRating": 984,
+      "eloChange": -16,
       "civ": "Cumans",
-      "teamAvgElo": 1051,
-      "opponentAvgElo": 1001,
+      "teamAvgElo": 1056,
+      "opponentAvgElo": 1005,
       "teammates": [
         "Miwa",
         "YUJIN",
@@ -513,6 +491,30 @@
         "Lumedge",
         "Gasnápido",
         "GenP"
+      ]
+    },
+    {
+      "matchId": 493907939,
+      "description": "10x 3x Bamboo (very fun) rank.10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784656302,
+      "outcome": "win",
+      "preRating": 984,
+      "postRating": 998,
+      "eloChange": 14,
+      "civ": "Koreans",
+      "teamAvgElo": 1044,
+      "opponentAvgElo": 935,
+      "teammates": [
+        "Scipio",
+        "megermeger",
+        "LonelyKnight"
+      ],
+      "opponents": [
+        "Grimmie",
+        "khouildi.tarek.tk",
+        "davidll_5",
+        "XsupercopX"
       ]
     }
   ]

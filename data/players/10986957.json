@@ -1,12 +1,12 @@
 {
   "profile_id": 10986957,
   "alias": "Magnificent",
-  "rating": 1003,
-  "wins": 33,
+  "rating": 1022,
+  "wins": 34,
   "losses": 38,
-  "gamesCount": 71,
-  "winRate": 46,
-  "lastPlayedAt": 1784589458,
+  "gamesCount": 72,
+  "winRate": 47,
+  "lastPlayedAt": 1784658023,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -81,33 +81,10 @@
     1012,
     1000,
     984,
-    1003
+    1003,
+    1022
   ],
   "recentMatches": [
-    {
-      "matchId": 410477332,
-      "description": "10x 3x shared !!NO NOOBS!!",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1754253540,
-      "outcome": "loss",
-      "preRating": 1054,
-      "postRating": 1035,
-      "eloChange": -19,
-      "civ": "Unknown",
-      "teamAvgElo": 986,
-      "opponentAvgElo": 986,
-      "teammates": [
-        "Age5464",
-        "dimon21_8",
-        "Supreme Lord 'Kim Xi Trump'"
-      ],
-      "opponents": [
-        "duckbuildperson",
-        "schrubber",
-        "NOHCHO",
-        "FAOse7en"
-      ]
-    },
     {
       "matchId": 410595959,
       "description": "10x shared 3x tech",
@@ -562,6 +539,30 @@
         "[B] Cannino",
         "Tavo",
         "Willoloh!!!"
+      ]
+    },
+    {
+      "matchId": 493913888,
+      "description": "10x 3x Bamboo (very fun) rank.10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784658023,
+      "outcome": "win",
+      "preRating": 1003,
+      "postRating": 1022,
+      "eloChange": 19,
+      "civ": "Huns",
+      "teamAvgElo": 1009,
+      "opponentAvgElo": 1060,
+      "teammates": [
+        "Wololo",
+        "maialen_zubi",
+        "tjaw154"
+      ],
+      "opponents": [
+        "Scipio",
+        "gamingtars",
+        "S3dated",
+        "BigAl"
       ]
     }
   ]

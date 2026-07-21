@@ -1,12 +1,12 @@
 {
   "profile_id": 2330261,
   "alias": "davidll_5",
-  "rating": 898,
+  "rating": 888,
   "wins": 30,
-  "losses": 55,
-  "gamesCount": 85,
+  "losses": 56,
+  "gamesCount": 86,
   "winRate": 35,
-  "lastPlayedAt": 1784541626,
+  "lastPlayedAt": 1784656302,
   "country": "es",
   "merged_ids": [],
   "ratingHistory": [
@@ -95,33 +95,10 @@
     899,
     921,
     909,
-    898
+    898,
+    888
   ],
   "recentMatches": [
-    {
-      "matchId": 457207609,
-      "description": "10x 3x bamboo nothing  turbo host here",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1771471680,
-      "outcome": "win",
-      "preRating": 890,
-      "postRating": 909,
-      "eloChange": 19,
-      "civ": "Japanese",
-      "teamAvgElo": 977,
-      "opponentAvgElo": 955,
-      "teammates": [
-        "PIEROGI",
-        "BeatsNArt",
-        "KingOfTheNorth"
-      ],
-      "opponents": [
-        "gmc inspector",
-        "alexminho",
-        "carrusel",
-        "highROLEX"
-      ]
-    },
     {
       "matchId": 458804674,
       "description": "10x 3x bamboo nothing  turbo host here",
@@ -576,6 +553,30 @@
         "鱼浆",
         "Koalakapitaen",
         "雲"
+      ]
+    },
+    {
+      "matchId": 493907939,
+      "description": "10x 3x Bamboo (very fun) rank.10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784656302,
+      "outcome": "loss",
+      "preRating": 898,
+      "postRating": 888,
+      "eloChange": -10,
+      "civ": "Italians",
+      "teamAvgElo": 935,
+      "opponentAvgElo": 1044,
+      "teammates": [
+        "Grimmie",
+        "khouildi.tarek.tk",
+        "XsupercopX"
+      ],
+      "opponents": [
+        "Scipio",
+        "jpllops",
+        "megermeger",
+        "LonelyKnight"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 25438174,
   "alias": "SimCity3000",
-  "rating": 1039,
+  "rating": 1022,
   "wins": 20,
-  "losses": 25,
-  "gamesCount": 45,
-  "winRate": 44,
-  "lastPlayedAt": 1784649480,
+  "losses": 26,
+  "gamesCount": 46,
+  "winRate": 43,
+  "lastPlayedAt": 1784650531,
   "country": "gb",
   "merged_ids": [
     13661469,
@@ -58,33 +58,10 @@
     986,
     1004,
     1022,
-    1039
+    1039,
+    1022
   ],
   "recentMatches": [
-    {
-      "matchId": 490603523,
-      "description": "10x 3x Bamboo Nothing random civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1783384524,
-      "outcome": "loss",
-      "preRating": 982,
-      "postRating": 968,
-      "eloChange": -14,
-      "civ": "Bulgarians",
-      "teamAvgElo": 1028,
-      "opponentAvgElo": 1020,
-      "teammates": [
-        "Chuckyllo4417",
-        "Wozbo",
-        "Kindregg"
-      ],
-      "opponents": [
-        "skoolied",
-        "Zortopos",
-        "mothysime11",
-        "Keishi"
-      ]
-    },
     {
       "matchId": 490584666,
       "description": "10x 3x Bamboo - 10xshared.com",
@@ -539,6 +516,30 @@
         "Lumedge",
         "Bao Oninon",
         "naponeng"
+      ]
+    },
+    {
+      "matchId": 493890696,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784650531,
+      "outcome": "loss",
+      "preRating": 1039,
+      "postRating": 1022,
+      "eloChange": -17,
+      "civ": "Dravidians",
+      "teamAvgElo": 1014,
+      "opponentAvgElo": 1022,
+      "teammates": [
+        "Mortak",
+        "alexw",
+        "naponeng"
+      ],
+      "opponents": [
+        "Parenquima",
+        "Your Ego",
+        "Roy G Biv",
+        "jpllops"
       ]
     }
   ]

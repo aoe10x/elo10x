@@ -1,12 +1,12 @@
 {
   "profile_id": 650599,
   "alias": "Dogberto",
-  "rating": 1136,
-  "wins": 13,
+  "rating": 1146,
+  "wins": 14,
   "losses": 5,
-  "gamesCount": 18,
-  "winRate": 72,
-  "lastPlayedAt": 1784595739,
+  "gamesCount": 19,
+  "winRate": 74,
+  "lastPlayedAt": 1784662424,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -28,7 +28,8 @@
     1180,
     1194,
     1164,
-    1136
+    1136,
+    1146
   ],
   "recentMatches": [
     {
@@ -461,6 +462,30 @@
         "MarieBrutale",
         "Bourne2Believe",
         "SpiniestTuna222"
+      ]
+    },
+    {
+      "matchId": 493928579,
+      "description": "10x civ x3 tec Bamboo nothing - Only Good Noobs",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784662424,
+      "outcome": "win",
+      "preRating": 1136,
+      "postRating": 1146,
+      "eloChange": 10,
+      "civ": "Tatars",
+      "teamAvgElo": 1060,
+      "opponentAvgElo": 944,
+      "teammates": [
+        "TheRiceMan",
+        "moon",
+        "chamnan.path"
+      ],
+      "opponents": [
+        "Viteaux",
+        "AleRayado88",
+        "DrLabas",
+        "Warrior Smith"
       ]
     }
   ]

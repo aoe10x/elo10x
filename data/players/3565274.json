@@ -1,12 +1,12 @@
 {
   "profile_id": 3565274,
   "alias": "Ricardo V",
-  "rating": 1039,
+  "rating": 1026,
   "wins": 26,
-  "losses": 32,
-  "gamesCount": 58,
-  "winRate": 45,
-  "lastPlayedAt": 1784586136,
+  "losses": 33,
+  "gamesCount": 59,
+  "winRate": 44,
+  "lastPlayedAt": 1784660720,
   "country": "pe",
   "merged_ids": [
     3565274,
@@ -71,33 +71,10 @@
     1020,
     1035,
     1021,
-    1039
+    1039,
+    1026
   ],
   "recentMatches": [
-    {
-      "matchId": 454696818,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1770589080,
-      "outcome": "loss",
-      "preRating": 1000,
-      "postRating": 986,
-      "eloChange": -14,
-      "civ": "Byzantines",
-      "teamAvgElo": 958,
-      "opponentAvgElo": 1041,
-      "teammates": [
-        "Donald J Trump - Pedo Protector",
-        "Honeybugss",
-        "KingOfTheNorth"
-      ],
-      "opponents": [
-        "fclem",
-        "nooblet3300",
-        "oklema",
-        "Boocer"
-      ]
-    },
     {
       "matchId": 454711123,
       "description": "256x 10x Forest Nothing",
@@ -552,6 +529,30 @@
         "Grillbe",
         "kiggless",
         "Bambuchagt"
+      ]
+    },
+    {
+      "matchId": 493924014,
+      "description": "10x 3x Bamboo (very fun) rank.10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784660720,
+      "outcome": "loss",
+      "preRating": 1039,
+      "postRating": 1026,
+      "eloChange": -13,
+      "civ": "Aztecs",
+      "teamAvgElo": 1011,
+      "opponentAvgElo": 1101,
+      "teammates": [
+        "Wololo",
+        "Wozbo",
+        "Megahaufen"
+      ],
+      "opponents": [
+        "Scipio",
+        "LonelyKnight",
+        "Maic",
+        "schrubber"
       ]
     }
   ]

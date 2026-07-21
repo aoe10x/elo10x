@@ -1,12 +1,12 @@
 {
   "profile_id": 14667287,
   "alias": "KhasminC",
-  "rating": 1039,
+  "rating": 1026,
   "wins": 43,
-  "losses": 53,
-  "gamesCount": 96,
-  "winRate": 45,
-  "lastPlayedAt": 1784646849,
+  "losses": 54,
+  "gamesCount": 97,
+  "winRate": 44,
+  "lastPlayedAt": 1784655505,
   "country": "ro",
   "merged_ids": [
     12171150,
@@ -109,33 +109,10 @@
     1050,
     1067,
     1052,
-    1039
+    1039,
+    1026
   ],
   "recentMatches": [
-    {
-      "matchId": 491140987,
-      "description": "10x 3x Bamboo - 10xshared.com",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1783621805,
-      "outcome": "win",
-      "preRating": 1028,
-      "postRating": 1046,
-      "eloChange": 18,
-      "civ": "Goths",
-      "teamAvgElo": 1069,
-      "opponentAvgElo": 1079,
-      "teammates": [
-        "Manba Out",
-        "Ivy",
-        "Keishi"
-      ],
-      "opponents": [
-        "Parts",
-        "Lumedge",
-        "tacotoy",
-        "abatyse6533"
-      ]
-    },
     {
       "matchId": 491144570,
       "description": "10x 3x Bamboo - 10xshared.com",
@@ -590,6 +567,30 @@
         "Parenquima",
         "紫蝶黄蜂俱有情",
         "鱼浆"
+      ]
+    },
+    {
+      "matchId": 493906431,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784655505,
+      "outcome": "loss",
+      "preRating": 1039,
+      "postRating": 1026,
+      "eloChange": -13,
+      "civ": "Wei",
+      "teamAvgElo": 971,
+      "opponentAvgElo": 1096,
+      "teammates": [
+        "gamingtars",
+        "NothingAtAll11",
+        "khouildi.tarek.tk"
+      ],
+      "opponents": [
+        "Parenquima",
+        "McKrakfejs",
+        "G",
+        "herelin0"
       ]
     }
   ]

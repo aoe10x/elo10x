@@ -1,12 +1,12 @@
 {
   "profile_id": 3456680,
   "alias": "GenP",
-  "rating": 877,
+  "rating": 869,
   "wins": 37,
-  "losses": 62,
-  "gamesCount": 99,
+  "losses": 63,
+  "gamesCount": 100,
   "winRate": 37,
-  "lastPlayedAt": 1784651788,
+  "lastPlayedAt": 1784654348,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -60,7 +60,6 @@
     969,
     988,
     1006,
-    992,
     980,
     967,
     953,
@@ -109,33 +108,10 @@
     873,
     864,
     853,
-    877
+    877,
+    869
   ],
   "recentMatches": [
-    {
-      "matchId": 491361872,
-      "description": "Bamboo 10x 3x",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783706158,
-      "outcome": "loss",
-      "preRating": 984,
-      "postRating": 973,
-      "eloChange": -11,
-      "civ": "Portuguese",
-      "teamAvgElo": 996,
-      "opponentAvgElo": 1086,
-      "teammates": [
-        "wurst456",
-        "Sal",
-        "[TW] hushin0917"
-      ],
-      "opponents": [
-        "OldManofStorr",
-        "Eddie",
-        "DerAdler",
-        "CaptainBarbossa"
-      ]
-    },
     {
       "matchId": 491366709,
       "description": "BAMBOO 10x3xtech",
@@ -578,8 +554,8 @@
       "postRating": 877,
       "eloChange": 24,
       "civ": "Bohemians",
-      "teamAvgElo": 1001,
-      "opponentAvgElo": 1051,
+      "teamAvgElo": 1005,
+      "opponentAvgElo": 1056,
       "teammates": [
         "Your Ego",
         "Lumedge",
@@ -590,6 +566,30 @@
         "YUJIN",
         "Wozbo",
         "jpllops"
+      ]
+    },
+    {
+      "matchId": 493902777,
+      "description": "10x 3x Bamboo (very fun) rank.10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784654348,
+      "outcome": "loss",
+      "preRating": 877,
+      "postRating": 869,
+      "eloChange": -8,
+      "civ": "Cumans",
+      "teamAvgElo": 1003,
+      "opponentAvgElo": 1058,
+      "teammates": [
+        "Scipio",
+        "Wololo",
+        "Abused but whole"
+      ],
+      "opponents": [
+        "YUJIN",
+        "DnD",
+        "Grimmie",
+        "Your Ego"
       ]
     }
   ]

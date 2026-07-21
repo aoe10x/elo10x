@@ -1,12 +1,12 @@
 {
   "profile_id": 2981378,
   "alias": "TioMg100",
-  "rating": 1016,
+  "rating": 1001,
   "wins": 42,
-  "losses": 58,
-  "gamesCount": 100,
+  "losses": 59,
+  "gamesCount": 101,
   "winRate": 42,
-  "lastPlayedAt": 1784219651,
+  "lastPlayedAt": 1784665096,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -35,7 +35,6 @@
     963,
     982,
     997,
-    984,
     969,
     956,
     944,
@@ -60,6 +59,7 @@
     999,
     1016,
     1001,
+    1015,
     1032,
     1013,
     998,
@@ -84,7 +84,6 @@
     988,
     976,
     994,
-    982,
     968,
     986,
     974,
@@ -109,33 +108,10 @@
     996,
     1014,
     1030,
-    1016
+    1016,
+    1001
   ],
   "recentMatches": [
-    {
-      "matchId": 472753579,
-      "description": "BAMBOO 10x - 3x  **NO NOOB",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1777061040,
-      "outcome": "win",
-      "preRating": 953,
-      "postRating": 975,
-      "eloChange": 22,
-      "civ": "Bengalis",
-      "teamAvgElo": 1079,
-      "opponentAvgElo": 1086,
-      "teammates": [
-        "SpawN",
-        "Lumedge",
-        "Lietuva_"
-      ],
-      "opponents": [
-        "tonzo",
-        "Monk",
-        "dRea",
-        "babeleo"
-      ]
-    },
     {
       "matchId": 472756677,
       "description": "10x3x Bamboo Nothing",
@@ -590,6 +566,30 @@
         "OK",
         "[Liiit] Zbyszek",
         "WDWKid3"
+      ]
+    },
+    {
+      "matchId": 493938820,
+      "description": "new 10x shared civ with hero",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784665096,
+      "outcome": "loss",
+      "preRating": 1016,
+      "postRating": 1001,
+      "eloChange": -15,
+      "civ": "Japanese",
+      "teamAvgElo": 1066,
+      "opponentAvgElo": 1029,
+      "teammates": [
+        "MadRussian",
+        "Monkeymonk",
+        "PIEROGI"
+      ],
+      "opponents": [
+        "dorayan",
+        "iamatthe.hell",
+        "balbers08",
+        "VergaraRamirez"
       ]
     }
   ]

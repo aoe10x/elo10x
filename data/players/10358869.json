@@ -1,12 +1,12 @@
 {
   "profile_id": 10358869,
   "alias": "tjaw154",
-  "rating": 1055,
-  "wins": 9,
+  "rating": 1076,
+  "wins": 10,
   "losses": 8,
-  "gamesCount": 17,
-  "winRate": 53,
-  "lastPlayedAt": 1783633621,
+  "gamesCount": 18,
+  "winRate": 56,
+  "lastPlayedAt": 1784658023,
   "country": "gb",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,8 @@
     1031,
     1058,
     1080,
-    1055
+    1055,
+    1076
   ],
   "recentMatches": [
     {
@@ -436,6 +437,30 @@
         "LonelyKnight",
         "Apocalypto",
         "RA"
+      ]
+    },
+    {
+      "matchId": 493913888,
+      "description": "10x 3x Bamboo (very fun) rank.10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784658023,
+      "outcome": "win",
+      "preRating": 1055,
+      "postRating": 1076,
+      "eloChange": 21,
+      "civ": "Slavs",
+      "teamAvgElo": 1009,
+      "opponentAvgElo": 1060,
+      "teammates": [
+        "Wololo",
+        "Magnificent",
+        "maialen_zubi"
+      ],
+      "opponents": [
+        "Scipio",
+        "gamingtars",
+        "S3dated",
+        "BigAl"
       ]
     }
   ]

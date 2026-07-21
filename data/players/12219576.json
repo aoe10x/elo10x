@@ -1,12 +1,12 @@
 {
   "profile_id": 12219576,
   "alias": "naponeng",
-  "rating": 785,
+  "rating": 776,
   "wins": 2,
-  "losses": 14,
-  "gamesCount": 16,
-  "winRate": 13,
-  "lastPlayedAt": 1784649480,
+  "losses": 15,
+  "gamesCount": 17,
+  "winRate": 12,
+  "lastPlayedAt": 1784650531,
   "country": "cn",
   "merged_ids": [
     11750033,
@@ -29,7 +29,8 @@
     814,
     804,
     794,
-    785
+    785,
+    776
   ],
   "recentMatches": [
     {
@@ -414,6 +415,30 @@
         "alexw",
         "SimCity3000",
         "KingOfTheNorth"
+      ]
+    },
+    {
+      "matchId": 493890696,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784650531,
+      "outcome": "loss",
+      "preRating": 785,
+      "postRating": 776,
+      "eloChange": -9,
+      "civ": "Burmese",
+      "teamAvgElo": 1014,
+      "opponentAvgElo": 1022,
+      "teammates": [
+        "Mortak",
+        "alexw",
+        "SimCity3000"
+      ],
+      "opponents": [
+        "Parenquima",
+        "Your Ego",
+        "Roy G Biv",
+        "jpllops"
       ]
     }
   ]

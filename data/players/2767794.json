@@ -1,12 +1,12 @@
 {
   "profile_id": 2767794,
   "alias": "AleRayado88",
-  "rating": 967,
+  "rating": 955,
   "wins": 38,
-  "losses": 49,
-  "gamesCount": 87,
-  "winRate": 44,
-  "lastPlayedAt": 1784246704,
+  "losses": 50,
+  "gamesCount": 88,
+  "winRate": 43,
+  "lastPlayedAt": 1784662424,
   "country": "mx",
   "merged_ids": [],
   "ratingHistory": [
@@ -97,33 +97,10 @@
     1013,
     998,
     981,
-    967
+    967,
+    955
   ],
   "recentMatches": [
-    {
-      "matchId": 451652621,
-      "description": "4 vs 4 // 10x Shared Random Civ",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1769561760,
-      "outcome": "loss",
-      "preRating": 1046,
-      "postRating": 1033,
-      "eloChange": -13,
-      "civ": "Goths",
-      "teamAvgElo": 1009,
-      "opponentAvgElo": 1114,
-      "teammates": [
-        "FleeingCarrot",
-        "__VK__",
-        "MatzeAoE"
-      ],
-      "opponents": [
-        "Juk3",
-        "Lietuva_",
-        "Lucifer",
-        "VforKickAss"
-      ]
-    },
     {
       "matchId": 451970285,
       "description": "Bamboo 10x 3x 4v4",
@@ -578,6 +555,30 @@
         "Brotherman Bill",
         "Borkan",
         "Hughmungus Chungus"
+      ]
+    },
+    {
+      "matchId": 493928579,
+      "description": "10x civ x3 tec Bamboo nothing - Only Good Noobs",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784662424,
+      "outcome": "loss",
+      "preRating": 967,
+      "postRating": 955,
+      "eloChange": -12,
+      "civ": "Franks",
+      "teamAvgElo": 944,
+      "opponentAvgElo": 1060,
+      "teammates": [
+        "Viteaux",
+        "DrLabas",
+        "Warrior Smith"
+      ],
+      "opponents": [
+        "Dogberto",
+        "TheRiceMan",
+        "moon",
+        "chamnan.path"
       ]
     }
   ]

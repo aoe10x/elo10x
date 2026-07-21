@@ -1,12 +1,12 @@
 {
   "profile_id": 23548937,
   "alias": "megermeger",
-  "rating": 972,
-  "wins": 10,
+  "rating": 986,
+  "wins": 11,
   "losses": 13,
-  "gamesCount": 23,
-  "winRate": 43,
-  "lastPlayedAt": 1783506697,
+  "gamesCount": 24,
+  "winRate": 46,
+  "lastPlayedAt": 1784656302,
   "country": "de",
   "merged_ids": [
     13366556,
@@ -36,33 +36,10 @@
     979,
     968,
     988,
-    972
+    972,
+    986
   ],
   "recentMatches": [
-    {
-      "matchId": 418533953,
-      "description": "10x 3x shared,random,up-up-up-research",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1757636520,
-      "outcome": "loss",
-      "preRating": 1134,
-      "postRating": 1075,
-      "eloChange": -59,
-      "civ": "Cumans",
-      "teamAvgElo": 1031,
-      "opponentAvgElo": 1002,
-      "teammates": [
-        "arwinDutchy",
-        "25chai",
-        "ShesFixingHerHair"
-      ],
-      "opponents": [
-        "Polluelin",
-        "Eraser88",
-        "beta_player",
-        "Bechti420"
-      ]
-    },
     {
       "matchId": 420937056,
       "description": "10x 3x shared !!NO NOOBS!!",
@@ -517,6 +494,30 @@
         "Herr Mitesch",
         "Kalervo Jankko",
         "janhartmann"
+      ]
+    },
+    {
+      "matchId": 493907939,
+      "description": "10x 3x Bamboo (very fun) rank.10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784656302,
+      "outcome": "win",
+      "preRating": 972,
+      "postRating": 986,
+      "eloChange": 14,
+      "civ": "Spanish",
+      "teamAvgElo": 1044,
+      "opponentAvgElo": 935,
+      "teammates": [
+        "Scipio",
+        "jpllops",
+        "LonelyKnight"
+      ],
+      "opponents": [
+        "Grimmie",
+        "khouildi.tarek.tk",
+        "davidll_5",
+        "XsupercopX"
       ]
     }
   ]
