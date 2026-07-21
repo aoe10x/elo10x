@@ -1,12 +1,12 @@
 {
   "profile_id": 9437092,
   "alias": "Belisarius",
-  "rating": 1036,
+  "rating": 1021,
   "wins": 16,
-  "losses": 14,
-  "gamesCount": 30,
-  "winRate": 53,
-  "lastPlayedAt": 1784586884,
+  "losses": 15,
+  "gamesCount": 31,
+  "winRate": 52,
+  "lastPlayedAt": 1784615180,
   "country": "tr",
   "merged_ids": [
     9437092,
@@ -43,33 +43,10 @@
     1055,
     1068,
     1051,
-    1036
+    1036,
+    1021
   ],
   "recentMatches": [
-    {
-      "matchId": 490599819,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
-      "timestamp": 1783383107,
-      "outcome": "win",
-      "preRating": 1038,
-      "postRating": 1069,
-      "eloChange": 31,
-      "civ": "Shu",
-      "teamAvgElo": 1035,
-      "opponentAvgElo": 1025,
-      "teammates": [
-        "Xinzzo",
-        "e_yag",
-        "alexw"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "Silent Annihilation",
-        "MARKVILEX",
-        "Elvin Sweden"
-      ]
-    },
     {
       "matchId": 490614433,
       "description": "10x Shared Civ Bonus 4v4 Random ",
@@ -524,6 +501,30 @@
         "NothingAtAll11",
         "WipiWi",
         "DerAdler"
+      ]
+    },
+    {
+      "matchId": 493815044,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784615180,
+      "outcome": "loss",
+      "preRating": 1036,
+      "postRating": 1021,
+      "eloChange": -15,
+      "civ": "Chinese",
+      "teamAvgElo": 1031,
+      "opponentAvgElo": 1054,
+      "teammates": [
+        "procrastination.exe",
+        "dimon21_8",
+        "Moose"
+      ],
+      "opponents": [
+        "TUF | DUKE_NUKEM",
+        "Fringnut",
+        "THE VIPER PERUANO",
+        "[B] Cannino"
       ]
     }
   ]

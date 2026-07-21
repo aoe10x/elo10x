@@ -1,12 +1,12 @@
 {
   "profile_id": 25115403,
   "alias": "Abelardo4tojr",
-  "rating": 1192,
+  "rating": 1169,
   "wins": 17,
-  "losses": 6,
-  "gamesCount": 23,
-  "winRate": 74,
-  "lastPlayedAt": 1784526901,
+  "losses": 7,
+  "gamesCount": 24,
+  "winRate": 71,
+  "lastPlayedAt": 1784620024,
   "country": "mx",
   "merged_ids": [
     13603326,
@@ -36,33 +36,10 @@
     1163,
     1175,
     1183,
-    1192
+    1192,
+    1169
   ],
   "recentMatches": [
-    {
-      "matchId": 476176884,
-      "description": "10x 3x Bamboo Random",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1778245140,
-      "outcome": "win",
-      "preRating": 1052,
-      "postRating": 1093,
-      "eloChange": 41,
-      "civ": "Franks",
-      "teamAvgElo": 1028,
-      "opponentAvgElo": 1033,
-      "teammates": [
-        "DickerleMinka",
-        "konishika",
-        "田瘾犯了"
-      ],
-      "opponents": [
-        "Keishi",
-        "jose.jimenezr",
-        "Aión",
-        "rlarosaarevalo"
-      ]
-    },
     {
       "matchId": 484487905,
       "description": "10x 3x Bamboo best lobby",
@@ -517,6 +494,30 @@
         "-[RDU]- Gorda America Forever",
         "Avexaon",
         "mothysime11"
+      ]
+    },
+    {
+      "matchId": 493821344,
+      "description": "new 10x shared civ with hero",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784620024,
+      "outcome": "loss",
+      "preRating": 1192,
+      "postRating": 1169,
+      "eloChange": -23,
+      "civ": "Gurjaras",
+      "teamAvgElo": 1137,
+      "opponentAvgElo": 1022,
+      "teammates": [
+        "紫蝶黄蜂俱有情",
+        "Ye",
+        "NothingAtAll11"
+      ],
+      "opponents": [
+        "dorayan",
+        "Koalakapitaen",
+        "^gOsO^",
+        "Akoros"
       ]
     }
   ]

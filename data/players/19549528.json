@@ -1,12 +1,12 @@
 {
   "profile_id": 19549528,
   "alias": "LAITH",
-  "rating": 956,
-  "wins": 7,
+  "rating": 977,
+  "wins": 8,
   "losses": 13,
-  "gamesCount": 20,
-  "winRate": 35,
-  "lastPlayedAt": 1783430768,
+  "gamesCount": 21,
+  "winRate": 38,
+  "lastPlayedAt": 1784624908,
   "country": "gb",
   "merged_ids": [
     12803367,
@@ -33,33 +33,10 @@
     992,
     975,
     965,
-    956
+    956,
+    977
   ],
   "recentMatches": [
-    {
-      "matchId": 327835340,
-      "description": "10x shared  RANDOM CIV",
-      "mapname": "Michi",
-      "timestamp": 1721625000,
-      "outcome": "loss",
-      "preRating": 1000,
-      "postRating": 956,
-      "eloChange": -44,
-      "civ": "Unknown",
-      "teamAvgElo": 1015,
-      "opponentAvgElo": 1033,
-      "teammates": [
-        "mrak",
-        "Nightmare Saber",
-        "ζ |  SaintPΞpsi94"
-      ],
-      "opponents": [
-        "[TodEs] MnTartara",
-        "田瘾犯了",
-        "Goodsoup",
-        "smzimran"
-      ]
-    },
     {
       "matchId": 370983701,
       "description": "10x 3x tech Shared Civ",
@@ -514,6 +491,30 @@
         "pandalam",
         "Akoros",
         "tonkatumura"
+      ]
+    },
+    {
+      "matchId": 493829088,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784624908,
+      "outcome": "win",
+      "preRating": 956,
+      "postRating": 977,
+      "eloChange": 21,
+      "civ": "Aztecs",
+      "teamAvgElo": 999,
+      "opponentAvgElo": 1061,
+      "teammates": [
+        "KhasminC",
+        "levvafire",
+        "YBSI"
+      ],
+      "opponents": [
+        "TUF | DUKE_NUKEM",
+        "紫蝶黄蜂俱有情",
+        "NothingAtAll11",
+        "Monk"
       ]
     }
   ]
