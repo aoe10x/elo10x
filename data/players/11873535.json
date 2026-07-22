@@ -1,12 +1,12 @@
 {
   "profile_id": 11873535,
   "alias": "romeadd",
-  "rating": 1236,
-  "wins": 19,
-  "losses": 5,
-  "gamesCount": 24,
-  "winRate": 79,
-  "lastPlayedAt": 1784671359,
+  "rating": 1222,
+  "wins": 20,
+  "losses": 6,
+  "gamesCount": 26,
+  "winRate": 77,
+  "lastPlayedAt": 1784717210,
   "country": "gb",
   "merged_ids": [
     11690840,
@@ -37,57 +37,11 @@
     1212,
     1219,
     1229,
-    1236
+    1236,
+    1245,
+    1222
   ],
   "recentMatches": [
-    {
-      "matchId": 336804718,
-      "description": "3x tech 10xshared random ciz",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1725304680,
-      "outcome": "loss",
-      "preRating": 1014,
-      "postRating": 978,
-      "eloChange": -36,
-      "civ": "Vikings",
-      "teamAvgElo": 1021,
-      "opponentAvgElo": 1067,
-      "teammates": [
-        "MarieBrutale",
-        "DomBrown",
-        "Muumi"
-      ],
-      "opponents": [
-        "_FJ_糖糖",
-        "NothingAtAll11",
-        "oklema",
-        "hopeinthefield"
-      ]
-    },
-    {
-      "matchId": 468610509,
-      "description": "Bamboo 10x 3x 4v4",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1775580060,
-      "outcome": "win",
-      "preRating": 978,
-      "postRating": 1026,
-      "eloChange": 48,
-      "civ": "Persians",
-      "teamAvgElo": 1033,
-      "opponentAvgElo": 1046,
-      "teammates": [
-        "alexw",
-        "Alganji",
-        "Waryahay"
-      ],
-      "opponents": [
-        "MoEzy",
-        "Lumedge",
-        "fRy0ne",
-        "Pumpk1nL0rd"
-      ]
-    },
     {
       "matchId": 488049513,
       "description": "Bamboo 10x 3x",
@@ -518,6 +472,54 @@
         "LonelyKnight",
         "AlexTheKid",
         "MarieBrutale"
+      ]
+    },
+    {
+      "matchId": 494055751,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784715988,
+      "outcome": "win",
+      "preRating": 1236,
+      "postRating": 1245,
+      "eloChange": 9,
+      "civ": "Huns",
+      "teamAvgElo": 1065,
+      "opponentAvgElo": 1065,
+      "teammates": [
+        "Emusan",
+        "Paolo Carrosel",
+        "S3dated"
+      ],
+      "opponents": [
+        "大秦帝国",
+        "Honey badger",
+        "Bao Oninon",
+        "mitchell_bombers"
+      ]
+    },
+    {
+      "matchId": 494057035,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784717210,
+      "outcome": "loss",
+      "preRating": 1245,
+      "postRating": 1222,
+      "eloChange": -23,
+      "civ": "Cumans",
+      "teamAvgElo": 1084,
+      "opponentAvgElo": 1074,
+      "teammates": [
+        "Paolo Carrosel",
+        "Nimreh",
+        "鱼浆"
+      ],
+      "opponents": [
+        "i kun 2.5",
+        "Honey badger",
+        "Emusan",
+        "Akoros"
       ]
     }
   ]

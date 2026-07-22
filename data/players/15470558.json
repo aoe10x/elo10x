@@ -1,12 +1,12 @@
 {
   "profile_id": 15470558,
   "alias": "mitchell_bombers",
-  "rating": 1014,
-  "wins": 16,
-  "losses": 19,
-  "gamesCount": 35,
+  "rating": 1017,
+  "wins": 17,
+  "losses": 20,
+  "gamesCount": 37,
   "winRate": 46,
-  "lastPlayedAt": 1784434832,
+  "lastPlayedAt": 1784717058,
   "country": "au",
   "merged_ids": [
     12318486,
@@ -48,57 +48,11 @@
     990,
     1009,
     995,
-    1014
+    1014,
+    1000,
+    1017
   ],
   "recentMatches": [
-    {
-      "matchId": 470105078,
-      "description": "10x 3x shared bn",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1776090180,
-      "outcome": "loss",
-      "preRating": 999,
-      "postRating": 978,
-      "eloChange": -21,
-      "civ": "Tatars",
-      "teamAvgElo": 1033,
-      "opponentAvgElo": 1039,
-      "teammates": [
-        "Wardy21",
-        "RMXs | EnanoMora",
-        "FlyingSheep"
-      ],
-      "opponents": [
-        "CrazyKaelby",
-        "Ye",
-        "Wimac",
-        "trogfield4"
-      ]
-    },
-    {
-      "matchId": 470262972,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1776146940,
-      "outcome": "win",
-      "preRating": 978,
-      "postRating": 1007,
-      "eloChange": 29,
-      "civ": "Unknown",
-      "teamAvgElo": 982,
-      "opponentAvgElo": 1075,
-      "teammates": [
-        "NoobSB",
-        "GoOverlay.com | AwE",
-        "VL Arcenick"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "fxsound",
-        "bommietommie",
-        "Bob's Uncle"
-      ]
-    },
     {
       "matchId": 470315899,
       "description": "BAMBOO 3X10X",
@@ -529,6 +483,54 @@
         "nooblet3300",
         "Ricardo V",
         "Al Ghouti"
+      ]
+    },
+    {
+      "matchId": 494055751,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784715988,
+      "outcome": "loss",
+      "preRating": 1014,
+      "postRating": 1000,
+      "eloChange": -14,
+      "civ": "Teutons",
+      "teamAvgElo": 1065,
+      "opponentAvgElo": 1065,
+      "teammates": [
+        "大秦帝国",
+        "Honey badger",
+        "Bao Oninon"
+      ],
+      "opponents": [
+        "Emusan",
+        "Paolo Carrosel",
+        "S3dated",
+        "romeadd"
+      ]
+    },
+    {
+      "matchId": 494056999,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784717058,
+      "outcome": "win",
+      "preRating": 1000,
+      "postRating": 1017,
+      "eloChange": 17,
+      "civ": "Britons",
+      "teamAvgElo": 1039,
+      "opponentAvgElo": 1031,
+      "teammates": [
+        "TUF | DUKE_NUKEM",
+        "Age5464",
+        "Prinz Kay1"
+      ],
+      "opponents": [
+        "RaptorX",
+        "Bao Oninon",
+        "Monk",
+        "S3dated"
       ]
     }
   ]

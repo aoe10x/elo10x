@@ -1,12 +1,12 @@
 {
   "profile_id": 12219576,
   "alias": "naponeng",
-  "rating": 839,
-  "wins": 4,
+  "rating": 866,
+  "wins": 5,
   "losses": 15,
-  "gamesCount": 19,
-  "winRate": 21,
-  "lastPlayedAt": 1784699252,
+  "gamesCount": 20,
+  "winRate": 25,
+  "lastPlayedAt": 1784718572,
   "country": "cn",
   "merged_ids": [
     11750033,
@@ -32,7 +32,8 @@
     785,
     776,
     809,
-    839
+    839,
+    866
   ],
   "recentMatches": [
     {
@@ -489,6 +490,30 @@
         "大秦帝国",
         "476055690",
         "Wololo"
+      ]
+    },
+    {
+      "matchId": 494059647,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784718572,
+      "outcome": "win",
+      "preRating": 839,
+      "postRating": 866,
+      "eloChange": 27,
+      "civ": "Dravidians",
+      "teamAvgElo": 975,
+      "opponentAvgElo": 1058,
+      "teammates": [
+        "i kun 2.5",
+        "kaka52pk",
+        "SickFishh"
+      ],
+      "opponents": [
+        "鱼浆",
+        "Emusan",
+        "ototomato",
+        "喧哗的都已沙哑"
       ]
     }
   ]

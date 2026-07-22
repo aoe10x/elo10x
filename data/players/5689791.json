@@ -1,12 +1,12 @@
 {
   "profile_id": 5689791,
   "alias": "马磊",
-  "rating": 785,
+  "rating": 779,
   "wins": 7,
-  "losses": 33,
-  "gamesCount": 40,
-  "winRate": 18,
-  "lastPlayedAt": 1784546723,
+  "losses": 34,
+  "gamesCount": 41,
+  "winRate": 17,
+  "lastPlayedAt": 1784720982,
   "country": "cn",
   "merged_ids": [
     5689791,
@@ -53,33 +53,10 @@
     803,
     796,
     791,
-    785
+    785,
+    779
   ],
   "recentMatches": [
-    {
-      "matchId": 435770164,
-      "description": "4V4 ===10x shared 3Xtech  4V4 random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1764192300,
-      "outcome": "loss",
-      "preRating": 775,
-      "postRating": 769,
-      "eloChange": -6,
-      "civ": "Unknown",
-      "teamAvgElo": 995,
-      "opponentAvgElo": 1019,
-      "teammates": [
-        "choolkkkk",
-        "yimacs_yoyoyo",
-        "QTJ钱塘江客"
-      ],
-      "opponents": [
-        "[TSU] Red Cansky",
-        "arwinDutchy",
-        "Enn Tore",
-        "Hrotak"
-      ]
-    },
     {
       "matchId": 436194861,
       "description": "10x Shared 10res 3tech",
@@ -534,6 +511,30 @@
         "鱼浆",
         "萌萌",
         "fxsound"
+      ]
+    },
+    {
+      "matchId": 494064750,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784720982,
+      "outcome": "loss",
+      "preRating": 785,
+      "postRating": 779,
+      "eloChange": -6,
+      "civ": "Ethiopians",
+      "teamAvgElo": 957,
+      "opponentAvgElo": 1044,
+      "teammates": [
+        "kaka52pk",
+        "GenP",
+        "[S33]ff"
+      ],
+      "opponents": [
+        "i kun 2.5",
+        "紫蝶黄蜂俱有情",
+        "gamingtars",
+        "abatyse6533"
       ]
     }
   ]

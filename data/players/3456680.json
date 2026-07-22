@@ -1,12 +1,12 @@
 {
   "profile_id": 3456680,
   "alias": "GenP",
-  "rating": 884,
+  "rating": 875,
   "wins": 38,
-  "losses": 64,
-  "gamesCount": 102,
+  "losses": 65,
+  "gamesCount": 103,
   "winRate": 37,
-  "lastPlayedAt": 1784707191,
+  "lastPlayedAt": 1784720982,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -23,10 +23,10 @@
     1016,
     1051,
     1026,
-    1054,
     1025,
     994,
     1024,
+    1002,
     983,
     969,
     988,
@@ -47,7 +47,6 @@
     968,
     987,
     976,
-    960,
     979,
     967,
     983,
@@ -60,6 +59,7 @@
     988,
     1006,
     992,
+    980,
     967,
     953,
     945,
@@ -72,7 +72,6 @@
     952,
     941,
     961,
-    981,
     997,
     1016,
     1032,
@@ -92,11 +91,11 @@
     961,
     948,
     940,
+    929,
     952,
     943,
     962,
     954,
-    944,
     930,
     922,
     913,
@@ -109,33 +108,10 @@
     877,
     901,
     892,
-    884
+    884,
+    875
   ],
   "recentMatches": [
-    {
-      "matchId": 491539961,
-      "description": "4vs4 10x 3x shared civ bonus, random civ",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1783768784,
-      "outcome": "loss",
-      "preRating": 948,
-      "postRating": 940,
-      "eloChange": -8,
-      "civ": "Malay",
-      "teamAvgElo": 1068,
-      "opponentAvgElo": 1129,
-      "teammates": [
-        "yimacs_yoyoyo",
-        "Vader",
-        "476055690"
-      ],
-      "opponents": [
-        "pandalam",
-        "fxsound",
-        "dRea",
-        "Kuecken_das_Vollstrecker"
-      ]
-    },
     {
       "matchId": 491545423,
       "description": "4vs4 10x 3x shared civ bonus, random civ",
@@ -590,6 +566,30 @@
         "Boocer",
         "Honey badger",
         "^gOsO^"
+      ]
+    },
+    {
+      "matchId": 494064750,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784720982,
+      "outcome": "loss",
+      "preRating": 884,
+      "postRating": 875,
+      "eloChange": -9,
+      "civ": "Aztecs",
+      "teamAvgElo": 957,
+      "opponentAvgElo": 1044,
+      "teammates": [
+        "kaka52pk",
+        "[S33]ff",
+        "马磊"
+      ],
+      "opponents": [
+        "i kun 2.5",
+        "紫蝶黄蜂俱有情",
+        "gamingtars",
+        "abatyse6533"
       ]
     }
   ]

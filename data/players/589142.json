@@ -1,12 +1,12 @@
 {
   "profile_id": 589142,
   "alias": "Armyofme_",
-  "rating": 1075,
+  "rating": 1059,
   "wins": 44,
-  "losses": 43,
-  "gamesCount": 87,
-  "winRate": 51,
-  "lastPlayedAt": 1784649103,
+  "losses": 44,
+  "gamesCount": 88,
+  "winRate": 50,
+  "lastPlayedAt": 1784723648,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -97,33 +97,10 @@
     1087,
     1075,
     1057,
-    1075
+    1075,
+    1059
   ],
   "recentMatches": [
-    {
-      "matchId": 461962177,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1773130680,
-      "outcome": "win",
-      "preRating": 1077,
-      "postRating": 1092,
-      "eloChange": 15,
-      "civ": "Aztecs",
-      "teamAvgElo": 1086,
-      "opponentAvgElo": 1062,
-      "teammates": [
-        "Drutt",
-        "[LWS] Mandatum",
-        "_stranikk_"
-      ],
-      "opponents": [
-        "Kumad",
-        "Myriad",
-        "FPS Geo",
-        "{German}Kaese"
-      ]
-    },
     {
       "matchId": 463067099,
       "description": "256x 10x Forest Nothing",
@@ -578,6 +555,30 @@
         "Fringnut",
         "XsupercopX",
         "Grimmie"
+      ]
+    },
+    {
+      "matchId": 494070950,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784723648,
+      "outcome": "loss",
+      "preRating": 1075,
+      "postRating": 1059,
+      "eloChange": -16,
+      "civ": "Dravidians",
+      "teamAvgElo": 1082,
+      "opponentAvgElo": 1077,
+      "teammates": [
+        "tonzo",
+        "McKrakfejs",
+        "Dellox"
+      ],
+      "opponents": [
+        "i kun 2.5",
+        "鱼浆",
+        "Vince",
+        "konishika"
       ]
     }
   ]
