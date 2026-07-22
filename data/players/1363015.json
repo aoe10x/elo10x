@@ -1,12 +1,12 @@
 {
   "profile_id": 1363015,
   "alias": "bigmobil",
-  "rating": 1046,
+  "rating": 1029,
   "wins": 49,
-  "losses": 32,
-  "gamesCount": 81,
+  "losses": 33,
+  "gamesCount": 82,
   "winRate": 60,
-  "lastPlayedAt": 1783805166,
+  "lastPlayedAt": 1784674933,
   "country": "ru",
   "merged_ids": [],
   "ratingHistory": [
@@ -91,33 +91,10 @@
     1093,
     1080,
     1064,
-    1046
+    1046,
+    1029
   ],
   "recentMatches": [
-    {
-      "matchId": 430786630,
-      "description": "10x 3x Techs Bamboo Nothing Random Civs",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1762303620,
-      "outcome": "win",
-      "preRating": 1093,
-      "postRating": 1103,
-      "eloChange": 10,
-      "civ": "Burgundians",
-      "teamAvgElo": 1046,
-      "opponentAvgElo": 966,
-      "teammates": [
-        "Your Ego",
-        "illidanqetiii",
-        "rafuk89"
-      ],
-      "opponents": [
-        "Fastcastleintoheatedshots",
-        "abatyse6533",
-        "Borkan",
-        "hu_man"
-      ]
-    },
     {
       "matchId": 431055692,
       "description": "10x shared 3x tech bamboo nothing",
@@ -572,6 +549,30 @@
         "Monkeymonk",
         "Zeriel",
         "Olive Oil"
+      ]
+    },
+    {
+      "matchId": 493970278,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784674933,
+      "outcome": "loss",
+      "preRating": 1046,
+      "postRating": 1029,
+      "eloChange": -17,
+      "civ": "Persians",
+      "teamAvgElo": 1042,
+      "opponentAvgElo": 1029,
+      "teammates": [
+        "NoAgendaPODCAST",
+        "Paolo Carrosel",
+        "AleRayado88"
+      ],
+      "opponents": [
+        "SpiniestTuna222",
+        "[B] Cannino",
+        "KOENZ",
+        "Your Ego"
       ]
     }
   ]

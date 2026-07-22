@@ -1,12 +1,12 @@
 {
   "profile_id": 1738288,
   "alias": "Arosive",
-  "rating": 942,
+  "rating": 930,
   "wins": 14,
-  "losses": 22,
-  "gamesCount": 36,
-  "winRate": 39,
-  "lastPlayedAt": 1784209365,
+  "losses": 23,
+  "gamesCount": 37,
+  "winRate": 38,
+  "lastPlayedAt": 1784676822,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -46,33 +46,10 @@
     908,
     897,
     920,
-    942
+    942,
+    930
   ],
   "recentMatches": [
-    {
-      "matchId": 410616324,
-      "description": "Bamboo 4x4 10x 3x Shared",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1754293680,
-      "outcome": "loss",
-      "preRating": 1032,
-      "postRating": 1008,
-      "eloChange": -24,
-      "civ": "Magyars",
-      "teamAvgElo": 1041,
-      "opponentAvgElo": 1010,
-      "teammates": [
-        "dragoesazuis",
-        "Scipio Africanus",
-        "Chikna Raavan"
-      ],
-      "opponents": [
-        "Clean",
-        "omnomnomnivore",
-        "RamboRob",
-        "Sensei"
-      ]
-    },
     {
       "matchId": 415955883,
       "description": "Bamboo Nothing Turbo(Not 10x) Pick Civ",
@@ -527,6 +504,30 @@
         "pandalam",
         "马磊",
         "Nigerian Farmer"
+      ]
+    },
+    {
+      "matchId": 493974815,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784676822,
+      "outcome": "loss",
+      "preRating": 942,
+      "postRating": 930,
+      "eloChange": -12,
+      "civ": "Burgundians",
+      "teamAvgElo": 1004,
+      "opponentAvgElo": 1030,
+      "teammates": [
+        "DPK75",
+        "Pogonophobia69",
+        "Scipio"
+      ],
+      "opponents": [
+        "TJ",
+        "Ellie91",
+        "TM AndresgP",
+        "TheRiceMan"
       ]
     }
   ]

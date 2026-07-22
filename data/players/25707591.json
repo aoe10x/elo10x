@@ -1,12 +1,12 @@
 {
   "profile_id": 25707591,
   "alias": "menorahjury",
-  "rating": 971,
+  "rating": 955,
   "wins": 6,
-  "losses": 11,
-  "gamesCount": 17,
-  "winRate": 35,
-  "lastPlayedAt": 1783831627,
+  "losses": 12,
+  "gamesCount": 18,
+  "winRate": 33,
+  "lastPlayedAt": 1784672642,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,8 @@
     920,
     907,
     943,
-    971
+    971,
+    955
   ],
   "recentMatches": [
     {
@@ -436,6 +437,30 @@
         "Bridge",
         "HyNo",
         "bull_scoots"
+      ]
+    },
+    {
+      "matchId": 493964101,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784672642,
+      "outcome": "loss",
+      "preRating": 971,
+      "postRating": 955,
+      "eloChange": -16,
+      "civ": "Berbers",
+      "teamAvgElo": 1044,
+      "opponentAvgElo": 1052,
+      "teammates": [
+        "tonzo",
+        "PITON | Shepy",
+        "Apocalypto"
+      ],
+      "opponents": [
+        "iamatthe.hell",
+        "MarieBrutale",
+        "kiggless",
+        "Emusan"
       ]
     }
   ]

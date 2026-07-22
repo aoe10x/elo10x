@@ -1,12 +1,12 @@
 {
   "profile_id": 390547,
   "alias": "Chirijiraden",
-  "rating": 948,
+  "rating": 940,
   "wins": 30,
-  "losses": 42,
-  "gamesCount": 72,
-  "winRate": 42,
-  "lastPlayedAt": 1784412982,
+  "losses": 43,
+  "gamesCount": 73,
+  "winRate": 41,
+  "lastPlayedAt": 1784671359,
   "country": "ar",
   "merged_ids": [],
   "ratingHistory": [
@@ -82,33 +82,10 @@
     919,
     938,
     961,
-    948
+    948,
+    940
   ],
   "recentMatches": [
-    {
-      "matchId": 490390845,
-      "description": "10x 3x Bamboo - 10xshared.com",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1783294140,
-      "outcome": "loss",
-      "preRating": 923,
-      "postRating": 912,
-      "eloChange": -11,
-      "civ": "Dravidians",
-      "teamAvgElo": 1043,
-      "opponentAvgElo": 1024,
-      "teammates": [
-        "Parts",
-        "Sensei",
-        "Edamde"
-      ],
-      "opponents": [
-        "Delta",
-        "Xinzzo",
-        "Gasnápido",
-        "Ellie91"
-      ]
-    },
     {
       "matchId": 490966976,
       "description": "10x 3x bamboo NO IDIOT",
@@ -563,6 +540,30 @@
         "gamingtars",
         "疯狂的电脑",
         "MarieBrutale"
+      ]
+    },
+    {
+      "matchId": 493959669,
+      "description": "10x 3x Bamboo (unfair and hard) rank.10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784671359,
+      "outcome": "loss",
+      "preRating": 948,
+      "postRating": 940,
+      "eloChange": -8,
+      "civ": "Chinese",
+      "teamAvgElo": 1011,
+      "opponentAvgElo": 1137,
+      "teammates": [
+        "LonelyKnight",
+        "AlexTheKid",
+        "MarieBrutale"
+      ],
+      "opponents": [
+        "Scipio",
+        "romeadd",
+        "TheRiceMan",
+        "Delta"
       ]
     }
   ]

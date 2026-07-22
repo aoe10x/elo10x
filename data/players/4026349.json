@@ -1,12 +1,12 @@
 {
   "profile_id": 4026349,
   "alias": "Bibz",
-  "rating": 998,
+  "rating": 983,
   "wins": 10,
-  "losses": 12,
-  "gamesCount": 22,
-  "winRate": 45,
-  "lastPlayedAt": 1784582179,
+  "losses": 13,
+  "gamesCount": 23,
+  "winRate": 43,
+  "lastPlayedAt": 1784674152,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -32,33 +32,10 @@
     940,
     961,
     980,
-    998
+    998,
+    983
   ],
   "recentMatches": [
-    {
-      "matchId": 375735097,
-      "description": "4v4 10x shared civ 3x tech",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1740952500,
-      "outcome": "loss",
-      "preRating": 1014,
-      "postRating": 961,
-      "eloChange": -53,
-      "civ": "Unknown",
-      "teamAvgElo": 1040,
-      "opponentAvgElo": 955,
-      "teammates": [
-        "Zokantos",
-        "ChristopheG1970.Fr",
-        "kinkin623"
-      ],
-      "opponents": [
-        "好名字给zhu取",
-        "revo",
-        "Swagva5131",
-        "Microsoft Outlook"
-      ]
-    },
     {
       "matchId": 381836849,
       "description": "10x civ 3x techs | random civ",
@@ -513,6 +490,30 @@
         "Goodsoup",
         "ilovesushi12",
         "gato"
+      ]
+    },
+    {
+      "matchId": 493967983,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784674152,
+      "outcome": "loss",
+      "preRating": 998,
+      "postRating": 983,
+      "eloChange": -15,
+      "civ": "Malians",
+      "teamAvgElo": 999,
+      "opponentAvgElo": 1011,
+      "teammates": [
+        "Gasnápido",
+        "jair_silva",
+        "jonnywins100"
+      ],
+      "opponents": [
+        "TJ",
+        "Chuckyllo4417",
+        "Apocalypto",
+        "DrachenKuh"
       ]
     }
   ]

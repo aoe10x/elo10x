@@ -1,12 +1,12 @@
 {
   "profile_id": 4498298,
   "alias": "I Love Clean Coal",
-  "rating": 1089,
+  "rating": 1058,
   "wins": 47,
-  "losses": 30,
-  "gamesCount": 77,
-  "winRate": 61,
-  "lastPlayedAt": 1784265843,
+  "losses": 32,
+  "gamesCount": 79,
+  "winRate": 59,
+  "lastPlayedAt": 1784682678,
   "country": "nz",
   "merged_ids": [],
   "ratingHistory": [
@@ -87,57 +87,11 @@
     1079,
     1095,
     1108,
-    1089
+    1089,
+    1073,
+    1058
   ],
   "recentMatches": [
-    {
-      "matchId": 427406664,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1761024900,
-      "outcome": "loss",
-      "preRating": 1147,
-      "postRating": 1127,
-      "eloChange": -20,
-      "civ": "Burgundians",
-      "teamAvgElo": 1040,
-      "opponentAvgElo": 1053,
-      "teammates": [
-        "[B] Cannino",
-        "Tortrix",
-        "The Scientist"
-      ],
-      "opponents": [
-        "nooblet3300",
-        "Bé",
-        "S1xZ3r0",
-        "MuffinPanda"
-      ]
-    },
-    {
-      "matchId": 428051455,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1761291540,
-      "outcome": "win",
-      "preRating": 1127,
-      "postRating": 1141,
-      "eloChange": 14,
-      "civ": "Persians",
-      "teamAvgElo": 1135,
-      "opponentAvgElo": 1090,
-      "teammates": [
-        "nooblet3300",
-        "田瘾犯了",
-        "Sensei"
-      ],
-      "opponents": [
-        "GCARMINATTI",
-        "Holy Cheetos",
-        "Preacher!",
-        "Honey badger"
-      ]
-    },
     {
       "matchId": 428054334,
       "description": "256x 10x Forest Nothing",
@@ -568,6 +522,54 @@
         "Sundev",
         "[S33]ff",
         "Abused but whole"
+      ]
+    },
+    {
+      "matchId": 493987035,
+      "description": "10x 3x Bamboo (im sick, forgive me) rank.10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784681129,
+      "outcome": "loss",
+      "preRating": 1089,
+      "postRating": 1073,
+      "eloChange": -16,
+      "civ": "Sicilians",
+      "teamAvgElo": 1085,
+      "opponentAvgElo": 1079,
+      "teammates": [
+        "Wozbo",
+        "Dogberto",
+        "LethalP59"
+      ],
+      "opponents": [
+        "Scipio",
+        "Vince",
+        "Maxim Liann",
+        "ζ |  SaintPΞpsi94"
+      ]
+    },
+    {
+      "matchId": 493990105,
+      "description": "10x 3x Bamboo (unbalanced and unfair) ",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784682678,
+      "outcome": "loss",
+      "preRating": 1073,
+      "postRating": 1058,
+      "eloChange": -15,
+      "civ": "Hindustanis",
+      "teamAvgElo": 1075,
+      "opponentAvgElo": 1100,
+      "teammates": [
+        "Scipio",
+        "Chuckyllo4417",
+        "Vader"
+      ],
+      "opponents": [
+        "WipiWi",
+        "ActualWizard",
+        "[ ARKI ! ]",
+        "Surnrnoner"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 14637074,
   "alias": "ArchiCraig",
-  "rating": 988,
-  "wins": 32,
+  "rating": 1029,
+  "wins": 34,
   "losses": 47,
-  "gamesCount": 79,
-  "winRate": 41,
-  "lastPlayedAt": 1784161173,
+  "gamesCount": 81,
+  "winRate": 42,
+  "lastPlayedAt": 1784682923,
   "country": "ca",
   "merged_ids": [
     12165758,
@@ -92,57 +92,11 @@
     958,
     948,
     969,
-    988
+    988,
+    1009,
+    1029
   ],
   "recentMatches": [
-    {
-      "matchId": 484221151,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1781077020,
-      "outcome": "loss",
-      "preRating": 981,
-      "postRating": 969,
-      "eloChange": -12,
-      "civ": "Byzantines",
-      "teamAvgElo": 1042,
-      "opponentAvgElo": 1069,
-      "teammates": [
-        "Battlegoose",
-        "BaloneyFrog",
-        "Captain is King"
-      ],
-      "opponents": [
-        "Kumad",
-        "Myriad",
-        "LonelyKnight",
-        "RedBullWOLOLO26"
-      ]
-    },
-    {
-      "matchId": 484439133,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1781158020,
-      "outcome": "win",
-      "preRating": 969,
-      "postRating": 985,
-      "eloChange": 16,
-      "civ": "Goths",
-      "teamAvgElo": 991,
-      "opponentAvgElo": 974,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "BarqBarq",
-        "dinapal"
-      ],
-      "opponents": [
-        "Doormat",
-        "Tijolo",
-        "DPK75",
-        "luisedgaco02"
-      ]
-    },
     {
       "matchId": 487625637,
       "description": "10x 3x bamboo NO IDIOT",
@@ -573,6 +527,54 @@
         "Paolo Carrosel",
         "Master Polo4905",
         "SpiniestTuna222"
+      ]
+    },
+    {
+      "matchId": 493989896,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784682259,
+      "outcome": "win",
+      "preRating": 988,
+      "postRating": 1009,
+      "eloChange": 21,
+      "civ": "Chinese",
+      "teamAvgElo": 1053,
+      "opponentAvgElo": 1099,
+      "teammates": [
+        "Kumad",
+        "nayman",
+        "Myriad"
+      ],
+      "opponents": [
+        "feid_",
+        "EL__PATRON",
+        "tonzo",
+        "juanmar983"
+      ]
+    },
+    {
+      "matchId": 493992491,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784682923,
+      "outcome": "win",
+      "preRating": 1009,
+      "postRating": 1029,
+      "eloChange": 20,
+      "civ": "Cumans",
+      "teamAvgElo": 1062,
+      "opponentAvgElo": 1089,
+      "teammates": [
+        "feid_",
+        "EL__PATRON",
+        "juanmar983"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "nayman",
+        "tonzo"
       ]
     }
   ]

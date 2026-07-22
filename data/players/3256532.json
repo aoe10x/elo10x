@@ -1,12 +1,12 @@
 {
   "profile_id": 3256532,
   "alias": "CristoTheRealCeisto",
-  "rating": 1031,
+  "rating": 1014,
   "wins": 38,
-  "losses": 56,
-  "gamesCount": 94,
+  "losses": 57,
+  "gamesCount": 95,
   "winRate": 40,
-  "lastPlayedAt": 1784492707,
+  "lastPlayedAt": 1784669516,
   "country": "ro",
   "merged_ids": [],
   "ratingHistory": [
@@ -104,33 +104,10 @@
     1010,
     1029,
     1044,
-    1031
+    1031,
+    1014
   ],
   "recentMatches": [
-    {
-      "matchId": 480220842,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1779672960,
-      "outcome": "loss",
-      "preRating": 954,
-      "postRating": 944,
-      "eloChange": -10,
-      "civ": "Japanese",
-      "teamAvgElo": 1044,
-      "opponentAvgElo": 1089,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "JJ",
-        "jakco"
-      ],
-      "opponents": [
-        "MadRussian",
-        "Shadow",
-        "MARKVILEX",
-        "RIchard_Uy"
-      ]
-    },
     {
       "matchId": 481424329,
       "description": "10x civ 3x tech",
@@ -585,6 +562,30 @@
         "Vince",
         "Ye",
         "Mehandor"
+      ]
+    },
+    {
+      "matchId": 493954605,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784669516,
+      "outcome": "loss",
+      "preRating": 1031,
+      "postRating": 1014,
+      "eloChange": -17,
+      "civ": "Gurjaras",
+      "teamAvgElo": 1084,
+      "opponentAvgElo": 1014,
+      "teammates": [
+        "Parenquima",
+        "procrastination.exe",
+        "Apocalypto"
+      ],
+      "opponents": [
+        "rob",
+        "MarieBrutale",
+        "romeadd",
+        "DrLabas"
       ]
     }
   ]

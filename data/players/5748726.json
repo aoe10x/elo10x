@@ -1,12 +1,12 @@
 {
   "profile_id": 5748726,
   "alias": "juanmar983",
-  "rating": 1122,
-  "wins": 53,
-  "losses": 48,
-  "gamesCount": 101,
+  "rating": 1118,
+  "wins": 54,
+  "losses": 49,
+  "gamesCount": 103,
   "winRate": 52,
-  "lastPlayedAt": 1781425080,
+  "lastPlayedAt": 1784682923,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -23,7 +23,6 @@
     1071,
     1035,
     1011,
-    1047,
     1016,
     996,
     973,
@@ -35,6 +34,7 @@
     962,
     949,
     937,
+    958,
     977,
     964,
     985,
@@ -47,7 +47,6 @@
     978,
     965,
     986,
-    970,
     960,
     982,
     969,
@@ -73,7 +72,6 @@
     1045,
     1059,
     1041,
-    1022,
     1036,
     1050,
     1066,
@@ -84,6 +82,7 @@
     1095,
     1076,
     1059,
+    1040,
     1056,
     1038,
     1055,
@@ -97,7 +96,6 @@
     1091,
     1106,
     1116,
-    1129,
     1138,
     1120,
     1132,
@@ -109,57 +107,11 @@
     1151,
     1161,
     1140,
-    1122
+    1122,
+    1103,
+    1118
   ],
   "recentMatches": [
-    {
-      "matchId": 456260683,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Amazon Tunnel Twin Bays",
-      "timestamp": 1771147440,
-      "outcome": "win",
-      "preRating": 1043,
-      "postRating": 1062,
-      "eloChange": 19,
-      "civ": "Incas",
-      "teamAvgElo": 1060,
-      "opponentAvgElo": 1112,
-      "teammates": [
-        "DSLG | MuChaunLee_Sovich",
-        "KINGKODIAK",
-        "Blueye"
-      ],
-      "opponents": [
-        "Kumad",
-        "Wardy21",
-        "Myriad",
-        "CobraBubbles801"
-      ]
-    },
-    {
-      "matchId": 459872244,
-      "description": "x3x10x Shared (PQ3.1x11 Qualty daycare)",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1772372460,
-      "outcome": "win",
-      "preRating": 1062,
-      "postRating": 1077,
-      "eloChange": 15,
-      "civ": "Tatars",
-      "teamAvgElo": 1164,
-      "opponentAvgElo": 1045,
-      "teammates": [
-        "pandalam",
-        "aLEXt",
-        "田瘾犯了"
-      ],
-      "opponents": [
-        "Keishi",
-        "1",
-        "DSLG | MuChaunLee_Sovich",
-        "DID JAMB"
-      ]
-    },
     {
       "matchId": 459984920,
       "description": "bamboo nothing 10x 3x",
@@ -590,6 +542,54 @@
         "Myriad",
         "PoonSlapper",
         "nayman"
+      ]
+    },
+    {
+      "matchId": 493989896,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784682259,
+      "outcome": "loss",
+      "preRating": 1122,
+      "postRating": 1103,
+      "eloChange": -19,
+      "civ": "Persians",
+      "teamAvgElo": 1099,
+      "opponentAvgElo": 1053,
+      "teammates": [
+        "feid_",
+        "EL__PATRON",
+        "tonzo"
+      ],
+      "opponents": [
+        "Kumad",
+        "nayman",
+        "Myriad",
+        "ArchiCraig"
+      ]
+    },
+    {
+      "matchId": 493992491,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784682923,
+      "outcome": "win",
+      "preRating": 1103,
+      "postRating": 1118,
+      "eloChange": 15,
+      "civ": "Franks",
+      "teamAvgElo": 1062,
+      "opponentAvgElo": 1089,
+      "teammates": [
+        "feid_",
+        "EL__PATRON",
+        "ArchiCraig"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "nayman",
+        "tonzo"
       ]
     }
   ]

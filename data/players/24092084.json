@@ -1,12 +1,12 @@
 {
   "profile_id": 24092084,
   "alias": "serdaroglu",
-  "rating": 986,
+  "rating": 971,
   "wins": 8,
-  "losses": 11,
-  "gamesCount": 19,
-  "winRate": 42,
-  "lastPlayedAt": 1783840832,
+  "losses": 12,
+  "gamesCount": 20,
+  "winRate": 40,
+  "lastPlayedAt": 1784680103,
   "country": "tr",
   "merged_ids": [
     13445246,
@@ -32,7 +32,8 @@
     993,
     1016,
     999,
-    986
+    986,
+    971
   ],
   "recentMatches": [
     {
@@ -489,6 +490,30 @@
         "GiGi",
         "tonkatumura",
         "typ53b90"
+      ]
+    },
+    {
+      "matchId": 493983404,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784680103,
+      "outcome": "loss",
+      "preRating": 986,
+      "postRating": 971,
+      "eloChange": -15,
+      "civ": "Tupi",
+      "teamAvgElo": 1053,
+      "opponentAvgElo": 1036,
+      "teammates": [
+        "Kumad",
+        "ζ |  SaintPΞpsi94",
+        "Myriad"
+      ],
+      "opponents": [
+        "EL__PATRON",
+        "feid_",
+        "gold",
+        "MARKVILEX"
       ]
     }
   ]

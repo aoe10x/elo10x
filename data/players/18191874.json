@@ -1,12 +1,12 @@
 {
   "profile_id": 18191874,
   "alias": "Vader",
-  "rating": 1058,
+  "rating": 1044,
   "wins": 56,
-  "losses": 40,
-  "gamesCount": 96,
+  "losses": 41,
+  "gamesCount": 97,
   "winRate": 58,
-  "lastPlayedAt": 1784630085,
+  "lastPlayedAt": 1784682678,
   "country": "pe",
   "merged_ids": [
     12628022,
@@ -109,33 +109,10 @@
     1047,
     1062,
     1044,
-    1058
+    1058,
+    1044
   ],
   "recentMatches": [
-    {
-      "matchId": 491539961,
-      "description": "4vs4 10x 3x shared civ bonus, random civ",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1783768784,
-      "outcome": "loss",
-      "preRating": 1115,
-      "postRating": 1100,
-      "eloChange": -15,
-      "civ": "Maya",
-      "teamAvgElo": 1068,
-      "opponentAvgElo": 1128,
-      "teammates": [
-        "yimacs_yoyoyo",
-        "GenP",
-        "476055690"
-      ],
-      "opponents": [
-        "pandalam",
-        "fxsound",
-        "dRea",
-        "Kuecken_das_Vollstrecker"
-      ]
-    },
     {
       "matchId": 491558238,
       "description": "10x Mod Amazon Tunnel Random 4v4 All Welcome!",
@@ -590,6 +567,30 @@
         "紫蝶黄蜂俱有情",
         "neno",
         "SickFishh"
+      ]
+    },
+    {
+      "matchId": 493990105,
+      "description": "10x 3x Bamboo (unbalanced and unfair) ",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784682678,
+      "outcome": "loss",
+      "preRating": 1058,
+      "postRating": 1044,
+      "eloChange": -14,
+      "civ": "Aztecs",
+      "teamAvgElo": 1075,
+      "opponentAvgElo": 1100,
+      "teammates": [
+        "Scipio",
+        "I Love Clean Coal",
+        "Chuckyllo4417"
+      ],
+      "opponents": [
+        "WipiWi",
+        "ActualWizard",
+        "[ ARKI ! ]",
+        "Surnrnoner"
       ]
     }
   ]

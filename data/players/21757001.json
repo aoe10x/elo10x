@@ -1,12 +1,12 @@
 {
   "profile_id": 21757001,
   "alias": "jonnywins100",
-  "rating": 901,
+  "rating": 890,
   "wins": 8,
-  "losses": 17,
-  "gamesCount": 25,
-  "winRate": 32,
-  "lastPlayedAt": 1784578488,
+  "losses": 18,
+  "gamesCount": 26,
+  "winRate": 31,
+  "lastPlayedAt": 1784674152,
   "country": "us",
   "merged_ids": [
     13100723,
@@ -38,33 +38,10 @@
     899,
     888,
     879,
-    901
+    901,
+    890
   ],
   "recentMatches": [
-    {
-      "matchId": 365796829,
-      "description": "10x Shared - 3x Tech BAMBOO 4V4",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1737107160,
-      "outcome": "loss",
-      "preRating": 1070,
-      "postRating": 1021,
-      "eloChange": -49,
-      "civ": "Unknown",
-      "teamAvgElo": 1066,
-      "opponentAvgElo": 995,
-      "teammates": [
-        "dRea",
-        "golhmogh",
-        "avo"
-      ],
-      "opponents": [
-        "FatalNewb",
-        "Cheesewheel24",
-        "ArchiCraig",
-        "Meursault005"
-      ]
-    },
     {
       "matchId": 366412717,
       "description": "10x 3x random civ",
@@ -519,6 +496,30 @@
         "Magnificent",
         "Not a Wizard",
         "DPK75"
+      ]
+    },
+    {
+      "matchId": 493967983,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784674152,
+      "outcome": "loss",
+      "preRating": 901,
+      "postRating": 890,
+      "eloChange": -11,
+      "civ": "Ethiopians",
+      "teamAvgElo": 999,
+      "opponentAvgElo": 1011,
+      "teammates": [
+        "Gasnápido",
+        "jair_silva",
+        "Bibz"
+      ],
+      "opponents": [
+        "TJ",
+        "Chuckyllo4417",
+        "Apocalypto",
+        "DrachenKuh"
       ]
     }
   ]
