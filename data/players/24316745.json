@@ -1,12 +1,12 @@
 {
   "profile_id": 24316745,
   "alias": "Ghandi",
-  "rating": 972,
+  "rating": 949,
   "wins": 8,
-  "losses": 9,
-  "gamesCount": 17,
-  "winRate": 47,
-  "lastPlayedAt": 1784127261,
+  "losses": 10,
+  "gamesCount": 18,
+  "winRate": 44,
+  "lastPlayedAt": 1784744988,
   "country": "nl",
   "merged_ids": [
     13473984,
@@ -30,7 +30,8 @@
     986,
     964,
     993,
-    972
+    972,
+    949
   ],
   "recentMatches": [
     {
@@ -439,6 +440,30 @@
         "golhmogh",
         "476055690",
         "UndreamtBacon8"
+      ]
+    },
+    {
+      "matchId": 494134190,
+      "description": "10x 3x Bamboo (unbalanced and unfair) ;) ",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784744988,
+      "outcome": "loss",
+      "preRating": 972,
+      "postRating": 949,
+      "eloChange": -23,
+      "civ": "Portuguese",
+      "teamAvgElo": 1022,
+      "opponentAvgElo": 945,
+      "teammates": [
+        "Scipio",
+        "Borkan",
+        "[B] Cannino"
+      ],
+      "opponents": [
+        "gamingtars",
+        "arwinDutchy",
+        "khouildi.tarek.tk",
+        "Wozbo"
       ]
     }
   ]

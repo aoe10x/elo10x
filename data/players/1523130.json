@@ -1,12 +1,12 @@
 {
   "profile_id": 1523130,
   "alias": "Wimac",
-  "rating": 1011,
-  "wins": 32,
+  "rating": 1027,
+  "wins": 33,
   "losses": 34,
-  "gamesCount": 66,
-  "winRate": 48,
-  "lastPlayedAt": 1784602844,
+  "gamesCount": 67,
+  "winRate": 49,
+  "lastPlayedAt": 1784748069,
   "country": "co",
   "merged_ids": [],
   "ratingHistory": [
@@ -76,33 +76,10 @@
     991,
     1011,
     996,
-    1011
+    1011,
+    1027
   ],
   "recentMatches": [
-    {
-      "matchId": 479139997,
-      "description": "10x3x Bamboo Nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1779248944,
-      "outcome": "loss",
-      "preRating": 1032,
-      "postRating": 1016,
-      "eloChange": -16,
-      "civ": "Portuguese",
-      "teamAvgElo": 1036,
-      "opponentAvgElo": 1042,
-      "teammates": [
-        "東亞窪地",
-        "baianitro",
-        "DGHIR | NICOGP11"
-      ],
-      "opponents": [
-        "babeleo",
-        "Wololo",
-        "ObnoxiousPoem",
-        "trogfield4"
-      ]
-    },
     {
       "matchId": 480038436,
       "description": "10x 3x - bamboo donut (new)",
@@ -557,6 +534,30 @@
         "WipiWi",
         "AMMO2000",
         "Magical Taylor"
+      ]
+    },
+    {
+      "matchId": 494144988,
+      "description": "10x 3x Bamboo ( no salt or toxic allowed ) ",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784748069,
+      "outcome": "win",
+      "preRating": 1011,
+      "postRating": 1027,
+      "eloChange": 16,
+      "civ": "Koreans",
+      "teamAvgElo": 998,
+      "opponentAvgElo": 1010,
+      "teammates": [
+        "Flip Kun",
+        "Barosanu512",
+        "s2n_ljkthegreat"
+      ],
+      "opponents": [
+        "Scipio",
+        "Chirijiraden",
+        "NothingAtAll11",
+        "Dampflok"
       ]
     }
   ]

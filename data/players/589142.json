@@ -1,12 +1,12 @@
 {
   "profile_id": 589142,
   "alias": "Armyofme_",
-  "rating": 1045,
-  "wins": 44,
+  "rating": 1060,
+  "wins": 45,
   "losses": 45,
-  "gamesCount": 89,
-  "winRate": 49,
-  "lastPlayedAt": 1784730109,
+  "gamesCount": 90,
+  "winRate": 50,
+  "lastPlayedAt": 1784746710,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -99,33 +99,10 @@
     1057,
     1075,
     1059,
-    1045
+    1045,
+    1060
   ],
   "recentMatches": [
-    {
-      "matchId": 465098995,
-      "description": "Bamboo 10x 3x 4v4",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1774314300,
-      "outcome": "win",
-      "preRating": 1076,
-      "postRating": 1092,
-      "eloChange": 16,
-      "civ": "Georgians",
-      "teamAvgElo": 1047,
-      "opponentAvgElo": 1075,
-      "teammates": [
-        "__VK__",
-        "Idrinkhotbutter",
-        "Lietuva_"
-      ],
-      "opponents": [
-        "alexw",
-        "levvafire",
-        "abatyse6533",
-        "Shadow"
-      ]
-    },
     {
       "matchId": 465104543,
       "description": "Bamboo 10x 3x",
@@ -580,6 +557,30 @@
         "G",
         "Miwa",
         "[S33]ff"
+      ]
+    },
+    {
+      "matchId": 494141249,
+      "description": "10x 3x Bamboo (a hard row to ho) ",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784746710,
+      "outcome": "win",
+      "preRating": 1045,
+      "postRating": 1060,
+      "eloChange": 15,
+      "civ": "Hindustanis",
+      "teamAvgElo": 1062,
+      "opponentAvgElo": 1023,
+      "teammates": [
+        "Parts",
+        "Vince",
+        "yimacs_yoyoyo"
+      ],
+      "opponents": [
+        "Scipio",
+        "Drancerpy",
+        "TheCobra",
+        "Manba Out"
       ]
     }
   ]

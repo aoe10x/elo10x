@@ -1,12 +1,12 @@
 {
   "profile_id": 2330261,
   "alias": "davidll_5",
-  "rating": 888,
+  "rating": 877,
   "wins": 30,
-  "losses": 56,
-  "gamesCount": 86,
-  "winRate": 35,
-  "lastPlayedAt": 1784656302,
+  "losses": 57,
+  "gamesCount": 87,
+  "winRate": 34,
+  "lastPlayedAt": 1784744486,
   "country": "es",
   "merged_ids": [],
   "ratingHistory": [
@@ -96,33 +96,10 @@
     921,
     909,
     898,
-    888
+    888,
+    877
   ],
   "recentMatches": [
-    {
-      "matchId": 458804674,
-      "description": "10x 3x bamboo nothing  turbo host here",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1771992840,
-      "outcome": "win",
-      "preRating": 909,
-      "postRating": 931,
-      "eloChange": 22,
-      "civ": "Poles",
-      "teamAvgElo": 1002,
-      "opponentAvgElo": 1043,
-      "teammates": [
-        "gmc inspector",
-        "CrazyKaelby",
-        "Spiz.101"
-      ],
-      "opponents": [
-        "NothingAtAll11",
-        "Antimier",
-        "BeatsNArt",
-        "Grillbe"
-      ]
-    },
     {
       "matchId": 462098435,
       "description": "10x 3x bamboo nothing  turbo host here",
@@ -577,6 +554,30 @@
         "jpllops",
         "megermeger",
         "LonelyKnight"
+      ]
+    },
+    {
+      "matchId": 494133341,
+      "description": "Bamboo Nothing 10x 3x no time for toilet",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784744486,
+      "outcome": "loss",
+      "preRating": 888,
+      "postRating": 877,
+      "eloChange": -11,
+      "civ": "Saracens",
+      "teamAvgElo": 1018,
+      "opponentAvgElo": 993,
+      "teammates": [
+        "Miwa",
+        "LeoMFK",
+        "Koalakapitaen"
+      ],
+      "opponents": [
+        "NothingAtAll11",
+        "apolizer",
+        "KingOfTheNorth",
+        "menorahjury"
       ]
     }
   ]

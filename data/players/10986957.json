@@ -1,12 +1,12 @@
 {
   "profile_id": 10986957,
   "alias": "Magnificent",
-  "rating": 1022,
+  "rating": 1008,
   "wins": 34,
-  "losses": 38,
-  "gamesCount": 72,
+  "losses": 39,
+  "gamesCount": 73,
   "winRate": 47,
-  "lastPlayedAt": 1784658023,
+  "lastPlayedAt": 1784747420,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -82,33 +82,10 @@
     1000,
     984,
     1003,
-    1022
+    1022,
+    1008
   ],
   "recentMatches": [
-    {
-      "matchId": 410595959,
-      "description": "10x shared 3x tech",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1754286120,
-      "outcome": "loss",
-      "preRating": 1035,
-      "postRating": 1018,
-      "eloChange": -17,
-      "civ": "Turks",
-      "teamAvgElo": 1028,
-      "opponentAvgElo": 1003,
-      "teammates": [
-        "dRea",
-        "puje",
-        "dertli"
-      ],
-      "opponents": [
-        "Rita De Valencia",
-        "For_The_King",
-        "[B] Cannino",
-        "Apocalypto"
-      ]
-    },
     {
       "matchId": 410708532,
       "description": "10x 3x Bamboo nothing random civ",
@@ -563,6 +540,30 @@
         "gamingtars",
         "S3dated",
         "BigAl"
+      ]
+    },
+    {
+      "matchId": 494142872,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784747420,
+      "outcome": "loss",
+      "preRating": 1022,
+      "postRating": 1008,
+      "eloChange": -14,
+      "civ": "Mongols",
+      "teamAvgElo": 1050,
+      "opponentAvgElo": 1066,
+      "teammates": [
+        "wurst456",
+        "Xinzzo",
+        "Koalakapitaen"
+      ],
+      "opponents": [
+        "iamatthe.hell",
+        "Wozbo",
+        "AAA",
+        "Lumedge"
       ]
     }
   ]

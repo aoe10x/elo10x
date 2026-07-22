@@ -1,12 +1,12 @@
 {
   "profile_id": 390547,
   "alias": "Chirijiraden",
-  "rating": 962,
+  "rating": 948,
   "wins": 31,
-  "losses": 43,
-  "gamesCount": 74,
-  "winRate": 42,
-  "lastPlayedAt": 1784737844,
+  "losses": 44,
+  "gamesCount": 75,
+  "winRate": 41,
+  "lastPlayedAt": 1784748069,
   "country": "ar",
   "merged_ids": [],
   "ratingHistory": [
@@ -84,33 +84,10 @@
     961,
     948,
     940,
-    962
+    962,
+    948
   ],
   "recentMatches": [
-    {
-      "matchId": 492113590,
-      "description": "BAMBOO 10x3xtech",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783966774,
-      "outcome": "loss",
-      "preRating": 900,
-      "postRating": 890,
-      "eloChange": -10,
-      "civ": "Bulgarians",
-      "teamAvgElo": 1005,
-      "opponentAvgElo": 1048,
-      "teammates": [
-        "iamatthe.hell",
-        "wintre",
-        "Erikton5786"
-      ],
-      "opponents": [
-        "Scrat",
-        "[TW] hushin0917",
-        "Sunkaaaaaaaaan",
-        "Parenquima"
-      ]
-    },
     {
       "matchId": 492119739,
       "description": "3x 10x bamboo - random civ - no noobs  ",
@@ -565,6 +542,30 @@
         "pool_champ",
         "konishika",
         "Scrat"
+      ]
+    },
+    {
+      "matchId": 494144988,
+      "description": "10x 3x Bamboo ( no salt or toxic allowed ) ",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784748069,
+      "outcome": "loss",
+      "preRating": 962,
+      "postRating": 948,
+      "eloChange": -14,
+      "civ": "Cumans",
+      "teamAvgElo": 1010,
+      "opponentAvgElo": 998,
+      "teammates": [
+        "Scipio",
+        "NothingAtAll11",
+        "Dampflok"
+      ],
+      "opponents": [
+        "Flip Kun",
+        "Barosanu512",
+        "Wimac",
+        "s2n_ljkthegreat"
       ]
     }
   ]

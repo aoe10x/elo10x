@@ -1,12 +1,12 @@
 {
   "profile_id": 2089276,
   "alias": "DJ",
-  "rating": 920,
-  "wins": 14,
+  "rating": 941,
+  "wins": 15,
   "losses": 24,
-  "gamesCount": 38,
-  "winRate": 37,
-  "lastPlayedAt": 1784506236,
+  "gamesCount": 39,
+  "winRate": 38,
+  "lastPlayedAt": 1784748739,
   "country": "cl",
   "merged_ids": [],
   "ratingHistory": [
@@ -48,33 +48,10 @@
     922,
     913,
     932,
-    920
+    920,
+    941
   ],
   "recentMatches": [
-    {
-      "matchId": 482250642,
-      "description": "10X 3X MIGRATION, NO NOOBS",
-      "mapname": "Black Forest Extra Cramped 2",
-      "timestamp": 1780390320,
-      "outcome": "loss",
-      "preRating": 1023,
-      "postRating": 1005,
-      "eloChange": -18,
-      "civ": "Persians",
-      "teamAvgElo": 1038,
-      "opponentAvgElo": 1043,
-      "teammates": [
-        "Creweer",
-        "tedmed",
-        "Shadow"
-      ],
-      "opponents": [
-        "duckbuildperson",
-        "Dutchigander",
-        "babeleo",
-        "FlyingSheep"
-      ]
-    },
     {
       "matchId": 483985032,
       "description": "10x3x Bamboo Nothing Donut?",
@@ -529,6 +506,30 @@
         "DPK75",
         "NothingAtAll11",
         "leandrod_c"
+      ]
+    },
+    {
+      "matchId": 494147232,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784748739,
+      "outcome": "win",
+      "preRating": 920,
+      "postRating": 941,
+      "eloChange": 21,
+      "civ": "Romans",
+      "teamAvgElo": 998,
+      "opponentAvgElo": 1029,
+      "teammates": [
+        "Paladin",
+        "AAA",
+        "Wozbo"
+      ],
+      "opponents": [
+        "baianitro",
+        "Eraser88",
+        "Ferdinand I of Naples",
+        "iamatthe.hell"
       ]
     }
   ]

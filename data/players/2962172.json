@@ -1,12 +1,12 @@
 {
   "profile_id": 2962172,
   "alias": "_Zeruch_",
-  "rating": 1081,
+  "rating": 1065,
   "wins": 15,
-  "losses": 11,
-  "gamesCount": 26,
-  "winRate": 58,
-  "lastPlayedAt": 1784574198,
+  "losses": 12,
+  "gamesCount": 27,
+  "winRate": 56,
+  "lastPlayedAt": 1784751074,
   "country": "ua",
   "merged_ids": [],
   "ratingHistory": [
@@ -36,33 +36,10 @@
     1036,
     1051,
     1066,
-    1081
+    1081,
+    1065
   ],
   "recentMatches": [
-    {
-      "matchId": 373914421,
-      "description": "10x 3x techs Bamboo nothing Random Civs",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1740257880,
-      "outcome": "win",
-      "preRating": 1027,
-      "postRating": 1062,
-      "eloChange": 35,
-      "civ": "Dravidians",
-      "teamAvgElo": 1050,
-      "opponentAvgElo": 998,
-      "teammates": [
-        "kekekeya",
-        "Snek",
-        "紫蝶黄蜂俱有情"
-      ],
-      "opponents": [
-        "Fastcastleintoheatedshots",
-        "ALEXSIS",
-        "Antimier",
-        "Pineappleman"
-      ]
-    },
     {
       "matchId": 486768784,
       "description": "10x 3x bamboo",
@@ -517,6 +494,30 @@
         "pool_champ",
         "Magnificent",
         "ChristopheG1970.Fr"
+      ]
+    },
+    {
+      "matchId": 494156966,
+      "description": "10x 3x BN ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784751074,
+      "outcome": "loss",
+      "preRating": 1081,
+      "postRating": 1065,
+      "eloChange": -16,
+      "civ": "Khmer",
+      "teamAvgElo": 1050,
+      "opponentAvgElo": 1080,
+      "teammates": [
+        "Maxim Liann",
+        "baianitro",
+        "hingamp"
+      ],
+      "opponents": [
+        "pool_champ",
+        "Paladin",
+        "WDWKid3",
+        "golhmogh"
       ]
     }
   ]

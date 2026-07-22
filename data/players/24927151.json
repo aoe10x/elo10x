@@ -1,12 +1,12 @@
 {
   "profile_id": 24927151,
   "alias": "khouildi.tarek.tk",
-  "rating": 762,
-  "wins": 1,
+  "rating": 799,
+  "wins": 2,
   "losses": 15,
-  "gamesCount": 16,
-  "winRate": 6,
-  "lastPlayedAt": 1784684421,
+  "gamesCount": 17,
+  "winRate": 12,
+  "lastPlayedAt": 1784744988,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -26,7 +26,8 @@
     789,
     781,
     772,
-    762
+    762,
+    799
   ],
   "recentMatches": [
     {
@@ -411,6 +412,30 @@
         "Sal",
         "irvizuett",
         "WDWKid3"
+      ]
+    },
+    {
+      "matchId": 494134190,
+      "description": "10x 3x Bamboo (unbalanced and unfair) ;) ",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784744988,
+      "outcome": "win",
+      "preRating": 762,
+      "postRating": 799,
+      "eloChange": 37,
+      "civ": "Saracens",
+      "teamAvgElo": 945,
+      "opponentAvgElo": 1022,
+      "teammates": [
+        "gamingtars",
+        "arwinDutchy",
+        "Wozbo"
+      ],
+      "opponents": [
+        "Scipio",
+        "Borkan",
+        "[B] Cannino",
+        "Ghandi"
       ]
     }
   ]

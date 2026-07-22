@@ -1,12 +1,12 @@
 {
   "profile_id": 25228163,
   "alias": "Maxim Liann",
-  "rating": 1054,
-  "wins": 44,
-  "losses": 68,
-  "gamesCount": 112,
-  "winRate": 39,
-  "lastPlayedAt": 1784700772,
+  "rating": 1056,
+  "wins": 46,
+  "losses": 70,
+  "gamesCount": 116,
+  "winRate": 40,
+  "lastPlayedAt": 1784752290,
   "country": "br",
   "merged_ids": [
     13623515,
@@ -16,25 +16,24 @@
     1000,
     953,
     922,
-    898,
+    871,
     927,
     978,
     1027,
     992,
     963,
-    936,
     974,
     954,
+    992,
     974,
     950,
     979,
-    1007,
     984,
     969,
     957,
+    946,
     934,
     922,
-    911,
     899,
     890,
     882,
@@ -46,24 +45,23 @@
     848,
     871,
     861,
-    852,
+    879,
     904,
     896,
     919,
     909,
     898,
-    886,
     909,
     900,
+    892,
     914,
     937,
     925,
-    913,
     903,
     892,
     913,
+    933,
     952,
-    972,
     960,
     947,
     968,
@@ -76,24 +74,23 @@
     962,
     948,
     939,
-    927,
     916,
+    907,
     899,
     891,
     916,
     908,
-    899,
     921,
     943,
+    963,
     950,
     968,
     955,
-    973,
     959,
     944,
     963,
     949,
-    952,
+    934,
     971,
     988,
     973,
@@ -106,111 +103,18 @@
     1020,
     1040,
     1059,
-    1046,
     1063,
+    1080,
     1094,
     1079,
     1059,
     1074,
-    1054
+    1038,
+    1054,
+    1039,
+    1056
   ],
   "recentMatches": [
-    {
-      "matchId": 493801338,
-      "description": "10x 3x FKN BAMBOO",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1784607455,
-      "outcome": "win",
-      "preRating": 971,
-      "postRating": 988,
-      "eloChange": 17,
-      "civ": "Maya",
-      "teamAvgElo": 1046,
-      "opponentAvgElo": 998,
-      "teammates": [
-        "Memnoch449",
-        "平生不修善果 只爱石油军火",
-        "ZONIX"
-      ],
-      "opponents": [
-        "TUF | DUKE_NUKEM",
-        "Loki92sx",
-        "Horus",
-        "Monster_HK"
-      ]
-    },
-    {
-      "matchId": 493807415,
-      "description": "10x 3x FKN BAMBOO",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1784610285,
-      "outcome": "loss",
-      "preRating": 988,
-      "postRating": 973,
-      "eloChange": -15,
-      "civ": "Incas",
-      "teamAvgElo": 1023,
-      "opponentAvgElo": 1018,
-      "teammates": [
-        "adrian",
-        "fxsound",
-        "THE VIPER PERUANO"
-      ],
-      "opponents": [
-        "TUF | DUKE_NUKEM",
-        "Bob's Uncle",
-        "Magical Taylor",
-        "平生不修善果 只爱石油军火"
-      ]
-    },
-    {
-      "matchId": 493817251,
-      "description": "10x 3x FKN BAMBOO",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1784616797,
-      "outcome": "loss",
-      "preRating": 973,
-      "postRating": 959,
-      "eloChange": -14,
-      "civ": "Mongols",
-      "teamAvgElo": 1061,
-      "opponentAvgElo": 1025,
-      "teammates": [
-        "TUF | DUKE_NUKEM",
-        "RedBullWOLOLO26",
-        "NothingAtAll11"
-      ],
-      "opponents": [
-        "Moose",
-        "[B] Cannino",
-        "THE VIPER PERUANO",
-        "ZONIX"
-      ]
-    },
-    {
-      "matchId": 493825527,
-      "description": "10x 3x FKN BAMBOO",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1784622475,
-      "outcome": "loss",
-      "preRating": 959,
-      "postRating": 946,
-      "eloChange": -13,
-      "civ": "Unknown",
-      "teamAvgElo": 1046,
-      "opponentAvgElo": 1032,
-      "teammates": [
-        "TUF | DUKE_NUKEM",
-        "漫山哒哒哒",
-        "Akoros"
-      ],
-      "opponents": [
-        "紫蝶黄蜂俱有情",
-        "-DioX",
-        "DnD",
-        "Ye"
-      ]
-    },
     {
       "matchId": 493831360,
       "description": "10x 3x FKN BAMBOO",
@@ -593,6 +497,102 @@
         "Perxeus",
         "adrian",
         "menorahjury"
+      ]
+    },
+    {
+      "matchId": 494149137,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784749007,
+      "outcome": "loss",
+      "preRating": 1054,
+      "postRating": 1038,
+      "eloChange": -16,
+      "civ": "Aztecs",
+      "teamAvgElo": 1036,
+      "opponentAvgElo": 1064,
+      "teammates": [
+        "Parts",
+        "RIchard_Uy",
+        "notfound"
+      ],
+      "opponents": [
+        "Vince",
+        "yimacs_yoyoyo",
+        "Manba Out",
+        "r9maximus"
+      ]
+    },
+    {
+      "matchId": 494152956,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784749934,
+      "outcome": "win",
+      "preRating": 1038,
+      "postRating": 1054,
+      "eloChange": 16,
+      "civ": "Byzantines",
+      "teamAvgElo": 1031,
+      "opponentAvgElo": 1035,
+      "teammates": [
+        "r9maximus",
+        "notfound",
+        "AAA"
+      ],
+      "opponents": [
+        "baianitro",
+        "yimacs_yoyoyo",
+        "Parts",
+        "Paladin"
+      ]
+    },
+    {
+      "matchId": 494156966,
+      "description": "10x 3x BN ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784751074,
+      "outcome": "loss",
+      "preRating": 1054,
+      "postRating": 1039,
+      "eloChange": -15,
+      "civ": "Huns",
+      "teamAvgElo": 1050,
+      "opponentAvgElo": 1080,
+      "teammates": [
+        "_Zeruch_",
+        "baianitro",
+        "hingamp"
+      ],
+      "opponents": [
+        "pool_champ",
+        "Paladin",
+        "WDWKid3",
+        "golhmogh"
+      ]
+    },
+    {
+      "matchId": 494161204,
+      "description": "10x 3x BN ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784752290,
+      "outcome": "win",
+      "preRating": 1039,
+      "postRating": 1056,
+      "eloChange": 17,
+      "civ": "Malians",
+      "teamAvgElo": 1047,
+      "opponentAvgElo": 1069,
+      "teammates": [
+        "Cheesewheel24",
+        "golhmogh",
+        "apolizer"
+      ],
+      "opponents": [
+        "pool_champ",
+        "Goodsoup",
+        "Feitoria",
+        "WDWKid3"
       ]
     }
   ]

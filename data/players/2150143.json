@@ -1,12 +1,12 @@
 {
   "profile_id": 2150143,
   "alias": "arwinDutchy",
-  "rating": 965,
-  "wins": 33,
+  "rating": 984,
+  "wins": 34,
   "losses": 41,
-  "gamesCount": 74,
+  "gamesCount": 75,
   "winRate": 45,
-  "lastPlayedAt": 1781287577,
+  "lastPlayedAt": 1784744988,
   "country": "nl",
   "merged_ids": [],
   "ratingHistory": [
@@ -84,33 +84,10 @@
     938,
     960,
     947,
-    965
+    965,
+    984
   ],
   "recentMatches": [
-    {
-      "matchId": 440929769,
-      "description": "bamboo 10x 3x",
-      "mapname": "Bamboo Nothing_Paren_Vlocal_V2.5",
-      "timestamp": 1766090400,
-      "outcome": "win",
-      "preRating": 1012,
-      "postRating": 1030,
-      "eloChange": 18,
-      "civ": "Unknown",
-      "teamAvgElo": 964,
-      "opponentAvgElo": 1050,
-      "teammates": [
-        "McKrakfejs",
-        "Enn Tore",
-        "Gregory"
-      ],
-      "opponents": [
-        "NothingAtAll11",
-        "Lumedge",
-        "D3v1l",
-        "Nordsee"
-      ]
-    },
     {
       "matchId": 441508147,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -565,6 +542,30 @@
         "CaptainBarbossa",
         "[TSU] I-am-the-1AW",
         "[TSU] MrFluffyBunny"
+      ]
+    },
+    {
+      "matchId": 494134190,
+      "description": "10x 3x Bamboo (unbalanced and unfair) ;) ",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784744988,
+      "outcome": "win",
+      "preRating": 965,
+      "postRating": 984,
+      "eloChange": 19,
+      "civ": "Tatars",
+      "teamAvgElo": 945,
+      "opponentAvgElo": 1022,
+      "teammates": [
+        "gamingtars",
+        "khouildi.tarek.tk",
+        "Wozbo"
+      ],
+      "opponents": [
+        "Scipio",
+        "Borkan",
+        "[B] Cannino",
+        "Ghandi"
       ]
     }
   ]

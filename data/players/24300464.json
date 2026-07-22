@@ -1,12 +1,12 @@
 {
   "profile_id": 24300464,
   "alias": "Manba Out",
-  "rating": 1068,
-  "wins": 36,
-  "losses": 26,
-  "gamesCount": 62,
-  "winRate": 58,
-  "lastPlayedAt": 1784576945,
+  "rating": 1051,
+  "wins": 37,
+  "losses": 28,
+  "gamesCount": 65,
+  "winRate": 57,
+  "lastPlayedAt": 1784749007,
   "country": "cn",
   "merged_ids": [
     13472076,
@@ -75,81 +75,12 @@
     1092,
     1073,
     1087,
-    1068
+    1068,
+    1050,
+    1035,
+    1051
   ],
   "recentMatches": [
-    {
-      "matchId": 491361854,
-      "description": "4vs4 10x 3x shared civ bonus, random civ",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1783705975,
-      "outcome": "win",
-      "preRating": 1114,
-      "postRating": 1125,
-      "eloChange": 11,
-      "civ": "Jurchens",
-      "teamAvgElo": 1039,
-      "opponentAvgElo": 1002,
-      "teammates": [
-        "yimacs_yoyoyo",
-        "sppd3181",
-        "iamatthe.hell"
-      ],
-      "opponents": [
-        "MarieBrutale",
-        "BearBrown",
-        "Lumedge",
-        "DnD"
-      ]
-    },
-    {
-      "matchId": 491367409,
-      "description": "Bamboo 10x 3x",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783707728,
-      "outcome": "win",
-      "preRating": 1125,
-      "postRating": 1137,
-      "eloChange": 12,
-      "civ": "Maya",
-      "teamAvgElo": 1065,
-      "opponentAvgElo": 1038,
-      "teammates": [
-        "OldManofStorr",
-        "wintre",
-        "Dr.Ao"
-      ],
-      "opponents": [
-        "Eddie",
-        "Saloon_F_F",
-        "bigjames",
-        "Parts"
-      ]
-    },
-    {
-      "matchId": 491386399,
-      "description": "10x civ  3x tech Forest nothing",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783713601,
-      "outcome": "win",
-      "preRating": 1137,
-      "postRating": 1149,
-      "eloChange": 12,
-      "civ": "Wei",
-      "teamAvgElo": 1068,
-      "opponentAvgElo": 1060,
-      "teammates": [
-        "Chikna Raavan",
-        "Maic",
-        "pandasadnap"
-      ],
-      "opponents": [
-        "VAPE NAYSH Y'ALL",
-        "Joseph",
-        "Kaa Da Kaveman",
-        "田瘾犯了"
-      ]
-    },
     {
       "matchId": 491392795,
       "description": "10x 3x Bamboo - 10xshared.com",
@@ -556,6 +487,78 @@
         "LetCarton233702",
         "Jelly",
         "NothingAtAll11"
+      ]
+    },
+    {
+      "matchId": 494129718,
+      "description": "10x 3x Bamboo (unbalanced and unfair) ",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784743440,
+      "outcome": "loss",
+      "preRating": 1068,
+      "postRating": 1050,
+      "eloChange": -18,
+      "civ": "Portuguese",
+      "teamAvgElo": 1035,
+      "opponentAvgElo": 1031,
+      "teammates": [
+        "Scipio",
+        "wintre",
+        "AMMO2000"
+      ],
+      "opponents": [
+        "gamingtars",
+        "WalsuG",
+        "im slow",
+        "UweTellkamp"
+      ]
+    },
+    {
+      "matchId": 494141249,
+      "description": "10x 3x Bamboo (a hard row to ho) ",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784746710,
+      "outcome": "loss",
+      "preRating": 1050,
+      "postRating": 1035,
+      "eloChange": -15,
+      "civ": "Magyars",
+      "teamAvgElo": 1023,
+      "opponentAvgElo": 1062,
+      "teammates": [
+        "Scipio",
+        "Drancerpy",
+        "TheCobra"
+      ],
+      "opponents": [
+        "Parts",
+        "Armyofme_",
+        "Vince",
+        "yimacs_yoyoyo"
+      ]
+    },
+    {
+      "matchId": 494149137,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784749007,
+      "outcome": "win",
+      "preRating": 1035,
+      "postRating": 1051,
+      "eloChange": 16,
+      "civ": "Cumans",
+      "teamAvgElo": 1064,
+      "opponentAvgElo": 1036,
+      "teammates": [
+        "Vince",
+        "yimacs_yoyoyo",
+        "r9maximus"
+      ],
+      "opponents": [
+        "Parts",
+        "Maxim Liann",
+        "RIchard_Uy",
+        "notfound"
       ]
     }
   ]
