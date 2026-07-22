@@ -1,12 +1,12 @@
 {
   "profile_id": 1143927,
   "alias": "ernestocorrea18",
-  "rating": 926,
+  "rating": 915,
   "wins": 29,
-  "losses": 45,
-  "gamesCount": 74,
+  "losses": 46,
+  "gamesCount": 75,
   "winRate": 39,
-  "lastPlayedAt": 1784262375,
+  "lastPlayedAt": 1784685747,
   "country": "co",
   "merged_ids": [],
   "ratingHistory": [
@@ -84,33 +84,10 @@
     931,
     919,
     939,
-    926
+    926,
+    915
   ],
   "recentMatches": [
-    {
-      "matchId": 487884306,
-      "description": "bamboo nothing 10x",
-      "mapname": "Bamboo Nothing V3 (Bali)",
-      "timestamp": 1782357849,
-      "outcome": "loss",
-      "preRating": 982,
-      "postRating": 970,
-      "eloChange": -12,
-      "civ": "Vietnamese",
-      "teamAvgElo": 1002,
-      "opponentAvgElo": 1060,
-      "teammates": [
-        "[B] Zennith",
-        "LAITH",
-        "Manfrompi"
-      ],
-      "opponents": [
-        "Hexicero",
-        "SpiniestTuna222",
-        "babeleo",
-        "113312547"
-      ]
-    },
     {
       "matchId": 488885696,
       "description": "bamboo nothing 10x",
@@ -145,7 +122,7 @@
       "postRating": 976,
       "eloChange": -14,
       "civ": "Koreans",
-      "teamAvgElo": 1047,
+      "teamAvgElo": 1048,
       "opponentAvgElo": 1043,
       "teammates": [
         "Fringnut",
@@ -218,7 +195,7 @@
       "eloChange": -13,
       "civ": "Persians",
       "teamAvgElo": 979,
-      "opponentAvgElo": 1020,
+      "opponentAvgElo": 1021,
       "teammates": [
         "Arosive",
         "Master Polo4905",
@@ -410,7 +387,7 @@
       "eloChange": -14,
       "civ": "Malay",
       "teamAvgElo": 965,
-      "opponentAvgElo": 997,
+      "opponentAvgElo": 998,
       "teammates": [
         "khouildi.tarek.tk",
         "Bifbatz",
@@ -530,7 +507,7 @@
       "eloChange": 20,
       "civ": "Malay",
       "teamAvgElo": 1048,
-      "opponentAvgElo": 1001,
+      "opponentAvgElo": 1002,
       "teammates": [
         "typ53b90",
         "Monkeymonk",
@@ -554,7 +531,7 @@
       "eloChange": -13,
       "civ": "Bulgarians",
       "teamAvgElo": 1075,
-      "opponentAvgElo": 1004,
+      "opponentAvgElo": 1003,
       "teammates": [
         "Parenquima",
         "bigabyte",
@@ -565,6 +542,30 @@
         "Thí Chủ Chết Chưa",
         "aLEXt",
         "Brotherman Bill"
+      ]
+    },
+    {
+      "matchId": 493999831,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784685747,
+      "outcome": "loss",
+      "preRating": 926,
+      "postRating": 915,
+      "eloChange": -11,
+      "civ": "Japanese",
+      "teamAvgElo": 1026,
+      "opponentAvgElo": 1040,
+      "teammates": [
+        "G",
+        "Surnrnoner",
+        "Master.Ji.ro.714"
+      ],
+      "opponents": [
+        "Parts",
+        "Maxim Liann",
+        "WipiWi",
+        "399 the Grizzly Bear - RIP <3"
       ]
     }
   ]

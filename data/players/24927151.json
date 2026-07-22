@@ -1,12 +1,12 @@
 {
   "profile_id": 24927151,
   "alias": "khouildi.tarek.tk",
-  "rating": 772,
+  "rating": 762,
   "wins": 1,
-  "losses": 14,
-  "gamesCount": 15,
-  "winRate": 7,
-  "lastPlayedAt": 1784656302,
+  "losses": 15,
+  "gamesCount": 16,
+  "winRate": 6,
+  "lastPlayedAt": 1784684421,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -25,7 +25,8 @@
     803,
     789,
     781,
-    772
+    772,
+    762
   ],
   "recentMatches": [
     {
@@ -38,7 +39,7 @@
       "postRating": 957,
       "eloChange": -43,
       "civ": "Slavs",
-      "teamAvgElo": 987,
+      "teamAvgElo": 986,
       "opponentAvgElo": 1036,
       "teammates": [
         "EL__PATRON",
@@ -63,7 +64,7 @@
       "eloChange": -41,
       "civ": "Saracens",
       "teamAvgElo": 965,
-      "opponentAvgElo": 997,
+      "opponentAvgElo": 998,
       "teammates": [
         "ernestocorrea18",
         "Bifbatz",
@@ -278,8 +279,8 @@
       "postRating": 816,
       "eloChange": -14,
       "civ": "Berbers",
-      "teamAvgElo": 1049,
-      "opponentAvgElo": 1054,
+      "teamAvgElo": 1048,
+      "opponentAvgElo": 1055,
       "teammates": [
         "PITON | Shepy",
         "wintre",
@@ -386,6 +387,30 @@
         "jpllops",
         "megermeger",
         "LonelyKnight"
+      ]
+    },
+    {
+      "matchId": 493995958,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784684421,
+      "outcome": "loss",
+      "preRating": 772,
+      "postRating": 762,
+      "eloChange": -10,
+      "civ": "Italians",
+      "teamAvgElo": 981,
+      "opponentAvgElo": 999,
+      "teammates": [
+        "NoAgendaPODCAST",
+        "Dinger",
+        "399 the Grizzly Bear - RIP <3"
+      ],
+      "opponents": [
+        "I Love Clean Coal",
+        "Sal",
+        "irvizuett",
+        "WDWKid3"
       ]
     }
   ]

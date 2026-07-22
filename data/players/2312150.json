@@ -1,12 +1,12 @@
 {
   "profile_id": 2312150,
   "alias": "Perxeus",
-  "rating": 938,
+  "rating": 905,
   "wins": 9,
-  "losses": 18,
-  "gamesCount": 27,
-  "winRate": 33,
-  "lastPlayedAt": 1784092320,
+  "losses": 21,
+  "gamesCount": 30,
+  "winRate": 30,
+  "lastPlayedAt": 1784698123,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -37,81 +37,12 @@
     941,
     960,
     949,
-    938
+    938,
+    930,
+    921,
+    905
   ],
   "recentMatches": [
-    {
-      "matchId": 487195364,
-      "description": "10x 3x Bamboo - 10xshared.com",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1782085858,
-      "outcome": "win",
-      "preRating": 890,
-      "postRating": 939,
-      "eloChange": 49,
-      "civ": "Poles",
-      "teamAvgElo": 1029,
-      "opponentAvgElo": 1007,
-      "teammates": [
-        "Parts",
-        "Phantom_",
-        "aLEXt"
-      ],
-      "opponents": [
-        "[TodEs] MnTartara",
-        "goldinggunsandparts",
-        "Zortopos",
-        "DRAX"
-      ]
-    },
-    {
-      "matchId": 487106160,
-      "description": "10x 3x BN",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1782087000,
-      "outcome": "win",
-      "preRating": 939,
-      "postRating": 978,
-      "eloChange": 39,
-      "civ": "Dravidians",
-      "teamAvgElo": 1016,
-      "opponentAvgElo": 977,
-      "teammates": [
-        "Bachter",
-        "Tiny Hands",
-        "gamingtars"
-      ],
-      "opponents": [
-        "PITON | Shepy",
-        "[SMUD]LocalBro",
-        "pool_champ",
-        "PIEROGI"
-      ]
-    },
-    {
-      "matchId": 487198278,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "my map",
-      "timestamp": 1782087008,
-      "outcome": "loss",
-      "preRating": 978,
-      "postRating": 953,
-      "eloChange": -25,
-      "civ": "Khmer",
-      "teamAvgElo": 1004,
-      "opponentAvgElo": 1069,
-      "teammates": [
-        "Parts",
-        "Zortopos",
-        "jorgeviveros3"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "RawChicken",
-        "edalmavuz",
-        "aLEXt"
-      ]
-    },
     {
       "matchId": 487224122,
       "description": "10X 3X BN NO NOOBS",
@@ -122,7 +53,7 @@
       "postRating": 924,
       "eloChange": -29,
       "civ": "Gurjaras",
-      "teamAvgElo": 1013,
+      "teamAvgElo": 1012,
       "opponentAvgElo": 982,
       "teammates": [
         "duckbuildperson",
@@ -411,7 +342,7 @@
       "eloChange": -15,
       "civ": "Bengalis",
       "teamAvgElo": 1029,
-      "opponentAvgElo": 990,
+      "opponentAvgElo": 991,
       "teammates": [
         "TJ",
         "Holy Cheetos",
@@ -518,6 +449,78 @@
         "The Cobra Brothers",
         "Paladin",
         "beat"
+      ]
+    },
+    {
+      "matchId": 494023559,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784695762,
+      "outcome": "loss",
+      "preRating": 938,
+      "postRating": 930,
+      "eloChange": -8,
+      "civ": "Magyars",
+      "teamAvgElo": 1002,
+      "opponentAvgElo": 1140,
+      "teammates": [
+        "TUF | DUKE_NUKEM",
+        "menorahjury",
+        "Moose"
+      ],
+      "opponents": [
+        "GrandUni",
+        "田瘾犯了",
+        "[B] Cannino",
+        "Vince"
+      ]
+    },
+    {
+      "matchId": 494025476,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784696860,
+      "outcome": "loss",
+      "preRating": 930,
+      "postRating": 921,
+      "eloChange": -9,
+      "civ": "Romans",
+      "teamAvgElo": 1014,
+      "opponentAvgElo": 1095,
+      "teammates": [
+        "menorahjury",
+        "fxsound",
+        "ZONIX"
+      ],
+      "opponents": [
+        "TUF | DUKE_NUKEM",
+        "[B] Cannino",
+        "Ray",
+        "田瘾犯了"
+      ]
+    },
+    {
+      "matchId": 494028017,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784698123,
+      "outcome": "loss",
+      "preRating": 921,
+      "postRating": 905,
+      "eloChange": -16,
+      "civ": "Spanish",
+      "teamAvgElo": 1000,
+      "opponentAvgElo": 929,
+      "teammates": [
+        "TUF | DUKE_NUKEM",
+        "adrian",
+        "Missing2Sheep"
+      ],
+      "opponents": [
+        "fxsound",
+        "menorahjury",
+        "naponeng",
+        "wwe"
       ]
     }
   ]

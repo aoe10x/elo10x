@@ -1,12 +1,12 @@
 {
   "profile_id": 25707591,
   "alias": "menorahjury",
-  "rating": 955,
-  "wins": 6,
-  "losses": 12,
-  "gamesCount": 18,
+  "rating": 954,
+  "wins": 7,
+  "losses": 14,
+  "gamesCount": 21,
   "winRate": 33,
-  "lastPlayedAt": 1784672642,
+  "lastPlayedAt": 1784698123,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -28,33 +28,12 @@
     907,
     943,
     971,
-    955
+    955,
+    945,
+    935,
+    954
   ],
   "recentMatches": [
-    {
-      "matchId": 487869867,
-      "description": "10x 3x BN ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1782352033,
-      "outcome": "win",
-      "preRating": 1000,
-      "postRating": 1054,
-      "eloChange": 54,
-      "civ": "Unknown",
-      "teamAvgElo": 1043,
-      "opponentAvgElo": 1041,
-      "teammates": [
-        "HighPriestCaco",
-        "Yoreik",
-        "ActualWizard"
-      ],
-      "opponents": [
-        "pool_champ",
-        "Hexicero",
-        "勇战到抵",
-        "Preacher!"
-      ]
-    },
     {
       "matchId": 488333105,
       "description": "10x Shared 3xTech Bamboo Nothing",
@@ -461,6 +440,78 @@
         "MarieBrutale",
         "kiggless",
         "Emusan"
+      ]
+    },
+    {
+      "matchId": 494023559,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784695762,
+      "outcome": "loss",
+      "preRating": 955,
+      "postRating": 945,
+      "eloChange": -10,
+      "civ": "Britons",
+      "teamAvgElo": 1002,
+      "opponentAvgElo": 1140,
+      "teammates": [
+        "TUF | DUKE_NUKEM",
+        "Moose",
+        "Perxeus"
+      ],
+      "opponents": [
+        "GrandUni",
+        "田瘾犯了",
+        "[B] Cannino",
+        "Vince"
+      ]
+    },
+    {
+      "matchId": 494025476,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784696860,
+      "outcome": "loss",
+      "preRating": 945,
+      "postRating": 935,
+      "eloChange": -10,
+      "civ": "Vietnamese",
+      "teamAvgElo": 1014,
+      "opponentAvgElo": 1095,
+      "teammates": [
+        "Perxeus",
+        "fxsound",
+        "ZONIX"
+      ],
+      "opponents": [
+        "TUF | DUKE_NUKEM",
+        "[B] Cannino",
+        "Ray",
+        "田瘾犯了"
+      ]
+    },
+    {
+      "matchId": 494028017,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784698123,
+      "outcome": "win",
+      "preRating": 935,
+      "postRating": 954,
+      "eloChange": 19,
+      "civ": "Poles",
+      "teamAvgElo": 929,
+      "opponentAvgElo": 1000,
+      "teammates": [
+        "fxsound",
+        "naponeng",
+        "wwe"
+      ],
+      "opponents": [
+        "TUF | DUKE_NUKEM",
+        "Perxeus",
+        "adrian",
+        "Missing2Sheep"
       ]
     }
   ]

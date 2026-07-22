@@ -1,11 +1,11 @@
 {
   "profile_id": 4070688,
   "alias": "SmokeJumpers",
-  "rating": 1050,
-  "wins": 17,
+  "rating": 1063,
+  "wins": 18,
   "losses": 16,
-  "gamesCount": 33,
-  "winRate": 52,
+  "gamesCount": 34,
+  "winRate": 53,
   "lastPlayedAt": 1778882340,
   "country": "tr",
   "merged_ids": [],
@@ -43,33 +43,10 @@
     1030,
     1047,
     1063,
-    1050
+    1077,
+    1063
   ],
   "recentMatches": [
-    {
-      "matchId": 374690789,
-      "description": "10x - 3x BAMBOO NOTHING  4V4",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1740539700,
-      "outcome": "loss",
-      "preRating": 1094,
-      "postRating": 1058,
-      "eloChange": -36,
-      "civ": "Hindustanis",
-      "teamAvgElo": 1014,
-      "opponentAvgElo": 978,
-      "teammates": [
-        "dRea",
-        "zDeathManz",
-        "StreamerOffline"
-      ],
-      "opponents": [
-        "TabA_ausitin",
-        "peanut butter",
-        "Scrat",
-        "Antimier"
-      ]
-    },
     {
       "matchId": 387741492,
       "description": "10x 3x BAMBOO NO NOOB",
@@ -503,16 +480,40 @@
       ]
     },
     {
+      "matchId": 477364449,
+      "description": "Bamboo or other maps 11shared civ mod x3",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1778623820,
+      "outcome": "win",
+      "preRating": 1063,
+      "postRating": 1077,
+      "eloChange": 14,
+      "civ": "Armenians",
+      "teamAvgElo": 1044,
+      "opponentAvgElo": 1022,
+      "teammates": [
+        "Natascha",
+        "nut sharpshooter",
+        "WipiWi"
+      ],
+      "opponents": [
+        "ToBe",
+        "TM AndresgP",
+        "DJ",
+        "TsC_BaTTouSai"
+      ]
+    },
+    {
       "matchId": 477961840,
       "description": "BAMBOO 10x - 3x  **NO NOOB",
       "mapname": "Bamboo Nothing - Scorpyon De",
       "timestamp": 1778882340,
       "outcome": "loss",
-      "preRating": 1063,
-      "postRating": 1050,
-      "eloChange": -13,
+      "preRating": 1077,
+      "postRating": 1063,
+      "eloChange": -14,
       "civ": "Mongols",
-      "teamAvgElo": 1032,
+      "teamAvgElo": 1035,
       "opponentAvgElo": 1125,
       "teammates": [
         "dRea",

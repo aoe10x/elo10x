@@ -1,12 +1,12 @@
 {
   "profile_id": 2843438,
   "alias": "Scipio",
-  "rating": 1086,
+  "rating": 1071,
   "wins": 47,
-  "losses": 44,
-  "gamesCount": 91,
-  "winRate": 52,
-  "lastPlayedAt": 1784682678,
+  "losses": 45,
+  "gamesCount": 92,
+  "winRate": 51,
+  "lastPlayedAt": 1784683852,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -101,33 +101,10 @@
     1102,
     1086,
     1102,
-    1086
+    1086,
+    1071
   ],
   "recentMatches": [
-    {
-      "matchId": 493595093,
-      "description": "10x 3x Bamboo (unfair and unbalanced)",
-      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
-      "timestamp": 1784526901,
-      "outcome": "win",
-      "preRating": 1036,
-      "postRating": 1052,
-      "eloChange": 16,
-      "civ": "Britons",
-      "teamAvgElo": 1085,
-      "opponentAvgElo": 1028,
-      "teammates": [
-        "[B] Cannino",
-        "紫蝶黄蜂俱有情",
-        "Abelardo4tojr"
-      ],
-      "opponents": [
-        "edalmavuz",
-        "-[RDU]- Gorda America Forever",
-        "Avexaon",
-        "mothysime11"
-      ]
-    },
     {
       "matchId": 493832958,
       "description": "10x 3x Bamboo (very fun) rank.10xshared.com",
@@ -499,7 +476,7 @@
       "eloChange": -20,
       "civ": "Vikings",
       "teamAvgElo": 1004,
-      "opponentAvgElo": 1030,
+      "opponentAvgElo": 1027,
       "teammates": [
         "DPK75",
         "Arosive",
@@ -546,7 +523,7 @@
       "postRating": 1102,
       "eloChange": 16,
       "civ": "Sicilians",
-      "teamAvgElo": 1079,
+      "teamAvgElo": 1080,
       "opponentAvgElo": 1085,
       "teammates": [
         "Vince",
@@ -582,6 +559,30 @@
         "ActualWizard",
         "[ ARKI ! ]",
         "Surnrnoner"
+      ]
+    },
+    {
+      "matchId": 493994288,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784683852,
+      "outcome": "loss",
+      "preRating": 1086,
+      "postRating": 1071,
+      "eloChange": -15,
+      "civ": "Britons",
+      "teamAvgElo": 1088,
+      "opponentAvgElo": 1108,
+      "teammates": [
+        "Parts",
+        "ActualWizard",
+        "G"
+      ],
+      "opponents": [
+        "Meursault005",
+        "WipiWi",
+        "田瘾犯了",
+        "Wolfund"
       ]
     }
   ]

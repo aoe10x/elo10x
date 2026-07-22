@@ -1,12 +1,12 @@
 {
   "profile_id": 9437092,
   "alias": "Belisarius",
-  "rating": 1040,
+  "rating": 1026,
   "wins": 17,
-  "losses": 15,
-  "gamesCount": 32,
-  "winRate": 53,
-  "lastPlayedAt": 1784640687,
+  "losses": 16,
+  "gamesCount": 33,
+  "winRate": 52,
+  "lastPlayedAt": 1784689082,
   "country": "tr",
   "merged_ids": [
     9437092,
@@ -45,33 +45,10 @@
     1051,
     1036,
     1021,
-    1040
+    1040,
+    1026
   ],
   "recentMatches": [
-    {
-      "matchId": 491201433,
-      "description": "10x Shared Civ Bonus 4v4 Random ",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1783643224,
-      "outcome": "loss",
-      "preRating": 1041,
-      "postRating": 1013,
-      "eloChange": -28,
-      "civ": "Portuguese",
-      "teamAvgElo": 1040,
-      "opponentAvgElo": 1056,
-      "teammates": [
-        "ArchiCraig",
-        "RedBullWOLOLO26",
-        "ZaySol"
-      ],
-      "opponents": [
-        "Kumad",
-        "Myriad",
-        "Arteik",
-        "Brohio"
-      ]
-    },
     {
       "matchId": 491207596,
       "description": "10x Shared Civ Bonus 4v4 Random ",
@@ -82,8 +59,8 @@
       "postRating": 993,
       "eloChange": -20,
       "civ": "Spanish",
-      "teamAvgElo": 1055,
-      "opponentAvgElo": 1115,
+      "teamAvgElo": 1054,
+      "opponentAvgElo": 1114,
       "teammates": [
         "ArchiCraig",
         "RedBullWOLOLO26",
@@ -130,7 +107,7 @@
       "postRating": 1034,
       "eloChange": 20,
       "civ": "Jurchens",
-      "teamAvgElo": 1035,
+      "teamAvgElo": 1036,
       "opponentAvgElo": 948,
       "teammates": [
         "[CSGS]Runescape",
@@ -154,8 +131,8 @@
       "postRating": 1014,
       "eloChange": -20,
       "civ": "Magyars",
-      "teamAvgElo": 1079,
-      "opponentAvgElo": 1079,
+      "teamAvgElo": 1078,
+      "opponentAvgElo": 1078,
       "teammates": [
         "feid_",
         "Akoros",
@@ -178,8 +155,8 @@
       "postRating": 1035,
       "eloChange": 21,
       "civ": "Britons",
-      "teamAvgElo": 1085,
-      "opponentAvgElo": 1018,
+      "teamAvgElo": 1084,
+      "opponentAvgElo": 1017,
       "teammates": [
         "Kumad",
         "Myriad",
@@ -466,7 +443,7 @@
       "postRating": 1036,
       "eloChange": -15,
       "civ": "Unknown",
-      "teamAvgElo": 1027,
+      "teamAvgElo": 1028,
       "opponentAvgElo": 1067,
       "teammates": [
         "jair_silva",
@@ -526,6 +503,30 @@
         "kaka52pk",
         "我是ikun",
         "GrandUni"
+      ]
+    },
+    {
+      "matchId": 494009212,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784689082,
+      "outcome": "loss",
+      "preRating": 1040,
+      "postRating": 1026,
+      "eloChange": -14,
+      "civ": "Poles",
+      "teamAvgElo": 1044,
+      "opponentAvgElo": 1081,
+      "teammates": [
+        "EL__PATRON",
+        "[TodEs] MnTartara",
+        "Karthusxx"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "fxsound",
+        "feid_"
       ]
     }
   ]

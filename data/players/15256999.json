@@ -1,14 +1,17 @@
 {
-  "profile_id": 12278494,
+  "profile_id": 15256999,
   "alias": "Karthusxx",
-  "rating": 992,
-  "wins": 13,
-  "losses": 16,
-  "gamesCount": 29,
-  "winRate": 45,
-  "lastPlayedAt": 1779185760,
-  "country": "Unknown",
-  "merged_ids": [],
+  "rating": 1015,
+  "wins": 15,
+  "losses": 17,
+  "gamesCount": 32,
+  "winRate": 47,
+  "lastPlayedAt": 1784689082,
+  "country": "es",
+  "merged_ids": [
+    12278494,
+    15256999
+  ],
   "ratingHistory": [
     1000,
     1052,
@@ -39,81 +42,12 @@
     1032,
     1018,
     1006,
-    992
+    992,
+    1012,
+    1029,
+    1015
   ],
   "recentMatches": [
-    {
-      "matchId": 366012794,
-      "description": "10x Shared - 3x Tech BAMBOO 4V4",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1737192240,
-      "outcome": "win",
-      "preRating": 968,
-      "postRating": 1013,
-      "eloChange": 45,
-      "civ": "Unknown",
-      "teamAvgElo": 973,
-      "opponentAvgElo": 1084,
-      "teammates": [
-        "dRea",
-        "Monkeymonk",
-        "Bob's Uncle"
-      ],
-      "opponents": [
-        "procrastination.exe",
-        "Parts",
-        "TheRiceMan",
-        "Rita De Valencia"
-      ]
-    },
-    {
-      "matchId": 371232171,
-      "description": "10x Shared Turbo Tunnel",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1739175480,
-      "outcome": "loss",
-      "preRating": 1013,
-      "postRating": 986,
-      "eloChange": -27,
-      "civ": "Vietnamese",
-      "teamAvgElo": 1039,
-      "opponentAvgElo": 1069,
-      "teammates": [
-        "{R} Parry",
-        "ArchiCraig",
-        "[cLm] Persie"
-      ],
-      "opponents": [
-        "devilishnutcracker",
-        "MancoNoMicro",
-        "OhSheeep",
-        "Mikenico95"
-      ]
-    },
-    {
-      "matchId": 371233411,
-      "description": "10x Shared Civ 4v4 Random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1739176260,
-      "outcome": "loss",
-      "preRating": 986,
-      "postRating": 958,
-      "eloChange": -28,
-      "civ": "Unknown",
-      "teamAvgElo": 1090,
-      "opponentAvgElo": 1012,
-      "teammates": [
-        "Kumad",
-        "Myriad",
-        "MancoNoMicro"
-      ],
-      "opponents": [
-        "HighPriestCaco",
-        "ArchiCraig",
-        "devilishnutcracker",
-        "ActualWizard"
-      ]
-    },
     {
       "matchId": 373190415,
       "description": "10X Shared Civ Bonus Random CIV",
@@ -520,6 +454,78 @@
         "edalmavuz",
         "helianth",
         "sniper-123"
+      ]
+    },
+    {
+      "matchId": 494001361,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784686566,
+      "outcome": "win",
+      "preRating": 992,
+      "postRating": 1012,
+      "eloChange": 20,
+      "civ": "Hindustanis",
+      "teamAvgElo": 1068,
+      "opponentAvgElo": 1077,
+      "teammates": [
+        "EL__PATRON",
+        "fxsound",
+        "The Cobra Brothers"
+      ],
+      "opponents": [
+        "Kumad",
+        "feid_",
+        "Myriad",
+        "[TodEs] MnTartara"
+      ]
+    },
+    {
+      "matchId": 494005679,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784687866,
+      "outcome": "win",
+      "preRating": 1012,
+      "postRating": 1029,
+      "eloChange": 17,
+      "civ": "Chinese",
+      "teamAvgElo": 1076,
+      "opponentAvgElo": 1031,
+      "teammates": [
+        "Kumad",
+        "Myriad",
+        "fxsound"
+      ],
+      "opponents": [
+        "[TodEs] MnTartara",
+        "EL__PATRON",
+        "feid_",
+        "omar"
+      ]
+    },
+    {
+      "matchId": 494009212,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784689082,
+      "outcome": "loss",
+      "preRating": 1029,
+      "postRating": 1015,
+      "eloChange": -14,
+      "civ": "Teutons",
+      "teamAvgElo": 1044,
+      "opponentAvgElo": 1081,
+      "teammates": [
+        "EL__PATRON",
+        "[TodEs] MnTartara",
+        "Belisarius"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "fxsound",
+        "feid_"
       ]
     }
   ]

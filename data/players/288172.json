@@ -1,12 +1,12 @@
 {
   "profile_id": 288172,
   "alias": "omar",
-  "rating": 981,
+  "rating": 969,
   "wins": 57,
-  "losses": 42,
-  "gamesCount": 99,
-  "winRate": 58,
-  "lastPlayedAt": 1783914267,
+  "losses": 43,
+  "gamesCount": 100,
+  "winRate": 57,
+  "lastPlayedAt": 1784687866,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -60,7 +60,6 @@
     1131,
     1141,
     1151,
-    1161,
     1139,
     1150,
     1160,
@@ -109,33 +108,10 @@
     989,
     972,
     961,
-    981
+    981,
+    969
   ],
   "recentMatches": [
-    {
-      "matchId": 395544542,
-      "description": "10x3x Diff map  shared bonus random civ  no noob",
-      "mapname": "W4 - Kawasan",
-      "timestamp": 1748334060,
-      "outcome": "loss",
-      "preRating": 1029,
-      "postRating": 1013,
-      "eloChange": -16,
-      "civ": "Koreans",
-      "teamAvgElo": 1046,
-      "opponentAvgElo": 1034,
-      "teammates": [
-        "PITON | Shepy",
-        "菜神",
-        "juanmar983"
-      ],
-      "opponents": [
-        "Your Ego",
-        "BarqBarq",
-        "FPS Geo",
-        "Shadow"
-      ]
-    },
     {
       "matchId": 398964505,
       "description": "10x 3x bamboo",
@@ -590,6 +566,30 @@
         "-[RDU]- Gorda America Forever",
         "ActualWizard",
         "Ozyroth"
+      ]
+    },
+    {
+      "matchId": 494005679,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784687866,
+      "outcome": "loss",
+      "preRating": 981,
+      "postRating": 969,
+      "eloChange": -12,
+      "civ": "Slavs",
+      "teamAvgElo": 1031,
+      "opponentAvgElo": 1076,
+      "teammates": [
+        "[TodEs] MnTartara",
+        "EL__PATRON",
+        "feid_"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "fxsound",
+        "Karthusxx"
       ]
     }
   ]

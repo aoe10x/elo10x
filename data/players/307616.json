@@ -1,12 +1,12 @@
 {
   "profile_id": 307616,
   "alias": "Moose",
-  "rating": 1009,
-  "wins": 46,
-  "losses": 51,
-  "gamesCount": 97,
+  "rating": 1019,
+  "wins": 47,
+  "losses": 52,
+  "gamesCount": 99,
   "winRate": 47,
-  "lastPlayedAt": 1784616797,
+  "lastPlayedAt": 1784695762,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -57,24 +57,24 @@
     1094,
     1078,
     1064,
-    1052,
-    1066,
-    1079,
-    1064,
-    1050,
-    1033,
-    1049,
-    1066,
-    1050,
+    1051,
+    1065,
+    1078,
     1063,
     1049,
-    1068,
-    1084,
-    1068,
-    1050,
-    1033,
-    1019,
-    1005,
+    1032,
+    1048,
+    1065,
+    1049,
+    1062,
+    1048,
+    1067,
+    1083,
+    1067,
+    1049,
+    1032,
+    1018,
+    1004,
     988,
     975,
     960,
@@ -107,57 +107,11 @@
     1018,
     1004,
     990,
-    1009
+    1009,
+    1030,
+    1019
   ],
   "recentMatches": [
-    {
-      "matchId": 492403575,
-      "description": "10x Shared Civ Bonus 4v4 Random ",
-      "mapname": "Wet Woods v3.0.3",
-      "timestamp": 1784079068,
-      "outcome": "loss",
-      "preRating": 968,
-      "postRating": 958,
-      "eloChange": -10,
-      "civ": "Cumans",
-      "teamAvgElo": 1016,
-      "opponentAvgElo": 1094,
-      "teammates": [
-        "JoeyTribianni69",
-        "EL__PATRON",
-        "Ozyroth"
-      ],
-      "opponents": [
-        "Kumad",
-        "feid_",
-        "Myriad",
-        "Megatron"
-      ]
-    },
-    {
-      "matchId": 492446821,
-      "description": "10x 3x bamboo NO IDIOT",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1784099619,
-      "outcome": "loss",
-      "preRating": 958,
-      "postRating": 946,
-      "eloChange": -12,
-      "civ": "Sicilians",
-      "teamAvgElo": 1055,
-      "opponentAvgElo": 1052,
-      "teammates": [
-        "hoderebus",
-        "Chikna Raavan",
-        "golhmogh"
-      ],
-      "opponents": [
-        "Emusan",
-        "紫蝶黄蜂俱有情",
-        "Terry",
-        "beat"
-      ]
-    },
     {
       "matchId": 492618969,
       "description": "10x 3x Bamboo Donut - 10xshared.com",
@@ -241,7 +195,7 @@
       "eloChange": 17,
       "civ": "Wu",
       "teamAvgElo": 1076,
-      "opponentAvgElo": 993,
+      "opponentAvgElo": 994,
       "teammates": [
         "pool_champ",
         "田瘾犯了",
@@ -313,7 +267,7 @@
       "eloChange": -14,
       "civ": "Spanish",
       "teamAvgElo": 1113,
-      "opponentAvgElo": 1072,
+      "opponentAvgElo": 1071,
       "teammates": [
         "Not a Wizard",
         "田瘾犯了",
@@ -336,7 +290,7 @@
       "postRating": 995,
       "eloChange": -11,
       "civ": "Burgundians",
-      "teamAvgElo": 1028,
+      "teamAvgElo": 1029,
       "opponentAvgElo": 1120,
       "teammates": [
         "NoAgendaPODCAST",
@@ -457,7 +411,7 @@
       "eloChange": -11,
       "civ": "Burmese",
       "teamAvgElo": 1118,
-      "opponentAvgElo": 1131,
+      "opponentAvgElo": 1130,
       "teammates": [
         "typ53b90",
         "adrian",
@@ -577,7 +531,7 @@
       "eloChange": 19,
       "civ": "Gurjaras",
       "teamAvgElo": 1025,
-      "opponentAvgElo": 1062,
+      "opponentAvgElo": 1061,
       "teammates": [
         "[B] Cannino",
         "THE VIPER PERUANO",
@@ -588,6 +542,54 @@
         "Maxim Liann",
         "RedBullWOLOLO26",
         "NothingAtAll11"
+      ]
+    },
+    {
+      "matchId": 494021946,
+      "description": "10x 3x Bamboo best lobby",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784694820,
+      "outcome": "win",
+      "preRating": 1009,
+      "postRating": 1030,
+      "eloChange": 21,
+      "civ": "Burgundians",
+      "teamAvgElo": 1023,
+      "opponentAvgElo": 1111,
+      "teammates": [
+        "nooblet3300",
+        "[B] Cannino",
+        "HINEaKIN"
+      ],
+      "opponents": [
+        "typ53b90",
+        "adrian",
+        "TheMekanic",
+        "田瘾犯了"
+      ]
+    },
+    {
+      "matchId": 494023559,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784695762,
+      "outcome": "loss",
+      "preRating": 1030,
+      "postRating": 1019,
+      "eloChange": -11,
+      "civ": "Byzantines",
+      "teamAvgElo": 1002,
+      "opponentAvgElo": 1140,
+      "teammates": [
+        "TUF | DUKE_NUKEM",
+        "menorahjury",
+        "Perxeus"
+      ],
+      "opponents": [
+        "GrandUni",
+        "田瘾犯了",
+        "[B] Cannino",
+        "Vince"
       ]
     }
   ]
