@@ -1,12 +1,12 @@
 {
   "profile_id": 2116720,
   "alias": "gvv.vadim",
-  "rating": 863,
+  "rating": 855,
   "wins": 8,
-  "losses": 21,
-  "gamesCount": 29,
-  "winRate": 28,
-  "lastPlayedAt": 1779314100,
+  "losses": 22,
+  "gamesCount": 30,
+  "winRate": 27,
+  "lastPlayedAt": 1784708386,
   "country": "ru",
   "merged_ids": [],
   "ratingHistory": [
@@ -39,33 +39,10 @@
     890,
     881,
     871,
-    863
+    863,
+    855
   ],
   "recentMatches": [
-    {
-      "matchId": 358346984,
-      "description": "10x3tecn all random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1734235740,
-      "outcome": "win",
-      "preRating": 983,
-      "postRating": 1024,
-      "eloChange": 41,
-      "civ": "Gurjaras",
-      "teamAvgElo": 970,
-      "opponentAvgElo": 1058,
-      "teammates": [
-        "薇尔莉特",
-        "Haiderxv",
-        "Wololoo"
-      ],
-      "opponents": [
-        "BigAl",
-        "Coffeecream",
-        "yangcongze30",
-        "ISwaZz"
-      ]
-    },
     {
       "matchId": 361198400,
       "description": "BAMBOO 10x 3x Shared Turbo",
@@ -520,6 +497,30 @@
         "ChiH",
         "H0LLy2610",
         "Lietuva_"
+      ]
+    },
+    {
+      "matchId": 494042782,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784708386,
+      "outcome": "loss",
+      "preRating": 863,
+      "postRating": 855,
+      "eloChange": -8,
+      "civ": "Hindustanis",
+      "teamAvgElo": 962,
+      "opponentAvgElo": 1052,
+      "teammates": [
+        "TUF | DUKE_NUKEM",
+        "大秦帝国",
+        "wwe"
+      ],
+      "opponents": [
+        "Honey badger",
+        "^gOsO^",
+        "FleeingCarrot",
+        "eeddwwiinn200"
       ]
     }
   ]

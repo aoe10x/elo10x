@@ -1,12 +1,12 @@
 {
   "profile_id": 25115403,
   "alias": "Abelardo4tojr",
-  "rating": 1169,
+  "rating": 1148,
   "wins": 17,
-  "losses": 7,
-  "gamesCount": 24,
-  "winRate": 71,
-  "lastPlayedAt": 1784620024,
+  "losses": 8,
+  "gamesCount": 25,
+  "winRate": 68,
+  "lastPlayedAt": 1784711373,
   "country": "mx",
   "merged_ids": [
     13603326,
@@ -37,33 +37,10 @@
     1175,
     1183,
     1192,
-    1169
+    1169,
+    1148
   ],
   "recentMatches": [
-    {
-      "matchId": 484487905,
-      "description": "10x 3x Bamboo best lobby",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1781175660,
-      "outcome": "win",
-      "preRating": 1093,
-      "postRating": 1131,
-      "eloChange": 38,
-      "civ": "Vikings",
-      "teamAvgElo": 1007,
-      "opponentAvgElo": 1063,
-      "teammates": [
-        "hoderebus",
-        "kared117",
-        "[B] Zennith"
-      ],
-      "opponents": [
-        "typ53b90",
-        "Sundev",
-        "Tiny Hands",
-        "RedHotPenguin"
-      ]
-    },
     {
       "matchId": 484492731,
       "description": "10x 3x BN",
@@ -518,6 +495,30 @@
         "Koalakapitaen",
         "^gOsO^",
         "Akoros"
+      ]
+    },
+    {
+      "matchId": 494047855,
+      "description": "10x Shared 3 x tech Bamboo",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784711373,
+      "outcome": "loss",
+      "preRating": 1169,
+      "postRating": 1148,
+      "eloChange": -21,
+      "civ": "Malians",
+      "teamAvgElo": 1064,
+      "opponentAvgElo": 1047,
+      "teammates": [
+        "Captain Stripes",
+        "Tiny Hands",
+        "紫蝶黄蜂俱有情"
+      ],
+      "opponents": [
+        "[B] Zennith",
+        "Jormungand",
+        "_T",
+        "^1Butcher_^4Mars"
       ]
     }
   ]

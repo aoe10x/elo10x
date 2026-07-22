@@ -1,12 +1,12 @@
 {
   "profile_id": 307616,
   "alias": "Moose",
-  "rating": 1019,
+  "rating": 1002,
   "wins": 47,
-  "losses": 52,
-  "gamesCount": 99,
+  "losses": 53,
+  "gamesCount": 100,
   "winRate": 47,
-  "lastPlayedAt": 1784695762,
+  "lastPlayedAt": 1784702153,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -60,7 +60,6 @@
     1051,
     1065,
     1078,
-    1063,
     1049,
     1032,
     1048,
@@ -109,33 +108,10 @@
     990,
     1009,
     1030,
-    1019
+    1019,
+    1002
   ],
   "recentMatches": [
-    {
-      "matchId": 492618969,
-      "description": "10x 3x Bamboo Donut - 10xshared.com",
-      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
-      "timestamp": 1784170592,
-      "outcome": "win",
-      "preRating": 946,
-      "postRating": 962,
-      "eloChange": 16,
-      "civ": "Berbers",
-      "teamAvgElo": 1025,
-      "opponentAvgElo": 957,
-      "teammates": [
-        "G",
-        "侯傻傻ᔦఠఠᔨ shasha",
-        "Jdodi"
-      ],
-      "opponents": [
-        "Parts",
-        "Maxim Liann",
-        "{German}Kaese",
-        "ernestocorrea18"
-      ]
-    },
     {
       "matchId": 492621812,
       "description": "Bamboo 10x Shared 3x Tech",
@@ -590,6 +566,30 @@
         "田瘾犯了",
         "[B] Cannino",
         "Vince"
+      ]
+    },
+    {
+      "matchId": 494034115,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784702153,
+      "outcome": "loss",
+      "preRating": 1019,
+      "postRating": 1002,
+      "eloChange": -17,
+      "civ": "Malay",
+      "teamAvgElo": 998,
+      "opponentAvgElo": 994,
+      "teammates": [
+        "TUF | DUKE_NUKEM",
+        "[B] Cannino",
+        "Fioreeeeee"
+      ],
+      "opponents": [
+        "-[RDU]- Gorda America Forever",
+        "menorahjury",
+        "Mitik0",
+        "The Cobra Brothers"
       ]
     }
   ]

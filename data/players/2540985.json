@@ -1,12 +1,12 @@
 {
   "profile_id": 2540985,
   "alias": "Personalizado",
-  "rating": 1050,
+  "rating": 1035,
   "wins": 27,
-  "losses": 23,
-  "gamesCount": 50,
-  "winRate": 54,
-  "lastPlayedAt": 1784459545,
+  "losses": 24,
+  "gamesCount": 51,
+  "winRate": 53,
+  "lastPlayedAt": 1784707191,
   "country": "es",
   "merged_ids": [],
   "ratingHistory": [
@@ -60,33 +60,10 @@
     999,
     1019,
     1036,
-    1050
+    1050,
+    1035
   ],
   "recentMatches": [
-    {
-      "matchId": 441905341,
-      "description": "10x 3x bamboo",
-      "mapname": "Bamboo Nothing_Paren_Vlocal_V2.5",
-      "timestamp": 1766420700,
-      "outcome": "loss",
-      "preRating": 1114,
-      "postRating": 1094,
-      "eloChange": -20,
-      "civ": "Vietnamese",
-      "teamAvgElo": 1065,
-      "opponentAvgElo": 1029,
-      "teammates": [
-        "3755055260",
-        "我只是智障，又不是脑子不好",
-        "aLEXt"
-      ],
-      "opponents": [
-        "QuasarHerzog555",
-        "Mithrandir the Fool",
-        "Lykerya",
-        "紫蝶黄蜂俱有情"
-      ]
-    },
     {
       "matchId": 445481501,
       "description": "10x+3xtech no noob",
@@ -541,6 +518,30 @@
         "...",
         "Janez",
         "babeleo"
+      ]
+    },
+    {
+      "matchId": 494040764,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784707191,
+      "outcome": "loss",
+      "preRating": 1050,
+      "postRating": 1035,
+      "eloChange": -15,
+      "civ": "Magyars",
+      "teamAvgElo": 956,
+      "opponentAvgElo": 1078,
+      "teammates": [
+        "大秦帝国",
+        "GenP",
+        "勇战到抵"
+      ],
+      "opponents": [
+        "TUF | DUKE_NUKEM",
+        "Boocer",
+        "Honey badger",
+        "^gOsO^"
       ]
     }
   ]

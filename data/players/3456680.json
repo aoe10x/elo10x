@@ -1,12 +1,12 @@
 {
   "profile_id": 3456680,
   "alias": "GenP",
-  "rating": 892,
+  "rating": 884,
   "wins": 38,
-  "losses": 63,
-  "gamesCount": 101,
-  "winRate": 38,
-  "lastPlayedAt": 1784654348,
+  "losses": 64,
+  "gamesCount": 102,
+  "winRate": 37,
+  "lastPlayedAt": 1784707191,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,6 @@
     1025,
     994,
     1024,
-    1002,
     983,
     969,
     988,
@@ -35,6 +34,7 @@
     960,
     977,
     997,
+    985,
     1007,
     1024,
     1042,
@@ -60,7 +60,6 @@
     988,
     1006,
     992,
-    980,
     967,
     953,
     945,
@@ -84,6 +83,7 @@
     1012,
     1028,
     1018,
+    1001,
     987,
     976,
     997,
@@ -92,7 +92,6 @@
     961,
     948,
     940,
-    929,
     952,
     943,
     962,
@@ -109,33 +108,10 @@
     853,
     877,
     901,
-    892
+    892,
+    884
   ],
   "recentMatches": [
-    {
-      "matchId": 491375427,
-      "description": "Bamboo 10x Shared 3x Tech",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1783710271,
-      "outcome": "loss",
-      "preRating": 961,
-      "postRating": 948,
-      "eloChange": -13,
-      "civ": "Byzantines",
-      "teamAvgElo": 972,
-      "opponentAvgElo": 1032,
-      "teammates": [
-        "baianitro",
-        "[ ARKI ! ]",
-        "UnstableKnight"
-      ],
-      "opponents": [
-        "BigAl",
-        "Consume Product",
-        "julien.nicolai",
-        "treehugger"
-      ]
-    },
     {
       "matchId": 491539961,
       "description": "4vs4 10x 3x shared civ bonus, random civ",
@@ -590,6 +566,30 @@
         "DnD",
         "Grimmie",
         "Your Ego"
+      ]
+    },
+    {
+      "matchId": 494040764,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784707191,
+      "outcome": "loss",
+      "preRating": 892,
+      "postRating": 884,
+      "eloChange": -8,
+      "civ": "Unknown",
+      "teamAvgElo": 956,
+      "opponentAvgElo": 1078,
+      "teammates": [
+        "大秦帝国",
+        "Personalizado",
+        "勇战到抵"
+      ],
+      "opponents": [
+        "TUF | DUKE_NUKEM",
+        "Boocer",
+        "Honey badger",
+        "^gOsO^"
       ]
     }
   ]

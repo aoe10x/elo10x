@@ -1,12 +1,12 @@
 {
   "profile_id": 3022324,
   "alias": "可爱小奇犽",
-  "rating": 979,
+  "rating": 965,
   "wins": 16,
-  "losses": 21,
-  "gamesCount": 37,
-  "winRate": 43,
-  "lastPlayedAt": 1784558307,
+  "losses": 22,
+  "gamesCount": 38,
+  "winRate": 42,
+  "lastPlayedAt": 1784705034,
   "country": "cn",
   "merged_ids": [],
   "ratingHistory": [
@@ -47,33 +47,10 @@
     956,
     975,
     991,
-    979
+    979,
+    965
   ],
   "recentMatches": [
-    {
-      "matchId": 418519496,
-      "description": "10x Civ / 3x Tec BAMBOO",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1757630940,
-      "outcome": "loss",
-      "preRating": 871,
-      "postRating": 860,
-      "eloChange": -11,
-      "civ": "Unknown",
-      "teamAvgElo": 986,
-      "opponentAvgElo": 1043,
-      "teammates": [
-        "RRadeon96",
-        "Wikzor",
-        "25chai"
-      ],
-      "opponents": [
-        "[BÜN] Steelbread69",
-        "SmokeJumpers",
-        "babeleo",
-        "loco wytboy46"
-      ]
-    },
     {
       "matchId": 418648486,
       "description": "10x 3x Bamboo Nothing",
@@ -528,6 +505,30 @@
         "iamatthe.hell",
         "Consume Product",
         "Lumedge"
+      ]
+    },
+    {
+      "matchId": 494037935,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784705034,
+      "outcome": "loss",
+      "preRating": 979,
+      "postRating": 965,
+      "eloChange": -14,
+      "civ": "Byzantines",
+      "teamAvgElo": 1018,
+      "opponentAvgElo": 1028,
+      "teammates": [
+        "DnD",
+        "大秦帝国",
+        "The Cobra Brothers"
+      ],
+      "opponents": [
+        "TUF | DUKE_NUKEM",
+        "Consume Product",
+        "雲",
+        "勇战到抵"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 25707591,
   "alias": "menorahjury",
-  "rating": 954,
-  "wins": 7,
+  "rating": 972,
+  "wins": 8,
   "losses": 14,
-  "gamesCount": 21,
-  "winRate": 33,
-  "lastPlayedAt": 1784698123,
+  "gamesCount": 22,
+  "winRate": 36,
+  "lastPlayedAt": 1784702153,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -31,33 +31,10 @@
     955,
     945,
     935,
-    954
+    954,
+    972
   ],
   "recentMatches": [
-    {
-      "matchId": 488333105,
-      "description": "10x Shared 3xTech Bamboo Nothing",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1782531895,
-      "outcome": "loss",
-      "preRating": 1054,
-      "postRating": 1004,
-      "eloChange": -50,
-      "civ": "Dravidians",
-      "teamAvgElo": 1069,
-      "opponentAvgElo": 1032,
-      "teammates": [
-        "Lumedge",
-        "Wololo",
-        "doraemon"
-      ],
-      "opponents": [
-        "{R} Parry",
-        "pool_champ",
-        "dary",
-        "_Kev_"
-      ]
-    },
     {
       "matchId": 488347001,
       "description": "10x Shared 3xTech Bamboo Nothing",
@@ -512,6 +489,30 @@
         "Perxeus",
         "adrian",
         "Missing2Sheep"
+      ]
+    },
+    {
+      "matchId": 494034115,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784702153,
+      "outcome": "win",
+      "preRating": 954,
+      "postRating": 972,
+      "eloChange": 18,
+      "civ": "Incas",
+      "teamAvgElo": 994,
+      "opponentAvgElo": 998,
+      "teammates": [
+        "-[RDU]- Gorda America Forever",
+        "Mitik0",
+        "The Cobra Brothers"
+      ],
+      "opponents": [
+        "TUF | DUKE_NUKEM",
+        "[B] Cannino",
+        "Fioreeeeee",
+        "Moose"
       ]
     }
   ]
