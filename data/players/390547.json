@@ -1,12 +1,12 @@
 {
   "profile_id": 390547,
   "alias": "Chirijiraden",
-  "rating": 940,
-  "wins": 30,
+  "rating": 962,
+  "wins": 31,
   "losses": 43,
-  "gamesCount": 73,
-  "winRate": 41,
-  "lastPlayedAt": 1784671359,
+  "gamesCount": 74,
+  "winRate": 42,
+  "lastPlayedAt": 1784737844,
   "country": "ar",
   "merged_ids": [],
   "ratingHistory": [
@@ -83,33 +83,10 @@
     938,
     961,
     948,
-    940
+    940,
+    962
   ],
   "recentMatches": [
-    {
-      "matchId": 490966976,
-      "description": "10x 3x bamboo NO IDIOT",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1783539272,
-      "outcome": "loss",
-      "preRating": 912,
-      "postRating": 900,
-      "eloChange": -12,
-      "civ": "Bulgarians",
-      "teamAvgElo": 1002,
-      "opponentAvgElo": 1011,
-      "teammates": [
-        "Emusan",
-        "Ruuder",
-        "Eat MY Sprouts"
-      ],
-      "opponents": [
-        "Borkan",
-        "[CSGS]Runescape",
-        "[Liiit] Zbyszek",
-        "NothingAtAll11"
-      ]
-    },
     {
       "matchId": 492113590,
       "description": "BAMBOO 10x3xtech",
@@ -564,6 +541,30 @@
         "romeadd",
         "TheRiceMan",
         "Delta"
+      ]
+    },
+    {
+      "matchId": 494111996,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784737844,
+      "outcome": "win",
+      "preRating": 940,
+      "postRating": 962,
+      "eloChange": 22,
+      "civ": "Koreans",
+      "teamAvgElo": 1100,
+      "opponentAvgElo": 1085,
+      "teammates": [
+        "Vince",
+        "Lumedge",
+        "Xinzzo"
+      ],
+      "opponents": [
+        "Parenquima",
+        "pool_champ",
+        "konishika",
+        "Scrat"
       ]
     }
   ]

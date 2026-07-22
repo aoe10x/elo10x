@@ -1,12 +1,12 @@
 {
   "profile_id": 11873535,
   "alias": "romeadd",
-  "rating": 1222,
+  "rating": 1201,
   "wins": 20,
-  "losses": 6,
-  "gamesCount": 26,
-  "winRate": 77,
-  "lastPlayedAt": 1784717210,
+  "losses": 7,
+  "gamesCount": 27,
+  "winRate": 74,
+  "lastPlayedAt": 1784733211,
   "country": "gb",
   "merged_ids": [
     11690840,
@@ -39,33 +39,10 @@
     1229,
     1236,
     1245,
-    1222
+    1222,
+    1201
   ],
   "recentMatches": [
-    {
-      "matchId": 488049513,
-      "description": "Bamboo 10x 3x",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1782450420,
-      "outcome": "win",
-      "preRating": 1026,
-      "postRating": 1064,
-      "eloChange": 38,
-      "civ": "Goths",
-      "teamAvgElo": 1100,
-      "opponentAvgElo": 1019,
-      "teammates": [
-        "OldManofStorr",
-        "Dogberto",
-        "Sensei"
-      ],
-      "opponents": [
-        "GCARMINATTI",
-        "Vulkan",
-        "HorstSan",
-        "Consume Product"
-      ]
-    },
     {
       "matchId": 488052761,
       "description": "4vs4 10x 3x shared civ bonus, random civ",
@@ -520,6 +497,30 @@
         "Honey badger",
         "Emusan",
         "Akoros"
+      ]
+    },
+    {
+      "matchId": 494096761,
+      "description": "10x 3x BN ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784733211,
+      "outcome": "loss",
+      "preRating": 1222,
+      "postRating": 1201,
+      "eloChange": -21,
+      "civ": "Lithuanians",
+      "teamAvgElo": 1066,
+      "opponentAvgElo": 1111,
+      "teammates": [
+        "DnD",
+        "TomAquinas",
+        "ferro"
+      ],
+      "opponents": [
+        "pool_champ",
+        "LonelyKnight",
+        "menorahjury",
+        "El Barto"
       ]
     }
   ]

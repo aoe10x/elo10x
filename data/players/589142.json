@@ -1,12 +1,12 @@
 {
   "profile_id": 589142,
   "alias": "Armyofme_",
-  "rating": 1059,
+  "rating": 1045,
   "wins": 44,
-  "losses": 44,
-  "gamesCount": 88,
-  "winRate": 50,
-  "lastPlayedAt": 1784723648,
+  "losses": 45,
+  "gamesCount": 89,
+  "winRate": 49,
+  "lastPlayedAt": 1784730109,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -98,33 +98,10 @@
     1075,
     1057,
     1075,
-    1059
+    1059,
+    1045
   ],
   "recentMatches": [
-    {
-      "matchId": 463067099,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1773563640,
-      "outcome": "loss",
-      "preRating": 1092,
-      "postRating": 1076,
-      "eloChange": -16,
-      "civ": "Unknown",
-      "teamAvgElo": 1021,
-      "opponentAvgElo": 1086,
-      "teammates": [
-        "Apostle",
-        "Zeriel",
-        "Emusan"
-      ],
-      "opponents": [
-        "Bryce Coolguy",
-        "nooblet3300",
-        "Sam",
-        "Yeepers"
-      ]
-    },
     {
       "matchId": 465098995,
       "description": "Bamboo 10x 3x 4v4",
@@ -579,6 +556,30 @@
         "鱼浆",
         "Vince",
         "konishika"
+      ]
+    },
+    {
+      "matchId": 494088160,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784730109,
+      "outcome": "loss",
+      "preRating": 1059,
+      "postRating": 1045,
+      "eloChange": -14,
+      "civ": "Portuguese",
+      "teamAvgElo": 1053,
+      "opponentAvgElo": 1095,
+      "teammates": [
+        "abatyse6533",
+        "Max",
+        "DEVILZ"
+      ],
+      "opponents": [
+        "iamatthe.hell",
+        "G",
+        "Miwa",
+        "[S33]ff"
       ]
     }
   ]

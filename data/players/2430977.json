@@ -1,12 +1,12 @@
 {
   "profile_id": 2430977,
   "alias": "kfcman5566",
-  "rating": 917,
+  "rating": 907,
   "wins": 6,
-  "losses": 12,
-  "gamesCount": 18,
-  "winRate": 33,
-  "lastPlayedAt": 1784561983,
+  "losses": 13,
+  "gamesCount": 19,
+  "winRate": 32,
+  "lastPlayedAt": 1784732915,
   "country": "tw",
   "merged_ids": [],
   "ratingHistory": [
@@ -28,7 +28,8 @@
     919,
     902,
     933,
-    917
+    917,
+    907
   ],
   "recentMatches": [
     {
@@ -461,6 +462,30 @@
         "abatyse6533",
         "Shadow",
         "Arktik"
+      ]
+    },
+    {
+      "matchId": 494096682,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784732915,
+      "outcome": "loss",
+      "preRating": 917,
+      "postRating": 907,
+      "eloChange": -10,
+      "civ": "Bohemians",
+      "teamAvgElo": 1044,
+      "opponentAvgElo": 1095,
+      "teammates": [
+        "i kun 2.5",
+        "Bao Oninon",
+        "tonkatumura"
+      ],
+      "opponents": [
+        "kekekeya",
+        "kaka52pk",
+        "Unblanked",
+        "Grimmie"
       ]
     }
   ]
