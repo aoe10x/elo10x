@@ -1,12 +1,12 @@
 {
   "profile_id": 5644849,
   "alias": "samseryd",
-  "rating": 1048,
-  "wins": 48,
+  "rating": 1065,
+  "wins": 49,
   "losses": 50,
-  "gamesCount": 98,
+  "gamesCount": 99,
   "winRate": 49,
-  "lastPlayedAt": 1784797085,
+  "lastPlayedAt": 1784810935,
   "country": "se",
   "merged_ids": [],
   "ratingHistory": [
@@ -108,33 +108,10 @@
     1069,
     1052,
     1065,
-    1048
+    1048,
+    1065
   ],
   "recentMatches": [
-    {
-      "matchId": 487469872,
-      "description": "bamboo nothing 10x",
-      "mapname": "Bamboo Nothing V3 (Bali)",
-      "timestamp": 1782220680,
-      "outcome": "win",
-      "preRating": 1021,
-      "postRating": 1037,
-      "eloChange": 16,
-      "civ": "Ethiopians",
-      "teamAvgElo": 1047,
-      "opponentAvgElo": 1020,
-      "teammates": [
-        "[B] Zennith",
-        "Lietuva_",
-        "EzraSkywalker96"
-      ],
-      "opponents": [
-        "procrastination.exe",
-        "ch33tah",
-        "Stigel",
-        "Duck Baby"
-      ]
-    },
     {
       "matchId": 488361302,
       "description": "10x3x Bamboo Nothing",
@@ -589,6 +566,30 @@
         "雲",
         "TUF | DUKE_NUKEM",
         "Akoros"
+      ]
+    },
+    {
+      "matchId": 494290106,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784810935,
+      "outcome": "win",
+      "preRating": 1048,
+      "postRating": 1065,
+      "eloChange": 17,
+      "civ": "Burmese",
+      "teamAvgElo": 1066,
+      "opponentAvgElo": 1064,
+      "teammates": [
+        "i kun 2.5",
+        "kaka52pk",
+        "Pineappleman"
+      ],
+      "opponents": [
+        "Lumedge",
+        "konishika",
+        "Ghost_pt",
+        "KhasminC"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 24927151,
   "alias": "khouildi.tarek.tk",
-  "rating": 799,
+  "rating": 792,
   "wins": 2,
-  "losses": 15,
-  "gamesCount": 17,
-  "winRate": 12,
-  "lastPlayedAt": 1784744988,
+  "losses": 16,
+  "gamesCount": 18,
+  "winRate": 11,
+  "lastPlayedAt": 1784809194,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,8 @@
     781,
     772,
     762,
-    799
+    799,
+    792
   ],
   "recentMatches": [
     {
@@ -436,6 +437,30 @@
         "Borkan",
         "[B] Cannino",
         "Ghandi"
+      ]
+    },
+    {
+      "matchId": 494286239,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784809194,
+      "outcome": "loss",
+      "preRating": 799,
+      "postRating": 792,
+      "eloChange": -7,
+      "civ": "Persians",
+      "teamAvgElo": 911,
+      "opponentAvgElo": 1082,
+      "teammates": [
+        "476055690",
+        "Sam",
+        "[SMUD]LocalBro"
+      ],
+      "opponents": [
+        "Emusan",
+        "菜神",
+        "Prinz Kay1",
+        "Bourne2Believe"
       ]
     }
   ]

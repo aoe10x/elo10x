@@ -1,12 +1,12 @@
 {
   "profile_id": 632840,
   "alias": "malth",
-  "rating": 930,
-  "wins": 8,
+  "rating": 971,
+  "wins": 10,
   "losses": 16,
-  "gamesCount": 24,
-  "winRate": 33,
-  "lastPlayedAt": 1784387372,
+  "gamesCount": 26,
+  "winRate": 38,
+  "lastPlayedAt": 1784812149,
   "country": "jp",
   "merged_ids": [],
   "ratingHistory": [
@@ -34,57 +34,11 @@
     937,
     927,
     943,
-    930
+    930,
+    952,
+    971
   ],
   "recentMatches": [
-    {
-      "matchId": 366109086,
-      "description": "BAMBOO 3X10X",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1737234180,
-      "outcome": "win",
-      "preRating": 940,
-      "postRating": 991,
-      "eloChange": 51,
-      "civ": "Unknown",
-      "teamAvgElo": 1095,
-      "opponentAvgElo": 1020,
-      "teammates": [
-        "Grimmie",
-        "RRadeon96",
-        "Waryahay"
-      ],
-      "opponents": [
-        "kekekeya",
-        "JuanMalote",
-        "pmathews11",
-        "Money"
-      ]
-    },
-    {
-      "matchId": 367422416,
-      "description": "10x civ shared 4v4",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1737757920,
-      "outcome": "loss",
-      "preRating": 991,
-      "postRating": 966,
-      "eloChange": -25,
-      "civ": "Cumans",
-      "teamAvgElo": 969,
-      "opponentAvgElo": 1128,
-      "teammates": [
-        "Whytebeard",
-        "Keroro Gunso",
-        "Lucifer"
-      ],
-      "opponents": [
-        "pandalam",
-        "Skiu",
-        "這個彬彬就是遜啦",
-        "Davidmoilesboules"
-      ]
-    },
     {
       "matchId": 367609814,
       "description": "10x civ 3x techs turbo",
@@ -515,6 +469,54 @@
         "Texas Red",
         "Lumedge",
         "Ravenlost"
+      ]
+    },
+    {
+      "matchId": 494288409,
+      "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784810346,
+      "outcome": "win",
+      "preRating": 930,
+      "postRating": 952,
+      "eloChange": 22,
+      "civ": "Cumans",
+      "teamAvgElo": 945,
+      "opponentAvgElo": 1075,
+      "teammates": [
+        "马磊",
+        "Emusan",
+        "BALD BAGS"
+      ],
+      "opponents": [
+        "老K",
+        "pandalam",
+        "sppd3181",
+        "ᴵᵐᵖᵉʳᶦᵘᵐ Ɗяαɢσηƒσя¢є"
+      ]
+    },
+    {
+      "matchId": 494293352,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784812149,
+      "outcome": "win",
+      "preRating": 952,
+      "postRating": 971,
+      "eloChange": 19,
+      "civ": "Franks",
+      "teamAvgElo": 1014,
+      "opponentAvgElo": 1014,
+      "teammates": [
+        "i kun 2.5",
+        "KhasminC",
+        "Monk"
+      ],
+      "opponents": [
+        "kaka52pk",
+        "鱼浆",
+        "勇战到抵",
+        "LAITH"
       ]
     }
   ]

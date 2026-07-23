@@ -1,12 +1,12 @@
 {
   "profile_id": 14667287,
   "alias": "KhasminC",
-  "rating": 1042,
-  "wins": 44,
-  "losses": 54,
-  "gamesCount": 98,
-  "winRate": 45,
-  "lastPlayedAt": 1784655505,
+  "rating": 1056,
+  "wins": 46,
+  "losses": 55,
+  "gamesCount": 101,
+  "winRate": 46,
+  "lastPlayedAt": 1784812149,
   "country": "ro",
   "merged_ids": [
     12171150,
@@ -38,7 +38,6 @@
     941,
     962,
     948,
-    967,
     955,
     973,
     959,
@@ -88,7 +87,6 @@
     1020,
     1005,
     1025,
-    1011,
     1028,
     1046,
     1064,
@@ -111,81 +109,12 @@
     1052,
     1039,
     1056,
-    1042
+    1042,
+    1057,
+    1041,
+    1056
   ],
   "recentMatches": [
-    {
-      "matchId": 492257078,
-      "description": "i kun 10x3x 4v4s qun729084973",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1784025200,
-      "outcome": "win",
-      "preRating": 1064,
-      "postRating": 1079,
-      "eloChange": 15,
-      "civ": "Teutons",
-      "teamAvgElo": 1070,
-      "opponentAvgElo": 1042,
-      "teammates": [
-        "紫蝶黄蜂俱有情",
-        "Grimmie",
-        "漫山哒哒哒"
-      ],
-      "opponents": [
-        "i kun 2.5",
-        "鱼浆",
-        "bhasudi--",
-        "476055690"
-      ]
-    },
-    {
-      "matchId": 492258942,
-      "description": "i kun 10x3x 4v4s qun729084973",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1784026393,
-      "outcome": "win",
-      "preRating": 1079,
-      "postRating": 1094,
-      "eloChange": 15,
-      "civ": "Vikings",
-      "teamAvgElo": 1060,
-      "opponentAvgElo": 1053,
-      "teammates": [
-        "Grimmie",
-        "紫蝶黄蜂俱有情",
-        "babeleo"
-      ],
-      "opponents": [
-        "i kun 2.5",
-        "dimon21_8",
-        "476055690",
-        "OldManofStorr"
-      ]
-    },
-    {
-      "matchId": 492260407,
-      "description": "Bamboo 10x 3x",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1784027505,
-      "outcome": "loss",
-      "preRating": 1094,
-      "postRating": 1076,
-      "eloChange": -18,
-      "civ": "Malians",
-      "teamAvgElo": 1124,
-      "opponentAvgElo": 1061,
-      "teammates": [
-        "Bourne2Believe",
-        "beat",
-        "Lumedge"
-      ],
-      "opponents": [
-        "OldManofStorr",
-        "Levi",
-        "Grimmie",
-        "476055690"
-      ]
-    },
     {
       "matchId": 492272530,
       "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
@@ -592,6 +521,78 @@
         "McKrakfejs",
         "G",
         "herelin0"
+      ]
+    },
+    {
+      "matchId": 494283119,
+      "description": "10x 3x bamboo",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784807752,
+      "outcome": "win",
+      "preRating": 1042,
+      "postRating": 1057,
+      "eloChange": 15,
+      "civ": "Chinese",
+      "teamAvgElo": 1039,
+      "opponentAvgElo": 1029,
+      "teammates": [
+        "Lumedge",
+        "caonimashabi",
+        "mannutipu"
+      ],
+      "opponents": [
+        "Mahmut",
+        "Monk",
+        "fxsound",
+        "Prinz Kay1"
+      ]
+    },
+    {
+      "matchId": 494290106,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784810935,
+      "outcome": "loss",
+      "preRating": 1057,
+      "postRating": 1041,
+      "eloChange": -16,
+      "civ": "Mapuche",
+      "teamAvgElo": 1064,
+      "opponentAvgElo": 1066,
+      "teammates": [
+        "Lumedge",
+        "konishika",
+        "Ghost_pt"
+      ],
+      "opponents": [
+        "i kun 2.5",
+        "kaka52pk",
+        "samseryd",
+        "Pineappleman"
+      ]
+    },
+    {
+      "matchId": 494293352,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784812149,
+      "outcome": "win",
+      "preRating": 1041,
+      "postRating": 1056,
+      "eloChange": 15,
+      "civ": "Tatars",
+      "teamAvgElo": 1014,
+      "opponentAvgElo": 1014,
+      "teammates": [
+        "i kun 2.5",
+        "Monk",
+        "malth"
+      ],
+      "opponents": [
+        "kaka52pk",
+        "鱼浆",
+        "勇战到抵",
+        "LAITH"
       ]
     }
   ]

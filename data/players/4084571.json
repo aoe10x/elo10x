@@ -1,12 +1,12 @@
 {
   "profile_id": 4084571,
   "alias": "Mahmut",
-  "rating": 1013,
+  "rating": 998,
   "wins": 12,
-  "losses": 14,
-  "gamesCount": 26,
-  "winRate": 46,
-  "lastPlayedAt": 1784773290,
+  "losses": 15,
+  "gamesCount": 27,
+  "winRate": 44,
+  "lastPlayedAt": 1784807752,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -36,33 +36,10 @@
     992,
     1011,
     1027,
-    1013
+    1013,
+    998
   ],
   "recentMatches": [
-    {
-      "matchId": 467462430,
-      "description": "10x 3x bamboo random civ",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1775192520,
-      "outcome": "win",
-      "preRating": 951,
-      "postRating": 993,
-      "eloChange": 42,
-      "civ": "Khmer",
-      "teamAvgElo": 994,
-      "opponentAvgElo": 984,
-      "teammates": [
-        "bijiyumo",
-        "Meursault005",
-        "Dayman"
-      ],
-      "opponents": [
-        "gemmascho",
-        "iknowhow",
-        "jmm",
-        "theownly"
-      ]
-    },
     {
       "matchId": 467579318,
       "description": "10x 3x shared !!NO NOOBS!!",
@@ -517,6 +494,30 @@
         "Mehandor",
         "Imperator Storm",
         "{R} Parry"
+      ]
+    },
+    {
+      "matchId": 494283119,
+      "description": "10x 3x bamboo",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784807752,
+      "outcome": "loss",
+      "preRating": 1013,
+      "postRating": 998,
+      "eloChange": -15,
+      "civ": "Incas",
+      "teamAvgElo": 1029,
+      "opponentAvgElo": 1039,
+      "teammates": [
+        "Monk",
+        "fxsound",
+        "Prinz Kay1"
+      ],
+      "opponents": [
+        "KhasminC",
+        "Lumedge",
+        "caonimashabi",
+        "mannutipu"
       ]
     }
   ]
