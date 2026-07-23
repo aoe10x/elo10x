@@ -1,12 +1,12 @@
 {
   "profile_id": 474932,
   "alias": "dazaetgb",
-  "rating": 913,
-  "wins": 7,
+  "rating": 954,
+  "wins": 9,
   "losses": 16,
-  "gamesCount": 23,
-  "winRate": 30,
-  "lastPlayedAt": 1784092035,
+  "gamesCount": 25,
+  "winRate": 36,
+  "lastPlayedAt": 1784785549,
   "country": "mx",
   "merged_ids": [],
   "ratingHistory": [
@@ -33,57 +33,11 @@
     941,
     931,
     922,
-    913
+    913,
+    934,
+    954
   ],
   "recentMatches": [
-    {
-      "matchId": 386188679,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1744961340,
-      "outcome": "loss",
-      "preRating": 1065,
-      "postRating": 1019,
-      "eloChange": -46,
-      "civ": "Sicilians",
-      "teamAvgElo": 1052,
-      "opponentAvgElo": 1043,
-      "teammates": [
-        "whispa88uk",
-        "ExZeCo",
-        "我不想多说"
-      ],
-      "opponents": [
-        "Kumad",
-        "Myriad",
-        "Alectus",
-        "PapusPopus"
-      ]
-    },
-    {
-      "matchId": 388432625,
-      "description": "10x Shared Turbo Tunnel",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1745767860,
-      "outcome": "loss",
-      "preRating": 1019,
-      "postRating": 975,
-      "eloChange": -44,
-      "civ": "Burgundians",
-      "teamAvgElo": 1048,
-      "opponentAvgElo": 1001,
-      "teammates": [
-        "machpatel",
-        "elugon10",
-        "勇战到抵"
-      ],
-      "opponents": [
-        "PIEROGI",
-        "{R} Parry",
-        "辉夜夜大小姐",
-        "3Q@小白3Q"
-      ]
-    },
     {
       "matchId": 388628320,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -514,6 +468,54 @@
         "The Cobra Brothers",
         "Rita De Valencia",
         "紫蝶黄蜂俱有情"
+      ]
+    },
+    {
+      "matchId": 494241573,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784782383,
+      "outcome": "win",
+      "preRating": 913,
+      "postRating": 934,
+      "eloChange": 21,
+      "civ": "Poles",
+      "teamAvgElo": 1000,
+      "opponentAvgElo": 1029,
+      "teammates": [
+        "{R} Parry",
+        "Wikzor",
+        "TUF | DUKE_NUKEM"
+      ],
+      "opponents": [
+        "realDonaldTrump",
+        "Sundev",
+        "the_purple_pirate21",
+        "472236126"
+      ]
+    },
+    {
+      "matchId": 494246820,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784785549,
+      "outcome": "win",
+      "preRating": 934,
+      "postRating": 954,
+      "eloChange": 20,
+      "civ": "Saracens",
+      "teamAvgElo": 1031,
+      "opponentAvgElo": 1024,
+      "teammates": [
+        "田瘾犯了",
+        "BALD BAGS",
+        "RedBullWOLOLO26"
+      ],
+      "opponents": [
+        "Emusan",
+        "菜神",
+        "-[RDU]- Gorda America Forever",
+        "TUF | DUKE_NUKEM"
       ]
     }
   ]

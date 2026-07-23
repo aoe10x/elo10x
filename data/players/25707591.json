@@ -1,12 +1,12 @@
 {
   "profile_id": 25707591,
   "alias": "menorahjury",
-  "rating": 1075,
+  "rating": 1044,
   "wins": 15,
-  "losses": 15,
-  "gamesCount": 30,
-  "winRate": 50,
-  "lastPlayedAt": 1784770229,
+  "losses": 17,
+  "gamesCount": 32,
+  "winRate": 47,
+  "lastPlayedAt": 1784774470,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -40,57 +40,11 @@
     1058,
     1074,
     1059,
-    1075
+    1075,
+    1059,
+    1044
   ],
   "recentMatches": [
-    {
-      "matchId": 490946550,
-      "description": "10x 3x Bamboo - 10xshared.com",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1783533191,
-      "outcome": "win",
-      "preRating": 921,
-      "postRating": 960,
-      "eloChange": 39,
-      "civ": "Slavs",
-      "teamAvgElo": 1050,
-      "opponentAvgElo": 990,
-      "teammates": [
-        "Parts",
-        "wintre",
-        "Manba Out"
-      ],
-      "opponents": [
-        "Kaa Da Kaveman",
-        "NothingAtAll11",
-        "Jormungand",
-        "Antimier"
-      ]
-    },
-    {
-      "matchId": 491220894,
-      "description": "10x Shared 3xTech Bamboo Nothing",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1783649293,
-      "outcome": "loss",
-      "preRating": 960,
-      "postRating": 945,
-      "eloChange": -15,
-      "civ": "Japanese",
-      "teamAvgElo": 1042,
-      "opponentAvgElo": 1155,
-      "teammates": [
-        "pandasadnap",
-        "Bao Oninon",
-        "Chikna Raavan"
-      ],
-      "opponents": [
-        "{R} Parry",
-        "Al Ghouti",
-        "G",
-        "Hexicero"
-      ]
-    },
     {
       "matchId": 491335013,
       "description": "BAMBOO 10x3xtech",
@@ -521,6 +475,54 @@
         "Parts",
         "[TodEs] MnTartara",
         "WipiWi"
+      ]
+    },
+    {
+      "matchId": 494219423,
+      "description": "10x 3x bamboo",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784773290,
+      "outcome": "loss",
+      "preRating": 1075,
+      "postRating": 1059,
+      "eloChange": -16,
+      "civ": "Incas",
+      "teamAvgElo": 1042,
+      "opponentAvgElo": 1069,
+      "teammates": [
+        "Mahmut",
+        "TheRiceMan",
+        "no good"
+      ],
+      "opponents": [
+        "Proto Potato",
+        "Mehandor",
+        "Imperator Storm",
+        "{R} Parry"
+      ]
+    },
+    {
+      "matchId": 494222903,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784774470,
+      "outcome": "loss",
+      "preRating": 1059,
+      "postRating": 1044,
+      "eloChange": -15,
+      "civ": "Berbers",
+      "teamAvgElo": 1019,
+      "opponentAvgElo": 1084,
+      "teammates": [
+        "RIchard_Uy",
+        "NothingAtAll11",
+        "caonimashabi"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "Mehandor",
+        "Imperator Storm",
+        "Proto Potato"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 15583973,
   "alias": "no good",
-  "rating": 907,
+  "rating": 898,
   "wins": 18,
-  "losses": 36,
-  "gamesCount": 54,
+  "losses": 37,
+  "gamesCount": 55,
   "winRate": 33,
-  "lastPlayedAt": 1784257396,
+  "lastPlayedAt": 1784773290,
   "country": "cn",
   "merged_ids": [
     12337577,
@@ -67,33 +67,10 @@
     906,
     895,
     885,
-    907
+    907,
+    898
   ],
   "recentMatches": [
-    {
-      "matchId": 412687910,
-      "description": "10x 3x Bamboo nothing random civ",
-      "mapname": "[Hex] Bamboo Nothing",
-      "timestamp": 1755187440,
-      "outcome": "loss",
-      "preRating": 899,
-      "postRating": 888,
-      "eloChange": -11,
-      "civ": "Bulgarians",
-      "teamAvgElo": 984,
-      "opponentAvgElo": 1015,
-      "teammates": [
-        "bijiyumo",
-        "UbaneMess",
-        "The Cobra Brothers"
-      ],
-      "opponents": [
-        "EzraSkywalker96",
-        "labourdetteamaranta",
-        "Facuacu",
-        "tyehcwc402004"
-      ]
-    },
     {
       "matchId": 412690178,
       "description": "10x 3x Bamboo nothing random civ",
@@ -548,6 +525,30 @@
         "Brotherman Bill",
         "Evil  Destroyer",
         "LiquidDrive"
+      ]
+    },
+    {
+      "matchId": 494219423,
+      "description": "10x 3x bamboo",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784773290,
+      "outcome": "loss",
+      "preRating": 907,
+      "postRating": 898,
+      "eloChange": -9,
+      "civ": "Burmese",
+      "teamAvgElo": 1042,
+      "opponentAvgElo": 1069,
+      "teammates": [
+        "Mahmut",
+        "TheRiceMan",
+        "menorahjury"
+      ],
+      "opponents": [
+        "Proto Potato",
+        "Mehandor",
+        "Imperator Storm",
+        "{R} Parry"
       ]
     }
   ]

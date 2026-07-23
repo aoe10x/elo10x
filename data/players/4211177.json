@@ -1,12 +1,12 @@
 {
   "profile_id": 4211177,
   "alias": "Ray",
-  "rating": 962,
+  "rating": 936,
   "wins": 11,
-  "losses": 20,
-  "gamesCount": 31,
-  "winRate": 35,
-  "lastPlayedAt": 1784696860,
+  "losses": 22,
+  "gamesCount": 33,
+  "winRate": 33,
+  "lastPlayedAt": 1784779984,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -41,57 +41,11 @@
     896,
     920,
     943,
-    962
+    962,
+    947,
+    936
   ],
   "recentMatches": [
-    {
-      "matchId": 362613705,
-      "description": "10x shared 3x",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1735901880,
-      "outcome": "loss",
-      "preRating": 905,
-      "postRating": 881,
-      "eloChange": -24,
-      "civ": "Unknown",
-      "teamAvgElo": 1014,
-      "opponentAvgElo": 986,
-      "teammates": [
-        "Parenquima",
-        "ch33tah",
-        "Emusan"
-      ],
-      "opponents": [
-        "i kun 2.5",
-        "Tdot",
-        "TM AndresgP",
-        "vincentc95"
-      ]
-    },
-    {
-      "matchId": 362648485,
-      "description": "bamboo nothing 10x (2 mirror)",
-      "mapname": "Bamboo_Nothing_V3_Nowater",
-      "timestamp": 1735918980,
-      "outcome": "loss",
-      "preRating": 881,
-      "postRating": 868,
-      "eloChange": -13,
-      "civ": "Burgundians",
-      "teamAvgElo": 965,
-      "opponentAvgElo": 1102,
-      "teammates": [
-        "zDeathManz",
-        "紫蝶黄蜂俱有情",
-        "THE VIPER PERUANO"
-      ],
-      "opponents": [
-        "[B] Zennith",
-        "I Love Clean Coal",
-        "Grillbe",
-        "FAOse7en"
-      ]
-    },
     {
       "matchId": 362897866,
       "description": "bamboo nothing 10x (2 mirror)",
@@ -522,6 +476,54 @@
         "menorahjury",
         "fxsound",
         "ZONIX"
+      ]
+    },
+    {
+      "matchId": 494234317,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784779050,
+      "outcome": "loss",
+      "preRating": 962,
+      "postRating": 947,
+      "eloChange": -15,
+      "civ": "Armenians",
+      "teamAvgElo": 1047,
+      "opponentAvgElo": 986,
+      "teammates": [
+        "{R} Parry",
+        "Hexicero",
+        "Moose"
+      ],
+      "opponents": [
+        "Frz",
+        "Sundev",
+        "RIchard_Uy",
+        "ζ |  SaintPΞpsi94"
+      ]
+    },
+    {
+      "matchId": 494236076,
+      "description": "10x 3x Bamboo best lobby",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784779984,
+      "outcome": "loss",
+      "preRating": 947,
+      "postRating": 936,
+      "eloChange": -11,
+      "civ": "Magyars",
+      "teamAvgElo": 1015,
+      "opponentAvgElo": 1071,
+      "teammates": [
+        "nooblet3300",
+        "benji",
+        "雲"
+      ],
+      "opponents": [
+        "typ53b90",
+        "TheRiceMan",
+        "Moose",
+        "Frz"
       ]
     }
   ]

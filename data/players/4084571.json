@@ -1,12 +1,12 @@
 {
   "profile_id": 4084571,
   "alias": "Mahmut",
-  "rating": 1027,
+  "rating": 1013,
   "wins": 12,
-  "losses": 13,
-  "gamesCount": 25,
-  "winRate": 48,
-  "lastPlayedAt": 1784768519,
+  "losses": 14,
+  "gamesCount": 26,
+  "winRate": 46,
+  "lastPlayedAt": 1784773290,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -35,33 +35,10 @@
     975,
     992,
     1011,
-    1027
+    1027,
+    1013
   ],
   "recentMatches": [
-    {
-      "matchId": 464209486,
-      "description": "10x Shared Civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1774003260,
-      "outcome": "loss",
-      "preRating": 982,
-      "postRating": 951,
-      "eloChange": -31,
-      "civ": "Bengalis",
-      "teamAvgElo": 972,
-      "opponentAvgElo": 1059,
-      "teammates": [
-        "typ53b90",
-        "Sutherland",
-        "reziorojas"
-      ],
-      "opponents": [
-        "duckbuildperson",
-        "Hexicero",
-        "Bridge",
-        "\\/"
-      ]
-    },
     {
       "matchId": 467462430,
       "description": "10x 3x bamboo random civ",
@@ -516,6 +493,30 @@
         "ch33tah",
         "ROGGAN",
         "LethalP59"
+      ]
+    },
+    {
+      "matchId": 494219423,
+      "description": "10x 3x bamboo",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784773290,
+      "outcome": "loss",
+      "preRating": 1027,
+      "postRating": 1013,
+      "eloChange": -14,
+      "civ": "Bulgarians",
+      "teamAvgElo": 1042,
+      "opponentAvgElo": 1069,
+      "teammates": [
+        "TheRiceMan",
+        "menorahjury",
+        "no good"
+      ],
+      "opponents": [
+        "Proto Potato",
+        "Mehandor",
+        "Imperator Storm",
+        "{R} Parry"
       ]
     }
   ]

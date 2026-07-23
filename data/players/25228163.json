@@ -1,12 +1,12 @@
 {
   "profile_id": 25228163,
   "alias": "Maxim Liann",
-  "rating": 1010,
-  "wins": 48,
-  "losses": 75,
-  "gamesCount": 123,
-  "winRate": 39,
-  "lastPlayedAt": 1784768519,
+  "rating": 962,
+  "wins": 49,
+  "losses": 80,
+  "gamesCount": 129,
+  "winRate": 38,
+  "lastPlayedAt": 1784786925,
   "country": "br",
   "merged_ids": [
     13623515,
@@ -15,20 +15,19 @@
   "ratingHistory": [
     1000,
     953,
-    922,
+    898,
     871,
     927,
-    978,
     1027,
+    992,
     963,
     936,
-    974,
     954,
+    992,
     974,
-    950,
     979,
     1007,
-    969,
+    984,
     957,
     946,
     934,
@@ -39,20 +38,19 @@
     894,
     885,
     876,
-    866,
+    856,
     848,
     871,
-    861,
     852,
+    879,
     904,
     896,
-    919,
     909,
+    898,
     886,
-    909,
     900,
     892,
-    937,
+    914,
     925,
     913,
     903,
@@ -63,202 +61,60 @@
     947,
     968,
     990,
-    1011,
     997,
+    983,
     968,
-    956,
     943,
     962,
-    939,
+    948,
     927,
     916,
     907,
-    891,
+    899,
     916,
     908,
     899,
     943,
     963,
     950,
-    968,
+    955,
     973,
     959,
-    944,
     963,
+    949,
     934,
     952,
-    971,
     988,
+    973,
     959,
-    946,
     968,
     985,
-    1016,
+    1002,
     1035,
     1020,
     1040,
-    1046,
+    1059,
     1063,
     1080,
     1094,
     1059,
     1074,
     1054,
-    1038,
+    1054,
     1039,
     1056,
-    1044,
     1029,
+    1044,
     1027,
     1013,
-    1027,
-    1010
+    1010,
+    998,
+    985,
+    958,
+    977,
+    962
   ],
   "recentMatches": [
-    {
-      "matchId": 493859559,
-      "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1784640417,
-      "outcome": "win",
-      "preRating": 1040,
-      "postRating": 1059,
-      "eloChange": 19,
-      "civ": "Turks",
-      "teamAvgElo": 1081,
-      "opponentAvgElo": 1095,
-      "teammates": [
-        "老K",
-        "pandalam",
-        "肥仔"
-      ],
-      "opponents": [
-        "tonkatumura",
-        "Grimmie",
-        "konishika",
-        "476055690"
-      ]
-    },
-    {
-      "matchId": 493862989,
-      "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1784641418,
-      "outcome": "loss",
-      "preRating": 1059,
-      "postRating": 1046,
-      "eloChange": -13,
-      "civ": "Huns",
-      "teamAvgElo": 1091,
-      "opponentAvgElo": 1115,
-      "teammates": [
-        "476055690",
-        "G",
-        "kekekeya"
-      ],
-      "opponents": [
-        "老K",
-        "紫蝶黄蜂俱有情",
-        "pandalam",
-        "tonkatumura"
-      ]
-    },
-    {
-      "matchId": 493981261,
-      "description": "10x 3x - bamboo donut",
-      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
-      "timestamp": 1784679200,
-      "outcome": "win",
-      "preRating": 1046,
-      "postRating": 1063,
-      "eloChange": 17,
-      "civ": "Saracens",
-      "teamAvgElo": 1081,
-      "opponentAvgElo": 1078,
-      "teammates": [
-        "BigAl",
-        "Vince",
-        "Doormat"
-      ],
-      "opponents": [
-        "Parenquima",
-        "kiggless",
-        "Parts",
-        "gitb930504"
-      ]
-    },
-    {
-      "matchId": 493987035,
-      "description": "10x 3x Bamboo (im sick, forgive me) rank.10xshared.com",
-      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
-      "timestamp": 1784681129,
-      "outcome": "win",
-      "preRating": 1063,
-      "postRating": 1080,
-      "eloChange": 17,
-      "civ": "Incas",
-      "teamAvgElo": 1080,
-      "opponentAvgElo": 1085,
-      "teammates": [
-        "Scipio",
-        "Vince",
-        "ζ |  SaintPΞpsi94"
-      ],
-      "opponents": [
-        "Wozbo",
-        "Dogberto",
-        "LethalP59",
-        "I Love Clean Coal"
-      ]
-    },
-    {
-      "matchId": 493999831,
-      "description": "10x 3x Bamboo Donut - 10xshared.com",
-      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
-      "timestamp": 1784685747,
-      "outcome": "win",
-      "preRating": 1080,
-      "postRating": 1094,
-      "eloChange": 14,
-      "civ": "Goths",
-      "teamAvgElo": 1040,
-      "opponentAvgElo": 1026,
-      "teammates": [
-        "Parts",
-        "WipiWi",
-        "399 the Grizzly Bear - RIP <3"
-      ],
-      "opponents": [
-        "G",
-        "Surnrnoner",
-        "Master.Ji.ro.714",
-        "ernestocorrea18"
-      ]
-    },
-    {
-      "matchId": 494008241,
-      "description": "10x_3x_Bamboo_Nothing_Random",
-      "mapname": "Bamboo Nothing v4 (BaLi)",
-      "timestamp": 1784688887,
-      "outcome": "loss",
-      "preRating": 1094,
-      "postRating": 1079,
-      "eloChange": -15,
-      "civ": "Unknown",
-      "teamAvgElo": 1052,
-      "opponentAvgElo": 1108,
-      "teammates": [
-        "Contry",
-        "duckbuildperson",
-        "ZONIX"
-      ],
-      "opponents": [
-        "Surnrnoner",
-        "田瘾犯了",
-        "Ode To  A Pineapple",
-        "Monster_HK"
-      ]
-    },
     {
       "matchId": 494014956,
       "description": "10x Shared 3xTech Bamboo Nothing",
@@ -593,6 +449,150 @@
         "GJ Euphory",
         "The Cobra Brothers",
         "Mahmut"
+      ]
+    },
+    {
+      "matchId": 494216732,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784772038,
+      "outcome": "loss",
+      "preRating": 1010,
+      "postRating": 998,
+      "eloChange": -12,
+      "civ": "Ethiopians",
+      "teamAvgElo": 1044,
+      "opponentAvgElo": 1090,
+      "teammates": [
+        "Proto Potato",
+        "ArchiCraig",
+        "The Cobra Brothers"
+      ],
+      "opponents": [
+        "Kumad",
+        "feid_",
+        "EL__PATRON",
+        "Myriad"
+      ]
+    },
+    {
+      "matchId": 494219087,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784772897,
+      "outcome": "loss",
+      "preRating": 998,
+      "postRating": 985,
+      "eloChange": -13,
+      "civ": "Romans",
+      "teamAvgElo": 1051,
+      "opponentAvgElo": 1075,
+      "teammates": [
+        "EL__PATRON",
+        "ArchiCraig",
+        "The Cobra Brothers"
+      ],
+      "opponents": [
+        "Kumad",
+        "feid_",
+        "Myriad",
+        "procrastination.exe"
+      ]
+    },
+    {
+      "matchId": 494227966,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784776173,
+      "outcome": "loss",
+      "preRating": 985,
+      "postRating": 972,
+      "eloChange": -13,
+      "civ": "Burmese",
+      "teamAvgElo": 1059,
+      "opponentAvgElo": 1055,
+      "teammates": [
+        "G",
+        "Your Ego",
+        "Hexicero"
+      ],
+      "opponents": [
+        "baianitro",
+        "Emusan",
+        "Parts",
+        "Ye"
+      ]
+    },
+    {
+      "matchId": 494240622,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784782071,
+      "outcome": "loss",
+      "preRating": 972,
+      "postRating": 958,
+      "eloChange": -14,
+      "civ": "Japanese",
+      "teamAvgElo": 1012,
+      "opponentAvgElo": 1024,
+      "teammates": [
+        "RIchard_Uy",
+        "Frz",
+        "Bao Oninon"
+      ],
+      "opponents": [
+        "TJ",
+        "Ricardo V",
+        "doraemon",
+        "Bambamdumm"
+      ]
+    },
+    {
+      "matchId": 494243434,
+      "description": "10x Shared 3xTech Bamboo Nothing",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784783490,
+      "outcome": "win",
+      "preRating": 958,
+      "postRating": 977,
+      "eloChange": 19,
+      "civ": "Berbers",
+      "teamAvgElo": 1007,
+      "opponentAvgElo": 1019,
+      "teammates": [
+        "realDonaldTrump",
+        "procrastination.exe",
+        "samseryd"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "RIchard_Uy",
+        "Wikzor",
+        "TUF | DUKE_NUKEM"
+      ]
+    },
+    {
+      "matchId": 494248799,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784786925,
+      "outcome": "loss",
+      "preRating": 977,
+      "postRating": 962,
+      "eloChange": -15,
+      "civ": "Unknown",
+      "teamAvgElo": 1026,
+      "opponentAvgElo": 1004,
+      "teammates": [
+        "TUF | DUKE_NUKEM",
+        "RedBullWOLOLO26",
+        "samseryd"
+      ],
+      "opponents": [
+        "Emusan",
+        "DnD",
+        "adrian",
+        "procrastination.exe"
       ]
     }
   ]
