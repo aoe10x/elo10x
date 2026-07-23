@@ -1,12 +1,12 @@
 {
   "profile_id": 589142,
   "alias": "Armyofme_",
-  "rating": 1044,
+  "rating": 1018,
   "wins": 45,
-  "losses": 46,
-  "gamesCount": 91,
-  "winRate": 49,
-  "lastPlayedAt": 1784808234,
+  "losses": 48,
+  "gamesCount": 93,
+  "winRate": 48,
+  "lastPlayedAt": 1784818851,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -101,57 +101,11 @@
     1059,
     1045,
     1060,
-    1044
+    1044,
+    1033,
+    1018
   ],
   "recentMatches": [
-    {
-      "matchId": 465170450,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1774333920,
-      "outcome": "win",
-      "preRating": 1107,
-      "postRating": 1118,
-      "eloChange": 11,
-      "civ": "Saracens",
-      "teamAvgElo": 1051,
-      "opponentAvgElo": 1001,
-      "teammates": [
-        "NoAgendaPODCAST",
-        "Ode To  A Pineapple",
-        "Scootyplz"
-      ],
-      "opponents": [
-        "Pogonophobia69",
-        "dz_knight",
-        "AXEL2904",
-        "ULTRA RARE"
-      ]
-    },
-    {
-      "matchId": 467507001,
-      "description": "BN 10x 3x",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1775207640,
-      "outcome": "loss",
-      "preRating": 1118,
-      "postRating": 1100,
-      "eloChange": -18,
-      "civ": "Huns",
-      "teamAvgElo": 1017,
-      "opponentAvgElo": 1069,
-      "teammates": [
-        "Ignaqcio",
-        "Al Ghouti",
-        "Shadow"
-      ],
-      "opponents": [
-        "EL__PATRON",
-        "ch33tah",
-        "Bridge",
-        "Ferdinand I of Naples"
-      ]
-    },
     {
       "matchId": 474190395,
       "description": "10x 3x Bamboo - 10xshared.com",
@@ -582,6 +536,54 @@
         "Consume Product",
         "Zavgor",
         "Willoloh!!!"
+      ]
+    },
+    {
+      "matchId": 494305738,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784816338,
+      "outcome": "loss",
+      "preRating": 1044,
+      "postRating": 1033,
+      "eloChange": -11,
+      "civ": "Bengalis",
+      "teamAvgElo": 1048,
+      "opponentAvgElo": 1166,
+      "teammates": [
+        "i kun 2.5",
+        "Drancerpy",
+        "鱼浆"
+      ],
+      "opponents": [
+        "老K",
+        "kaka52pk",
+        "pandalam",
+        "GiGi"
+      ]
+    },
+    {
+      "matchId": 494313102,
+      "description": "10x3x   shared bonus random civ  no noob",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784818851,
+      "outcome": "loss",
+      "preRating": 1033,
+      "postRating": 1018,
+      "eloChange": -15,
+      "civ": "Unknown",
+      "teamAvgElo": 992,
+      "opponentAvgElo": 1061,
+      "teammates": [
+        "Your Ego",
+        "caonimashabi",
+        "476055690"
+      ],
+      "opponents": [
+        "Maic",
+        "kekekeya",
+        "balbers08",
+        "DnD"
       ]
     }
   ]

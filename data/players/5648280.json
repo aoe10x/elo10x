@@ -1,12 +1,12 @@
 {
   "profile_id": 5648280,
   "alias": "Rito",
-  "rating": 1010,
+  "rating": 994,
   "wins": 25,
-  "losses": 22,
-  "gamesCount": 47,
-  "winRate": 53,
-  "lastPlayedAt": 1784561177,
+  "losses": 23,
+  "gamesCount": 48,
+  "winRate": 52,
+  "lastPlayedAt": 1784816841,
   "country": "jp",
   "merged_ids": [],
   "ratingHistory": [
@@ -57,33 +57,10 @@
     1061,
     1043,
     1026,
-    1010
+    1010,
+    994
   ],
   "recentMatches": [
-    {
-      "matchId": 357071994,
-      "description": "shared10x amazon",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1733695980,
-      "outcome": "loss",
-      "preRating": 1122,
-      "postRating": 1104,
-      "eloChange": -18,
-      "civ": "Hindustanis",
-      "teamAvgElo": 1081,
-      "opponentAvgElo": 1071,
-      "teammates": [
-        "紫蝶黄蜂俱有情",
-        "sonygames4691",
-        "RagedTugboat493"
-      ],
-      "opponents": [
-        "Papillon",
-        "tonkatumura",
-        "The Naked Gothman",
-        "Open"
-      ]
-    },
     {
       "matchId": 388741051,
       "description": "10xshared_3xtech_BambooNothing",
@@ -538,6 +515,30 @@
         "konishika",
         "Prinz Kay1",
         "beat"
+      ]
+    },
+    {
+      "matchId": 494307187,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784816841,
+      "outcome": "loss",
+      "preRating": 1010,
+      "postRating": 994,
+      "eloChange": -16,
+      "civ": "Jurchens",
+      "teamAvgElo": 1058,
+      "opponentAvgElo": 1013,
+      "teammates": [
+        "iamatthe.hell",
+        "Lumedge",
+        "Age5464"
+      ],
+      "opponents": [
+        "Emusan",
+        "tonkatumura",
+        "Papillon",
+        "sppd3181"
       ]
     }
   ]

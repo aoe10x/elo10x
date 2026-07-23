@@ -1,12 +1,12 @@
 {
   "profile_id": 25067300,
   "alias": "Frz",
-  "rating": 1042,
+  "rating": 1029,
   "wins": 12,
-  "losses": 12,
-  "gamesCount": 24,
-  "winRate": 50,
-  "lastPlayedAt": 1784782071,
+  "losses": 13,
+  "gamesCount": 25,
+  "winRate": 48,
+  "lastPlayedAt": 1784822769,
   "country": "us",
   "merged_ids": [
     13595490,
@@ -37,33 +37,10 @@
     1028,
     1045,
     1060,
-    1042
+    1042,
+    1029
   ],
   "recentMatches": [
-    {
-      "matchId": 469791530,
-      "description": "10x 3x BAMBOO best lobby",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1775993280,
-      "outcome": "loss",
-      "preRating": 1084,
-      "postRating": 1034,
-      "eloChange": -50,
-      "civ": "Magyars",
-      "teamAvgElo": 986,
-      "opponentAvgElo": 1012,
-      "teammates": [
-        "typ53b90",
-        "DS_zamazenta",
-        "他妈的黄泉引路人"
-      ],
-      "opponents": [
-        "Paladin",
-        "TaunTaun",
-        "babeleo",
-        "Paris Hilton"
-      ]
-    },
     {
       "matchId": 471110733,
       "description": "Bamboo 10x 3x 4v4",
@@ -517,6 +494,30 @@
         "TJ",
         "Ricardo V",
         "doraemon",
+        "Bambamdumm"
+      ]
+    },
+    {
+      "matchId": 494324517,
+      "description": "10x3x bamboo nothing NO NOOB",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784822769,
+      "outcome": "loss",
+      "preRating": 1042,
+      "postRating": 1029,
+      "eloChange": -13,
+      "civ": "Persians",
+      "teamAvgElo": 1031,
+      "opponentAvgElo": 1116,
+      "teammates": [
+        "Paolo Carrosel",
+        "notfound",
+        "mateoobo00"
+      ],
+      "opponents": [
+        "轻绘梨花泪满衣",
+        "Parenquima",
+        "UndreamtBacon8",
         "Bambamdumm"
       ]
     }

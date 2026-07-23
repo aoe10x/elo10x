@@ -1,12 +1,12 @@
 {
   "profile_id": 4782573,
   "alias": "Lama Kužel",
-  "rating": 1044,
-  "wins": 28,
+  "rating": 1061,
+  "wins": 29,
   "losses": 26,
-  "gamesCount": 54,
-  "winRate": 52,
-  "lastPlayedAt": 1784484523,
+  "gamesCount": 55,
+  "winRate": 53,
+  "lastPlayedAt": 1784818493,
   "country": "sk",
   "merged_ids": [
     4782573,
@@ -67,33 +67,10 @@
     1058,
     1042,
     1060,
-    1044
+    1044,
+    1061
   ],
   "recentMatches": [
-    {
-      "matchId": 486994718,
-      "description": "10x Shared 3xTech Bamboo Nothing",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1782026515,
-      "outcome": "win",
-      "preRating": 1057,
-      "postRating": 1072,
-      "eloChange": 15,
-      "civ": "Japanese",
-      "teamAvgElo": 1040,
-      "opponentAvgElo": 1038,
-      "teammates": [
-        "{R} Parry",
-        "SERENAXOXO1234",
-        "Emusan"
-      ],
-      "opponents": [
-        "Rooaary",
-        "Bobuler",
-        "babeleo",
-        "PIEROGI"
-      ]
-    },
     {
       "matchId": 486992199,
       "description": "10x 3x bamboo NO IDIOT",
@@ -548,6 +525,30 @@
         "StreamerOffline",
         "Contry",
         "RA"
+      ]
+    },
+    {
+      "matchId": 494310903,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784818493,
+      "outcome": "win",
+      "preRating": 1044,
+      "postRating": 1061,
+      "eloChange": 17,
+      "civ": "Saracens",
+      "teamAvgElo": 1046,
+      "opponentAvgElo": 1064,
+      "teammates": [
+        "Bao Oninon",
+        "Lumedge",
+        "abatyse6533"
+      ],
+      "opponents": [
+        "iamatthe.hell",
+        "Silent Annihilation",
+        "漫山哒哒哒",
+        "GOJO"
       ]
     }
   ]

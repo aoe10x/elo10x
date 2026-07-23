@@ -1,12 +1,12 @@
 {
   "profile_id": 650599,
   "alias": "Dogberto",
-  "rating": 1138,
+  "rating": 1120,
   "wins": 15,
-  "losses": 6,
-  "gamesCount": 21,
-  "winRate": 71,
-  "lastPlayedAt": 1784681129,
+  "losses": 7,
+  "gamesCount": 22,
+  "winRate": 68,
+  "lastPlayedAt": 1784819330,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -31,33 +31,10 @@
     1136,
     1146,
     1158,
-    1138
+    1138,
+    1120
   ],
   "recentMatches": [
-    {
-      "matchId": 482825517,
-      "description": "bamboo nothing 10x3x",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": null,
-      "outcome": "win",
-      "preRating": 1048,
-      "postRating": 1085,
-      "eloChange": 37,
-      "civ": "Poles",
-      "teamAvgElo": 986,
-      "opponentAvgElo": 973,
-      "teammates": [
-        "baianitro",
-        "Cale94",
-        "DreamLegion"
-      ],
-      "opponents": [
-        "星际小菜",
-        "ElmoWithoutL",
-        "Lumedge",
-        "Berberecho_Feroz"
-      ]
-    },
     {
       "matchId": 477188109,
       "description": "10x shared Civ bonus 4v4",
@@ -512,6 +489,30 @@
         "Vince",
         "Maxim Liann",
         "ζ |  SaintPΞpsi94"
+      ]
+    },
+    {
+      "matchId": 494314107,
+      "description": "i kun 10x3x 4v4s qun729084973",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784819330,
+      "outcome": "loss",
+      "preRating": 1138,
+      "postRating": 1120,
+      "eloChange": -18,
+      "civ": "Slavs",
+      "teamAvgElo": 1103,
+      "opponentAvgElo": 1097,
+      "teammates": [
+        "i kun 2.5",
+        "kaka52pk",
+        "青松"
+      ],
+      "opponents": [
+        "Bourne2Believe",
+        "勇战到抵",
+        "UndreamtBacon8",
+        "LECIO"
       ]
     }
   ]

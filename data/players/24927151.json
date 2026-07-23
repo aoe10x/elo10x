@@ -1,12 +1,12 @@
 {
   "profile_id": 24927151,
   "alias": "khouildi.tarek.tk",
-  "rating": 792,
-  "wins": 2,
+  "rating": 822,
+  "wins": 3,
   "losses": 16,
-  "gamesCount": 18,
-  "winRate": 11,
-  "lastPlayedAt": 1784809194,
+  "gamesCount": 19,
+  "winRate": 16,
+  "lastPlayedAt": 1784813361,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -28,7 +28,8 @@
     772,
     762,
     799,
-    792
+    792,
+    822
   ],
   "recentMatches": [
     {
@@ -461,6 +462,30 @@
         "菜神",
         "Prinz Kay1",
         "Bourne2Believe"
+      ]
+    },
+    {
+      "matchId": 494296352,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784813361,
+      "outcome": "win",
+      "preRating": 792,
+      "postRating": 822,
+      "eloChange": 30,
+      "civ": "Celts",
+      "teamAvgElo": 931,
+      "opponentAvgElo": 1025,
+      "teammates": [
+        "sppd3181",
+        "ototomato",
+        "Orinoco"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "Emusan",
+        "Pogonophobia69",
+        "caonimashabi"
       ]
     }
   ]

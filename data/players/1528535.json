@@ -1,12 +1,12 @@
 {
   "profile_id": 1528535,
   "alias": "lucati123",
-  "rating": 1057,
-  "wins": 21,
-  "losses": 17,
-  "gamesCount": 38,
+  "rating": 1058,
+  "wins": 22,
+  "losses": 18,
+  "gamesCount": 40,
   "winRate": 55,
-  "lastPlayedAt": 1784457536,
+  "lastPlayedAt": 1784819658,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -48,57 +48,11 @@
     1083,
     1062,
     1044,
-    1057
+    1057,
+    1039,
+    1058
   ],
   "recentMatches": [
-    {
-      "matchId": 379285024,
-      "description": "10x Shared Civ",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1742340540,
-      "outcome": "loss",
-      "preRating": 1073,
-      "postRating": 1050,
-      "eloChange": -23,
-      "civ": "Unknown",
-      "teamAvgElo": 1068,
-      "opponentAvgElo": 1004,
-      "teammates": [
-        "RedBullWOLOLO26",
-        "bhasudi--",
-        "漫山哒哒哒"
-      ],
-      "opponents": [
-        "okie dokie",
-        "gigi",
-        "RaketenRonni",
-        "shark_12"
-      ]
-    },
-    {
-      "matchId": 381718052,
-      "description": "10x shared 4v4",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1743272640,
-      "outcome": "loss",
-      "preRating": 1050,
-      "postRating": 1034,
-      "eloChange": -16,
-      "civ": "Unknown",
-      "teamAvgElo": 1095,
-      "opponentAvgElo": 1076,
-      "teammates": [
-        "TW",
-        "Max",
-        "[GLD] Khalid"
-      ],
-      "opponents": [
-        "2EZ.trombone",
-        "kunyi",
-        "brunopt99",
-        "尖沙咀段坤"
-      ]
-    },
     {
       "matchId": 381775642,
       "description": "10x civ 3x techs | random civ",
@@ -529,6 +483,54 @@
         "GenP",
         "Baz1337",
         "schrubber"
+      ]
+    },
+    {
+      "matchId": 494304048,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784816016,
+      "outcome": "loss",
+      "preRating": 1057,
+      "postRating": 1039,
+      "eloChange": -18,
+      "civ": "Cumans",
+      "teamAvgElo": 1040,
+      "opponentAvgElo": 1019,
+      "teammates": [
+        "caonimashabi",
+        "kekekeya",
+        "balbers08"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "Bridge",
+        "abatyse6533",
+        "软软糯糯卡比哥"
+      ]
+    },
+    {
+      "matchId": 494315451,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784819658,
+      "outcome": "win",
+      "preRating": 1039,
+      "postRating": 1058,
+      "eloChange": 19,
+      "civ": "Tatars",
+      "teamAvgElo": 1064,
+      "opponentAvgElo": 1100,
+      "teammates": [
+        "漫山哒哒哒",
+        "Lumedge",
+        "Railbuilder"
+      ],
+      "opponents": [
+        "iamatthe.hell",
+        "Eraniss",
+        "Dr_Pinure",
+        "BigAl"
       ]
     }
   ]

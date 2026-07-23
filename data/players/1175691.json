@@ -1,12 +1,12 @@
 {
   "profile_id": 1175691,
   "alias": "balbers08",
-  "rating": 1030,
-  "wins": 20,
-  "losses": 23,
-  "gamesCount": 43,
-  "winRate": 47,
-  "lastPlayedAt": 1784665096,
+  "rating": 1015,
+  "wins": 21,
+  "losses": 25,
+  "gamesCount": 46,
+  "winRate": 46,
+  "lastPlayedAt": 1784818851,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -53,81 +53,12 @@
     973,
     992,
     1011,
-    1030
+    1030,
+    1015,
+    999,
+    1015
   ],
   "recentMatches": [
-    {
-      "matchId": 479617866,
-      "description": "10x 3x bn no noob",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1779482580,
-      "outcome": "loss",
-      "preRating": 1025,
-      "postRating": 1008,
-      "eloChange": -17,
-      "civ": "Khmer",
-      "teamAvgElo": 1050,
-      "opponentAvgElo": 1006,
-      "teammates": [
-        "疯狂的电脑",
-        "Honey badger",
-        "Max"
-      ],
-      "opponents": [
-        "Semisky",
-        "Akira",
-        "Qtheitalian",
-        "ASLAN"
-      ]
-    },
-    {
-      "matchId": 479618769,
-      "description": "10x 3x bn no noob",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1779482760,
-      "outcome": "win",
-      "preRating": 1008,
-      "postRating": 1024,
-      "eloChange": 16,
-      "civ": "Khitans",
-      "teamAvgElo": 1067,
-      "opponentAvgElo": 1013,
-      "teammates": [
-        "babeleo",
-        "Max",
-        "Honey badger"
-      ],
-      "opponents": [
-        "Semisky",
-        "Akira",
-        "Doormat",
-        "Qtheitalian"
-      ]
-    },
-    {
-      "matchId": 480655628,
-      "description": "NO TRASH 10x 3x bamboo",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1779826980,
-      "outcome": "win",
-      "preRating": 1024,
-      "postRating": 1040,
-      "eloChange": 16,
-      "civ": "Saracens",
-      "teamAvgElo": 1013,
-      "opponentAvgElo": 1022,
-      "teammates": [
-        "NoxMortus",
-        "[TSU] Red Cansky",
-        "KINGKODIAK"
-      ],
-      "opponents": [
-        "Officer i cant breath",
-        "Barosanu512",
-        "DreamLegion",
-        "Emusan"
-      ]
-    },
     {
       "matchId": 481405893,
       "description": "BAMBOO NOTHING TURBO - NOT-NOT-NOT-NOT-NOT-  10x or 3x",
@@ -534,6 +465,78 @@
         "Monkeymonk",
         "PIEROGI",
         "TioMg100"
+      ]
+    },
+    {
+      "matchId": 494300161,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784814769,
+      "outcome": "loss",
+      "preRating": 1030,
+      "postRating": 1015,
+      "eloChange": -15,
+      "civ": "Gurjaras",
+      "teamAvgElo": 1003,
+      "opponentAvgElo": 1061,
+      "teammates": [
+        "NoAgendaPODCAST",
+        "Orinoco",
+        "caonimashabi"
+      ],
+      "opponents": [
+        "kekekeya",
+        "Bridge",
+        "fxsound",
+        "BALD BAGS"
+      ]
+    },
+    {
+      "matchId": 494304048,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784816016,
+      "outcome": "loss",
+      "preRating": 1015,
+      "postRating": 999,
+      "eloChange": -16,
+      "civ": "Tupi",
+      "teamAvgElo": 1040,
+      "opponentAvgElo": 1019,
+      "teammates": [
+        "caonimashabi",
+        "kekekeya",
+        "lucati123"
+      ],
+      "opponents": [
+        "NoAgendaPODCAST",
+        "Bridge",
+        "abatyse6533",
+        "软软糯糯卡比哥"
+      ]
+    },
+    {
+      "matchId": 494313102,
+      "description": "10x3x   shared bonus random civ  no noob",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784818851,
+      "outcome": "win",
+      "preRating": 999,
+      "postRating": 1015,
+      "eloChange": 16,
+      "civ": "Armenians",
+      "teamAvgElo": 1061,
+      "opponentAvgElo": 992,
+      "teammates": [
+        "Maic",
+        "kekekeya",
+        "DnD"
+      ],
+      "opponents": [
+        "Your Ego",
+        "caonimashabi",
+        "476055690",
+        "Armyofme_"
       ]
     }
   ]
