@@ -1,12 +1,12 @@
 {
   "profile_id": 1552622,
   "alias": "Hamparuto",
-  "rating": 970,
+  "rating": 952,
   "wins": 6,
-  "losses": 9,
-  "gamesCount": 15,
-  "winRate": 40,
-  "lastPlayedAt": 1775842080,
+  "losses": 10,
+  "gamesCount": 16,
+  "winRate": 38,
+  "lastPlayedAt": 1784795792,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -25,7 +25,8 @@
     981,
     954,
     991,
-    970
+    970,
+    952
   ],
   "recentMatches": [
     {
@@ -386,6 +387,30 @@
         "Gekirin",
         "kekekeya",
         "konishika"
+      ]
+    },
+    {
+      "matchId": 494262500,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784795792,
+      "outcome": "loss",
+      "preRating": 970,
+      "postRating": 952,
+      "eloChange": -18,
+      "civ": "Goths",
+      "teamAvgElo": 993,
+      "opponentAvgElo": 1054,
+      "teammates": [
+        "TUF | DUKE_NUKEM",
+        "FAOse7en",
+        "konishika"
+      ],
+      "opponents": [
+        "Akoros",
+        "Emusan",
+        "fxsound",
+        "samseryd"
       ]
     }
   ]

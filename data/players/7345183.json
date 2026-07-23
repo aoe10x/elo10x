@@ -1,12 +1,12 @@
 {
   "profile_id": 7345183,
   "alias": "Eemeli",
-  "rating": 872,
-  "wins": 4,
+  "rating": 901,
+  "wins": 5,
   "losses": 13,
-  "gamesCount": 17,
-  "winRate": 24,
-  "lastPlayedAt": 1784282980,
+  "gamesCount": 18,
+  "winRate": 28,
+  "lastPlayedAt": 1784794438,
   "country": "fi",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,8 @@
     861,
     848,
     839,
-    872
+    872,
+    901
   ],
   "recentMatches": [
     {
@@ -436,6 +437,30 @@
         "[S33]ff",
         "Captain Stripes",
         "SickFishh"
+      ]
+    },
+    {
+      "matchId": 494260428,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784794438,
+      "outcome": "win",
+      "preRating": 872,
+      "postRating": 901,
+      "eloChange": 29,
+      "civ": "Koreans",
+      "teamAvgElo": 1045,
+      "opponentAvgElo": 1010,
+      "teammates": [
+        "fxsound",
+        "FAOse7en",
+        "[B] Cannino"
+      ],
+      "opponents": [
+        "TUF | DUKE_NUKEM",
+        "samseryd",
+        "Emusan",
+        "konishika"
       ]
     }
   ]
