@@ -1,12 +1,12 @@
 {
   "profile_id": 313591,
   "alias": "BSHammer",
-  "rating": 1044,
+  "rating": 1010,
   "wins": 46,
-  "losses": 41,
-  "gamesCount": 87,
-  "winRate": 53,
-  "lastPlayedAt": 1780452060,
+  "losses": 43,
+  "gamesCount": 89,
+  "winRate": 52,
+  "lastPlayedAt": 1784829064,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -97,57 +97,11 @@
     1033,
     1051,
     1063,
-    1044
+    1044,
+    1027,
+    1010
   ],
   "recentMatches": [
-    {
-      "matchId": 459327536,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1772190300,
-      "outcome": "loss",
-      "preRating": 1032,
-      "postRating": 1020,
-      "eloChange": -12,
-      "civ": "Maya",
-      "teamAvgElo": 1110,
-      "opponentAvgElo": 1128,
-      "teammates": [
-        "TresTilo",
-        "nayman",
-        "[LWS] Mandatum"
-      ],
-      "opponents": [
-        "Kumad",
-        "Wardy21",
-        "Myriad",
-        "tonzo"
-      ]
-    },
-    {
-      "matchId": 459817509,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1772354160,
-      "outcome": "win",
-      "preRating": 1020,
-      "postRating": 1038,
-      "eloChange": 18,
-      "civ": "Armenians",
-      "teamAvgElo": 1032,
-      "opponentAvgElo": 1056,
-      "teammates": [
-        "Bryce Coolguy",
-        "Given Sens",
-        "Tavik"
-      ],
-      "opponents": [
-        "Boarjack Boarsman",
-        "nooblet3300",
-        "Glasg0w",
-        "Sensei"
-      ]
-    },
     {
       "matchId": 459822607,
       "description": "10x_3x_Bamboo_Nothing_Random",
@@ -494,7 +448,7 @@
       "postRating": 1033,
       "eloChange": -14,
       "civ": "Persians",
-      "teamAvgElo": 1056,
+      "teamAvgElo": 1057,
       "opponentAvgElo": 1098,
       "teammates": [
         "Test66",
@@ -518,7 +472,7 @@
       "postRating": 1051,
       "eloChange": 18,
       "civ": "Shu",
-      "teamAvgElo": 1053,
+      "teamAvgElo": 1054,
       "opponentAvgElo": 1080,
       "teammates": [
         "wintre",
@@ -578,6 +532,54 @@
         "pool_champ",
         "ElmoWithoutL",
         "ChristopheG1970.Fr"
+      ]
+    },
+    {
+      "matchId": 483666829,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1780857179,
+      "outcome": "loss",
+      "preRating": 1044,
+      "postRating": 1027,
+      "eloChange": -17,
+      "civ": "Shu",
+      "teamAvgElo": 978,
+      "opponentAvgElo": 1033,
+      "teammates": [
+        "NoAgendaPODCAST",
+        "__VK__",
+        "mack"
+      ],
+      "opponents": [
+        "wintre",
+        "king_doge",
+        "[CSGS]Runescape",
+        "Parts"
+      ]
+    },
+    {
+      "matchId": 494344110,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784829064,
+      "outcome": "loss",
+      "preRating": 1027,
+      "postRating": 1010,
+      "eloChange": -17,
+      "civ": "Bengalis",
+      "teamAvgElo": 1024,
+      "opponentAvgElo": 997,
+      "teammates": [
+        "iamatthe.hell",
+        "Scipio",
+        "Wimac"
+      ],
+      "opponents": [
+        "schrubber",
+        "mgmanager",
+        "Parts",
+        "AAA"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 3601452,
   "alias": "pot",
-  "rating": 1025,
-  "wins": 43,
+  "rating": 1042,
+  "wins": 44,
   "losses": 46,
-  "gamesCount": 89,
-  "winRate": 48,
-  "lastPlayedAt": 1756876440,
+  "gamesCount": 90,
+  "winRate": 49,
+  "lastPlayedAt": 1784830667,
   "country": "gb",
   "merged_ids": [],
   "ratingHistory": [
@@ -99,33 +99,10 @@
     1041,
     1057,
     1042,
-    1025
+    1025,
+    1042
   ],
   "recentMatches": [
-    {
-      "matchId": 371979561,
-      "description": "[Rematch] 10x civ shared 4v4",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1739500860,
-      "outcome": "win",
-      "preRating": 1015,
-      "postRating": 1030,
-      "eloChange": 15,
-      "civ": "Burgundians",
-      "teamAvgElo": 1106,
-      "opponentAvgElo": 996,
-      "teammates": [
-        "pandalam",
-        "Ian",
-        "kiggless"
-      ],
-      "opponents": [
-        "SeeYouTomorrow",
-        "漫山哒哒哒",
-        "JaFu",
-        "jair_silva"
-      ]
-    },
     {
       "matchId": 372954095,
       "description": "10x civ 3x techs turbo",
@@ -580,6 +557,30 @@
         "vikneT1",
         "jair_silva",
         "NothingAtAll11"
+      ]
+    },
+    {
+      "matchId": 494349345,
+      "description": "10x 3x Bamboo (fun and fair) ",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784830667,
+      "outcome": "win",
+      "preRating": 1025,
+      "postRating": 1042,
+      "eloChange": 17,
+      "civ": "Hindustanis",
+      "teamAvgElo": 1023,
+      "opponentAvgElo": 1056,
+      "teammates": [
+        "Kalervo Jankko",
+        "Leonidas",
+        "LetCarton233702"
+      ],
+      "opponents": [
+        "Scipio",
+        "WDWKid3",
+        "Vince",
+        "adoniranfernandescachopa"
       ]
     }
   ]

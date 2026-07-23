@@ -1,12 +1,12 @@
 {
   "profile_id": 2843438,
   "alias": "Scipio",
-  "rating": 1017,
-  "wins": 48,
-  "losses": 49,
-  "gamesCount": 97,
+  "rating": 1010,
+  "wins": 50,
+  "losses": 52,
+  "gamesCount": 102,
   "winRate": 49,
-  "lastPlayedAt": 1784750375,
+  "lastPlayedAt": 1784838069,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,6 @@
     1103,
     1075,
     1098,
-    1074,
     1089,
     1065,
     1080,
@@ -61,7 +60,6 @@
     1053,
     1040,
     1056,
-    1069,
     1053,
     1040,
     1025,
@@ -94,7 +92,6 @@
     1075,
     1085,
     1066,
-    1079,
     1094,
     1110,
     1122,
@@ -107,129 +104,14 @@
     1032,
     1017,
     1000,
-    1017
+    1017,
+    1000,
+    985,
+    1005,
+    991,
+    1010
   ],
   "recentMatches": [
-    {
-      "matchId": 493872335,
-      "description": "10x 3x Bamboo (very fun) rank.10xshared.com",
-      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
-      "timestamp": 1784644578,
-      "outcome": "win",
-      "preRating": 1085,
-      "postRating": 1099,
-      "eloChange": 14,
-      "civ": "Bohemians",
-      "teamAvgElo": 1093,
-      "opponentAvgElo": 1047,
-      "teammates": [
-        "Grimmie",
-        "G",
-        "-DioX"
-      ],
-      "opponents": [
-        "kekekeya",
-        "The Naked Gothman",
-        "DnD",
-        "紫蝶黄蜂俱有情"
-      ]
-    },
-    {
-      "matchId": 493879381,
-      "description": "10x 3x Bamboo (very fun) rank.10xshared.com",
-      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
-      "timestamp": 1784646849,
-      "outcome": "win",
-      "preRating": 1099,
-      "postRating": 1113,
-      "eloChange": 14,
-      "civ": "Vietnamese",
-      "teamAvgElo": 1118,
-      "opponentAvgElo": 1064,
-      "teammates": [
-        "Parenquima",
-        "紫蝶黄蜂俱有情",
-        "鱼浆"
-      ],
-      "opponents": [
-        "dertli",
-        "KhasminC",
-        "Max",
-        "GuguBot"
-      ]
-    },
-    {
-      "matchId": 493885101,
-      "description": "10x 3x Bamboo (very fun) rank.10xshared.com",
-      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
-      "timestamp": 1784649103,
-      "outcome": "loss",
-      "preRating": 1113,
-      "postRating": 1093,
-      "eloChange": -20,
-      "civ": "Magyars",
-      "teamAvgElo": 1093,
-      "opponentAvgElo": 1036,
-      "teammates": [
-        "Fringnut",
-        "XsupercopX",
-        "Grimmie"
-      ],
-      "opponents": [
-        "Armyofme_",
-        "Spiz.101",
-        "RedBullWOLOLO26",
-        "SmilesBetray"
-      ]
-    },
-    {
-      "matchId": 493902777,
-      "description": "10x 3x Bamboo (very fun) rank.10xshared.com",
-      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
-      "timestamp": 1784654348,
-      "outcome": "loss",
-      "preRating": 1093,
-      "postRating": 1075,
-      "eloChange": -18,
-      "civ": "Incas",
-      "teamAvgElo": 1009,
-      "opponentAvgElo": 1053,
-      "teammates": [
-        "GenP",
-        "Wololo",
-        "Abused but whole"
-      ],
-      "opponents": [
-        "YUJIN",
-        "DnD",
-        "Grimmie",
-        "Your Ego"
-      ]
-    },
-    {
-      "matchId": 493907939,
-      "description": "10x 3x Bamboo (very fun) rank.10xshared.com",
-      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
-      "timestamp": 1784656302,
-      "outcome": "win",
-      "preRating": 1075,
-      "postRating": 1085,
-      "eloChange": 10,
-      "civ": "Armenians",
-      "teamAvgElo": 1044,
-      "opponentAvgElo": 935,
-      "teammates": [
-        "jpllops",
-        "megermeger",
-        "LonelyKnight"
-      ],
-      "opponents": [
-        "Grimmie",
-        "khouildi.tarek.tk",
-        "davidll_5",
-        "XsupercopX"
-      ]
-    },
     {
       "matchId": 493913888,
       "description": "10x 3x Bamboo (very fun) rank.10xshared.com",
@@ -264,7 +146,7 @@
       "postRating": 1079,
       "eloChange": 13,
       "civ": "Vikings",
-      "teamAvgElo": 1101,
+      "teamAvgElo": 1102,
       "opponentAvgElo": 1011,
       "teammates": [
         "LonelyKnight",
@@ -337,7 +219,7 @@
       "eloChange": 12,
       "civ": "Spanish",
       "teamAvgElo": 1137,
-      "opponentAvgElo": 1011,
+      "opponentAvgElo": 1012,
       "teammates": [
         "romeadd",
         "TheRiceMan",
@@ -408,7 +290,7 @@
       "postRating": 1102,
       "eloChange": 16,
       "civ": "Sicilians",
-      "teamAvgElo": 1080,
+      "teamAvgElo": 1079,
       "opponentAvgElo": 1085,
       "teammates": [
         "Vince",
@@ -529,7 +411,7 @@
       "eloChange": -15,
       "civ": "Ethiopians",
       "teamAvgElo": 1023,
-      "opponentAvgElo": 1062,
+      "opponentAvgElo": 1063,
       "teammates": [
         "Drancerpy",
         "TheCobra",
@@ -588,6 +470,126 @@
         "Cheesewheel24",
         "Ferdinand I of Naples",
         "Goodsoup"
+      ]
+    },
+    {
+      "matchId": 494344110,
+      "description": "BAMBOO 10x3xtech",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784829064,
+      "outcome": "loss",
+      "preRating": 1017,
+      "postRating": 1000,
+      "eloChange": -17,
+      "civ": "Gurjaras",
+      "teamAvgElo": 1024,
+      "opponentAvgElo": 997,
+      "teammates": [
+        "iamatthe.hell",
+        "BSHammer",
+        "Wimac"
+      ],
+      "opponents": [
+        "schrubber",
+        "mgmanager",
+        "Parts",
+        "AAA"
+      ]
+    },
+    {
+      "matchId": 494349345,
+      "description": "10x 3x Bamboo (fun and fair) ",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784830667,
+      "outcome": "loss",
+      "preRating": 1000,
+      "postRating": 985,
+      "eloChange": -15,
+      "civ": "Berbers",
+      "teamAvgElo": 1056,
+      "opponentAvgElo": 1023,
+      "teammates": [
+        "WDWKid3",
+        "Vince",
+        "adoniranfernandescachopa"
+      ],
+      "opponents": [
+        "Kalervo Jankko",
+        "pot",
+        "Leonidas",
+        "LetCarton233702"
+      ]
+    },
+    {
+      "matchId": 494356728,
+      "description": "10x 3x Bamboo (fun, fair, and anime breasts) ",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784832819,
+      "outcome": "win",
+      "preRating": 985,
+      "postRating": 1005,
+      "eloChange": 20,
+      "civ": "Tatars",
+      "teamAvgElo": 1045,
+      "opponentAvgElo": 1078,
+      "teammates": [
+        "SmilesBetray",
+        "Idrinkhotbutter",
+        "SchneckeLuchs25"
+      ],
+      "opponents": [
+        "PIEROGI",
+        "_Zeruch_",
+        "gmc inspector",
+        "Barosanu512"
+      ]
+    },
+    {
+      "matchId": 494367105,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784835448,
+      "outcome": "loss",
+      "preRating": 1005,
+      "postRating": 991,
+      "eloChange": -14,
+      "civ": "Mongols",
+      "teamAvgElo": 1021,
+      "opponentAvgElo": 1059,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "iamatthe.hell",
+        "Aesthic"
+      ],
+      "opponents": [
+        "The REAL Pepsiman",
+        "Mad08jojo",
+        "liehuo22",
+        "golhmogh"
+      ]
+    },
+    {
+      "matchId": 494376734,
+      "description": "10x 3x Bamboo (fun, fair, and anime breasts) ",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784838069,
+      "outcome": "win",
+      "preRating": 991,
+      "postRating": 1010,
+      "eloChange": 19,
+      "civ": "Incas",
+      "teamAvgElo": 1000,
+      "opponentAvgElo": 1061,
+      "teammates": [
+        "Kalervo Jankko",
+        "Ghost_pt",
+        "AAA"
+      ],
+      "opponents": [
+        "Parts",
+        "Madness",
+        "Chuckyllo4417",
+        "WipiWi"
       ]
     }
   ]

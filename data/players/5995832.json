@@ -1,12 +1,12 @@
 {
   "profile_id": 5995832,
   "alias": "Idrinkhotbutter",
-  "rating": 1062,
-  "wins": 23,
+  "rating": 1079,
+  "wins": 24,
   "losses": 16,
-  "gamesCount": 39,
-  "winRate": 59,
-  "lastPlayedAt": 1783994824,
+  "gamesCount": 40,
+  "winRate": 60,
+  "lastPlayedAt": 1784832819,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -49,33 +49,10 @@
     1082,
     1064,
     1078,
-    1062
+    1062,
+    1079
   ],
   "recentMatches": [
-    {
-      "matchId": 385273616,
-      "description": "10x shared civ mod! random civ | Poles, Goths rule",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1744604880,
-      "outcome": "loss",
-      "preRating": 1206,
-      "postRating": 1181,
-      "eloChange": -25,
-      "civ": "Khmer",
-      "teamAvgElo": 1057,
-      "opponentAvgElo": 1055,
-      "teammates": [
-        "Mudmonkey351",
-        "Nick4130",
-        "[TodEs] MnTartara"
-      ],
-      "opponents": [
-        "rob",
-        "无法逃离的背叛",
-        "MancoNoMicro",
-        "Dayman"
-      ]
-    },
     {
       "matchId": 392244398,
       "description": "10x shared",
@@ -494,7 +471,7 @@
       "postRating": 1078,
       "eloChange": 14,
       "civ": "Sicilians",
-      "teamAvgElo": 1088,
+      "teamAvgElo": 1087,
       "opponentAvgElo": 1028,
       "teammates": [
         "nooblet3300",
@@ -530,6 +507,30 @@
         "BigAl",
         "Leprechaun Hunter!!!",
         "EastDanielNowhere"
+      ]
+    },
+    {
+      "matchId": 494356728,
+      "description": "10x 3x Bamboo (fun, fair, and anime breasts) ",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784832819,
+      "outcome": "win",
+      "preRating": 1062,
+      "postRating": 1079,
+      "eloChange": 17,
+      "civ": "Teutons",
+      "teamAvgElo": 1045,
+      "opponentAvgElo": 1078,
+      "teammates": [
+        "Scipio",
+        "SmilesBetray",
+        "SchneckeLuchs25"
+      ],
+      "opponents": [
+        "PIEROGI",
+        "_Zeruch_",
+        "gmc inspector",
+        "Barosanu512"
       ]
     }
   ]

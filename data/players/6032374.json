@@ -1,12 +1,12 @@
 {
   "profile_id": 6032374,
   "alias": "RiasSei",
-  "rating": 1018,
-  "wins": 7,
+  "rating": 1041,
+  "wins": 8,
   "losses": 10,
-  "gamesCount": 17,
-  "winRate": 41,
-  "lastPlayedAt": 1771755960,
+  "gamesCount": 18,
+  "winRate": 44,
+  "lastPlayedAt": 1784833122,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,8 @@
     976,
     1011,
     990,
-    1018
+    1018,
+    1041
   ],
   "recentMatches": [
     {
@@ -436,6 +437,30 @@
         "Myriad",
         "PoonSlapper",
         "camus"
+      ]
+    },
+    {
+      "matchId": 494356864,
+      "description": "10x Mod Amazon Tunnel Random 4v4 All Welcome!",
+      "mapname": "my map",
+      "timestamp": 1784833122,
+      "outcome": "win",
+      "preRating": 1018,
+      "postRating": 1041,
+      "eloChange": 23,
+      "civ": "Malians",
+      "teamAvgElo": 1057,
+      "opponentAvgElo": 1060,
+      "teammates": [
+        "Leopard",
+        "Saloon_F_F",
+        "BigAl"
+      ],
+      "opponents": [
+        "2EZ.trombone",
+        "sppd3181",
+        "Joseph",
+        "beat"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 1700069,
   "alias": "Madness",
-  "rating": 1008,
-  "wins": 36,
-  "losses": 36,
-  "gamesCount": 72,
+  "rating": 1007,
+  "wins": 37,
+  "losses": 37,
+  "gamesCount": 74,
   "winRate": 50,
-  "lastPlayedAt": 1784574383,
+  "lastPlayedAt": 1784838069,
   "country": "ch",
   "merged_ids": [
     1700069,
@@ -85,57 +85,11 @@
     1017,
     1002,
     991,
-    1008
+    1008,
+    1024,
+    1007
   ],
   "recentMatches": [
-    {
-      "matchId": 466555323,
-      "description": "3x 10x bamboo - random civ - no noobs",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1774840080,
-      "outcome": "loss",
-      "preRating": 1088,
-      "postRating": 1070,
-      "eloChange": -18,
-      "civ": "Jurchens",
-      "teamAvgElo": 1081,
-      "opponentAvgElo": 1045,
-      "teammates": [
-        "znifer",
-        "PIEROGI",
-        "moabishere"
-      ],
-      "opponents": [
-        "gemmascho",
-        "Foldout Couch",
-        "[CSGS]Runescape",
-        "Yakult"
-      ]
-    },
-    {
-      "matchId": 469889158,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1776027120,
-      "outcome": "loss",
-      "preRating": 1070,
-      "postRating": 1054,
-      "eloChange": -16,
-      "civ": "Bohemians",
-      "teamAvgElo": 1041,
-      "opponentAvgElo": 1070,
-      "teammates": [
-        "Eydo",
-        "FAOse7en",
-        "kekekeya"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "UbaneMess",
-        "tonkatumura",
-        "tony.li"
-      ]
-    },
     {
       "matchId": 469893259,
       "description": "256x 10x Forest Nothing",
@@ -411,7 +365,7 @@
       "eloChange": 16,
       "civ": "Vietnamese",
       "teamAvgElo": 1040,
-      "opponentAvgElo": 1007,
+      "opponentAvgElo": 1009,
       "teammates": [
         "LUIS123456E",
         "Reqiescatinpace",
@@ -566,6 +520,54 @@
         "[B] Cannino",
         "WDWKid3",
         "im slow"
+      ]
+    },
+    {
+      "matchId": 494370592,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784836637,
+      "outcome": "win",
+      "preRating": 1008,
+      "postRating": 1024,
+      "eloChange": 16,
+      "civ": "Burgundians",
+      "teamAvgElo": 1013,
+      "opponentAvgElo": 1001,
+      "teammates": [
+        "Kamus197945",
+        "Chuckyllo4417",
+        "juanmontes005"
+      ],
+      "opponents": [
+        "Parts",
+        "Zortopos",
+        "LeG",
+        "Borkan"
+      ]
+    },
+    {
+      "matchId": 494376734,
+      "description": "10x 3x Bamboo (fun, fair, and anime breasts) ",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784838069,
+      "outcome": "loss",
+      "preRating": 1024,
+      "postRating": 1007,
+      "eloChange": -17,
+      "civ": "Aztecs",
+      "teamAvgElo": 1061,
+      "opponentAvgElo": 1000,
+      "teammates": [
+        "Parts",
+        "Chuckyllo4417",
+        "WipiWi"
+      ],
+      "opponents": [
+        "Scipio",
+        "Kalervo Jankko",
+        "Ghost_pt",
+        "AAA"
       ]
     }
   ]

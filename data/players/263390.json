@@ -1,12 +1,12 @@
 {
   "profile_id": 263390,
   "alias": "DrachenKuh",
-  "rating": 1023,
+  "rating": 1007,
   "wins": 12,
-  "losses": 14,
-  "gamesCount": 26,
-  "winRate": 46,
-  "lastPlayedAt": 1784674152,
+  "losses": 15,
+  "gamesCount": 27,
+  "winRate": 44,
+  "lastPlayedAt": 1784838879,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -36,33 +36,10 @@
     1006,
     1022,
     1007,
-    1023
+    1023,
+    1007
   ],
   "recentMatches": [
-    {
-      "matchId": 464828478,
-      "description": "10x 256x forest nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1774218240,
-      "outcome": "win",
-      "preRating": 952,
-      "postRating": 1000,
-      "eloChange": 48,
-      "civ": "Mongols",
-      "teamAvgElo": 1027,
-      "opponentAvgElo": 1036,
-      "teammates": [
-        "Bryce Coolguy",
-        "Zeriel",
-        "FinishedMyBurger"
-      ],
-      "opponents": [
-        "Kunozaur",
-        "Sal",
-        "KnightStudios",
-        "nooblet3300"
-      ]
-    },
     {
       "matchId": 467138614,
       "description": "10x 3x shared !!NO NOOBS!!",
@@ -517,6 +494,30 @@
         "jair_silva",
         "jonnywins100",
         "Bibz"
+      ]
+    },
+    {
+      "matchId": 494379875,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784838879,
+      "outcome": "loss",
+      "preRating": 1023,
+      "postRating": 1007,
+      "eloChange": -16,
+      "civ": "Saracens",
+      "teamAvgElo": 1020,
+      "opponentAvgElo": 1030,
+      "teammates": [
+        "JaFu",
+        "pandasadnap",
+        "Mortak"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "LonelyKnight",
+        "omega",
+        "iamatthe.hell"
       ]
     }
   ]
