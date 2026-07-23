@@ -1,12 +1,12 @@
 {
   "profile_id": 16139506,
   "alias": "GJ Euphory",
-  "rating": 964,
-  "wins": 21,
+  "rating": 982,
+  "wins": 22,
   "losses": 28,
-  "gamesCount": 49,
-  "winRate": 43,
-  "lastPlayedAt": 1784049713,
+  "gamesCount": 50,
+  "winRate": 44,
+  "lastPlayedAt": 1784768519,
   "country": "pe",
   "merged_ids": [
     12999252,
@@ -62,33 +62,10 @@
     971,
     959,
     977,
-    964
+    964,
+    982
   ],
   "recentMatches": [
-    {
-      "matchId": 442494973,
-      "description": "10x 3x BAMBOO NOTHING",
-      "mapname": "Bamboo_Nothing_V3.0.7_No_Water___Edge_Fix",
-      "timestamp": 1766625720,
-      "outcome": "win",
-      "preRating": 1020,
-      "postRating": 1036,
-      "eloChange": 16,
-      "civ": "Bengalis",
-      "teamAvgElo": 1068,
-      "opponentAvgElo": 1023,
-      "teammates": [
-        "Ruuder",
-        "TresTilo",
-        "Frederick"
-      ],
-      "opponents": [
-        "Kaa Da Kaveman",
-        "treehugger",
-        "KwiK",
-        "Moosvodavosinsinihos"
-      ]
-    },
     {
       "matchId": 443992039,
       "description": "10x 3x - bamboo - updated",
@@ -543,6 +520,30 @@
         "WipiWi",
         "im slow",
         "NothingAtAll11"
+      ]
+    },
+    {
+      "matchId": 494206661,
+      "description": "BN 10x 3x good players only",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784768519,
+      "outcome": "win",
+      "preRating": 964,
+      "postRating": 982,
+      "eloChange": 18,
+      "civ": "Unknown",
+      "teamAvgElo": 1000,
+      "opponentAvgElo": 1012,
+      "teammates": [
+        "duckbuildperson",
+        "The Cobra Brothers",
+        "Mahmut"
+      ],
+      "opponents": [
+        "Maxim Liann",
+        "ch33tah",
+        "ROGGAN",
+        "LethalP59"
       ]
     }
   ]

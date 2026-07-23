@@ -1,12 +1,12 @@
 {
   "profile_id": 6144035,
   "alias": "Wendysocute",
-  "rating": 918,
+  "rating": 907,
   "wins": 10,
-  "losses": 20,
-  "gamesCount": 30,
-  "winRate": 33,
-  "lastPlayedAt": 1784673747,
+  "losses": 21,
+  "gamesCount": 31,
+  "winRate": 32,
+  "lastPlayedAt": 1784758474,
   "country": "it",
   "merged_ids": [
     6144035,
@@ -43,33 +43,10 @@
     953,
     941,
     930,
-    918
+    918,
+    907
   ],
   "recentMatches": [
-    {
-      "matchId": 422859605,
-      "description": "10x 3x - bamboo",
-      "mapname": "Bamboo Nothing_Paren_Vlocal_V2.5",
-      "timestamp": 1759465860,
-      "outcome": "win",
-      "preRating": 871,
-      "postRating": 917,
-      "eloChange": 46,
-      "civ": "Unknown",
-      "teamAvgElo": 1030,
-      "opponentAvgElo": 1034,
-      "teammates": [
-        "Parenquima",
-        "OhSheeep",
-        "procrastination.exe"
-      ],
-      "opponents": [
-        "Cale94",
-        "Wozbo",
-        "ZTH",
-        "Dragonlord Freya"
-      ]
-    },
     {
       "matchId": 423040758,
       "description": "10x amazon 4v4 random civ",
@@ -524,6 +501,30 @@
         "Vulkan",
         "Kuecken_das_Vollstrecker",
         "Rander001"
+      ]
+    },
+    {
+      "matchId": 494181183,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784758474,
+      "outcome": "loss",
+      "preRating": 918,
+      "postRating": 907,
+      "eloChange": -11,
+      "civ": "Chinese",
+      "teamAvgElo": 968,
+      "opponentAvgElo": 1033,
+      "teammates": [
+        "OhSheeep",
+        "Holy Cheetos",
+        "Chirijiraden"
+      ],
+      "opponents": [
+        "Parts",
+        "Gasior",
+        "Sal",
+        "Your Ego"
       ]
     }
   ]

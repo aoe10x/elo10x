@@ -1,12 +1,12 @@
 {
   "profile_id": 19495420,
   "alias": "leandrod_c",
-  "rating": 945,
+  "rating": 933,
   "wins": 16,
-  "losses": 31,
-  "gamesCount": 47,
-  "winRate": 34,
-  "lastPlayedAt": 1784506236,
+  "losses": 32,
+  "gamesCount": 48,
+  "winRate": 33,
+  "lastPlayedAt": 1784758042,
   "country": "ar",
   "merged_ids": [
     12790969,
@@ -60,33 +60,10 @@
     916,
     934,
     922,
-    945
+    945,
+    933
   ],
   "recentMatches": [
-    {
-      "matchId": 423287751,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1759633140,
-      "outcome": "win",
-      "preRating": 856,
-      "postRating": 880,
-      "eloChange": 24,
-      "civ": "Malay",
-      "teamAvgElo": 988,
-      "opponentAvgElo": 1060,
-      "teammates": [
-        "LonelyKnight",
-        "Zeriel",
-        "Rosey Toes"
-      ],
-      "opponents": [
-        "nooblet3300",
-        "El Barto",
-        "Emotions are prohibited",
-        "DnD"
-      ]
-    },
     {
       "matchId": 445373539,
       "description": "256x 10x Forest Nothing",
@@ -541,6 +518,30 @@
         "Consume Product",
         "DJ",
         "S´korpi0n_43"
+      ]
+    },
+    {
+      "matchId": 494178567,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784758042,
+      "outcome": "loss",
+      "preRating": 945,
+      "postRating": 933,
+      "eloChange": -12,
+      "civ": "Bulgarians",
+      "teamAvgElo": 999,
+      "opponentAvgElo": 1042,
+      "teammates": [
+        "Vulkan",
+        "Monk",
+        "Proto Potato"
+      ],
+      "opponents": [
+        "TJ",
+        "yimacs_yoyoyo",
+        "Maxim Liann",
+        "bommietommie"
       ]
     }
   ]

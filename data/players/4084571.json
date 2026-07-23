@@ -1,12 +1,12 @@
 {
   "profile_id": 4084571,
   "alias": "Mahmut",
-  "rating": 1011,
-  "wins": 11,
+  "rating": 1027,
+  "wins": 12,
   "losses": 13,
-  "gamesCount": 24,
-  "winRate": 46,
-  "lastPlayedAt": 1784715612,
+  "gamesCount": 25,
+  "winRate": 48,
+  "lastPlayedAt": 1784768519,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -34,33 +34,10 @@
     988,
     975,
     992,
-    1011
+    1011,
+    1027
   ],
   "recentMatches": [
-    {
-      "matchId": 382944649,
-      "description": "10x 3x bamboo nothing 4on4",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1743741420,
-      "outcome": "win",
-      "preRating": 930,
-      "postRating": 982,
-      "eloChange": 52,
-      "civ": "Bengalis",
-      "teamAvgElo": 942,
-      "opponentAvgElo": 1020,
-      "teammates": [
-        "Todesbrezel",
-        "cmd 2.0",
-        "Das_Constel"
-      ],
-      "opponents": [
-        "RvneR",
-        "roshaman1997",
-        "[TSU] Red Cansky",
-        "Regina Ip"
-      ]
-    },
     {
       "matchId": 464209486,
       "description": "10x Shared Civ",
@@ -515,6 +492,30 @@
         "^1Butcher_^4Mars",
         "紫蝶黄蜂俱有情",
         "GrandUni"
+      ]
+    },
+    {
+      "matchId": 494206661,
+      "description": "BN 10x 3x good players only",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784768519,
+      "outcome": "win",
+      "preRating": 1011,
+      "postRating": 1027,
+      "eloChange": 16,
+      "civ": "Dravidians",
+      "teamAvgElo": 1000,
+      "opponentAvgElo": 1012,
+      "teammates": [
+        "duckbuildperson",
+        "GJ Euphory",
+        "The Cobra Brothers"
+      ],
+      "opponents": [
+        "Maxim Liann",
+        "ch33tah",
+        "ROGGAN",
+        "LethalP59"
       ]
     }
   ]

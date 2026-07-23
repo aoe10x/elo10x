@@ -1,12 +1,12 @@
 {
   "profile_id": 11873535,
   "alias": "romeadd",
-  "rating": 1201,
+  "rating": 1177,
   "wins": 20,
-  "losses": 7,
-  "gamesCount": 27,
-  "winRate": 74,
-  "lastPlayedAt": 1784733211,
+  "losses": 8,
+  "gamesCount": 28,
+  "winRate": 71,
+  "lastPlayedAt": 1784762245,
   "country": "gb",
   "merged_ids": [
     11690840,
@@ -40,33 +40,10 @@
     1236,
     1245,
     1222,
-    1201
+    1201,
+    1177
   ],
   "recentMatches": [
-    {
-      "matchId": 488052761,
-      "description": "4vs4 10x 3x shared civ bonus, random civ",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1782451500,
-      "outcome": "win",
-      "preRating": 1064,
-      "postRating": 1092,
-      "eloChange": 28,
-      "civ": "Dravidians",
-      "teamAvgElo": 1079,
-      "opponentAvgElo": 982,
-      "teammates": [
-        "Vladimir Trump",
-        "Dogberto",
-        "OldManofStorr"
-      ],
-      "opponents": [
-        "yimacs_yoyoyo",
-        "J G Wentworth",
-        "Consume Product",
-        "Wucky the Plucky Ducky"
-      ]
-    },
     {
       "matchId": 488637781,
       "description": "10x 3x bamboo",
@@ -521,6 +498,30 @@
         "LonelyKnight",
         "menorahjury",
         "El Barto"
+      ]
+    },
+    {
+      "matchId": 494190006,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784762245,
+      "outcome": "loss",
+      "preRating": 1201,
+      "postRating": 1177,
+      "eloChange": -24,
+      "civ": "Malay",
+      "teamAvgElo": 1104,
+      "opponentAvgElo": 999,
+      "teammates": [
+        "NoAgendaPODCAST",
+        "Brohio",
+        "ActualWizard"
+      ],
+      "opponents": [
+        "♥DraganBorn♥",
+        "[ ARKI ! ]",
+        "[TodEs] MnTartara",
+        "baianitro"
       ]
     }
   ]

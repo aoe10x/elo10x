@@ -1,12 +1,12 @@
 {
   "profile_id": 5825088,
   "alias": "Zortopos",
-  "rating": 1013,
-  "wins": 11,
-  "losses": 13,
-  "gamesCount": 24,
+  "rating": 1020,
+  "wins": 12,
+  "losses": 14,
+  "gamesCount": 26,
   "winRate": 46,
-  "lastPlayedAt": 1783384524,
+  "lastPlayedAt": 1784764736,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -34,57 +34,11 @@
     995,
     1012,
     995,
-    1013
+    1013,
+    1000,
+    1020
   ],
   "recentMatches": [
-    {
-      "matchId": 261894532,
-      "description": "10x Shared bonuses 4v4 Amazon tunnel random civs",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1695790560,
-      "outcome": "loss",
-      "preRating": 955,
-      "postRating": 921,
-      "eloChange": -34,
-      "civ": "Mongols",
-      "teamAvgElo": 1064,
-      "opponentAvgElo": 1021,
-      "teammates": [
-        "Costco1.50HotDog",
-        "SirNoobALot",
-        "brunopt99"
-      ],
-      "opponents": [
-        "sam_ks",
-        "rob",
-        "CarloMagno",
-        "GandalfGG"
-      ]
-    },
-    {
-      "matchId": 263223291,
-      "description": "10x shared random civ",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1696381140,
-      "outcome": "win",
-      "preRating": 921,
-      "postRating": 972,
-      "eloChange": 51,
-      "civ": "Byzantines",
-      "teamAvgElo": 996,
-      "opponentAvgElo": 1012,
-      "teammates": [
-        "Baiter_Baby",
-        "witchking",
-        "weequ"
-      ],
-      "opponents": [
-        "mgmanager",
-        "Antimier",
-        "sean",
-        "m3nch"
-      ]
-    },
     {
       "matchId": 263788140,
       "description": "10x  civ shared",
@@ -515,6 +469,54 @@
         "Chuckyllo4417",
         "Wozbo",
         "Kindregg"
+      ]
+    },
+    {
+      "matchId": 494194512,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784763648,
+      "outcome": "loss",
+      "preRating": 1013,
+      "postRating": 1000,
+      "eloChange": -13,
+      "civ": "Vietnamese",
+      "teamAvgElo": 997,
+      "opponentAvgElo": 1070,
+      "teammates": [
+        "MarieBrutale",
+        "Maxim Liann",
+        "duckbuildperson"
+      ],
+      "opponents": [
+        "TJ",
+        "NothingAtAll11",
+        "King_Love",
+        "KooKooSss"
+      ]
+    },
+    {
+      "matchId": 494197461,
+      "description": "10x 3x BN ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784764736,
+      "outcome": "win",
+      "preRating": 1000,
+      "postRating": 1020,
+      "eloChange": 20,
+      "civ": "Berbers",
+      "teamAvgElo": 1069,
+      "opponentAvgElo": 1078,
+      "teammates": [
+        "Holy Cheetos",
+        "Imperator Storm",
+        "田瘾犯了"
+      ],
+      "opponents": [
+        "pool_champ",
+        "Parts",
+        "Supreme Lord 'Kim Xi Trump'",
+        "Dylan Dog"
       ]
     }
   ]

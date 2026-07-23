@@ -1,12 +1,12 @@
 {
   "profile_id": 3712821,
   "alias": "irvizuett",
-  "rating": 918,
+  "rating": 906,
   "wins": 28,
-  "losses": 51,
-  "gamesCount": 79,
+  "losses": 52,
+  "gamesCount": 80,
   "winRate": 35,
-  "lastPlayedAt": 1784684421,
+  "lastPlayedAt": 1784766270,
   "country": "mx",
   "merged_ids": [],
   "ratingHistory": [
@@ -89,33 +89,10 @@
     918,
     909,
     898,
-    918
+    918,
+    906
   ],
   "recentMatches": [
-    {
-      "matchId": 478359639,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1778999640,
-      "outcome": "loss",
-      "preRating": 935,
-      "postRating": 922,
-      "eloChange": -13,
-      "civ": "Saracens",
-      "teamAvgElo": 970,
-      "opponentAvgElo": 997,
-      "teammates": [
-        "nooblet3300",
-        "苏州第一男枪",
-        "468673564"
-      ],
-      "opponents": [
-        "Bryce Coolguy",
-        "Primo_Pixha",
-        "Sunnydae",
-        "afranciscosa"
-      ]
-    },
     {
       "matchId": 480789844,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -570,6 +547,30 @@
         "Dinger",
         "399 the Grizzly Bear - RIP <3",
         "khouildi.tarek.tk"
+      ]
+    },
+    {
+      "matchId": 494200823,
+      "description": "new 10x shared civ with hero",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784766270,
+      "outcome": "loss",
+      "preRating": 918,
+      "postRating": 906,
+      "eloChange": -12,
+      "civ": "Cumans",
+      "teamAvgElo": 980,
+      "opponentAvgElo": 1004,
+      "teammates": [
+        "Lordbusiness",
+        "Borkan",
+        "G"
+      ],
+      "opponents": [
+        "dorayan",
+        "SelffingDwggo",
+        "Maxim Liann",
+        "NothingAtAll11"
       ]
     }
   ]

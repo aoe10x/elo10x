@@ -1,12 +1,12 @@
 {
   "profile_id": 8928830,
   "alias": "Given Sens",
-  "rating": 1040,
+  "rating": 1023,
   "wins": 31,
-  "losses": 36,
-  "gamesCount": 67,
+  "losses": 37,
+  "gamesCount": 68,
   "winRate": 46,
-  "lastPlayedAt": 1784333817,
+  "lastPlayedAt": 1784760957,
   "country": "nl",
   "merged_ids": [],
   "ratingHistory": [
@@ -77,33 +77,10 @@
     1018,
     1004,
     1023,
-    1040
+    1040,
+    1023
   ],
   "recentMatches": [
-    {
-      "matchId": 451510937,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1769501280,
-      "outcome": "win",
-      "preRating": 1037,
-      "postRating": 1054,
-      "eloChange": 17,
-      "civ": "Spanish",
-      "teamAvgElo": 1078,
-      "opponentAvgElo": 1049,
-      "teammates": [
-        "nooblet3300",
-        "Pilot in training",
-        "Phantom_"
-      ],
-      "opponents": [
-        "PapusPopus",
-        "tonzo",
-        "Keishi",
-        "Lady Uterus"
-      ]
-    },
     {
       "matchId": 451746495,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -558,6 +535,30 @@
         "Tiny Hands",
         "mothysime11",
         "Consume Product"
+      ]
+    },
+    {
+      "matchId": 494187262,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784760957,
+      "outcome": "loss",
+      "preRating": 1040,
+      "postRating": 1023,
+      "eloChange": -17,
+      "civ": "Byzantines",
+      "teamAvgElo": 1084,
+      "opponentAvgElo": 1016,
+      "teammates": [
+        "Holy Cheetos",
+        "Lucifer",
+        "derailer9"
+      ],
+      "opponents": [
+        "Parts",
+        "Bambuchagt",
+        "OhSheeep",
+        "ZONIX"
       ]
     }
   ]

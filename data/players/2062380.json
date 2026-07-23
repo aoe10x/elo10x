@@ -1,12 +1,12 @@
 {
   "profile_id": 2062380,
   "alias": "WorldsFastestTurtle",
-  "rating": 1021,
+  "rating": 1008,
   "wins": 22,
-  "losses": 27,
-  "gamesCount": 49,
-  "winRate": 45,
-  "lastPlayedAt": 1784263625,
+  "losses": 28,
+  "gamesCount": 50,
+  "winRate": 44,
+  "lastPlayedAt": 1784769211,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -59,33 +59,10 @@
     1030,
     1015,
     1033,
-    1021
+    1021,
+    1008
   ],
   "recentMatches": [
-    {
-      "matchId": 481266633,
-      "description": "4vs4 10x 3x shared civ bonus, random civ",
-      "mapname": "Yin Yang",
-      "timestamp": 1780056240,
-      "outcome": "win",
-      "preRating": 960,
-      "postRating": 979,
-      "eloChange": 19,
-      "civ": "Italians",
-      "teamAvgElo": 1056,
-      "opponentAvgElo": 1027,
-      "teammates": [
-        "yimacs_yoyoyo",
-        "FrostByte",
-        "salchipapas"
-      ],
-      "opponents": [
-        "田瘾犯了",
-        "MY NAMES TOOTH",
-        "STD",
-        "ObnoxiousPoem"
-      ]
-    },
     {
       "matchId": 481268288,
       "description": "4vs4 10x 3x shared civ bonus, random civ",
@@ -540,6 +517,30 @@
         "田瘾犯了",
         "雲",
         "Bambamdumm"
+      ]
+    },
+    {
+      "matchId": 494208565,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784769211,
+      "outcome": "loss",
+      "preRating": 1021,
+      "postRating": 1008,
+      "eloChange": -13,
+      "civ": "Armenians",
+      "teamAvgElo": 1062,
+      "opponentAvgElo": 1077,
+      "teammates": [
+        "faux",
+        "LeosMind",
+        "feid_"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "Peresoso",
+        "EL__PATRON"
       ]
     }
   ]

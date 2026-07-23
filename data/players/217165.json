@@ -1,12 +1,12 @@
 {
   "profile_id": 217165,
   "alias": "Llama",
-  "rating": 1081,
+  "rating": 1065,
   "wins": 36,
-  "losses": 28,
-  "gamesCount": 64,
-  "winRate": 56,
-  "lastPlayedAt": 1784492064,
+  "losses": 29,
+  "gamesCount": 65,
+  "winRate": 55,
+  "lastPlayedAt": 1784756295,
   "country": "es",
   "merged_ids": [
     217165,
@@ -79,33 +79,10 @@
     1038,
     1054,
     1067,
-    1081
+    1081,
+    1065
   ],
   "recentMatches": [
-    {
-      "matchId": 485167672,
-      "description": "10x 3x BN",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1781406660,
-      "outcome": "loss",
-      "preRating": 1076,
-      "postRating": 1058,
-      "eloChange": -18,
-      "civ": "Byzantines",
-      "teamAvgElo": 1043,
-      "opponentAvgElo": 1022,
-      "teammates": [
-        "HighPriestCaco",
-        "WipiWi",
-        "PIEROGI"
-      ],
-      "opponents": [
-        "duckbuildperson",
-        "pool_champ",
-        "golhmogh",
-        "CosteLoco"
-      ]
-    },
     {
       "matchId": 485178608,
       "description": "10x 3x bamboo no noob q群729084973",
@@ -560,6 +537,30 @@
         "Mehandor",
         "Tootin B. Anthony",
         "wintre"
+      ]
+    },
+    {
+      "matchId": 494174559,
+      "description": "10x3x   shared bonus random civ  no noob",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784756295,
+      "outcome": "loss",
+      "preRating": 1081,
+      "postRating": 1065,
+      "eloChange": -16,
+      "civ": "Franks",
+      "teamAvgElo": 1048,
+      "opponentAvgElo": 1071,
+      "teammates": [
+        "Your Ego",
+        "Texas Red",
+        "Maxim Liann"
+      ],
+      "opponents": [
+        "menorahjury",
+        "Maic",
+        "Mortak",
+        "McKrakfejs"
       ]
     }
   ]

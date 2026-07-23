@@ -1,12 +1,12 @@
 {
   "profile_id": 19549528,
   "alias": "LAITH",
-  "rating": 978,
+  "rating": 967,
   "wins": 8,
-  "losses": 13,
-  "gamesCount": 21,
-  "winRate": 38,
-  "lastPlayedAt": 1784624908,
+  "losses": 14,
+  "gamesCount": 22,
+  "winRate": 36,
+  "lastPlayedAt": 1784766692,
   "country": "gb",
   "merged_ids": [
     12803367,
@@ -34,33 +34,10 @@
     976,
     966,
     957,
-    978
+    978,
+    967
   ],
   "recentMatches": [
-    {
-      "matchId": 370983701,
-      "description": "10x 3x tech Shared Civ",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1739096220,
-      "outcome": "win",
-      "preRating": 956,
-      "postRating": 1004,
-      "eloChange": 48,
-      "civ": "Unknown",
-      "teamAvgElo": 1036,
-      "opponentAvgElo": 964,
-      "teammates": [
-        "Clean",
-        "Rangel",
-        "Rice Monger (SoullessMZD)"
-      ],
-      "opponents": [
-        "gonzalogiovannelli",
-        "Chimue",
-        "ch33tah",
-        "Wikzor"
-      ]
-    },
     {
       "matchId": 376293616,
       "description": "10x shared 3x tech Bamboo nothing random civ",
@@ -515,6 +492,30 @@
         "紫蝶黄蜂俱有情",
         "NothingAtAll11",
         "Monk"
+      ]
+    },
+    {
+      "matchId": 494200942,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784766692,
+      "outcome": "loss",
+      "preRating": 978,
+      "postRating": 967,
+      "eloChange": -11,
+      "civ": "Burmese",
+      "teamAvgElo": 1002,
+      "opponentAvgElo": 1079,
+      "teammates": [
+        "feid_",
+        "RedBullWOLOLO26",
+        "ROGGAN"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "faux",
+        "{German}Kaese"
       ]
     }
   ]

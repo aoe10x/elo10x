@@ -1,12 +1,12 @@
 {
   "profile_id": 296704,
   "alias": "Brohio",
-  "rating": 1024,
+  "rating": 1007,
   "wins": 14,
-  "losses": 14,
-  "gamesCount": 28,
-  "winRate": 50,
-  "lastPlayedAt": 1783643224,
+  "losses": 15,
+  "gamesCount": 29,
+  "winRate": 48,
+  "lastPlayedAt": 1784762245,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -38,33 +38,10 @@
     1008,
     1021,
     1006,
-    1024
+    1024,
+    1007
   ],
   "recentMatches": [
-    {
-      "matchId": 376492460,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1741250760,
-      "outcome": "win",
-      "preRating": 1017,
-      "postRating": 1049,
-      "eloChange": 32,
-      "civ": "Unknown",
-      "teamAvgElo": 1027,
-      "opponentAvgElo": 979,
-      "teammates": [
-        "JMM",
-        "goldinggunsandparts",
-        "5Cmain"
-      ],
-      "opponents": [
-        "Kumad",
-        "RamboRob",
-        "Myriad",
-        "NoobDeElite7101"
-      ]
-    },
     {
       "matchId": 377430518,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -519,6 +496,30 @@
         "RedBullWOLOLO26",
         "ZaySol",
         "Belisarius"
+      ]
+    },
+    {
+      "matchId": 494190006,
+      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784762245,
+      "outcome": "loss",
+      "preRating": 1024,
+      "postRating": 1007,
+      "eloChange": -17,
+      "civ": "Lithuanians",
+      "teamAvgElo": 1104,
+      "opponentAvgElo": 999,
+      "teammates": [
+        "NoAgendaPODCAST",
+        "romeadd",
+        "ActualWizard"
+      ],
+      "opponents": [
+        "♥DraganBorn♥",
+        "[ ARKI ! ]",
+        "[TodEs] MnTartara",
+        "baianitro"
       ]
     }
   ]

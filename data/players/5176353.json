@@ -1,12 +1,12 @@
 {
   "profile_id": 5176353,
   "alias": "Holy Cheetos",
-  "rating": 1032,
-  "wins": 44,
-  "losses": 41,
-  "gamesCount": 85,
+  "rating": 1030,
+  "wins": 46,
+  "losses": 43,
+  "gamesCount": 89,
   "winRate": 52,
-  "lastPlayedAt": 1783894851,
+  "lastPlayedAt": 1784764736,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -95,105 +95,13 @@
     1018,
     1035,
     1051,
-    1032
+    1032,
+    1045,
+    1028,
+    1011,
+    1030
   ],
   "recentMatches": [
-    {
-      "matchId": 397896928,
-      "description": "Bamboo 10x bonus civs 3x tech Random",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1749246600,
-      "outcome": "win",
-      "preRating": 994,
-      "postRating": 1012,
-      "eloChange": 18,
-      "civ": "Unknown",
-      "teamAvgElo": 992,
-      "opponentAvgElo": 1039,
-      "teammates": [
-        "Raggamuffin'",
-        "Feitoria",
-        "[TSU] Red Cansky"
-      ],
-      "opponents": [
-        "PIEROGI",
-        "seaguls",
-        "ebonzhang",
-        "hasanceylan256"
-      ]
-    },
-    {
-      "matchId": 399589117,
-      "description": "10x_3x_Bamboo_Nothing_Random",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1749884460,
-      "outcome": "win",
-      "preRating": 1012,
-      "postRating": 1028,
-      "eloChange": 16,
-      "civ": "Georgians",
-      "teamAvgElo": 1042,
-      "opponentAvgElo": 1014,
-      "teammates": [
-        "漫山哒哒哒",
-        "Ye",
-        "LonelyKnight"
-      ],
-      "opponents": [
-        "Contry",
-        "DnD",
-        "OhSheeep",
-        "X"
-      ]
-    },
-    {
-      "matchId": 399848032,
-      "description": "10x 3x tech shared civ bamboo nothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1749973380,
-      "outcome": "loss",
-      "preRating": 1028,
-      "postRating": 1011,
-      "eloChange": -17,
-      "civ": "Magyars",
-      "teamAvgElo": 1040,
-      "opponentAvgElo": 1006,
-      "teammates": [
-        "Dylan Dog",
-        "AngelPaniwater",
-        "OKATHOR"
-      ],
-      "opponents": [
-        "OOOOOOOOOOO",
-        "ShadowTitan",
-        "勇战到抵",
-        "[CL] DAB2"
-      ]
-    },
-    {
-      "matchId": 400281974,
-      "description": "turbo 10x 3x livestock",
-      "mapname": "Bamboo Nothing_Paren_V2",
-      "timestamp": 1750133460,
-      "outcome": "win",
-      "preRating": 1011,
-      "postRating": 1026,
-      "eloChange": 15,
-      "civ": "Unknown",
-      "teamAvgElo": 1027,
-      "opponentAvgElo": 996,
-      "teammates": [
-        "El Buolas",
-        "yimacs_yoyoyo",
-        "Apocalypto"
-      ],
-      "opponents": [
-        "FREESTYLE72",
-        "Larvagator",
-        "Lykerya",
-        "im so super high"
-      ]
-    },
     {
       "matchId": 401635901,
       "description": "10x 3x Bamboo - 10xshared.com",
@@ -576,6 +484,102 @@
         "WipiWi",
         "X",
         "charingane1"
+      ]
+    },
+    {
+      "matchId": 494177051,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784757194,
+      "outcome": "win",
+      "preRating": 1032,
+      "postRating": 1045,
+      "eloChange": 13,
+      "civ": "Goths",
+      "teamAvgElo": 1066,
+      "opponentAvgElo": 970,
+      "teammates": [
+        "Parts",
+        "TheRiceMan",
+        "Ichigoblack"
+      ],
+      "opponents": [
+        "NothingAtAll11",
+        "Ferdinand I of Naples",
+        "Chirijiraden",
+        "AleRayado88"
+      ]
+    },
+    {
+      "matchId": 494181183,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784758474,
+      "outcome": "loss",
+      "preRating": 1045,
+      "postRating": 1028,
+      "eloChange": -17,
+      "civ": "Incas",
+      "teamAvgElo": 968,
+      "opponentAvgElo": 1033,
+      "teammates": [
+        "OhSheeep",
+        "Chirijiraden",
+        "Wendysocute"
+      ],
+      "opponents": [
+        "Parts",
+        "Gasior",
+        "Sal",
+        "Your Ego"
+      ]
+    },
+    {
+      "matchId": 494187262,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784760957,
+      "outcome": "loss",
+      "preRating": 1028,
+      "postRating": 1011,
+      "eloChange": -17,
+      "civ": "Romans",
+      "teamAvgElo": 1084,
+      "opponentAvgElo": 1016,
+      "teammates": [
+        "Given Sens",
+        "Lucifer",
+        "derailer9"
+      ],
+      "opponents": [
+        "Parts",
+        "Bambuchagt",
+        "OhSheeep",
+        "ZONIX"
+      ]
+    },
+    {
+      "matchId": 494197461,
+      "description": "10x 3x BN ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784764736,
+      "outcome": "win",
+      "preRating": 1011,
+      "postRating": 1030,
+      "eloChange": 19,
+      "civ": "Shu",
+      "teamAvgElo": 1069,
+      "opponentAvgElo": 1078,
+      "teammates": [
+        "Zortopos",
+        "Imperator Storm",
+        "田瘾犯了"
+      ],
+      "opponents": [
+        "pool_champ",
+        "Parts",
+        "Supreme Lord 'Kim Xi Trump'",
+        "Dylan Dog"
       ]
     }
   ]

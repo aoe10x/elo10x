@@ -1,12 +1,12 @@
 {
   "profile_id": 2389202,
   "alias": "Rooaary",
-  "rating": 948,
-  "wins": 46,
+  "rating": 969,
+  "wins": 47,
   "losses": 49,
-  "gamesCount": 95,
-  "winRate": 48,
-  "lastPlayedAt": 1784433303,
+  "gamesCount": 96,
+  "winRate": 49,
+  "lastPlayedAt": 1784767974,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -105,33 +105,10 @@
     954,
     972,
     961,
-    948
+    948,
+    969
   ],
   "recentMatches": [
-    {
-      "matchId": 447679267,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1768214160,
-      "outcome": "loss",
-      "preRating": 1014,
-      "postRating": 997,
-      "eloChange": -17,
-      "civ": "Burgundians",
-      "teamAvgElo": 1058,
-      "opponentAvgElo": 987,
-      "teammates": [
-        "Kumad",
-        "Myriad",
-        "Huevo Henry"
-      ],
-      "opponents": [
-        "EL__PATRON",
-        "aLEXt",
-        "TheZeos",
-        "Razaar"
-      ]
-    },
     {
       "matchId": 476730317,
       "description": "10x 3x bamboo",
@@ -586,6 +563,30 @@
         "Lumedge",
         "SickFishh",
         "byronnnnn"
+      ]
+    },
+    {
+      "matchId": 494205406,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784767974,
+      "outcome": "win",
+      "preRating": 948,
+      "postRating": 969,
+      "eloChange": 21,
+      "civ": "Vikings",
+      "teamAvgElo": 1017,
+      "opponentAvgElo": 1063,
+      "teammates": [
+        "faux",
+        "feid_",
+        "Peresoso"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "RedBullWOLOLO26",
+        "妙手回春"
       ]
     }
   ]
