@@ -1,12 +1,12 @@
 {
   "profile_id": 4033024,
   "alias": "Koti",
-  "rating": 1123,
+  "rating": 1102,
   "wins": 24,
-  "losses": 16,
-  "gamesCount": 40,
-  "winRate": 60,
-  "lastPlayedAt": 1782078840,
+  "losses": 17,
+  "gamesCount": 41,
+  "winRate": 59,
+  "lastPlayedAt": 1784900957,
   "country": "fr",
   "merged_ids": [],
   "ratingHistory": [
@@ -50,33 +50,10 @@
     1087,
     1102,
     1112,
-    1123
+    1123,
+    1102
   ],
   "recentMatches": [
-    {
-      "matchId": 382664217,
-      "description": "10x civ shared 4v4",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1743631320,
-      "outcome": "loss",
-      "preRating": 1014,
-      "postRating": 997,
-      "eloChange": -17,
-      "civ": "Persians",
-      "teamAvgElo": 1114,
-      "opponentAvgElo": 990,
-      "teammates": [
-        "pandalam",
-        "老K",
-        "Defiant"
-      ],
-      "opponents": [
-        "winkywizard",
-        "紫蝶黄蜂俱有情",
-        "ToonooB",
-        "OBE"
-      ]
-    },
     {
       "matchId": 382693638,
       "description": "Bamboo Nothing 10x 3x NO NOOB",
@@ -531,6 +508,30 @@
         "Test66",
         "Devotus",
         "abatyse6533"
+      ]
+    },
+    {
+      "matchId": 494521026,
+      "description": "10x 3x bamboo",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784900957,
+      "outcome": "loss",
+      "preRating": 1123,
+      "postRating": 1102,
+      "eloChange": -21,
+      "civ": "Japanese",
+      "teamAvgElo": 1064,
+      "opponentAvgElo": 1004,
+      "teammates": [
+        "Mahmut",
+        "Paolo Carrosel",
+        "Railbuilder"
+      ],
+      "opponents": [
+        "Papillon",
+        "Bridge",
+        "Kaisersoze",
+        "ChristopheG1970.Fr"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 2962172,
   "alias": "_Zeruch_",
-  "rating": 1063,
-  "wins": 18,
+  "rating": 1076,
+  "wins": 19,
   "losses": 14,
-  "gamesCount": 32,
-  "winRate": 56,
-  "lastPlayedAt": 1784834564,
+  "gamesCount": 33,
+  "winRate": 58,
+  "lastPlayedAt": 1784911862,
   "country": "ua",
   "merged_ids": [],
   "ratingHistory": [
@@ -42,33 +42,10 @@
     1089,
     1100,
     1081,
-    1063
+    1063,
+    1076
   ],
   "recentMatches": [
-    {
-      "matchId": 492685457,
-      "description": "10x Shared Civ Bonus (everything nothing)",
-      "mapname": "Bush Nothing",
-      "timestamp": 1784208757,
-      "outcome": "loss",
-      "preRating": 972,
-      "postRating": 940,
-      "eloChange": -32,
-      "civ": "Teutons",
-      "teamAvgElo": 1032,
-      "opponentAvgElo": 940,
-      "teammates": [
-        "[Liiit] Zbyszek",
-        "Lozzer",
-        "Hughmungus Chungus"
-      ],
-      "opponents": [
-        "WhiteMonk",
-        "juanmontes005",
-        "BeatsNArt",
-        "Willoloh!!!"
-      ]
-    },
     {
       "matchId": 492691972,
       "description": "10x Shared Civ Bonus (everything nothing)",
@@ -523,6 +500,30 @@
         "beat",
         "RedBullWOLOLO26",
         "FAHS"
+      ]
+    },
+    {
+      "matchId": 494557921,
+      "description": "10x3x   shared bonus random civ  no noob",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784911862,
+      "outcome": "win",
+      "preRating": 1063,
+      "postRating": 1076,
+      "eloChange": 13,
+      "civ": "Bengalis",
+      "teamAvgElo": 1010,
+      "opponentAvgElo": 998,
+      "teammates": [
+        "Your Ego",
+        "Dr.Ao",
+        "TR.elephantman"
+      ],
+      "opponents": [
+        "Maxim Liann",
+        "Paladin",
+        "konishika",
+        "schrubber"
       ]
     }
   ]

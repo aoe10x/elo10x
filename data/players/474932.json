@@ -1,12 +1,12 @@
 {
   "profile_id": 474932,
   "alias": "dazaetgb",
-  "rating": 915,
-  "wins": 9,
+  "rating": 936,
+  "wins": 10,
   "losses": 19,
-  "gamesCount": 28,
-  "winRate": 32,
-  "lastPlayedAt": 1784886246,
+  "gamesCount": 29,
+  "winRate": 34,
+  "lastPlayedAt": 1784905215,
   "country": "mx",
   "merged_ids": [],
   "ratingHistory": [
@@ -38,33 +38,10 @@
     954,
     940,
     929,
-    915
+    915,
+    936
   ],
   "recentMatches": [
-    {
-      "matchId": 390336293,
-      "description": "10x 3x Bamboo Nothing",
-      "mapname": "Bamboo Nothing - +Wild ##############",
-      "timestamp": 1746441840,
-      "outcome": "loss",
-      "preRating": 895,
-      "postRating": 868,
-      "eloChange": -27,
-      "civ": "Huns",
-      "teamAvgElo": 986,
-      "opponentAvgElo": 982,
-      "teammates": [
-        "EzraSkywalker96",
-        "Broseidon",
-        "gerardoprado93"
-      ],
-      "opponents": [
-        "maddymsg",
-        "David",
-        "tnet.1000ton1",
-        "Beeveelution"
-      ]
-    },
     {
       "matchId": 391779147,
       "description": "10x 3x - bamboo - 10xshared.com",
@@ -519,6 +496,30 @@
         "yiban",
         "YUJIN",
         "FinishedMyBurger"
+      ]
+    },
+    {
+      "matchId": 494531264,
+      "description": "new 10x shared civ with RollUT",
+      "mapname": "RollUT 10x - BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784905215,
+      "outcome": "win",
+      "preRating": 915,
+      "postRating": 936,
+      "eloChange": 21,
+      "civ": "Bulgarians",
+      "teamAvgElo": 1023,
+      "opponentAvgElo": 1027,
+      "teammates": [
+        "dorayan",
+        "Frederick",
+        "Tortrix"
+      ],
+      "opponents": [
+        "Goodsoup",
+        "Maxim Liann",
+        "Paladin",
+        "pot"
       ]
     }
   ]

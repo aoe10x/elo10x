@@ -1,12 +1,12 @@
 {
   "profile_id": 5825088,
   "alias": "Zortopos",
-  "rating": 990,
+  "rating": 974,
   "wins": 12,
-  "losses": 16,
-  "gamesCount": 28,
-  "winRate": 43,
-  "lastPlayedAt": 1784844664,
+  "losses": 17,
+  "gamesCount": 29,
+  "winRate": 41,
+  "lastPlayedAt": 1784911311,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -38,33 +38,10 @@
     1000,
     1020,
     1004,
-    990
+    990,
+    974
   ],
   "recentMatches": [
-    {
-      "matchId": 478660568,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1779089580,
-      "outcome": "loss",
-      "preRating": 980,
-      "postRating": 955,
-      "eloChange": -25,
-      "civ": "Sicilians",
-      "teamAvgElo": 1059,
-      "opponentAvgElo": 1080,
-      "teammates": [
-        "Kumad",
-        "nayman",
-        "Myriad"
-      ],
-      "opponents": [
-        "Wozbo",
-        "RIchard_Uy",
-        "Preacher!",
-        "EL__PATRON"
-      ]
-    },
     {
       "matchId": 479227470,
       "description": "256x 10x Forest Nothing",
@@ -519,6 +496,30 @@
         "Xinzzo",
         "[B] Cannino",
         "AAA"
+      ]
+    },
+    {
+      "matchId": 494553634,
+      "description": "new 10x shared civ with RollUT",
+      "mapname": "RollUT 10x - BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784911311,
+      "outcome": "loss",
+      "preRating": 990,
+      "postRating": 974,
+      "eloChange": -16,
+      "civ": "Berbers",
+      "teamAvgElo": 1084,
+      "opponentAvgElo": 987,
+      "teammates": [
+        "Frederick",
+        "ilkut",
+        "El Barto"
+      ],
+      "opponents": [
+        "dorayan",
+        "idefixyeee",
+        "RadioActiveMan",
+        "ZaySol"
       ]
     }
   ]

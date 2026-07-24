@@ -1,12 +1,12 @@
 {
   "profile_id": 4084571,
   "alias": "Mahmut",
-  "rating": 985,
+  "rating": 970,
   "wins": 13,
-  "losses": 17,
-  "gamesCount": 30,
-  "winRate": 43,
-  "lastPlayedAt": 1784889215,
+  "losses": 18,
+  "gamesCount": 31,
+  "winRate": 42,
+  "lastPlayedAt": 1784900957,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -40,33 +40,10 @@
     998,
     984,
     1000,
-    985
+    985,
+    970
   ],
   "recentMatches": [
-    {
-      "matchId": 469282308,
-      "description": "+10x+3xtech   no noob",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1775842080,
-      "outcome": "loss",
-      "preRating": 1043,
-      "postRating": 1012,
-      "eloChange": -31,
-      "civ": "Saracens",
-      "teamAvgElo": 1000,
-      "opponentAvgElo": 1060,
-      "teammates": [
-        "水藍武神",
-        "Hamparuto",
-        "●✧Leana04✧●"
-      ],
-      "opponents": [
-        "拍车面前人人平等",
-        "Gekirin",
-        "kekekeya",
-        "konishika"
-      ]
-    },
     {
       "matchId": 481432417,
       "description": "10x civ  Forest nothing",
@@ -521,6 +498,30 @@
         "Monk",
         "YUJIN",
         "Jormungand"
+      ]
+    },
+    {
+      "matchId": 494521026,
+      "description": "10x 3x bamboo",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784900957,
+      "outcome": "loss",
+      "preRating": 985,
+      "postRating": 970,
+      "eloChange": -15,
+      "civ": "Gurjaras",
+      "teamAvgElo": 1064,
+      "opponentAvgElo": 1004,
+      "teammates": [
+        "Paolo Carrosel",
+        "Koti",
+        "Railbuilder"
+      ],
+      "opponents": [
+        "Papillon",
+        "Bridge",
+        "Kaisersoze",
+        "ChristopheG1970.Fr"
       ]
     }
   ]

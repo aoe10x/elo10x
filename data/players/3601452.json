@@ -1,12 +1,12 @@
 {
   "profile_id": 3601452,
   "alias": "pot",
-  "rating": 1056,
+  "rating": 1021,
   "wins": 45,
-  "losses": 46,
-  "gamesCount": 91,
-  "winRate": 49,
-  "lastPlayedAt": 1784847499,
+  "losses": 48,
+  "gamesCount": 93,
+  "winRate": 48,
+  "lastPlayedAt": 1784906679,
   "country": "gb",
   "merged_ids": [],
   "ratingHistory": [
@@ -101,57 +101,11 @@
     1042,
     1025,
     1042,
-    1056
+    1056,
+    1038,
+    1021
   ],
   "recentMatches": [
-    {
-      "matchId": 372980934,
-      "description": "4vs4 10x shared civ 3x random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1739860920,
-      "outcome": "loss",
-      "preRating": 1012,
-      "postRating": 998,
-      "eloChange": -14,
-      "civ": "Unknown",
-      "teamAvgElo": 1029,
-      "opponentAvgElo": 1058,
-      "teammates": [
-        "bijiyumo",
-        "gerardoprado93",
-        "oklema"
-      ],
-      "opponents": [
-        "Archangel",
-        "rob",
-        "ROGGAN",
-        "Samaritao"
-      ]
-    },
-    {
-      "matchId": 373190415,
-      "description": "10X Shared Civ Bonus Random CIV",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1739948700,
-      "outcome": "win",
-      "preRating": 998,
-      "postRating": 1019,
-      "eloChange": 21,
-      "civ": "Unknown",
-      "teamAvgElo": 988,
-      "opponentAvgElo": 1113,
-      "teammates": [
-        "Karthusxx",
-        "juling",
-        "rob"
-      ],
-      "opponents": [
-        "老K",
-        "makz",
-        "Kino",
-        "vinniegee"
-      ]
-    },
     {
       "matchId": 373194530,
       "description": "10X Shared Civ Bonus Random CIV",
@@ -582,6 +536,54 @@
         "Apocalypto",
         "Ruuder",
         "399 the Grizzly Bear - RIP <3"
+      ]
+    },
+    {
+      "matchId": 494531264,
+      "description": "new 10x shared civ with RollUT",
+      "mapname": "RollUT 10x - BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784905215,
+      "outcome": "loss",
+      "preRating": 1056,
+      "postRating": 1038,
+      "eloChange": -18,
+      "civ": "Malians",
+      "teamAvgElo": 1027,
+      "opponentAvgElo": 1023,
+      "teammates": [
+        "Goodsoup",
+        "Maxim Liann",
+        "Paladin"
+      ],
+      "opponents": [
+        "dorayan",
+        "Frederick",
+        "Tortrix",
+        "dazaetgb"
+      ]
+    },
+    {
+      "matchId": 494539792,
+      "description": "new 10x shared civ with RollUT",
+      "mapname": "RollUT 10x - BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784906679,
+      "outcome": "loss",
+      "preRating": 1038,
+      "postRating": 1021,
+      "eloChange": -17,
+      "civ": "Khmer",
+      "teamAvgElo": 1064,
+      "opponentAvgElo": 1021,
+      "teammates": [
+        "Frederick",
+        "肥仔",
+        "Dr.Ao"
+      ],
+      "opponents": [
+        "dorayan",
+        "tonkatumura",
+        "Kalervo Jankko",
+        "Maxim Liann"
       ]
     }
   ]

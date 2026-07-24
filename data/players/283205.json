@@ -1,12 +1,12 @@
 {
   "profile_id": 283205,
   "alias": "r9maximus",
-  "rating": 1056,
+  "rating": 1044,
   "wins": 24,
-  "losses": 21,
-  "gamesCount": 45,
-  "winRate": 53,
-  "lastPlayedAt": 1784749934,
+  "losses": 22,
+  "gamesCount": 46,
+  "winRate": 52,
+  "lastPlayedAt": 1784908148,
   "country": "nl",
   "merged_ids": [],
   "ratingHistory": [
@@ -55,33 +55,10 @@
     1040,
     1023,
     1040,
-    1056
+    1056,
+    1044
   ],
   "recentMatches": [
-    {
-      "matchId": 433550917,
-      "description": "4 vs 4 // 10x Shared Random Civ",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1763339460,
-      "outcome": "loss",
-      "preRating": 1089,
-      "postRating": 1072,
-      "eloChange": -17,
-      "civ": "Hindustanis",
-      "teamAvgElo": 979,
-      "opponentAvgElo": 1062,
-      "teammates": [
-        "kinkin623",
-        "DeadpoolBantai",
-        "Arniehgk"
-      ],
-      "opponents": [
-        "Juk3",
-        "420_Bl4Z3_It_69",
-        "GarvSANGWAN",
-        "Shambles"
-      ]
-    },
     {
       "matchId": 479046155,
       "description": "10x shared 3x tech bamboo nothing",
@@ -536,6 +513,30 @@
         "yimacs_yoyoyo",
         "Parts",
         "Paladin"
+      ]
+    },
+    {
+      "matchId": 494545174,
+      "description": "new 10x shared civ with RollUT",
+      "mapname": "RollUT 10x - BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784908148,
+      "outcome": "loss",
+      "preRating": 1056,
+      "postRating": 1044,
+      "eloChange": -12,
+      "civ": "Wu",
+      "teamAvgElo": 1016,
+      "opponentAvgElo": 1136,
+      "teammates": [
+        "Paolo Carrosel",
+        "Maxim Liann",
+        "肥仔"
+      ],
+      "opponents": [
+        "dorayan",
+        "Frederick",
+        "Xinzzo",
+        "tonkatumura"
       ]
     }
   ]
