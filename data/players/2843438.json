@@ -1,12 +1,12 @@
 {
   "profile_id": 2843438,
   "alias": "Scipio",
-  "rating": 1010,
+  "rating": 982,
   "wins": 50,
-  "losses": 52,
-  "gamesCount": 102,
-  "winRate": 49,
-  "lastPlayedAt": 1784838069,
+  "losses": 54,
+  "gamesCount": 104,
+  "winRate": 48,
+  "lastPlayedAt": 1784843543,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -20,13 +20,13 @@
     1005,
     1048,
     1009,
-    979,
     1018,
     1051,
     1080,
     1103,
     1075,
     1098,
+    1074,
     1089,
     1065,
     1080,
@@ -40,7 +40,6 @@
     1002,
     1020,
     1036,
-    1050,
     1065,
     1078,
     1060,
@@ -80,7 +79,6 @@
     1006,
     1021,
     1036,
-    1052,
     1066,
     1077,
     1062,
@@ -92,6 +90,7 @@
     1075,
     1085,
     1066,
+    1079,
     1094,
     1110,
     1122,
@@ -100,7 +99,6 @@
     1102,
     1086,
     1071,
-    1053,
     1032,
     1017,
     1000,
@@ -109,57 +107,11 @@
     985,
     1005,
     991,
-    1010
+    1010,
+    994,
+    982
   ],
   "recentMatches": [
-    {
-      "matchId": 493913888,
-      "description": "10x 3x Bamboo (very fun) rank.10xshared.com",
-      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
-      "timestamp": 1784658023,
-      "outcome": "loss",
-      "preRating": 1085,
-      "postRating": 1066,
-      "eloChange": -19,
-      "civ": "Portuguese",
-      "teamAvgElo": 1060,
-      "opponentAvgElo": 1009,
-      "teammates": [
-        "gamingtars",
-        "S3dated",
-        "BigAl"
-      ],
-      "opponents": [
-        "Wololo",
-        "Magnificent",
-        "maialen_zubi",
-        "tjaw154"
-      ]
-    },
-    {
-      "matchId": 493924014,
-      "description": "10x 3x Bamboo (very fun) rank.10xshared.com",
-      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
-      "timestamp": 1784660720,
-      "outcome": "win",
-      "preRating": 1066,
-      "postRating": 1079,
-      "eloChange": 13,
-      "civ": "Vikings",
-      "teamAvgElo": 1102,
-      "opponentAvgElo": 1011,
-      "teammates": [
-        "LonelyKnight",
-        "Maic",
-        "schrubber"
-      ],
-      "opponents": [
-        "Wololo",
-        "Wozbo",
-        "Megahaufen",
-        "Ricardo V"
-      ]
-    },
     {
       "matchId": 493930992,
       "description": "10x 3x Bamboo (unfair and hard) rank.10xshared.com",
@@ -590,6 +542,54 @@
         "Madness",
         "Chuckyllo4417",
         "WipiWi"
+      ]
+    },
+    {
+      "matchId": 494391047,
+      "description": "10x 3x Bamboo (fun, fair, and anime breasts) ",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784842168,
+      "outcome": "loss",
+      "preRating": 1010,
+      "postRating": 994,
+      "eloChange": -16,
+      "civ": "Bengalis",
+      "teamAvgElo": 1026,
+      "opponentAvgElo": 1015,
+      "teammates": [
+        "AAA",
+        "Prinz Kay1",
+        "iamatthe.hell"
+      ],
+      "opponents": [
+        "JaFu",
+        "procrastination.exe",
+        "herelin0",
+        "dorayan"
+      ]
+    },
+    {
+      "matchId": 494394228,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784843543,
+      "outcome": "loss",
+      "preRating": 994,
+      "postRating": 982,
+      "eloChange": -12,
+      "civ": "Berbers",
+      "teamAvgElo": 1037,
+      "opponentAvgElo": 1072,
+      "teammates": [
+        "OhSheeep",
+        "LonelyKnight",
+        "RoR | Benanji"
+      ],
+      "opponents": [
+        "Parts",
+        "iamatthe.hell",
+        "herelin0",
+        "romeadd"
       ]
     }
   ]

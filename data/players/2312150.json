@@ -1,12 +1,12 @@
 {
   "profile_id": 2312150,
   "alias": "Perxeus",
-  "rating": 927,
+  "rating": 918,
   "wins": 10,
-  "losses": 21,
-  "gamesCount": 31,
-  "winRate": 32,
-  "lastPlayedAt": 1784700772,
+  "losses": 22,
+  "gamesCount": 32,
+  "winRate": 31,
+  "lastPlayedAt": 1784853242,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -41,33 +41,10 @@
     930,
     921,
     905,
-    927
+    927,
+    918
   ],
   "recentMatches": [
-    {
-      "matchId": 487227826,
-      "description": "10x 3x BN",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1782123000,
-      "outcome": "win",
-      "preRating": 924,
-      "postRating": 961,
-      "eloChange": 37,
-      "civ": "Incas",
-      "teamAvgElo": 1042,
-      "opponentAvgElo": 995,
-      "teammates": [
-        "HighPriestCaco",
-        "Meursault005",
-        "babeleo"
-      ],
-      "opponents": [
-        "BoomIntoGG",
-        "pool_champ",
-        "漫山哒哒哒",
-        "Bambuchagt"
-      ]
-    },
     {
       "matchId": 487232591,
       "description": "10x 3x BN",
@@ -522,6 +499,30 @@
         "Maxim Liann",
         "GrandUni",
         "TsC_BaTTouSai"
+      ]
+    },
+    {
+      "matchId": 494420728,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784853242,
+      "outcome": "loss",
+      "preRating": 927,
+      "postRating": 918,
+      "eloChange": -9,
+      "civ": "Celts",
+      "teamAvgElo": 1023,
+      "opponentAvgElo": 1098,
+      "teammates": [
+        "Willoloh!!!",
+        "feid_",
+        "Vader"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "Yee",
+        "EL__PATRON"
       ]
     }
   ]

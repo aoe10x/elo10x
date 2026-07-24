@@ -1,12 +1,12 @@
 {
   "profile_id": 3635145,
   "alias": "Prinz Kay1",
-  "rating": 1067,
+  "rating": 1033,
   "wins": 47,
-  "losses": 41,
-  "gamesCount": 88,
-  "winRate": 53,
-  "lastPlayedAt": 1784809194,
+  "losses": 43,
+  "gamesCount": 90,
+  "winRate": 52,
+  "lastPlayedAt": 1784844664,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -98,57 +98,11 @@
     1092,
     1075,
     1057,
-    1067
+    1067,
+    1049,
+    1033
   ],
   "recentMatches": [
-    {
-      "matchId": 492376805,
-      "description": "10x3x Bamboo Nothing ",
-      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
-      "timestamp": 1784069033,
-      "outcome": "win",
-      "preRating": 1035,
-      "postRating": 1051,
-      "eloChange": 16,
-      "civ": "Jurchens",
-      "teamAvgElo": 1045,
-      "opponentAvgElo": 1029,
-      "teammates": [
-        "TJ",
-        "CoditZa",
-        "[CSGS]Runescape"
-      ],
-      "opponents": [
-        "AleRayado88",
-        "Stigel",
-        "Parts",
-        "skoolied"
-      ]
-    },
-    {
-      "matchId": 492379580,
-      "description": "10x shared and 3x tech | Bamboo nothing",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1784069962,
-      "outcome": "win",
-      "preRating": 1051,
-      "postRating": 1064,
-      "eloChange": 13,
-      "civ": "Magyars",
-      "teamAvgElo": 1030,
-      "opponentAvgElo": 995,
-      "teammates": [
-        "Chikna Raavan",
-        "procrastination.exe",
-        "Ellie91"
-      ],
-      "opponents": [
-        "NoLo",
-        "Chirijiraden",
-        "ElmoWithoutL",
-        "Parts"
-      ]
-    },
     {
       "matchId": 492546514,
       "description": "10x 3x Bamboo",
@@ -579,6 +533,54 @@
         "khouildi.tarek.tk",
         "Sam",
         "[SMUD]LocalBro"
+      ]
+    },
+    {
+      "matchId": 494391047,
+      "description": "10x 3x Bamboo (fun, fair, and anime breasts) ",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784842168,
+      "outcome": "loss",
+      "preRating": 1067,
+      "postRating": 1049,
+      "eloChange": -18,
+      "civ": "Wei",
+      "teamAvgElo": 1026,
+      "opponentAvgElo": 1015,
+      "teammates": [
+        "Scipio",
+        "AAA",
+        "iamatthe.hell"
+      ],
+      "opponents": [
+        "JaFu",
+        "procrastination.exe",
+        "herelin0",
+        "dorayan"
+      ]
+    },
+    {
+      "matchId": 494398124,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784844664,
+      "outcome": "loss",
+      "preRating": 1049,
+      "postRating": 1033,
+      "eloChange": -16,
+      "civ": "Wu",
+      "teamAvgElo": 1044,
+      "opponentAvgElo": 1040,
+      "teammates": [
+        "TJ",
+        "Vader",
+        "Zortopos"
+      ],
+      "opponents": [
+        "Monk",
+        "Xinzzo",
+        "[B] Cannino",
+        "AAA"
       ]
     }
   ]

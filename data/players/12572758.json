@@ -1,12 +1,12 @@
 {
   "profile_id": 12572758,
   "alias": "LethalP59",
-  "rating": 1043,
+  "rating": 1025,
   "wins": 42,
-  "losses": 39,
-  "gamesCount": 81,
-  "winRate": 52,
-  "lastPlayedAt": 1784768519,
+  "losses": 40,
+  "gamesCount": 82,
+  "winRate": 51,
+  "lastPlayedAt": 1784851348,
   "country": "us",
   "merged_ids": [
     11817519,
@@ -94,33 +94,10 @@
     1064,
     1078,
     1062,
-    1043
+    1043,
+    1025
   ],
   "recentMatches": [
-    {
-      "matchId": 473069349,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1777158720,
-      "outcome": "win",
-      "preRating": 1049,
-      "postRating": 1066,
-      "eloChange": 17,
-      "civ": "Japanese",
-      "teamAvgElo": 993,
-      "opponentAvgElo": 1064,
-      "teammates": [
-        "nooblet3300",
-        "O(∩_∩)O哈哈~",
-        "dwalte011"
-      ],
-      "opponents": [
-        "duckbuildperson",
-        "Lozzer",
-        "365422324",
-        "javipuerto"
-      ]
-    },
     {
       "matchId": 473186838,
       "description": "10x 3x BAMBOO best lobby",
@@ -575,6 +552,30 @@
         "GJ Euphory",
         "The Cobra Brothers",
         "Mahmut"
+      ]
+    },
+    {
+      "matchId": 494415500,
+      "description": "10x3x   shared bonus random civ  no noob",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784851348,
+      "outcome": "loss",
+      "preRating": 1043,
+      "postRating": 1025,
+      "eloChange": -18,
+      "civ": "Wu",
+      "teamAvgElo": 1013,
+      "opponentAvgElo": 1006,
+      "teammates": [
+        "Ghost_pt",
+        "memoh",
+        "Brohio"
+      ],
+      "opponents": [
+        "Your Ego",
+        "Parts",
+        "Wozbo",
+        "ajaremore"
       ]
     }
   ]

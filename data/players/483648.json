@@ -1,12 +1,12 @@
 {
   "profile_id": 483648,
   "alias": "Willoloh!!!",
-  "rating": 1036,
+  "rating": 1023,
   "wins": 18,
-  "losses": 19,
-  "gamesCount": 37,
-  "winRate": 49,
-  "lastPlayedAt": 1784808234,
+  "losses": 20,
+  "gamesCount": 38,
+  "winRate": 47,
+  "lastPlayedAt": 1784853242,
   "country": "au",
   "merged_ids": [],
   "ratingHistory": [
@@ -47,33 +47,10 @@
     1015,
     1033,
     1019,
-    1036
+    1036,
+    1023
   ],
   "recentMatches": [
-    {
-      "matchId": 492823113,
-      "description": "10x Shared Civ Bonus 4v4 Random ",
-      "mapname": "Wet Woods v3.0.3",
-      "timestamp": 1784253583,
-      "outcome": "loss",
-      "preRating": 961,
-      "postRating": 947,
-      "eloChange": -14,
-      "civ": "Armenians",
-      "teamAvgElo": 1052,
-      "opponentAvgElo": 1080,
-      "teammates": [
-        "Brotherman Bill",
-        "EL__PATRON",
-        "nayman"
-      ],
-      "opponents": [
-        "Kumad",
-        "Myriad",
-        "JoeyTribianni69",
-        "feid_"
-      ]
-    },
     {
       "matchId": 492830542,
       "description": "10x3x ",
@@ -528,6 +505,30 @@
         "Armyofme_",
         "konishika",
         "YUJIN"
+      ]
+    },
+    {
+      "matchId": 494420728,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784853242,
+      "outcome": "loss",
+      "preRating": 1036,
+      "postRating": 1023,
+      "eloChange": -13,
+      "civ": "Saracens",
+      "teamAvgElo": 1023,
+      "opponentAvgElo": 1098,
+      "teammates": [
+        "Perxeus",
+        "feid_",
+        "Vader"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "Yee",
+        "EL__PATRON"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 1889959,
   "alias": "Ruuder",
-  "rating": 919,
+  "rating": 908,
   "wins": 51,
-  "losses": 52,
-  "gamesCount": 103,
-  "winRate": 50,
-  "lastPlayedAt": 1784414406,
+  "losses": 53,
+  "gamesCount": 104,
+  "winRate": 49,
+  "lastPlayedAt": 1784847499,
   "country": "ie",
   "merged_ids": [],
   "ratingHistory": [
@@ -20,9 +20,9 @@
     1144,
     1167,
     1190,
-    1207,
     1161,
     1185,
+    1203,
     1161,
     1126,
     1144,
@@ -40,13 +40,13 @@
     1096,
     1074,
     1055,
-    1070,
     1082,
     1063,
     1077,
     1090,
     1104,
     1116,
+    1100,
     1110,
     1088,
     1070,
@@ -59,7 +59,6 @@
     1066,
     1079,
     1098,
-    1079,
     1095,
     1077,
     1092,
@@ -72,6 +71,7 @@
     1066,
     1045,
     1064,
+    1078,
     1061,
     1041,
     1021,
@@ -79,7 +79,6 @@
     991,
     1009,
     1027,
-    1011,
     1030,
     1014,
     1030,
@@ -96,10 +95,10 @@
     1015,
     1001,
     987,
+    973,
     994,
     1015,
     1001,
-    1020,
     1006,
     991,
     974,
@@ -109,33 +108,10 @@
     952,
     939,
     929,
-    919
+    919,
+    908
   ],
   "recentMatches": [
-    {
-      "matchId": 487646600,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1782288780,
-      "outcome": "win",
-      "preRating": 1032,
-      "postRating": 1051,
-      "eloChange": 19,
-      "civ": "Vikings",
-      "teamAvgElo": 1019,
-      "opponentAvgElo": 1102,
-      "teammates": [
-        "nayman",
-        "snakinus",
-        "Boat"
-      ],
-      "opponents": [
-        "Kumad",
-        "feid_",
-        "Myriad",
-        "PoonSlapper"
-      ]
-    },
     {
       "matchId": 488278808,
       "description": "10x 3x Bamboo Nothing random civ",
@@ -590,6 +566,30 @@
         "-[RDU]- Gorda America Forever",
         "Ghost_pt",
         "Terry"
+      ]
+    },
+    {
+      "matchId": 494405598,
+      "description": "10x 3x BN ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784847499,
+      "outcome": "loss",
+      "preRating": 919,
+      "postRating": 908,
+      "eloChange": -11,
+      "civ": "Italians",
+      "teamAvgElo": 990,
+      "opponentAvgElo": 1030,
+      "teammates": [
+        "Imperator Storm",
+        "Apocalypto",
+        "399 the Grizzly Bear - RIP <3"
+      ],
+      "opponents": [
+        "pool_champ",
+        "pot",
+        "Rüdiger",
+        "procrastination.exe"
       ]
     }
   ]

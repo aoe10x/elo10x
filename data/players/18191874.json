@@ -1,12 +1,12 @@
 {
   "profile_id": 18191874,
   "alias": "Vader",
-  "rating": 1088,
-  "wins": 59,
-  "losses": 41,
-  "gamesCount": 100,
-  "winRate": 59,
-  "lastPlayedAt": 1784755183,
+  "rating": 1034,
+  "wins": 60,
+  "losses": 45,
+  "gamesCount": 105,
+  "winRate": 57,
+  "lastPlayedAt": 1784853242,
   "country": "pe",
   "merged_ids": [
     12628022,
@@ -22,7 +22,6 @@
     1012,
     1054,
     1021,
-    1062,
     1088,
     1115,
     1079,
@@ -39,7 +38,6 @@
     1100,
     1113,
     1127,
-    1140,
     1151,
     1132,
     1141,
@@ -56,13 +54,13 @@
     1155,
     1167,
     1178,
-    1155,
     1133,
     1111,
     1093,
     1105,
     1087,
     1069,
+    1053,
     1036,
     1053,
     1069,
@@ -73,7 +71,6 @@
     1085,
     1069,
     1051,
-    1037,
     1052,
     1066,
     1079,
@@ -90,7 +87,6 @@
     1100,
     1115,
     1100,
-    1080,
     1060,
     1074,
     1087,
@@ -107,134 +103,18 @@
     1065,
     1047,
     1062,
-    1044,
     1058,
     1044,
     1059,
     1073,
-    1088
+    1088,
+    1069,
+    1083,
+    1065,
+    1048,
+    1034
   ],
   "recentMatches": [
-    {
-      "matchId": 492701447,
-      "description": "10x Shared Civ Bonus (everything nothing)",
-      "mapname": "Bush Nothing",
-      "timestamp": 1784213723,
-      "outcome": "win",
-      "preRating": 1074,
-      "postRating": 1087,
-      "eloChange": 13,
-      "civ": "Slavs",
-      "teamAvgElo": 1009,
-      "opponentAvgElo": 1016,
-      "teammates": [
-        "_Zeruch_",
-        "closed",
-        "Megahaufen"
-      ],
-      "opponents": [
-        "WhiteMonk",
-        "Ivar The Rager",
-        "^gOsO^",
-        "Paladin"
-      ]
-    },
-    {
-      "matchId": 492708876,
-      "description": "10x Shared Civ Bonus (everything nothing)",
-      "mapname": "Bush Nothing",
-      "timestamp": 1784215931,
-      "outcome": "win",
-      "preRating": 1087,
-      "postRating": 1102,
-      "eloChange": 15,
-      "civ": "Franks",
-      "teamAvgElo": 999,
-      "opponentAvgElo": 1058,
-      "teammates": [
-        "WhiteMonk",
-        "^gOsO^",
-        "bhasudi--"
-      ],
-      "opponents": [
-        "Megahaufen",
-        "_Zeruch_",
-        "Paladin",
-        "Max"
-      ]
-    },
-    {
-      "matchId": 492712033,
-      "description": "10x Shared Civ Bonus (everything nothing)",
-      "mapname": "Bush Nothing",
-      "timestamp": 1784217541,
-      "outcome": "win",
-      "preRating": 1102,
-      "postRating": 1115,
-      "eloChange": 13,
-      "civ": "Gurjaras",
-      "teamAvgElo": 1045,
-      "opponentAvgElo": 1035,
-      "teammates": [
-        "dimon21_8",
-        "Paladin",
-        "AoBD | SilentMonk"
-      ],
-      "opponents": [
-        "WhiteMonk",
-        "[Liiit] Zbyszek",
-        "pandasadnap",
-        "BaldAfro"
-      ]
-    },
-    {
-      "matchId": 492772007,
-      "description": "4vs4 10x 3x shared civ bonus, random civ",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1784235159,
-      "outcome": "win",
-      "preRating": 1115,
-      "postRating": 1127,
-      "eloChange": 12,
-      "civ": "Bohemians",
-      "teamAvgElo": 1025,
-      "opponentAvgElo": 1017,
-      "teammates": [
-        "yimacs_yoyoyo",
-        "gemmascho",
-        "Your Ego"
-      ],
-      "opponents": [
-        "Trekkspell",
-        "kared117",
-        "Heklort",
-        "GuguBot"
-      ]
-    },
-    {
-      "matchId": 492902090,
-      "description": "10x Shared Civ Bonus (everything nothing)",
-      "mapname": "Bush Nothing",
-      "timestamp": 1784294849,
-      "outcome": "loss",
-      "preRating": 1127,
-      "postRating": 1106,
-      "eloChange": -21,
-      "civ": "Ethiopians",
-      "teamAvgElo": 1004,
-      "opponentAvgElo": 1024,
-      "teammates": [
-        "WhiteMonk",
-        "bhasudi--",
-        "checkdis"
-      ],
-      "opponents": [
-        "margolumen",
-        "Heisenberg",
-        "BeatsNArt",
-        "Consume Product"
-      ]
-    },
     {
       "matchId": 492907691,
       "description": "10x Shared Civ Bonus (everything nothing)",
@@ -593,6 +473,126 @@
         "LonelyKnight",
         "AAA",
         "iamatthe.hell"
+      ]
+    },
+    {
+      "matchId": 494387593,
+      "description": "new 10x shared civ with RollUT",
+      "mapname": "RollUT 10x - BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784841110,
+      "outcome": "loss",
+      "preRating": 1088,
+      "postRating": 1069,
+      "eloChange": -19,
+      "civ": "Khmer",
+      "teamAvgElo": 1023,
+      "opponentAvgElo": 1031,
+      "teammates": [
+        "dorayan",
+        "Goodsoup",
+        "JaFu"
+      ],
+      "opponents": [
+        "AAA",
+        "procrastination.exe",
+        "golhmogh",
+        "McKrakfejs"
+      ]
+    },
+    {
+      "matchId": 494393278,
+      "description": "10x 3x shared bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784842897,
+      "outcome": "win",
+      "preRating": 1069,
+      "postRating": 1083,
+      "eloChange": 14,
+      "civ": "Dravidians",
+      "teamAvgElo": 1027,
+      "opponentAvgElo": 1018,
+      "teammates": [
+        "MARKVILEX",
+        "tonzo",
+        "SoyLaMuerte"
+      ],
+      "opponents": [
+        "Paulichromatic",
+        "PITON | Shepy",
+        "rob",
+        "Wololo"
+      ]
+    },
+    {
+      "matchId": 494398124,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784844664,
+      "outcome": "loss",
+      "preRating": 1083,
+      "postRating": 1065,
+      "eloChange": -18,
+      "civ": "Franks",
+      "teamAvgElo": 1044,
+      "opponentAvgElo": 1040,
+      "teammates": [
+        "TJ",
+        "Zortopos",
+        "Prinz Kay1"
+      ],
+      "opponents": [
+        "Monk",
+        "Xinzzo",
+        "[B] Cannino",
+        "AAA"
+      ]
+    },
+    {
+      "matchId": 494402417,
+      "description": "10x 3x shared bamboo nothing",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784845969,
+      "outcome": "loss",
+      "preRating": 1065,
+      "postRating": 1048,
+      "eloChange": -17,
+      "civ": "Magyars",
+      "teamAvgElo": 1045,
+      "opponentAvgElo": 1050,
+      "teammates": [
+        "Paulichromatic",
+        "OhSheeep",
+        "tonzo"
+      ],
+      "opponents": [
+        "Vince",
+        "PITON | Shepy",
+        "Retrosics",
+        "skoolied"
+      ]
+    },
+    {
+      "matchId": 494420728,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784853242,
+      "outcome": "loss",
+      "preRating": 1048,
+      "postRating": 1034,
+      "eloChange": -14,
+      "civ": "Dravidians",
+      "teamAvgElo": 1023,
+      "opponentAvgElo": 1098,
+      "teammates": [
+        "Willoloh!!!",
+        "Perxeus",
+        "feid_"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "Yee",
+        "EL__PATRON"
       ]
     }
   ]

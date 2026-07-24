@@ -1,12 +1,12 @@
 {
   "profile_id": 390547,
   "alias": "Chirijiraden",
-  "rating": 916,
+  "rating": 905,
   "wins": 31,
-  "losses": 47,
-  "gamesCount": 78,
-  "winRate": 40,
-  "lastPlayedAt": 1784758474,
+  "losses": 48,
+  "gamesCount": 79,
+  "winRate": 39,
+  "lastPlayedAt": 1784853195,
   "country": "ar",
   "merged_ids": [],
   "ratingHistory": [
@@ -88,33 +88,10 @@
     948,
     937,
     927,
-    916
+    916,
+    905
   ],
   "recentMatches": [
-    {
-      "matchId": 492138173,
-      "description": "3x 10x bamboo - random civ - no noobs  ",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1783973400,
-      "outcome": "win",
-      "preRating": 888,
-      "postRating": 910,
-      "eloChange": 22,
-      "civ": "Saracens",
-      "teamAvgElo": 1037,
-      "opponentAvgElo": 1029,
-      "teammates": [
-        "Trekkspell",
-        "Logicos123",
-        "kiggless"
-      ],
-      "opponents": [
-        "gemmascho",
-        "RA",
-        "Monk",
-        "Zak"
-      ]
-    },
     {
       "matchId": 492166009,
       "description": "Bamboo 10x Shared 3x Tech",
@@ -569,6 +546,30 @@
         "Gasior",
         "Sal",
         "Your Ego"
+      ]
+    },
+    {
+      "matchId": 494420909,
+      "description": "10x3x   shared bonus random civ  no noob",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784853195,
+      "outcome": "loss",
+      "preRating": 916,
+      "postRating": 905,
+      "eloChange": -11,
+      "civ": "Maya",
+      "teamAvgElo": 967,
+      "opponentAvgElo": 1022,
+      "teammates": [
+        "Your Ego",
+        "Paris Hilton",
+        "procrastination.exe"
+      ],
+      "opponents": [
+        "Ghost_pt",
+        "NothingAtAll11",
+        "Maxim Liann",
+        "Armyofme_"
       ]
     }
   ]

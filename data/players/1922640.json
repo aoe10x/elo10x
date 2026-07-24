@@ -1,12 +1,12 @@
 {
   "profile_id": 1922640,
   "alias": "Paing",
-  "rating": 1009,
-  "wins": 10,
+  "rating": 1028,
+  "wins": 11,
   "losses": 11,
-  "gamesCount": 21,
-  "winRate": 48,
-  "lastPlayedAt": 1784593396,
+  "gamesCount": 22,
+  "winRate": 50,
+  "lastPlayedAt": 1784851955,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -31,33 +31,10 @@
     988,
     972,
     991,
-    1009
+    1009,
+    1028
   ],
   "recentMatches": [
-    {
-      "matchId": 349058323,
-      "description": "10x 3x shared civ bonus random civ only-no noob",
-      "mapname": "Albero@Wateryamazontunnel",
-      "timestamp": 1730444340,
-      "outcome": "win",
-      "preRating": 962,
-      "postRating": 1015,
-      "eloChange": 53,
-      "civ": "Unknown",
-      "teamAvgElo": 966,
-      "opponentAvgElo": 1005,
-      "teammates": [
-        "Your Ego",
-        "BarqBarq",
-        "ToonooB"
-      ],
-      "opponents": [
-        "goldinggunsandparts",
-        "kewilo_128",
-        "Massi695",
-        "Sensei"
-      ]
-    },
     {
       "matchId": 349689816,
       "description": "10x Shared tech 3x tech linear arena",
@@ -512,6 +489,30 @@
         "菜神",
         "Asuna",
         "Willoloh!!!"
+      ]
+    },
+    {
+      "matchId": 494416381,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784851955,
+      "outcome": "win",
+      "preRating": 1009,
+      "postRating": 1028,
+      "eloChange": 19,
+      "civ": "Hindustanis",
+      "teamAvgElo": 1025,
+      "opponentAvgElo": 1066,
+      "teammates": [
+        "feid_",
+        "EL__PATRON",
+        "{German}Kaese"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "ζ |  SaintPΞpsi94",
+        "Imjustanoob"
       ]
     }
   ]

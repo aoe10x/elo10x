@@ -1,12 +1,12 @@
 {
   "profile_id": 296704,
   "alias": "Brohio",
-  "rating": 1007,
+  "rating": 991,
   "wins": 14,
-  "losses": 15,
-  "gamesCount": 29,
-  "winRate": 48,
-  "lastPlayedAt": 1784762245,
+  "losses": 16,
+  "gamesCount": 30,
+  "winRate": 47,
+  "lastPlayedAt": 1784851348,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -39,33 +39,10 @@
     1021,
     1006,
     1024,
-    1007
+    1007,
+    991
   ],
   "recentMatches": [
-    {
-      "matchId": 377430518,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1741592160,
-      "outcome": "win",
-      "preRating": 1049,
-      "postRating": 1080,
-      "eloChange": 31,
-      "civ": "Slavs",
-      "teamAvgElo": 1039,
-      "opponentAvgElo": 1022,
-      "teammates": [
-        "Kumad",
-        "Myriad",
-        "Camulos"
-      ],
-      "opponents": [
-        "JR_Nero",
-        "Osk",
-        "SeaPig",
-        "pkT^^"
-      ]
-    },
     {
       "matchId": 399600150,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -520,6 +497,30 @@
         "[ ARKI ! ]",
         "[TodEs] MnTartara",
         "baianitro"
+      ]
+    },
+    {
+      "matchId": 494415500,
+      "description": "10x3x   shared bonus random civ  no noob",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784851348,
+      "outcome": "loss",
+      "preRating": 1007,
+      "postRating": 991,
+      "eloChange": -16,
+      "civ": "Dravidians",
+      "teamAvgElo": 1013,
+      "opponentAvgElo": 1006,
+      "teammates": [
+        "Ghost_pt",
+        "LethalP59",
+        "memoh"
+      ],
+      "opponents": [
+        "Your Ego",
+        "Parts",
+        "Wozbo",
+        "ajaremore"
       ]
     }
   ]

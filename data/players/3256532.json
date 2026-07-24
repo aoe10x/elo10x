@@ -1,12 +1,12 @@
 {
   "profile_id": 3256532,
   "alias": "CristoTheRealCeisto",
-  "rating": 1014,
+  "rating": 999,
   "wins": 38,
-  "losses": 57,
-  "gamesCount": 95,
+  "losses": 58,
+  "gamesCount": 96,
   "winRate": 40,
-  "lastPlayedAt": 1784669516,
+  "lastPlayedAt": 1784845088,
   "country": "ro",
   "merged_ids": [],
   "ratingHistory": [
@@ -105,33 +105,10 @@
     1029,
     1044,
     1031,
-    1014
+    1014,
+    999
   ],
   "recentMatches": [
-    {
-      "matchId": 481424329,
-      "description": "10x civ 3x tech",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1780089465,
-      "outcome": "loss",
-      "preRating": 944,
-      "postRating": 933,
-      "eloChange": -11,
-      "civ": "Poles",
-      "teamAvgElo": 1008,
-      "opponentAvgElo": 1052,
-      "teammates": [
-        "gabrieldemarmiesse",
-        "Not a Wizard",
-        "yimacs_yoyoyo"
-      ],
-      "opponents": [
-        "Nimreh",
-        "Mangudai",
-        "VAPE NAYSH Y'ALL",
-        "moabishere"
-      ]
-    },
     {
       "matchId": 483666783,
       "description": "10x 3x bamboo no idiot",
@@ -586,6 +563,30 @@
         "MarieBrutale",
         "romeadd",
         "DrLabas"
+      ]
+    },
+    {
+      "matchId": 494399883,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784845088,
+      "outcome": "loss",
+      "preRating": 1014,
+      "postRating": 999,
+      "eloChange": -15,
+      "civ": "Celts",
+      "teamAvgElo": 1029,
+      "opponentAvgElo": 1028,
+      "teammates": [
+        "Parts",
+        "LonelyKnight",
+        "Wololo"
+      ],
+      "opponents": [
+        "DPK75",
+        "Armyofme_",
+        "rob",
+        "TheRiceMan"
       ]
     }
   ]

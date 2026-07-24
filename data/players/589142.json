@@ -1,12 +1,12 @@
 {
   "profile_id": 589142,
   "alias": "Armyofme_",
-  "rating": 1018,
-  "wins": 45,
+  "rating": 1062,
+  "wins": 48,
   "losses": 48,
-  "gamesCount": 93,
-  "winRate": 48,
-  "lastPlayedAt": 1784818851,
+  "gamesCount": 96,
+  "winRate": 50,
+  "lastPlayedAt": 1784853195,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -103,81 +103,12 @@
     1060,
     1044,
     1033,
-    1018
+    1018,
+    1034,
+    1050,
+    1062
   ],
   "recentMatches": [
-    {
-      "matchId": 474190395,
-      "description": "10x 3x Bamboo - 10xshared.com",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1777534080,
-      "outcome": "loss",
-      "preRating": 1100,
-      "postRating": 1082,
-      "eloChange": -18,
-      "civ": "Burgundians",
-      "teamAvgElo": 998,
-      "opponentAvgElo": 1059,
-      "teammates": [
-        "KLAT",
-        "Gasnápido",
-        "Wololoo"
-      ],
-      "opponents": [
-        "Parts",
-        "Tortrix",
-        "goldinggunsandparts",
-        "babeleo"
-      ]
-    },
-    {
-      "matchId": 475692573,
-      "description": "10x 3x Bamboo - 10xshared.com",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1778052180,
-      "outcome": "win",
-      "preRating": 1082,
-      "postRating": 1098,
-      "eloChange": 16,
-      "civ": "Italians",
-      "teamAvgElo": 1051,
-      "opponentAvgElo": 1073,
-      "teammates": [
-        "GoOverlay.com | AwE",
-        "Sam",
-        "Shadow"
-      ],
-      "opponents": [
-        "Parts",
-        "Scootyplz",
-        "Wozbo",
-        "liehuo22"
-      ]
-    },
-    {
-      "matchId": 483731193,
-      "description": "10x 3x shared tech Bamboo Nothing Random Civ",
-      "mapname": "Bamboo Nothing_Paren_V4_Nohills",
-      "timestamp": 1780871727,
-      "outcome": "win",
-      "preRating": 1098,
-      "postRating": 1111,
-      "eloChange": 13,
-      "civ": "Tatars",
-      "teamAvgElo": 1021,
-      "opponentAvgElo": 1034,
-      "teammates": [
-        "__VK__",
-        "Xinzzo",
-        "LUIS123456E"
-      ],
-      "opponents": [
-        "NoAgendaPODCAST",
-        "Consume Product",
-        "blind_mist",
-        "orielavr10"
-      ]
-    },
     {
       "matchId": 484676196,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -584,6 +515,78 @@
         "kekekeya",
         "balbers08",
         "DnD"
+      ]
+    },
+    {
+      "matchId": 494399883,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784845088,
+      "outcome": "win",
+      "preRating": 1018,
+      "postRating": 1034,
+      "eloChange": 16,
+      "civ": "Romans",
+      "teamAvgElo": 1028,
+      "opponentAvgElo": 1029,
+      "teammates": [
+        "DPK75",
+        "rob",
+        "TheRiceMan"
+      ],
+      "opponents": [
+        "Parts",
+        "CristoTheRealCeisto",
+        "LonelyKnight",
+        "Wololo"
+      ]
+    },
+    {
+      "matchId": 494408439,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784848441,
+      "outcome": "win",
+      "preRating": 1034,
+      "postRating": 1050,
+      "eloChange": 16,
+      "civ": "Magyars",
+      "teamAvgElo": 1030,
+      "opponentAvgElo": 1029,
+      "teammates": [
+        "TJ",
+        "fe1125587",
+        "399 the Grizzly Bear - RIP <3"
+      ],
+      "opponents": [
+        "TheRiceMan",
+        "SoyLaMuerte",
+        "万能的静静",
+        "Apocalypto"
+      ]
+    },
+    {
+      "matchId": 494420909,
+      "description": "10x3x   shared bonus random civ  no noob",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784853195,
+      "outcome": "win",
+      "preRating": 1050,
+      "postRating": 1062,
+      "eloChange": 12,
+      "civ": "Huns",
+      "teamAvgElo": 1022,
+      "opponentAvgElo": 967,
+      "teammates": [
+        "Ghost_pt",
+        "NothingAtAll11",
+        "Maxim Liann"
+      ],
+      "opponents": [
+        "Your Ego",
+        "Paris Hilton",
+        "Chirijiraden",
+        "procrastination.exe"
       ]
     }
   ]

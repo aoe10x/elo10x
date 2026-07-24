@@ -1,12 +1,12 @@
 {
   "profile_id": 5825088,
   "alias": "Zortopos",
-  "rating": 1004,
+  "rating": 990,
   "wins": 12,
-  "losses": 15,
-  "gamesCount": 27,
-  "winRate": 44,
-  "lastPlayedAt": 1784836637,
+  "losses": 16,
+  "gamesCount": 28,
+  "winRate": 43,
+  "lastPlayedAt": 1784844664,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -37,33 +37,10 @@
     1013,
     1000,
     1020,
-    1004
+    1004,
+    990
   ],
   "recentMatches": [
-    {
-      "matchId": 478656006,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1779088740,
-      "outcome": "loss",
-      "preRating": 1009,
-      "postRating": 980,
-      "eloChange": -29,
-      "civ": "Berbers",
-      "teamAvgElo": 1069,
-      "opponentAvgElo": 1086,
-      "teammates": [
-        "Kumad",
-        "Myriad",
-        "Astaroth"
-      ],
-      "opponents": [
-        "GCARMINATTI",
-        "EL__PATRON",
-        "ZaySol",
-        "Preacher!"
-      ]
-    },
     {
       "matchId": 478660568,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -518,6 +495,30 @@
         "Kamus197945",
         "Chuckyllo4417",
         "juanmontes005"
+      ]
+    },
+    {
+      "matchId": 494398124,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784844664,
+      "outcome": "loss",
+      "preRating": 1004,
+      "postRating": 990,
+      "eloChange": -14,
+      "civ": "Bulgarians",
+      "teamAvgElo": 1044,
+      "opponentAvgElo": 1040,
+      "teammates": [
+        "TJ",
+        "Vader",
+        "Prinz Kay1"
+      ],
+      "opponents": [
+        "Monk",
+        "Xinzzo",
+        "[B] Cannino",
+        "AAA"
       ]
     }
   ]

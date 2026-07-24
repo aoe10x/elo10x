@@ -1,12 +1,12 @@
 {
   "profile_id": 3601452,
   "alias": "pot",
-  "rating": 1042,
-  "wins": 44,
+  "rating": 1056,
+  "wins": 45,
   "losses": 46,
-  "gamesCount": 90,
+  "gamesCount": 91,
   "winRate": 49,
-  "lastPlayedAt": 1784830667,
+  "lastPlayedAt": 1784847499,
   "country": "gb",
   "merged_ids": [],
   "ratingHistory": [
@@ -100,33 +100,10 @@
     1057,
     1042,
     1025,
-    1042
+    1042,
+    1056
   ],
   "recentMatches": [
-    {
-      "matchId": 372954095,
-      "description": "10x civ 3x techs turbo",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1739853300,
-      "outcome": "loss",
-      "preRating": 1030,
-      "postRating": 1012,
-      "eloChange": -18,
-      "civ": "Portuguese",
-      "teamAvgElo": 1043,
-      "opponentAvgElo": 986,
-      "teammates": [
-        "bijiyumo",
-        "☠Olli ☠",
-        "Starska"
-      ],
-      "opponents": [
-        "Archangel",
-        "everth.contreras15",
-        "Lykerya",
-        "Koltira"
-      ]
-    },
     {
       "matchId": 372980934,
       "description": "4vs4 10x shared civ 3x random",
@@ -581,6 +558,30 @@
         "WDWKid3",
         "Vince",
         "adoniranfernandescachopa"
+      ]
+    },
+    {
+      "matchId": 494405598,
+      "description": "10x 3x BN ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784847499,
+      "outcome": "win",
+      "preRating": 1042,
+      "postRating": 1056,
+      "eloChange": 14,
+      "civ": "Celts",
+      "teamAvgElo": 1030,
+      "opponentAvgElo": 990,
+      "teammates": [
+        "pool_champ",
+        "Rüdiger",
+        "procrastination.exe"
+      ],
+      "opponents": [
+        "Imperator Storm",
+        "Apocalypto",
+        "Ruuder",
+        "399 the Grizzly Bear - RIP <3"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 2463959,
   "alias": "RoR | Benanji",
-  "rating": 1034,
+  "rating": 1020,
   "wins": 21,
-  "losses": 18,
-  "gamesCount": 39,
-  "winRate": 54,
-  "lastPlayedAt": 1784416417,
+  "losses": 19,
+  "gamesCount": 40,
+  "winRate": 53,
+  "lastPlayedAt": 1784843543,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -49,33 +49,10 @@
     1055,
     1037,
     1021,
-    1034
+    1034,
+    1020
   ],
   "recentMatches": [
-    {
-      "matchId": 434690187,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1763792280,
-      "outcome": "loss",
-      "preRating": 1035,
-      "postRating": 1020,
-      "eloChange": -15,
-      "civ": "Armenians",
-      "teamAvgElo": 1013,
-      "opponentAvgElo": 1080,
-      "teammates": [
-        "Paris Hilton",
-        "Feid",
-        "God emperor"
-      ],
-      "opponents": [
-        "nooblet3300",
-        "The Cobra Brothers",
-        "Zeriel",
-        "VergaraRamirez"
-      ]
-    },
     {
       "matchId": 434693396,
       "description": "256x 10x Forest Nothing",
@@ -530,6 +507,30 @@
         "468673564",
         "universeagle",
         "TJ"
+      ]
+    },
+    {
+      "matchId": 494394228,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784843543,
+      "outcome": "loss",
+      "preRating": 1034,
+      "postRating": 1020,
+      "eloChange": -14,
+      "civ": "Armenians",
+      "teamAvgElo": 1037,
+      "opponentAvgElo": 1072,
+      "teammates": [
+        "OhSheeep",
+        "LonelyKnight",
+        "Scipio"
+      ],
+      "opponents": [
+        "Parts",
+        "iamatthe.hell",
+        "herelin0",
+        "romeadd"
       ]
     }
   ]

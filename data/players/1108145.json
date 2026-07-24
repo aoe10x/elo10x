@@ -1,12 +1,12 @@
 {
   "profile_id": 1108145,
   "alias": "[ ARKI ! ]",
-  "rating": 1082,
+  "rating": 1067,
   "wins": 29,
-  "losses": 34,
-  "gamesCount": 63,
-  "winRate": 46,
-  "lastPlayedAt": 1784762245,
+  "losses": 35,
+  "gamesCount": 64,
+  "winRate": 45,
+  "lastPlayedAt": 1784854053,
   "country": "ar",
   "merged_ids": [],
   "ratingHistory": [
@@ -73,33 +73,10 @@
     1062,
     1047,
     1064,
-    1082
+    1082,
+    1067
   ],
   "recentMatches": [
-    {
-      "matchId": 475460757,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1777963560,
-      "outcome": "win",
-      "preRating": 982,
-      "postRating": 1001,
-      "eloChange": 19,
-      "civ": "Poles",
-      "teamAvgElo": 999,
-      "opponentAvgElo": 1054,
-      "teammates": [
-        "Bryce Coolguy",
-        "Rita De Valencia",
-        "b7ackwar"
-      ],
-      "opponents": [
-        "NothingAtAll11",
-        "nooblet3300",
-        "cubennets",
-        "Master.Ji.ro.714"
-      ]
-    },
     {
       "matchId": 475912609,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -554,6 +531,30 @@
         "romeadd",
         "Brohio",
         "ActualWizard"
+      ]
+    },
+    {
+      "matchId": 494421625,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784854053,
+      "outcome": "loss",
+      "preRating": 1082,
+      "postRating": 1067,
+      "eloChange": -15,
+      "civ": "Romans",
+      "teamAvgElo": 1012,
+      "opponentAvgElo": 1105,
+      "teammates": [
+        "feid_",
+        "Imjustanoob",
+        "[LWS] Mandatum"
+      ],
+      "opponents": [
+        "Kumad",
+        "EL__PATRON",
+        "Myriad",
+        "ItsMiroGuys"
       ]
     }
   ]

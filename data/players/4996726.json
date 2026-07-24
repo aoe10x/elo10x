@@ -1,12 +1,12 @@
 {
   "profile_id": 4996726,
   "alias": "Rotbart",
-  "rating": 970,
+  "rating": 947,
   "wins": 14,
-  "losses": 21,
-  "gamesCount": 35,
-  "winRate": 40,
-  "lastPlayedAt": 1784587438,
+  "losses": 23,
+  "gamesCount": 37,
+  "winRate": 38,
+  "lastPlayedAt": 1784846583,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -45,57 +45,11 @@
     975,
     962,
     983,
-    970
+    970,
+    956,
+    947
   ],
   "recentMatches": [
-    {
-      "matchId": 434958719,
-      "description": "4V4 ===10x shared 3Xtech  4V4 random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1763880120,
-      "outcome": "loss",
-      "preRating": 1000,
-      "postRating": 974,
-      "eloChange": -26,
-      "civ": "Ethiopians",
-      "teamAvgElo": 1029,
-      "opponentAvgElo": 978,
-      "teammates": [
-        "choolkkkk",
-        "yhidontknow",
-        "SeaPig"
-      ],
-      "opponents": [
-        "Fuzsah",
-        "叫声乌鸦哥",
-        "znifer",
-        "Tarklow"
-      ]
-    },
-    {
-      "matchId": 435759643,
-      "description": "10x 3x shared !!NO NOOBS!!",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1764186840,
-      "outcome": "loss",
-      "preRating": 974,
-      "postRating": 956,
-      "eloChange": -18,
-      "civ": "Turks",
-      "teamAvgElo": 1010,
-      "opponentAvgElo": 1049,
-      "teammates": [
-        "maddymsg",
-        "鱼浆",
-        "Paolo Carrosel"
-      ],
-      "opponents": [
-        "Age5464",
-        "Nordsee",
-        "loco wytboy46",
-        "dRea"
-      ]
-    },
     {
       "matchId": 435856242,
       "description": "4 vs 4 // 10x Shared Random Civ",
@@ -526,6 +480,54 @@
         "The Naked Gothman",
         "Logicos123",
         "Baboo"
+      ]
+    },
+    {
+      "matchId": 494395379,
+      "description": "10x civ x3 tec Bamboo nothing - Only Good Noobs",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784843794,
+      "outcome": "loss",
+      "preRating": 970,
+      "postRating": 956,
+      "eloChange": -14,
+      "civ": "Berbers",
+      "teamAvgElo": 1043,
+      "opponentAvgElo": 1012,
+      "teammates": [
+        "Parenquima",
+        "DPK75",
+        "BadNeighbor404"
+      ],
+      "opponents": [
+        "Viteaux",
+        "GuguBot",
+        "MARKVILEX",
+        "SpiniestTuna222"
+      ]
+    },
+    {
+      "matchId": 494403168,
+      "description": "10x 3x BN ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784846583,
+      "outcome": "loss",
+      "preRating": 956,
+      "postRating": 947,
+      "eloChange": -9,
+      "civ": "Vietnamese",
+      "teamAvgElo": 1023,
+      "opponentAvgElo": 1109,
+      "teammates": [
+        "Ghost_pt",
+        "champipolin",
+        "Texas Red"
+      ],
+      "opponents": [
+        "pool_champ",
+        "Noddybear",
+        "Kuecken_das_Vollstrecker",
+        "SpiniestTuna222"
       ]
     }
   ]
