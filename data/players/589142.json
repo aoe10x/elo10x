@@ -1,12 +1,12 @@
 {
   "profile_id": 589142,
   "alias": "Armyofme_",
-  "rating": 1081,
+  "rating": 1066,
   "wins": 49,
-  "losses": 48,
-  "gamesCount": 97,
-  "winRate": 51,
-  "lastPlayedAt": 1784912571,
+  "losses": 49,
+  "gamesCount": 98,
+  "winRate": 50,
+  "lastPlayedAt": 1784913548,
   "country": "br",
   "merged_ids": [],
   "ratingHistory": [
@@ -107,33 +107,10 @@
     1034,
     1050,
     1062,
-    1081
+    1081,
+    1066
   ],
   "recentMatches": [
-    {
-      "matchId": 489417354,
-      "description": "10x 3x bamboo NO IDIOT",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1782933639,
-      "outcome": "loss",
-      "preRating": 1126,
-      "postRating": 1109,
-      "eloChange": -17,
-      "civ": "Gurjaras",
-      "teamAvgElo": 1066,
-      "opponentAvgElo": 1106,
-      "teammates": [
-        "pandasadnap",
-        "DnD",
-        "[B] Cannino"
-      ],
-      "opponents": [
-        "Emusan",
-        "LonelyKnight",
-        "TheCobra",
-        "MARKVILEX"
-      ]
-    },
     {
       "matchId": 489419640,
       "description": "10x 3x Bamboo - 10xshared.com",
@@ -408,7 +385,7 @@
       "postRating": 1060,
       "eloChange": 15,
       "civ": "Hindustanis",
-      "teamAvgElo": 1063,
+      "teamAvgElo": 1062,
       "opponentAvgElo": 1023,
       "teammates": [
         "Parts",
@@ -588,6 +565,30 @@
         "GiGi",
         "Bao Oninon",
         "tyehcwc402004"
+      ]
+    },
+    {
+      "matchId": 494563586,
+      "description": "3X 10X",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784913548,
+      "outcome": "loss",
+      "preRating": 1081,
+      "postRating": 1066,
+      "eloChange": -15,
+      "civ": "Ethiopians",
+      "teamAvgElo": 1051,
+      "opponentAvgElo": 1104,
+      "teammates": [
+        "GiGi",
+        "rob",
+        "Paris Hilton"
+      ],
+      "opponents": [
+        "pool_champ",
+        "Bao Oninon",
+        "Lumedge",
+        "Zavgor"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 1175691,
   "alias": "balbers08",
-  "rating": 1015,
-  "wins": 21,
-  "losses": 25,
-  "gamesCount": 46,
-  "winRate": 46,
-  "lastPlayedAt": 1784818851,
+  "rating": 1002,
+  "wins": 22,
+  "losses": 27,
+  "gamesCount": 49,
+  "winRate": 45,
+  "lastPlayedAt": 1784921965,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -48,89 +48,20 @@
     1038,
     1025,
     1009,
-    996,
-    985,
-    973,
-    992,
-    1011,
+    997,
+    986,
+    974,
+    993,
+    1012,
     1030,
     1015,
     999,
-    1015
+    1015,
+    1031,
+    1016,
+    1002
   ],
   "recentMatches": [
-    {
-      "matchId": 481405893,
-      "description": "BAMBOO NOTHING TURBO - NOT-NOT-NOT-NOT-NOT-  10x or 3x",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1780110060,
-      "outcome": "loss",
-      "preRating": 1040,
-      "postRating": 1023,
-      "eloChange": -17,
-      "civ": "Bulgarians",
-      "teamAvgElo": 1059,
-      "opponentAvgElo": 1027,
-      "teammates": [
-        "dooierick",
-        "Rüdiger",
-        "diimie"
-      ],
-      "opponents": [
-        "_Google",
-        "Larvagator",
-        "FueGO",
-        "DMenisDenisTTV"
-      ]
-    },
-    {
-      "matchId": 482161952,
-      "description": "BAMBOO NOTHING TURBO - NOT-NOT-NOT-NOT-NOT-  10x or 3x",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1780362240,
-      "outcome": "win",
-      "preRating": 1023,
-      "postRating": 1039,
-      "eloChange": 16,
-      "civ": "Portuguese",
-      "teamAvgElo": 1033,
-      "opponentAvgElo": 1021,
-      "teammates": [
-        "janhartmann",
-        "Strava_18742",
-        "PIEROGI"
-      ],
-      "opponents": [
-        "dooierick",
-        "Jitter",
-        "痛苦小苏",
-        "CanceRex"
-      ]
-    },
-    {
-      "matchId": 482168362,
-      "description": "BAMBOO NOTHING TURBO - NOT-NOT-NOT-NOT-NOT-  10x or 3x",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1780364040,
-      "outcome": "loss",
-      "preRating": 1039,
-      "postRating": 1024,
-      "eloChange": -15,
-      "civ": "Italians",
-      "teamAvgElo": 992,
-      "opponentAvgElo": 1052,
-      "teammates": [
-        "dooierick",
-        "Jitter",
-        "Mela"
-      ],
-      "opponents": [
-        "痛苦小苏",
-        "[TSU] Red Cansky",
-        "Lietuva_",
-        "diimie"
-      ]
-    },
     {
       "matchId": 482629878,
       "description": "BAMBOO NOTHING TURBO - NOT-NOT-NOT-NOT-NOT-  10x or 3x",
@@ -189,7 +120,7 @@
       "postRating": 1044,
       "eloChange": 18,
       "civ": "Unknown",
-      "teamAvgElo": 1057,
+      "teamAvgElo": 1062,
       "opponentAvgElo": 1077,
       "teammates": [
         "Saloon_F_F",
@@ -330,11 +261,11 @@
       "timestamp": 1783949926,
       "outcome": "loss",
       "preRating": 1009,
-      "postRating": 996,
-      "eloChange": -13,
+      "postRating": 997,
+      "eloChange": -12,
       "civ": "Mongols",
       "teamAvgElo": 1140,
-      "opponentAvgElo": 1084,
+      "opponentAvgElo": 1087,
       "teammates": [
         "老K",
         "pandalam",
@@ -353,11 +284,11 @@
       "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1783951175,
       "outcome": "loss",
-      "preRating": 996,
-      "postRating": 985,
+      "preRating": 997,
+      "postRating": 986,
       "eloChange": -11,
       "civ": "Incas",
-      "teamAvgElo": 1068,
+      "teamAvgElo": 1069,
       "opponentAvgElo": 1103,
       "teammates": [
         "i kun 2.5",
@@ -377,8 +308,8 @@
       "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1784569432,
       "outcome": "loss",
-      "preRating": 985,
-      "postRating": 973,
+      "preRating": 986,
+      "postRating": 974,
       "eloChange": -12,
       "civ": "Turks",
       "teamAvgElo": 1058,
@@ -401,8 +332,8 @@
       "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1784643552,
       "outcome": "win",
-      "preRating": 973,
-      "postRating": 992,
+      "preRating": 974,
+      "postRating": 993,
       "eloChange": 19,
       "civ": "Spanish",
       "teamAvgElo": 1014,
@@ -425,8 +356,8 @@
       "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
       "timestamp": 1784662674,
       "outcome": "win",
-      "preRating": 992,
-      "postRating": 1011,
+      "preRating": 993,
+      "postRating": 1012,
       "eloChange": 19,
       "civ": "Magyars",
       "teamAvgElo": 1061,
@@ -449,11 +380,11 @@
       "mapname": "BAMBOO NOTHING - SCORPYON DE",
       "timestamp": 1784665096,
       "outcome": "win",
-      "preRating": 1011,
+      "preRating": 1012,
       "postRating": 1030,
-      "eloChange": 19,
+      "eloChange": 18,
       "civ": "Persians",
-      "teamAvgElo": 1029,
+      "teamAvgElo": 1030,
       "opponentAvgElo": 1066,
       "teammates": [
         "dorayan",
@@ -537,6 +468,78 @@
         "caonimashabi",
         "476055690",
         "Armyofme_"
+      ]
+    },
+    {
+      "matchId": 494581571,
+      "description": "10x3x   shared bonus random civ  no noob",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784918990,
+      "outcome": "win",
+      "preRating": 1015,
+      "postRating": 1031,
+      "eloChange": 16,
+      "civ": "Tatars",
+      "teamAvgElo": 1028,
+      "opponentAvgElo": 1012,
+      "teammates": [
+        "Kalervo Jankko",
+        "LonelyKnight",
+        "Legitkiller354"
+      ],
+      "opponents": [
+        "Your Ego",
+        "menorahjury",
+        "Not a Wizard",
+        "Mr. Adam"
+      ]
+    },
+    {
+      "matchId": 494586669,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784920400,
+      "outcome": "loss",
+      "preRating": 1031,
+      "postRating": 1016,
+      "eloChange": -15,
+      "civ": "Unknown",
+      "teamAvgElo": 1002,
+      "opponentAvgElo": 1049,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "sonicadam2",
+        "♥DraganBorn♥"
+      ],
+      "opponents": [
+        "MarieBrutale",
+        "beat",
+        "Lumedge",
+        "DukeEmree"
+      ]
+    },
+    {
+      "matchId": 494591839,
+      "description": "10x 3x Bamboo",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784921965,
+      "outcome": "loss",
+      "preRating": 1016,
+      "postRating": 1002,
+      "eloChange": -14,
+      "civ": "Wu",
+      "teamAvgElo": 986,
+      "opponentAvgElo": 1051,
+      "teammates": [
+        "Not a Wizard",
+        "leandrod_c",
+        "Keithen UwU"
+      ],
+      "opponents": [
+        "[TSU] Red Cansky",
+        "...",
+        "YUJIN",
+        "liehuo22"
       ]
     }
   ]

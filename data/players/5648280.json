@@ -1,12 +1,12 @@
 {
   "profile_id": 5648280,
   "alias": "Rito",
-  "rating": 994,
+  "rating": 946,
   "wins": 25,
-  "losses": 23,
-  "gamesCount": 48,
-  "winRate": 52,
-  "lastPlayedAt": 1784816841,
+  "losses": 26,
+  "gamesCount": 51,
+  "winRate": 49,
+  "lastPlayedAt": 1784917456,
   "country": "jp",
   "merged_ids": [],
   "ratingHistory": [
@@ -58,81 +58,12 @@
     1043,
     1026,
     1010,
-    994
+    994,
+    978,
+    963,
+    946
   ],
   "recentMatches": [
-    {
-      "matchId": 388741051,
-      "description": "10xshared_3xtech_BambooNothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1745880720,
-      "outcome": "loss",
-      "preRating": 1104,
-      "postRating": 1085,
-      "eloChange": -19,
-      "civ": "Goths",
-      "teamAvgElo": 1101,
-      "opponentAvgElo": 1045,
-      "teammates": [
-        "Papillon",
-        "待ったかね？",
-        "Abused but whole"
-      ],
-      "opponents": [
-        "komatti",
-        "うすたつっくったおま",
-        "konishika",
-        "Dayman"
-      ]
-    },
-    {
-      "matchId": 388744263,
-      "description": "10xshared_3xtech_BambooNothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1745881800,
-      "outcome": "win",
-      "preRating": 1085,
-      "postRating": 1100,
-      "eloChange": 15,
-      "civ": "Vietnamese",
-      "teamAvgElo": 1066,
-      "opponentAvgElo": 1055,
-      "teammates": [
-        "konishika",
-        "待ったかね？",
-        "tonkatumura"
-      ],
-      "opponents": [
-        "komatti",
-        "Papillon",
-        "うすたつっくったおま",
-        "Koalakapitaen"
-      ]
-    },
-    {
-      "matchId": 388750459,
-      "description": "10xshared_3xtech_BambooNothing",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1745884080,
-      "outcome": "win",
-      "preRating": 1100,
-      "postRating": 1114,
-      "eloChange": 14,
-      "civ": "Slavs",
-      "teamAvgElo": 1065,
-      "opponentAvgElo": 1055,
-      "teammates": [
-        "komatti",
-        "うすたつっくったおま",
-        "Papillon"
-      ],
-      "opponents": [
-        "konishika",
-        "tonkatumura",
-        "bckd00r",
-        "待ったかね？"
-      ]
-    },
     {
       "matchId": 388751026,
       "description": "10xshared_3xtech_BambooNothing",
@@ -359,7 +290,7 @@
       "postRating": 1076,
       "eloChange": 17,
       "civ": "Tatars",
-      "teamAvgElo": 1094,
+      "teamAvgElo": 1093,
       "opponentAvgElo": 1075,
       "teammates": [
         "Emusan",
@@ -539,6 +470,78 @@
         "tonkatumura",
         "Papillon",
         "sppd3181"
+      ]
+    },
+    {
+      "matchId": 494563826,
+      "description": "new 10x shared civ with RollUT",
+      "mapname": "RollUT 10x - BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784913880,
+      "outcome": "loss",
+      "preRating": 994,
+      "postRating": 978,
+      "eloChange": -16,
+      "civ": "Burmese",
+      "teamAvgElo": 1042,
+      "opponentAvgElo": 997,
+      "teammates": [
+        "Paulichromatic",
+        "Papillon",
+        "gamingtars"
+      ],
+      "opponents": [
+        "dorayan",
+        "konishika",
+        "LonelyKnight",
+        "Ac_financier"
+      ]
+    },
+    {
+      "matchId": 494569626,
+      "description": "new 10x shared civ with RollUT",
+      "mapname": "RollUT 10x - BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784915454,
+      "outcome": "loss",
+      "preRating": 978,
+      "postRating": 963,
+      "eloChange": -15,
+      "civ": "Bulgarians",
+      "teamAvgElo": 1017,
+      "opponentAvgElo": 1003,
+      "teammates": [
+        "Papillon",
+        "konishika",
+        "Lumedge"
+      ],
+      "opponents": [
+        "dorayan",
+        "Keithen UwU",
+        "AAA",
+        "tacotoy"
+      ]
+    },
+    {
+      "matchId": 494575608,
+      "description": "new 10x shared civ with RollUT",
+      "mapname": "RollUT 10x - BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784917456,
+      "outcome": "loss",
+      "preRating": 963,
+      "postRating": 946,
+      "eloChange": -17,
+      "civ": "Dravidians",
+      "teamAvgElo": 1009,
+      "opponentAvgElo": 946,
+      "teammates": [
+        "dorayan",
+        "AAA",
+        "RIchard_Uy"
+      ],
+      "opponents": [
+        "Papillon",
+        "konishika",
+        "ICAC",
+        "..."
       ]
     }
   ]

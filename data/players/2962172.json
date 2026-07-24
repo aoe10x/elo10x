@@ -1,12 +1,12 @@
 {
   "profile_id": 2962172,
   "alias": "_Zeruch_",
-  "rating": 1076,
-  "wins": 19,
-  "losses": 14,
-  "gamesCount": 33,
-  "winRate": 58,
-  "lastPlayedAt": 1784911862,
+  "rating": 1069,
+  "wins": 20,
+  "losses": 15,
+  "gamesCount": 35,
+  "winRate": 57,
+  "lastPlayedAt": 1784922371,
   "country": "ua",
   "merged_ids": [],
   "ratingHistory": [
@@ -43,57 +43,11 @@
     1100,
     1081,
     1063,
-    1076
+    1076,
+    1056,
+    1069
   ],
   "recentMatches": [
-    {
-      "matchId": 492691972,
-      "description": "10x Shared Civ Bonus (everything nothing)",
-      "mapname": "Bush Nothing",
-      "timestamp": 1784210706,
-      "outcome": "win",
-      "preRating": 940,
-      "postRating": 966,
-      "eloChange": 26,
-      "civ": "Aztecs",
-      "teamAvgElo": 980,
-      "opponentAvgElo": 921,
-      "teammates": [
-        "[Liiit] Zbyszek",
-        "malth",
-        "Orinoco"
-      ],
-      "opponents": [
-        "WhiteMonk",
-        "FinishedMyBurger",
-        "juanmontes005",
-        "只玩老钟abc"
-      ]
-    },
-    {
-      "matchId": 492697590,
-      "description": "10x Shared Civ Bonus (everything nothing)",
-      "mapname": "Bush Nothing",
-      "timestamp": 1784212348,
-      "outcome": "win",
-      "preRating": 966,
-      "postRating": 995,
-      "eloChange": 29,
-      "civ": "Koreans",
-      "teamAvgElo": 993,
-      "opponentAvgElo": 1014,
-      "teammates": [
-        "紫蝶黄蜂俱有情",
-        "BeatsNArt",
-        "Vader"
-      ],
-      "opponents": [
-        "WhiteMonk",
-        "Megahaufen",
-        "tonzo",
-        "Soviet Union"
-      ]
-    },
     {
       "matchId": 492701447,
       "description": "10x Shared Civ Bonus (everything nothing)",
@@ -440,7 +394,7 @@
       "postRating": 1100,
       "eloChange": 11,
       "civ": "Armenians",
-      "teamAvgElo": 1035,
+      "teamAvgElo": 1034,
       "opponentAvgElo": 983,
       "teammates": [
         "Scrat",
@@ -512,7 +466,7 @@
       "postRating": 1076,
       "eloChange": 13,
       "civ": "Bengalis",
-      "teamAvgElo": 1010,
+      "teamAvgElo": 1014,
       "opponentAvgElo": 998,
       "teammates": [
         "Your Ego",
@@ -524,6 +478,54 @@
         "Paladin",
         "konishika",
         "schrubber"
+      ]
+    },
+    {
+      "matchId": 494590577,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784921422,
+      "outcome": "loss",
+      "preRating": 1076,
+      "postRating": 1056,
+      "eloChange": -20,
+      "civ": "Britons",
+      "teamAvgElo": 1023,
+      "opponentAvgElo": 993,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "DukeEmree",
+        "menorahjury"
+      ],
+      "opponents": [
+        "sonicadam2",
+        "MarieBrutale",
+        "♥DraganBorn♥",
+        "omega"
+      ]
+    },
+    {
+      "matchId": 494593866,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784922371,
+      "outcome": "win",
+      "preRating": 1056,
+      "postRating": 1069,
+      "eloChange": 13,
+      "civ": "Cumans",
+      "teamAvgElo": 1057,
+      "opponentAvgElo": 991,
+      "teammates": [
+        "ManWithoutArms",
+        "MarieBrutale",
+        "babeleo"
+      ],
+      "opponents": [
+        "yimacs_yoyoyo",
+        "omega",
+        "sonicadam2",
+        "sppd3181"
       ]
     }
   ]

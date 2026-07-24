@@ -1,12 +1,12 @@
 {
   "profile_id": 434838,
   "alias": "jpllops",
-  "rating": 998,
-  "wins": 11,
+  "rating": 1016,
+  "wins": 12,
   "losses": 13,
-  "gamesCount": 24,
-  "winRate": 46,
-  "lastPlayedAt": 1784656302,
+  "gamesCount": 25,
+  "winRate": 48,
+  "lastPlayedAt": 1784914629,
   "country": "se",
   "merged_ids": [],
   "ratingHistory": [
@@ -34,33 +34,10 @@
     983,
     1000,
     984,
-    998
+    998,
+    1016
   ],
   "recentMatches": [
-    {
-      "matchId": 431732120,
-      "description": "4V4 ===10x shared 3Xtech  4V4 random",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1762666140,
-      "outcome": "win",
-      "preRating": 1044,
-      "postRating": 1089,
-      "eloChange": 45,
-      "civ": "Koreans",
-      "teamAvgElo": 1022,
-      "opponentAvgElo": 1067,
-      "teammates": [
-        "PITON | Shepy",
-        "Bourne2Believe",
-        "Aesthic"
-      ],
-      "opponents": [
-        "choolkkkk",
-        "ISwaZz",
-        "Eraser88",
-        "heyongjun11"
-      ]
-    },
     {
       "matchId": 462763209,
       "description": "Bamboo 10x 3x 4v4",
@@ -191,7 +168,7 @@
       "postRating": 1132,
       "eloChange": 21,
       "civ": "Ethiopians",
-      "teamAvgElo": 1039,
+      "teamAvgElo": 1038,
       "opponentAvgElo": 990,
       "teammates": [
         "Sundev",
@@ -515,6 +492,30 @@
         "khouildi.tarek.tk",
         "davidll_5",
         "XsupercopX"
+      ]
+    },
+    {
+      "matchId": 494566476,
+      "description": "10x 3x BN ",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784914629,
+      "outcome": "win",
+      "preRating": 998,
+      "postRating": 1016,
+      "eloChange": 18,
+      "civ": "Cumans",
+      "teamAvgElo": 1055,
+      "opponentAvgElo": 1036,
+      "teammates": [
+        "pool_champ",
+        "Bao Oninon",
+        "tacotoy"
+      ],
+      "opponents": [
+        "Lumedge",
+        "NothingAtAll11",
+        "Keithen UwU",
+        "Parts"
       ]
     }
   ]

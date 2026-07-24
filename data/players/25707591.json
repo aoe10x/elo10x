@@ -1,12 +1,12 @@
 {
   "profile_id": 25707591,
   "alias": "menorahjury",
-  "rating": 1042,
+  "rating": 1008,
   "wins": 16,
-  "losses": 18,
-  "gamesCount": 34,
-  "winRate": 47,
-  "lastPlayedAt": 1784866330,
+  "losses": 20,
+  "gamesCount": 36,
+  "winRate": 44,
+  "lastPlayedAt": 1784921422,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -44,57 +44,11 @@
     1059,
     1044,
     1028,
-    1042
+    1042,
+    1025,
+    1008
   ],
   "recentMatches": [
-    {
-      "matchId": 491389578,
-      "description": "10x civ  3x tech Forest nothing",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783714645,
-      "outcome": "loss",
-      "preRating": 920,
-      "postRating": 907,
-      "eloChange": -13,
-      "civ": "Spanish",
-      "teamAvgElo": 1000,
-      "opponentAvgElo": 1110,
-      "teammates": [
-        "VAPE NAYSH Y'ALL",
-        "Megahaufen",
-        "MadRussian"
-      ],
-      "opponents": [
-        "yimacs_yoyoyo",
-        "Paladin",
-        "TheRiceMan",
-        "Joseph"
-      ]
-    },
-    {
-      "matchId": 491730888,
-      "description": "10x Shared 3xTech Bamboo Nothing",
-      "mapname": "BAMBOO NOTHING_Paren_v4",
-      "timestamp": 1783830401,
-      "outcome": "win",
-      "preRating": 907,
-      "postRating": 943,
-      "eloChange": 36,
-      "civ": "Romans",
-      "teamAvgElo": 983,
-      "opponentAvgElo": 1088,
-      "teammates": [
-        "Holy Cheetos",
-        "Bridge",
-        "DGHIR | NICOGP11"
-      ],
-      "opponents": [
-        "{R} Parry",
-        "Stigel",
-        "Xinzzo",
-        "Mionel Lessi"
-      ]
-    },
     {
       "matchId": 491734488,
       "description": "10x Shared 3xTech Bamboo Nothing",
@@ -153,7 +107,7 @@
       "postRating": 945,
       "eloChange": -10,
       "civ": "Britons",
-      "teamAvgElo": 1002,
+      "teamAvgElo": 1001,
       "opponentAvgElo": 1140,
       "teammates": [
         "TUF | DUKE_NUKEM",
@@ -202,7 +156,7 @@
       "eloChange": 19,
       "civ": "Poles",
       "teamAvgElo": 929,
-      "opponentAvgElo": 1000,
+      "opponentAvgElo": 999,
       "teammates": [
         "fxsound",
         "naponeng",
@@ -274,7 +228,7 @@
       "eloChange": 19,
       "civ": "Romans",
       "teamAvgElo": 1112,
-      "opponentAvgElo": 1066,
+      "opponentAvgElo": 1068,
       "teammates": [
         "pool_champ",
         "LonelyKnight",
@@ -394,7 +348,7 @@
       "eloChange": -15,
       "civ": "Sicilians",
       "teamAvgElo": 1035,
-      "opponentAvgElo": 1087,
+      "opponentAvgElo": 1086,
       "teammates": [
         "nooblet3300",
         "vincentc95",
@@ -417,7 +371,7 @@
       "postRating": 1075,
       "eloChange": 16,
       "civ": "Gurjaras",
-      "teamAvgElo": 1078,
+      "teamAvgElo": 1077,
       "opponentAvgElo": 1066,
       "teammates": [
         "TJ",
@@ -525,6 +479,54 @@
         "Maxim Liann",
         "Perxeus",
         "Willoloh!!!"
+      ]
+    },
+    {
+      "matchId": 494581571,
+      "description": "10x3x   shared bonus random civ  no noob",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784918990,
+      "outcome": "loss",
+      "preRating": 1042,
+      "postRating": 1025,
+      "eloChange": -17,
+      "civ": "Malians",
+      "teamAvgElo": 1012,
+      "opponentAvgElo": 1028,
+      "teammates": [
+        "Your Ego",
+        "Not a Wizard",
+        "Mr. Adam"
+      ],
+      "opponents": [
+        "Kalervo Jankko",
+        "LonelyKnight",
+        "Legitkiller354",
+        "balbers08"
+      ]
+    },
+    {
+      "matchId": 494590577,
+      "description": "4vs4 10x 3x shared civ bonus, random civ",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784921422,
+      "outcome": "loss",
+      "preRating": 1025,
+      "postRating": 1008,
+      "eloChange": -17,
+      "civ": "Sicilians",
+      "teamAvgElo": 1023,
+      "opponentAvgElo": 993,
+      "teammates": [
+        "yimacs_yoyoyo",
+        "_Zeruch_",
+        "DukeEmree"
+      ],
+      "opponents": [
+        "sonicadam2",
+        "MarieBrutale",
+        "♥DraganBorn♥",
+        "omega"
       ]
     }
   ]

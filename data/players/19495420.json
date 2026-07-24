@@ -1,12 +1,12 @@
 {
   "profile_id": 19495420,
   "alias": "leandrod_c",
-  "rating": 933,
+  "rating": 922,
   "wins": 16,
-  "losses": 32,
-  "gamesCount": 48,
+  "losses": 33,
+  "gamesCount": 49,
   "winRate": 33,
-  "lastPlayedAt": 1784758042,
+  "lastPlayedAt": 1784921965,
   "country": "ar",
   "merged_ids": [
     12790969,
@@ -61,33 +61,10 @@
     934,
     922,
     945,
-    933
+    933,
+    922
   ],
   "recentMatches": [
-    {
-      "matchId": 445373539,
-      "description": "256x 10x Forest Nothing",
-      "mapname": "256Xforestnothing",
-      "timestamp": 1767517620,
-      "outcome": "win",
-      "preRating": 880,
-      "postRating": 901,
-      "eloChange": 21,
-      "civ": "Turks",
-      "teamAvgElo": 1036,
-      "opponentAvgElo": 1002,
-      "teammates": [
-        "nooblet3300",
-        "Zeriel",
-        "WipiWi"
-      ],
-      "opponents": [
-        "TimeKiller11",
-        "tinky__winky",
-        "Chuckyllo4417",
-        "DoomedBell1814"
-      ]
-    },
     {
       "matchId": 460060368,
       "description": "256x 10x Forest Nothing",
@@ -434,7 +411,7 @@
       "postRating": 916,
       "eloChange": 21,
       "civ": "Malians",
-      "teamAvgElo": 1037,
+      "teamAvgElo": 1038,
       "opponentAvgElo": 1005,
       "teammates": [
         "Parenquima",
@@ -542,6 +519,30 @@
         "yimacs_yoyoyo",
         "Maxim Liann",
         "bommietommie"
+      ]
+    },
+    {
+      "matchId": 494591839,
+      "description": "10x 3x Bamboo",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784921965,
+      "outcome": "loss",
+      "preRating": 933,
+      "postRating": 922,
+      "eloChange": -11,
+      "civ": "Slavs",
+      "teamAvgElo": 986,
+      "opponentAvgElo": 1051,
+      "teammates": [
+        "Not a Wizard",
+        "balbers08",
+        "Keithen UwU"
+      ],
+      "opponents": [
+        "[TSU] Red Cansky",
+        "...",
+        "YUJIN",
+        "liehuo22"
       ]
     }
   ]
