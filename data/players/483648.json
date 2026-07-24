@@ -1,12 +1,12 @@
 {
   "profile_id": 483648,
   "alias": "Willoloh!!!",
-  "rating": 992,
-  "wins": 19,
+  "rating": 1010,
+  "wins": 20,
   "losses": 23,
-  "gamesCount": 42,
-  "winRate": 45,
-  "lastPlayedAt": 1784866330,
+  "gamesCount": 43,
+  "winRate": 47,
+  "lastPlayedAt": 1784875930,
   "country": "au",
   "merged_ids": [],
   "ratingHistory": [
@@ -52,33 +52,10 @@
     1038,
     1024,
     1009,
-    992
+    992,
+    1010
   ],
   "recentMatches": [
-    {
-      "matchId": 493584485,
-      "description": "10x 3x - bamboo donut",
-      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
-      "timestamp": 1784520623,
-      "outcome": "win",
-      "preRating": 959,
-      "postRating": 977,
-      "eloChange": 18,
-      "civ": "Slavs",
-      "teamAvgElo": 1068,
-      "opponentAvgElo": 997,
-      "teammates": [
-        "Parenquima",
-        "Bridge",
-        "edalmavuz"
-      ],
-      "opponents": [
-        "RIchard_Uy",
-        "漫山哒哒哒",
-        "ak4741a",
-        "Master Polo4905"
-      ]
-    },
     {
       "matchId": 493587842,
       "description": "10x 3x bamboo",
@@ -533,6 +510,30 @@
         "RIchard_Uy",
         "Stigel",
         "menorahjury"
+      ]
+    },
+    {
+      "matchId": 494472629,
+      "description": "BAMBOO NOTHING 10X 3X",
+      "mapname": "Bamboo Nothing v3 (BaLi)",
+      "timestamp": 1784875930,
+      "outcome": "win",
+      "preRating": 992,
+      "postRating": 1010,
+      "eloChange": 18,
+      "civ": "Celts",
+      "teamAvgElo": 991,
+      "opponentAvgElo": 1038,
+      "teammates": [
+        "sppd3181",
+        "Maxim Liann",
+        "Nimu.-"
+      ],
+      "opponents": [
+        "mckirds",
+        "Wil",
+        "yiban",
+        "Emusan"
       ]
     }
   ]

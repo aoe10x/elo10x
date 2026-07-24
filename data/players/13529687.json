@@ -1,12 +1,12 @@
 {
   "profile_id": 13529687,
   "alias": "^1Butcher_^4Mars",
-  "rating": 1006,
+  "rating": 991,
   "wins": 35,
-  "losses": 43,
-  "gamesCount": 78,
-  "winRate": 45,
-  "lastPlayedAt": 1784727062,
+  "losses": 44,
+  "gamesCount": 79,
+  "winRate": 44,
+  "lastPlayedAt": 1784883750,
   "country": "de",
   "merged_ids": [
     12202223,
@@ -91,33 +91,10 @@
     1018,
     1004,
     990,
-    1006
+    1006,
+    991
   ],
   "recentMatches": [
-    {
-      "matchId": 464248901,
-      "description": "10x 3x Bamboo Nothing",
-      "mapname": "Bamboo_Nothing_V3.0.7_No_Water___Edge_Fix",
-      "timestamp": 1774027920,
-      "outcome": "win",
-      "preRating": 1015,
-      "postRating": 1032,
-      "eloChange": 17,
-      "civ": "Turks",
-      "teamAvgElo": 1077,
-      "opponentAvgElo": 1035,
-      "teammates": [
-        "iamatthe.hell",
-        "田瘾犯了",
-        "babeleo"
-      ],
-      "opponents": [
-        "勇战到抵",
-        "Kaa Da Kaveman",
-        "Honey badger",
-        "紫蝶黄蜂俱有情"
-      ]
-    },
     {
       "matchId": 465042307,
       "description": "10x 3x shared !!NO NOOBS!!",
@@ -572,6 +549,30 @@
         "MARKVILEX",
         "476055690",
         "konishika"
+      ]
+    },
+    {
+      "matchId": 494484917,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784883750,
+      "outcome": "loss",
+      "preRating": 1006,
+      "postRating": 991,
+      "eloChange": -15,
+      "civ": "Ethiopians",
+      "teamAvgElo": 1009,
+      "opponentAvgElo": 1035,
+      "teammates": [
+        "TUF | DUKE_NUKEM",
+        "RedHotPenguin",
+        "YomaYo"
+      ],
+      "opponents": [
+        "KhasminC",
+        "Dr_Pinure",
+        "Mad08jojo",
+        "GrandUni"
       ]
     }
   ]

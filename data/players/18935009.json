@@ -1,12 +1,12 @@
 {
   "profile_id": 18935009,
   "alias": "YomaYo",
-  "rating": 1042,
+  "rating": 1026,
   "wins": 29,
-  "losses": 33,
-  "gamesCount": 62,
-  "winRate": 47,
-  "lastPlayedAt": 1784136266,
+  "losses": 34,
+  "gamesCount": 63,
+  "winRate": 46,
+  "lastPlayedAt": 1784883750,
   "country": "vn",
   "merged_ids": [
     12711958,
@@ -75,33 +75,10 @@
     1025,
     1043,
     1059,
-    1042
+    1042,
+    1026
   ],
   "recentMatches": [
-    {
-      "matchId": 455177212,
-      "description": "10x 3x shared !!NO NOOBS!!",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1770763440,
-      "outcome": "loss",
-      "preRating": 987,
-      "postRating": 975,
-      "eloChange": -12,
-      "civ": "Gurjaras",
-      "teamAvgElo": 1013,
-      "opponentAvgElo": 1078,
-      "teammates": [
-        "Age5464",
-        "Rice Monger (SoullessMZD)",
-        "saglik04"
-      ],
-      "opponents": [
-        "CrazyKaelby",
-        "ioi",
-        "tonzo",
-        "master"
-      ]
-    },
     {
       "matchId": 455399978,
       "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
@@ -556,6 +533,30 @@
         "DnD",
         "Grimmie",
         "Your Ego"
+      ]
+    },
+    {
+      "matchId": 494484917,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784883750,
+      "outcome": "loss",
+      "preRating": 1042,
+      "postRating": 1026,
+      "eloChange": -16,
+      "civ": "Celts",
+      "teamAvgElo": 1009,
+      "opponentAvgElo": 1035,
+      "teammates": [
+        "TUF | DUKE_NUKEM",
+        "^1Butcher_^4Mars",
+        "RedHotPenguin"
+      ],
+      "opponents": [
+        "KhasminC",
+        "Dr_Pinure",
+        "Mad08jojo",
+        "GrandUni"
       ]
     }
   ]

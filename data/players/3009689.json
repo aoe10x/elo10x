@@ -1,12 +1,12 @@
 {
   "profile_id": 3009689,
   "alias": "dummglücklich",
-  "rating": 1050,
-  "wins": 19,
+  "rating": 1065,
+  "wins": 20,
   "losses": 18,
-  "gamesCount": 37,
-  "winRate": 51,
-  "lastPlayedAt": 1778772900,
+  "gamesCount": 38,
+  "winRate": 53,
+  "lastPlayedAt": 1784872367,
   "country": "de",
   "merged_ids": [],
   "ratingHistory": [
@@ -47,33 +47,10 @@
     1068,
     1050,
     1035,
-    1050
+    1050,
+    1065
   ],
   "recentMatches": [
-    {
-      "matchId": 432393053,
-      "description": "4 vs 4 // 10x Shared Random Civ",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1762912440,
-      "outcome": "win",
-      "preRating": 1009,
-      "postRating": 1027,
-      "eloChange": 18,
-      "civ": "Spanish",
-      "teamAvgElo": 1064,
-      "opponentAvgElo": 953,
-      "teammates": [
-        "Juk3",
-        "Feitoria",
-        "sppd3181"
-      ],
-      "opponents": [
-        "tomi09",
-        "VexusGames",
-        "Emotions are prohibited",
-        "k0rnm@yer"
-      ]
-    },
     {
       "matchId": 432544318,
       "description": "bamboo nothing 10x 3x",
@@ -528,6 +505,30 @@
         "Lykerya",
         "KIRAxXx ka0z",
         "Evil  Destroyer"
+      ]
+    },
+    {
+      "matchId": 494466753,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784872367,
+      "outcome": "win",
+      "preRating": 1050,
+      "postRating": 1065,
+      "eloChange": 15,
+      "civ": "Burgundians",
+      "teamAvgElo": 1037,
+      "opponentAvgElo": 1038,
+      "teammates": [
+        "Maxim Liann",
+        "yiban",
+        "fxsound"
+      ],
+      "opponents": [
+        "TUF | DUKE_NUKEM",
+        "dimon21_8",
+        "procrastination.exe",
+        "[S33]ff"
       ]
     }
   ]

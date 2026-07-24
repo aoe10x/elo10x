@@ -1,12 +1,12 @@
 {
   "profile_id": 1559179,
   "alias": "mckirds",
-  "rating": 970,
+  "rating": 955,
   "wins": 30,
-  "losses": 49,
-  "gamesCount": 79,
+  "losses": 50,
+  "gamesCount": 80,
   "winRate": 38,
-  "lastPlayedAt": 1784426710,
+  "lastPlayedAt": 1784875930,
   "country": "au",
   "merged_ids": [],
   "ratingHistory": [
@@ -89,33 +89,10 @@
     979,
     965,
     952,
-    970
+    970,
+    955
   ],
   "recentMatches": [
-    {
-      "matchId": 434570592,
-      "description": "10x 3x bamboo random  TURBO",
-      "mapname": "Bamboo Nothing_Paren_Vlocal_V2.5",
-      "timestamp": 1763757240,
-      "outcome": "loss",
-      "preRating": 936,
-      "postRating": 925,
-      "eloChange": -11,
-      "civ": "Goths",
-      "teamAvgElo": 925,
-      "opponentAvgElo": 1045,
-      "teammates": [
-        "RA",
-        "Kalervo Jankko",
-        "马磊"
-      ],
-      "opponents": [
-        "bijiyumo",
-        "Petrosilius Tintoretto Vecchio",
-        "McKrakfejs",
-        "Enn Tore"
-      ]
-    },
     {
       "matchId": 436272267,
       "description": "256x 10x Forest Nothing",
@@ -570,6 +547,30 @@
         "Emusan",
         "dandan",
         "juanzenonverdun"
+      ]
+    },
+    {
+      "matchId": 494472629,
+      "description": "BAMBOO NOTHING 10X 3X",
+      "mapname": "Bamboo Nothing v3 (BaLi)",
+      "timestamp": 1784875930,
+      "outcome": "loss",
+      "preRating": 970,
+      "postRating": 955,
+      "eloChange": -15,
+      "civ": "Bohemians",
+      "teamAvgElo": 1038,
+      "opponentAvgElo": 991,
+      "teammates": [
+        "Wil",
+        "yiban",
+        "Emusan"
+      ],
+      "opponents": [
+        "Willoloh!!!",
+        "sppd3181",
+        "Maxim Liann",
+        "Nimu.-"
       ]
     }
   ]

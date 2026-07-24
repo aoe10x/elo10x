@@ -1,12 +1,12 @@
 {
   "profile_id": 4013344,
   "alias": "RedHotPenguin",
-  "rating": 1039,
+  "rating": 1023,
   "wins": 31,
-  "losses": 21,
-  "gamesCount": 52,
-  "winRate": 60,
-  "lastPlayedAt": 1784441868,
+  "losses": 22,
+  "gamesCount": 53,
+  "winRate": 58,
+  "lastPlayedAt": 1784883750,
   "country": "au",
   "merged_ids": [],
   "ratingHistory": [
@@ -62,33 +62,10 @@
     1062,
     1045,
     1058,
-    1039
+    1039,
+    1023
   ],
   "recentMatches": [
-    {
-      "matchId": 401488028,
-      "description": "10x 3x share",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1750623840,
-      "outcome": "win",
-      "preRating": 1116,
-      "postRating": 1130,
-      "eloChange": 14,
-      "civ": "Berbers",
-      "teamAvgElo": 1057,
-      "opponentAvgElo": 1077,
-      "teammates": [
-        "錢並沒有消失不見只是",
-        "cyberocioso",
-        "侯傻傻ᔦఠఠᔨ shasha"
-      ],
-      "opponents": [
-        "zhuzhuxia",
-        "7k7kqiangqiang",
-        "小九九",
-        "Emotions are prohibited"
-      ]
-    },
     {
       "matchId": 401491701,
       "description": "10x 3x bamboo nothing random civ",
@@ -543,6 +520,30 @@
         "青松",
         "[B] Cannino",
         "Sundev"
+      ]
+    },
+    {
+      "matchId": 494484917,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784883750,
+      "outcome": "loss",
+      "preRating": 1039,
+      "postRating": 1023,
+      "eloChange": -16,
+      "civ": "Aztecs",
+      "teamAvgElo": 1009,
+      "opponentAvgElo": 1035,
+      "teammates": [
+        "TUF | DUKE_NUKEM",
+        "^1Butcher_^4Mars",
+        "YomaYo"
+      ],
+      "opponents": [
+        "KhasminC",
+        "Dr_Pinure",
+        "Mad08jojo",
+        "GrandUni"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 6792046,
   "alias": "AOC_Snake",
-  "rating": 1064,
-  "wins": 25,
+  "rating": 1079,
+  "wins": 26,
   "losses": 28,
-  "gamesCount": 53,
-  "winRate": 47,
-  "lastPlayedAt": 1784276825,
+  "gamesCount": 54,
+  "winRate": 48,
+  "lastPlayedAt": 1784880682,
   "country": "au",
   "merged_ids": [],
   "ratingHistory": [
@@ -63,33 +63,10 @@
     1051,
     1069,
     1050,
-    1064
+    1064,
+    1079
   ],
   "recentMatches": [
-    {
-      "matchId": 219174532,
-      "description": "10X Shared civ bonus rondom",
-      "mapname": "Yin Yang",
-      "timestamp": 1679108520,
-      "outcome": "loss",
-      "preRating": 915,
-      "postRating": 905,
-      "eloChange": -10,
-      "civ": "Burmese",
-      "teamAvgElo": 942,
-      "opponentAvgElo": 1044,
-      "teammates": [
-        "LittleBlast",
-        "Patches",
-        "Robbie"
-      ],
-      "opponents": [
-        "choolkkkk",
-        "R3v1z0R",
-        "mr.ming",
-        "yimacs_yoyoyo"
-      ]
-    },
     {
       "matchId": 219247298,
       "description": "10X Shared CIV BONUS - Amazon Tunnel 3v3/4v4",
@@ -544,6 +521,30 @@
         "476055690",
         "[S33]ff",
         "468673564"
+      ]
+    },
+    {
+      "matchId": 494479924,
+      "description": "10x civ x3 tec Bamboo nothing - Only Good Noobs",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784880682,
+      "outcome": "win",
+      "preRating": 1064,
+      "postRating": 1079,
+      "eloChange": 15,
+      "civ": "Berbers",
+      "teamAvgElo": 1009,
+      "opponentAvgElo": 1036,
+      "teammates": [
+        "Viteaux",
+        "Emusan",
+        "Silent Annihilation"
+      ],
+      "opponents": [
+        "mannutipu",
+        "Dr_Pinure",
+        "dazaetgb",
+        "漫山哒哒哒"
       ]
     }
   ]

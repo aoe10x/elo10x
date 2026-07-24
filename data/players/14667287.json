@@ -1,12 +1,12 @@
 {
   "profile_id": 14667287,
   "alias": "KhasminC",
-  "rating": 1056,
-  "wins": 46,
+  "rating": 1070,
+  "wins": 47,
   "losses": 55,
-  "gamesCount": 101,
+  "gamesCount": 102,
   "winRate": 46,
-  "lastPlayedAt": 1784812149,
+  "lastPlayedAt": 1784883750,
   "country": "ro",
   "merged_ids": [
     12171150,
@@ -30,7 +30,6 @@
     889,
     921,
     905,
-    936,
     962,
     951,
     937,
@@ -38,6 +37,7 @@
     941,
     962,
     948,
+    967,
     955,
     973,
     959,
@@ -63,7 +63,6 @@
     979,
     997,
     1019,
-    1003,
     1022,
     1006,
     995,
@@ -87,6 +86,7 @@
     1020,
     1005,
     1025,
+    1011,
     1028,
     1046,
     1064,
@@ -95,7 +95,6 @@
     1076,
     1061,
     1046,
-    1064,
     1050,
     1067,
     1051,
@@ -112,33 +111,10 @@
     1042,
     1057,
     1041,
-    1056
+    1056,
+    1070
   ],
   "recentMatches": [
-    {
-      "matchId": 492272530,
-      "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1784032958,
-      "outcome": "loss",
-      "preRating": 1076,
-      "postRating": 1061,
-      "eloChange": -15,
-      "civ": "Franks",
-      "teamAvgElo": 986,
-      "opponentAvgElo": 1089,
-      "teammates": [
-        "Paolo Carrosel",
-        "Pogonophobia69",
-        "boroinbishop"
-      ],
-      "opponents": [
-        "老K",
-        "pandalam",
-        "Lykerya",
-        "可爱小奇犽"
-      ]
-    },
     {
       "matchId": 492297847,
       "description": "+10x+3xtech   no noob ",
@@ -593,6 +569,30 @@
         "鱼浆",
         "勇战到抵",
         "LAITH"
+      ]
+    },
+    {
+      "matchId": 494484917,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784883750,
+      "outcome": "win",
+      "preRating": 1056,
+      "postRating": 1070,
+      "eloChange": 14,
+      "civ": "Persians",
+      "teamAvgElo": 1035,
+      "opponentAvgElo": 1009,
+      "teammates": [
+        "Dr_Pinure",
+        "Mad08jojo",
+        "GrandUni"
+      ],
+      "opponents": [
+        "TUF | DUKE_NUKEM",
+        "^1Butcher_^4Mars",
+        "RedHotPenguin",
+        "YomaYo"
       ]
     }
   ]

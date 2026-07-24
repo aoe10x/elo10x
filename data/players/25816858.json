@@ -1,12 +1,12 @@
 {
   "profile_id": 25816858,
   "alias": "margolumen",
-  "rating": 1070,
-  "wins": 10,
+  "rating": 1082,
+  "wins": 11,
   "losses": 9,
-  "gamesCount": 19,
-  "winRate": 53,
-  "lastPlayedAt": 1784294849,
+  "gamesCount": 20,
+  "winRate": 55,
+  "lastPlayedAt": 1784881039,
   "country": "gb",
   "merged_ids": [],
   "ratingHistory": [
@@ -29,7 +29,8 @@
     1060,
     1034,
     1053,
-    1070
+    1070,
+    1082
   ],
   "recentMatches": [
     {
@@ -486,6 +487,30 @@
         "Vader",
         "bhasudi--",
         "checkdis"
+      ]
+    },
+    {
+      "matchId": 494480549,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784881039,
+      "outcome": "win",
+      "preRating": 1070,
+      "postRating": 1082,
+      "eloChange": 12,
+      "civ": "Turks",
+      "teamAvgElo": 1053,
+      "opponentAvgElo": 952,
+      "teammates": [
+        "Dr_Pinure",
+        "Varondil",
+        "Silent Annihilation"
+      ],
+      "opponents": [
+        "Emusan",
+        "naponeng",
+        "dazaetgb",
+        "babeleo"
       ]
     }
   ]

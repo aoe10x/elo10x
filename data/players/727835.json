@@ -1,10 +1,10 @@
 {
   "profile_id": 727835,
   "alias": "Kalpit00",
-  "rating": 1064,
-  "wins": 16,
-  "losses": 15,
-  "gamesCount": 31,
+  "rating": 1059,
+  "wins": 17,
+  "losses": 16,
+  "gamesCount": 33,
   "winRate": 52,
   "lastPlayedAt": 1784860554,
   "country": "us",
@@ -41,57 +41,11 @@
     1021,
     1037,
     1050,
-    1064
+    1063,
+    1045,
+    1059
   ],
   "recentMatches": [
-    {
-      "matchId": 382611217,
-      "description": "10x  3x no full random",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1743603060,
-      "outcome": "win",
-      "preRating": 1012,
-      "postRating": 1041,
-      "eloChange": 29,
-      "civ": "Unknown",
-      "teamAvgElo": 1012,
-      "opponentAvgElo": 998,
-      "teammates": [
-        "Bao Oninon",
-        "i kun 2.5",
-        "Covid22"
-      ],
-      "opponents": [
-        "紫蝶黄蜂俱有情",
-        "CrazyKaelby",
-        "[LP] Gondar",
-        "Manquisco"
-      ]
-    },
-    {
-      "matchId": 385330605,
-      "description": "10x shared UPDATE YOUR MOD",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1744625760,
-      "outcome": "win",
-      "preRating": 1041,
-      "postRating": 1074,
-      "eloChange": 33,
-      "civ": "Incas",
-      "teamAvgElo": 1056,
-      "opponentAvgElo": 1085,
-      "teammates": [
-        "Broseidon",
-        "Hexicero",
-        "Parenquima"
-      ],
-      "opponents": [
-        "RaptorX",
-        "76561198420275131",
-        "[B] AZAR300",
-        "Brotherman Bill"
-      ]
-    },
     {
       "matchId": 386477003,
       "description": "bamboo 10x team 3x tech",
@@ -501,16 +455,64 @@
       ]
     },
     {
+      "matchId": 493125924,
+      "description": "hf",
+      "mapname": "ZN@HyperRandom",
+      "timestamp": 1784370361,
+      "outcome": "win",
+      "preRating": 1050,
+      "postRating": 1063,
+      "eloChange": 13,
+      "civ": "Burgundians",
+      "teamAvgElo": 1026,
+      "opponentAvgElo": 992,
+      "teammates": [
+        "Oni.FreakinAndy",
+        "YUMAD",
+        "pGz"
+      ],
+      "opponents": [
+        "Boroo",
+        "Sielunvihollinen",
+        "LM | Bumpi",
+        "leogrampy"
+      ]
+    },
+    {
+      "matchId": 493129437,
+      "description": "hf",
+      "mapname": "ZN@HyperRandom",
+      "timestamp": 1784371625,
+      "outcome": "loss",
+      "preRating": 1063,
+      "postRating": 1045,
+      "eloChange": -18,
+      "civ": "Dravidians",
+      "teamAvgElo": 1009,
+      "opponentAvgElo": 1020,
+      "teammates": [
+        "YUMAD",
+        "Sielunvihollinen",
+        "leogrampy"
+      ],
+      "opponents": [
+        "Oni.FreakinAndy",
+        "LM | Bumpi",
+        "Deathcounter",
+        "rudymagallol"
+      ]
+    },
+    {
       "matchId": 494440199,
       "description": "10x_3x_Bamboo_Nothing_Random",
       "mapname": "Bamboo Nothing v4 (BaLi)",
       "timestamp": 1784860554,
       "outcome": "win",
-      "preRating": 1050,
-      "postRating": 1064,
+      "preRating": 1045,
+      "postRating": 1059,
       "eloChange": 14,
       "civ": "Maya",
-      "teamAvgElo": 1028,
+      "teamAvgElo": 1027,
       "opponentAvgElo": 1003,
       "teammates": [
         "ch33tah",
