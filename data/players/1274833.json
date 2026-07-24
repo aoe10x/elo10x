@@ -1,12 +1,12 @@
 {
   "profile_id": 1274833,
   "alias": "FinishedMyBurger",
-  "rating": 885,
-  "wins": 5,
+  "rating": 911,
+  "wins": 6,
   "losses": 12,
-  "gamesCount": 17,
-  "winRate": 29,
-  "lastPlayedAt": 1784282980,
+  "gamesCount": 18,
+  "winRate": 33,
+  "lastPlayedAt": 1784886246,
   "country": "dk",
   "merged_ids": [],
   "ratingHistory": [
@@ -27,7 +27,8 @@
     886,
     870,
     853,
-    885
+    885,
+    911
   ],
   "recentMatches": [
     {
@@ -436,6 +437,30 @@
         "[S33]ff",
         "Captain Stripes",
         "SickFishh"
+      ]
+    },
+    {
+      "matchId": 494488685,
+      "description": "10x 3x bamboo",
+      "mapname": "Bamboo_Nothing_v2_NoWater DE",
+      "timestamp": 1784886246,
+      "outcome": "win",
+      "preRating": 885,
+      "postRating": 911,
+      "eloChange": 26,
+      "civ": "Goths",
+      "teamAvgElo": 975,
+      "opponentAvgElo": 977,
+      "teammates": [
+        "Mahmut",
+        "yiban",
+        "YUJIN"
+      ],
+      "opponents": [
+        "勇战到抵",
+        "dazaetgb",
+        "blankedgamerz",
+        "GOJO"
       ]
     }
   ]

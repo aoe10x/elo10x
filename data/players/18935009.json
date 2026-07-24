@@ -1,12 +1,12 @@
 {
   "profile_id": 18935009,
   "alias": "YomaYo",
-  "rating": 1026,
+  "rating": 1008,
   "wins": 29,
-  "losses": 34,
-  "gamesCount": 63,
-  "winRate": 46,
-  "lastPlayedAt": 1784883750,
+  "losses": 35,
+  "gamesCount": 64,
+  "winRate": 45,
+  "lastPlayedAt": 1784889920,
   "country": "vn",
   "merged_ids": [
     12711958,
@@ -76,33 +76,10 @@
     1043,
     1059,
     1042,
-    1026
+    1026,
+    1008
   ],
   "recentMatches": [
-    {
-      "matchId": 455399978,
-      "description": "10X 3X Shared Civ Bonus Random CIV 4V4",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1770849000,
-      "outcome": "loss",
-      "preRating": 975,
-      "postRating": 964,
-      "eloChange": -11,
-      "civ": "Maya",
-      "teamAvgElo": 1008,
-      "opponentAvgElo": 1094,
-      "teammates": [
-        "Bé",
-        "R301",
-        "^gOsO^"
-      ],
-      "opponents": [
-        "SpawN",
-        "老K",
-        "GiGi",
-        "pandalam"
-      ]
-    },
     {
       "matchId": 458710754,
       "description": "bamboo nothing 10x 3x",
@@ -557,6 +534,30 @@
         "Dr_Pinure",
         "Mad08jojo",
         "GrandUni"
+      ]
+    },
+    {
+      "matchId": 494494864,
+      "description": "3X 10X",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784889920,
+      "outcome": "loss",
+      "preRating": 1026,
+      "postRating": 1008,
+      "eloChange": -18,
+      "civ": "Cumans",
+      "teamAvgElo": 1097,
+      "opponentAvgElo": 985,
+      "teammates": [
+        "GiGi",
+        "NothingAtAll11",
+        "LECIO"
+      ],
+      "opponents": [
+        "Barosanu512",
+        "axiuluo",
+        "476055690",
+        "陈先生"
       ]
     }
   ]
