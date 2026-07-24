@@ -2,12 +2,12 @@
   "profile_id": 2158880,
   "alias": "atitititi",
   "rating": 1056,
-  "wins": 16,
-  "losses": 16,
-  "gamesCount": 32,
+  "wins": 17,
+  "losses": 17,
+  "gamesCount": 34,
   "winRate": 50,
-  "lastPlayedAt": 1777790640,
-  "country": "Unknown",
+  "lastPlayedAt": 1784858054,
+  "country": "py",
   "merged_ids": [],
   "ratingHistory": [
     1000,
@@ -42,57 +42,11 @@
     1044,
     1061,
     1043,
+    1056,
+    1075,
     1056
   ],
   "recentMatches": [
-    {
-      "matchId": 379195941,
-      "description": "bn 10x 3x",
-      "mapname": "Bamboo Nothing - +Wild ##############",
-      "timestamp": 1742293200,
-      "outcome": "win",
-      "preRating": 993,
-      "postRating": 1026,
-      "eloChange": 33,
-      "civ": "Unknown",
-      "teamAvgElo": 968,
-      "opponentAvgElo": 1042,
-      "teammates": [
-        "Scipio Africanus",
-        "memeboy420",
-        "bigjames"
-      ],
-      "opponents": [
-        "Wikzor",
-        "DURRAI !!!",
-        "Boarjack Boarsman",
-        "Duffy"
-      ]
-    },
-    {
-      "matchId": 380207174,
-      "description": "10x civ 3x techs | random civ",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1742696340,
-      "outcome": "loss",
-      "preRating": 1026,
-      "postRating": 1000,
-      "eloChange": -26,
-      "civ": "Italians",
-      "teamAvgElo": 982,
-      "opponentAvgElo": 1039,
-      "teammates": [
-        "田瘾犯了",
-        "Ru3en",
-        "Lykerya"
-      ],
-      "opponents": [
-        "Random2952",
-        "Leonardos",
-        "JuanMalote",
-        "Open"
-      ]
-    },
     {
       "matchId": 380218818,
       "description": "10x civ 3x techs | random civ",
@@ -523,6 +477,54 @@
         "[GDL]ColimoteStudioS",
         "Fioreeeeee",
         "nooblet3300"
+      ]
+    },
+    {
+      "matchId": 494428026,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784856451,
+      "outcome": "win",
+      "preRating": 1056,
+      "postRating": 1075,
+      "eloChange": 19,
+      "civ": "Saracens",
+      "teamAvgElo": 1014,
+      "opponentAvgElo": 1124,
+      "teammates": [
+        "feid_",
+        "Avexaon",
+        "-[RDU]- Gorda America Forever"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "EL__PATRON",
+        "[LWS] Mandatum"
+      ]
+    },
+    {
+      "matchId": 494433477,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784858054,
+      "outcome": "loss",
+      "preRating": 1075,
+      "postRating": 1056,
+      "eloChange": -19,
+      "civ": "Shu",
+      "teamAvgElo": 1022,
+      "opponentAvgElo": 1014,
+      "teammates": [
+        "Tortrix",
+        "-[RDU]- Gorda America Forever",
+        "CraziestJava"
+      ],
+      "opponents": [
+        "Parenquima",
+        "Contry",
+        "Master.Ji.ro.714",
+        "♥DraganBorn♥"
       ]
     }
   ]

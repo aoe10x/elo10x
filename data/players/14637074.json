@@ -1,12 +1,12 @@
 {
   "profile_id": 14637074,
   "alias": "ArchiCraig",
-  "rating": 979,
+  "rating": 958,
   "wins": 34,
-  "losses": 51,
-  "gamesCount": 85,
-  "winRate": 40,
-  "lastPlayedAt": 1784774125,
+  "losses": 53,
+  "gamesCount": 87,
+  "winRate": 39,
+  "lastPlayedAt": 1784861053,
   "country": "ca",
   "merged_ids": [
     12165758,
@@ -98,57 +98,11 @@
     1017,
     1004,
     991,
-    979
+    979,
+    968,
+    958
   ],
   "recentMatches": [
-    {
-      "matchId": 489473325,
-      "description": "10x Shared Civ Bonus 4v4 Random ",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1782953768,
-      "outcome": "win",
-      "preRating": 1000,
-      "postRating": 1019,
-      "eloChange": 19,
-      "civ": "Dravidians",
-      "teamAvgElo": 1027,
-      "opponentAvgElo": 1073,
-      "teammates": [
-        "Kumad",
-        "Myriad",
-        "LittleBlast"
-      ],
-      "opponents": [
-        "PoonSlapper",
-        "asdf",
-        "Vulkan",
-        "otoniel.orpineda.r"
-      ]
-    },
-    {
-      "matchId": 489477283,
-      "description": "10x Shared Civ Bonus 4v4 Random ",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1782955395,
-      "outcome": "loss",
-      "preRating": 1019,
-      "postRating": 1004,
-      "eloChange": -15,
-      "civ": "Britons",
-      "teamAvgElo": 1075,
-      "opponentAvgElo": 1043,
-      "teammates": [
-        "PoonSlapper",
-        "feid_",
-        "Meursault005"
-      ],
-      "opponents": [
-        "Kumad",
-        "Myriad",
-        "Sal",
-        "Vulkan"
-      ]
-    },
     {
       "matchId": 489667626,
       "description": "10x 3x Bamboo - 10xshared.com",
@@ -579,6 +533,54 @@
         "feid_",
         "Myriad",
         "Josh"
+      ]
+    },
+    {
+      "matchId": 494439170,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784859915,
+      "outcome": "loss",
+      "preRating": 979,
+      "postRating": 968,
+      "eloChange": -11,
+      "civ": "Persians",
+      "teamAvgElo": 1036,
+      "opponentAvgElo": 1082,
+      "teammates": [
+        "feid_",
+        "EL__PATRON",
+        "Monkeymonk"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "JoeyTribianni69",
+        "MajorZebra8027"
+      ]
+    },
+    {
+      "matchId": 494442673,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784861053,
+      "outcome": "loss",
+      "preRating": 968,
+      "postRating": 958,
+      "eloChange": -10,
+      "civ": "Chinese",
+      "teamAvgElo": 1017,
+      "opponentAvgElo": 1102,
+      "teammates": [
+        "EL__PATRON",
+        "feid_",
+        "Razaar"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "JoeyTribianni69",
+        "Monkeymonk"
       ]
     }
   ]

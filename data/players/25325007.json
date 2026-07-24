@@ -1,12 +1,12 @@
 {
   "profile_id": 25325007,
   "alias": "Master.Ji.ro.714",
-  "rating": 918,
-  "wins": 9,
-  "losses": 18,
-  "gamesCount": 27,
-  "winRate": 33,
-  "lastPlayedAt": 1784685747,
+  "rating": 926,
+  "wins": 10,
+  "losses": 19,
+  "gamesCount": 29,
+  "winRate": 34,
+  "lastPlayedAt": 1784863020,
   "country": "co",
   "merged_ids": [
     13640611,
@@ -40,57 +40,11 @@
     948,
     938,
     929,
-    918
+    918,
+    939,
+    926
   ],
   "recentMatches": [
-    {
-      "matchId": 476863902,
-      "description": "10x 3x Bamboo - 10xshared.com",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1778463660,
-      "outcome": "loss",
-      "preRating": 915,
-      "postRating": 896,
-      "eloChange": -19,
-      "civ": "Mongols",
-      "teamAvgElo": 963,
-      "opponentAvgElo": 1100,
-      "teammates": [
-        "El Broseph",
-        "Borkan",
-        "gvv.vadim"
-      ],
-      "opponents": [
-        "Parts",
-        "shark_12",
-        "Lozzer",
-        "AmgryPotato"
-      ]
-    },
-    {
-      "matchId": 478083178,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1778915460,
-      "outcome": "loss",
-      "preRating": 896,
-      "postRating": 876,
-      "eloChange": -20,
-      "civ": "Dravidians",
-      "teamAvgElo": 1064,
-      "opponentAvgElo": 1053,
-      "teammates": [
-        "Kumad",
-        "Myriad",
-        "Termi2023"
-      ],
-      "opponents": [
-        "ζ |  SaintPΞpsi94",
-        "Kenaidian",
-        "PoonSlapper",
-        "Tactical-doll_TMP"
-      ]
-    },
     {
       "matchId": 478702648,
       "description": "10x 3x bamboo",
@@ -521,6 +475,54 @@
         "Maxim Liann",
         "WipiWi",
         "399 the Grizzly Bear - RIP <3"
+      ]
+    },
+    {
+      "matchId": 494433477,
+      "description": "10x 3x - bamboo donut",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784858054,
+      "outcome": "win",
+      "preRating": 918,
+      "postRating": 939,
+      "eloChange": 21,
+      "civ": "Hindustanis",
+      "teamAvgElo": 1014,
+      "opponentAvgElo": 1022,
+      "teammates": [
+        "Parenquima",
+        "Contry",
+        "♥DraganBorn♥"
+      ],
+      "opponents": [
+        "Tortrix",
+        "-[RDU]- Gorda America Forever",
+        "CraziestJava",
+        "atitititi"
+      ]
+    },
+    {
+      "matchId": 494446603,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784863020,
+      "outcome": "loss",
+      "preRating": 939,
+      "postRating": 926,
+      "eloChange": -13,
+      "civ": "Spanish",
+      "teamAvgElo": 971,
+      "opponentAvgElo": 1012,
+      "teammates": [
+        "BAKO",
+        "Wololo",
+        "nichosan30"
+      ],
+      "opponents": [
+        "TJ",
+        "Emusan",
+        "nooblet3300",
+        "hyperparticle"
       ]
     }
   ]

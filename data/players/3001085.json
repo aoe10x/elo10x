@@ -1,12 +1,12 @@
 {
   "profile_id": 3001085,
   "alias": "BAKO",
-  "rating": 1003,
+  "rating": 987,
   "wins": 23,
-  "losses": 25,
-  "gamesCount": 48,
-  "winRate": 48,
-  "lastPlayedAt": 1784252861,
+  "losses": 26,
+  "gamesCount": 49,
+  "winRate": 47,
+  "lastPlayedAt": 1784863020,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -58,33 +58,10 @@
     1013,
     999,
     985,
-    1003
+    1003,
+    987
   ],
   "recentMatches": [
-    {
-      "matchId": 425078732,
-      "description": "bamboo nothing 10x 3x",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1760261340,
-      "outcome": "loss",
-      "preRating": 1010,
-      "postRating": 995,
-      "eloChange": -15,
-      "civ": "Portuguese",
-      "teamAvgElo": 979,
-      "opponentAvgElo": 1037,
-      "teammates": [
-        "WDWKid3",
-        "Bifbatz",
-        "sniper-123"
-      ],
-      "opponents": [
-        "NothingAtAll11",
-        "OhSheeep",
-        "im slow",
-        "tmrakshay"
-      ]
-    },
     {
       "matchId": 439641783,
       "description": "10x Shared Civ Bonus 4v4 Random",
@@ -539,6 +516,30 @@
         "Bifbatz",
         "LeosMind",
         "tedmed"
+      ]
+    },
+    {
+      "matchId": 494446603,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784863020,
+      "outcome": "loss",
+      "preRating": 1003,
+      "postRating": 987,
+      "eloChange": -16,
+      "civ": "Chinese",
+      "teamAvgElo": 971,
+      "opponentAvgElo": 1012,
+      "teammates": [
+        "Master.Ji.ro.714",
+        "Wololo",
+        "nichosan30"
+      ],
+      "opponents": [
+        "TJ",
+        "Emusan",
+        "nooblet3300",
+        "hyperparticle"
       ]
     }
   ]

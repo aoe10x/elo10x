@@ -1,12 +1,12 @@
 {
   "profile_id": 2807692,
   "alias": "Avexaon",
-  "rating": 971,
-  "wins": 22,
+  "rating": 994,
+  "wins": 23,
   "losses": 35,
-  "gamesCount": 57,
-  "winRate": 39,
-  "lastPlayedAt": 1784528555,
+  "gamesCount": 58,
+  "winRate": 40,
+  "lastPlayedAt": 1784856451,
   "country": "us",
   "merged_ids": [
     2807692,
@@ -70,33 +70,10 @@
     939,
     960,
     950,
-    971
+    971,
+    994
   ],
   "recentMatches": [
-    {
-      "matchId": 455814287,
-      "description": "10x 3x bamboo RANDOM  CIV",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1771006980,
-      "outcome": "loss",
-      "preRating": 997,
-      "postRating": 980,
-      "eloChange": -17,
-      "civ": "Gurjaras",
-      "teamAvgElo": 1025,
-      "opponentAvgElo": 968,
-      "teammates": [
-        "FORGIVEN",
-        "VITAL",
-        "IbuAnda"
-      ],
-      "opponents": [
-        "疯狂的电脑",
-        "bijiyumo",
-        "UbaneMess",
-        "Monk"
-      ]
-    },
     {
       "matchId": 463799226,
       "description": "10x 3x BAMBOO best lobby",
@@ -551,6 +528,30 @@
         "mothysime11",
         "-[RDU]- Gorda America Forever",
         "Hughmungus Chungus"
+      ]
+    },
+    {
+      "matchId": 494428026,
+      "description": "10x Shared Civ Bonus 4v4 Random ",
+      "mapname": "Wet Woods v3.0.3",
+      "timestamp": 1784856451,
+      "outcome": "win",
+      "preRating": 971,
+      "postRating": 994,
+      "eloChange": 23,
+      "civ": "Japanese",
+      "teamAvgElo": 1014,
+      "opponentAvgElo": 1124,
+      "teammates": [
+        "feid_",
+        "atitititi",
+        "-[RDU]- Gorda America Forever"
+      ],
+      "opponents": [
+        "Kumad",
+        "Myriad",
+        "EL__PATRON",
+        "[LWS] Mandatum"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 3010538,
   "alias": "1",
-  "rating": 1079,
+  "rating": 1059,
   "wins": 23,
-  "losses": 16,
-  "gamesCount": 39,
-  "winRate": 59,
-  "lastPlayedAt": 1784420125,
+  "losses": 17,
+  "gamesCount": 40,
+  "winRate": 57,
+  "lastPlayedAt": 1784856908,
   "country": "mx",
   "merged_ids": [
     3010538,
@@ -52,33 +52,10 @@
     1103,
     1086,
     1065,
-    1079
+    1079,
+    1059
   ],
   "recentMatches": [
-    {
-      "matchId": 379194369,
-      "description": "Bamboo 10x shared bonus civ 3x tech Random",
-      "mapname": "Bamboo Nothing - Scorpyon De",
-      "timestamp": 1742292600,
-      "outcome": "win",
-      "preRating": 1085,
-      "postRating": 1100,
-      "eloChange": 15,
-      "civ": "Japanese",
-      "teamAvgElo": 1084,
-      "opponentAvgElo": 1042,
-      "teammates": [
-        "Raggamuffin'",
-        "AngelPaniwater",
-        "G"
-      ],
-      "opponents": [
-        "Crisall99",
-        "GLAUSS",
-        "CSA_R_Griffith",
-        "田瘾犯了"
-      ]
-    },
     {
       "matchId": 380010259,
       "description": "10x 3x Bamboo Nothing",
@@ -533,6 +510,30 @@
         "Russie",
         "rcmccallum",
         "Emusan"
+      ]
+    },
+    {
+      "matchId": 494429083,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784856908,
+      "outcome": "loss",
+      "preRating": 1079,
+      "postRating": 1059,
+      "eloChange": -20,
+      "civ": "Burgundians",
+      "teamAvgElo": 1034,
+      "opponentAvgElo": 997,
+      "teammates": [
+        "baianitro",
+        "Wozbo",
+        "Tortrix"
+      ],
+      "opponents": [
+        "[ ARKI ! ]",
+        "CraziestJava",
+        "erik",
+        "Master Polo4905"
       ]
     }
   ]

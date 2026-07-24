@@ -1,12 +1,12 @@
 {
   "profile_id": 451364,
   "alias": "[GDL] Pardox",
-  "rating": 999,
+  "rating": 977,
   "wins": 7,
-  "losses": 9,
-  "gamesCount": 16,
-  "winRate": 44,
-  "lastPlayedAt": 1768817280,
+  "losses": 10,
+  "gamesCount": 17,
+  "winRate": 41,
+  "lastPlayedAt": 1784862418,
   "country": "mx",
   "merged_ids": [],
   "ratingHistory": [
@@ -26,7 +26,8 @@
     1091,
     1055,
     1025,
-    999
+    999,
+    977
   ],
   "recentMatches": [
     {
@@ -411,6 +412,30 @@
         "҉ ЄӀ ẓȏɦǟŋ ҉☣",
         "tacotoy",
         "edalmavuz"
+      ]
+    },
+    {
+      "matchId": 494445475,
+      "description": "10x 3x BaMbOo NoThInG",
+      "mapname": "BAMBOO_NOTHING_-_SCORPYON_DE_v3",
+      "timestamp": 1784862418,
+      "outcome": "loss",
+      "preRating": 999,
+      "postRating": 977,
+      "eloChange": -22,
+      "civ": "Celts",
+      "teamAvgElo": 979,
+      "opponentAvgElo": 1013,
+      "teammates": [
+        "Kaa Da Kaveman",
+        "Razaar",
+        "erik"
+      ],
+      "opponents": [
+        "Sadek",
+        "Mehandor",
+        "dwalte011",
+        "StarMikego"
       ]
     }
   ]

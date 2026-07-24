@@ -1,12 +1,12 @@
 {
   "profile_id": 25707591,
   "alias": "menorahjury",
-  "rating": 1044,
-  "wins": 15,
-  "losses": 17,
-  "gamesCount": 32,
+  "rating": 1042,
+  "wins": 16,
+  "losses": 18,
+  "gamesCount": 34,
   "winRate": 47,
-  "lastPlayedAt": 1784774470,
+  "lastPlayedAt": 1784866330,
   "country": "us",
   "merged_ids": [],
   "ratingHistory": [
@@ -42,57 +42,11 @@
     1059,
     1075,
     1059,
-    1044
+    1044,
+    1028,
+    1042
   ],
   "recentMatches": [
-    {
-      "matchId": 491335013,
-      "description": "BAMBOO 10x3xtech",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1783698336,
-      "outcome": "loss",
-      "preRating": 945,
-      "postRating": 933,
-      "eloChange": -12,
-      "civ": "Malians",
-      "teamAvgElo": 961,
-      "opponentAvgElo": 1177,
-      "teammates": [
-        "iamatthe.hell",
-        "取款机ATM",
-        "Zak"
-      ],
-      "opponents": [
-        "pandalam",
-        "Lumedge",
-        "GiGi",
-        "YUJIN"
-      ]
-    },
-    {
-      "matchId": 491387662,
-      "description": "4vs4 10x 3x shared civ bonus, random civ",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1783713970,
-      "outcome": "loss",
-      "preRating": 933,
-      "postRating": 920,
-      "eloChange": -13,
-      "civ": "Saracens",
-      "teamAvgElo": 993,
-      "opponentAvgElo": 1130,
-      "teammates": [
-        "Megahaufen",
-        "wurst456",
-        "wintre"
-      ],
-      "opponents": [
-        "yimacs_yoyoyo",
-        "Paladin",
-        "TheRiceMan",
-        "BigAl"
-      ]
-    },
     {
       "matchId": 491389578,
       "description": "10x civ  3x tech Forest nothing",
@@ -523,6 +477,54 @@
         "Mehandor",
         "Imperator Storm",
         "Proto Potato"
+      ]
+    },
+    {
+      "matchId": 494453324,
+      "description": "10x3x ",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784865291,
+      "outcome": "loss",
+      "preRating": 1044,
+      "postRating": 1028,
+      "eloChange": -16,
+      "civ": "Franks",
+      "teamAvgElo": 994,
+      "opponentAvgElo": 1043,
+      "teammates": [
+        "TJ",
+        "Perxeus",
+        "panqiang11666"
+      ],
+      "opponents": [
+        "adrian",
+        "-[RDU]- Gorda America Forever",
+        "pool_champ",
+        "Tiny Hands"
+      ]
+    },
+    {
+      "matchId": 494455919,
+      "description": "10x 3x bamboo NO IDIOT",
+      "mapname": "BAMBOO NOTHING_Paren_v4",
+      "timestamp": 1784866330,
+      "outcome": "win",
+      "preRating": 1028,
+      "postRating": 1042,
+      "eloChange": 14,
+      "civ": "Teutons",
+      "teamAvgElo": 984,
+      "opponentAvgElo": 985,
+      "teammates": [
+        "Wololo",
+        "RIchard_Uy",
+        "Stigel"
+      ],
+      "opponents": [
+        "Emusan",
+        "Maxim Liann",
+        "Perxeus",
+        "Willoloh!!!"
       ]
     }
   ]

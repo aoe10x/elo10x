@@ -1,12 +1,12 @@
 {
   "profile_id": 7617,
   "alias": "dwalte011",
-  "rating": 966,
-  "wins": 28,
+  "rating": 983,
+  "wins": 29,
   "losses": 41,
-  "gamesCount": 69,
+  "gamesCount": 70,
   "winRate": 41,
-  "lastPlayedAt": 1782873198,
+  "lastPlayedAt": 1784862418,
   "country": "ca",
   "merged_ids": [],
   "ratingHistory": [
@@ -79,33 +79,10 @@
     936,
     958,
     980,
-    966
+    966,
+    983
   ],
   "recentMatches": [
-    {
-      "matchId": 468939819,
-      "description": "frank sucks - 10x 3x bamboo random civ",
-      "mapname": "Bamboo Nothing_Paren_V4",
-      "timestamp": 1775704560,
-      "outcome": "loss",
-      "preRating": 930,
-      "postRating": 920,
-      "eloChange": -10,
-      "civ": "Vietnamese",
-      "teamAvgElo": 974,
-      "opponentAvgElo": 1059,
-      "teammates": [
-        "bijiyumo",
-        "weakest man in bayader",
-        "Gregory"
-      ],
-      "opponents": [
-        "S3dated",
-        "iamatthe.hell",
-        "MadRussian",
-        "GrandUni"
-      ]
-    },
     {
       "matchId": 469235512,
       "description": "10x Shared Civ",
@@ -560,6 +537,30 @@
         "ELWATON",
         "Sal",
         "SpiniestTuna222"
+      ]
+    },
+    {
+      "matchId": 494445475,
+      "description": "10x 3x BaMbOo NoThInG",
+      "mapname": "BAMBOO_NOTHING_-_SCORPYON_DE_v3",
+      "timestamp": 1784862418,
+      "outcome": "win",
+      "preRating": 966,
+      "postRating": 983,
+      "eloChange": 17,
+      "civ": "Byzantines",
+      "teamAvgElo": 1013,
+      "opponentAvgElo": 979,
+      "teammates": [
+        "Sadek",
+        "Mehandor",
+        "StarMikego"
+      ],
+      "opponents": [
+        "Kaa Da Kaveman",
+        "Razaar",
+        "[GDL] Pardox",
+        "erik"
       ]
     }
   ]

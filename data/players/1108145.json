@@ -1,12 +1,12 @@
 {
   "profile_id": 1108145,
   "alias": "[ ARKI ! ]",
-  "rating": 1067,
-  "wins": 29,
+  "rating": 1081,
+  "wins": 30,
   "losses": 35,
-  "gamesCount": 64,
-  "winRate": 45,
-  "lastPlayedAt": 1784854053,
+  "gamesCount": 65,
+  "winRate": 46,
+  "lastPlayedAt": 1784856908,
   "country": "ar",
   "merged_ids": [],
   "ratingHistory": [
@@ -74,33 +74,10 @@
     1047,
     1064,
     1082,
-    1067
+    1067,
+    1081
   ],
   "recentMatches": [
-    {
-      "matchId": 475912609,
-      "description": "10x Shared Civ Bonus 4v4 Random",
-      "mapname": "Wet Woods V3.0.3",
-      "timestamp": 1778141040,
-      "outcome": "loss",
-      "preRating": 1001,
-      "postRating": 990,
-      "eloChange": -11,
-      "civ": "Celts",
-      "teamAvgElo": 1051,
-      "opponentAvgElo": 1122,
-      "teammates": [
-        "xXD4rckSh4d0wXx",
-        "GISEPPI",
-        "AmgryPotato"
-      ],
-      "opponents": [
-        "Kumad",
-        "Myriad",
-        "Bean goose",
-        "PoonSlapper"
-      ]
-    },
     {
       "matchId": 476378023,
       "description": "10x 3x shared tech Bamboo Nothing Random Civ",
@@ -555,6 +532,30 @@
         "EL__PATRON",
         "Myriad",
         "ItsMiroGuys"
+      ]
+    },
+    {
+      "matchId": 494429083,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784856908,
+      "outcome": "win",
+      "preRating": 1067,
+      "postRating": 1081,
+      "eloChange": 14,
+      "civ": "Bulgarians",
+      "teamAvgElo": 997,
+      "opponentAvgElo": 1034,
+      "teammates": [
+        "CraziestJava",
+        "erik",
+        "Master Polo4905"
+      ],
+      "opponents": [
+        "baianitro",
+        "1",
+        "Wozbo",
+        "Tortrix"
       ]
     }
   ]

@@ -1,12 +1,12 @@
 {
   "profile_id": 9884455,
   "alias": "fuec",
-  "rating": 902,
-  "wins": 10,
-  "losses": 22,
-  "gamesCount": 32,
+  "rating": 904,
+  "wins": 11,
+  "losses": 24,
+  "gamesCount": 35,
   "winRate": 31,
-  "lastPlayedAt": 1784628416,
+  "lastPlayedAt": 1784871438,
   "country": "tr",
   "merged_ids": [],
   "ratingHistory": [
@@ -42,81 +42,12 @@
     902,
     892,
     913,
-    902
+    902,
+    893,
+    915,
+    904
   ],
   "recentMatches": [
-    {
-      "matchId": 383751432,
-      "description": "10x 3x Bamboo  Random",
-      "mapname": "Bamboo Nothing - +Wild ##############",
-      "timestamp": 1744027620,
-      "outcome": "loss",
-      "preRating": 988,
-      "postRating": 968,
-      "eloChange": -20,
-      "civ": "Unknown",
-      "teamAvgElo": 1029,
-      "opponentAvgElo": 1096,
-      "teammates": [
-        "Keishi",
-        "TopazSkate37557",
-        "Tony"
-      ],
-      "opponents": [
-        "typ53b90",
-        "Duffy",
-        "evelyncc",
-        "紫蝶黄蜂俱有情"
-      ]
-    },
-    {
-      "matchId": 384589604,
-      "description": "10x shared civ pick ########################",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1744401000,
-      "outcome": "win",
-      "preRating": 968,
-      "postRating": 996,
-      "eloChange": 28,
-      "civ": "Unknown",
-      "teamAvgElo": 999,
-      "opponentAvgElo": 979,
-      "teammates": [
-        "asuky",
-        "Bao Oninon",
-        "Antimier"
-      ],
-      "opponents": [
-        "JammTheClam",
-        "PoachedPotato_12",
-        "ElmoWithoutL",
-        "Secy Beats"
-      ]
-    },
-    {
-      "matchId": 384633872,
-      "description": "10x civ shared 4v4",
-      "mapname": "Amazon Tunnel",
-      "timestamp": 1744413900,
-      "outcome": "loss",
-      "preRating": 996,
-      "postRating": 977,
-      "eloChange": -19,
-      "civ": "Unknown",
-      "teamAvgElo": 991,
-      "opponentAvgElo": 1083,
-      "teammates": [
-        "Fawkes",
-        "Lord Lee So Cacti",
-        "Juk3"
-      ],
-      "opponents": [
-        "pandalam",
-        "老K",
-        "David",
-        "hung949862"
-      ]
-    },
     {
       "matchId": 384637579,
       "description": "10x civ shared 4V4",
@@ -523,6 +454,78 @@
         "紫蝶黄蜂俱有情",
         "Maxim Liann",
         "Tiny Hands"
+      ]
+    },
+    {
+      "matchId": 494462568,
+      "description": "Bamboo 10x Shared 3x Tech",
+      "mapname": "BAMBOO NOTHING_Paren_v4_nohills",
+      "timestamp": 1784870064,
+      "outcome": "loss",
+      "preRating": 902,
+      "postRating": 893,
+      "eloChange": -9,
+      "civ": "Vikings",
+      "teamAvgElo": 977,
+      "opponentAvgElo": 1078,
+      "teammates": [
+        "菜神",
+        "Emusan",
+        "TUF | DUKE_NUKEM"
+      ],
+      "opponents": [
+        "baianitro",
+        "Maxim Liann",
+        "[S33]ff",
+        "田瘾犯了"
+      ]
+    },
+    {
+      "matchId": 494464696,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784870781,
+      "outcome": "win",
+      "preRating": 893,
+      "postRating": 915,
+      "eloChange": 22,
+      "civ": "Spanish",
+      "teamAvgElo": 1028,
+      "opponentAvgElo": 1019,
+      "teammates": [
+        "[S33]ff",
+        "Bao Oninon",
+        "ch33tah"
+      ],
+      "opponents": [
+        "TUF | DUKE_NUKEM",
+        "菜神",
+        "Maxim Liann",
+        "ZONIX"
+      ]
+    },
+    {
+      "matchId": 494465667,
+      "description": "10x 3x FKN BAMBOO",
+      "mapname": "BAMBOO NOTHING - SCORPYON DE",
+      "timestamp": 1784871438,
+      "outcome": "loss",
+      "preRating": 915,
+      "postRating": 904,
+      "eloChange": -11,
+      "civ": "Japanese",
+      "teamAvgElo": 995,
+      "opponentAvgElo": 1032,
+      "teammates": [
+        "TUF | DUKE_NUKEM",
+        "Bao Oninon",
+        "菜神"
+      ],
+      "opponents": [
+        "Maxim Liann",
+        "fxsound",
+        "[S33]ff",
+        "Sundev"
       ]
     }
   ]

@@ -1,10 +1,10 @@
 {
   "profile_id": 12572758,
   "alias": "LethalP59",
-  "rating": 1025,
+  "rating": 1013,
   "wins": 42,
-  "losses": 40,
-  "gamesCount": 82,
+  "losses": 41,
+  "gamesCount": 83,
   "winRate": 51,
   "lastPlayedAt": 1784851348,
   "country": "us",
@@ -95,33 +95,10 @@
     1078,
     1062,
     1043,
-    1025
+    1030,
+    1013
   ],
   "recentMatches": [
-    {
-      "matchId": 473186838,
-      "description": "10x 3x BAMBOO best lobby",
-      "mapname": "BAMBOO NOTHING - SCORPYON DE",
-      "timestamp": 1777160967,
-      "outcome": "win",
-      "preRating": 1066,
-      "postRating": 1081,
-      "eloChange": 15,
-      "civ": "Byzantines",
-      "teamAvgElo": 1055,
-      "opponentAvgElo": 1048,
-      "teammates": [
-        "ZTH",
-        "petterpacceli",
-        "nayman"
-      ],
-      "opponents": [
-        "typ53b90",
-        "Ghost_pt",
-        "OhSheeep",
-        "Midu"
-      ]
-    },
     {
       "matchId": 473470174,
       "description": "Bamboo 10x 3x 4v4",
@@ -555,17 +532,41 @@
       ]
     },
     {
+      "matchId": 494386239,
+      "description": "10x 3x Bamboo Donut - 10xshared.com",
+      "mapname": "BAMBOO NOTHING_waterdonut_test2_v2",
+      "timestamp": 1784840771,
+      "outcome": "loss",
+      "preRating": 1043,
+      "postRating": 1030,
+      "eloChange": -13,
+      "civ": "Japanese",
+      "teamAvgElo": 1054,
+      "opponentAvgElo": 1100,
+      "teammates": [
+        "Parts",
+        "OhSheeep",
+        "Parenquima"
+      ],
+      "opponents": [
+        "Chuckyllo4417",
+        "PIEROGI",
+        "Xinzzo",
+        "tonzo"
+      ]
+    },
+    {
       "matchId": 494415500,
       "description": "10x3x   shared bonus random civ  no noob",
       "mapname": "BAMBOO NOTHING_Paren_v4",
       "timestamp": 1784851348,
       "outcome": "loss",
-      "preRating": 1043,
-      "postRating": 1025,
-      "eloChange": -18,
+      "preRating": 1030,
+      "postRating": 1013,
+      "eloChange": -17,
       "civ": "Wu",
-      "teamAvgElo": 1013,
-      "opponentAvgElo": 1006,
+      "teamAvgElo": 1010,
+      "opponentAvgElo": 1003,
       "teammates": [
         "Ghost_pt",
         "memoh",
