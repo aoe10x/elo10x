@@ -1,7 +1,7 @@
 # Civilization Winrate & Balance Report
 
 *Generated on: 2026-07-28*
-*Data source: elo10x matches database (38045 total matches)*
+*Data source: elo10x matches database (38068 total matches)*
 
 ## Table of Contents
 - [All Maps (Combined)](#scope-all-maps-combined)
@@ -14,67 +14,67 @@
 
 ## Scope: All Maps (Combined)
 
-* **Total Matches on map(s)**: 38045
-* **Matches with Civilization Data**: 22600 (59.40%)
+* **Total Matches on map(s)**: 38068
+* **Matches with Civilization Data**: 22623 (59.43%)
 
 | Rank | Civilization | Drafts | Wins | Winrate | Status |
 | :--- | :--- | :---: | :---: | :---: | :---: |
-| 1 | **Poles** | 3807 | 2632 | **69.14%** | 🔴 OP |
+| 1 | **Poles** | 3814 | 2635 | **69.09%** | 🔴 OP |
 | 2 | **Athenians** | 12 | 8 | **66.67%** | ⚪ Low Sample |
-| 3 | **Chinese** | 3930 | 2471 | **62.88%** | 🔴 OP |
-| 4 | **Celts** | 3999 | 2456 | **61.42%** | 🔴 OP |
-| 5 | **Wei** | 1364 | 805 | **59.02%** | 🔴 OP |
-| 6 | **Spanish** | 3929 | 2295 | **58.41%** | 🔴 OP |
-| 7 | **Romans** | 2412 | 1374 | **56.97%** | 🔴 OP |
-| 8 | **Bengalis** | 3709 | 2092 | **56.40%** | 🔴 OP |
+| 3 | **Chinese** | 3937 | 2473 | **62.81%** | 🔴 OP |
+| 4 | **Celts** | 4003 | 2460 | **61.45%** | 🔴 OP |
+| 5 | **Wei** | 1365 | 806 | **59.05%** | 🔴 OP |
+| 6 | **Spanish** | 3934 | 2299 | **58.44%** | 🔴 OP |
+| 7 | **Romans** | 2419 | 1376 | **56.88%** | 🔴 OP |
+| 8 | **Bengalis** | 3711 | 2093 | **56.40%** | 🔴 OP |
 | 9 | **Spartans** | 327 | 182 | **55.66%** | 🔴 OP |
-| 10 | **Saracens** | 3987 | 2187 | **54.85%** | 🟢 Balanced |
-| 11 | **Wu** | 1230 | 657 | **53.41%** | 🟢 Balanced |
-| 12 | **Portuguese** | 4027 | 2145 | **53.27%** | 🟢 Balanced |
-| 13 | **Ethiopians** | 3953 | 2105 | **53.25%** | 🟢 Balanced |
-| 14 | **Goths** | 3727 | 1984 | **53.23%** | 🟢 Balanced |
-| 15 | **Byzantines** | 3832 | 2032 | **53.03%** | 🟢 Balanced |
-| 16 | **Persians** | 3835 | 2028 | **52.88%** | 🟢 Balanced |
+| 10 | **Saracens** | 3989 | 2188 | **54.85%** | 🟢 Balanced |
+| 11 | **Wu** | 1231 | 657 | **53.37%** | 🟢 Balanced |
+| 12 | **Portuguese** | 4030 | 2148 | **53.30%** | 🟢 Balanced |
+| 13 | **Goths** | 3733 | 1989 | **53.28%** | 🟢 Balanced |
+| 14 | **Ethiopians** | 3955 | 2107 | **53.27%** | 🟢 Balanced |
+| 15 | **Byzantines** | 3835 | 2034 | **53.04%** | 🟢 Balanced |
+| 16 | **Persians** | 3840 | 2030 | **52.86%** | 🟢 Balanced |
 | 17 | **Armenians** | 2327 | 1230 | **52.86%** | 🟢 Balanced |
-| 18 | **Shu** | 1270 | 668 | **52.60%** | 🟢 Balanced |
-| 19 | **Hindustanis** | 3866 | 2026 | **52.41%** | 🟢 Balanced |
-| 20 | **Malians** | 3850 | 2015 | **52.34%** | 🟢 Balanced |
-| 21 | **Gurjaras** | 3786 | 1965 | **51.90%** | 🟢 Balanced |
-| 22 | **Civ 60** | 245 | 126 | **51.43%** | 🟢 Balanced |
-| 23 | **Jurchens** | 1226 | 629 | **51.31%** | 🟢 Balanced |
+| 18 | **Shu** | 1273 | 668 | **52.47%** | 🟢 Balanced |
+| 19 | **Hindustanis** | 3870 | 2028 | **52.40%** | 🟢 Balanced |
+| 20 | **Malians** | 3853 | 2018 | **52.37%** | 🟢 Balanced |
+| 21 | **Gurjaras** | 3788 | 1965 | **51.87%** | 🟢 Balanced |
+| 22 | **Jurchens** | 1228 | 629 | **51.22%** | 🟢 Balanced |
+| 23 | **Civ 60** | 246 | 126 | **51.22%** | 🟢 Balanced |
 | 24 | **Georgians** | 1653 | 846 | **51.18%** | 🟢 Balanced |
-| 25 | **Maya** | 3796 | 1930 | **50.84%** | 🟢 Balanced |
-| 26 | **Slavs** | 4954 | 2513 | **50.73%** | 🟢 Balanced |
-| 27 | **Incas** | 3971 | 2007 | **50.54%** | 🟢 Balanced |
-| 28 | **Tatars** | 3971 | 1993 | **50.19%** | 🟢 Balanced |
+| 25 | **Maya** | 3797 | 1930 | **50.83%** | 🟢 Balanced |
+| 26 | **Slavs** | 4956 | 2514 | **50.73%** | 🟢 Balanced |
+| 27 | **Incas** | 3974 | 2009 | **50.55%** | 🟢 Balanced |
+| 28 | **Tatars** | 3973 | 1994 | **50.19%** | 🟢 Balanced |
 | 29 | **Lithuanians** | 3723 | 1864 | **50.07%** | 🟢 Balanced |
-| 30 | **Franks** | 3867 | 1928 | **49.86%** | 🟢 Balanced |
-| 31 | **Tupi** | 456 | 227 | **49.78%** | 🟢 Balanced |
-| 32 | **Bohemians** | 3726 | 1842 | **49.44%** | 🟢 Balanced |
-| 33 | **Berbers** | 3843 | 1863 | **48.48%** | 🟢 Balanced |
-| 34 | **Burgundians** | 3736 | 1804 | **48.29%** | 🟢 Balanced |
-| 35 | **Vikings** | 3936 | 1894 | **48.12%** | 🟢 Balanced |
+| 30 | **Franks** | 3869 | 1929 | **49.86%** | 🟢 Balanced |
+| 31 | **Tupi** | 458 | 228 | **49.78%** | 🟢 Balanced |
+| 32 | **Bohemians** | 3729 | 1844 | **49.45%** | 🟢 Balanced |
+| 33 | **Berbers** | 3847 | 1863 | **48.43%** | 🟢 Balanced |
+| 34 | **Burgundians** | 3740 | 1807 | **48.32%** | 🟢 Balanced |
+| 35 | **Vikings** | 3942 | 1899 | **48.17%** | 🟢 Balanced |
 | 36 | **Khitans** | 915 | 432 | **47.21%** | 🟢 Balanced |
-| 37 | **Mongols** | 3804 | 1792 | **47.11%** | 🟢 Balanced |
-| 38 | **Italians** | 4023 | 1885 | **46.86%** | 🟢 Balanced |
-| 39 | **Cumans** | 4092 | 1896 | **46.33%** | 🟢 Balanced |
-| 40 | **Turks** | 4156 | 1924 | **46.29%** | 🟢 Balanced |
-| 41 | **Sicilians** | 3701 | 1702 | **45.99%** | 🟢 Balanced |
-| 42 | **Aztecs** | 3894 | 1774 | **45.56%** | 🟢 Balanced |
-| 43 | **Malay** | 3878 | 1756 | **45.28%** | 🟢 Balanced |
-| 44 | **Bulgarians** | 3928 | 1774 | **45.16%** | 🟢 Balanced |
-| 45 | **Khmer** | 3778 | 1699 | **44.97%** | 🔵 Weak |
-| 46 | **Japanese** | 3941 | 1683 | **42.70%** | 🔵 Weak |
-| 47 | **Burmese** | 3899 | 1661 | **42.60%** | 🔵 Weak |
-| 48 | **Mapuche** | 458 | 195 | **42.58%** | 🔵 Weak |
-| 49 | **Dravidians** | 3645 | 1544 | **42.36%** | 🔵 Weak |
+| 37 | **Mongols** | 3810 | 1797 | **47.17%** | 🟢 Balanced |
+| 38 | **Italians** | 4028 | 1886 | **46.82%** | 🟢 Balanced |
+| 39 | **Cumans** | 4093 | 1897 | **46.35%** | 🟢 Balanced |
+| 40 | **Turks** | 4160 | 1928 | **46.35%** | 🟢 Balanced |
+| 41 | **Sicilians** | 3708 | 1706 | **46.01%** | 🟢 Balanced |
+| 42 | **Aztecs** | 3896 | 1774 | **45.53%** | 🟢 Balanced |
+| 43 | **Malay** | 3882 | 1758 | **45.29%** | 🟢 Balanced |
+| 44 | **Bulgarians** | 3930 | 1774 | **45.14%** | 🟢 Balanced |
+| 45 | **Khmer** | 3782 | 1702 | **45.00%** | 🟢 Balanced |
+| 46 | **Japanese** | 3943 | 1683 | **42.68%** | 🔵 Weak |
+| 47 | **Burmese** | 3902 | 1662 | **42.59%** | 🔵 Weak |
+| 48 | **Mapuche** | 459 | 195 | **42.48%** | 🔵 Weak |
+| 49 | **Dravidians** | 3654 | 1547 | **42.34%** | 🔵 Weak |
 | 50 | **Muisca** | 275 | 115 | **41.82%** | 🔵 Weak |
-| 51 | **Huns** | 3792 | 1578 | **41.61%** | 🔵 Weak |
-| 52 | **Vietnamese** | 4090 | 1697 | **41.49%** | 🔵 Weak |
-| 53 | **Teutons** | 3930 | 1595 | **40.59%** | 🔵 Weak |
-| 54 | **Magyars** | 3918 | 1585 | **40.45%** | 🔵 Weak |
-| 55 | **Koreans** | 4033 | 1623 | **40.24%** | 🔵 Weak |
-| 56 | **Britons** | 3925 | 1563 | **39.82%** | 🔵 Weak |
+| 51 | **Huns** | 3798 | 1582 | **41.65%** | 🔵 Weak |
+| 52 | **Vietnamese** | 4097 | 1701 | **41.52%** | 🔵 Weak |
+| 53 | **Teutons** | 3934 | 1597 | **40.59%** | 🔵 Weak |
+| 54 | **Magyars** | 3922 | 1588 | **40.49%** | 🔵 Weak |
+| 55 | **Koreans** | 4037 | 1623 | **40.20%** | 🔵 Weak |
+| 56 | **Britons** | 3929 | 1564 | **39.81%** | 🔵 Weak |
 | 57 | **Thracians** | 3 | 1 | **33.33%** | ⚪ Low Sample |
 | 58 | **Achaemenids** | 10 | 2 | **20.00%** | ⚪ Low Sample |
 
