@@ -137,7 +137,7 @@ function generateRowHtml(player: EloRanking, rank: number, maxSingleRecord: numb
   `;
 }
 
-export async function runCompile(db?: JsonDatabase): Promise<void> {
+export async function runCompile(db?: JsonDatabase, options: { reports?: boolean } = {}): Promise<void> {
   if (!db) {
     db = new JsonDatabase();
     await db.load();
@@ -319,8 +319,13 @@ export async function runCompile(db?: JsonDatabase): Promise<void> {
     await fs.writeFile(playerFile, JSON.stringify(details, null, 2), 'utf-8');
   }
 
-  console.log('Generating civilization winrate reports...');
-  await generateCivWinratesReport(db);
+  const shouldGenerateReports = options.reports ?? (new Date().getDay() === 0);
+  if (shouldGenerateReports) {
+    console.log('Generating civilization winrate reports...');
+    await generateCivWinratesReport(db);
+  } else {
+    console.log('Skipping civilization winrate reports (only run on Sundays or when --reports is passed).');
+  }
 
   console.log('Compilation success!');
 }
