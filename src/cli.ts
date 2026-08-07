@@ -60,6 +60,7 @@ async function main(): Promise<void> {
     'start-page': { type: 'string' as const },
     'end-page': { type: 'string' as const },
     force: { type: 'boolean' as const },
+    reports: { type: 'boolean' as const },
     help: { type: 'boolean' as const, short: 'h' as const }
   };
 
@@ -206,8 +207,9 @@ async function main(): Promise<void> {
     }
   }
   else if (subcommand === 'elo') {
+    const reports = values.reports as boolean | undefined;
     console.log('Calculating Elo ratings and pre-rendering leaderboard pages...');
-    await runCompile(db);
+    await runCompile(db, { reports });
   }
   else {
     console.error(`Unknown subcommand: ${subcommand}`);

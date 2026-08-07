@@ -8,3 +8,7 @@ scraped_data/
 
 # Pre-rendered leaderboards and detail JSONs (published to gh-pages branch)
 dist/
+
+# Transient crawler files
+data/crawl_state.json
+data/crawl_manifest.json

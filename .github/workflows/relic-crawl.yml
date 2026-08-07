@@ -32,6 +32,13 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Fetch and Restore Crawl State
+        run: |
+          git fetch origin gh-pages || true
+          mkdir -p data
+          git show origin/gh-pages:crawl_state.json > data/crawl_state.json || echo "{}" > data/crawl_state.json
+          git show origin/gh-pages:crawl_manifest.json > data/crawl_manifest.json || echo "{}" > data/crawl_manifest.json
+
       - name: Run Relic API Crawl
         run: node src/cli.ts crawl --limit 250 --months 3
 
@@ -48,7 +55,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git reset --mixed origin/main
-          git add data/matches.json data/profiles.json data/crawl_state.json data/crawl_manifest.json docs/reports/
+          git add data/matches.json data/profiles.json docs/reports/
           if ! git diff --cached --quiet; then
             git commit -m "chore: auto-update matches database [skip ci]"
             git push origin main
@@ -56,8 +63,16 @@ jobs:
             echo "No new matches crawled. Database is up to date."
           fi
 
+      - name: Copy Crawl State to Publish Dir
+        run: |
+          cp data/crawl_state.json dist/crawl_state.json
+          cp data/crawl_manifest.json dist/crawl_manifest.json
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
