@@ -1,4 +1,6 @@
 import { JsonDatabase } from '../db.ts';
+import type { Match } from '../types.ts';
+
 
 async function main() {
   console.log('Loading database to heal timestamps...');
@@ -20,9 +22,8 @@ async function main() {
   let healedCount = 0;
 
   for (const cm of corrupted) {
-    // Find closest valid match before and after by ID
-    let before: typeof cm | null = null;
-    let after: typeof cm | null = null;
+    let before: Match | null = null;
+    let after: Match | null = null;
 
     // Linear search is fine since we do it 589 times over 38,903 elements, 
     // but binary search is faster. Let's do a fast search since valid is sorted by ID:
@@ -69,7 +70,7 @@ async function main() {
 
     const finalTime = Math.round(estimatedTime);
     cm.startgametime = finalTime;
-    cm.completiontime = finalTime; // Approximate completion time to start time (or start time + 1800 for 30 mins)
+    cm.completiontime = finalTime + 1800; // 30 mins average duration to avoid 0-duration trap
     
     // Update the database Map
     matchesMap.set(cm.id, cm);

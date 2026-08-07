@@ -569,6 +569,17 @@ export class Aoe2InsightsScraper {
           interface LegacyMatchPlayer extends MatchPlayer {
             race_id?: number;
           }
+
+          let finalStart = m.startgametime;
+          let finalCompletion = m.completiontime;
+
+          if (!finalStart || isNaN(finalStart) || finalStart <= 1000000000) {
+            finalStart = this.db.estimateTimestamp(m.id);
+          }
+          if (!finalCompletion || isNaN(finalCompletion) || finalCompletion <= 1000000000) {
+            finalCompletion = finalStart + 1800; // 30 min average duration fallback
+          }
+
           const matchObj: Match = {
             id: m.id,
             source: 'aoe2insights_scrape',
@@ -576,8 +587,8 @@ export class Aoe2InsightsScraper {
             maxplayers: 8,
             matchtype_id: 0,
             description: m.description,
-            startgametime: m.startgametime || m.completiontime - 1800,
-            completiontime: m.completiontime,
+            startgametime: finalStart,
+            completiontime: finalCompletion,
             players: (m.players as LegacyMatchPlayer[]).map(p => ({
               profile_id: p.profile_id,
               teamid: p.teamid,
