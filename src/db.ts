@@ -171,6 +171,50 @@ export class JsonDatabase {
     this.isLoaded = true;
   }
 
+  estimateTimestamp(matchId: number): number {
+    const allMatches = Array.from(this.matches.values());
+    const valid = allMatches.filter(m => m.startgametime > 1000000000).sort((a, b) => a.id - b.id);
+    if (valid.length === 0) {
+      return Math.round(Date.now() / 1000);
+    }
+    
+    let low = 0;
+    let high = valid.length - 1;
+    let insertionIdx = 0;
+
+    while (low <= high) {
+      const mid = Math.floor((low + high) / 2);
+      if (valid[mid].id < matchId) {
+        insertionIdx = mid + 1;
+        low = mid + 1;
+      } else {
+        high = mid - 1;
+      }
+    }
+
+    let before: Match | null = null;
+    let after: Match | null = null;
+
+    if (insertionIdx > 0) {
+      before = valid[insertionIdx - 1];
+    }
+    if (insertionIdx < valid.length) {
+      after = valid[insertionIdx];
+    }
+
+    if (before && after) {
+      const idDiff = after.id - before.id;
+      const timeDiff = after.startgametime - before.startgametime;
+      if (idDiff > 0) {
+        return Math.round(before.startgametime + timeDiff * ((matchId - before.id) / idDiff));
+      }
+      return before.startgametime;
+    }
+    if (before) return before.startgametime;
+    if (after) return after.startgametime;
+    return Math.round(Date.now() / 1000);
+  }
+
   pruneUnusedProfiles(): void {
     const referencedIds = new Set<number>();
 
