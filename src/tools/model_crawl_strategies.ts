@@ -91,8 +91,8 @@ async function main() {
   const db = new JsonDatabase();
   await db.load();
 
-  const allMatches = db.getMatches();
-  console.log(`Loaded ${allMatches.length} matches.`);
+  const allMatches = db.getMatches().filter(m => m.startgametime > 1000000000);
+  console.log(`Loaded ${allMatches.length} valid matches (filtered out corrupted ones).`);
 
   // Group matches by participant profile ID
   const playerMatches = new Map<number, Match[]>();
