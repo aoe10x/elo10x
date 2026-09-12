@@ -1,0 +1,470 @@
+{
+  "profile_id": 367423,
+  "alias": "Joey",
+  "rating": 1020,
+  "wins": 10,
+  "losses": 8,
+  "gamesCount": 18,
+  "winRate": 56,
+  "lastPlayedAt": 1773481200,
+  "country": "us",
+  "merged_ids": [
+    367423,
+    12287564
+  ],
+  "ratingHistory": [
+    1000,
+    1054,
+    1000,
+    1042,
+    1083,
+    1121,
+    1149,
+    1173,
+    1125,
+    1152,
+    1173,
+    1193,
+    1151,
+    1111,
+    1074,
+    1044,
+    1019,
+    1041,
+    1020
+  ],
+  "recentMatches": [
+    {
+      "matchId": 263134688,
+      "description": "4v4 10x shared civ bonuses",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1696336380,
+      "outcome": "win",
+      "preRating": 1000,
+      "postRating": 1054,
+      "eloChange": 54,
+      "civ": "Khmer",
+      "teamAvgElo": 1000,
+      "opponentAvgElo": 1038,
+      "teammates": [
+        "SwordSaint",
+        "The lego you walk on at night",
+        "Sieg"
+      ],
+      "opponents": [
+        "AV-1",
+        "-[RDU]- Gorda America Forever",
+        "ranchwalker",
+        "tmrakshay"
+      ]
+    },
+    {
+      "matchId": 265411839,
+      "description": "10x civ bonus 4v4",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1697340035,
+      "outcome": "loss",
+      "preRating": 1054,
+      "postRating": 1000,
+      "eloChange": -54,
+      "civ": "Spanish",
+      "teamAvgElo": 1053,
+      "opponentAvgElo": 996,
+      "teammates": [
+        "Sieg",
+        "The lego you walk on at night",
+        "baguette"
+      ],
+      "opponents": [
+        "Flip Kun",
+        "amukara",
+        "G305",
+        "Kuecken_das_Vollstrecker"
+      ]
+    },
+    {
+      "matchId": 369165119,
+      "description": "10x",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1738406160,
+      "outcome": "win",
+      "preRating": 1000,
+      "postRating": 1042,
+      "eloChange": 42,
+      "civ": "Berbers",
+      "teamAvgElo": 1002,
+      "opponentAvgElo": 977,
+      "teammates": [
+        "Mel Gibson",
+        "Federigo Giambelli",
+        "SwordSaint"
+      ],
+      "opponents": [
+        "faux",
+        "walker_albuquerque",
+        "Hacker75",
+        "thejess1"
+      ]
+    },
+    {
+      "matchId": 369171675,
+      "description": "4v4 10x Shared civ KOTH",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1738408500,
+      "outcome": "win",
+      "preRating": 1042,
+      "postRating": 1083,
+      "eloChange": 41,
+      "civ": "Unknown",
+      "teamAvgElo": 1027,
+      "opponentAvgElo": 1022,
+      "teammates": [
+        "Federigo Giambelli",
+        "scott_Colman",
+        "Abused but whole"
+      ],
+      "opponents": [
+        "Mel Gibson",
+        "Bitims",
+        "Seu Digão",
+        "StarxLord"
+      ]
+    },
+    {
+      "matchId": 446001593,
+      "description": "10x Shared civ 4v4",
+      "mapname": "Black Forest",
+      "timestamp": 1767700860,
+      "outcome": "win",
+      "preRating": 1083,
+      "postRating": 1121,
+      "eloChange": 38,
+      "civ": "Unknown",
+      "teamAvgElo": 1006,
+      "opponentAvgElo": 1053,
+      "teammates": [
+        "Mel Gibson",
+        "dollar store jesus",
+        "Federigo Giambelli"
+      ],
+      "opponents": [
+        "Arcy",
+        "__Cuerv0_llVll4l0__",
+        "derailer9",
+        "develement"
+      ]
+    },
+    {
+      "matchId": 446006826,
+      "description": "10x Shared civ 4v4",
+      "mapname": "Black Forest",
+      "timestamp": 1767702600,
+      "outcome": "win",
+      "preRating": 1121,
+      "postRating": 1149,
+      "eloChange": 28,
+      "civ": "Spanish",
+      "teamAvgElo": 1045,
+      "opponentAvgElo": 1013,
+      "teammates": [
+        "Mel Gibson",
+        "Federigo Giambelli",
+        "dollar store jesus"
+      ],
+      "opponents": [
+        "Arcy",
+        "<johnny>bravo",
+        "develement",
+        "jamoats"
+      ]
+    },
+    {
+      "matchId": 446243240,
+      "description": "10x Shared civ 4v4",
+      "mapname": "Arena",
+      "timestamp": 1767781200,
+      "outcome": "win",
+      "preRating": 1149,
+      "postRating": 1173,
+      "eloChange": 24,
+      "civ": "Japanese",
+      "teamAvgElo": 1072,
+      "opponentAvgElo": 1005,
+      "teammates": [
+        "Mel Gibson",
+        "Federigo Giambelli",
+        "saracast"
+      ],
+      "opponents": [
+        "sniper-123",
+        "Miklo",
+        "超究武神覇斬",
+        "janhartmann"
+      ]
+    },
+    {
+      "matchId": 446252002,
+      "description": "10x Shared civ 4v4",
+      "mapname": "Arena",
+      "timestamp": 1767783660,
+      "outcome": "loss",
+      "preRating": 1173,
+      "postRating": 1125,
+      "eloChange": -48,
+      "civ": "Portuguese",
+      "teamAvgElo": 1075,
+      "opponentAvgElo": 1069,
+      "teammates": [
+        "Mel Gibson",
+        "StreamerOffline",
+        "EzraSkywalker96"
+      ],
+      "opponents": [
+        "Anne Flank",
+        "Federigo Giambelli",
+        "Zeriel",
+        "saracast"
+      ]
+    },
+    {
+      "matchId": 446766996,
+      "description": "10x Shared civ 4v4",
+      "mapname": "Arena",
+      "timestamp": 1767959700,
+      "outcome": "win",
+      "preRating": 1125,
+      "postRating": 1152,
+      "eloChange": 27,
+      "civ": "Teutons",
+      "teamAvgElo": 1071,
+      "opponentAvgElo": 1042,
+      "teammates": [
+        "Anne Flank",
+        "Federigo Giambelli",
+        "i <3 b00bies"
+      ],
+      "opponents": [
+        "Dylan Dog",
+        "Mel Gibson",
+        "Gonnar",
+        "Anatolian Eagle"
+      ]
+    },
+    {
+      "matchId": 446770670,
+      "description": "10x Shared civ 4v4",
+      "mapname": "Arena",
+      "timestamp": 1767960720,
+      "outcome": "win",
+      "preRating": 1152,
+      "postRating": 1173,
+      "eloChange": 21,
+      "civ": "Teutons",
+      "teamAvgElo": 1099,
+      "opponentAvgElo": 1018,
+      "teammates": [
+        "Anne Flank",
+        "Federigo Giambelli",
+        "dollar store jesus"
+      ],
+      "opponents": [
+        "Mel Gibson",
+        "develement",
+        "el Paly",
+        "<johnny>bravo"
+      ]
+    },
+    {
+      "matchId": 446777645,
+      "description": "10x Shared civ 4v4",
+      "mapname": "Arena",
+      "timestamp": 1767963900,
+      "outcome": "win",
+      "preRating": 1173,
+      "postRating": 1193,
+      "eloChange": 20,
+      "civ": "Unknown",
+      "teamAvgElo": 1122,
+      "opponentAvgElo": 1039,
+      "teammates": [
+        "Anne Flank",
+        "dollar store jesus",
+        "Federigo Giambelli"
+      ],
+      "opponents": [
+        "typ53b90",
+        "Mel Gibson",
+        "TryHardScrub",
+        "399 the Grizzly Bear - RIP <3"
+      ]
+    },
+    {
+      "matchId": 447056202,
+      "description": "10x Shared civ 4v4",
+      "mapname": "Arena",
+      "timestamp": 1768048920,
+      "outcome": "loss",
+      "preRating": 1193,
+      "postRating": 1151,
+      "eloChange": -42,
+      "civ": "Unknown",
+      "teamAvgElo": 1050,
+      "opponentAvgElo": 1060,
+      "teammates": [
+        "Mel Gibson",
+        "i <3 b00bies",
+        "dollar store jesus"
+      ],
+      "opponents": [
+        "Kombative",
+        "GoOverlay.com | AwE",
+        "Contry",
+        "Guisk"
+      ]
+    },
+    {
+      "matchId": 448181471,
+      "description": "10x Shared civ 4v4",
+      "mapname": "Arena",
+      "timestamp": 1768395000,
+      "outcome": "loss",
+      "preRating": 1151,
+      "postRating": 1111,
+      "eloChange": -40,
+      "civ": "Cumans",
+      "teamAvgElo": 1068,
+      "opponentAvgElo": 1017,
+      "teammates": [
+        "Mel Gibson",
+        "dollar store jesus",
+        "Anne Flank"
+      ],
+      "opponents": [
+        "紫蝶黄蜂俱有情",
+        "Tina",
+        "DerDieDas",
+        "mrtickles22"
+      ]
+    },
+    {
+      "matchId": 448184575,
+      "description": "10x Shared civ 4v4",
+      "mapname": "Arena",
+      "timestamp": 1768396320,
+      "outcome": "loss",
+      "preRating": 1111,
+      "postRating": 1074,
+      "eloChange": -37,
+      "civ": "Saracens",
+      "teamAvgElo": 1033,
+      "opponentAvgElo": 987,
+      "teammates": [
+        "Mel Gibson",
+        "dollar store jesus",
+        "Anne Flank"
+      ],
+      "opponents": [
+        "GJ Euphory",
+        "mrtickles22",
+        "fxsound",
+        "SeeYouTomorrow"
+      ]
+    },
+    {
+      "matchId": 450000672,
+      "description": "10x 3x shared !!NO NOOBS!!",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1769011380,
+      "outcome": "loss",
+      "preRating": 1074,
+      "postRating": 1044,
+      "eloChange": -30,
+      "civ": "Persians",
+      "teamAvgElo": 1049,
+      "opponentAvgElo": 1012,
+      "teammates": [
+        "[B] Carlian",
+        "Juliana",
+        "菜神"
+      ],
+      "opponents": [
+        "Age5464",
+        "Master Polo4905",
+        "ilovesushi12",
+        "yoda"
+      ]
+    },
+    {
+      "matchId": 459101943,
+      "description": "4v4 10x shared civ mod",
+      "mapname": "Arena",
+      "timestamp": 1772102940,
+      "outcome": "loss",
+      "preRating": 1044,
+      "postRating": 1019,
+      "eloChange": -25,
+      "civ": "Unknown",
+      "teamAvgElo": 1005,
+      "opponentAvgElo": 1035,
+      "teammates": [
+        "Janjira",
+        "Slusheys",
+        "i <3 b00bies"
+      ],
+      "opponents": [
+        "Bean goose",
+        "Dutchigander",
+        "Sir.Hisenberg",
+        "Elon's Musk"
+      ]
+    },
+    {
+      "matchId": 459106790,
+      "description": "4v4 10x shared civ mod noobs",
+      "mapname": "Arena",
+      "timestamp": 1772104560,
+      "outcome": "win",
+      "preRating": 1019,
+      "postRating": 1041,
+      "eloChange": 22,
+      "civ": "Unknown",
+      "teamAvgElo": 968,
+      "opponentAvgElo": 1011,
+      "teammates": [
+        "Janjira",
+        "Slusheys",
+        "i <3 b00bies"
+      ],
+      "opponents": [
+        "PaulMac",
+        "killateam",
+        "Two Point Oh",
+        "Meursault005"
+      ]
+    },
+    {
+      "matchId": 462805241,
+      "description": "4v4 10x Shared Civ bonus mod",
+      "mapname": "Arena",
+      "timestamp": 1773481200,
+      "outcome": "loss",
+      "preRating": 1041,
+      "postRating": 1020,
+      "eloChange": -21,
+      "civ": "Magyars",
+      "teamAvgElo": 1013,
+      "opponentAvgElo": 1044,
+      "teammates": [
+        "Janjira",
+        "Kratos",
+        "The lego you walk on at night"
+      ],
+      "opponents": [
+        "Lú",
+        "helianth",
+        "Axobada",
+        "DGHIR | NICOGP11"
+      ]
+    }
+  ]
+}
