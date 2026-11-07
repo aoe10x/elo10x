@@ -1,0 +1,545 @@
+{
+  "profile_id": 768052,
+  "alias": "UU",
+  "rating": 948,
+  "wins": 19,
+  "losses": 29,
+  "gamesCount": 48,
+  "winRate": 40,
+  "lastPlayedAt": 1746382740,
+  "country": "cn",
+  "merged_ids": [],
+  "ratingHistory": [
+    1000,
+    960,
+    924,
+    889,
+    862,
+    920,
+    887,
+    860,
+    914,
+    958,
+    930,
+    907,
+    885,
+    917,
+    899,
+    933,
+    964,
+    948,
+    973,
+    959,
+    981,
+    965,
+    951,
+    968,
+    986,
+    1007,
+    994,
+    1014,
+    1001,
+    1017,
+    1034,
+    1051,
+    1033,
+    1018,
+    1033,
+    1017,
+    1003,
+    987,
+    1007,
+    1032,
+    1019,
+    1004,
+    991,
+    980,
+    969,
+    953,
+    940,
+    962,
+    948
+  ],
+  "recentMatches": [
+    {
+      "matchId": 360511554,
+      "description": "10x Shared Turbo Tunnel",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1735136640,
+      "outcome": "win",
+      "preRating": 1001,
+      "postRating": 1017,
+      "eloChange": 16,
+      "civ": "Unknown",
+      "teamAvgElo": 1042,
+      "opponentAvgElo": 992,
+      "teammates": [
+        "awdsxq",
+        "{R} Parry",
+        "GrandUni"
+      ],
+      "opponents": [
+        "chrismatla68",
+        "Kome Palomas",
+        "IndiosAnónimos",
+        "kinkin623"
+      ]
+    },
+    {
+      "matchId": 360698309,
+      "description": "10x Shared Turbo Tunnel",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1735209900,
+      "outcome": "win",
+      "preRating": 1017,
+      "postRating": 1034,
+      "eloChange": 17,
+      "civ": "Unknown",
+      "teamAvgElo": 1004,
+      "opponentAvgElo": 1036,
+      "teammates": [
+        "omega",
+        "edalmavuz",
+        "chrismatla68"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "yimacs_yoyoyo",
+        "YaHu",
+        "evertone"
+      ]
+    },
+    {
+      "matchId": 364473772,
+      "description": "10x Shared Civ 4v4 Random",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1736591520,
+      "outcome": "win",
+      "preRating": 1034,
+      "postRating": 1051,
+      "eloChange": 17,
+      "civ": "Unknown",
+      "teamAvgElo": 1017,
+      "opponentAvgElo": 1049,
+      "teammates": [
+        "Samaritao",
+        "quickquacksnack",
+        "Regina Ip"
+      ],
+      "opponents": [
+        "RJP",
+        "Kumad",
+        "Myriad",
+        "gp"
+      ]
+    },
+    {
+      "matchId": 364475445,
+      "description": "10x Shared Civ 4v4 Random",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1736592120,
+      "outcome": "loss",
+      "preRating": 1051,
+      "postRating": 1033,
+      "eloChange": -18,
+      "civ": "Unknown",
+      "teamAvgElo": 1021,
+      "opponentAvgElo": 998,
+      "teammates": [
+        "Kumad",
+        "Regina Ip",
+        "Myriad"
+      ],
+      "opponents": [
+        "菜神",
+        "Dayman",
+        "Doormat",
+        "ZMC007"
+      ]
+    },
+    {
+      "matchId": 365010878,
+      "description": "10x Shared Civ 4v4 Random",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1736763960,
+      "outcome": "loss",
+      "preRating": 1033,
+      "postRating": 1018,
+      "eloChange": -15,
+      "civ": "Unknown",
+      "teamAvgElo": 1019,
+      "opponentAvgElo": 1060,
+      "teammates": [
+        "Kumad",
+        "菜神",
+        "Myriad"
+      ],
+      "opponents": [
+        "Regina Ip",
+        "gonzalofv",
+        "Sony Toprano",
+        "politician"
+      ]
+    },
+    {
+      "matchId": 368332597,
+      "description": "10x Shared Civ 4v4 Random",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1738063080,
+      "outcome": "win",
+      "preRating": 1018,
+      "postRating": 1033,
+      "eloChange": 15,
+      "civ": "Unknown",
+      "teamAvgElo": 1035,
+      "opponentAvgElo": 992,
+      "teammates": [
+        "Kumad",
+        "BsK_Poisn",
+        "Myriad"
+      ],
+      "opponents": [
+        "CrazyKaelby",
+        "Gadiatorking112",
+        "Kuecken_das_Vollstrecker",
+        "CrimsonLotus"
+      ]
+    },
+    {
+      "matchId": 368552745,
+      "description": "10x Shared Turbo Tunnel",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1738155420,
+      "outcome": "loss",
+      "preRating": 1033,
+      "postRating": 1017,
+      "eloChange": -16,
+      "civ": "Teutons",
+      "teamAvgElo": 1045,
+      "opponentAvgElo": 1026,
+      "teammates": [
+        "NothingAtAll11",
+        "大葱鸭",
+        "Old_two"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "MancoNoMicro",
+        "gitb930504",
+        "-[RDU]- Gorda America Forever"
+      ]
+    },
+    {
+      "matchId": 368554309,
+      "description": "10x Shared Turbo Tunnel",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1738156320,
+      "outcome": "loss",
+      "preRating": 1017,
+      "postRating": 1003,
+      "eloChange": -14,
+      "civ": "Magyars",
+      "teamAvgElo": 1002,
+      "opponentAvgElo": 1055,
+      "teammates": [
+        "-[RDU]- Gorda America Forever",
+        "Keroro Gunso",
+        "Dark_Knight"
+      ],
+      "opponents": [
+        "MancoNoMicro",
+        "{R} Parry",
+        "安全原子",
+        "irina_titova_93"
+      ]
+    },
+    {
+      "matchId": 368759961,
+      "description": "10x Shared",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1738244460,
+      "outcome": "loss",
+      "preRating": 1003,
+      "postRating": 987,
+      "eloChange": -16,
+      "civ": "Unknown",
+      "teamAvgElo": 1001,
+      "opponentAvgElo": 998,
+      "teammates": [
+        "Samaritao",
+        "SeeYouTomorrow",
+        "Duck Twacy"
+      ],
+      "opponents": [
+        "Hexicero",
+        "lcw996",
+        "tarator",
+        "TUF | DUKE_NUKEM"
+      ]
+    },
+    {
+      "matchId": 368972443,
+      "description": "10x Shared",
+      "mapname": "Bamboo Nothing - Scorpyon De",
+      "timestamp": 1738333920,
+      "outcome": "win",
+      "preRating": 987,
+      "postRating": 1007,
+      "eloChange": 20,
+      "civ": "Japanese",
+      "teamAvgElo": 1062,
+      "opponentAvgElo": 1084,
+      "teammates": [
+        "TheRiceMan",
+        "SquirrelBoi",
+        "WorldsFastestTurtle"
+      ],
+      "opponents": [
+        "Hexicero",
+        "Keishi",
+        "Phantom_",
+        "ICAC"
+      ]
+    },
+    {
+      "matchId": 369243449,
+      "description": "10x civ shared 4v4",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1738440720,
+      "outcome": "win",
+      "preRating": 1007,
+      "postRating": 1032,
+      "eloChange": 25,
+      "civ": "Unknown",
+      "teamAvgElo": 1038,
+      "opponentAvgElo": 1220,
+      "teammates": [
+        "Rem_sjik",
+        "Noddybear",
+        "Febrile"
+      ],
+      "opponents": [
+        "pandalam",
+        "這個彬彬就是遜啦",
+        "老K",
+        "Lietuva_"
+      ]
+    },
+    {
+      "matchId": 370521040,
+      "description": "10x Shared Turbo Tunnel",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1738933194,
+      "outcome": "loss",
+      "preRating": 1032,
+      "postRating": 1019,
+      "eloChange": -13,
+      "civ": "Unknown",
+      "teamAvgElo": 1075,
+      "opponentAvgElo": 1091,
+      "teammates": [
+        "ototomato",
+        "The Viper",
+        "HawknyR"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "G",
+        "Pilot in training",
+        "ZHU20232010"
+      ]
+    },
+    {
+      "matchId": 370524268,
+      "description": "10x Shared Turbo Tunnel",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1738934820,
+      "outcome": "loss",
+      "preRating": 1019,
+      "postRating": 1004,
+      "eloChange": -15,
+      "civ": "Unknown",
+      "teamAvgElo": 1035,
+      "opponentAvgElo": 1038,
+      "teammates": [
+        "El Buolas",
+        "Wardy21",
+        "FAOse7en"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "The Viper",
+        "Samaritao",
+        "mozu5"
+      ]
+    },
+    {
+      "matchId": 375946407,
+      "description": "10x civ bonus shared 4v4",
+      "mapname": "Zn@Wheel",
+      "timestamp": 1741028280,
+      "outcome": "loss",
+      "preRating": 1004,
+      "postRating": 991,
+      "eloChange": -13,
+      "civ": "Turks",
+      "teamAvgElo": 987,
+      "opponentAvgElo": 1075,
+      "teammates": [
+        "Azrael",
+        "HeavySilence",
+        "CountryLunatic"
+      ],
+      "opponents": [
+        "[RUS-F] Lastman",
+        "FrostByte",
+        "ToonooB",
+        "CandleLight"
+      ]
+    },
+    {
+      "matchId": 376988136,
+      "description": "10X Shared Civ Bonus Random CIV 4V4",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1741456380,
+      "outcome": "loss",
+      "preRating": 991,
+      "postRating": 980,
+      "eloChange": -11,
+      "civ": "Unknown",
+      "teamAvgElo": 999,
+      "opponentAvgElo": 1104,
+      "teammates": [
+        "bhasudi--",
+        "Termi2023",
+        "hi world"
+      ],
+      "opponents": [
+        "老K",
+        "這個彬彬就是遜啦",
+        "ChillDaddy",
+        "CandleLight"
+      ]
+    },
+    {
+      "matchId": 376990818,
+      "description": "10X Shared Civ Bonus Random CIV 4V4",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1741457340,
+      "outcome": "loss",
+      "preRating": 980,
+      "postRating": 969,
+      "eloChange": -11,
+      "civ": "Unknown",
+      "teamAvgElo": 987,
+      "opponentAvgElo": 1090,
+      "teammates": [
+        "ToonooB",
+        "TC2000",
+        "巨大一根条"
+      ],
+      "opponents": [
+        "老K",
+        "CandleLight",
+        "這個彬彬就是遜啦",
+        "狸狸"
+      ]
+    },
+    {
+      "matchId": 379023341,
+      "description": "10x shared all random",
+      "mapname": "Albero@Arenaamazontunnel",
+      "timestamp": 1742233140,
+      "outcome": "loss",
+      "preRating": 969,
+      "postRating": 953,
+      "eloChange": -16,
+      "civ": "Unknown",
+      "teamAvgElo": 1067,
+      "opponentAvgElo": 979,
+      "teammates": [
+        "Colonel Mustard",
+        "ToonooB",
+        "wogsihjvaa4865"
+      ],
+      "opponents": [
+        "Mark Rutte",
+        "RedBullWOLOLO26",
+        "紫蝶黄蜂俱有情",
+        "Nordsee"
+      ]
+    },
+    {
+      "matchId": 383000497,
+      "description": "10x Shared Turbo Tunnel",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1743764100,
+      "outcome": "loss",
+      "preRating": 953,
+      "postRating": 940,
+      "eloChange": -13,
+      "civ": "Japanese",
+      "teamAvgElo": 1089,
+      "opponentAvgElo": 1010,
+      "teammates": [
+        "{R} Parry",
+        "PoonSlapper",
+        "老K"
+      ],
+      "opponents": [
+        "ZMY123",
+        "DopeDillah",
+        "buyanjavyn",
+        "stormblitz"
+      ]
+    },
+    {
+      "matchId": 383003091,
+      "description": "10x Shared Turbo Tunnel",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1743765240,
+      "outcome": "win",
+      "preRating": 940,
+      "postRating": 962,
+      "eloChange": 22,
+      "civ": "Unknown",
+      "teamAvgElo": 995,
+      "opponentAvgElo": 1083,
+      "teammates": [
+        "thane",
+        "buyanjavyn",
+        "Bean goose"
+      ],
+      "opponents": [
+        "{R} Parry",
+        "老K",
+        "PoonSlapper",
+        "Chuckyllo4417"
+      ]
+    },
+    {
+      "matchId": 390120731,
+      "description": "10x civ shared 4v4",
+      "mapname": "Amazon Tunnel",
+      "timestamp": 1746382740,
+      "outcome": "loss",
+      "preRating": 962,
+      "postRating": 948,
+      "eloChange": -14,
+      "civ": "Unknown",
+      "teamAvgElo": 972,
+      "opponentAvgElo": 1002,
+      "teammates": [
+        "Kaltsu",
+        "Galletabah",
+        "Joentje"
+      ],
+      "opponents": [
+        "pandalam",
+        "老K",
+        "k0rnm@yer",
+        "puje"
+      ]
+    }
+  ]
+}
